@@ -1074,6 +1074,84 @@ const CURRICULUM = {
           why: "支援多達 14 張參考圖能讓神經網路在多視角運鏡中深度鎖定目標特徵，保證鏡頭切換時角色與畫風的絕對一致性！"
         }
       }
+    ]  },
+  blender_3d: {
+    id: "blender_3d",
+    name: "🎨 3D 視覺・Claude + Blender MCP",
+    badge: "實戰・3D 建模與空間運算",
+    lessons: [
+      {
+        id: "b3d_spline_web",
+        title: "🎬 網頁 3D 革命：Claude + Blender + Spline 打造炸裂級互動網站",
+        category: "Web 3D 與互動體驗",
+        text: "Kyle Skelly 親自示範現代前端與 3D 創作者的夢幻組合：**「自然語言 ➡️ Claude 生成 3D 結構 ➡️ Blender 拓撲與材質 ➡️ 導出 GLTF/GLB ➡️ 嵌入 Spline / Three.js」**！\n\n**顛覆傳統網頁設計的立體流水線**：\n• **零 3D 建模基礎起步**：以往建立 3D 網站需要精通 Maya 或 Blender 複雜的快捷鍵與節點圖；現在直接用 Claude 撰寫 Blender Python 腳本（`bpy`）或調用 MCP 工具，秒級生成高精度幾何體、材質節點與布光環境。\n• **GLB/GLTF 輕量化導出**：利用 Claude 自動最佳化網格多邊形面數（Decimate），壓縮貼圖與頂點數據，產出適合瀏覽器 60fps 順暢渲染的輕量化 3D 資產。\n• **Spline 雲端互動賦能**：將生成的 3D 模型匯入 Spline，設定滑鼠跟隨（Mouse tracking）、物理碰撞與滾動視差（Scroll-driven animation），一行 iframe 嵌入 Webflow、React 或純 HTML 網站！",
+        tip: "🌐 空間升維：用 Claude 產結構、Blender 修網格、Spline 做互動，個人開發者也能在半小時內做出好萊塢級 3D 官方網站！",
+        quiz: {
+          q: "將 Claude 與 Blender 協同生成的 3D 資產應用於現代互動式商業網頁（如 Spline / Webflow）時，最核心的工程考量是什麼？",
+          options: [
+            "直接導出未壓縮的幾億面高模，讓瀏覽器卡死",
+            "透過網格簡化（Decimate）降低面數並以標準 GLTF/GLB 格式封裝，確保模型在網頁端能維持 60fps 高幀率流暢互動",
+            "把所有 3D 模型轉成純文字檔播放",
+            "關閉所有網頁互動功能只放一張靜態截圖"
+          ],
+          correct: 1,
+          why: "網頁端受限於使用者設備 GPU 與頻寬，必須透過合理的拓撲面數控制與標準輕量化格式（GLTF/GLB）才能在 Spline 等互動引擎中達到秒開且 60fps 的極致體驗！"
+        }
+      },
+      {
+        id: "b3d_mcp_realtime",
+        title: "🎬 MCP 跨維度連線：Claude 桌面直連 Blender 即時生成與自動修復",
+        category: "MCP 即時通訊架構",
+        text: "3D 知名創作者 Max Novak 實測驚嘆的技術突破：**透過 MCP（Model Context Protocol）打通 Claude Desktop / Code 與本機 Blender 核心進程！**\n\n**告別複製貼上腳本的時代**：\n• **Socket/IPC 雙向即時通訊**：在 Blender 內安裝 MCP Addon 插件後，Blender 會啟動本機通訊監聽；Claude 透過 MCP Client 直接對 Blender 下達 Python 指令，你眼前視口（Viewport）裡的模型瞬間實時長出！\n• **即時程序化建模（Procedural Modeling）**：只要對 Claude 說「在場景中央生成一個具有未來感的霓虹幾何方塊，並為其加上倒角修改器（Bevel Modifier）與自發光材質」，Blender 視窗立刻零延遲即時更新。\n• **語意自癒閉環（Self-Healing Loop）**：當 Claude 寫出的 `bpy` API 語法因 Blender 版本差異拋出報錯時，MCP 會將錯誤日誌直接回傳給 Claude；Claude 秒級閱讀錯誤並自動修正語法重新發送，完全不需要人工手動除錯！",
+        tip: "⚡ 實體手眼：MCP 讓大模型獲得了操縱本機 3D 引擎的即時雙手，遇錯自修更是無人值守的核心心法！",
+        quiz: {
+          q: "相比過去「在聊天框複製 Python 代碼 ➡️ 手動貼到 Blender 腳本編輯器」的傳統做法，MCP（Model Context Protocol）帶來的革命性優勢是什麼？",
+          options: [
+            "MCP 會讓 Blender 變成黑白畫面",
+            "建立雙向即時通訊協議，Claude 可直接驅動 Blender 視口更新，並在遭遇 API 報錯時自動接收錯誤回報並原地自癒重試",
+            "禁止使用者使用滑鼠操作 Blender",
+            "強制所有 3D 渲染必須在雲端付費排隊"
+          ],
+          correct: 1,
+          why: "MCP 打破了聊天框與本機軟體的隔離，賦予 Agent 直接呼叫工具並獲取即時執行回饋的閉環能力，實現自動執行與自動除錯修復！"
+        }
+      },
+      {
+        id: "b3d_free_ecosystem",
+        title: "🎬 免費全家桶出擊：Claude + Blender 5.1 官方連接器與 PBR 聚合生態",
+        category: "全套環境與多模態整合",
+        text: "Stefan 3D AI 全網首發詳解最新官方生態與全套免費工作流：《Claude + Blender Is Insane Now — Full Free Setup》：\n\n**最新官方 MCP 整合與生態架構**：\n• **Blender 最新版本支援**：支援 Blender 4.3 至 5.x；插件安裝極簡化——將 official Blender MCP `.zip` 直接拖曳進 Blender 視窗即可完成安裝，並可開啟 Auto-start 常駐。\n• **Claude Code 與 Claude Desktop 雙軌支援**：透過 `claude_desktop_config.json` 或 Claude Code `/connectors` 介面，一鍵掛載本機 Blender MCP 伺服器。\n• **聚合外部 AI 3D 算力（AI Aggregator MCP）**：不僅能下指令建構基礎幾何體，還能將 fal.ai 或 Tripo/Meshy 等文字轉 3D / PBR 材質模型透過第二個 MCP 連接器接入，讓 Claude 統一調度：「先生成模型網格 ➡️ 調用 PBR 生成高品質法線與粗糙度貼圖 ➡️ 自動掛載至 Blender Principled BSDF 著色器」！",
+        tip: "🧩 組合拳威力：Blender 負責場景結構與攝影機，外部 MCP 負責生 PBR 材質，Claude 擔任全能總指揮官！",
+        quiz: {
+          q: "在 Stefan 3D AI 示範的高階工作流中，如何解決「純代碼很難生成高品質寫實紋理（PBR Textures）」的限制？",
+          options: [
+            "放棄使用材質，所有物體都用純灰色顯示",
+            "在 Claude 架構中同時掛載 Blender MCP 與 AI 圖像/3D 聚合 MCP（如 fal.ai/Patina），由 Claude 先生成結構再自動串接 PBR 貼圖與材質節點",
+            "用小畫家一張張手繪像素貼圖",
+            "直接把螢幕調亮 500%"
+          ],
+          correct: 1,
+          why: "單一大模型不擅長直接繪製複雜位圖貼圖，透過 MCP 多工具協同，讓專業的擴散模型負責生成貼圖，Claude 負責在 Blender 節點樹中自動接線，達到完美平衡！"
+        }
+      },
+      {
+        id: "b3d_master_tutorial",
+        title: "🎬 26 分鐘實戰大師課：從零打造產品級等距房間與棚拍照明（DesignCode 親授）",
+        category: "商業級實戰演練",
+        text: "全球頂尖 UI/UX 教育平台 DesignCode 創辦人 Meng To 傾囊相授 26 分鐘商業級完整實戰：《Create 3D with Claude AI with Blender MCP》：\n\n**商業級 3D 場景從 Prompt 到 Final Render 全流程**：\n• **語意化空間架構（Isometric Scene）**：如何引導 Claude 一步步建立結構層次——先定地基牆面，再添置家具（桌椅、螢幕、書架），最後微調細節倒角與比例。\n• **三點光源與電影感照明（Studio Lighting）**：不讓 Claude 放一顆死板的日光，而是明確指令建立「主光（Key Light）、輔助光（Fill Light）、邊緣輪廓光（Rim Light）」，搭配環境遮蔽（AO）與柔和陰影。\n• **高階材質與渲染調校**：提示詞要求精確設定粗糙度（Roughness）、金屬度（Metallic）、次表面散射（SSS）與毛玻璃透光材質（Glass Transmission），並指示切換 Cycles 渲染器與設定最佳相機焦段（如 85mm 長焦透視消除變形）。",
+        tip: "🎥 導演思維：不要只下「給我一個房間」；拆解為「空間架構 ➡️ 家具層次 ➡️ 三點棚拍光 ➡️ 電影級材質」四步推進！",
+        quiz: {
+          q: "在引導 Claude AI 打造商業級 3D 渲染場景（如產品展示或等距小房間）時，若想要營造出立體感與高級質感的電影級光影，最推薦的光照調度結構是？",
+          options: [
+            "完全不打任何燈光，依賴預設的平光背景",
+            "採用經典三點棚拍照明系統（主光 Key、輔光 Fill、輪廓光 Rim），並結合適當的相機焦段與景深控制",
+            "在場景中隨意放置 100 顆超高亮度的白色點光源",
+            "關閉渲染引擎的陰影計算"
+          ],
+          correct: 1,
+          why: "經典三點照明（Key, Fill, Rim）能精確勾勒出物體的體積感、層次感與輪廓高光，是商業級 3D 產品展示與宣傳圖的核心燈光架構！"
+        }
+      }
     ]
   }
 };
