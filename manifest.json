@@ -1,0 +1,17 @@
+{
+  "name": "AI 互動學習課本",
+  "short_name": "AI課本",
+  "description": "手機專用微學習卡片與隨堂即測",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fff8ea",
+  "theme_color": "#c9a24b",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

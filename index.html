@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>AI 互動學習課本</title>
+  
+  <!-- PWA & Mobile Web Capabilities -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#fff8ea">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="AI課本">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Top Navigation Bar -->
+    <header class="top-bar">
+      <div class="brand-badge">
+        <span>📖</span>
+        <span>AI 學習課本</span>
+        <span class="star-counter" id="starCount">⭐ 0</span>
+      </div>
+      <div class="top-actions">
+        <button class="icon-btn" id="tocToggleBtn" title="章節目錄">📋</button>
+        <button class="icon-btn" id="themeToggleBtn" title="切換夜讀模式">🌙</button>
+      </div>
+    </header>
+
+    <!-- Levels / Categories (初階 / 中階 / 高階) -->
+    <nav class="level-nav" id="levelTabs"></nav>
+
+    <!-- Chapter Status & Progress Bar -->
+    <div class="chapter-status-bar">
+      <span class="chapter-label" id="chapterLabel">載入中...</span>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Main Learning Card (Reading + Quiz) -->
+    <main class="homework-card" id="cardContainer">
+      <!-- Injected dynamically by app.js -->
+    </main>
+
+    <!-- Bottom Navigation Controls -->
+    <footer class="bottom-controls">
+      <button class="btn btn-secondary" id="prevBtn" title="上一課">⬅️ 上一課</button>
+      <button class="btn btn-primary" id="nextBtn" title="下一課">下一課 ➡️</button>
+    </footer>
+  </div>
+
+  <!-- Table of Contents Drawer Modal -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="drawer-content" id="drawerContent">
+    <div class="drawer-header">
+      <div class="drawer-title">📑 課本章節目錄</div>
+      <button class="icon-btn" id="drawerCloseBtn">✕</button>
+    </div>
+    <ul class="drawer-list" id="drawerList"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

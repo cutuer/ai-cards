@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8ea"/>
+      <stop offset="100%" stop-color="#f4e5c3"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0b85a"/>
+      <stop offset="100%" stop-color="#a47721"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect x="24" y="24" width="464" height="464" rx="96" fill="none" stroke="#c9a24b" stroke-width="8" opacity="0.6"/>
+  <!-- Book Spine & Pages -->
+  <path d="M128 368c32-24 80-24 128 0 48-24 96-24 128 0v-224c-32-24-80-24-128 0-48-24-96-24-128 0z" fill="#ffffff" stroke="#c9a24b" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M256 144v224" stroke="#c9a24b" stroke-width="12" stroke-linecap="round"/>
+  <!-- Bookmark ribbon -->
+  <path d="M236 144v90l20-16 20 16v-90" fill="url(#gold)"/>
+  <!-- Sparkles -->
+  <path d="M370 120l6 14 14 6-14 6-6 14-6-14-14-6 14-6z" fill="#e0b85a"/>
+  <path d="M130 150l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#e0b85a"/>
+  <!-- Star on page -->
+  <circle cx="196" cy="256" r="14" fill="#f6d365"/>
+  <circle cx="316" cy="256" r="14" fill="#f6d365"/>
+</svg>
