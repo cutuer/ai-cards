@@ -1366,6 +1366,12 @@ function renderLevelTabs() {
     chip.onclick = () => selectLevel(lvl.id);
     levelTabsEl.appendChild(chip);
   });
+  setTimeout(() => {
+    const activeChip = levelTabsEl.querySelector(".level-chip.active");
+    if (activeChip) {
+      activeChip.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+    }
+  }, 40);
 }
 
 // 渲染當前卡片
@@ -1512,8 +1518,38 @@ nextBtnEl.onclick = () => {
 // 目錄抽屜
 function openDrawer() {
   const currentLvl = CURRICULUM[state.currentLevel];
-  drawerListEl.innerHTML = "";
+  const drawerTitleEl = document.getElementById("drawerTitle");
+  if (drawerTitleEl) {
+    drawerTitleEl.textContent = `📑 ${currentLvl.name}`;
+  }
 
+  // 渲染分冊快捷選單 (10 本書)
+  const booksBar = document.getElementById("drawerBooksBar");
+  if (booksBar) {
+    booksBar.innerHTML = "";
+    Object.values(CURRICULUM).forEach(lvl => {
+      const chip = document.createElement("button");
+      chip.className = `drawer-book-chip ${lvl.id === state.currentLevel ? "active" : ""}`;
+      chip.textContent = `${lvl.name.split("・")[0]} (${lvl.lessons.length}課)`;
+      chip.onclick = () => {
+        state.currentLevel = lvl.id;
+        state.currentLessonIdx = 0;
+        saveState();
+        renderLevelTabs();
+        renderCard();
+        openDrawer();
+      };
+      booksBar.appendChild(chip);
+    });
+    setTimeout(() => {
+      const activeBookChip = booksBar.querySelector(".drawer-book-chip.active");
+      if (activeBookChip) {
+        activeBookChip.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+      }
+    }, 40);
+  }
+
+  drawerListEl.innerHTML = "";
   currentLvl.lessons.forEach((l, idx) => {
     const li = document.createElement("li");
     li.className = `drawer-item ${idx === state.currentLessonIdx ? "active" : ""}`;

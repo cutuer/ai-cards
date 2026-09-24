@@ -32,7 +32,11 @@
       </div>
     </header>
 
-    <!-- Levels / Categories (初階 / 中階 / 高階) -->
+    <!-- Levels / Categories (10 大分冊) -->
+    <div class="level-nav-header">
+      <span class="level-nav-title">📚 10 本分冊選書</span>
+      <span class="level-nav-hint">左右滑動 ↔️</span>
+    </div>
     <nav class="level-nav" id="levelTabs"></nav>
 
     <!-- Chapter Status & Progress Bar -->
@@ -59,9 +63,11 @@
   <div class="drawer-backdrop" id="drawerBackdrop"></div>
   <div class="drawer-content" id="drawerContent">
     <div class="drawer-header">
-      <div class="drawer-title">📑 課本章節目錄</div>
+      <div class="drawer-title" id="drawerTitle">📑 課本章節目錄</div>
       <button class="icon-btn" id="drawerCloseBtn">✕</button>
     </div>
+    <div class="drawer-section-label">📚 快速切換分冊（共 10 本書 · 67 課）：</div>
+    <div class="drawer-books-bar" id="drawerBooksBar"></div>
     <ul class="drawer-list" id="drawerList"></ul>
   </div>
 

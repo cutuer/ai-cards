@@ -134,12 +134,35 @@ body {
 }
 
 /* Category Tabs (Levels) */
+.level-nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4px 6px;
+}
+
+.level-nav-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.level-nav-hint {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-gold);
+  background: var(--tag-bg);
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
 .level-nav {
   display: flex;
   gap: 6px;
   overflow-x: auto;
   padding: 4px 2px 14px;
   scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
 }
 .level-nav::-webkit-scrollbar {
   display: none;
@@ -156,6 +179,7 @@ body {
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
 .level-chip.active {
@@ -163,6 +187,50 @@ body {
   border-color: var(--accent-gold);
   color: #fff;
   box-shadow: 0 2px 8px rgba(201, 162, 75, 0.4);
+}
+
+/* Drawer Book Selector */
+.drawer-section-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.drawer-books-bar {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 2px 2px 10px;
+  margin-bottom: 12px;
+  border-bottom: 1px dashed var(--opt-border);
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.drawer-books-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.drawer-book-chip {
+  flex-shrink: 0;
+  padding: 6px 11px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  background: var(--opt-bg);
+  color: var(--text-muted);
+  border: 1px solid var(--opt-border);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.drawer-book-chip.active {
+  background: var(--accent-gold);
+  color: #ffffff;
+  border-color: var(--accent-gold);
+  box-shadow: 0 2px 6px rgba(201, 162, 75, 0.35);
 }
 
 /* Chapter Progress Pill */
