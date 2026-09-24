@@ -272,6 +272,200 @@ const CURRICULUM = {
         }
       }
     ]
+  },
+  claude_pro: {
+    id: "claude_pro",
+    name: "🔥 Claude 進階・官方實戰特訓",
+    badge: "高階・Anthropic 官方研究",
+    lessons: [
+      {
+        id: "c1",
+        title: "Anthropic 官方核心架構：Workflows vs Agents 如何抉擇？",
+        category: "系統架構",
+        text: "Anthropic 官方在《Building Effective Agents》研究中提出重要警示：**「不要把所有問題都丟給全自主 Agent！」**\n\n官方將 AI 系統分為兩大派系：\n1. **Workflows（工作流）**：由程式碼預先寫好固定路徑（如 Prompt Chaining 鏈式管線、Routing 條件路由），AI 依序在既定軌道上前進。優點是**極度穩定、可預測、不易翻車**。\n2. **Agents（自主代理）**：由大模型自己決定何時叫工具、叫幾次、什麼時候停下來。優點是**靈活性極高**，但代價是成本不可控、容易迷路。\n\n**官方黃金法則**：能用簡單工作流解決的，絕對不要上全自主 Agent；只有面對無法預測的除錯與探索時才放手讓 Agent 自主決策！",
+        tip: "⚖️ 穩定第一：嚴謹的金融/資料處理走工作流（Workflow），開放式程式除錯走自主代理（Agent）。",
+        quiz: {
+          q: "專案需要每天固定從 10 份財報 PDF 裡精準抽取營收數字並寫入 Excel，根據 Anthropic 官方指引，最推薦採用哪種架構？",
+          options: [
+            "全自主 Agent（讓它自己看著辦，隨便摸索）",
+            "固定路徑工作流（Workflow：Prompt Chaining 確定性步驟，穩定且低成本）",
+            "同時派 20 個模型進行無規則群聊",
+            "每次手動把 PDF 印出來用肉眼看"
+          ],
+          correct: 1,
+          why: "固定格式的資料抽取具有明確的輸入輸出，使用確定的工作流（Prompt Chaining）比不可控的自主 Agent 更加穩定、準確且節省 Token！"
+        }
+      },
+      {
+        id: "c2",
+        title: "Subagents 隔離體系：為什麼一個 Agent 幹到底必敗？",
+        category: "多任務分流",
+        text: "在 Claude Code 深度實戰中，官方最強調的高階技巧就是 **Subagents（子代理派工）**。\n\n如果叫「主 Agent」去跑一個龐大的測試，測試噴出 3,000 行落落長的除錯日誌，主 Agent 的 Context 會在幾秒內被垃圾日誌淹沒，導致它忘記最初的目的。\n\n**Subagent 的核心奧義是「上下文隔離（Context Isolation）」**：\n• 主 Agent（指揮官）派發專職任務給子 Agent。\n• 子 Agent 在獨立的乾淨沙盒中跑測試、翻日誌、嘗試修復。\n• 完成後，子 Agent 只將「3 句總結與修復補丁」回傳給主 Agent！\n這樣主 Agent 的記憶永遠清爽乾淨，任務跑再久也不會智商退化。",
+        tip: "🛡️ 派工心法：髒活、累活、會吐大量日誌的苦工，全部派給隔離的 Subagent 去扛！",
+        quiz: {
+          q: "當專案需要對 100 個單元測試進行逐一排查、預期會產生海量終端日誌時，為了保護主對話窗口不被塞爆，最佳策略是？",
+          options: [
+            "直接在主窗口跑，讓日誌把所有記憶視窗填滿",
+            "派遣 Subagent（子代理）在隔離的獨立上下文執行，僅回報失敗斷言與修復建議",
+            "把單元測試檔案全部刪除假裝沒事",
+            "將字體調小"
+          ],
+          correct: 1,
+          why: "Subagent 能完美實現「上下文隔離」，髒亂的海量日誌留在子線程，主對話只接收高價值摘要，避免 Context 爆掉！"
+        }
+      },
+      {
+        id: "c3",
+        title: "Context Hygiene（上下文衛生管理與微壓縮）",
+        category: "記憶工程",
+        text: "頂級工程師與菜鳥使用 Claude 的最大差距，在於 **Context Hygiene（上下文衛生）**。\n\n每一條存在 Context 裡的資訊，都是模型注意力（Attention）的負擔。當上下文充滿無效雜訊，模型就會「注意力發散（Attention Dilution）」，開始胡說八道。\n\n**保持上下文衛生的三招**：\n1. **微壓縮（Micro-compacting）**：檔案讀過、取得需要的關鍵函式後，不要留著整份萬行大檔，只保留摘要或精確行號指針。\n2. **CLAUDE.md 高密度約定**：把專案風格、測試命令寫在 CLAUDE.md。但切忌寫成幾萬字廢話長篇——每一行開機讀入都是扣錢，且過長會稀釋重點。\n3. **定期手動換檔**：完成一個大里程碑，主動 /compact 或開新 Session，絕不把舊歷史當垃圾場。",
+        tip: "🧼 乾淨就是生產力：Context 不是硬碟，它是昂貴且稀缺的「短期工作檯」。",
+        quiz: {
+          q: "在維護專案根目錄的 CLAUDE.md 時，根據官方最佳實踐，以下哪種做法是正確的？",
+          options: [
+            "把過去半年寫過的所有聊天紀錄與日誌全都貼在 CLAUDE.md 裡面",
+            "維持高密度、簡明扼要的指令與架構原則，重要細節採用索引指針，避免開機浪費龐大 Token",
+            "故意寫很多生僻文言文考驗模型的中文能力",
+            "完全不放任何規則，讓每次開機的 AI 猜測專案規範"
+          ],
+          correct: 1,
+          why: "CLAUDE.md 是每次開機必讀的最高憲章，必須保持高密度與簡潔，將繁雜細節外包給衛星索引，才能兼顧準確性與 Token 成本！"
+        }
+      },
+      {
+        id: "c4",
+        title: "Tool Calling 協定與安全防護欄（Permissions Sandbox）",
+        category: "安全與工具",
+        text: "大模型本質上是一段文字預測引擎，它並不能真正「按鍵盤」。\n當它要執行工具時，是生成符合 **JSON Schema** 規範的結構化指令，由客戶端底層代理（Client Harness）代為執行。\n\n這就涉及至關重要的**安全防線（Permissions Boundary）**：\n• **安全綠燈區（唯讀/驗證）**：查看檔案、搜尋關鍵字、跑測試、靜態代碼檢查。這些可以設定為自動通行（always-proceed），提升流暢度。\n• **危險紅燈區（破壞/資產）**：檔案刪除（rm）、強制作業（git push -f）、涉及金錢或帳單交易、改動資料庫結構。這些**必須保留人類介入確認（Human-in-the-loop）**！",
+        tip: "🚦 信任但要設防：放行快速驗證工具，嚴控破壞性變更，這才是專業 Agent 架構。",
+        quiz: {
+          q: "在設定 Agent 的自動執行權限（Tool Permissions）時，哪一類操作絕對不應該設為無條件全自動放行？",
+          options: [
+            "讀取檔案內容（view_file）與專案搜尋（search_code）",
+            "跑單元測試指令（npm test / pytest）",
+            "未經確認的強制推送到正式生產環境（git push --force production）或清空資料庫",
+            "查看當前目錄清單"
+          ],
+          correct: 2,
+          why: "不可逆、具破壞性或影響生產環境的操作，必須強制保留 Human-in-the-loop 人類授權，防止 Agent 誤判造成災難！"
+        }
+      },
+      {
+        id: "c5",
+        title: "Evaluator-Optimizer 自主修復閉環（Self-Healing Loop）",
+        category: "自動除錯",
+        text: "為什麼一般的「單次生成代碼」成功率只有 60%，而頂級 Agent 卻能高達 90% 以上？\n秘訣在於 **Evaluator-Optimizer 閉環機制**！\n\n**頂級 Agent 的四部曲**：\n1. **Observe（精準觀測）**：讀取錯誤 Traceback，精確鎖定出問題的檔名與行號。\n2. **Hypothesize（提出假說）**：找出根因（例如型態不符、缺少空值檢查）。\n3. **Minimal Patch（最小增量修復）**：用局部替換修改關鍵程式碼，**嚴禁整檔重寫**（避免覆蓋掉原有邏輯與註解）。\n4. **Verify（自我檢驗）**：主動重跑單元測試。測試綠燈才回報成功；若紅燈則吸收新錯誤進入下一輪修正！",
+        tip: "🔄 閉環精神：沒有經過測試驗證的代碼，不叫完成；自己測過並亮綠燈，才算交付。",
+        quiz: {
+          q: "當 Agent 在跑單元測試時遇到 TypeError 報錯，符合專業工程規範的處理順序應該是？",
+          options: [
+            "不管報錯，直接把整個檔案清空從頭隨便寫一遍",
+            "精讀報錯 Traceback 定位行號 ➡️ 分析根因 ➡️ 做出最小補丁 ➡️ 重跑測試驗證直到綠燈",
+            "跟使用者謊稱測試已經全數通過",
+            "直接關閉終端機逃避現實"
+          ],
+          correct: 1,
+          why: "專業的自我修復閉環（Self-Healing Loop）講求最小破壞原則與嚴格的重跑驗證，直到測試完全通過才算交付！"
+        }
+      }
+    ]
+  },
+  codex_master: {
+    id: "codex_master",
+    name: "🚀 Codex 架構・團隊工程級體系",
+    badge: "大師・OpenAI 工程實踐",
+    lessons: [
+      {
+        id: "o1",
+        title: "OpenAI Codex 本機架構：Workspace Awareness 與沙盒運作",
+        category: "底層架構",
+        text: "在 OpenAI 官方發布的 Codex 深度技術分享中，Codex 之所以強大，在於它的 **Workspace Awareness（工作區感知架構）**。\n\n一般聊天 AI 只能看見你貼在對話框的文字，而 Codex 則深度綁定你的本機環境：\n• **本機環境掛載**：即時解析 Git 狀態、分支差異、套件相依性（package.json / pyproject.toml）。\n• **增量補丁（Chunk-based Patching）**：它不會動不動就整檔輸出，而是生成標準 Unified Diff，精確替換 5～10 行程式碼，執行速度快十倍且極少衝突。\n• **沙盒執行安全**：指令在本地或容器沙盒中受控執行，即時攔截異常。",
+        tip: "⚡ 真正的代碼 Agent 不是代碼打字機，而是精確掌控檔案狀態與 Diff 的外科手術刀。",
+        quiz: {
+          q: "Codex 修改大型現有專案程式碼時，為什麼採用「增量補丁（Diff/Chunk Patch）」遠勝於「整檔重寫」？",
+          options: [
+            "因為增量修改能精確鎖定變更點、大幅節省 Token、保留原有架構與註解，且執行極速",
+            "因為整檔重寫耗費的時間太少",
+            "因為 Diff 補丁會把所有變數名稱隨機替換",
+            "因為編輯器不支援超過 100 行的檔案"
+          ],
+          correct: 0,
+          why: "增量補丁（Chunk-based Patching）是工業級代碼代理的基石，能最大程度降低 Token 消耗並避免整檔覆寫造成的邏輯丟失！"
+        }
+      },
+      {
+        id: "o2",
+        title: "團隊 AI 憲法：AGENTS.md 官方規範與實戰撰寫",
+        category: "團隊協同",
+        text: "OpenAI 官方推動的專案級規範標準中，`AGENTS.md` 被譽為 **「AI 憲法」**。\n\n在多人協同或多 Agent 進駐的專案中，新模型進來就像新入職的工程師：如果不給手冊，每個人寫出來的代碼風格、套件安裝方式都五花八門！\n\n**AGENTS.md 必須包含的四大核心要素**：\n1. **專案唯一權威文件指針**（例如 CLAUDE.md）。\n2. **動手前鐵律**（哪些目錄嚴禁全域掃描、哪些操作必須問主人）。\n3. **標準測試與驗證指令**（例如統一跑 pytest 而不是自己瞎寫測試腳本）。\n4. **Commit 格式與身分標記**（誰做的、消耗什麼額度，條理清晰）。",
+        tip: "📜 好憲章省大錢：寫好一份 AGENTS.md，所有進駐的 AI 都會自動遵守規矩，零磨合成本！",
+        quiz: {
+          q: "在專案中建立 AGENTS.md 的最關鍵戰略價值是什麼？",
+          options: [
+            "給不同來源的 AI 夥伴提供統一的工程紀律、權威指針與安全禁區，避免各自為政搞亂專案",
+            "用來增加 GitHub 的 repository 體積",
+            "防止專案被其他人下載",
+            "替代 Python 解譯器"
+          ],
+          correct: 0,
+          why: "AGENTS.md 是 AI Agent 的團隊憲章，能確保不管是 Codex、Claude 還是其他模型進場，都有一致的行為準則與工程紀律！"
+        }
+      },
+      {
+        id: "o3",
+        title: "非同步任務與後台守護（Background Tasks & Reactive Wakeup）",
+        category: "並行調度",
+        text: "傳統的笨 Agent 遇到耗時任務（例如抓取 50 頁網頁、執行 15 分鐘的全套單元測試、編譯大型 C++ 專案），會在終端機原地「死等（Blocking）」或者每秒瘋狂輪詢。\n\n**現代 Codex 採用「Reactive Wakeup（響應式喚醒）」機制**：\n• 任務啟動後，立即送入**背景任務（Background Task）**。\n• 主線程立刻釋放，你跟 Agent 可以繼續討論下一個議題或進行其他工作。\n• 背景任務完成或出現異常時，系統自動發送事件喚醒 Agent（Reactive Wakeup），無縫切回處理！",
+        tip: "⏰ 告別傻等：耗時任務丟背景，主線繼續前進，任務結束自動喚醒處理。",
+        quiz: {
+          q: "當你需要讓 Agent 執行一次需要耗時 10 分鐘的完整資料庫備份與重構驗證時，最佳調度方式是？",
+          options: [
+            "讓 Agent 在終端每秒鐘打字問一次「好了沒」，卡住所有對話",
+            "將任務送入背景非同步執行，主線繼續進行其他工作，完成時透過事件自動喚醒",
+            "直接強制拔掉電源插頭",
+            "將電腦休眠"
+          ],
+          correct: 1,
+          why: "採用背景非同步執行（Background Task）搭配響應式喚醒（Reactive Wakeup），既不阻塞交互流程，又不需要無效輪詢浪費資源！"
+        }
+      },
+      {
+        id: "o4",
+        title: "Cloud Delegation 雲端代理與自動化 PR 工廠",
+        category: "雲端自動化",
+        text: "在 OpenAI 官方展示的「Building faster with Codex」實踐中，展示了革命性的 **Cloud Delegation（雲端指派）** 模式。\n\n你不再需要讓自己的本機電腦 24 小時高負載運轉：\n• **雲端派工**：把規格書直接指派給雲端環境中的 Codex 實例。\n• **自主開 Branch 與測試**：雲端 Codex 在隔離的 Docker 容器中自動拉取分支、建立代碼、跑過 CI 驗證。\n• **自動草擬 PR（Pull Request）**：做完後自動在 GitHub 提出 PR，附上改動詳情、測試日誌與驗收標準。\n工程師只要在手機或網頁上點開 PR、檢查 Review，一鍵 Merge，開發效率成倍飆升！",
+        tip: "🚀 雲端工廠：人類專注於驗收決策（Review & Merge），繁瑣的搬磚與測試全部外包給雲端 Agent。",
+        quiz: {
+          q: "利用雲端 Codex 自動草擬 PR（Pull Request）的模式，對現代軟體團隊最大的價值是什麼？",
+          options: [
+            "讓工程師可以完全不用看程式碼就直接部署",
+            "將撰寫代碼、分支管理與跑測試的繁重苦工自動化，讓工程師聚焦於高層次架構決策與代碼審查",
+            "讓電腦自動發送垃圾郵件給主管",
+            "保證程式碼完全不需要寫測試"
+          ],
+          correct: 1,
+          why: "雲端 PR 自動化將體力活交給 Agent 閉環跑完，讓人類開發者專注於架構把關與 Code Review，大幅提升團隊產能！"
+        }
+      },
+      {
+        id: "o5",
+        title: "多模型混合編隊（Multi-Model Swarm 協同實戰）",
+        category: "終極戰略",
+        text: "沒有任何單一模型是萬能的！真正的頂尖指揮官，懂得組建 **「Multi-Model Swarm（多模型兵團）」**：\n\n• **Claude（Opus / Sonnet）**：高推理、深思熟慮。適合擔任**「總架構師」**，負責需求拆解、系統 Blueprint 設計、複雜邏輯安全把關。\n• **Codex（GPT-5-Codex / 專精模型）**：執行力強、CLI 速度飛快。適合擔任**「工程特工」**，負責快速實作代碼、增量補丁、終端指令狂暴輸出。\n• **Gemini（1.5 / 2.0 / 3.8 Flash）**：吞吐巨量百萬 Context。適合擔任**「知識圖書官」**，負責翻找歷史巨型交接文檔、跨年份日誌分析與多模態截圖比對。\n三軍聯合作戰，才是 AI 時代的終極霸主！",
+        tip: "👑 指揮官心法：知人善任、各取所長。把對的任務交給對的模型，威力放大十倍！",
+        quiz: {
+          q: "專案面臨「需要在 200 萬字歷史交接日誌中定位某條特殊規章，並在當前專案中以最快速度實作出一組乾淨的 CLI 工具代碼」，最佳的多模型搭配是？",
+          options: [
+            "用記憶最小的小模型去硬讀 200 萬字日誌",
+            "由百萬長上下文的 Gemini 負責海量歷史檢索定位 ➡️ 由專精工程實作的 Codex/Claude 負責 CLI 代碼產出",
+            "完全不使用任何 AI 工具，全部人工肉眼手翻",
+            "只用小算盤"
+          ],
+          correct: 1,
+          why: "善用 Gemini 的超長 Context 視窗進行海量檢索，搭配 Codex/Claude 的強大工程代碼能力，正是多模型協同（Multi-Model Swarm）的完美範例！"
+        }
+      }
+    ]
   }
 };
 
