@@ -333,6 +333,24 @@ const CURRICULUM = {
         }
       },
       {
+        id: "c0_managed",
+        title: "🎬 官方前沿架構：Managed Agents 實戰（Rubric 準則 ＆ 拒絕假自信）",
+        category: "官方影片特輯",
+        text: "Anthropic 官方深度座談：《How founders build on Claude Managed Agents》，由頂尖 AI 創辦人分享企業級 Agent 的設計精髓：\n\n1. **拒絕假性自信（寧可留白也不給錯資訊）**：\n   • 如果 AI 幫你準備會議簡報，卻找了同名同姓的「錯的 Tom」，在會議上會造成毀滅性尷尬！\n   • 頂級 Agent 架構採用 **Outcomes 評估機制**：由獨立評估模組把關，若資訊無法百分之百確認來源歸屬，寧可不顯示，也絕不給看似正確的錯誤答案。\n2. **Rubric 評分表與爬山迭代（Hill-climbing）**：\n   • 給 Agent 一份客觀的 **Rubric（驗收評分規準）**（包含事實正確性、排版易讀性、字數精簡度）。\n   • Agent 產出後自己依據 Rubric 評分，未達標就自主重寫修正（Hill-climbing），直到完全滿足標準才放行交給人類！\n3. **雙層 Agent 架構（專職常駐 ＋ 瞭望塔聚合）**：\n   • 底層：為每個專案模組配備一個「專職常駐 Agent」，每天累積專屬脈絡與記憶。\n   • 頂層：設立「Watchtower（瞭望塔 Agent）」，跨模組匯總宏觀報表與全局進度。",
+        tip: "🛡️ 商業級鐵律：用客觀 Rubric 逼 Agent 自我迭代；未經驗證的事實寧可不呈現，也絕不冒險交付！",
+        quiz: {
+          q: "在打造企業級 AI Agent 產品時，面對「可能出錯的幻覺風險」，Anthropic 官方座談中創辦人們一致推薦的核心機制是？",
+          options: [
+            "無條件把所有生成結果直接印出，不管對錯",
+            "建立獨立評估機制與客觀 Rubric 驗收標準，讓 Agent 依規準自主迭代；未經驗證的資訊寧可過濾不展示",
+            "把 AI 伺服器的網路線拔掉",
+            "讓使用者自己承擔所有錯字責任"
+          ],
+          correct: 1,
+          why: "官方指出「錯誤的假自信比不給答案更具毀滅性」。透過獨立 Outcomes Assessor 與 Rubric 評分表進行自主閉環爬山迭代，能最大程度保障產出準確度！"
+        }
+      },
+      {
         id: "c1",
         title: "Anthropic 官方核心架構：Workflows vs Agents 如何抉擇？",
         category: "系統架構",
