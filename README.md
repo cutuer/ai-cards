@@ -9,7 +9,7 @@
 - **隨時隨地**：走 GitHub Pages，出門在外搭車隨時滑，自動保存做題進度。
 - **手機全螢幕 PWA**：可直接加入 iPhone / Android 手機桌面，無網址列全螢幕運行。
 
-## 📚 學習大綱（共 46 課・含 Anthropic ＆ OpenAI 雙官方旗艦全家桶）
+## 📚 學習大綱（共 52 課・集齊 Claude ＋ OpenAI ＋ Gemini 三大霸主官方特訓）
 - **🌱 新手入門・觀念打底**（5 課）：Agent 本質、Context Window 容量、Token 計費、CLI 終端機優勢、無狀態記憶機制。
 - **⚡ 實戰神技・救命日常指令**（5 課）：`/resume` 斷線接關、`/compact` 記憶壓縮、`/clear` 乾淨開局、三段式 Prompt 心法、終端 Log 除錯。
 - **🧠 頂級指揮官・架構與分工**（4 課）：模型長短處分配、多 Agent（Herd）溝通原則、記憶衛星檔不全域掃描、指揮官心態。
@@ -39,6 +39,13 @@
   - 🎬 *Ramp 獨角獸實戰*（One Prompt 實現全棧代碼 ＋ 自動化單元測試閉環交付）
   - 🎬 *ChatGPT Work Data Agent*（語意層直連企業資料庫、從提問到行動計畫全自動化）
   - 核心工程：Workspace Awareness 本機工作區感知、`AGENTS.md` 團隊 AI 憲法、Background Tasks 非同步後台喚醒、Cloud Delegation 雲端 PR 工廠、Multi-Model Swarm 多模型兵團協同。
+- **💎 Gemini 核心・Google 官方實戰特訓**（6 課）：
+  - 🎬 *百萬長上下文實戰*（Needle-in-a-Haystack 大海撈針極限、Context First Task Last 排版）
+  - 🎬 *Context Caching 快取革命*（巨量專案代碼重複查詢砍價 85%、毫秒級極速回應）
+  - 🎬 *原生 Google Search 接地*（即時搜尋索引交叉驗證、附帶點擊來源、零幻覺防線）
+  - 🎬 *原生多模態深度感知*（波形與影格原生直讀、Agentic 影片時間軸秒級導航）
+  - 🎬 *沙盒 Code Execution*（拒絕大腦硬算，自主撰寫 Python 確定性運算消滅數據偏差）
+  - 🎬 *官方 Interactions API 換代*（統一狀態流、嚴格接地 System Instructions 約束）
 
 ## 📱 手機「加入主畫面」教學
 1. 用手機 Safari（iOS）或 Chrome（Android）開啟網址。

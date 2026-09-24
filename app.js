@@ -862,6 +862,122 @@ const CURRICULUM = {
       }
     ]
   }
+,
+  gemini_pro: {
+    id: "gemini_pro",
+    name: "💎 Gemini・Google 官方架構",
+    badge: "旗艦・Google DeepMind 實戰",
+    lessons: [
+      {
+        id: "g_long_context",
+        title: "🎬 百萬長上下文實戰：Needle-in-a-Haystack 大海撈針極限",
+        category: "Google 官方架構",
+        text: "Google DeepMind 官方研究中最震撼世界的殺手級能力，正是 Gemini 的 **百萬至千萬級超長 Context 視窗**！\n\n**官方大海撈針（Needle-in-a-Haystack）極限實測**：\n• 在 100 萬至 200 萬 Token（相當於 70 萬行代碼或整部百科全書）的龐大記憶中，隨機埋入一句毫無關聯的秘密，Gemini 的檢索召回率仍高達 **99.7%**！\n\n**官方結構化提示詞黃金排版**：\n1. **Context First（海量資料放最前）**：把 50 萬字歷史交接單、專案代碼、長篇日誌全部傾倒在最前面。\n2. **Task Last（具體指令放最後）**：把關鍵提問與產出格式約束放在最後一段，模型會藉由注意力錨定，精準穿透海量上下文直達核心！",
+        tip: "🌊 官方口訣：巨量資料在前當背景，精確任務在後當錨點（Context First, Task Last），百萬文本輕鬆穿透！",
+        quiz: {
+          q: "當你需要讓 Gemini 對包含數百份歷史交接單（約 60 萬字）的專案進行跨年度關鍵決策檢索時，官方最推薦的提示詞排版順序是？",
+          options: [
+            "把任務問題放在最前面，隨便把資料切成碎片分批發送",
+            "採用 Context First, Task Last：海量背景文檔置於最前，具體查詢問題與輸出格式嚴格放在最末尾進行注意力錨定",
+            "把所有文字全部刪除只留標題",
+            "故意在文字中間插入大量亂碼"
+          ],
+          correct: 1,
+          why: "Google 官方工程實踐證明：長上下文處理時，將海量參考數據置頂、任務指令置底（Context First, Task Last），能顯著強化模型的末端注意力，避免關鍵需求被浩瀚數據淹沒！"
+        }
+      },
+      {
+        id: "g_caching",
+        title: "🎬 Context Caching 快取：巨量資料重複查詢砍價 85%",
+        category: "成本與效能",
+        text: "如果你建立了一個內部代碼助手，需要團隊每天對 50 萬字的專案代碼反覆提問，每次都把 50 萬字重新發送計費，荷包會瞬間被吃空！\n\n**Google 官方原生解決方案：Context Caching（上下文快取）**：\n• **快取一次，終身受用**：將龐大的專案代碼庫或歷史財務數據庫寫入 Gemini 雲端快取槽。\n• **成本狂降 75%～85%**：後續所有提問直接調用快取記憶，輸入 Token 費用直接降至原價的 15%，大幅減輕財務負擔！\n• **延遲縮短 80%**：無需每次重新解析百萬 Token，首字回覆時間從數十秒縮短至毫秒級，體驗極度絲滑！",
+        tip: "💰 官方算盤：靜態大型知識庫一定要掛 Context Caching；一次載入，反覆查詢省下 85% 預算！",
+        quiz: {
+          q: "在架構長期運行的專案代碼問答系統時，面對龐大且相對固定的專案代碼庫，降低 API 帳單的最核心 Google 官方手段是？",
+          options: [
+            "每天叫工程師手動把代碼背起來",
+            "利用 Gemini 原生 Context Caching（上下文快取），將固定的龐大上下文快取在雲端，後續查詢省下高達 85% 的輸入成本",
+            "把電腦螢幕關掉",
+            "只允許工程師在凌晨提問"
+          ],
+          correct: 1,
+          why: "Context Caching 是 Google 針對長上下文專案設計的成本神器，透過快取固定上下文，大幅削減重複傳輸的費用與延遲！"
+        }
+      },
+      {
+        id: "g_grounding",
+        title: "🎬 原生 Google Search 接地：即時搜尋與零幻覺的事實防線",
+        category: "真實性與防幻覺",
+        text: "傳統大模型最怕遇到「今天剛發生的新聞、即時股價、突發法規變更」，往往只能憑記憶瞎猜（幻覺）。\n\n**Gemini 獨步全球的原生利器：Grounding with Google Search**：\n• **背靠全球最大搜尋引擎**：無需自行撰寫繁瑣的爬蟲或對接第三方 API，在呼叫 Gemini 時開啟 `google_search` 工具即可！\n• **自動事實交叉核驗**：模型生成每一句話時，由後台即時比對 Google 最新網頁索引進行驗證。\n• **附帶可點擊來源（Citations）**：回答中自動標註引用來源連結，點擊即可直達官方原始新聞，實現商業級「零幻覺、百分之百可追溯」！",
+        tip: "🔍 官方殺手鐧：需要即時行情與突發資訊時，啟動 Google Search 接地，事實精確度直達 100%！",
+        quiz: {
+          q: "當專案需要精準判讀「美股今晚剛公布的非農就業數據與突發市場反應」時，防止大模型產生時間落差幻覺的最佳手段是？",
+          options: [
+            "啟用 Gemini 原生 Grounding with Google Search，由模型即時檢索最新網頁索引並附帶驗證來源",
+            "叫模型自行猜測最可能的數字",
+            "把電腦系統時間改到明年",
+            "不給任何輸入讓模型自由發揮"
+          ],
+          correct: 0,
+          why: "Gemini 深度整合了 Google 搜尋索引，開啟 Search Grounding 能即時同步現實世界最新數據，並提供完整的溯源引用！"
+        }
+      },
+      {
+        id: "g_multimodal",
+        title: "🎬 原生多模態：影格直讀與 Agentic 影片時間軸導航",
+        category: "多模態感知",
+        text: "很多外掛型 AI 在看影片或聽錄音時，需要先經過外部 STT（語音轉文字）或逐影格 OCR，資訊在轉換過程中遺失大半。\n\n**Gemini 的本質：Native Multimodal（原生多模態）**：\n• **直接理解波形與影格**：Gemini 大腦天生就能直接吃入音訊語氣、音調起伏、影片畫面細節，無需中途轉譯！\n• **Agentic 影片時間軸導航**：在面對長達 1 小時的教學錄影時，Gemini 具備主動導航能力，能自主定位出「第 34 分 12 秒處，講師切換了伺服器配置畫面」，精確抓取畫面中的微小報錯文字！",
+        tip: "🎥 官方黑科技：音訊、畫面、代碼三位一體；長影片不需人工快轉，交給 Gemini 秒級定位！",
+        quiz: {
+          q: "在分析一段長達 45 分鐘的軟體崩潰螢幕錄影時，Gemini 原生多模態能力相比傳統工具的最大優勢是？",
+          options: [
+            "能將影片檔案直接壓縮成 MP3 音樂",
+            "原生直讀連續影格畫面與音訊細節，具備時間軸自主導航能力，精確定位問題發生的關鍵秒數與畫面報錯",
+            "把影片色彩強制轉為黑白",
+            "只能讀取影片的檔名"
+          ],
+          correct: 1,
+          why: "Gemini 是原生多模態模型，無需中途降低精度的文字轉譯，能直接跨時間軸理解畫面動態與音訊脈絡！"
+        }
+      },
+      {
+        id: "g_code_exec",
+        title: "🎬 沙盒 Code Execution：把數學與資料運算交給 Python",
+        category: "精準運算閉環",
+        text: "大語言模型的本質是機率文本預測，讓它在腦袋裡做「七位數複雜乘除法或蒙地卡羅模擬」，非常容易翻車出現微小偏差。\n\n**Google 官方鐵律：不靠大腦硬算，靠 Code Execution！**\n• **雲端安全沙盒**：Gemini 原生內建 Python 執行環境。\n• **自主撰寫與執行代碼**：當遇到數據分析、複雜財務折現率、統計回測時，Gemini 自動在沙盒中寫好 Python 腳本並立即執行。\n• **回傳確定性結果**：將代碼真實運算出的數值回填到答案中，保證數學與統計數據 **100% 絕對精確**，徹底消滅計算誤差！",
+        tip: "🧮 官方準則：文字推理靠大腦，數值計算交給沙盒 Python；雙劍合璧，數據零誤差！",
+        quiz: {
+          q: "在處理涉及高精確度財務模型試算或大數據矩陣統計時，如何確保 Gemini 回覆的數值具備 100% 數學精準度？",
+          options: [
+            "在 Prompt 裡多加三個驚嘆號",
+            "啟用 Gemini 原生 Code Execution（代碼執行），讓模型自主撰寫 Python 代碼在安全沙盒中執行並回填運算結果",
+            "人工拿計算機自己算一遍再餵給它",
+            "故意輸入錯誤的公式"
+          ],
+          correct: 1,
+          why: "啟用 Code Execution 能讓模型在背後直接調用 Python 直譯器計算確定性結果，從根源杜絕大模型機率生成帶來的數值偏差！"
+        }
+      },
+      {
+        id: "g_interactions",
+        title: "🎬 官方換代：Interactions API ＆ 嚴格接地 System Instructions",
+        category: "Google 官方標準",
+        text: "Google 2026 全面推動新一代標準：**Interactions API**（正式取代過時的 generateContent）！\n\n**專為 Agentic 狀態流打造的全新體驗**：\n• **統一對話狀態管理**：原生整合 Messages、Tool Outputs 與結構化 Schema，呼叫流程極度精簡。\n• **嚴格接地指令（Strict Grounding Instructions）**：\n  在 System Instructions 中明確設定：「*You are a strictly grounded assistant. Rely ONLY on the provided User Context.*」\n  這會給予模型強烈的約束力，徹底禁止它引用未經證實的外部猜測，將它約束為專案最忠誠、最守紀律的執行兵！",
+        tip: "🏛️ 架構升級：告別舊版 generateContent，全面採用 Interactions API ＋ 嚴格接地指令塑造專業 Agent！",
+        quiz: {
+          q: "在建構嚴謹的專案內部文檔檢索 Agent 時，如何透過 Google 官方推薦的 System Instructions 徹底杜絕模型隨意腦補？",
+          options: [
+            "加入明確的嚴格接地約束（Strict Grounding Constraint），命令模型僅能依據給定上下文事實回答，嚴禁調用外部常識臆測",
+            "完全不寫任何 System Instructions",
+            "叫模型盡量發揮豐富的想像力",
+            "每天更換一次模型名稱"
+          ],
+          correct: 0,
+          why: "Google 官方指出，在 System Instructions 中植入嚴格接地約束（Strict Grounding），能有效壓制模型的自由臆測傾向，確保答案 100% 根植於提供的事實！"
+        }
+      }
+    ]
+  }
 };
 
 // 狀態管理
