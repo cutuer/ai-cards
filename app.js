@@ -279,6 +279,24 @@ const CURRICULUM = {
     badge: "高階・Anthropic 官方研究",
     lessons: [
       {
+        id: "c0",
+        title: "🎬 官方最新直擊：Claude Opus 5.5 主力駕馭術（Effort 節奏 ＆ 額度省 40%）",
+        category: "官方影片特輯",
+        text: "Anthropic 官方頻道最新釋出的旗艦教學：《Using Claude Opus 5.5 as your daily driver》。\n\n**官方公布的實測升級核心數據**：\n• **速度提升 30%、任務成本便宜 40%**：每 Token 降價 20%，且用更少步驟就能搞定。\n• **額度耐力增加 25%**：同為 5 小時速率限制，舊版 Opus 5 耗掉 6%，Opus 5.5 只消耗 4%！\n• **精煉匯報（Concise Reporting）**：Opus 5.5 一頁螢幕報告完畢（「改了什麼、跑了什麼測試、踩到什麼坑、唯一要問你什麼」），不再滿螢幕廢話。\n\n**官方 Effort（思考程度）配置心法**：\n1. **平日鎖定 medium effort**：日常 80% 的工作（單模組、局部除錯）用 medium 就夠快又省。\n2. **跨檔案重構才切 high effort**：當改動牽涉前後端、Serializer、連鎖調用鏈時，切到 high 讓它深度追蹤依賴並主動補測試；改完後**立刻切回 medium**！\n3. **唯讀子代理（Subagent）降配**：負責探索與搜檔案的 Subagent 設為 Sonnet 或 Haiku，不要全用頂級大腦浪費錢。",
+        tip: "🎯 官方口訣：日常 medium 跑得飛快，跨檔案連鎖改動切 high 追蹤，做完切回 medium，唯讀 Subagent 降配 Sonnet！",
+        quiz: {
+          q: "根據 Anthropic 官方教學，當你準備進行一項涉及前後端、序列化器與多檔案調用鏈的「跨全專案連鎖改動」時，最佳的 Effort 節奏是？",
+          options: [
+            "一律用 minimum，並叫 AI 自己猜測其他檔案的位置",
+            "臨時切換到 high effort 讓模型深度追蹤整條調用鏈並補齊測試，完成後立刻切回 medium 保持額度彈性",
+            "把唯讀搜尋的 Subagent 也全部強制開到 high Opus",
+            "把單元測試全刪掉"
+          ],
+          correct: 1,
+          why: "Anthropic 官方指出：日常以 medium 為主力；遇到跨檔案/跨全專案的連鎖資料鏈時，升級至 high effort 進行深度追蹤與自動加測試，改完立刻降回 medium，是最省額度且最穩妥的操作節奏！"
+        }
+      },
+      {
         id: "c1",
         title: "Anthropic 官方核心架構：Workflows vs Agents 如何抉擇？",
         category: "系統架構",
