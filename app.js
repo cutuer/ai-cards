@@ -680,8 +680,97 @@ const CURRICULUM = {
     id: "codex_master",
     name: "🚀 Codex 架構・團隊工程級體系",
     badge: "大師・OpenAI 工程實踐",
-    lessons: [
+    lessons: [      {
+        id: "o_astra",
+        title: "🎬 官方最新旗艦：GPT-6 Astra 世代級躍升與全自主工作流",
+        category: "OpenAI 官方旗艦",
+        text: "OpenAI 官方最新發布世代級旗艦模型：《GPT-6 Astra for developers》：\n\n**三大跨時代核心突破**：\n• **滿分級推理（Saturating Benchmarks）**：在極限數學（FrontierMath Tier 4）與抽象推理（ARC-AGI-3）基準上全面打滿，具備極強的長鏈條邏輯推理。\n• **全自主電腦操作（Computer Use）**：不僅能在終端跑指令，還能直接操控瀏覽器、跨應用程式完成複雜多日工作流。\n• **首個「Critical 關鍵級」資安評估**：被 OpenAI 列為最高安全能力級別，具備自主發現並修補未知零日漏洞（0-day）的實戰能力！\n\n**開發者調用架構**：API 模型標記為 `gpt-6-astra`，支援 Zero Data Retention（零資料留存），保障企業級資料絕對隱私。",
+        tip: "⚡ 官方定位：GPT-6 Astra 從「代碼助手」進化為「具備頂級推論與資安審計能力的數位員工」！",
+        quiz: {
+          q: "根據 OpenAI 官方發布，GPT-6 Astra 在架構能力上最重要的質變是什麼？",
+          options: [
+            "只是把輸出的字體改為粗體",
+            "在極限推理（FrontierMath/ARC-AGI）飽和突破，具備 Critical 級自主資安防護與跨天自主多步驟工作流執行力",
+            "強制取消所有終端機命令權限",
+            "每週日自動斷線維護"
+          ],
+          correct: 1,
+          why: "官方實測指出，GPT-6 Astra 突破了過往模型無法處理長鏈條模糊任務的瓶頸，具備自主發現漏洞與跨日多步驟閉環能力！"
+        }
+      },
       {
+        id: "o_jump",
+        title: "🎬 頂級量化 Jump Trading 實戰：用 Astra 征服最模糊的 Alpha Research",
+        category: "量化金融實戰",
+        text: "華爾街頂尖高頻量化巨頭 Jump Trading 親自展示如何將 GPT-6 Astra 深度融入量化研發體系：\n\n**告別死板代碼補全，進軍 Alpha Research**：\n• **處理極度模糊的任務（Ambiguous Tasks）**：過去傳統腳本只能執行確定性指令；Jump Trading 讓 Astra 處理「未定義明確邊界的跨日研究與跨異質數據流對比」。\n• **自主建立量化微服務**：Agent 自動從粗略的交易假說出發，自主抓取市場歷史數據、構建回測微服務、評估因子顯著性。\n• **人機協同新範式**：量化研究員不再是自己一行行手寫底層 C++/Python 數據管道，而是充當主審，由 Astra 在背景持續運算與探勘潛在 Alpha 信號！",
+        tip: "📈 量化心法：不要用 AI 當打字機，用它來處理「模糊探索與跨數據流的因子探勘」！",
+        quiz: {
+          q: "華爾街量化巨頭 Jump Trading 在應用 GPT-6 Astra 時，最核心的範式轉移是什麼？",
+          options: [
+            "只讓 AI 幫忙檢查程式碼的縮排與空格",
+            "將 Agent 指向邊界模糊、跨多日的複雜 Alpha Research 與因子微服務建置，由 AI 承擔繁重的跨數據流探勘",
+            "把所有伺服器都換成筆記型電腦",
+            "完全禁止 AI 讀取任何歷史市場數據"
+          ],
+          correct: 1,
+          why: "Jump Trading 指出，現代頂級量化的關鍵在於利用高推理 Agent 承接傳統腳本無法處理的「高度模糊與跨多數據源的深度研究探索」！"
+        }
+      },
+      {
+        id: "o_agents_api",
+        title: "🎬 官方架構換代：Responses API ＆ Agents SDK 三大支柱",
+        category: "OpenAI 官方架構",
+        text: "OpenAI 官方正式宣告：舊版 Assistants API 即將退役（2026/8/26 關閉），全面由 **Responses API ＋ Agents SDK** 接棒！\n\n**三大全新架構支柱**：\n1. **Responses API（輕量核心）**：結合 Chat 的極速與原生的內建工具（Web Search、File Search、Computer Use、Remote MCP），淘汰複雜的 Thread/Run 迴圈，改用統一的 Item 設計！\n2. **Multi-Agent Handoffs（多代理交接）**：Agents SDK 原生支援代理之間的智慧交接（Handoff），例如：客服 Agent 判定需要退費，平滑將上下文交接給財務 Agent。\n3. **Guardrails ＆ Tracing（安全與可觀測性）**：內建輸入輸出安全檢查（Guardrails）與完整的可觀測性鏈條（Tracing），每一步除錯都有跡可循！",
+        tip: "🏛️ 架構標準：放棄過時的 Thread/Run 模式，全面遷移至 Responses API ＋ Agents SDK 的 Handoff 體系！",
+        quiz: {
+          q: "OpenAI 全新推出的 Agents SDK 中，用來解決「不同專長 AI 夥伴之間無縫移交控制權」的核心機制是什麼？",
+          options: [
+            "Multi-Agent Handoffs（多代理智慧交接）",
+            "手動複製文字到另一個視窗",
+            "把電腦重新開機",
+            "使用藍牙傳輸檔案"
+          ],
+          correct: 0,
+          why: "Agents SDK 原生提供了 Handoffs 機制，能讓不同專業領域的 Agent 在保持上下文完整的前提下，平滑轉移任務控制權！"
+        }
+      },
+      {
+        id: "o_ramp",
+        title: "🎬 Ramp 獨角獸實戰：One Prompt 建置全棧功能與測試閉環",
+        category: "工程自動化",
+        text: "Fintech 獨角獸 Ramp 工程團隊在《One Prompt. A Feature Built and Tested》中展示了令人震撼的交付速度：\n\n**從一個 Prompt 到完整功能上線**：\n• **全棧聯動（Full-Stack Orchestration）**：給予一條業務需求描述，Agent 自主修改前端 React 元件、後端 API 路由與資料庫 Migration。\n• **自主測試閉環（Automated Test Suite）**：Agent 改完代碼後，主動撰寫對應的單元測試與端到端（E2E）測試，並在本機 Docker 沙盒中跑通全部測試。\n• **工程師的角色**：工程師不再當搬磚工，而是站在 Code Review 的高位，檢查 Diff、確認資安規範、一鍵 Merge，開發週期從數天壓縮至數十分鐘！",
+        tip: "⚡ 交付奇蹟：真正的 AI 工程不是寫幾行代碼，而是「代碼 ＋ 測試 ＋ 遷移腳本」一次全套驗收！",
+        quiz: {
+          q: "Ramp 工程團隊展示的「One Prompt 全棧閉環」模式中，工程師最核心的工作轉變為？",
+          options: [
+            "自己重新手寫全部的單元測試",
+            "站在架構審核（Code Review）的高位，把關 Agent 自動產出的代碼、測試與資料庫遷移，進行最終驗收決策",
+            "每天盯著螢幕不說話",
+            "禁止 Agent 跑任何自動化測試"
+          ],
+          correct: 1,
+          why: "Ramp 示範了現代 AI-native 團隊的典範：Agent 閉環完成代碼實作與測試撰寫，人類工程師專注於架構把關與驗收審核！"
+        }
+      },
+      {
+        id: "o_data_agent",
+        title: "🎬 ChatGPT Work 資料代理：語意層直連資料庫的自動決策",
+        category: "企業級資料架構",
+        text: "OpenAI 官方專題《Meet the Data Agent in ChatGPT Work》揭開了企業級資料分析的終極形態：\n\n**擺脫傳統手動撈 SQL 與匯出 Excel 的痛苦**：\n• **語意層直連（Semantic Layer Grounding）**：Data Agent 深度掛載企業的 Semantic Layer（語意層），徹底理解公司各項財務與業務指標的真實公式定義，不再瞎猜 SQL 欄位！\n• **業務問題秒變動態儀表板**：主管只需打字問「上季各板塊留存率如何？」，Agent 自動跑查詢、交叉驗證、產出互動式圖表。\n• **從數據直達行動計畫（Action Plan）**：不僅給出圖表，還主動分析異常波動作因，並為團隊自動草擬出具備優先級的待辦行動計畫！",
+        tip: "📊 數據革命：掛載語意層防止算錯公式；從提問到圖表、到下一步行動計畫，全自動閉環！",
+        quiz: {
+          q: "在 ChatGPT Work Data Agent 架構中，為什麼「掛載 Semantic Layer（語意層）」是確保數據分析正確性的關鍵？",
+          options: [
+            "因為語意層能確保圖表的背景顏色是藍色的",
+            "語意層明確定義了企業指標的真實計算公式與欄位關係，防止大模型自行臆測 SQL 邏輯而產出錯誤分析",
+            "為了讓資料庫查詢速度變慢",
+            "防止任何人查看財務報表"
+          ],
+          correct: 1,
+          why: "Semantic Layer 是企業指標的唯一權威標準，掛載語意層能徹底消除模型猜測欄位名稱所引發的計算錯誤！"
+        }
+      },
+{
         id: "o1",
         title: "OpenAI Codex 本機架構：Workspace Awareness 與沙盒運作",
         category: "底層架構",

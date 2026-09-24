@@ -9,11 +9,11 @@
 - **隨時隨地**：走 GitHub Pages，出門在外搭車隨時滑，自動保存做題進度。
 - **手機全螢幕 PWA**：可直接加入 iPhone / Android 手機桌面，無網址列全螢幕運行。
 
-## 📚 學習大綱（共 41 課・含 17 部 YouTube 官方旗艦特輯）
+## 📚 學習大綱（共 46 課・含 Anthropic ＆ OpenAI 雙官方旗艦全家桶）
 - **🌱 新手入門・觀念打底**（5 課）：Agent 本質、Context Window 容量、Token 計費、CLI 終端機優勢、無狀態記憶機制。
 - **⚡ 實戰神技・救命日常指令**（5 課）：`/resume` 斷線接關、`/compact` 記憶壓縮、`/clear` 乾淨開局、三段式 Prompt 心法、終端 Log 除錯。
 - **🧠 頂級指揮官・架構與分工**（4 課）：模型長短處分配、多 Agent（Herd）溝通原則、記憶衛星檔不全域掃描、指揮官心態。
-- **🔥 Claude 進階・官方 YouTube 旗艦實戰特訓**（19 課）：
+- **🔥 Claude 進階・官方 YouTube 旗艦實戰特訓**（22 課）：
   - 🎬 *Using Claude Opus 5.5 as your daily driver*（主力駕馭術 ＆ 額度省 40%）
   - 🎬 *How the Claude Code team uses Claude Code*（團隊 4 大工作流演進）
   - 🎬 *Which Claude model should you use?*（官方三大成本乘數選型指南）
@@ -28,8 +28,17 @@
   - 🎬 *Using Claude Code Remote Control*（遠端接力控制與多裝置互聯）
   - 🎬 *The prompting playbook*（負向約束與三層提示詞心法）
   - 🎬 *Agents that remember*（三層動態記憶與夜間自省 Reflection 架構）
+  - 🎬 *Chat 與 Cowork 融合*（動態自適應調度、All-in-one-conversation）
+  - 🎬 *Replit 副總裁百萬級評估體系*（VibeBench ＋ Telescope 軌跡分群、警惕 Slop on slop）
+  - 🎬 *自訂 DSL 鋼鐵防線*（靜態編譯期校驗、高合規可審計架構）
   - 系統架構：Workflows vs Agents、Subagents 隔離體系、Context Hygiene、Permissions、Evaluator-Optimizer 閉環。
-- **🚀 Codex 架構・團隊工程級體系**（5 課）：Workspace Awareness 本機感知、`AGENTS.md` 團隊憲法、Background Tasks 非同步後台、Cloud Delegation 雲端 PR 工廠、Multi-Model Swarm 多模型兵團。
+- **🚀 Codex ＆ OpenAI 架構・團隊工程級體系**（10 課）：
+  - 🎬 *GPT-6 Astra 官方最新旗艦*（世代級躍升、Critical 級資安審計與全自主電腦操作）
+  - 🎬 *Jump Trading 頂級量化巨頭實戰*（用 Astra 征服最模糊的 Alpha Research 與因子微服務）
+  - 🎬 *OpenAI 官方架構換代*（Responses API ＆ Agents SDK 三大支柱、Handoffs 協同）
+  - 🎬 *Ramp 獨角獸實戰*（One Prompt 實現全棧代碼 ＋ 自動化單元測試閉環交付）
+  - 🎬 *ChatGPT Work Data Agent*（語意層直連企業資料庫、從提問到行動計畫全自動化）
+  - 核心工程：Workspace Awareness 本機工作區感知、`AGENTS.md` 團隊 AI 憲法、Background Tasks 非同步後台喚醒、Cloud Delegation 雲端 PR 工廠、Multi-Model Swarm 多模型兵團協同。
 
 ## 📱 手機「加入主畫面」教學
 1. 用手機 Safari（iOS）或 Chrome（Android）開啟網址。
