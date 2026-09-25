@@ -273,405 +273,904 @@ const CURRICULUM = {
       }
     ]
   },
-  claude_pro: {
-    id: "claude_pro",
-    name: "🔥 Claude 進階・官方實戰特訓",
-    badge: "高階・Anthropic 官方研究",
-    lessons: [
+  yt_code: {
+    "id": "yt_code",
+    "name": "📺 Claude Code・官方頻道字幕版",
+    "badge": "官方字幕實證",
+    "lessons": [
       {
-        id: "c0",
-        title: "🎬 官方最新直擊：Claude Opus 5.5 主力駕馭術（Effort 節奏 ＆ 額度省 40%）",
-        category: "官方影片特輯",
-        text: "Anthropic 官方頻道最新釋出的旗艦教學：《Using Claude Opus 5.5 as your daily driver》。\n\n**官方公布的實測升級核心數據**：\n• **速度提升 30%、任務成本便宜 40%**：每 Token 降價 20%，且用更少步驟就能搞定。\n• **額度耐力增加 25%**：同為 5 小時速率限制，舊版 Opus 5 耗掉 6%，Opus 5.5 只消耗 4%！\n• **精煉匯報（Concise Reporting）**：Opus 5.5 一頁螢幕報告完畢（「改了什麼、跑了什麼測試、踩到什麼坑、唯一要問你什麼」），不再滿螢幕廢話。\n\n**官方 Effort（思考程度）配置心法**：\n1. **平日鎖定 medium effort**：日常 80% 的工作（單模組、局部除錯）用 medium 就夠快又省。\n2. **跨檔案重構才切 high effort**：當改動牽涉前後端、Serializer、連鎖調用鏈時，切到 high 讓它深度追蹤依賴並主動補測試；改完後**立刻切回 medium**！\n3. **唯讀子代理（Subagent）降配**：負責探索與搜檔案的 Subagent 設為 Sonnet 或 Haiku，不要全用頂級大腦浪費錢。",
-        tip: "🎯 官方口訣：日常 medium 跑得飛快，跨檔案連鎖改動切 high 追蹤，做完切回 medium，唯讀 Subagent 降配 Sonnet！",
-        quiz: {
-          q: "根據 Anthropic 官方教學，當你準備進行一項涉及前後端、序列化器與多檔案調用鏈的「跨全專案連鎖改動」時，最佳的 Effort 節奏是？",
-          options: [
-            "一律用 minimum，並叫 AI 自己猜測其他檔案的位置",
-            "臨時切換到 high effort 讓模型深度追蹤整條調用鏈並補齊測試，完成後立刻切回 medium 保持額度彈性",
-            "把唯讀搜尋的 Subagent 也全部強制開到 high Opus",
-            "把單元測試全刪掉"
+        "id": "yt_Hth_tLaC2j8",
+        "title": "🎬 回顧 Claude Code 的這一年",
+        "category": "Claude Code",
+        "text": "<b>團隊成員回顧 Claude Code 上線一年來的變化，並分享 verification、auto mode、routines 等用法</b><br>▸ <a href=\"https://www.youtube.com/watch?v=Hth_tLaC2j8&t=31s\" target=\"_blank\">00:31</a> 最重要的觀念：Claude 每次犯錯時，不要只叫它換個做法，而是要它寫進 CLAUDE.md 或做成 skill，這樣 Claude 就能一直跑下去<br>▸ <a href=\"https://www.youtube.com/watch?v=Hth_tLaC2j8&t=62s\" target=\"_blank\">01:02</a> 對 agent 來說，verification 不只是 unit test、lint 或 type check，而是 agent 能不能自己把東西跑起來。例如有個 desktop development skill，會讓 Claude 啟動本機 desktop app，再用 computer use 點來點去測試<br>▸ <a href=\"https://www.youtube.com/watch?v=Hth_tLaC2j8&t=274s\" target=\"_blank\">04:34</a> Routines：有位工程師設定 routine 監看 voice mode 相關的 ticket、GitHub issue 和 bug report，讓 Claude 主動修好並發 PR；另一個 routine 專門處理超過五小時沒人回應的 bug report<br>▸ <a href=\"https://www.youtube.com/watch?v=Hth_tLaC2j8&t=460s\" target=\"_blank\">07:40</a> Auto mode 會把權限請求交給另一個模型做安全檢查。人在 99% 的請求都按同意時，看久了眼睛會放空，所以他們認為 auto mode 比逐一閱讀 permission prompt 更安全<br>▸ <a href=\"https://www.youtube.com/watch?v=Hth_tLaC2j8&t=521s\" target=\"_blank\">08:41</a> 開發 auto mode 時，團隊蒐集了數千份 transcript 讓它判斷安全與否，還請 red teamer 和內部團隊嘗試 prompt inject，再用這些結果做成 eval 來改進 auto mode<br>▸ <a href=\"https://www.youtube.com/watch?v=Hth_tLaC2j8&t=647s\" target=\"_blank\">10:47</a> 講者認為兩次大躍進是：先從自己寫 source code 變成跟 agent 對話；現在則變成跟 loop 或 routine 對話，由它們替你 prompt Claude<br>▸ <a href=\"https://www.youtube.com/watch?v=Hth_tLaC2j8&t=985s\" target=\"_blank\">16:25</a> Context 觀念：現在的模型只需要最精簡的 system prompt 和最少的工具，讓模型自己想辦法把 context 拉進來；給太多 context 就像在 micromanage\n\n📘 術語<br><b>CLAUDE.md</b>（CLAUDE.md 設定檔）：Claude 犯錯時，要它把正確做法寫進這個檔案，下次就不會再錯<br><b>auto mode</b>（自動模式）：把權限請求交給另一個模型做安全檢查，可疑的指令會被拒絕，之後可以再手動允許<br><b>routines</b>（例行任務）：持續監看 ticket 或 bug report，自動修好並發 PR 通知你；也能 babysit 每個 PR<br><b>remote control</b>（遠端控制）：在電腦上啟動 agent 後，可以用手機遠端連進去查看進度，也能再開新的 agent<br><b>verification</b>（驗證）：對 agent 而言，重點不是 unit test 或 lint，而是 agent 能不能自己把東西跑起來\n\n📺 <a href=\"https://www.youtube.com/watch?v=Hth_tLaC2j8\" target=\"_blank\">Reflecting on a year of Claude Code</a>（2026/06/08 · 18 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片中，講者為什麼不再使用 plan mode？",
+          "options": [
+            "plan mode 只支援 desktop app",
+            "較新的模型已經不需要 planning step",
+            "plan mode 已經從 Claude Code 移除",
+            "plan mode 容易被 prompt injection 攻擊"
           ],
-          correct: 1,
-          why: "Anthropic 官方指出：日常以 medium 為主力；遇到跨檔案/跨全專案的連鎖資料鏈時，升級至 high effort 進行深度追蹤與自動加測試，改完立刻降回 medium，是最省額度且最穩妥的操作節奏！"
+          "correct": 1,
+          "why": "[06:38] 講者說改用 auto mode，因為 newer models don't actually need like a planning step anymore"
         }
       },
       {
-        id: "c0_team",
-        title: "🎬 官方團隊深度內幕：Claude Code 開發團隊的 4 大工作流演進",
-        category: "官方影片特輯",
-        text: "Anthropic 官方頻道發布訪談：《How the Claude Code team uses Claude Code》。由打造 Claude Code 的核心工程師親自揭露內部工作流的進化史：\n\n1. **70/20 法則（從微觀監工到目標宏觀導向）**：\n   • 以前工程師像監工一樣盯著每一次 Tool Call、逐次按確認。\n   • 現在團隊 **70%～80% 的工作全交由 Agent 自主運行**，工程師只給「巨觀 Goal（清晰目標與驗收標準）」，僅留 20% 的微調才在終端 TUI 親自介入。\n2. **擺脫過期的思維拐杖（To-do Lists 的退役）**：\n   • 早期模型缺乏長時記憶，需要靠嚴格的 To-do list 約束；\n   • 隨著底層推理跨越，過度僵化的清單反而限制發揮，取而代之的是靈活的「狀態回顧與自主探索」。\n3. **從本機筆電走向雲端常態循環（Loops & Routines）**：\n   • 筆電闔上就斷線是最大的瓶頸。團隊已全面將 Agent 移至雲端容器常態運行。\n   • 實現 **Routines（日常自動循環）**：例如設定 Agent 每天自動撈取回饋日誌、分群優先級，並自動對高信心問題修復且提交 PR。\n4. **互動工具的飛躍（從文字提問到 Artifacts）**：\n   • 從早期的純文字問答，進化到直接生成包含圖表、UI Mockup 與結構化方案的 Artifacts，讓決策一目了然。",
-        tip: "🚀 官方心法：給予大目標（Goal）＋驗收條件，讓 Agent 自由調度；常態重複的維護工作交給雲端常駐 Loops！",
-        quiz: {
-          q: "根據 Claude Code 核心團隊的內部工程實踐，當你想讓 Agent 發揮最大產能時，現代高階工程師的最主要角色定位是？",
-          options: [
-            "每一秒都死盯著終端，手動批准每一個工具呼叫與每一行字元",
-            "從微觀調度退後一步：定義清晰的巨觀目標（Goal）與驗證條件，70%~80% 放手讓 Agent 自主閉環完成",
-            "完全不給 AI 任何指示，讓它隨意清空硬碟",
-            "禁止 Agent 使用任何雲端容器或常態背景任務"
+        "id": "yt_IlqJqcl8ONE",
+        "title": "🎬 我們在 Anthropic 怎麼用 Claude Code",
+        "category": "Claude Code",
+        "text": "<b>讓 Claude 訪談你釐清需求、用 HTML 取代 markdown 規格，並把驗證內建在產出物裡</b><br>▸ <a href=\"https://www.youtube.com/watch?v=IlqJqcl8ONE&t=111s\" target=\"_blank\">01:51</a> 這場工作坊以 Tariq 在舊金山的演講為基礎，他也寫成部落格文章〈The Unreasonable Effectiveness of HTML files〉，主張規格文件從 markdown 改用 HTML<br>▸ <a href=\"https://www.youtube.com/watch?v=IlqJqcl8ONE&t=178s\" target=\"_blank\">02:58</a> 模型越強，agent 能跑得越久。但如果方向做錯會燒掉很多 token，所以要把人工驗證盡量提前放進 HTML 規格裡<br>▸ <a href=\"https://www.youtube.com/watch?v=IlqJqcl8ONE&t=278s\" target=\"_blank\">04:38</a> 引用 Richard Sutton 的 bitter lesson：模型越強，越不該去限制它。Claude 從你身上挖出需求的能力，可能比你自己寫出需求還好<br>▸ <a href=\"https://www.youtube.com/watch?v=IlqJqcl8ONE&t=431s\" target=\"_blank\">07:11</a> 不好的提示是只寫「make it better」。好的提示是點出你在意的面向（例如受眾），但不要把結果講死，並明確要 Claude 用 ask user question tool 來訪談你<br>▸ <a href=\"https://www.youtube.com/watch?v=IlqJqcl8ONE&t=491s\" target=\"_blank\">08:11</a> 講者強烈建議用 auto mode（按 shift tab 切換）；effort 官方建議設 X high，也可以設 max。/effort 調 effort，/fast 開 fast mode<br>▸ <a href=\"https://www.youtube.com/watch?v=IlqJqcl8ONE&t=623s\" target=\"_blank\">10:23</a> HTML 的資訊密度比 markdown 高，也更好閱讀和互動。markdown 超過約 200 行，你大概不會讀，同事更不會讀。示範用 Opus 4.7 產生四種 HTML 設計方向<br>▸ <a href=\"https://www.youtube.com/watch?v=IlqJqcl8ONE&t=1051s\" target=\"_blank\">17:31</a> 元件用 data 屬性把自己的狀態發佈到 DOM，agent 直接讀這份契約就好，不用去爬 DOM。每個元件都有 schemas、fixtures 和 invariants，並用 probes 測試非 happy path 的情況<br>▸ <a href=\"https://www.youtube.com/watch?v=IlqJqcl8ONE&t=1757s\" target=\"_blank\">29:17</a> 驗證有三種執行方式：給人看的 dashboard、agent 從瀏覽器驅動（Playwright MCP），以及在 CI 用 bun verify 無頭執行。驗證過程還能錄成影片存到 S3 當證據\n\n📘 術語<br><b>auto mode</b>（自動模式）：用 shift tab 切換進入；講者說這讓事情輕鬆很多，大家都該用<br><b>fast mode</b>（快速模式）：用 /fast 開啟；比較貴，但很適合快速迭代規格<br><b>ask user question tool</b>（詢問使用者工具）：在提示裡明確提到它，就會觸發 Claude 逐輪訪談你、釐清需求的流程<br><b>the bitter lesson</b>（苦澀的教訓）：Richard Sutton 的觀點：比起人工預先寫死、限制系統，投入更多資料和算力最終能換到更強的能力<br><b>Playwright MCP</b>（Playwright MCP）：用來截圖、跟 HTML 互動，也讓 Claude 從瀏覽器執行驗證\n\n📺 <a href=\"https://www.youtube.com/watch?v=IlqJqcl8ONE\" target=\"_blank\">How we Claude Code</a>（2026/05/23 · 31 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "講者說他們對 Claude Code 的 effort 參數建議設成哪個等級？",
+          "options": [
+            "medium",
+            "low",
+            "X high",
+            "max"
           ],
-          correct: 1,
-          why: "Claude Code 團隊揭示，現代工程師已從盯著每一步 Tool Call 的「微觀監工」，升級為「制定宏觀目標、把關驗收標準」的指揮官，70%~80% 的繁瑣任務交由 Agent 自主達成！"
+          "correct": 2,
+          "why": "[08:11] 講者說「Our recommendation is X high, but you can also set max effort.」"
         }
       },
       {
-        id: "c0_models",
-        title: "🎬 官方選型指南：用最聰明的模型反而最省錢？（三大成本乘數）",
-        category: "官方影片特輯",
-        text: "Anthropic 官方釋出選型指南：《Which Claude model should you use?》，顛覆了很多人「挑最便宜模型最省錢」的直覺迷思！\n\n**決定任務花費的三大乘數（Cost per Task）**：\n1. **Model（智商密度）**：就像大學生算數學 3 步搞定，小學生算 50 步還翻車。高智商模型雖然單價高，但能用最少步驟命中核心，**完成單一任務的總成本常常便宜 40% 以上**！\n2. **Effort（思考深度）**：控制模型回答前的推論量。先從 medium 開始，不夠才加，避免無謂消耗。\n3. **Prompt Caching（提示詞快取）**：在對話中重讀已處理過得上下文，**讀取快取只需 1/10 費用（省 90%！）**。在長時間的 Agent 工作中，直接為你砍掉 45% 總帳單！\n\n**任務二分選型法則**：\n• **開放式長鏈條（Open-ended）**：深層除錯、架構重構、跨模組探索 ➡️ 選頂級旗艦模型，配合 medium effort。\n• **固定式日常（Constrained Routine）**：提取報表、翻譯、單一摘要 ➡️ 選平價模型（Sonnet/Haiku），絕不為用不到的過剩能力買單！",
-        tip: "💡 官方算盤：評估花費要算「完成一件事的總支出（Cost per Task）」，而不是只盯著「每個字的牌價」！",
-        quiz: {
-          q: "根據 Anthropic 官方教學，為什麼在進行複雜長鏈條的程式除錯時，選擇較高階的模型反而可能比廉價小模型更省錢？",
-          options: [
-            "因為高階模型能以極少的中途嘗試與精準步驟直接命中答案，避免小模型多次迷路、重複失敗與塞滿對話槽的龐大累積花費",
-            "因為高階模型在夜間完全免費",
-            "因為小模型故意會多扣手續費",
-            "因為高階模型字體比較漂亮"
+        "id": "yt_IA5LWIGqnyM",
+        "title": "🎬 經營一個 AI-native 的工程組織",
+        "category": "Claude Code",
+        "text": "<b>Claude Code 與 Cowork 負責人分享：寫程式不再是瓶頸後，團隊規範如何重寫</b><br>▸ <a href=\"https://www.youtube.com/watch?v=IA5LWIGqnyM&t=19s\" target=\"_blank\">00:19</a> 講者 Fiona Fung 負責 Claude Code 與 Co-work 的工程和產品，之前曾在 Meta 和 Microsoft 帶團隊<br>▸ <a href=\"https://www.youtube.com/watch?v=IA5LWIGqnyM&t=201s\" target=\"_blank\">03:21</a> 寫程式、寫測試、refactoring 已經很少是慢的環節；新的瓶頸變成 verification、誰來 review、之後怎麼維護<br>▸ <a href=\"https://www.youtube.com/watch?v=IA5LWIGqnyM&t=472s\" target=\"_blank\">07:52</a> 技術爭論改成「用程式碼說話」：做出來很便宜、爭論很昂貴。講者用 Claude 產生三個版本的 PR 跟 Boris 討論；深入的 design doc 也減少了，討論大多在 PR 或 prototype 裡進行<br>▸ <a href=\"https://www.youtube.com/watch?v=IA5LWIGqnyM&t=687s\" target=\"_blank\">11:27</a> Claude code review 很擅長處理 style/lint、明顯的 bug 和 spec drift（建議把 spec check in 到 codebase）；法律、風險承受度、產品品味則仍需要人把關<br>▸ <a href=\"https://www.youtube.com/watch?v=IA5LWIGqnyM&t=779s\" target=\"_blank\">12:59</a> 工程師看重兩種人：有產品感的創意型 builder，以及有深厚系統專業的人；產品感來自 dogfooding、迭代、出貨和跟客戶聊<br>▸ <a href=\"https://www.youtube.com/watch?v=IA5LWIGqnyM&t=991s\" target=\"_blank\">16:31</a> Claude Code 的每位 manager 都先從 IC 做起，直接進 codebase，並對部分產品負責<br>▸ <a href=\"https://www.youtube.com/watch?v=IA5LWIGqnyM&t=1082s\" target=\"_blank\">18:02</a> code 就是 source of truth；spec 之類的文件可以改成 skill check in 到 codebase，這樣才會持續更新<br>▸ <a href=\"https://www.youtube.com/watch?v=IA5LWIGqnyM&t=1356s\" target=\"_blank\">22:36</a> 成效指標：onboarding 上手時間下降、PR cycle time 下降（要拆成各段來看）、Claude-assisted commits 上升\n\n📘 術語<br><b>bottleneck</b>（瓶頸）：過去工程人力很貴，所以流程都在保護這項資源；現在寫程式已經不是瓶頸了<br><b>shift left</b>（左移）：與其讓客戶或自己撞到 bug，不如靠自動化在更靠近源頭的地方就抓到<br><b>dogfooding / ant food</b>（自家產品自己用）：用自己團隊在做的產品，才能「感受到骨子裡」；Anthropic 內部叫 ant food<br><b>Claudify</b>（交給 Claude 做）：團隊原則：Claude 能做的，就讓 Claude 做，把人的頻寬空出來<br><b>source of truth</b>（唯一可信來源）：在 Claude Code 團隊指的是 code；要放在 codebase 裡才能保持最新\n\n📺 <a href=\"https://www.youtube.com/watch?v=IA5LWIGqnyM\" target=\"_blank\">Running an AI-native engineering org</a>（2026/05/22 · 26 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "講者提到，Claude Code 團隊「減少」了哪一項做法？",
+          "options": [
+            "Dogfooding 自家產品",
+            "使用 Claude 做 code review",
+            "深入的 planning 與 design doc",
+            "Prototyping"
           ],
-          correct: 0,
-          why: "官方強調算帳要看「Cost per Task（整件任務總成本）」。高階模型一步到位，相較於小模型頻繁報錯、反覆重試所累積的巨量上下文，總體花費往往更加便宜！"
+          "correct": 2,
+          "why": "[09:23] 講者說團隊減少的是深入的 planning 和 design doc，大多數討論改在 PR 或 prototype 中進行；prototyping、dogfooding 和 Claude code review 都是講者鼓勵的做法"
         }
       },
       {
-        id: "c0_managed",
-        title: "🎬 官方前沿架構：Managed Agents 實戰（Rubric 準則 ＆ 拒絕假自信）",
-        category: "官方影片特輯",
-        text: "Anthropic 官方深度座談：《How founders build on Claude Managed Agents》，由頂尖 AI 創辦人分享企業級 Agent 的設計精髓：\n\n1. **拒絕假性自信（寧可留白也不給錯資訊）**：\n   • 如果 AI 幫你準備會議簡報，卻找了同名同姓的「錯的 Tom」，在會議上會造成毀滅性尷尬！\n   • 頂級 Agent 架構採用 **Outcomes 評估機制**：由獨立評估模組把關，若資訊無法百分之百確認來源歸屬，寧可不顯示，也絕不給看似正確的錯誤答案。\n2. **Rubric 評分表與爬山迭代（Hill-climbing）**：\n   • 給 Agent 一份客觀的 **Rubric（驗收評分規準）**（包含事實正確性、排版易讀性、字數精簡度）。\n   • Agent 產出後自己依據 Rubric 評分，未達標就自主重寫修正（Hill-climbing），直到完全滿足標準才放行交給人類！\n3. **雙層 Agent 架構（專職常駐 ＋ 瞭望塔聚合）**：\n   • 底層：為每個專案模組配備一個「專職常駐 Agent」，每天累積專屬脈絡與記憶。\n   • 頂層：設立「Watchtower（瞭望塔 Agent）」，跨模組匯總宏觀報表與全局進度。",
-        tip: "🛡️ 商業級鐵律：用客觀 Rubric 逼 Agent 自我迭代；未經驗證的事實寧可不呈現，也絕不冒險交付！",
-        quiz: {
-          q: "在打造企業級 AI Agent 產品時，面對「可能出錯的幻覺風險」，Anthropic 官方座談中創辦人們一致推薦的核心機制是？",
-          options: [
-            "無條件把所有生成結果直接印出，不管對錯",
-            "建立獨立評估機制與客觀 Rubric 驗收標準，讓 Agent 依規準自主迭代；未經驗證的資訊寧可過濾不展示",
-            "把 AI 伺服器的網路線拔掉",
-            "讓使用者自己承擔所有錯字責任"
+        "id": "yt_0kILa02vKuI",
+        "title": "🎬 安裝 Claude Code",
+        "category": "Claude Code",
+        "text": "<b>介紹在終端機、IDE、Desktop 與網頁上安裝和使用 Claude Code 的方法</b><br>▸ <a href=\"https://www.youtube.com/watch?v=0kILa02vKuI&t=6s\" target=\"_blank\">00:06</a> macOS、Linux、WSL 可以用 curl 指令一次裝好；也可以用 Homebrew（brew install）安裝，但 Homebrew 版不會自動更新<br>▸ <a href=\"https://www.youtube.com/watch?v=0kILa02vKuI&t=6s\" target=\"_blank\">00:06</a> Windows 上，PowerShell 用 Invoke-RestMethod 指令，CMD 用 curl 指令；也可以用 winget 安裝，但跟 Homebrew 一樣不會自動更新<br>▸ <a href=\"https://www.youtube.com/watch?v=0kILa02vKuI&t=37s\" target=\"_blank\">00:37</a> 到專案目錄執行 Claude，先選顏色主題，再用 Pro、Max 或 Enterprise 帳號登入，或改用 API key；組織有 Enterprise 帳號的話要選那個選項<br>▸ <a href=\"https://www.youtube.com/watch?v=0kILa02vKuI&t=37s\" target=\"_blank\">00:37</a> 在哪個目錄執行 Claude，它就能存取該目錄和底下所有子資料夾<br>▸ <a href=\"https://www.youtube.com/watch?v=0kILa02vKuI&t=67s\" target=\"_blank\">01:07</a> VS Code：在擴充功能搜尋 Claude Code，安裝 Anthropic 出的、有藍色勾勾的那個；裝完可能要重開，再用 Ctrl/Cmd+Shift+P 開啟<br>▸ <a href=\"https://www.youtube.com/watch?v=0kILa02vKuI&t=67s\" target=\"_blank\">01:07</a> JetBrains IDE 要從 JetBrains Marketplace 安裝 Claude Code plugin，重開 IDE 後點 Claude 圖示，就會開出終端機介面的窗格<br>▸ <a href=\"https://www.youtube.com/watch?v=0kILa02vKuI&t=101s\" target=\"_blank\">01:41</a> Claude Desktop 登入後，上方有個「Code」切換鈕，可以指定資料夾、調整權限，甚至在雲端環境工作<br>▸ <a href=\"https://www.youtube.com/watch?v=0kILa02vKuI&t=135s\" target=\"_blank\">02:15</a> 網頁版在 claude.ai/code，只能用 GitHub repositories；終端機版的新功能最快上線，Desktop 適合讓 Claude 在背景執行\n\n📘 術語<br><b>auto-update</b>（自動更新）：影片說用 Homebrew 和 winget 安裝的版本沒有自動更新功能<br><b>API key</b>（API 金鑰）：除了用 Pro、Max、Enterprise 帳號登入以外的另一種登入方式<br><b>JetBrains Marketplace</b>（JetBrains 外掛市集）：在 JetBrains IDE 安裝 Claude Code plugin 的地方\n\n📺 <a href=\"https://www.youtube.com/watch?v=0kILa02vKuI\" target=\"_blank\">Installing Claude Code</a>（2026/05/14 · 3 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，在網頁上（claude.ai/code）使用 Claude Code 有什麼限制？",
+          "options": [
+            "不能同時跑多個 session",
+            "只能用 Enterprise 帳號",
+            "要先安裝 Claude Desktop",
+            "只能用 GitHub repositories"
           ],
-          correct: 1,
-          why: "官方指出「錯誤的假自信比不給答案更具毀滅性」。透過獨立 Outcomes Assessor 與 Rubric 評分表進行自主閉環爬山迭代，能最大程度保障產出準確度！"
+          "correct": 3,
+          "why": "[02:15] 影片說網頁版跟 Desktop 很像，但只能用 GitHub repositories；[02:45] 還提到網頁版可以讓多個 session 平行執行"
         }
       },
       {
-        id: "c1",
-        title: "Anthropic 官方核心架構：Workflows vs Agents 如何抉擇？",
-        category: "系統架構",
-        text: "Anthropic 官方在《Building Effective Agents》研究中提出重要警示：**「不要把所有問題都丟給全自主 Agent！」**\n\n官方將 AI 系統分為兩大派系：\n1. **Workflows（工作流）**：由程式碼預先寫好固定路徑（如 Prompt Chaining 鏈式管線、Routing 條件路由），AI 依序在既定軌道上前進。優點是**極度穩定、可預測、不易翻車**。\n2. **Agents（自主代理）**：由大模型自己決定何時叫工具、叫幾次、什麼時候停下來。優點是**靈活性極高**，但代價是成本不可控、容易迷路。\n\n**官方黃金法則**：能用簡單工作流解決的，絕對不要上全自主 Agent；只有面對無法預測的除錯與探索時才放手讓 Agent 自主決策！",
-        tip: "⚖️ 穩定第一：嚴謹的金融/資料處理走工作流（Workflow），開放式程式除錯走自主代理（Agent）。",
-        quiz: {
-          q: "專案需要每天固定從 10 份財報 PDF 裡精準抽取營收數字並寫入 Excel，根據 Anthropic 官方指引，最推薦採用哪種架構？",
-          options: [
-            "全自主 Agent（讓它自己看著辦，隨便摸索）",
-            "固定路徑工作流（Workflow：Prompt Chaining 確定性步驟，穩定且低成本）",
-            "同時派 20 個模型進行無規則群聊",
-            "每次手動把 PDF 印出來用肉眼看"
+        "id": "yt_6bs5b4FltCU",
+        "title": "🎬 Claude Code 如何運作",
+        "category": "Claude Code",
+        "text": "<b>用 agent 循環、context window、工具與權限模式說明 Claude Code 的運作方式</b><br>▸ <a href=\"https://www.youtube.com/watch?v=6bs5b4FltCU&t=5s\" target=\"_blank\">00:05</a> Claude Code 用 agent 循環運作：你輸入 query，它先收集需要的 context，再採取行動，例如編輯檔案或執行指令。<br>▸ <a href=\"https://www.youtube.com/watch?v=6bs5b4FltCU&t=35s\" target=\"_blank\">00:35</a> 行動後會檢查結果是否符合預期：符合就結束並等待下一個請求；不符合就重跑循環，直到結果完成並驗證。<br>▸ <a href=\"https://www.youtube.com/watch?v=6bs5b4FltCU&t=35s\" target=\"_blank\">00:35</a> 循環進行中，你可以補充 context、中斷工作，或引導模型朝目標前進。<br>▸ <a href=\"https://www.youtube.com/watch?v=6bs5b4FltCU&t=65s\" target=\"_blank\">01:05</a> context window 決定能存放的對話、檔案內容、指令結果等資訊量；達到上限時，Claude Code 會壓縮對話，自動決定要移除或摘要哪些內容。<br>▸ <a href=\"https://www.youtube.com/watch?v=6bs5b4FltCU&t=65s\" target=\"_blank\">01:05</a> 工具是 agent 運作的基礎；目前多數 AI 助理只接收和回傳文字，中間沒有任何動作。<br>▸ <a href=\"https://www.youtube.com/watch?v=6bs5b4FltCU&t=95s\" target=\"_blank\">01:35</a> 工具讓 agent 自行決定何時執行程式碼來完成任務，例如讀取檔案或上網搜尋；Claude Code 用語意搜尋決定何時呼叫工具。<br>▸ <a href=\"https://www.youtube.com/watch?v=6bs5b4FltCU&t=95s\" target=\"_blank\">01:35</a> 預設權限模式下，編輯檔案或在終端機執行指令前必須取得明確許可；按 Shift + Tab 可以切換模式。<br>▸ <a href=\"https://www.youtube.com/watch?v=6bs5b4FltCU&t=125s\" target=\"_blank\">02:05</a> auto-accept 模式編輯檔案不再詢問，但執行指令仍需許可；Planning mode 先用唯讀工具擬定行動計畫。跳過權限時要小心，出錯可能較難提前發現。\n\n📘 術語<br><b>agent cycle / agent loop</b>（agent 循環）：收集 context → 行動 → 檢查結果，未達成就重來，直到完成並驗證<br><b>context window</b>（上下文視窗）：決定 Claude 能存放和檢視多少對話、檔案內容、指令結果等資訊<br><b>tools</b>（工具）：agent 運作的基礎，讓 agent 決定何時執行程式碼完成任務，例如讀檔、上網搜尋<br><b>auto-accept mode</b>（自動接受模式）：編輯檔案不再詢問，但執行指令仍會要求許可<br><b>Planning mode</b>（規劃模式）：開始前先用唯讀工具擬定行動計畫\n\n📺 <a href=\"https://www.youtube.com/watch?v=6bs5b4FltCU\" target=\"_blank\">How Claude Code Works</a>（2026/05/14 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，Claude Code 的 auto-accept 模式怎麼運作？",
+          "options": [
+            "只用唯讀工具先擬定行動計畫",
+            "執行指令不再詢問，但編輯檔案仍需許可",
+            "跳過所有權限，完全自由執行",
+            "編輯檔案不再詢問，但執行指令仍需許可"
           ],
-          correct: 1,
-          why: "固定格式的資料抽取具有明確的輸入輸出，使用確定的工作流（Prompt Chaining）比不可控的自主 Agent 更加穩定、準確且節省 Token！"
+          "correct": 3,
+          "why": "字幕 [01:35]～[02:05]：auto-accept 模式編輯檔案不會詢問，但執行指令仍會要求許可。只用唯讀工具擬計畫的是 Planning mode。"
         }
       },
       {
-        id: "c2",
-        title: "Subagents 隔離體系：為什麼一個 Agent 幹到底必敗？",
-        category: "多任務分流",
-        text: "在 Claude Code 深度實戰中，官方最強調的高階技巧就是 **Subagents（子代理派工）**。\n\n如果叫「主 Agent」去跑一個龐大的測試，測試噴出 3,000 行落落長的除錯日誌，主 Agent 的 Context 會在幾秒內被垃圾日誌淹沒，導致它忘記最初的目的。\n\n**Subagent 的核心奧義是「上下文隔離（Context Isolation）」**：\n• 主 Agent（指揮官）派發專職任務給子 Agent。\n• 子 Agent 在獨立的乾淨沙盒中跑測試、翻日誌、嘗試修復。\n• 完成後，子 Agent 只將「3 句總結與修復補丁」回傳給主 Agent！\n這樣主 Agent 的記憶永遠清爽乾淨，任務跑再久也不會智商退化。",
-        tip: "🛡️ 派工心法：髒活、累活、會吐大量日誌的苦工，全部派給隔離的 Subagent 去扛！",
-        quiz: {
-          q: "當專案需要對 100 個單元測試進行逐一排查、預期會產生海量終端日誌時，為了保護主對話窗口不被塞爆，最佳策略是？",
-          options: [
-            "直接在主窗口跑，讓日誌把所有記憶視窗填滿",
-            "派遣 Subagent（子代理）在隔離的獨立上下文執行，僅回報失敗斷言與修復建議",
-            "把單元測試檔案全部刪除假裝沒事",
-            "將字體調小"
+        "id": "yt_O0FGCxkHM-U",
+        "title": "🎬 CLAUDE.md 檔案",
+        "category": "Claude Code",
+        "text": "<b>介紹 CLAUDE.md 怎麼讓 Claude Code 記住專案，以及怎麼寫和維護</b><br>▸ <a href=\"https://www.youtube.com/watch?v=O0FGCxkHM-U&t=3s\" target=\"_blank\">00:03</a> CLAUDE.md 讓 Claude Code 對專案有持久記憶；沒有它的話，每次都得重新探索程式碼、了解相依套件和已完成的功能，有時還得自己假設<br>▸ <a href=\"https://www.youtube.com/watch?v=O0FGCxkHM-U&t=35s\" target=\"_blank\">00:35</a> 它是放在專案根目錄的 markdown 檔，每次開 session 時 Claude Code 會自動讀取，內容會附加到你的 prompt 上，就像程式碼庫的 onboarding 腳本<br>▸ <a href=\"https://www.youtube.com/watch?v=O0FGCxkHM-U&t=35s\" target=\"_blank\">00:35</a> 執行 /init 指令，Claude 會根據你的程式碼庫產生一份 CLAUDE.md<br>▸ <a href=\"https://www.youtube.com/watch?v=O0FGCxkHM-U&t=35s\" target=\"_blank\">00:35</a> 範例內容包括技術架構（Next.js 15、app router、Tailwind、Drizzle ORM）、常用指令（dev server、測試、lint）和程式碼風格規則<br>▸ <a href=\"https://www.youtube.com/watch?v=O0FGCxkHM-U&t=97s\" target=\"_blank\">01:37</a> CLAUDE.md 可以放進版本控制跟團隊共用。記憶檔有分層：專案層級的放在專案根目錄；使用者層級的放在設定資料夾，只給自己用，所有專案都適用<br>▸ <a href=\"https://www.youtube.com/watch?v=O0FGCxkHM-U&t=97s\" target=\"_blank\">01:37</a> 如果你需要糾正 Claude（例如要它一律用 server actions、不要用 API routes），可以明確請它存進記憶，下次回到這個專案就會記得<br>▸ <a href=\"https://www.youtube.com/watch?v=O0FGCxkHM-U&t=127s\" target=\"_blank\">02:07</a> 想讓 Claude 參考專案裡的文件，用 @ 符號加上檔案路徑就可以<br>▸ <a href=\"https://www.youtube.com/watch?v=O0FGCxkHM-U&t=127s\" target=\"_blank\">02:07</a> 建議新專案一開始先不要建 CLAUDE.md，看你在哪些地方得一直修正模型，這樣檔案才會精簡，只留必要的資訊\n\n📘 術語<br><b>CLAUDE.md</b>（CLAUDE.md 記憶檔）：放在專案根目錄的 markdown 檔，每次開 session 時 Claude Code 會自動讀取，內容會附加到你的 prompt<br><b>/init</b>（初始化指令）：讓 Claude 根據你的程式碼庫產生一份 CLAUDE.md<br><b>persistent memory</b>（持久記憶）：CLAUDE.md 提供的專案記憶，讓 Claude Code 不用每次從頭探索程式碼庫<br><b>user-level CLAUDE.md</b>（使用者層級 CLAUDE.md）：放在設定資料夾，只給自己用，所有專案都適用，適合放個人偏好，例如程式碼註解怎麼寫\n\n📺 <a href=\"https://www.youtube.com/watch?v=O0FGCxkHM-U\" target=\"_blank\">The CLAUDE.md file</a>（2026/05/10 · 3 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片建議新專案一開始怎麼處理 CLAUDE.md？",
+          "options": [
+            "先不要建 CLAUDE.md，看在哪些地方得一直修正模型",
+            "一開始就把專案所有文件內容貼進 CLAUDE.md",
+            "從其他專案複製一份現成的 CLAUDE.md",
+            "只建使用者層級的 CLAUDE.md，不建專案層級的"
           ],
-          correct: 1,
-          why: "Subagent 能完美實現「上下文隔離」，髒亂的海量日誌留在子線程，主對話只接收高價值摘要，避免 Context 爆掉！"
+          "correct": 0,
+          "why": "[02:07] 影片說 we recommend you start off a project without a Claude.md file，並看你在哪些地方得一直修正模型，這樣 CLAUDE.md 才會保持精簡"
         }
       },
       {
-        id: "c3",
-        title: "Context Hygiene（上下文衛生管理與微壓縮）",
-        category: "記憶工程",
-        text: "頂級工程師與菜鳥使用 Claude 的最大差距，在於 **Context Hygiene（上下文衛生）**。\n\n每一條存在 Context 裡的資訊，都是模型注意力（Attention）的負擔。當上下文充滿無效雜訊，模型就會「注意力發散（Attention Dilution）」，開始胡說八道。\n\n**保持上下文衛生的三招**：\n1. **微壓縮（Micro-compacting）**：檔案讀過、取得需要的關鍵函式後，不要留著整份萬行大檔，只保留摘要或精確行號指針。\n2. **CLAUDE.md 高密度約定**：把專案風格、測試命令寫在 CLAUDE.md。但切忌寫成幾萬字廢話長篇——每一行開機讀入都是扣錢，且過長會稀釋重點。\n3. **定期手動換檔**：完成一個大里程碑，主動 /compact 或開新 Session，絕不把舊歷史當垃圾場。",
-        tip: "🧼 乾淨就是生產力：Context 不是硬碟，它是昂貴且稀缺的「短期工作檯」。",
-        quiz: {
-          q: "在維護專案根目錄的 CLAUDE.md 時，根據官方最佳實踐，以下哪種做法是正確的？",
-          options: [
-            "把過去半年寫過的所有聊天紀錄與日誌全都貼在 CLAUDE.md 裡面",
-            "維持高密度、簡明扼要的指令與架構原則，重要細節採用索引指針，避免開機浪費龐大 Token",
-            "故意寫很多生僻文言文考驗模型的中文能力",
-            "完全不放任何規則，讓每次開機的 AI 猜測專案規範"
+        "id": "yt_IkaPHiMDazM",
+        "title": "🎬 Claude Code 中的 Hooks",
+        "category": "Claude Code",
+        "text": "<b>介紹 Hooks 如何在 Claude Code 生命週期中確定性地執行指令</b><br>▸ <a href=\"https://www.youtube.com/watch?v=IkaPHiMDazM&t=4s\" target=\"_blank\">00:04</a> Hooks 讓你在 Claude Code 生命週期的不同時間點執行指令，關鍵差異是它是確定性的，一定會執行<br>▸ <a href=\"https://www.youtube.com/watch?v=IkaPHiMDazM&t=4s\" target=\"_blank\">00:04</a> 在 claude.md 要求 Claude 每次編輯後跑 prettier，多數時候會照做但不一定；hook 則每次都執行、沒有例外<br>▸ <a href=\"https://www.youtube.com/watch?v=IkaPHiMDazM&t=34s\" target=\"_blank\">00:34</a> 常見用途：編輯檔案後自動格式化、為了合規記錄所有執行的指令、阻擋危險操作、Claude 完成任務時發通知<br>▸ <a href=\"https://www.youtube.com/watch?v=IkaPHiMDazM&t=34s\" target=\"_blank\">00:34</a> Hooks 設定在 settings.json：選一個事件、可選擇設定 matcher 指定適用的工具，再提供要執行的指令<br>▸ <a href=\"https://www.youtube.com/watch?v=IkaPHiMDazM&t=64s\" target=\"_blank\">01:04</a> 事件包括 User prompt submit、Pre-tool use、Post-tool use、Notification、Stop<br>▸ <a href=\"https://www.youtube.com/watch?v=IkaPHiMDazM&t=64s\" target=\"_blank\">01:04</a> 最常見的 hook：用 Post-tool use 搭配 edit 或 multi-edit 的 matcher，依副檔名執行 prettier、Go format、Ruff 等格式化工具<br>▸ <a href=\"https://www.youtube.com/watch?v=IkaPHiMDazM&t=94s\" target=\"_blank\">01:34</a> Pre-tool use hook 從 stdin 收到 JSON 格式的工具名稱與輸入；exit code 2 會阻擋並把 stderr 回饋給 Claude，exit code 0 則繼續<br>▸ <a href=\"https://www.youtube.com/watch?v=IkaPHiMDazM&t=125s\" target=\"_blank\">02:05</a> 設定在 .Claude/settings.json 的 hooks 屬專案層級，可提交進 repo 讓全隊自動套用；用 Claude project dir 環境變數引用專案內腳本\n\n📘 術語<br><b>Hooks</b>（掛鉤）：在 Claude Code 生命週期不同時間點執行指令，具確定性，每次都會執行<br><b>matcher</b>（比對器）：可選設定，指定 hook 適用於哪個工具，例如 edit 或 multi-edit<br><b>Pre-tool use</b>（工具呼叫前）：在工具呼叫前執行，可用 exit code 2 阻擋該工具呼叫<br><b>Post-tool use</b>（工具呼叫後）：在工具呼叫完成後執行，適合自動格式化與記錄<br><b>deterministic</b>（確定性的）：一定會執行、沒有例外，不像寫在 claude.md 裡的指示有時不會被執行\n\n📺 <a href=\"https://www.youtube.com/watch?v=IkaPHiMDazM\" target=\"_blank\">Hooks in Claude Code</a>（2026/05/07 · 3 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "Pre-tool use hook 要阻擋某個工具呼叫時，應該用哪個 exit code 結束？",
+          "options": [
+            "exit code 0",
+            "exit code 1",
+            "exit code 127",
+            "exit code 2"
           ],
-          correct: 1,
-          why: "CLAUDE.md 是每次開機必讀的最高憲章，必須保持高密度與簡潔，將繁雜細節外包給衛星索引，才能兼顧準確性與 Token 成本！"
+          "correct": 3,
+          "why": "字幕 [02:05]：「Exit code zero means proceed. Exit code two means block.」exit code 2 會阻擋動作，並把 stderr 訊息回饋給 Claude（[01:34]）"
         }
       },
       {
-        id: "c4",
-        title: "Tool Calling 協定與安全防護欄（Permissions Sandbox）",
-        category: "安全與工具",
-        text: "大模型本質上是一段文字預測引擎，它並不能真正「按鍵盤」。\n當它要執行工具時，是生成符合 **JSON Schema** 規範的結構化指令，由客戶端底層代理（Client Harness）代為執行。\n\n這就涉及至關重要的**安全防線（Permissions Boundary）**：\n• **安全綠燈區（唯讀/驗證）**：查看檔案、搜尋關鍵字、跑測試、靜態代碼檢查。這些可以設定為自動通行（always-proceed），提升流暢度。\n• **危險紅燈區（破壞/資產）**：檔案刪除（rm）、強制作業（git push -f）、涉及金錢或帳單交易、改動資料庫結構。這些**必須保留人類介入確認（Human-in-the-loop）**！",
-        tip: "🚦 信任但要設防：放行快速驗證工具，嚴控破壞性變更，這才是專業 Agent 架構。",
-        quiz: {
-          q: "在設定 Agent 的自動執行權限（Tool Permissions）時，哪一類操作絕對不應該設為無條件全自動放行？",
-          options: [
-            "讀取檔案內容（view_file）與專案搜尋（search_code）",
-            "跑單元測試指令（npm test / pytest）",
-            "未經確認的強制推送到正式生產環境（git push --force production）或清空資料庫",
-            "查看當前目錄清單"
+        "id": "yt_DlTCu_pNDHE",
+        "title": "🎬 Boris Cherny 與 Jarred Sumner 的現場寫程式實錄",
+        "category": "Claude Code",
+        "text": "<b>Bun 團隊示範用 Claude 自動重現 issue、送 PR、做 code review 的完整閉環流程</b><br>▸ <a href=\"https://www.youtube.com/watch?v=DlTCu_pNDHE&t=128s\" target=\"_blank\">02:08</a> Bun 的 repo 每次有人開 issue，Claude bot（Robobun）就會自動嘗試重現問題，並自動送出 PR<br>▸ <a href=\"https://www.youtube.com/watch?v=DlTCu_pNDHE&t=165s\" target=\"_blank\">02:45</a> PR 一定要附測試：測試必須在舊版 Bun 失敗、在 debug branch 通過，bot 才能送出 PR<br>▸ <a href=\"https://www.youtube.com/watch?v=DlTCu_pNDHE&t=230s\" target=\"_blank\">03:50</a> 最近三個月，Robobun 在 main 分支的貢獻量已經超過 Jarred 本人，而且它的 PR 還沒全部 merge<br>▸ <a href=\"https://www.youtube.com/watch?v=DlTCu_pNDHE&t=294s\" target=\"_blank\">04:54</a> Code Rabbit 跟 Claude code review 兩個 bot 會互相來回討論。Code Rabbit 擅長抓風格問題和是否遵守 CLAUDE.md，Claude code review 擅長找需要完整 context 才看得出來的邊界情況<br>▸ <a href=\"https://www.youtube.com/watch?v=DlTCu_pNDHE&t=525s\" target=\"_blank\">08:45</a> CLAUDE.md 裡寫清楚怎麼 build、怎麼寫測試和跑測試、資料夾結構跟以前踩過的坑。只要發現自己一直重複講同一件事，就該寫進 CLAUDE.md<br>▸ <a href=\"https://www.youtube.com/watch?v=DlTCu_pNDHE&t=621s\" target=\"_blank\">10:21</a> 讓 agent 能讀 CI 錯誤和 build log，自己跑完寫程式、測試、監看 CI 整個循環，交到人手上時就能有信心 merge<br>▸ <a href=\"https://www.youtube.com/watch?v=DlTCu_pNDHE&t=1205s\" target=\"_blank\">20:05</a> hill climbing：給模型一個指標加上驗證方法，它就會一直迭代到達標，例如讓 Claude 把圖片處理做得比 sharp 更快<br>▸ <a href=\"https://www.youtube.com/watch?v=DlTCu_pNDHE&t=1330s\" target=\"_blank\">22:10</a> Jarred 用 auto mode 處理權限，不用一直等人按核准，所以能讓 Claude 連續跑好幾個小時；他也在用 no flicker mode\n\n📘 術語<br><b>Robobun</b>（Robobun（Bun 的 bot））：Bun 的 Claude bot，會自動重現 issue 並送出附測試的 PR，也可以在 Discord 或 Slack 上 @ 它<br><b>hill climbing</b>（爬山法）：給模型一個指標和驗證方法，讓它一直迭代到達成指標<br><b>auto mode</b>（自動模式）：權限處理模式，Claude 不會卡在權限請求，能連續執行好幾個小時<br><b>no flicker mode</b>（無閃爍模式）：改寫過的 CLI renderer，採用虛擬捲動，記憶體和 CPU 用量固定，還支援滑鼠點擊<br><b>adversarial code review</b>（對抗式程式碼審查）：Boris 隨口想到的名稱，用來指 bot 修 bug、code review bot 來回審查的這種模式\n\n📺 <a href=\"https://www.youtube.com/watch?v=DlTCu_pNDHE\" target=\"_blank\">Live coding session with Boris Cherny and Jarred Sumner</a>（2026/05/06 · 32 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "Robobun 要送出 PR 之前，必須滿足哪個硬性條件？",
+          "options": [
+            "PR 必須附上螢幕截圖或錄影",
+            "PR 要先經過 Jarred 手動核准",
+            "PR 只能修改 CLAUDE.md 允許修改的檔案",
+            "PR 附的測試要在舊版 Bun 失敗、在 debug branch 通過"
           ],
-          correct: 2,
-          why: "不可逆、具破壞性或影響生產環境的操作，必須強制保留 Human-in-the-loop 人類授權，防止 Agent 誤判造成災難！"
+          "correct": 3,
+          "why": "[02:45] 字幕提到 PR 一定要有測試，而且要檢查測試是否在舊版 Bun 失敗、在 debug branch 通過，不符合的話 bot 就不能送出 PR"
         }
       },
       {
-        id: "c5",
-        title: "Evaluator-Optimizer 自主修復閉環（Self-Healing Loop）",
-        category: "自動除錯",
-        text: "為什麼一般的「單次生成代碼」成功率只有 60%，而頂級 Agent 卻能高達 90% 以上？\n秘訣在於 **Evaluator-Optimizer 閉環機制**！\n\n**頂級 Agent 的四部曲**：\n1. **Observe（精準觀測）**：讀取錯誤 Traceback，精確鎖定出問題的檔名與行號。\n2. **Hypothesize（提出假說）**：找出根因（例如型態不符、缺少空值檢查）。\n3. **Minimal Patch（最小增量修復）**：用局部替換修改關鍵程式碼，**嚴禁整檔重寫**（避免覆蓋掉原有邏輯與註解）。\n4. **Verify（自我檢驗）**：主動重跑單元測試。測試綠燈才回報成功；若紅燈則吸收新錯誤進入下一輪修正！",
-        tip: "🔄 閉環精神：沒有經過測試驗證的代碼，不叫完成；自己測過並亮綠燈，才算交付。",
-        quiz: {
-          q: "當 Agent 在跑單元測試時遇到 TypeError 報錯，符合專業工程規範的處理順序應該是？",
-          options: [
-            "不管報錯，直接把整個檔案清空從頭隨便寫一遍",
-            "精讀報錯 Traceback 定位行號 ➡️ 分析根因 ➡️ 做出最小補丁 ➡️ 重跑測試驗證直到綠燈",
-            "跟使用者謊稱測試已經全數通過",
-            "直接關閉終端機逃避現實"
+        "id": "yt_91AJ0cpgLlQ",
+        "title": "🎬 Anthropic 如何在 Product Management 中使用 Claude",
+        "category": "Claude Code",
+        "text": "<b>Anthropic 的 PM 示範用 Claude Code 分析產品資料，以及產生 e-bells 測試案例</b><br>▸ <a href=\"https://www.youtube.com/watch?v=91AJ0cpgLlQ&t=1s\" target=\"_blank\">00:01</a> PM 可以先用 Claude 測試產品想法，再找其他人加入，因此能更快地迭代，也更能獨立作業。<br>▸ <a href=\"https://www.youtube.com/watch?v=91AJ0cpgLlQ&t=1s\" target=\"_blank\">00:01</a> PM 取得資料通常很麻煩：多半得請 data science 同事幫忙，不然就是自己寫基本 SQL，去查不太熟的資料庫。<br>▸ <a href=\"https://www.youtube.com/watch?v=91AJ0cpgLlQ&t=31s\" target=\"_blank\">00:31</a> Data science 團隊架設了 BigQuery MCP，把所有 BigQuery 產品資料表接到 Claude Code。這樣不必會寫 SQL，只要負責解讀資料和結果。<br>▸ <a href=\"https://www.youtube.com/watch?v=91AJ0cpgLlQ&t=62s\" target=\"_blank\">01:02</a> 示範：用 Claude 產生的 synthetic data，分析過去 3 個月 dark mode 使用比例。Claude 主動加上 7-day rolling average 和整體平均。<br>▸ <a href=\"https://www.youtube.com/watch?v=91AJ0cpgLlQ&t=93s\" target=\"_blank\">01:33</a> 接著請 Claude 依 plan type 畫出 light／dark mode 使用情況。Claude 會先徵求修改許可，講者說自己做可能要花好幾個小時。<br>▸ <a href=\"https://www.youtube.com/watch?v=91AJ0cpgLlQ&t=93s\" target=\"_blank\">01:33</a> 團隊也用 Claude 產生 e-bells（評估 AI 系統和 AI 產品的方法）：提供情境和幾個範例，就能擴充到大約 50 個測試案例。<br>▸ <a href=\"https://www.youtube.com/watch?v=91AJ0cpgLlQ&t=123s\" target=\"_blank\">02:03</a> 講者希望 PM 把更多時間花在產品策略、客戶對話和決策上，少花時間在協調和營運。<br>▸ <a href=\"https://www.youtube.com/watch?v=91AJ0cpgLlQ&t=153s\" target=\"_blank\">02:33</a> 講者認為這不只是自動化，而是擴展了自己獨立完成事情的能力。\n\n📘 術語<br><b>BigQuery MCP</b>（BigQuery MCP）：由 data science 團隊架設，把所有 BigQuery 產品資料表連接到 Claude Code<br><b>e-bells</b>（e-bells（字幕原文拼法））：一種評估 AI 系統和 AI 產品的方法<br><b>synthetic product data</b>（合成產品資料）：示範前用 Claude 產生，內容是某產品的 light mode 與 dark mode 使用資料<br><b>7-day rolling average</b>（7 日移動平均）：講者沒有要求，Claude 自己加到圖表裡的項目之一\n\n📺 <a href=\"https://www.youtube.com/watch?v=91AJ0cpgLlQ\" target=\"_blank\">How Anthropic uses Claude in Product Management</a>（2026/03/26 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片中，data science 團隊架設了哪個 MCP，把產品資料表連接到 Claude Code？",
+          "options": [
+            "PostgreSQL MCP",
+            "Snowflake MCP",
+            "Google Sheets MCP",
+            "BigQuery MCP"
           ],
-          correct: 1,
-          why: "專業的自我修復閉環（Self-Healing Loop）講求最小破壞原則與嚴格的重跑驗證，直到測試完全通過才算交付！"
+          "correct": 3,
+          "why": "[00:31] 講者說 data science 團隊架設了 BigQuery MCP，把所有 BigQuery 產品資料表連接到 Claude Code。"
         }
       },
       {
-        id: "c_workflow",
-        title: "🎬 官方四大工程閉環：Explore ➡️ Plan ➡️ Code ➡️ Commit",
-        category: "官方工作流",
-        text: "Anthropic 官方指出，新手用 Claude Code 最大的敗筆就是「一上來就直接叫它 Code（寫程式）」！這會導致中途瘋狂跑偏、反覆重修。\n\n**官方強調的唯一正道：四大閉環階段**：\n1. **Explore（探索）**：先讓它看相關檔案、理解專案架構，**此階段嚴禁修改任何檔案**！\n2. **Plan（規劃）**：要求它輸出清楚的修復計畫與架構圖，跟你對齊思路，確認沒問題才放行。\n3. **Code（代碼）**：依據核准的計畫，進行最小增量修改，嚴格遵循專案 Coding Style。\n4. **Commit（驗證與提交）**：主動跑單元測試、檢查 git diff，綠燈後附上乾淨清楚的 commit 訊息。\n四步循環，一次到位，中途零折騰！",
-        tip: "🎯 官方口訣：先看不動手（Explore）、想透對好齊（Plan）、動刀做最小（Code）、測過再存檔（Commit）！",
-        quiz: {
-          q: "根據 Anthropic 官方教學，面對一項新的複雜需求時，為什麼嚴禁一開局就直接命令 Agent 開始寫程式碼？",
-          options: [
-            "因為 Agent 不喜歡立刻打字",
-            "跳過 Explore（探索）與 Plan（規劃）會導致模型在未理解全貌下盲目修改，引發嚴重的方向偏差與反覆返工",
-            "因為這樣會觸發系統過熱警報",
-            "因為鍵盤容易磨損"
+        "id": "yt_Ko7_tC1fMMM",
+        "title": "🎬 使用 Claude Code Remote Control",
+        "category": "Claude Code",
+        "text": "<b>用 remote control 從 Claude Code web 或手機 Claude app 接續電腦上的 Claude Code session</b><br>▸ <a href=\"https://www.youtube.com/watch?v=Ko7_tC1fMMM&t=6s\" target=\"_blank\">00:06</a> remote control 讓你用 Claude Code web 或手機上的 Claude app 連到自己電腦上正在跑的 Claude Code session，接著做下去<br>▸ <a href=\"https://www.youtube.com/watch?v=Ko7_tC1fMMM&t=37s\" target=\"_blank\">00:37</a> 到專案資料夾執行 Claude remote control，會開一個新 session 並給一個 URL；按空白鍵會出現 QR code，可以用手機掃<br>▸ <a href=\"https://www.youtube.com/watch?v=Ko7_tC1fMMM&t=37s\" target=\"_blank\">00:37</a> 如果已經在 Claude Code session 裡，輸入 /remote control 就能看到 URL，把 session 交給遠端裝置<br>▸ <a href=\"https://www.youtube.com/watch?v=Ko7_tC1fMMM&t=67s\" target=\"_blank\">01:07</a> URL 只是為了方便；Claude Code 綁定你的 Claude 帳號，所以不點連結、直接在手機上開也可以<br>▸ <a href=\"https://www.youtube.com/watch?v=Ko7_tC1fMMM&t=67s\" target=\"_blank\">01:07</a> 連上後的體驗跟平常一樣，可以用同樣的工具、MCP servers、設定和檔案系統；所有東西仍在你的電腦上執行，不會移到雲端<br>▸ <a href=\"https://www.youtube.com/watch?v=Ko7_tC1fMMM&t=97s\" target=\"_blank\">01:37</a> 對話會在各裝置間同步，在手機 Claude app 輸入的內容會即時出現在 terminal<br>▸ <a href=\"https://www.youtube.com/watch?v=Ko7_tC1fMMM&t=97s\" target=\"_blank\">01:37</a> 預設每次都要指定是否開 remote control；可以在 /config 裡設定成所有 session 都啟用<br>▸ <a href=\"https://www.youtube.com/watch?v=Ko7_tC1fMMM&t=97s\" target=\"_blank\">01:37</a> spawn mode 可以從遠端建立新 session：執行 Claude remote control 後，在 web 或手機點 environment 按鈕、選你的裝置，就能開多個 Claude Code instance。字幕說錄影當下開放給 Max、Team、Enterprise 使用者\n\n📘 術語<br><b>Remote Control</b>（遠端控制）：用 Claude Code web 或手機 Claude app 連到電腦上執行中的 Claude Code session，接著做下去<br><b>spawn mode</b>（產生模式）：從遠端建立新 session，可以開多個 Claude Code instance<br><b>/config</b>（設定指令）：可以在這裡開啟「所有 session 都啟用 remote control」\n\n📺 <a href=\"https://www.youtube.com/watch?v=Ko7_tC1fMMM\" target=\"_blank\">Using Claude Code Remote Control</a>（2026/03/17 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "透過 remote control 從手機連上 Claude Code session 時，程式實際在哪裡執行？",
+          "options": [
+            "session 會整個搬到雲端執行",
+            "在 Claude Code web 的伺服器上重新建立一份",
+            "仍在你自己的電腦上執行，不會移到雲端",
+            "改在手機上本機執行"
           ],
-          correct: 1,
-          why: "官方實測證明：未經 Explore 與 Plan 的盲目編碼，後續需要花費 3 倍以上的時間進行方向修正（Course Correction），得不償失！"
+          "correct": 2,
+          "why": "[01:07]～[01:37] 字幕說：「Everything is still running on your machine. Nothing is moved to the cloud.」"
+        }
+      }
+    ]
+  },
+  yt_agents: {
+    "id": "yt_agents",
+    "name": "📺 Agents・官方頻道字幕版",
+    "badge": "官方字幕實證",
+    "lessons": [
+      {
+        "id": "yt_19HDQ9HppOA",
+        "title": "🎬 上線你的第一個 Managed Agent",
+        "category": "Agents 與 API",
+        "text": "<b>介紹 Claude Managed Agents 的架構，並實作一個處理事故的 SRE agent</b><br>▸ <a href=\"https://www.youtube.com/watch?v=19HDQ9HppOA&t=144s\" target=\"_blank\">02:24</a> 演進歷程：2023 年的 Messages API 只提供模型本身，其他元件都要開發者自己做。後來的 agent SDK 可以用程式呼叫 Claude Code，但 hosting 和 scaling 仍要自己處理<br>▸ <a href=\"https://www.youtube.com/watch?v=19HDQ9HppOA&t=237s\" target=\"_blank\">03:57</a> Claude Managed Agents 由 Anthropic 負責 scaling，並提供專用 harness、sandboxing、observability 和 tool runtime。開發者只要專心設定任務、agent 和自訂工具<br>▸ <a href=\"https://www.youtube.com/watch?v=19HDQ9HppOA&t=299s\" target=\"_blank\">04:59</a> harness 要跟著模型一起演進：Sonnet 4.5 有 context anxiety（提早收尾），團隊在 harness 裡加了緩解措施。Opus 4.5 沒有這個行為，那些措施就用不到了<br>▸ <a href=\"https://www.youtube.com/watch?v=19HDQ9HppOA&t=360s\" target=\"_blank\">06:00</a> 三大資源：agent 定義角色和能力（model、MCP servers、skills），environment 是 agent 的「手」和執行容器，session 把兩者綁在一起<br>▸ <a href=\"https://www.youtube.com/watch?v=19HDQ9HppOA&t=514s\" target=\"_blank\">08:34</a> 把 agent loop 跟工具執行（大腦和手）拆開，憑證更安全，P95 的 time to first token 也降低超過 90%<br>▸ <a href=\"https://www.youtube.com/watch?v=19HDQ9HppOA&t=757s\" target=\"_blank\">12:37</a> 實作：用 Claude Opus 4.7 建立 SRE agent，system prompt 很簡單，並給它 get metrics、recent deploys、get diff 等工具來 debug 事故<br>▸ <a href=\"https://www.youtube.com/watch?v=19HDQ9HppOA&t=1042s\" target=\"_blank\">17:22</a> session 的溝通單位是 event（使用者訊息、工具呼叫、agent 回應），不是 tokens in／tokens out。event 可以即時串流給使用者，也能用在 observability<br>▸ <a href=\"https://www.youtube.com/watch?v=19HDQ9HppOA&t=1846s\" target=\"_blank\">30:46</a> session 有 idle、running、rescheduling、terminated 等狀態，可以接 webhook，依外部事件恢復或啟動 session\n\n📘 術語<br><b>context anxiety</b>（context 焦慮）：Sonnet 4.5 的一種行為：context window 還有空間，Claude 就提早收尾任務<br><b>environment</b>（環境）：agent 的「手」，提供空間和容器，讓 agent 代替你執行動作<br><b>session</b>（工作階段）：把 agent 和 environment 綁在一起，並把 event 串流回給使用者<br><b>outcomes</b>（成果目標）：為 agent 的產出定義 rubric，agent 會自己決定要做哪些工具呼叫來達成結果<br><b>vaults</b>（憑證保管庫）：憑證加密存放在另一個 endpoint，可以按使用者、按 session 管理\n\n📺 <a href=\"https://www.youtube.com/watch?v=19HDQ9HppOA\" target=\"_blank\">Ship your first Managed Agent</a>（2026/05/26 · 37 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，Sonnet 4.5 出現的「context anxiety」是什麼行為？",
+          "options": [
+            "Claude 拒絕讀取太大的檔案",
+            "context window 還有空間，Claude 就提早收尾任務",
+            "Claude 會重複呼叫同一個工具好幾次",
+            "context window 滿了以後，Claude 會自動重新開始任務"
+          ],
+          "correct": 1,
+          "why": "[04:59] 講者說，Sonnet 4.5 的 context window 明明還有空間，Claude 就開始提早收尾任務"
         }
       },
       {
-        id: "c_claudemd",
-        title: "🎬 專案靈魂檔案：CLAUDE.md 的極簡高密度寫法",
-        category: "專案記憶",
-        text: "官方專題影片《The CLAUDE.md file》揭示：沒有 CLAUDE.md，AI 每次開機就像「剛進公司第一天、沒有任何交接的實習生」！\n\n**CLAUDE.md 不是寫長篇作文，而是「高密度指令手冊」**：\n• **不要寫廢話**：不要教模型 Python 基礎語法，它本來就會；只寫「你專案專屬的特例與規矩」。\n• **必備三大要素**：\n  1. **常用的建置與測試指令**（如 `pytest tests/`、`npm run build`）。\n  2. **專案架構禁區**（哪些目錄嚴禁修改、哪些檔案不能直接動）。\n  3. **代碼風格與命名約定**。\n• **分層覆蓋機制**：全域 `~/.claude/CLAUDE.md` 存個人偏好，專案根目錄 `./CLAUDE.md` 存專案規章，子目錄還能放局部規章，層層精準繼承！",
-        tip: "📜 官方精髓：CLAUDE.md 是專案專屬的世界觀，字字千金，只寫專案特有的指令、邊界與規矩！",
-        quiz: {
-          q: "在撰寫專案根目錄的 CLAUDE.md 時，以下哪種內容最符合 Anthropic 官方推薦的最佳實踐？",
-          options: [
-            "貼上 500 行教科書裡的 Python 基本 for 迴圈教學",
-            "精簡記錄本專案的專屬建置與測試指令、禁碰目錄紅線與專案架構約定",
-            "把過去三年的所有 Git Commit 歷史日誌全部複製貼上",
-            "故意留空讓模型自行猜測"
+        "id": "yt_IGo225tfF2I",
+        "title": "🎬 讓 agent 自我學習的 Memory 與 Dreaming",
+        "category": "Agents 與 API",
+        "text": "<b>介紹 Claude Managed Agents 的 memory 與 dreaming，讓 agent 能跨任務持續學習</b><br>▸ <a href=\"https://www.youtube.com/watch?v=IGo225tfF2I&t=167s\" target=\"_blank\">02:47</a> Memory 讓 agent 把先前任務的經驗帶到下一個任務，目標是每做一個任務表現就更好，並能跨環境、跨 agent 學習<br>▸ <a href=\"https://www.youtube.com/watch?v=IGo225tfF2I&t=261s\" target=\"_blank\">04:21</a> Memory 已在 Claude Managed Agents 推出，支援 multi-agent 系統；Rakuten 在正式環境的 first pass errors 下降 97%<br>▸ <a href=\"https://www.youtube.com/watch?v=IGo225tfF2I&t=352s\" target=\"_blank\">05:52</a> 設計理念是「別擋 Claude 的路」：跟 skills 一樣，memory 以檔案系統的形式呈現給 Claude，讓它用 bash、grep 讀寫和整理檔案<br>▸ <a href=\"https://www.youtube.com/watch?v=IGo225tfF2I&t=445s\" target=\"_blank\">07:25</a> 多個 session 可以共用同一個 memory store，並分成 read-only 與 read-write scope，形成階層（例如全組織共用的唯讀 memory）<br>▸ <a href=\"https://www.youtube.com/watch?v=IGo225tfF2I&t=475s\" target=\"_blank\">07:55</a> 用 optimistic concurrency control 避免 agent 互相覆寫；另外還有版本控制、diff、寫入歸屬，以及可執行 CRUD、匯出、redaction 的獨立 API<br>▸ <a href=\"https://www.youtube.com/watch?v=IGo225tfF2I&t=636s\" target=\"_blank\">10:36</a> Dreaming 目前是 research preview，能分析跨 agent、跨 session 的錯誤模式，並自動整理 memory；Harvey 的法律 benchmark 完成率提高到 6 倍<br>▸ <a href=\"https://www.youtube.com/watch?v=IGo225tfF2I&t=703s\" target=\"_blank\">11:43</a> Dreaming 是 out of band 的批次流程，可以臨時手動、每晚、每小時或在 session 結束時觸發，全部由 API 控制，最後產出經過驗證的 memory snapshot<br>▸ <a href=\"https://www.youtube.com/watch?v=IGo225tfF2I&t=766s\" target=\"_blank\">12:46</a> 跟 agent loop 脫鉤的好處：看得出跨 agent 的模式、目標更明確，而且不會增加 agent 的延遲\n\n📘 術語<br><b>Memory store</b>（記憶庫）：以檔案形式存放的 memory，可以設成 read-only 或 read-write，讓多個 session 共用<br><b>Dreaming</b>（作夢（記憶整理流程））：找出跨 agent、跨 session 的錯誤模式，並自動整理、策劃 memory 的流程<br><b>Optimistic concurrency control</b>（樂觀並行控制）：用來避免 agent 互相覆寫彼此對 memory 的修改<br><b>Out of band</b>（頻外執行）：Dreaming 在 session 之外執行、完全脫鉤，不在 hot path 上，所以不增加延遲\n\n📺 <a href=\"https://www.youtube.com/watch?v=IGo225tfF2I\" target=\"_blank\">Memory and dreaming for self learning agents</a>（2026/05/21 · 21 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，dreaming 是怎麼執行的？",
+          "options": [
+            "只分析單一 agent 自己的 transcript",
+            "只能在 Claude console 裡手動觸發，沒有 API",
+            "在每個 session 裡即時執行，agent 一邊做任務一邊整理",
+            "批次流程，在 session 之外（out of band）執行，不增加 agent 延遲"
           ],
-          correct: 1,
-          why: "CLAUDE.md 每次開機都會被載入 Context，必須保持高密度與專案獨特性，只寫專案特定的命令、架構與禁區！"
+          "correct": 3,
+          "why": "[11:43] 提到 dreaming 是 batch process，runs out of band from sessions，而且可以透過 API 觸發；[13:16] 提到它不會給 agent 增加任何延遲"
         }
       },
       {
-        id: "c_context",
-        title: "🎬 上下文容量實戰：Context Management 極限心法",
-        category: "記憶工程",
-        text: "官方影片《Context Management in Claude Code》將 Context 比喻為「Claude 的實體工作桌檯」：\n\n你每讀一個檔案、跑一次終端、貼一段對話，桌上的紙張就堆疊得越高。\n\n**官方傳授的四大桌檯清理秘技**：\n1. **善用精準讀檔**：只用 `grep` / `view_file` 指定行號（例如 20~50 行），絕不整檔上萬行無腦傾倒！\n2. **何時該 /compact**：當對話進展到一半、已取得結論時，打 `/compact` 把落落長的中途探索日誌壓縮成一句話。\n3. **何時該 /clear**：切換到無關的新任務時，果斷 `/clear` 清空工作桌，絕不清盤留戀。\n4. **自動防爆機制**：Claude Code 在 Context 接近 80% 時會主動觸發警告，提醒你修剪記憶避免失智。",
-        tip: "🧹 官方桌檯論：Context 是昂貴的工作檯，不是倉庫；隨手收拾、精準讀取，注意力才永遠在線！",
-        quiz: {
-          q: "當你在大型專案中只需要確認某個類別裡的一個小方法（約 15 行）時，最佳的 Context 操作方式是？",
-          options: [
-            "把整個專案 10,000 行檔案全部叫 AI 逐行讀入",
-            "使用精確搜尋定位行號範圍，僅載入該方法前後的關鍵片段",
-            "直接關掉電腦重買一台記憶體比較大的",
-            "把檔案刪除"
+        "id": "yt_5YHIrTYxM3w",
+        "title": "🎬 在 AWS 上使用 Claude 打造 AI：從程式碼到協作編排（orchestration）",
+        "category": "Agents 與 API",
+        "text": "<b>介紹在 AWS 上使用 Claude 的三種方式與優點，並說明 Claude Code on AWS 工作坊</b><br>▸ <a href=\"https://www.youtube.com/watch?v=5YHIrTYxM3w&t=136s\" target=\"_blank\">02:16</a> Amazon 對 Anthropic 投資了數十億美元，也是 Anthropic 的主要雲端供應商；Anthropic 承諾在 AWS 上使用超過 100 billion 的用量<br>▸ <a href=\"https://www.youtube.com/watch?v=5YHIrTYxM3w&t=166s\" target=\"_blank\">02:46</a> Project Rainier 是規模最大的 AI 運算基礎設施之一，用來訓練和部署 Claude 模型。另外也用 Amazon 自研晶片 Trainium，目前已經是第三代<br>▸ <a href=\"https://www.youtube.com/watch?v=5YHIrTYxM3w&t=227s\" target=\"_blank\">03:47</a> Bedrock 是完整平台，可以微調模型，講者說它是唯一能在雲端 fine-tune Haiku 的供應商；資料可以留在 AWS 邊界內，平台有 zero operator access<br>▸ <a href=\"https://www.youtube.com/watch?v=5YHIrTYxM3w&t=380s\" target=\"_blank\">06:20</a> Bedrock 還有評估、prompt 最佳化、fine-tuning、蒸餾、knowledge bases、Guardrails 等功能；AgentCore 可搭配 LangChain、Crew AI 和 Claude Agent SDK<br>▸ <a href=\"https://www.youtube.com/watch?v=5YHIrTYxM3w&t=471s\" target=\"_blank\">07:51</a> 在 AWS 用 Claude 的好處：資料主權、帳單統一、可用 CloudWatch／CloudTrail 做觀測、有 SLA、內建驗證整合（SSO、OAuth、IAM），還有 private link<br>▸ <a href=\"https://www.youtube.com/watch?v=5YHIrTYxM3w&t=624s\" target=\"_blank\">10:24</a> 三種用法：一是透過 Bedrock（已加入 Opus 4.7 和 messages API）；二是 Claude platform on AWS（已正式上線，功能和 Anthropic 一致）；三是 Desktop 應用程式<br>▸ <a href=\"https://www.youtube.com/watch?v=5YHIrTYxM3w&t=777s\" target=\"_blank\">12:57</a> 工作坊需要兩樣東西：AWS 帳號和 Claude Code。模組二用 Playwright MCP 和 Git 工作流程，模組三練習 subagent、plugins、自訂 skills、hooks<br>▸ <a href=\"https://www.youtube.com/watch?v=5YHIrTYxM3w&t=1111s\" target=\"_blank\">18:31</a> 手動設定 Claude Code 時，可設定指向 Bedrock 的 region 和預設模型，也有降低 token 用量、rate limiting、啟用遙測回報等參數\n\n📘 術語<br><b>Guardrails</b>（防護機制）：可以套用內容過濾、封鎖特定主題、自動遮蔽 PII 等敏感資料，也能透過 grounding 控制幻覺<br><b>Amazon Bedrock AgentCore</b>（Bedrock 代理執行平台）：在雲端安全託管 agent 的基礎設施，相容 LangChain、Crew AI、Claude Agent SDK 等框架<br><b>Zero operator access</b>（零營運人員存取）：Amazon 和 Anthropic 都沒有人能存取這些執行個體，資料完全保持私密<br><b>Trainium</b>（Trainium 晶片）：Amazon 專為 Claude 模型打造的客製晶片，目前是第三代<br><b>Claude platform on AWS</b>（AWS 上的 Claude platform）：體驗和直接使用 Anthropic 相同，但帳單和存取控制都在 AWS；AWS 當 gateway 把請求轉給 Anthropic\n\n📺 <a href=\"https://www.youtube.com/watch?v=5YHIrTYxM3w\" target=\"_blank\">AI with Claude on AWS: From code to orchestration</a>（2026/05/20 · 19 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "講者說，AWS 是唯一能讓你在雲端 fine-tune 哪一個 Claude 模型的供應商？",
+          "options": [
+            "Haiku",
+            "Opus",
+            "Claude 2",
+            "Sonnet"
           ],
-          correct: 1,
-          why: "精準讀檔（Targeted Range Reading）能將 Context 消耗降到最低，避免無關代碼稀釋模型的注意力權重！"
+          "correct": 0,
+          "why": "[03:47] 講者說：「We are the only provider that allows you to fine tune Haiku in example in the cloud.」"
         }
       },
       {
-        id: "c_mcp",
-        title: "🎬 MCP 協定：讓 Claude Code 跨界連接百萬工具",
-        category: "工具生態",
-        text: "在《MCP in Claude Code》中，官方展示了 **Model Context Protocol（MCP 模型上下文協定）** 的終極威力。\n\n以前 AI 只能在自己的小黑盒子裡打字；有了 MCP，Claude 獲得了**通用外接插座**：\n• **標準化連線**：一套協定，無縫串接 GitHub、PostgreSQL 資料庫、Slack、Google Drive、自訂交易系統！\n• **按需即用**：當你問它「線上資料庫最近一筆訂單是多少」，Claude 透過 MCP 伺服器直接安全查詢資料庫，不需要你手動匯出 CSV。\n• **極速擴充**：只要幾行 JSON 設定（mcpServers），任何本機 Python 腳本或遠端 API 都能一秒化身為 Claude 的專屬工具！",
-        tip: "🔌 官方定位：MCP 是 AI 時代的 USB 介面，讓 Claude 真正打通企業內部系統與外部百萬資料源！",
-        quiz: {
-          q: "在 Claude Code 體系中，Model Context Protocol（MCP）的核心作用是什麼？",
-          options: [
-            "用來調暗螢幕亮度以節省電量",
-            "作為開放標準協定，讓 Claude 能安全標準化地連接本機腳本、外部資料庫與第三方企業系統",
-            "強制將所有程式碼轉譯成純純的二進位機器碼",
-            "防止電腦連上網際網路"
+        "id": "yt_KLCuxMDZSDg",
+        "title": "🎬 不斷擴充的工具組",
+        "category": "Agents 與 API",
+        "text": "<b>以前要自己寫的 scaffolding，現在已內建在模型與 API 中</b><br>▸ <a href=\"https://www.youtube.com/watch?v=KLCuxMDZSDg&t=59s\" target=\"_blank\">00:59</a> 主題：去年要自己寫的 scaffolding，現在直接跟模型一起提供。不要再把模型當成單純的輸入輸出 LLM，而是當成一套不斷擴充的工具組<br>▸ <a href=\"https://www.youtube.com/watch?v=KLCuxMDZSDg&t=246s\" target=\"_blank\">04:06</a> Tool use：模型能自己搜尋並挑選工具，這時工具 router 和預先過濾通常只會更糟；工具出錯時，Claude 會看到錯誤、自己修正後再呼叫一次<br>▸ <a href=\"https://www.youtube.com/watch?v=KLCuxMDZSDg&t=310s\" target=\"_blank\">05:10</a> 技巧：在工具描述裡加上 output schema（例如會回傳 ID、title、snippet、score），可以省一次和 harness 之間的來回；Claude Code 可以用 pre／post tool use hooks<br>▸ <a href=\"https://www.youtube.com/watch?v=KLCuxMDZSDg&t=440s\" target=\"_blank\">07:20</a> Context 管理：1 million context 採固定價格，加上 server-side compaction 和 context editing，只要幾行 config 就能搞定<br>▸ <a href=\"https://www.youtube.com/watch?v=KLCuxMDZSDg&t=500s\" target=\"_blank\">08:20</a> 技巧：每 N 個 turn 就清掉過時的工具結果（截圖、搜尋結果、讀檔），但保留它們促成的決策；Claude Code 可以用 /context 查看 context 被什麼佔滿<br>▸ <a href=\"https://www.youtube.com/watch?v=KLCuxMDZSDg&t=634s\" target=\"_blank\">10:34</a> Code execution tool 在伺服器端給 Claude 一個 hosted sandbox，寫程式、執行、修正的迴圈在單一 API turn 內完成；Claude Code 可以用 /schedule 排定 cron 自動執行<br>▸ <a href=\"https://www.youtube.com/watch?v=KLCuxMDZSDg&t=789s\" target=\"_blank\">13:09</a> Computer use：Opus 47 可以接收原生解析度截圖，最高到 1440p，並回傳一對一的像素座標；OS World 從不到 50% 提升到 78%<br>▸ <a href=\"https://www.youtube.com/watch?v=KLCuxMDZSDg&t=1186s\" target=\"_blank\">19:46</a> 原則：用來彌補模型不可靠的程式碼，壽命只有幾個月；把模型接上你自己世界的程式碼（工具、資料、auth、context）才會持續累積價值\n\n📘 術語<br><b>pre- and post-tool use hooks</b>（工具呼叫前後的 hook）：在 Claude settings 裡設定，Claude 呼叫工具之前或之後會用程式觸發動作，例如擋掉呼叫或記錄輸出<br><b>server-side compaction</b>（伺服器端壓縮）：和 context editing 搭配使用，把原本自己寫的記憶管理簡化成幾行 config<br><b>code execution tool</b>（程式碼執行工具）：在伺服器端自動給 Claude 一個 hosted sandbox，就像 Claude 自己的一台電腦<br><b>OS World</b>（OS World 評測）：評估模型能否在專業與一般消費級軟體上完成複雜任務的 eval<br><b>Claude in Chrome</b>（Claude in Chrome 擴充功能）：從 claude.ai/chrome 安裝後，Claude Code 可以用你的 Chrome 瀏覽網頁，也能測本地開發\n\n📺 <a href=\"https://www.youtube.com/watch?v=KLCuxMDZSDg\" target=\"_blank\">The expanding toolkit</a>（2026/05/08 · 21 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "講者說 Opus 47 在 computer use 中，最高能接收哪種解析度的原生截圖並回傳一對一像素座標？",
+          "options": [
+            "4K",
+            "1440p",
+            "720p",
+            "1080p"
           ],
-          correct: 1,
-          why: "MCP 是 Anthropic 發起的開源標準，讓大模型能以統一安全的方式調用外部資料庫、API 與自訂工具！"
+          "correct": 1,
+          "why": "[13:09] 字幕說 Opus 47 可以接收原生解析度截圖，並回傳一對一像素座標，最高到 1440p；[14:40] 另外提到 4K 仍建議自己先縮小解析度。"
         }
       },
       {
-        id: "c_decompose",
-        title: "🎬 架構拆解：Tool、Skill 還是 Subagent？（當 Prompt 爆棚時）",
-        category: "進階架構",
-        text: "官方技術演講《Tool, skill, or subagent? Decomposing an agent that outgrew its prompt》深入探討了架構分解的終極命題：\n\n當你的需求太複雜、Prompt 塞了幾萬字快爆開時，該如何重構？\n\n**官方給出的三層分解金字塔**：\n1. **Tool（工具）**：只負責「做動作」（如讀檔案、跑 shell、打 API）。它**沒有自主判斷力**，輸入什麼就返回什麼。\n2. **Skill（技能包）**：把「專屬領域知識＋多個工具組合＋SOP 範例」打包成一整套獨立資料夾（SKILL.md）。需要時才動態掛載！\n3. **Subagent（子代理）**：當任務需要「多輪推理、上下文隔離、自我除錯閉環」時（例如專職測試排查），升級為獨立運行的子 Agent！",
-        tip: "🏗️ 官方架構學：單純動作做成 Tool，領域 SOP 做成 Skill，獨立推理與隔離閉環做成 Subagent！",
-        quiz: {
-          q: "如果你的專案需要一套「特定交易日判讀、抓取 GEX 數據並依權威規則排版」的完整 SOP 流程，最適合封裝成什麼形態？",
-          options: [
-            "死板的單一 bash 指令（Tool）",
-            "結構化的專屬技能包（Skill：內含專屬 SOP 規則、參數定義與範例，按需調用）",
-            "把所有步驟寫在每位工程師的桌布上",
-            "永久禁止 AI 碰交易資料"
+        "id": "yt_NLWiIj47IdI",
+        "title": "🎬 什麼是 Claude Managed Agents？",
+        "category": "Agents 與 API",
+        "text": "<b>介紹 Claude Managed Agents 這套 API，並用三個示範說明如何大規模建置與部署 agent</b><br>▸ <a href=\"https://www.youtube.com/watch?v=NLWiIj47IdI&t=4s\" target=\"_blank\">00:04</a> Claude Managed Agents 是一套用來大規模建置與部署 agent 的 API：你定義 agent 的工具、角色和能力，設定 sandbox 環境的套件與網路控管，再從自己的應用程式發起 session<br>▸ <a href=\"https://www.youtube.com/watch?v=NLWiIj47IdI&t=4s\" target=\"_blank\">00:04</a> Claude 在隔離的 container 裡工作，可以完整存取檔案系統、執行 bash，也能用 web search<br>▸ <a href=\"https://www.youtube.com/watch?v=NLWiIj47IdI&t=34s\" target=\"_blank\">00:34</a> 示範：把 Kanban 卡片拖到 in progress 就會自動發起 session；environment 已預裝 Lighthouse、Puppeteer，並掛載 GitHub repo，再加上 rubric（Lighthouse 分數 90 以上等）<br>▸ <a href=\"https://www.youtube.com/watch?v=NLWiIj47IdI&t=64s\" target=\"_blank\">01:04</a> 每次 tool call 都透過 event stream 即時傳回看板；另一個 grader 在自己的 context window 依標準評估，Claude 依回饋修正後重新提交，分數拉到 96<br>▸ <a href=\"https://www.youtube.com/watch?v=NLWiIj47IdI&t=96s\" target=\"_blank\">01:36</a> 可以同時拖第二張卡片：兩個 session、兩個 container，平行處理兩個不同任務<br>▸ <a href=\"https://www.youtube.com/watch?v=NLWiIj47IdI&t=96s\" target=\"_blank\">01:36</a> SaaS 價格追蹤 agent：上網查價格、在 sandbox 裡用 Python 做成本分析、用 Excel skill 寫主管摘要，再透過 MCP servers 發 Slack 並建立 Asana 任務<br>▸ <a href=\"https://www.youtube.com/watch?v=NLWiIj47IdI&t=127s\" target=\"_blank\">02:07</a> Memory store：開始前先查上週的結果，結束後存下有變動的地方，所以報告能寫出「Cloud compute 比上週低 15%」<br>▸ <a href=\"https://www.youtube.com/watch?v=NLWiIj47IdI&t=158s\" target=\"_blank\">02:38</a> 監控警報示範：coordinator agent 把工作分派給三個 specialist（各自有 context window、共用檔案系統），彙整成事件摘要；發 Slack 前會觸發 permissions policy，等人核准才送出\n\n📘 術語<br><b>Session</b>（工作階段）：從自己的應用程式發起，Claude 會在隔離的 container 裡執行任務<br><b>Environment</b>（執行環境）：設定好的 sandbox，可以預裝套件（如 Lighthouse、Puppeteer）並設定網路控管<br><b>Rubric</b>（評分標準）：你訂的完成標準，由另一個 grader 在自己的 context window 評估輸出<br><b>Memory store</b>（記憶庫）：agent 可以讀寫，用來比對上次的結果、記住過去的事件，下次就不用從頭開始<br><b>Multi-agent coordination</b>（多 agent 協作）：coordinator 把工作分派給 specialist，各自有 context window、共用檔案系統，最後彙整結果\n\n📺 <a href=\"https://www.youtube.com/watch?v=NLWiIj47IdI\" target=\"_blank\">What is Claude Managed Agents?</a>（2026/04/09 · 3 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "在網站效能優化的示範中，rubric 是怎麼運作的？",
+          "options": [
+            "使用者在 Kanban 看板上手動替每次輸出打分數",
+            "另一個 grader 在自己的 context window 依標準評估輸出，Claude 讀了回饋修正後重新提交",
+            "由 Asana 建立審查任務，讓團隊成員評估成果",
+            "Claude 在同一個 context window 自己評分，達標就結束"
           ],
-          correct: 1,
-          why: "包含特定業務邏輯、指引與多工具組合的領域標準作業程序，最適合封裝成獨立的 Skill 模組！"
+          "correct": 1,
+          "why": "[01:04] 字幕說：A separate grader running at its own context window evaluates the output against my criteria. Claude reads that feedback, goes back in, fixes what it misses, and then resubmits."
+        }
+      }
+    ]
+  },
+  yt_prompt: {
+    "id": "yt_prompt",
+    "name": "📺 提示與選模型・官方頻道字幕版",
+    "badge": "官方字幕實證",
+    "lessons": [
+      {
+        "id": "yt_71-8fJIGi34",
+        "title": "🎬 你該用哪個 Claude 模型？",
+        "category": "提示與模型選擇",
+        "text": "<b>比較每個任務的總成本而非每 token 單價，依任務類型選模型與 effort</b><br>▸ <a href=\"https://www.youtube.com/watch?v=71-8fJIGi34&t=0s\" target=\"_blank\">00:00</a> 選最便宜的模型、用最低 effort 看似最省，但推出 Claude Fable 5.1 後，更聰明的模型完成任務的成本可能更低<br>▸ <a href=\"https://www.youtube.com/watch?v=71-8fJIGi34&t=0s\" target=\"_blank\">00:00</a> 影響任務成本的三個因素：model、effort、cache。模型越強，每 token 通常越貴，但它往往用更少的步驟就能完成任務<br>▸ <a href=\"https://www.youtube.com/watch?v=71-8fJIGi34&t=34s\" target=\"_blank\">00:34</a> 模型在不同請求之間不會記得任何東西，每次都要重新處理整段對話；caching 讓它重複使用已處理過的內容，成本約為十分之一<br>▸ <a href=\"https://www.youtube.com/watch?v=71-8fJIGi34&t=66s\" target=\"_blank\">01:06</a> Fable 5.1 每 token 單價和 5 相同，但在按 token 計費時 cache reads 便宜 75%；一般工作總成本約降 25%，長時間 agentic 任務最多約降 45%<br>▸ <a href=\"https://www.youtube.com/watch?v=71-8fJIGi34&t=66s\" target=\"_blank\">01:06</a> 在第三方程式基準 CursorBench 上，5.1 用 medium effort 的結果與 5 用 max effort 相近，成本約為五分之一<br>▸ <a href=\"https://www.youtube.com/watch?v=71-8fJIGi34&t=96s\" target=\"_blank\">01:36</a> 任務分兩類：開放式工作（深度研究、複雜分析、長時間 agent 工作），以及例行工作（摘要文件、草擬 email、從報告擷取資料）<br>▸ <a href=\"https://www.youtube.com/watch?v=71-8fJIGi34&t=127s\" target=\"_blank\">02:07</a> 開放式任務為主就用 Fable 5.1，effort 從 medium 開始、需要時再調高；例行任務為主就維持 Opus 或 Sonnet，需要時再改用 Fable。subagent 通常用較便宜的模型就夠<br>▸ <a href=\"https://www.youtube.com/watch?v=71-8fJIGi34&t=157s\" target=\"_blank\">02:37</a> 管理員可以針對全員或個別角色設定三種控制：model entitlements、effort caps、defaults\n\n📘 術語<br><b>effort</b>（推理投入程度）：模型回答前做多少推理；effort 越高越貴，但結果往往更好<br><b>caching</b>（快取）：重複使用已處理過的內容，不必重新處理整段對話，成本約為十分之一<br><b>model entitlements</b>（模型使用權限）：決定使用者可以選哪些模型<br><b>effort caps</b>（effort 上限）：設定使用者在某個模型上最高能選的 effort<br><b>defaults</b>（預設值）：設定新對話一開始使用的模型和 effort\n\n📺 <a href=\"https://www.youtube.com/watch?v=71-8fJIGi34\" target=\"_blank\">Which Claude model should you use?</a>（2026/09/18 · 3 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，在按 token 計費時，Claude Fable 5.1 的 cache reads 比 5 便宜多少？",
+          "options": [
+            "便宜 90%",
+            "便宜 45%",
+            "便宜 75%",
+            "便宜 25%"
+          ],
+          "correct": 2,
+          "why": "[01:06] 字幕提到 5.1 每 token 單價和 5 相同，但按 token 計費時 cache reads 便宜 75%。25% 和 45% 是整體成本的降幅，不是 cache reads 的降幅"
         }
       },
       {
-        id: "c_auto_mode",
-        title: "🎬 Auto Mode 機制：97% 的放行背後的安全沙盒",
-        category: "安全架構",
-        text: "官方研究《How auto mode works with Claude Code》公布了一組驚人數據：\n在日常開發中，工程師對 Claude Code 提出的操作請求，**批准率高達 97%**！\n這意味著一直跳彈窗確認，只會讓人麻木狂按 Enter，失去真正的防護意義。\n\n**Auto Mode 的分級安全沙盒機制**：\n• **綠燈自動放行（Safe Auto）**：檔案讀取（Read）、專案搜尋（Grep/Find）、單元測試執行（Test）、格式化代碼（Lint）。這些安全可逆操作完全自動通行！\n• **紅燈強制煞車（Hard Stop）**：跨網路外傳敏感金鑰、刪除歷史檔案（rm）、強制推送（git push -f）、涉及金錢或交易。這些操作嚴格強制暫停，等待人類確認授權！",
-        tip: "🚦 官方理念：把精力放在 3% 的致命危險操作上，97% 的安全日常全自動放行！",
-        quiz: {
-          q: "Claude Code 的 Auto Mode 設計哲學中，為什麼要把「檔案讀取與單元測試」預設放行，而對「刪除與強制推送」嚴格攔截？",
-          options: [
-            "因為刪除檔案速度太快來不及看",
-            "將安全可逆的低風險操作自動化提升效率，把人類的注意力集中在具有破壞性或不可逆的關鍵邊界上",
-            "為了讓軟體看起來更像遊戲",
-            "因為單元測試不能被任何人看到"
+        "id": "yt_G2B0YWuJUgI",
+        "title": "🎬 提示工程實戰手冊（The prompting playbook）",
+        "category": "提示與模型選擇",
+        "text": "<b>用兩個實例示範如何維護舊 prompt、從零打造新 agent，並用 eval 驗證</b><br>▸ <a href=\"https://www.youtube.com/watch?v=G2B0YWuJUgI&t=150s\" target=\"_blank\">02:30</a> 改 prompt 要先有 eval 才能確認改動真的有進步；換模型後變差可能是行為不同（可用 prompt 調整），也可能是能力不足（prompt 救不了）<br>▸ <a href=\"https://www.youtube.com/watch?v=G2B0YWuJUgI&t=242s\" target=\"_blank\">04:02</a> Eval 至少要涵蓋三類：一定要過的 control case、模型以前出錯過的 edge case，以及該轉真人或該拒絕的情境<br>▸ <a href=\"https://www.youtube.com/watch?v=G2B0YWuJUgI&t=658s\" target=\"_blank\">10:58</a> 先做基本整理：刪掉多餘內容、用 XML tags 分開 role、policy、tone；如果人都分不清 guideline、policy 和 data，模型大概也分不清<br>▸ <a href=\"https://www.youtube.com/watch?v=G2B0YWuJUgI&t=720s\" target=\"_blank\">12:00</a> 定義 output format，並在 API 呼叫加 stop sequence；輸出結構比較複雜時，可以用 structured outputs<br>▸ <a href=\"https://www.youtube.com/watch?v=G2B0YWuJUgI&t=936s\" target=\"_blank\">15:36</a> 為舊模型加的防禦性 patch 可能會被新模型過度遵守，導致模型不給它明明有的資訊；建議用 version control 記下加這些 patch 的原因<br>▸ <a href=\"https://www.youtube.com/watch?v=G2B0YWuJUgI&t=1180s\" target=\"_blank\">19:40</a> 指令不會增加能力：光說「計算很重要」沒用，應該給模型一個 proration 計算 tool<br>▸ <a href=\"https://www.youtube.com/watch?v=G2B0YWuJUgI&t=1309s\" target=\"_blank\">21:49</a> 權衡要把兩面都講清楚：只說轉真人要花 $8，模型就會過度避免轉真人；要一併說明處理錯了得退款，還會失去客戶信任<br>▸ <a href=\"https://www.youtube.com/watch?v=G2B0YWuJUgI&t=1846s\" target=\"_blank\">30:46</a> 排班 agent 實驗：用 Opus 4.7 加 adaptive thinking 可以達成，但 token 和延遲都變三倍；generate-evaluate-repair loop 同樣全部通過，token 更少、延遲也更低\n\n📘 術語<br><b>eval / evaluations</b>（評測）：用來嚴謹確認 prompt 的改動是否真的讓效能變好<br><b>control case</b>（對照案例）：一定要過的案例：明確不模糊，而且已知模型處理得好<br><b>stop sequence</b>（停止序列）：加在 API 呼叫裡，偵測到結尾的 XML tag 時就叫模型停止生成<br><b>adaptive thinking</b>（自適應思考）：讓模型自己決定要用多少思考和推理來解題<br><b>generate-evaluate-repair loop</b>（生成－評估－修復迴圈）：三個簡單的 prompt 分開跑：先產生草稿，再列出違規之處，最後針對違規做修正\n\n📺 <a href=\"https://www.youtube.com/watch?v=G2B0YWuJUgI\" target=\"_blank\">The prompting playbook</a>（2026/05/22 · 33 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "在 Meridian Mobile 的例子裡，模型算 proration 帳單時一直給出模糊的答案，講者用什麼方法解決？",
+          "options": [
+            "給模型一個 calculate proration tool",
+            "在 API 呼叫加上 stop sequence",
+            "把模型換成 Opus 4.7",
+            "在 prompt 裡加上 CRITICAL，強調一定要算對"
           ],
-          correct: 1,
-          why: "高明的安全防禦是「聚焦關鍵威脅」；過多無意義的確認只會引發疲勞，對破壞性操作進行嚴格攔截才是真正保護專案的核心！"
+          "correct": 0,
+          "why": "[18:39] 講者指出，叫模型「好好做」卻沒給它做到的能力沒有幫助，所以改成給它 calculate proration tool；[19:40] 的結論是「instructions don't add capability」。"
+        }
+      }
+    ]
+  },
+  yt_product: {
+    "id": "yt_product",
+    "name": "📺 產品功能・官方頻道字幕版",
+    "badge": "官方字幕實證",
+    "lessons": [
+      {
+        "id": "yt_MhfnicQVkgY",
+        "title": "🎬 與 @Claude 一起工作的未來",
+        "category": "產品功能",
+        "text": "<b>介紹 Claude Tag：在頻道中主動出手、有記憶、多人協作的 Claude</b><br>▸ <a href=\"https://www.youtube.com/watch?v=MhfnicQVkgY&t=30s\" target=\"_blank\">00:30</a> 寫程式的 AI 從 typeahead 逐行補字，進步到寫出整個函式、檔案、功能；現在 Tag 能完成整個功能、跑完整個實驗、做資料分析，兩年內有兩次大躍進<br>▸ <a href=\"https://www.youtube.com/watch?v=MhfnicQVkgY&t=91s\" target=\"_blank\">01:31</a> 以前要打開 Claude 提問它才做事；Claude Tag 會主動判斷何時加入，就算工作要花好幾天或好幾週也會做完並追蹤，還會記住指示供下次使用<br>▸ <a href=\"https://www.youtube.com/watch?v=MhfnicQVkgY&t=152s\" target=\"_blank\">02:32</a> 根據最新 METR evals，最新模型一次可以連續工作 16 小時；在 Claude Tag 裡，Claude 還能自己排程，幾天、幾週或幾個月後再回來追蹤<br>▸ <a href=\"https://www.youtube.com/watch?v=MhfnicQVkgY&t=217s\" target=\"_blank\">03:37</a> 模型有記憶，能記住所有使用者給過的指示。例如在頻道裡要它只監控某類問題，它會一直記得；之後有人擴大範圍，它也會跟著調整<br>▸ <a href=\"https://www.youtube.com/watch?v=MhfnicQVkgY&t=249s\" target=\"_blank\">04:09</a> Claude 受過訓練，懂得判斷什麼時候需要它、什麼時候該退居幕後；覺得它太常或太少加入，直接告訴它，它會記住<br>▸ <a href=\"https://www.youtube.com/watch?v=MhfnicQVkgY&t=402s\" target=\"_blank\">06:42</a> Chat、Cowork、Claude Code 都要自己記得去打開，比較被動；Claude Tag 可以接受較高層次的目標（例如為頻道裡每個 bug 開 PR），而且支援多人一起引導<br>▸ <a href=\"https://www.youtube.com/watch?v=MhfnicQVkgY&t=527s\" target=\"_blank\">08:47</a> 在他們所屬的 product org 裡，約 65% 的 PR 是 Tag 寫的，比例還在持續上升<br>▸ <a href=\"https://www.youtube.com/watch?v=MhfnicQVkgY&t=620s\" target=\"_blank\">10:20</a> Tag 跑在跟行動版、桌面 app 相同的遠端 sandbox，用的是同一個 agent SDK，能驗證自己的成果；目前已在 Slack 推出，接下來會支援 Microsoft Teams 等平台\n\n📘 術語<br><b>Claude Tag</b>（Claude Tag（頻道裡的 Claude））：把 Claude 加進頻道，它會主動加入、做好工作、後續追蹤並記住指示，而且支援多人協作<br><b>typeahead</b>（輸入預測補全）：兩年前工程師能用的 AI，由人決定要寫哪一行，AI 只幫忙把那一行寫出來<br><b>multi-player</b>（多人協作）：每個人都看得到、也都能參與，多人一起引導同一個 session，得到更好的成果<br><b>METR evals</b>（METR 評測）：用來評估模型能自主工作多久；最新模型可連續工作 16 小時\n\n📺 <a href=\"https://www.youtube.com/watch?v=MhfnicQVkgY\" target=\"_blank\">The future of work with @Claude</a>（2026/07/02 · 11 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片提到，在講者所屬的 product org 中，大約有多少比例的 PR 是由 Tag 寫的？",
+          "options": [
+            "約 45%",
+            "約 65%",
+            "約 85%",
+            "約 25%"
+          ],
+          "correct": 1,
+          "why": "[08:47] 講者說在 product org 裡，Tag 寫的 PR「I think it's like 65% now」，而且還在持續上升"
         }
       },
       {
-        id: "c_hooks",
-        title: "🎬 Hooks 確定性腳本：生命週期自動化防線",
-        category: "工程自動化",
-        text: "在《Hooks in Claude Code》中，官方提出了一個極其關鍵的概念：**「Hooks are deterministic（Hooks 具備 100% 確定性）！」**\n\n大模型有時可能因為注意力發散而「忘記跑代碼檢查或格式化」。\n\n**Hooks 的威力在於：它不是靠 AI 的意志，而是系統級強制觸發！**\n• **Pre-commit Hook**：在每次代碼提交前，強制自動執行 `black` 格式化與 `pytest` 單元測試；測試沒過，直接攔截不准提交！\n• **Post-checkout Hook**：換分支後自動同步套件相依性。\n• **生命週期錨定**：把「必須 100% 執行、絕不能漏」的死板規矩寫進 Hooks，把「思考與創造」留給 Claude！",
-        tip: "⚓ 官方金律：大模型負責智慧思考，Hooks 負責鐵血防線；不可動搖的規矩交給 Hooks 強制執行！",
-        quiz: {
-          q: "在 Claude Code 專案中，如果你希望「每次 AI 寫完程式碼準備 Commit 時，必須 100% 強制跑過單元測試且不得漏掉」，最好的實作方式是？",
-          options: [
-            "在對話框裡懇求 AI「拜託你千萬不要忘記跑測試」",
-            "配置確定性的 Pre-commit Hook，由底層系統在提交前強制觸發測試，未通過則自動中斷",
-            "不要寫任何測試",
-            "每次手動把程式碼抄在筆記本上"
+        "id": "yt_EPUg9pmfPk0",
+        "title": "🎬 法務團隊如何使用 Claude Cowork",
+        "category": "產品功能",
+        "text": "<b>Anthropic 內部產品律師示範如何用 Claude Cowork 快速回覆產品團隊的法律問題</b><br>▸ <a href=\"https://www.youtube.com/watch?v=EPUg9pmfPk0&t=11s\" target=\"_blank\">00:11</a> Mark 是 Anthropic 的內部產品律師。一位 PM 用 Slack 問他幾個月前上線的功能，但他手上已經沒有當初寫備忘錄時的背景資料。以前他得先花一小時重讀舊文件才能開始處理<br>▸ <a href=\"https://www.youtube.com/watch?v=EPUg9pmfPk0&t=41s\" target=\"_blank\">00:41</a> 他在 Claude Cowork 排程任務，每天一早執行，像私人幕僚長一樣整理備忘錄，列出待辦、新事項和急件。這個任務連結了 Gmail，當天 5 個項目依到期順序排列<br>▸ <a href=\"https://www.youtube.com/watch?v=EPUg9pmfPk0&t=41s\" target=\"_blank\">00:41</a> 他最常用的 skill 是 /brief，需要快速掌握某個產品時就會執行。這個 plugin 由他參與打造，依照 Anthropic 法務部門的工作方式設計<br>▸ <a href=\"https://www.youtube.com/watch?v=EPUg9pmfPk0&t=72s\" target=\"_blank\">01:12</a> 這個 plugin 採開放協定（open protocol），任何人都能打開，依照自家公司的 playbook 客製化。skill 已經知道審查檔案放在哪裡、範本怎麼編排，所以 prompt 可以很短<br>▸ <a href=\"https://www.youtube.com/watch?v=EPUg9pmfPk0&t=72s\" target=\"_blank\">01:12</a> Claude 會從資料夾讀取先前的審查，再讀新的 Slack 和 Gmail 對話串，整理出三件事：當初的結論、這次改了什麼、影響分析的哪些部分<br>▸ <a href=\"https://www.youtube.com/watch?v=EPUg9pmfPk0&t=104s\" target=\"_blank\">01:44</a> 不用讀完 40 頁備忘錄，brief 會直接指出相關的 3 段，點進去可以看到原文。因為回覆要署名，他一定會親自核對（trust but verify），確保有 human in the loop<br>▸ <a href=\"https://www.youtube.com/watch?v=EPUg9pmfPk0&t=135s\" target=\"_blank\">02:15</a> 確認見解後，他請 Claude 草擬回覆給產品團隊，Claude 會先請他核准。Claude 也能關閉 Jira 票，讓團隊之後遇到同類問題時有脈絡可查<br>▸ <a href=\"https://www.youtube.com/watch?v=EPUg9pmfPk0&t=135s\" target=\"_blank\">02:15</a> 這樣能累積一套知識庫，法務部門的人，必要時全公司的人都能查閱，避免形成資訊孤島\n\n📘 術語<br><b>/brief</b>（/brief 指令（skill））：需要快速掌握特定產品時使用，會整理出當初的結論、這次的變更和受影響的部分<br><b>human in the loop</b>（人類參與把關）：回覆要以律師本人名義送出，所以要親自核對原文，秉持 trust but verify<br><b>information silos</b>（資訊孤島）：把結果記錄到 Jira 票並累積成知識庫，讓法務部門乃至全公司都能查閱，避免形成孤島\n\n📺 <a href=\"https://www.youtube.com/watch?v=EPUg9pmfPk0\" target=\"_blank\">Claude Cowork for legal teams</a>（2026/05/18 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片中 Mark 提到 Anthropic 用哪個工具追蹤票務，並讓 Claude 幫忙關閉票？",
+          "options": [
+            "Linear",
+            "Asana",
+            "Jira",
+            "Notion"
           ],
-          correct: 1,
-          why: "Hooks 是系統層級的確定性機制（Deterministic），不依賴大模型的機率判斷，能 100% 保證關鍵防線被嚴格執行！"
+          "correct": 2,
+          "why": "[02:15] Mark 說「We track tickets in Jira at Anthropic, so I can also have it close out our ticket.」"
         }
       },
       {
-        id: "c_remote",
-        title: "🎬 遠端無縫接關：Remote Control 讓終端帶著走",
-        category: "跨平台協同",
-        text: "官方發布《Using Claude Code Remote Control》解鎖了極致自由的開發場景：\n\n你在辦公室終端機開啟了一個龐大的重構任務，下班時間到了，你想搭捷運時用手機繼續看進度，怎麼辦？\n\n**Remote Control 的革命性體驗**：\n• **會話不斷線**：本機終端保持運行，開啟 `--remote` 或生成配對連結。\n• **手機/Web 即時同步**：用手機瀏覽器或 Claude App 打開專屬連結，終端輸出即時鏡像投影！\n• **雙向接力控制**：出門在外用手機滑兩下回覆「確認繼續」，本機電腦立刻無縫接著跑，下車回家打開電腦，進度已經推進完畢！",
-        tip: "📱 隨身終端：本機掛載環境，手機遠端監視與批准，隨時隨地掌控全局！",
-        quiz: {
-          q: "使用 Claude Code 的 Remote Control 功能，對工程師最大的核心價值是什麼？",
-          options: [
-            "可以讓電腦風扇轉得更快",
-            "能從手機或網頁隨時隨地連回本機終端 Session，無縫監視進度、下達指令或批准操作，工作不中斷",
-            "讓終端機顏色變成粉紅色",
-            "不需要本機安裝任何軟體"
+        "id": "yt_Lbml7IuGJYw",
+        "title": "🎬 開始使用 Claude Cowork",
+        "category": "產品功能",
+        "text": "<b>介紹 Claude Cowork 的設定方式，並示範如何讓 Claude 直接整理本機檔案</b><br>▸ <a href=\"https://www.youtube.com/watch?v=Lbml7IuGJYw&t=1s\" target=\"_blank\">00:01</a> Cowork 可以把完整任務交給 Claude。本機檔案它能直接找、直接改；雲端上的東西透過 Google Drive、Notion、Slack 等服務連接；瀏覽器上的則透過 Claude in Chrome 處理<br>▸ <a href=\"https://www.youtube.com/watch?v=Lbml7IuGJYw&t=1s\" target=\"_blank\">00:01</a> Claude Cowork 已在 macOS 和 Windows 版的 Claude Desktop app 全面開放，適用 Pro、Max、Team、Enterprise 使用者<br>▸ <a href=\"https://www.youtube.com/watch?v=Lbml7IuGJYw&t=41s\" target=\"_blank\">00:41</a> 打開 Claude Desktop，點 Cowork 分頁。一般聊天是和 Claude 一步一步合作；Cowork 則是把任務交出去，由 Claude 處理剩下的部分，你可以去忙別的事<br>▸ <a href=\"https://www.youtube.com/watch?v=Lbml7IuGJYw&t=41s\" target=\"_blank\">00:41</a> 第一步：給 Claude 存取電腦上某個資料夾的權限。它會先徵求同意，才修改檔案系統，之後就能直接讀取、建立、編輯那個資料夾裡的檔案<br>▸ <a href=\"https://www.youtube.com/watch?v=Lbml7IuGJYw&t=73s\" target=\"_blank\">01:13</a> 可以把常用資料夾加到最愛，或選多個資料夾。第二步：連接工具（connectors）；第三步：如果已設定 Claude in Chrome，也能處理瀏覽器上的任務<br>▸ <a href=\"https://www.youtube.com/watch?v=Lbml7IuGJYw&t=106s\" target=\"_blank\">01:46</a> 在 Settings 的 Cowork 分頁可以設定全域指示。要注意：Cowork 的 session 存在本機裝置上，Claude 執行任務時桌面 app 必須保持開啟<br>▸ <a href=\"https://www.youtube.com/watch?v=Lbml7IuGJYw&t=141s\" target=\"_blank\">02:21</a> 示範整理 Downloads 資料夾：先要 Claude 掃描內容、提出計畫。Claude 標出四個疑似重複的檔案，使用者請它把其中兩個移到 review 資料夾，不要刪除<br>▸ <a href=\"https://www.youtube.com/watch?v=Lbml7IuGJYw&t=201s\" target=\"_blank\">03:21</a> Cowork 的核心流程：Claude 先提出計畫，等你核准才動手；你可以調整計畫、改變做法，或叫它跳過某些步驟。進度可以在右上角查看<br>▸ <a href=\"https://www.youtube.com/watch?v=Lbml7IuGJYw&t=234s\" target=\"_blank\">03:54</a> 建議先從範圍明確的任務開始，並且一定要檢查 Claude 的產出。你交出去的是工作，不是判斷\n\n📘 術語<br><b>connectors</b>（連接器）：把 Claude 連到各種服務，讓它從你平常工作的地方取得脈絡<br><b>Claude in Chrome</b>（Chrome 版 Claude）：設定好之後，Cowork 可以用它處理瀏覽器任務：讀網頁、從網站擷取資料、在分頁之間切換<br><b>global instructions</b>（全域指示）：在 Settings 的 Cowork 分頁設定，套用到每個 session，例如你的職務背景，或指定用 Word 檔而不是 markdown 建立檔案<br><b>core Cowork loop</b>（Cowork 核心流程）：Claude 先提出計畫，等你核准後才動手，然後直接在檔案系統裡執行\n\n📺 <a href=\"https://www.youtube.com/watch?v=Lbml7IuGJYw\" target=\"_blank\">Getting started with Claude Cowork</a>（2026/05/08 · 4 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，Claude Cowork 的 session 存放在哪裡？",
+          "options": [
+            "存在 Anthropic 的雲端伺服器",
+            "存在 Claude in Chrome 的瀏覽器紀錄裡",
+            "存在本機裝置上",
+            "自動同步到 Google Drive"
           ],
-          correct: 1,
-          why: "Remote Control 打通了本機終端與移動端/Web 端的即時橋樑，實現隨時隨地監控與交互接關的極致流動性！"
+          "correct": 2,
+          "why": "[01:46] 字幕說 \"your Cowork sessions are stored locally on your device\"，並且提醒 Claude 執行任務時桌面 app 必須保持開啟。"
         }
       },
       {
-        id: "c_prompting",
-        title: "🎬 官方提示詞戰術手冊：The Prompting Playbook",
-        category: "進階心法",
-        text: "Anthropic 應用 AI 工程師在《The prompting playbook》深入分享了業界最頂級的提示詞架構：\n\n**「三層架構法（Context ＋ Anchor ＋ Constraints）」**：\n1. **Context（背景脈絡）**：說明你在做什麼專案、面對什麼場景（例如：這是高併發金融撮合模組）。\n2. **Anchor（錨定角色與目標）**：定義期望的成果格式（例如：輸出精準的 Unified Diff 補丁，不要任何閒聊）。\n3. **Negative Constraints（負向約束/邊界禁區）**：明確禁止事項（例如：禁止修改既存 API 簽名、嚴禁整檔覆寫、不得引入額外大型相依庫）。\n\n**實測結論**：加上負向約束的 Prompt，模型的穩定度飆升 400%，幻覺率幾乎降為零！",
-        tip: "🛡️ 戰術精華：好 Prompt 不只講要什麼，更要講清楚「絕對不能做什麼（負向約束）」！",
-        quiz: {
-          q: "根據 Anthropic 官方 Prompting Playbook，大幅降低大模型幻覺、確保程式碼不破壞現有系統的最有效手段是？",
-          options: [
-            "用更長的感嘆號表達緊急程度",
-            "在提示詞中明確加入負向約束（Negative Constraints），講清楚禁碰目錄、禁止整檔重寫與禁止破壞的相容性",
-            "把所有字全部換成大寫英文",
-            "只給一個字「改」"
+        "id": "yt_54BdUqMQUMI",
+        "title": "🎬 Claude in Excel 入門",
+        "category": "產品功能",
+        "text": "<b>示範在 Excel 裡用 Claude 問答、除錯、解釋公式、整理資料和建立模型</b><br>▸ <a href=\"https://www.youtube.com/watch?v=54BdUqMQUMI&t=5s\" target=\"_blank\">00:05</a> Claude in Excel 是試算表內建的 AI agent。Mac 按 Control+Option+C、Windows 按 Control+Alt+C 開啟。<br>▸ <a href=\"https://www.youtube.com/watch?v=54BdUqMQUMI&t=36s\" target=\"_blank\">00:36</a> 可以直接問活頁簿裡的資料。例如問差旅和餐費有沒有低於總支出 40%，Claude 會算出百分比，並列出算式讓你核對。<br>▸ <a href=\"https://www.youtube.com/watch?v=54BdUqMQUMI&t=66s\" target=\"_blank\">01:06</a> 協助除錯。Claude 會追出錯誤來源：D6 的公式是營收除以數量，但 C6 是空的，所以變成除以零。它建議補上缺漏資料。<br>▸ <a href=\"https://www.youtube.com/watch?v=54BdUqMQUMI&t=131s\" target=\"_blank\">02:11</a> 解釋看不懂的公式。Claude 會逐段拆解 VLOOKUP 的參數，並附上 citation boxes，可以直接跳到被引用的儲存格。<br>▸ <a href=\"https://www.youtube.com/watch?v=54BdUqMQUMI&t=191s\" target=\"_blank\">03:11</a> 可以執行多步驟任務。它清理資料前會先徵求同意；完成後回報刪掉 3 筆重複資料、34 筆資料依日期排序，並建立 historical 工作表。<br>▸ <a href=\"https://www.youtube.com/watch?v=54BdUqMQUMI&t=222s\" target=\"_blank\">03:42</a> 依歷史營收建立 2026–2028 三年預測。成長率假設放在 assumption 工作表，預測值用公式連動，屬於動態模型。<br>▸ <a href=\"https://www.youtube.com/watch?v=54BdUqMQUMI&t=283s\" target=\"_blank\">04:43</a> 建立 DCF 模型：折現率 10%、終值成長率 3%、預測五年現金流，算出 implied enterprise value。調整假設後估值會自動更新。<br>▸ <a href=\"https://www.youtube.com/watch?v=54BdUqMQUMI&t=313s\" target=\"_blank\">05:13</a> 可以建立 pivot table 和圖表，也能修改圖表類型、座標軸、標題和顏色。重要成果要自己驗證，敏感資料要遵守組織的資料處理政策。\n\n📘 術語<br><b>VLOOKUP</b>（VLOOKUP 查閱函數）：影片中用來把分數換成等第；參數包括 lookup value、table array、column index，true 代表近似比對<br><b>citation boxes</b>（引用框）：Claude 回覆中的方框，點一下就能直接跳到被引用的儲存格<br><b>DCF model</b>（DCF 模型）：預測自由現金流、計算終值，再全部折現回現值，得出 implied enterprise value<br><b>pivot table</b>（樞紐分析表）：Excel 最強大、也最難學會的功能之一；Claude 可以代為建立\n\n📺 <a href=\"https://www.youtube.com/watch?v=54BdUqMQUMI\" target=\"_blank\">Getting started with Claude in Excel</a>（2026/01/30 · 7 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "在 Windows 上要用哪組快捷鍵開啟 Claude in Excel？",
+          "options": [
+            "Alt + C",
+            "Control + Option + C",
+            "Control + Shift + C",
+            "Control + Alt + C"
           ],
-          correct: 1,
-          why: "官方實測證明，明確的負向約束（Negative Constraints）能替模型建立牢固的行為防護邊界，大幅降低失誤與越權風險！"
+          "correct": 3,
+          "why": "字幕說 Mac 用 Control+Option+C，Windows 用 Control+Alt+C（00:05、06:44）"
+        }
+      }
+    ]
+  },
+  yt_cases: {
+    "id": "yt_cases",
+    "name": "📺 客戶案例・官方頻道字幕版",
+    "badge": "官方字幕實證",
+    "lessons": [
+      {
+        "id": "yt_LQkcGtkSLNQ",
+        "title": "🎬 Frontier Day｜Claude 新創專場",
+        "category": "企業與客戶案例",
+        "text": "<b>新創創辦人分享用 Claude 與 AI 加速開發、研究與成長的心得</b><br>▸ <a href=\"https://www.youtube.com/watch?v=LQkcGtkSLNQ&t=0s\" target=\"_blank\">00:00</a> Frontier Day 讓大家在前所未有的變化中互相學習；AI 讓人把腦中的想像世界實際做出來<br>▸ <a href=\"https://www.youtube.com/watch?v=LQkcGtkSLNQ&t=31s\" target=\"_blank\">00:31</a> 現在唯一不變的就是變化，願意擁抱變化、敢想得更大的創辦人才會成功<br>▸ <a href=\"https://www.youtube.com/watch?v=LQkcGtkSLNQ&t=31s\" target=\"_blank\">00:31</a> 用 AI 打造的應用越來越大，可靠性（reliability）成為越來越大的挑戰，需要更好的工具<br>▸ <a href=\"https://www.youtube.com/watch?v=LQkcGtkSLNQ&t=61s\" target=\"_blank\">01:01</a> 原本可能要花好幾年的生物研究專案，現在在產品上做分析只要幾分鐘到幾小時<br>▸ <a href=\"https://www.youtube.com/watch?v=LQkcGtkSLNQ&t=61s\" target=\"_blank\">01:01</a> 遊戲開發者表示，現在大約一小時就能做出全新的遊戲循環，而且是大型多人 3D 世界<br>▸ <a href=\"https://www.youtube.com/watch?v=LQkcGtkSLNQ&t=61s\" target=\"_blank\">01:01</a> 新模型推出時會跑大量 evals，最重視智慧與決策能力，這是 Claude 特別突出的地方<br>▸ <a href=\"https://www.youtube.com/watch?v=LQkcGtkSLNQ&t=95s\" target=\"_blank\">01:35</a> 有受訪者說過去一年的成果超過之前整整三年半，很大一部分要歸功於 Claude\n\n📘 術語<br><b>evals</b>（評測）：新模型推出時會跑一大套 evals，首要看智慧與決策能力<br><b>reliability</b>（可靠性）：應用越做越大、速度越來越快，可靠性成為越來越大的挑戰\n\n📺 <a href=\"https://www.youtube.com/watch?v=LQkcGtkSLNQ\" target=\"_blank\">Frontier Day | Claude for startups</a>（2026/09/15 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片中有受訪者說，過去一年的成果超過之前多長時間的成果總和？",
+          "options": [
+            "之前整整三年半",
+            "之前整整兩年",
+            "之前整整五年",
+            "之前整整十年"
+          ],
+          "correct": 0,
+          "why": "[01:35] 字幕說：We've accomplished more in the last year than in the entire previous three and a half years, and a lot of that is due to Claude."
         }
       },
       {
-        id: "c_memory",
-        title: "🎬 永恆記憶的秘密：Agents that remember（記憶與自省架構）",
-        category: "長期記憶",
-        text: "官方專題《Agents that remember》深入解構了如何讓無狀態的大模型擁有「跨 Session 的永恆記憶」：\n\n如果只把歷史對話死板地存進資料庫，檢索時會把無關陳年舊事全部灌入 Context，引發記憶中毒。\n\n**官方推薦的三層動態記憶架構**：\n1. **Working Memory（工作記憶）**：當前對話槽，完成任務後清空。\n2. **Episodic Memory（情節記憶）**：記錄「某次具體事件與遭遇的坑」（例如：7/18 某模組遇到浮點數精度報錯）。\n3. **Semantic Memory & Reflection（語意記憶與夜間自省）**：定期讓模型自己回顧情節記憶，提煉出跨專案的**通用智慧規律**（例如：本系統涉及金額計算必須全數使用 Decimal 型態），存入專屬記憶庫！",
-        tip: "🧠 智慧進化：死記歷史只會中毒；懂得「從失敗經驗中自省提煉通用原則」，才是擁有真正記憶的高階 Agent！",
-        quiz: {
-          q: "在構建具備長期記憶的 Agent 系統時，Anthropic 官方指出避免「記憶中毒與上下文污染」的最佳記憶策略是？",
-          options: [
-            "把每一次對話的每一句字元一字不漏地永久拼接在開機 Prompt 裡",
-            "區分短期工作記憶與長期語意記憶，並透過自省機制（Reflection）將歷史事件提煉為簡明規律，避免無腦全灌",
-            "完全不給 AI 任何記憶功能",
-            "每天格式化電腦硬碟"
+        "id": "yt_FoteuzPpx7E",
+        "title": "🎬 與客戶一起打造企業級 Frontier Safeguards",
+        "category": "企業與客戶案例",
+        "text": "<b>Uber、Visa 談與 Anthropic 在架構層級合作打造安全與隱私保護機制</b><br>▸ <a href=\"https://www.youtube.com/watch?v=FoteuzPpx7E&t=0s\" target=\"_blank\">00:00</a> Anthropic 和 Uber 的共同點，是對安全（safety）發自骨子裡的重視<br>▸ <a href=\"https://www.youtube.com/watch?v=FoteuzPpx7E&t=0s\" target=\"_blank\">00:00</a> 信任花了幾十年才建立起來，現在風險更高了，不打算隨便把它消耗掉<br>▸ <a href=\"https://www.youtube.com/watch?v=FoteuzPpx7E&t=44s\" target=\"_blank\">00:44</a> 雙方一起在架構層級（不只是政策層級）開發新的安全與隱私功能<br>▸ <a href=\"https://www.youtube.com/watch?v=FoteuzPpx7E&t=44s\" target=\"_blank\">00:44</a> 資料可以存在自己的雲端、由自己控制，也能持續取得各種訊號；logs 由自己掌控，除非自己同意，否則不會流到別的地方<br>▸ <a href=\"https://www.youtube.com/watch?v=FoteuzPpx7E&t=44s\" target=\"_blank\">00:44</a> 審查（review）只由機器進行，產出刻意限定為事先定義好的 findings，不包含客戶內容<br>▸ <a href=\"https://www.youtube.com/watch?v=FoteuzPpx7E&t=76s\" target=\"_blank\">01:16</a> Visa 無法獨力完成，需要 Anthropic 這類 frontier labs 提供關鍵要素，把 AI 帶進網路防禦的每個環節<br>▸ <a href=\"https://www.youtube.com/watch?v=FoteuzPpx7E&t=76s\" target=\"_blank\">01:16</a> 這些 safeguards 讓 AI 能用在以前沒辦法用的業務領域，同時保護資訊與使用情境\n\n📘 術語<br><b>safeguards</b>（防護機制）：讓企業能把 AI 用在以前做不到的業務領域，同時保護資訊與使用情境<br><b>frontier labs</b>（前沿 AI 實驗室）：像 Anthropic 這樣的實驗室，提供 Visa 把 AI 帶進網路防禦所需的要素<br><b>machine-only review</b>（僅限機器的審查）：審查只由機器進行，產出僅限事先定義的 findings，不含客戶內容\n\n📺 <a href=\"https://www.youtube.com/watch?v=FoteuzPpx7E\" target=\"_blank\">Building Enterprise Frontier Safeguards with our customers</a>（2026/09/01 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，這種僅由機器進行的審查（review）會產出什麼？",
+          "options": [
+            "自動傳送給 Anthropic 的 logs",
+            "只有事先定義好的 findings，不包含客戶內容",
+            "完整的客戶對話紀錄",
+            "交給人工審查員的摘要報告"
           ],
-          correct: 1,
-          why: "官方架構強調「自省與規律提煉（Reflection）」。將歷史個案抽象為核心通用原則，既能永久傳承經驗，又不會塞爆記憶視窗！"
+          "correct": 1,
+          "why": "[00:44] 字幕說：「The review is machine-only. What comes out is intentionally limited to defined findings, not customer content.」"
         }
       },
       {
-        id: "c_cowork_unified",
-        title: "🎬 官方架構重構：Chat 與 Cowork 正式融為一體",
-        category: "官方最新架構",
-        text: "Anthropic 產品設計主管最新宣布重大升級：《Claude Cowork and chat are now one Claude》：\n\n**告別選擇困難：All in one conversation！**\n• **過去的痛點**：使用者每次開筆電都要猶豫半秒——「這件事到底該開普通 Chat，還是開複雜的 Cowork 多步驟任務？」\n• **動態自適應調度**：現在全面整合，你只需要正常提問；Claude 會自己評估任務深度。如果只是問問題，它極速回答；如果需要產出多頁簡報、圖表或執行多步驟工程，它會自動呼叫 Cowork 的背景能力、Skills 與專屬記憶！\n• **隨時接力掌控**：產出的任何簡報、視覺化圖表或程式碼，依然完全屬於你，隨時可以介入微調。",
-        tip: "💡 官方哲學：不要讓使用者思考工具的邊界；由 Agent 自主判斷任務深度，在同一個對話中動態升級！",
-        quiz: {
-          q: "Anthropic 將 Claude Chat 與 Cowork 融為一體的設計初衷是什麼？",
-          options: [
-            "消除使用者的選擇負擔，由 Agent 自主判斷任務複雜度並按需調用多步驟工程能力，維持一致的對話體驗",
-            "為了限制使用者每天只能發送三條訊息",
-            "強制將所有文字轉成圖片",
-            "取消所有記憶功能"
+        "id": "yt_CuzipWWYvFo",
+        "title": "🎬 用 Claude 輔助再生式養蜂",
+        "category": "企業與客戶案例",
+        "text": "<b>一位再生式養蜂人分享怎麼用 Claude 整理資料，並談對養蜂的看法</b><br>▸ <a href=\"https://www.youtube.com/watch?v=CuzipWWYvFo&t=0s\" target=\"_blank\">00:00</a> 講者從事再生式養蜂大約 10 年，認為這份工作有靠直覺的部分，也有大量資訊，Claude 幫助她同時兼顧兩者<br>▸ <a href=\"https://www.youtube.com/watch?v=CuzipWWYvFo&t=0s\" target=\"_blank\">00:00</a> 分蜂（swarming）是蜜蜂自然繁殖的方式，就像蜂群自己生出新蜂群；蜂群飛走後會聚在樹枝等地方，這時講者就會接到電話<br>▸ <a href=\"https://www.youtube.com/watch?v=CuzipWWYvFo&t=30s\" target=\"_blank\">00:30</a> 講者認為養蜂主要靠觀察，跟蜜蜂相處越久就越了解牠們，也會知道什麼狀態對牠們來說是正常的<br>▸ <a href=\"https://www.youtube.com/watch?v=CuzipWWYvFo&t=30s\" target=\"_blank\">00:30</a> Claude 幫講者把從 FAQ 收集的資料整合起來，整理成一頁的電子報，方便分享給客戶<br>▸ <a href=\"https://www.youtube.com/watch?v=CuzipWWYvFo&t=60s\" target=\"_blank\">01:00</a> 沒有一體適用的解法，要一個蜂箱一個蜂箱、依每種情況判斷，問自己「現在怎麼做最合理」<br>▸ <a href=\"https://www.youtube.com/watch?v=CuzipWWYvFo&t=60s\" target=\"_blank\">01:00</a> 講者認為養蜂比較像跟大自然建立夥伴關係；看得越深，越能看到蜜蜂和其他一切的關聯\n\n📘 術語<br><b>regenerative beekeeping</b>（再生式養蜂）：探索蜜蜂在野外怎麼生活的養蜂方式<br><b>swarming</b>（分蜂）：蜜蜂自然繁殖的方式，像是蜂群自己生出新蜂群\n\n📺 <a href=\"https://www.youtube.com/watch?v=CuzipWWYvFo\" target=\"_blank\">Regenerative beekeeping with Claude</a>（2026/07/07 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，講者用 Claude 把從 FAQ 收集的資料整理成什麼？",
+          "options": [
+            "一頁的電子報，分享給客戶",
+            "每週的蜂箱巡檢排程表",
+            "蜂蜜產品的報價單",
+            "預測蜂后位置的分析報告"
           ],
-          correct: 1,
-          why: "官方設計哲學旨在打通對話與多步驟工程的壁壘，讓 Agent 自主感知任務需求，實現零磨合的連續性工作流！"
+          "correct": 0,
+          "why": "[00:30] 講者說 Claude 幫她整合從 FAQ 收集的資料，整理成可以輕鬆分享給客戶的一頁電子報（one-page newsletter）"
         }
       },
       {
-        id: "c_replit",
-        title: "🎬 Replit 副總裁親授：百萬級 Agent 雙支柱評估體系（Telescope 軌跡分群）",
-        category: "前沿工程演講",
-        text: "Replit AI 總裁 Mikael 與 Anthropic 聯手揭露全球最大代碼 Agent 的內部評估體系：\n\n1. **雙支柱評估（Two Pillars）**：\n   • **離線支柱（VibeBench）**：由 AI 扮演評估員，以無頭瀏覽器模擬人類點擊驗收，杜絕傳統跑分與真實用戶脫節的弊病。\n   • **在線支柱（Telescope 系統）**：每天對線上數百萬條 Agent 執行軌跡（Traces）進行 **Embedding 語意分群**，找出用傳統 Regex 日誌絕對抓不到的長尾故障模式！\n2. **Slop on Slop（地基搖晃陷阱）**：\n   • 官方警告：最容易讓 Agent 崩潰的，就是「在未經驗證的 Agent 代碼上繼續加新功能」。每增添一個特性，中間必須有嚴格的自動驗收，否則地基必毀！\n3. **工程師的 Taste（品味決定方向）**：\n   • 80% 的除錯與 PR 由 Agent 閉環跑完，但「什麼問題該優先修、產品往哪裡走」永遠由人類品味把關！",
-        tip: "🔭 頂尖心法：別用死板的 Log 抓 Bug，用語意分群抓長尾；每推進一步就測一次，絕不在搖晃地基上疊代碼！",
-        quiz: {
-          q: "根據 Replit 團隊在生產環境百萬用戶中的血淚經驗，為什麼強烈警告不能在「未經驗證的 Agent 代碼上持續堆疊新功能（Slop on slop）」？",
-          options: [
-            "因為電腦硬碟會變重",
-            "未經驗證的代碼隱含未知缺陷，持續在其上疊加功能會導致錯誤呈指數級擴散，最終引發整個應用崩潰",
-            "因為這樣做會讓字體變小",
-            "因為 Agent 不允許連續工作超過 5 分鐘"
+        "id": "yt_9DHZLw5653E",
+        "title": "🎬 Spotify 如何在超過 2,000 萬行程式碼上運行 agents——對談 Niklas Gustavsson",
+        "category": "企業與客戶案例",
+        "text": "<b>Spotify 分享 Honk、自動化遷移、驗證與標準化，以及 AI 帶來的工程轉變</b><br>▸ <a href=\"https://www.youtube.com/watch?v=9DHZLw5653E&t=190s\" target=\"_blank\">03:10</a> 個人工作流程：在 terminal 裡開多個 tmux session，5～10 個分頁，搭配一組 worktrees，背景同時跑好幾個 agents<br>▸ <a href=\"https://www.youtube.com/watch?v=9DHZLw5653E&t=310s\" target=\"_blank\">05:10</a> 5～6 年前發現程式碼成長速度約是工程師人數的 7 倍，於是建立 fleet management 自動化維護；以前一年大約只能做 10 次遷移<br>▸ <a href=\"https://www.youtube.com/watch?v=9DHZLw5653E&t=580s\" target=\"_blank\">09:40</a> Honk 早期靠 judge 把成功率從約 20～30% 拉到約 80%；後來模型與 agent 夠好了，就把 judge 拿掉<br>▸ <a href=\"https://www.youtube.com/watch?v=9DHZLw5653E&t=640s\" target=\"_blank\">10:40</a> Honk 架構：agent SDK 跑在 Kubernetes pod 裡；V2 讓使用者自己加工具，還能在 Linux 和 Mac OS 跑 CI builds 做驗證<br>▸ <a href=\"https://www.youtube.com/watch?v=9DHZLw5653E&t=881s\" target=\"_blank\">14:41</a> 每天約 4.5 千次正式環境部署；約 2,900 名工程師；PR 速率提升超過 75%，約 73% 的 PR 由 AI 產生<br>▸ <a href=\"https://www.youtube.com/watch?v=9DHZLw5653E&t=1154s\" target=\"_blank\">19:14</a> 給工程主管的建議：投資測試自動化、驗證和標準化；程式碼越一致，agents 表現越好\n\n📘 術語<br><b>fleet management</b>（程式碼群管理）：不再發遷移指南請各團隊手動改，而是對整個分散在數千個 repo 的程式碼庫直接做修改的基礎設施<br><b>Honk</b>（Honk（Spotify 內部工具））：從自動化程式碼變更起家，現在是建在 agent SDK 上、跑在 Kubernetes pod 裡的通用 agent 工具<br><b>judge</b>（評審（LLM 評估））：用 LLM 評估結果是否符合預期；早期很關鍵，後來模型夠好就移除了<br><b>monorepo / polyrepo</b>（單一大型 repo／多個小型 repo）：Spotify 正逐步轉向大型統一的 monorepo，但仍有數千個小型 polyrepo\n\n📺 <a href=\"https://www.youtube.com/watch?v=9DHZLw5653E\" target=\"_blank\">How Spotify runs agents across 20M+ lines of code, with Niklas Gustavsson</a>（2026/06/29 · 26 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，Spotify 為什麼把 Honk 裡的 judge 移除？",
+          "options": [
+            "因為 judge 的 token 成本太高",
+            "因為模型和 agent 已經夠好，不再需要 judge",
+            "因為 judge 拖慢了 CI builds 的速度",
+            "因為改由各團隊人工審查每個 PR"
           ],
-          correct: 1,
-          why: "Replit 實證：未經驗證的代碼就像搖晃的地基，持續在其上開發新功能是代碼 Agent 失敗率最高的情境，每步必須插入驗證閉環！"
+          "correct": 1,
+          "why": "[09:40]～[10:10] 提到模型與 agent 已經好到不再需要 judge，所以就把它從 Honk 移除了"
         }
       },
       {
-        id: "c_dsl",
-        title: "🎬 可信與可驗證：自訂 DSL 打造約束 Agent 的鋼鐵骨架",
-        category: "高階安全架構",
-        text: "在《Making agentic workflows trustworthy and verifiable with a custom DSL》中，探討了企業級最關心的議題：**「如何保證 Agent 不會越權犯錯？」**\n\n純自然語言充滿歧義，如果只用 System Prompt 約束，模型仍有極小機率產生幻覺越界。\n\n**終極解法：自訂領域特定語言（Custom DSL）**：\n• **從自由文字到抽象語法樹（AST）**：不讓 Agent 直接跑任意 Shell 指令，而是讓它生成精確的 DSL 宣告式指令。\n• **靜態語意校驗（Semantic Validation）**：DSL 在執行前先經由編譯器進行靜態型別與權限校驗，違反規則的操作在編譯期就直接被攔截，根本沒有機會執行！\n• **100% 可審計追蹤（Audit Trail）**：每一條 DSL 執行的軌跡都像合約一樣精確記錄，讓金融與醫療等高合規行業也能放心採用 Agent！",
-        tip: "🛡️ 鋼鐵防線：自然語言管大腦，宣告式 DSL 管手腳；編譯期嚴格校驗，從根源杜絕越權失控！",
-        quiz: {
-          q: "在極高安全與合規要求的場景（如金融/醫療），為什麼推薦使用自訂 DSL 來約束 Agent 的執行行為？",
-          options: [
-            "因為 DSL 的字型比較好看",
-            "DSL 能透過編譯器在執行前進行靜態語意校驗與確定性語法檢查，從根本上杜絕自由自然語言帶來的越權與幻覺漏洞",
-            "為了降低伺服器的電費",
-            "因為 DSL 不需要大模型就能自己思考"
+        "id": "yt_H3XQeGNia8o",
+        "title": "🎬 The Briefing：金融服務",
+        "category": "企業與客戶案例",
+        "text": "<b>Anthropic 與金融業高層座談，討論產業走向與因應 AI 變化</b><br>▸ <a href=\"https://www.youtube.com/watch?v=H3XQeGNia8o&t=5s\" target=\"_blank\">00:05</a> 與會者是全球最具影響力的金融服務公司 CEO、CTO 和 CIO，目的是坦誠討論產業現況、未來走向，以及 Anthropic 想怎麼當夥伴協助他們<br>▸ <a href=\"https://www.youtube.com/watch?v=H3XQeGNia8o&t=5s\" target=\"_blank\">00:05</a> 一位與會者說，如果當初就知道現在知道的事，會換個做法：linear rollouts（線性推行）會太慢<br>▸ <a href=\"https://www.youtube.com/watch?v=H3XQeGNia8o&t=5s\" target=\"_blank\">00:05</a> 講到「速度」時，不只指速度本身，還包括安全性（security）和可擴展性（scalability）<br>▸ <a href=\"https://www.youtube.com/watch?v=H3XQeGNia8o&t=36s\" target=\"_blank\">00:36</a> 每個行業的每個人都要想：我該怎麼改變習慣？怎麼換個角度看事情？<br>▸ <a href=\"https://www.youtube.com/watch?v=H3XQeGNia8o&t=66s\" target=\"_blank\">01:06</a> 沒人知道變化會來得多快，所以要先做好準備；這不只是恐懼，只要應對得當，另一頭會是更好的世界\n\n📘 術語<br><b>linear rollouts</b>（線性推行）：字幕只說，以現在知道的事來看，這種推行方式會太慢\n\n📺 <a href=\"https://www.youtube.com/watch?v=H3XQeGNia8o\" target=\"_blank\">The Briefing: Financial Services</a>（2026/06/16 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "一位與會者說，如果早知道現在知道的事會換個做法，他指出了什麼問題？",
+          "options": [
+            "資安審查流程太過嚴格",
+            "linear rollouts 會太慢",
+            "模型成本高到無法負擔",
+            "員工不願意改變工作習慣"
           ],
-          correct: 1,
-          why: "DSL 提供了確定性的抽象語法樹與編譯期校驗，能保證 Agent 的每一步操作完全符合預先定義的不可逾越之安全邊界！"
+          "correct": 1,
+          "why": "[00:05] 字幕原文：「linear rollouts are going to be too slow」"
+        }
+      },
+      {
+        "id": "yt_8NVZMRyCrn4",
+        "title": "🎬 The Problem Solvers｜Cursor 的 Michael Truell",
+        "category": "企業與客戶案例",
+        "text": "<b>Cursor 的 Michael Truell 談寫程式的初衷、Cursor 的定位、和 Anthropic 的合作及公司成長</b><br>▸ <a href=\"https://www.youtube.com/watch?v=8NVZMRyCrn4&t=0s\" target=\"_blank\">00:00</a> 他 12 歲開始寫程式，很快就著迷了，因為寫程式可以「沒有門檻地打造東西」：只要有一台電腦，就能把腦中的想法做出來<br>▸ <a href=\"https://www.youtube.com/watch?v=8NVZMRyCrn4&t=0s\" target=\"_blank\">00:00</a> Cursor 是用 AI 幫專業人士更快打造軟體的工具，目標是成為和 coding agent 協作的最佳地方，對象包括專業工程師和完全沒有工程背景的人<br>▸ <a href=\"https://www.youtube.com/watch?v=8NVZMRyCrn4&t=32s\" target=\"_blank\">00:32</a> Cursor 想提供一個容易上手、同時又非常強大的工具<br>▸ <a href=\"https://www.youtube.com/watch?v=8NVZMRyCrn4&t=32s\" target=\"_blank\">00:32</a> 他很欣賞 Anthropic 對原則的堅持，也欣賞 Anthropic 從一開始就致力當一個平台，讓大家能在上面建立長久的事業<br>▸ <a href=\"https://www.youtube.com/watch?v=8NVZMRyCrn4&t=62s\" target=\"_blank\">01:02</a> 他說 Cursor 能存在，一部分要歸功於 AI 模型的革命；Cursor 在產品上做的事，和 Anthropic 提升模型能力的方向高度一致<br>▸ <a href=\"https://www.youtube.com/watch?v=8NVZMRyCrn4&t=92s\" target=\"_blank\">01:32</a> Cursor 的差異化在於深度的產品專注，從一開始就想讓使用者有更多自主權、更有能力<br>▸ <a href=\"https://www.youtube.com/watch?v=8NVZMRyCrn4&t=122s\" target=\"_blank\">02:02</a> 兩年前 Cursor 只有 15 個人，現在有 700 人，服務超過 60% 的 Fortune 500 企業\n\n📘 術語<br><b>coding agents</b>（程式開發 agent）：字幕說 Cursor 想成為和 coding agent 協作的最佳地方，給專業工程師和非工程背景的人使用<br><b>Fortune 500</b>（財星 500 大企業）：字幕說 Cursor 服務超過 60% 的 Fortune 500\n\n📺 <a href=\"https://www.youtube.com/watch?v=8NVZMRyCrn4\" target=\"_blank\">The Problem Solvers | Michael Truell at Cursor</a>（2026/06/10 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，Cursor 從兩年前到現在的團隊規模怎麼變化？",
+          "options": [
+            "從 5 人成長到 60 人",
+            "從 15 人成長到 1,500 人",
+            "從 15 人成長到 700 人",
+            "從 50 人成長到 700 人"
+          ],
+          "correct": 2,
+          "why": "[02:02] Two years ago we were 15 people in a room and now we're 700 people"
+        }
+      },
+      {
+        "id": "yt_LrZHnKS_L6k",
+        "title": "🎬 用 Claude 像律師一樣工作",
+        "category": "企業與客戶案例",
+        "text": "<b>Anthropic 產品律師與 Freshfields AI 負責人對談律師如何運用 Claude</b><br>▸ <a href=\"https://www.youtube.com/watch?v=LrZHnKS_L6k&t=15s\" target=\"_blank\">00:15</a> Mark 協助帶領 Anthropic 的產品律師團隊，負責 Claude Code 等企業產品；Anna 是 Freshfields 的 AI 全球共同負責人<br>▸ <a href=\"https://www.youtube.com/watch?v=LrZHnKS_L6k&t=46s\" target=\"_blank\">00:46</a> Freshfields 全球約 5700 名員工與律師在使用 AI，最棘手的是「context gap」：規格今天和明天可能不一樣<br>▸ <a href=\"https://www.youtube.com/watch?v=LrZHnKS_L6k&t=77s\" target=\"_blank\">01:17</a> 許多律師一開始只拿 Claude 做聊天問答；更強的用法是運用 code，讓 Claude 用本機電腦產出 Word、Excel、PowerPoint 等檔案<br>▸ <a href=\"https://www.youtube.com/watch?v=LrZHnKS_L6k&t=107s\" target=\"_blank\">01:47</a> AI 擅長理解大量資訊、找出共同主題：把備忘錄、產品 roadmap、新法規放在一起，再和 Claude 對話產出新成品<br>▸ <a href=\"https://www.youtube.com/watch?v=LrZHnKS_L6k&t=168s\" target=\"_blank\">02:48</a> 律師的角色像幫客戶掌船，穿越險峻海峽時，靠律師的判斷讓船舵保持穩定<br>▸ <a href=\"https://www.youtube.com/watch?v=LrZHnKS_L6k&t=199s\" target=\"_blank\">03:19</a> Anthropic 的價值觀「holding light and shade」：這項技術風險很多，但也充滿希望\n\n📘 術語<br><b>context gap</b>（脈絡落差）：要弄清楚規格今天長什麼樣，而且明天可能就變了，工程團隊的速度又非常快<br><b>holding light and shade</b>（兼顧光明與陰影）：Anthropic 的價值觀之一，指這項技術有很多風險，但也有很多希望\n\n📺 <a href=\"https://www.youtube.com/watch?v=LrZHnKS_L6k\" target=\"_blank\">Working Like a Lawyer with Claude</a>（2026/06/08 · 3 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，Freshfields 全球大約有多少員工與律師在使用 AI？",
+          "options": [
+            "57000 人",
+            "570 人",
+            "5700 人",
+            "7500 人"
+          ],
+          "correct": 2,
+          "why": "[00:46] Anna 提到「5700, staff and lawyers worldwide who are using AI」"
+        }
+      },
+      {
+        "id": "yt_CG7Rcl49C2w",
+        "title": "🎬 在 Claude 模型正式推出前，這些團隊會先試著把它弄壞",
+        "category": "企業與客戶案例",
+        "text": "<b>搶先測試新 Claude 模型的客戶，分享測試方法、模型的進步和合作心得</b><br>▸ <a href=\"https://www.youtube.com/watch?v=CG7Rcl49C2w&t=1s\" target=\"_blank\">00:01</a> 新的 Claude 模型推出前，已經有一小群客戶在測試它、試著把它弄壞，也參與影響推出的內容<br>▸ <a href=\"https://www.youtube.com/watch?v=CG7Rcl49C2w&t=62s\" target=\"_blank\">01:02</a> 拿到新模型後的第一件事，是啟動 automated evals，讓它們在背景執行<br>▸ <a href=\"https://www.youtube.com/watch?v=CG7Rcl49C2w&t=62s\" target=\"_blank\">01:02</a> 複雜法律任務的例子是起草 S1；有了 agentic 能力後，模型能獨立處理 S1 中越來越大的部分<br>▸ <a href=\"https://www.youtube.com/watch?v=CG7Rcl49C2w&t=94s\" target=\"_blank\">01:34</a> 只換掉一個模型，agent 就從有時會卡住，變成每個問題都答得又快又準；測試 agent 的成功率大約提升 20%<br>▸ <a href=\"https://www.youtube.com/watch?v=CG7Rcl49C2w&t=94s\" target=\"_blank\">01:34</a> 現在做不到的事，最能看出下一代模型會大幅進步的地方；以前從沒成功過的 evals 開始穩定通過<br>▸ <a href=\"https://www.youtube.com/watch?v=CG7Rcl49C2w&t=124s\" target=\"_blank\">02:04</a> 客戶覺得和 Anthropic 的關係比較像一起開發，而不只是買東西；兩邊幾乎每隔一天就會交談<br>▸ <a href=\"https://www.youtube.com/watch?v=CG7Rcl49C2w&t=155s\" target=\"_blank\">02:35</a> 客戶形容在前沿開發的感覺：Dazzling（耀眼）、Compounding（複利般累積），也像站在大浪上，要努力保持平衡\n\n📘 術語<br><b>automated evals</b>（自動化評測）：拿到新模型後最先做的事，讓評測在背景執行<br><b>S1</b>（S1 文件）：被舉例為特別複雜的法律任務，要交給模型起草<br><b>agentic capabilities</b>（agentic 能力）：模型能自己去找需要的資訊、整合內容並編輯文件\n\n📺 <a href=\"https://www.youtube.com/watch?v=CG7Rcl49C2w\" target=\"_blank\">Before we ship a Claude model, these teams try to break it.</a>（2026/05/28 · 3 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片中，客戶拿到新 Claude 模型後做的第一件事是什麼？",
+          "options": [
+            "先寫一份新模型的公開評測報告",
+            "啟動 automated evals，讓它們在背景執行",
+            "直接交給客戶在正式環境使用",
+            "先請模型起草一份完整的 S1"
+          ],
+          "correct": 1,
+          "why": "[01:02] 提到第一件事是啟動 automated evals，讓它們在背景執行"
+        }
+      },
+      {
+        "id": "yt_M5uwBawBDpw",
+        "title": "🎬 AirOps 如何追著摩擦點，用 Claude 打造 AI 產品",
+        "category": "企業與客戶案例",
+        "text": "<b>AirOps 分享怎麼把 agent 做到行銷人員也能用，以及兩個主要摩擦點的解法</b><br>▸ <a href=\"https://www.youtube.com/watch?v=M5uwBawBDpw&t=18s\" target=\"_blank\">00:18</a> 講者 Dylan 來自 AirOps 產品團隊。核心重點是：要讓 agent 容易上手很難，尤其要讓行銷人員這類非開發者也會用，過程中有很多摩擦點。<br>▸ <a href=\"https://www.youtube.com/watch?v=M5uwBawBDpw&t=140s\" target=\"_blank\">02:20</a> 舊版節點式 workflow builder 有「複雜度天花板」：得教行銷人員 liquid text、JSON 這些概念。每次出新模型，流程就要跟著改，壽命很短。<br>▸ <a href=\"https://www.youtube.com/watch?v=M5uwBawBDpw&t=263s\" target=\"_blank\">04:23</a> Opus 4.5 推出是轉折點。他們先試過用 LLM 編譯 workflow，再試傳統 agent 框架，兩者都很脆弱。最後改用 Claude Agent SDK，靠 markdown 檔和 skills 來編排 agent。<br>▸ <a href=\"https://www.youtube.com/watch?v=M5uwBawBDpw&t=386s\" target=\"_blank\">06:26</a> AirOps Next 推出兩項功能：內容行銷 agent「Quill」，以及新的建構介面 playbooks。playbooks 類似 skill，另外支援協作、治理和版本控管。<br>▸ <a href=\"https://www.youtube.com/watch?v=M5uwBawBDpw&t=446s\" target=\"_blank\">07:26</a> Parallel 案例：citation rate 提升 130%，share of voice 提升 42%，1 週就上線。以往用 workflow builder 通常至少要一個月左右。<br>▸ <a href=\"https://www.youtube.com/watch?v=M5uwBawBDpw&t=568s\" target=\"_blank\">09:28</a> 摩擦點一：能做的事太多，反而逼人要聚焦。解法是做成文件式介面（類似 Google Docs），重視透明度和掌控感，並強制人工審查（human review）。<br>▸ <a href=\"https://www.youtube.com/watch?v=M5uwBawBDpw&t=870s\" target=\"_blank\">14:30</a> 強制人工審查的做法：每個段落結尾可以指派審查者，agent 要等被指派的人放行才能繼續。待審項目會集中在 inbox 和 grid 裡顯示。<br>▸ <a href=\"https://www.youtube.com/watch?v=M5uwBawBDpw&t=1117s\" target=\"_blank\">18:37</a> 摩擦點二：輸出品質。解法一是做專用工具，例如頁面分析和 page versus 比對。解法二是加 sub-agent：compliance check、寫作、brand kit，也可以自訂。\n\n📘 術語<br><b>AI search</b>（AI 搜尋）：類似 SEO，但對象換成 ChatGPT、Gemini、Claude 這類引擎，重點是品牌能不能被搜尋到<br><b>playbook</b>（playbook（操作手冊））：AirOps 新的建構介面，基本上就是 skill，另外加上協作、治理和版本控管<br><b>harness engineering</b>（harness 工程）：用車來比喻：模型是引擎，圍繞模型打造的其他部分同樣重要，決定 agent 好不好<br><b>brand kit</b>（品牌資料包）：一個知識庫或 context 層，收錄關於某個品牌需要知道的一切<br><b>sub-agent</b>（子代理）：有自己專注的 context window，負責單一任務，避免污染主 context\n\n📺 <a href=\"https://www.youtube.com/watch?v=M5uwBawBDpw\" target=\"_blank\">How AirOps chases friction to build AI products with Claude</a>（2026/05/22 · 26 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，AirOps 在每次執行一開始就會啟動哪一個 sub-agent，讓它先抓取所需 context 並存成內部 artifact？",
+          "options": [
+            "Compliance check sub-agent",
+            "Brand kit sub-agent",
+            "Writing sub-agent",
+            "Custom sub-agent"
+          ],
+          "correct": 1,
+          "why": "[22:12] 講者說 brand kit sub-agent 會在每次執行一開始就啟動，抓取相關 context 並存成內部 artifact。之後主 agent 迴圈直接參照這份 artifact，不用重新抓取。"
+        }
+      },
+      {
+        "id": "yt_MyYe6C4NVu0",
+        "title": "🎬 The Problem Solvers：Genspark 的 Kay Zhu",
+        "category": "企業與客戶案例",
+        "text": "<b>Genspark 的 Kay Zhu 談團隊文化、開放合作，以及 AI 時代的選擇</b><br>▸ <a href=\"https://www.youtube.com/watch?v=MyYe6C4NVu0&t=0s\" target=\"_blank\">00:00</a> Kay Zhu 的兒子快滿 18 歲。三年前 Kay Zhu 可能會逼他主修電腦科學，現在兒子要去大學念 commercial dance。<br>▸ <a href=\"https://www.youtube.com/watch?v=MyYe6C4NVu0&t=0s\" target=\"_blank\">00:00</a> Kay Zhu 認為 AI 能幫人做很多事，所以應該追隨自己的心。<br>▸ <a href=\"https://www.youtube.com/watch?v=MyYe6C4NVu0&t=30s\" target=\"_blank\">00:30</a> Genspark 是 all in one workspace，為一般白領工作者提供 AI spreadsheets、AI slides、AI documents 等功能。<br>▸ <a href=\"https://www.youtube.com/watch?v=MyYe6C4NVu0&t=30s\" target=\"_blank\">00:30</a> Genspark 工程師對最新模型很好奇，每次收到 applied AI team 的新東西，都像收到派對邀請。<br>▸ <a href=\"https://www.youtube.com/watch?v=MyYe6C4NVu0&t=61s\" target=\"_blank\">01:01</a> Genspark 是很小的新創，沒辦法什麼都自己做，所以和可信賴的夥伴合作非常重要。<br>▸ <a href=\"https://www.youtube.com/watch?v=MyYe6C4NVu0&t=61s\" target=\"_blank\">01:01</a> Kay Zhu 認為變化太快，現在沒有誰真的有 mode（字幕原文），唯一的 mode 是團隊文化：不斷嘗試最新技術，執行得更快。<br>▸ <a href=\"https://www.youtube.com/watch?v=MyYe6C4NVu0&t=92s\" target=\"_blank\">01:32</a> 合作的關鍵是開放，今天守住的祕密明天就會一文不值。合作成功要靠深度信任，順利時回饋循環非常緊密。<br>▸ <a href=\"https://www.youtube.com/watch?v=MyYe6C4NVu0&t=92s\" target=\"_blank\">01:32</a> 面試者問兩年後的 Genspark 會變成什麼樣子，Kay Zhu 回答：「我不知道」，因為會出現很多新東西，甚至像魔法一樣。\n\n📘 術語<br><b>all in one workspace</b>（一站式工作空間）：Kay Zhu 用來形容 Genspark：提供 AI spreadsheets、slides、documents，給一般白領工作者使用<br><b>tight feedback loop</b>（緊密的回饋循環）：Kay Zhu 形容合作真正順利時的狀態\n\n📺 <a href=\"https://www.youtube.com/watch?v=MyYe6C4NVu0\" target=\"_blank\">The Problem Solvers: Kay Zhu at Genspark</a>（2026/05/22 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "Kay Zhu 快滿 18 歲的兒子上大學要念什麼？",
+          "options": [
+            "商業舞蹈（commercial dance）",
+            "電腦科學（computer science）",
+            "人工智慧（AI）",
+            "商業管理"
+          ],
+          "correct": 0,
+          "why": "[00:00] Kay Zhu 說三年前可能會逼兒子主修電腦科學，但兒子其實要去大學念 commercial dance。"
+        }
+      },
+      {
+        "id": "yt_EOg4gY0Yln0",
+        "title": "🎬 打造能自己交易的訊號",
+        "category": "企業與客戶案例",
+        "text": "<b>Man Group 分享如何用 skills 治理，讓 AI 參與系統化交易訊號研究並上線</b><br>▸ <a href=\"https://www.youtube.com/watch?v=EOg4gY0Yln0&t=20s\" target=\"_blank\">00:20</a> 講者是 Man Group 的 head of data and AI Sharan Fernando。Man Group 是另類投資管理公司，管理超過 200 billion dollars 的資產，客戶包括退休基金等<br>▸ <a href=\"https://www.youtube.com/watch?v=EOg4gY0Yln0&t=81s\" target=\"_blank\">01:21</a> 系統化交易的核心是交易訊號。講者用夢幻足球比喻：挑出會賺錢的股票做多，不會賺錢的做空，再用歷史資料 backtest 驗證<br>▸ <a href=\"https://www.youtube.com/watch?v=EOg4gY0Yln0&t=263s\" target=\"_blank\">04:23</a> Man Group 目前有交易訊號在正式環境用真實資金運作，從發想、取得資料、backtest、撰寫提案到上線都由 AI 完成，人類負責審查所有產出<br>▸ <a href=\"https://www.youtube.com/watch?v=EOg4gY0Yln0&t=358s\" target=\"_blank\">05:58</a> 訊號只是冰山一角，底下是資料清理、偵測離群值、backtest 等 workflow；各團隊版本不一樣，結果就無法比較，所以需要共用的 workflow<br>▸ <a href=\"https://www.youtube.com/watch?v=EOg4gY0Yln0&t=458s\" target=\"_blank\">07:38</a> Claude 不了解公司的資料和系統，所以他們不重新訓練、也不做 fine-tuning，而是透過 skills 讓它存取資料、能力和 workflow<br>▸ <a href=\"https://www.youtube.com/watch?v=EOg4gY0Yln0&t=525s\" target=\"_blank\">08:45</a> 早期推廣時 skills 多半是 power user 寫的，只為個人優化。例如報帳 skill 把成本中心代碼寫死，結果別部門的報帳單都送到業務主管那邊<br>▸ <a href=\"https://www.youtube.com/watch?v=EOg4gY0Yln0&t=711s\" target=\"_blank\">11:51</a> 解法是建一個共用 marketplace：每個 skill 都公開、有標籤、用 eval 測試，由 workflow owner 負責，並追蹤使用量、審查、管理生命週期<br>▸ <a href=\"https://www.youtube.com/watch?v=EOg4gY0Yln0&t=992s\" target=\"_blank\">16:32</a> 心得：重視組織 context、把 skills 當成 production code 來對待、推出前先想好擁有權和審查流程。目前有 750 人使用 Claude Code，governed skills 超過 100 個\n\n📘 術語<br><b>trading signal</b>（交易訊號）：就像挑夢幻足球隊員，把股票排名後決定要做多還是做空<br><b>backtest</b>（回測）：把策略寫成程式，拿 15 年甚至更長的歷史資料跑一遍，看它表現如何<br><b>drawdown</b>（回撤）：策略虧錢的時候，總共虧了多少<br><b>skills governance</b>（skills 治理）：skill 由 workflow owner 負責，經過測試和審查、有生命週期，而且大家都看得到<br><b>plugin</b>（外掛）：把一組相關的 skills 包在一起，例如可以存取 Man Group 資料集的 data plugin\n\n📺 <a href=\"https://www.youtube.com/watch?v=EOg4gY0Yln0\" target=\"_blank\">Building signals that trade themselves</a>（2026/05/21 · 20 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "講者提到的報帳 skill 出了什麼問題，導致業務主管收到一大堆別部門的報帳單？",
+          "options": [
+            "成本中心代碼被寫死在 skill 裡",
+            "同一張報帳單被重複送出好幾次",
+            "Claude 讀錯收據圖片上的金額",
+            "skill 沒有接上財務系統的權限"
+          ],
+          "correct": 0,
+          "why": "講者說追查後發現原因是 cost center code 被寫死（hard coded）了（[10:17]）"
+        }
+      },
+      {
+        "id": "yt_IGAVa4uyo2w",
+        "title": "🎬 Emergent 如何用 Claude 讓更多人能打造 app",
+        "category": "企業與客戶案例",
+        "text": "<b>Emergent CEO Mukund 分享用 Claude 打造 app 產生平台、服務小型企業的歷程</b><br>▸ <a href=\"https://www.youtube.com/watch?v=IGAVa4uyo2w&t=62s\" target=\"_blank\">01:02</a> Emergent 在 YC 一開始做自動化軟體測試，後來發現解決驗證迴圈（verification loop）能讓 agent 跑更久，於是轉做通用 coding agent<br>▸ <a href=\"https://www.youtube.com/watch?v=IGAVa4uyo2w&t=123s\" target=\"_blank\">02:03</a> 團隊內的非技術成員用內部 coding agent 用得比開發者還多，所以決定讓每個人都能做軟體開發，6 月推出 research preview<br>▸ <a href=\"https://www.youtube.com/watch?v=IGAVa4uyo2w&t=247s\" target=\"_blank\">04:07</a> 用戶拿 Emergent 跟 dev shop 比，最在意結果，不是速度；所以 Opus 是他們的主力模型（workhorse），agent 可以連續跑好幾個小時<br>▸ <a href=\"https://www.youtube.com/watch?v=IGAVa4uyo2w&t=340s\" target=\"_blank\">05:40</a> 在 Kubernetes 上自建容器技術，支援記憶體快照、存狀態和平行 agent；他們認為 agent 就是產品，harness 品質很重要<br>▸ <a href=\"https://www.youtube.com/watch?v=IGAVa4uyo2w&t=404s\" target=\"_blank\">06:44</a> 把正式環境的錯誤回傳到開發環境，並建立 long-term memory，讓 agent 能從平台上所有 app 學習<br>▸ <a href=\"https://www.youtube.com/watch?v=IGAVa4uyo2w&t=437s\" target=\"_blank\">07:17</a> 部署率從幾個月前的 84% 提升到接近 98%<br>▸ <a href=\"https://www.youtube.com/watch?v=IGAVa4uyo2w&t=623s\" target=\"_blank\">10:23</a> 寫程式碼只占問題的 20%，另外 80% 是部署、維護正式環境和資安<br>▸ <a href=\"https://www.youtube.com/watch?v=IGAVa4uyo2w&t=961s\" target=\"_blank\">16:01</a> 即將推出新產品 Wingman，是給企業用的 agent，要自動化財務、營運、銷售、行銷等業務流程\n\n📘 術語<br><b>long-term memory</b>（長期記憶）：agent 不只從單次使用者 session 學習，還從平台上所有 app 學習；遇過的新錯誤下次能用更少 token 處理<br><b>harness</b>（執行框架）：Mukund 說 agent 在很多方面就是產品，harness 的品質非常重要<br><b>refactoring agent</b>（重構 agent）：負責回頭重構使用者的 app，讓程式碼品質好、之後還能繼續開發<br><b>dev shop</b>（軟體外包公司）：用戶拿 Emergent 跟它比較，dev shop 的價格大約 250,000 美元、專案約三個月\n\n📺 <a href=\"https://www.youtube.com/watch?v=IGAVa4uyo2w\" target=\"_blank\">How Emergent is making app building more accessible with Claude</a>（2026/05/13 · 16 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據 Mukund 的說法，Emergent 的部署率從幾個月前的 84% 提升到多少？",
+          "options": [
+            "接近 70%",
+            "接近 50%",
+            "接近 98%",
+            "接近 90%"
+          ],
+          "correct": 2,
+          "why": "[07:17] 字幕原文：「A couple of months back, our deployment rates were 84%, now it's closer to 98%.」"
+        }
+      },
+      {
+        "id": "yt_FPPTnI88RR8",
+        "title": "🎬 Anthropic 如何在資安工作中使用 Claude",
+        "category": "企業與客戶案例",
+        "text": "<b>Anthropic 資安團隊用 Claude Code 打造偵測與回應平台 Clue，加速資安調查</b><br>▸ <a href=\"https://www.youtube.com/watch?v=FPPTnI88RR8&t=0s\" target=\"_blank\">00:00</a> 講者認為 Anthropic 的資安工作沒有前例可循，保護它也像是在開拓新領域；現有工具常常不符合第一線分析師、調查人員的實際工作。<br>▸ <a href=\"https://www.youtube.com/watch?v=FPPTnI88RR8&t=30s\" target=\"_blank\">00:30</a> 以前調查一個資安事件，要在 5～6 個工具之間切換，並對不同資料庫下 3～4 種查詢語言；就算是簡單的調查，也至少要幾小時，最多要幾天。<br>▸ <a href=\"https://www.youtube.com/watch?v=FPPTnI88RR8&t=30s\" target=\"_blank\">00:30</a> 所以團隊打造了 Clue：這是用 Claude Code 建立的偵測與回應平台，並串接公司內部系統。<br>▸ <a href=\"https://www.youtube.com/watch?v=FPPTnI88RR8&t=61s\" target=\"_blank\">01:01</a> Clue 透過 tool use 查詢資料倉儲，也能查 Slack 訊息、程式碼庫等公司內部知識，讓警示放回自家環境的脈絡來判讀。<br>▸ <a href=\"https://www.youtube.com/watch?v=FPPTnI88RR8&t=93s\" target=\"_blank\">01:33</a> Demo 使用樣本資料：詢問「開發者自己開了 admin 權限，是否經過授權？」Claude 先擬出六個調查步驟，再發出多個查詢，判斷這是典型的權限提升（privilege escalation）。<br>▸ <a href=\"https://www.youtube.com/watch?v=FPPTnI88RR8&t=126s\" target=\"_blank\">02:06</a> 查到來源 IP 屬於俄羅斯的資料中心，且被 VirusTotal 標為惡意。Claude 判斷事件應是單一個案，但也點出安全態勢上的缺口，提出後續行動項目並寫出調查總結。<br>▸ <a href=\"https://www.youtube.com/watch?v=FPPTnI88RR8&t=160s\" target=\"_blank\">02:40</a> 講者原本估計 suppression engine 至少要 1～2 個月，結果一位新進同仁一週就做出來。主要原因是 Claude Code 能向新人解釋系統怎麼架設、怎麼運作。<br>▸ <a href=\"https://www.youtube.com/watch?v=FPPTnI88RR8&t=190s\" target=\"_blank\">03:10</a> 講者表示自己正在打造過去希望擁有的工具，覺得自己正從實務工作者走向研究者，並能看見以前看不到的系統狀況。\n\n📘 術語<br><b>detection and response platform</b>（偵測與回應平台）：Clue 的定位，是團隊用 Claude Code 建立的平台<br><b>tool use</b>（工具使用）：Clue 靠 tool use 查詢資料倉儲和公司內部知識<br><b>privilege escalation</b>（權限提升）：Demo 中 Claude 對開發者自行取得 admin 權限的判斷，稱為典型的權限提升<br><b>suppression engine</b>（抑制引擎）：講者 Q4 計畫中的項目，原估 1～2 個月，新人一週就做完\n\n📺 <a href=\"https://www.youtube.com/watch?v=FPPTnI88RR8\" target=\"_blank\">How Anthropic uses Claude in Cybersecurity</a>（2026/05/12 · 3 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "講者原本預估 suppression engine 至少要 1～2 個月，實際上新進同仁花了多久做出來？",
+          "options": [
+            "一週",
+            "一天",
+            "兩個月",
+            "一個月"
+          ],
+          "correct": 0,
+          "why": "[02:40] 講者說原本估計至少要 1～2 個月，結果一位新進同仁一週就做好了（One of our new hires built it in a week）。"
+        }
+      },
+      {
+        "id": "yt_BbYSGxtsMic",
+        "title": "🎬 讓 coding agent 擁有自己的電腦：Cursor 如何打造 cloud agents",
+        "category": "企業與客戶案例",
+        "text": "<b>Cursor 分享如何讓雲端 agent 更自主，並建立讓 agent 自我改進的系統</b><br>▸ <a href=\"https://www.youtube.com/watch?v=BbYSGxtsMic&t=45s\" target=\"_blank\">00:45</a> Cursor 經歷三階段：給 agent 工具與脈絡變得更自主、學會善用更強的模型、打造「建造系統的系統」<br>▸ <a href=\"https://www.youtube.com/watch?v=BbYSGxtsMic&t=166s\" target=\"_blank\">02:46</a> 做了 Claude onboarding agent（cursor.com/onboard），它探索 codebase 的目的不是改程式，而是弄懂怎麼把專案跑起來<br>▸ <a href=\"https://www.youtube.com/watch?v=BbYSGxtsMic&t=228s\" target=\"_blank\">03:48</a> cloud agent 每次都得從零啟動開發環境，所以做了 CLI 工具，用來啟動服務、等待服務就緒、查狀態、建立測試帳號等<br>▸ <a href=\"https://www.youtube.com/watch?v=BbYSGxtsMic&t=288s\" target=\"_blank\">04:48</a> 自主性原則：給 agent「眼睛」（你看得到的它也要看得到）、給它工具（在合理的安全限制下），並維持高品質的 codebase 和說明<br>▸ <a href=\"https://www.youtube.com/watch?v=BbYSGxtsMic&t=349s\" target=\"_blank\">05:49</a> computer use 是基礎能力：寫程式像下西洋棋，整盤看得到；操作 GUI 像打電玩，一次只看得到一小塊，需要後設認知和回溯<br>▸ <a href=\"https://www.youtube.com/watch?v=BbYSGxtsMic&t=409s\" target=\"_blank\">06:49</a> agent 會錄 demo，除了自己做端到端測試，也讓開發者在看程式碼之前就能快速審查成果<br>▸ <a href=\"https://www.youtube.com/watch?v=BbYSGxtsMic&t=439s\" target=\"_blank\">07:19</a> 兩種用法：小任務和 bug 直接丟進 prompt 開跑；大專案交給 cloud agent 長時間處理<br>▸ <a href=\"https://www.youtube.com/watch?v=BbYSGxtsMic&t=620s\" target=\"_blank\">10:20</a> 重視 agent experience：agent 遇到問題就回報，再分類成技術問題、權限問題、不知道怎麼做（ignorance）三類，由 agent 和人類修正\n\n📘 術語<br><b>agent experience</b>（agent 體驗）：對應 developer experience，重視程度要一樣甚至更高<br><b>WCF (work on the factory)</b>（改善工廠）：每個 cloud agent 都有的 skill：碰到煩人、壞掉或搞不懂的事就回報，而不是硬撐下去<br><b>computer use</b>（電腦操作）：輸入原始像素，輸出滑鼠和鍵盤操作<br><b>onboarding agent</b>（入職 agent）：探索 codebase，弄懂怎麼執行它，並和開發者互動設定環境\n\n📺 <a href=\"https://www.youtube.com/watch?v=BbYSGxtsMic\" target=\"_blank\">Giving coding agents their own computers: How Cursor built cloud agents</a>（2026/05/08 · 14 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "Cursor 最重要的 skill「WCF」是什麼的縮寫？",
+          "options": [
+            "Work on the factory",
+            "Write code first",
+            "Worker cloud fleet",
+            "Workflow control framework"
+          ],
+          "correct": 0,
+          "why": "[11:22] 講者說最重要的 skill 是 WCF skill，代表 work on the factory"
+        }
+      },
+      {
+        "id": "yt_BrpB-h1e--k",
+        "title": "🎬 用 Claude Managed Agents 打造 Asana AI teammates",
+        "category": "企業與客戶案例",
+        "text": "<b>Asana 分享如何用 Claude Managed Agents 打造多人協作的 AI teammates</b><br>▸ <a href=\"https://www.youtube.com/watch?v=BrpB-h1e--k&t=48s\" target=\"_blank\">00:48</a> Asana 的 AI teammates 從 3 月起正式開放（generally available）。講者 Arnauld 希望 AI agent 能像真正的團隊成員，和人一起完成審核、端到端流程等多步驟工作<br>▸ <a href=\"https://www.youtube.com/watch?v=BrpB-h1e--k&t=78s\" target=\"_blank\">01:18</a> 講者觀察到，多數企業仍用「single player」方式使用 agent，也就是一個人用完再交給下一個人，因此累積不了知識，也沒有共享的 enterprise memory<br>▸ <a href=\"https://www.youtube.com/watch?v=BrpB-h1e--k&t=231s\" target=\"_blank\">03:51</a> Asana 的 work graph 已經發展超過 17 年，層級是：使命與願景→goals→portfolios→projects→tasks。人類透過 UI 使用，agent 也從這裡取得工作需要的 context<br>▸ <a href=\"https://www.youtube.com/watch?v=BrpB-h1e--k&t=355s\" target=\"_blank\">05:55</a> Managed agents 帶來三個好處：降低 prototyping 成本、內建 verification loop，以及內建 grader。Asana 傳入想要的 outcome 後，grader 會反覆迭代，確保產出品質夠高<br>▸ <a href=\"https://www.youtube.com/watch?v=BrpB-h1e--k&t=417s\" target=\"_blank\">06:57</a> 以前用 Messages API，現在改用 managed agents，就不必自己打造 agent loop、檔案管理和程式執行，還能讓多個 agent 平行、各自獨立工作<br>▸ <a href=\"https://www.youtube.com/watch?v=BrpB-h1e--k&t=449s\" target=\"_blank\">07:29</a> Asana 內建超過 21 個 AI teammates，對應 PMO、行銷、IT、HR、R&amp;D 等部門，可以處理上市規劃、撰寫規格、目標管理、資源與產能規劃等工作<br>▸ <a href=\"https://www.youtube.com/watch?v=BrpB-h1e--k&t=784s\" target=\"_blank\">13:04</a> 示範：使用者用留言要求把主色改成藍色，這項回饋會寫進 agent 的記憶。之後換別的行銷人員使用同一個 agent，也不會再犯同樣的錯<br>▸ <a href=\"https://www.youtube.com/watch?v=BrpB-h1e--k&t=1459s\" target=\"_blank\">24:19</a> 第三方整合同時在兩個層級進行：一是直接接到 Asana 自家 AI teammates 的 agent loop，二是透過 MCP 接到 managed agents\n\n📘 術語<br><b>Claude Managed Agents</b>（Claude 託管式 agent）：Asana 用它完成多步驟動作，內建 verification loop 與 grader，不必自己打造 agent loop<br><b>AI teammates</b>（AI 隊友）：Asana 內的 AI agent，被當成系統裡真正的成員，有權限控管，也能和多人協作<br><b>grader</b>（評分器）：Asana 傳入 outcome 後，grader 會多次迭代，確保產出品質夠高<br><b>enterprise memory</b>（企業共享記憶）：多人與 agent 互動累積下來的知識，會隨著更多人使用而越來越好<br><b>work graph</b>（工作圖譜）：Asana 發展超過 17 年的結構，從使命、goals 一路到 tasks，人和 agent 都能使用\n\n📺 <a href=\"https://www.youtube.com/watch?v=BrpB-h1e--k\" target=\"_blank\">Building with Claude Managed Agents and Asana AI teammates</a>（2026/05/08 · 24 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "Asana 怎麼處理 managed agents 的第三方整合？",
+          "options": [
+            "目前不支援，交給客戶自己寫 skill",
+            "只透過 grader 的 rubric 注入第三方資料",
+            "只在 Asana 平台層整合，不讓 agent 直接接觸",
+            "同時接到自家 AI teammates 的 agent loop，並在 MCP 層接到 managed agents"
+          ],
+          "correct": 3,
+          "why": "[24:19] Bradley 說整合在兩個層級都有做：直接接到自家 AI teammates 的 agent loop，也在 MCP 層接到 managed agents"
+        }
+      },
+      {
+        "id": "yt_45hPRdfDEsI",
+        "title": "🎬 Notion 如何用 Claude Managed Agents 打造產品",
+        "category": "企業與客戶案例",
+        "text": "<b>Notion PM 示範用 Claude Managed Agents 在 Notion 裡做 agent orchestration</b><br>▸ <a href=\"https://www.youtube.com/watch?v=45hPRdfDEsI&t=0s\" target=\"_blank\">00:00</a> Notion PM Eric 負責 agents 與 agent orchestration；他曾把 30 個做 prototype 的任務一次丟給 Claude 跑，去拿個點心回來，prototype 就全做好了<br>▸ <a href=\"https://www.youtube.com/watch?v=45hPRdfDEsI&t=33s\" target=\"_blank\">00:33</a> Notion 想成為 agent orchestration 平台。Claude 擅長複雜、長時間執行的任務，但要自己從頭建這套系統，工程上非常吃力<br>▸ <a href=\"https://www.youtube.com/watch?v=45hPRdfDEsI&t=33s\" target=\"_blank\">00:33</a> Managed agent 產品可以隨插即用地導入 Claude，session 在雲端執行，Notion 只要接上 API，就能提供給客戶使用<br>▸ <a href=\"https://www.youtube.com/watch?v=45hPRdfDEsI&t=63s\" target=\"_blank\">01:03</a> 示範案例是客戶 onboarding（虛構客戶 Harbor and Pine）。Notion 裡的 custom agent 可以存取所有客戶資料庫和任務看板，因此掌握完整脈絡<br>▸ <a href=\"https://www.youtube.com/watch?v=45hPRdfDEsI&t=124s\" target=\"_blank\">02:04</a> 把行動項目轉成任務丟上看板後，會啟動多條 agent thread，各自開一個 Claude session；使用者可以在 Notion 裡直接跟那個 session 對話<br>▸ <a href=\"https://www.youtube.com/watch?v=45hPRdfDEsI&t=124s\" target=\"_blank\">02:04</a> 在 Claude platform 上可以用另一種視角看 session 的執行狀況，開發端也能把 traces 拿來改進 agent<br>▸ <a href=\"https://www.youtube.com/watch?v=45hPRdfDEsI&t=156s\" target=\"_blank\">02:36</a> 長時間任務可能要跑 20 分鐘到一小時。能持續執行、管理記憶、長時間維持高品質輸出的 harness，是建在模型之上的關鍵一層<br>▸ <a href=\"https://www.youtube.com/watch?v=45hPRdfDEsI&t=187s\" target=\"_blank\">03:07</a> 成果之一是一個範例首頁，內容取自 Notion 裡的脈絡；如果要修改，可以直接在 Notion 裡跟 Claude 對話\n\n📘 術語<br><b>agent orchestration</b>（agent 協作調度）：找來適合這份工作的 agent，並由 Notion 幫你管理所有工作流程<br><b>Claude Managed Agents</b>（Claude 託管 agent）：讓導入 Claude 變得隨插即用，session 在雲端執行，接上 API 就能用<br><b>harness</b>（執行框架）：能跑長時間任務、管理記憶、長時間維持高品質輸出，是建在模型之上的關鍵一層<br><b>custom agent</b>（自訂 agent）：Notion 內建的 agent，被賦予客戶資料庫與任務看板，協助客戶 onboarding 流程<br><b>traces</b>（執行紀錄）：在 Claude platform 上看得到，開發端拿來改進 agent\n\n📺 <a href=\"https://www.youtube.com/watch?v=45hPRdfDEsI\" target=\"_blank\">How Notion built with Claude Managed Agents</a>（2026/04/08 · 3 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，Notion 為什麼覺得 managed agent 產品很好用？",
+          "options": [
+            "它讓 Notion 不需要任何 API 就能使用 Claude",
+            "它讓 Notion 可以把 Claude 模型部署在自家伺服器上",
+            "它讓導入 Claude 隨插即用，session 在雲端執行，接 API 就能用",
+            "它讓工程師不必再寫任何 prompt"
+          ],
+          "correct": 2,
+          "why": "[00:33] 提到 managed agent 讓導入 Claude 變得隨插即用，session 在雲端執行；[01:03] 提到只要接上 API 就能給客戶使用"
+        }
+      },
+      {
+        "id": "yt_Jp83_JMK74o",
+        "title": "🎬 Anthropic 行銷團隊如何使用 Claude",
+        "category": "企業與客戶案例",
+        "text": "<b>沒寫過程式的行銷人員用 Claude Code 做出 Figma plugin，自動產生廣告文案版本</b><br>▸ <a href=\"https://www.youtube.com/watch?v=Jp83_JMK74o&t=1s\" target=\"_blank\">00:01</a> 分享者從來沒寫過程式，還得 Google 怎麼在 Mac 上打開 terminal；Claude Code 剛推出時，完全不懂這個產品是做什麼用的<br>▸ <a href=\"https://www.youtube.com/watch?v=Jp83_JMK74o&t=32s\" target=\"_blank\">00:32</a> 原本要在 Figma 手動複製 frame、從 Google Doc 貼上標題，10 個版本乘 5 種比例非常重複，所以用 Claude Code 做了一個 Figma plugin，只要貼一次文案就好<br>▸ <a href=\"https://www.youtube.com/watch?v=Jp83_JMK74o&t=94s\" target=\"_blank\">01:34</a> 實際示範：選取 frame 後辨識出 headline、CTA 等元件，一次貼上所有標題並按下 generate ad variants，每個版本各自產生一個 frame。原本約 30 分鐘的工作縮短到約 30 秒<br>▸ <a href=\"https://www.youtube.com/watch?v=Jp83_JMK74o&t=125s\" target=\"_blank\">02:05</a> 建議：先找出工作中重複、能自動化的部分，從非常小又簡單的事開始。不需要會寫程式，只要把問題講清楚、講精簡\n\n📘 術語<br><b>Figma plugin</b>（Figma 外掛）：用 Claude Code 做的工具，能辨識範本元件，一次貼上文案就產生多個廣告版本\n\n📺 <a href=\"https://www.youtube.com/watch?v=Jp83_JMK74o\" target=\"_blank\">How Anthropic uses Claude in Marketing</a>（2026/01/27 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "使用 Figma plugin 之後，產生所有廣告版本大約要多久？",
+          "options": [
+            "約 10 分鐘",
+            "約 30 分鐘",
+            "約 30 秒",
+            "約 5 分鐘"
+          ],
+          "correct": 2,
+          "why": "字幕說原本大約要 30 分鐘，用了 plugin 後大約 30 秒就能完成（01:34–02:05）"
+        }
+      }
+    ]
+  },
+  yt_research: {
+    "id": "yt_research",
+    "name": "📺 研究與安全・官方頻道字幕版",
+    "badge": "官方字幕實證",
+    "lessons": [
+      {
+        "id": "yt_ANDl5Tkru7g",
+        "title": "🎬 AI 到底知道你哪些事？",
+        "category": "研究與安全",
+        "text": "<b>說明分享給 AI 的資料會被怎麼使用，以及你能如何掌控</b><br>▸ <a href=\"https://www.youtube.com/watch?v=ANDl5Tkru7g&t=31s\" target=\"_blank\">00:31</a> 各家 AI 供應商政策不同，要自己確認所用工具的細節；重點是資料去哪、為什麼、留多久，而且每個環節都該有設定讓你掌控<br>▸ <a href=\"https://www.youtube.com/watch?v=ANDl5Tkru7g&t=63s\" target=\"_blank\">01:03</a> 第一種用途是對話本身：模型本身只在單次對話期間保有脈絡，隔天開新對話就是一片空白<br>▸ <a href=\"https://www.youtube.com/watch?v=ANDl5Tkru7g&t=97s\" target=\"_blank\">01:37</a> 第二種是產品的記憶功能：不是模型本身記得你，而是存在帳號裡、開新對話時模型可以存取的細節；可以編輯、清除或整個關掉<br>▸ <a href=\"https://www.youtube.com/watch?v=ANDl5Tkru7g&t=127s\" target=\"_blank\">02:07</a> 第三種是供應商自己的系統：隱私政策常允許用於維持服務、安全與濫用審查、修 bug、研究、廣告等商業用途<br>▸ <a href=\"https://www.youtube.com/watch?v=ANDl5Tkru7g&t=159s\" target=\"_blank\">02:39</a> 第四種是訓練未來的模型：個資通常會先移除，對話不會存在模型裡再念給其他使用者看，變成的是一種模式；很多供應商讓你選擇退出<br>▸ <a href=\"https://www.youtube.com/watch?v=ANDl5Tkru7g&t=189s\" target=\"_blank\">03:09</a> 組織導入 Claude 時，模型訓練預設是關閉的，不需要做任何設定<br>▸ <a href=\"https://www.youtube.com/watch?v=ANDl5Tkru7g&t=219s\" target=\"_blank\">03:39</a> 好習慣：花幾分鐘檢查設定；依自己的舒適程度決定分享內容；不放心的內容就省略，例如用佔位字取代收件人真名<br>▸ <a href=\"https://www.youtube.com/watch?v=ANDl5Tkru7g&t=250s\" target=\"_blank\">04:10</a> 依敏感度選產品：日常用消費者版通常就夠；工作上的機密或受法規管制的資料，要找商業或企業方案\n\n📘 術語<br><b>memory</b>（記憶功能）：不是模型本身記得你，而是存進帳號、開新對話時模型能存取的細節<br><b>context</b>（脈絡）：模型本身只在單次對話期間保有的內容<br><b>opt out</b>（選擇退出）：供應商若拿對話訓練未來的模型，很多會讓你選擇不參與<br><b>placeholders</b>（佔位字）：用來取代真名等資訊，一樣能得到相同效果\n\n📺 <a href=\"https://www.youtube.com/watch?v=ANDl5Tkru7g\" target=\"_blank\">What does AI actually know about you?</a>（2026/08/13 · 4 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，組織導入 Claude 時，模型訓練的預設狀態是什麼？",
+          "options": [
+            "預設開啟，但個資會先移除",
+            "預設關閉，不需要做任何設定",
+            "每位員工第一次登入時自己選擇",
+            "預設開啟，需要管理員手動關閉"
+          ],
+          "correct": 1,
+          "why": "[03:09] 字幕說：「When your organization brings in Claude, model training is off by default, so there's nothing you need to do.」"
+        }
+      },
+      {
+        "id": "yt_O0Bf2A4Z6O0",
+        "title": "🎬 你能相信 AI 告訴你的事嗎？",
+        "category": "研究與安全",
+        "text": "<b>介紹 AI 出錯的兩種常見狀況：hallucination 和 sycophancy</b><br>▸ <a href=\"https://www.youtube.com/watch?v=O0Bf2A4Z6O0&t=0s\" target=\"_blank\">00:00</a> AI 的回答可能看起來很有自信、條理分明，甚至附上來源，但還是可能出錯。常見的出錯方式有兩種，成因也不一樣<br>▸ <a href=\"https://www.youtube.com/watch?v=O0Bf2A4Z6O0&t=0s\" target=\"_blank\">00:00</a> 第一種是 hallucination：模型生成聽起來合理但不是事實的內容，有時很細微，例如產品介紹列出產品其實沒有的功能<br>▸ <a href=\"https://www.youtube.com/watch?v=O0Bf2A4Z6O0&t=0s\" target=\"_blank\">00:00</a> 第二種是 sycophancy：模型有時會說你看起來想聽的話<br>▸ <a href=\"https://www.youtube.com/watch?v=O0Bf2A4Z6O0&t=30s\" target=\"_blank\">00:30</a> 如果提問透露出你想要的答案，例如「我覺得這個計畫很穩，你不覺得嗎？」，模型可能就直接附和<br>▸ <a href=\"https://www.youtube.com/watch?v=O0Bf2A4Z6O0&t=30s\" target=\"_blank\">00:30</a> Anthropic 直接處理 hallucination 和 sycophancy 這兩個問題；沒有完美的模型，但每個模型都會訓練得更好\n\n📘 術語<br><b>hallucination</b>（幻覺）：模型生成聽起來合理、但不是事實的內容<br><b>sycophancy</b>（諂媚／討好）：模型說出你看起來想聽的話，例如直接附和你的看法\n\n📺 <a href=\"https://www.youtube.com/watch?v=O0Bf2A4Z6O0\" target=\"_blank\">Can you trust what AI tells you?</a>（2026/08/11 · 0 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，當你問 AI「我覺得這個計畫很穩，你不覺得嗎？」，模型可能會出現哪種問題？",
+          "options": [
+            "Sycophancy：直接附和你的看法",
+            "Hallucination：編造計畫裡不存在的細節",
+            "拒絕回答這個問題",
+            "自動引用外部來源來反駁你"
+          ],
+          "correct": 0,
+          "why": "[00:30] 字幕說提問透露出你想要的答案時，模型可能就直接附和，這就是 sycophancy（[00:00] 有定義）"
+        }
+      },
+      {
+        "id": "yt_0KCTELWXYPw",
+        "title": "🎬 什麼是 sycophancy（諂媚／討好）？",
+        "category": "研究與安全",
+        "text": "<b>說明 AI 的 sycophancy 是什麼、為什麼會出現，以及怎麼應對</b><br>▸ <a href=\"https://www.youtube.com/watch?v=0KCTELWXYPw&t=1s\" target=\"_blank\">00:01</a> Sycophancy 指的是只說你想聽的話，而不是真實、正確或真正有幫助的內容<br>▸ <a href=\"https://www.youtube.com/watch?v=0KCTELWXYPw&t=1s\" target=\"_blank\">00:01</a> 例子：AI 附和你的事實錯誤、依你提問的措辭改變答案、依你的偏好調整回應<br>▸ <a href=\"https://www.youtube.com/watch?v=0KCTELWXYPw&t=1s\" target=\"_blank\">00:01</a> 成因：訓練模型變得有幫助、語氣溫暖友善或支持時，sycophancy 會以非預期的方式一起出現<br>▸ <a href=\"https://www.youtube.com/watch?v=0KCTELWXYPw&t=1s\" target=\"_blank\">00:01</a> 沒人想用一直唱反調或很好鬥的 AI，但需要誠實回饋時也不該只給附和或稱讚<br>▸ <a href=\"https://www.youtube.com/watch?v=0KCTELWXYPw&t=31s\" target=\"_blank\">00:31</a> 因此會持續研究 sycophancy 在對話中如何出現，並開發更好的測試方法<br>▸ <a href=\"https://www.youtube.com/watch?v=0KCTELWXYPw&t=31s\" target=\"_blank\">00:31</a> 應對方法：用中立、追求事實的措辭；拿可信來源交叉比對；要求準確性或反方論點；或暫停使用 AI，改問你信任的人<br>▸ <a href=\"https://www.youtube.com/watch?v=0KCTELWXYPw&t=31s\" target=\"_blank\">00:31</a> 系統越先進、越融入生活，打造真正有幫助、而不只是附和的模型就越重要\n\n📘 術語<br><b>sycophancy</b>（諂媚／討好）：說對方想聽的話，而不是真實、正確或真正有幫助的內容<br><b>counterarguments</b>（反方論點）：懷疑回應有 sycophancy 時，可以在 prompt 裡要求 AI 提出的內容之一\n\n📺 <a href=\"https://www.youtube.com/watch?v=0KCTELWXYPw\" target=\"_blank\">What is sycophancy?</a>（2026/07/21 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，AI 為什麼會出現 sycophancy？",
+          "options": [
+            "使用者問題太模糊，模型只能猜答案",
+            "訓練資料裡的事實錯誤太多",
+            "訓練模型變得有幫助、語氣溫暖友善或支持時，sycophancy 會以非預期的方式一起出現",
+            "模型被刻意設計成要附和使用者，好提高使用率"
+          ],
+          "correct": 2,
+          "why": "[00:01] 字幕提到，訓練模型變得有幫助、模仿溫暖、友善或支持的語氣時，sycophancy 會以非預期的方式一起出現"
+        }
+      },
+      {
+        "id": "yt_005JLRt3gXI",
+        "title": "🎬 為什麼 AI 模型會產生幻覺？",
+        "category": "研究與安全",
+        "text": "<b>說明 AI 幻覺的成因、Anthropic 的因應作法，以及使用者如何察覺與減少幻覺</b><br>▸ <a href=\"https://www.youtube.com/watch?v=005JLRt3gXI&t=7s\" target=\"_blank\">00:07</a> AI 捏造內容的錯誤稱為幻覺（hallucination），往往比單純犯錯更糟，因為 AI 會顯得很有自信，甚至試圖說服你它是對的<br>▸ <a href=\"https://www.youtube.com/watch?v=005JLRt3gXI&t=39s\" target=\"_blank\">00:39</a> 幻覺的形式包括引用不存在的研究論文、編造假統計數據，或把真實人物、事件的事實講錯；例如請 Claude 介紹 Jared Kaplan 的論文，它給出的標題都不存在<br>▸ <a href=\"https://www.youtube.com/watch?v=005JLRt3gXI&t=70s\" target=\"_blank\">01:10</a> 幻覺難以預料、難以抓到，錯誤答案常看起來跟正確答案一模一樣；而且因為幻覺越來越少，大家常懶得檢查 AI 的答案<br>▸ <a href=\"https://www.youtube.com/watch?v=005JLRt3gXI&t=103s\" target=\"_blank\">01:43</a> 成因：AI 從大量網路文字學習預測下一個字，遇到冷門主題時資料不足，會為了幫上忙而猜測，有時猜錯<br>▸ <a href=\"https://www.youtube.com/watch?v=005JLRt3gXI&t=133s\" target=\"_blank\">02:13</a> 訓練時教 Claude 誠實，不確定時說「I don&#x27;t know」，並讓它理解誠實既是對的事，也是更有幫助的一部分<br>▸ <a href=\"https://www.youtube.com/watch?v=005JLRt3gXI&t=167s\" target=\"_blank\">02:47</a> 定期用數千個專門設計來考倒 Claude 的問題測試，衡量它是否正確表達不確定、是否捏造引用或統計；這仍是整個 AI 領域尚未解決的挑戰<br>▸ <a href=\"https://www.youtube.com/watch?v=005JLRt3gXI&t=206s\" target=\"_blank\">03:26</a> 容易出現幻覺的情境：詢問具體事實、統計或引用；冷門、小眾或很新的主題；不廣為人知的真實人物或地點；需要日期、名字、數字等精確細節<br>▸ <a href=\"https://www.youtube.com/watch?v=005JLRt3gXI&t=236s\" target=\"_blank\">03:56</a> 減少幻覺的技巧：要求 AI 提供來源並確認來源支持其說法、事先說「It&#x27;s ok if you don&#x27;t know」、詢問它有多確定、開新對話請 AI 找錯；重要工作要對照可信來源\n\n📘 術語<br><b>hallucination</b>（幻覺）：AI 捏造內容的錯誤，且常顯得很有自信，甚至試圖說服你它是對的<br><b>hedge</b>（保留說法／避險表述）：測試項目之一：衡量 Claude 多常適當地保留語氣，而不是自信地陳述錯誤內容\n\n📺 <a href=\"https://www.youtube.com/watch?v=005JLRt3gXI\" target=\"_blank\">Why do AI models hallucinate?</a>（2026/04/15 · 5 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，當你對 AI 給出的某個答案沒把握時，建議的做法是什麼？",
+          "options": [
+            "在同一個對話中重複問同樣的問題，直到答案一致為止",
+            "請 AI 把答案改寫得更簡短，降低出錯機率",
+            "開一個新對話，請 AI 找出該答案中的錯誤，並確認來源是否支持其說法",
+            "改用另一家公司的 AI 模型來回答同一個問題"
+          ],
+          "correct": 2,
+          "why": "[03:56] 字幕提到：If you have an answer you're unsure about, start a new chat and ask the AI to find errors in the answer, and to confirm that the sources support the statements."
+        }
+      }
+    ]
+  },
+  yt_art: {
+    "id": "yt_art",
+    "name": "📺 藝術人文・官方頻道字幕版",
+    "badge": "官方字幕實證",
+    "lessons": [
+      {
+        "id": "yt_LCQ0_t02OHY",
+        "title": "🎬 有時候，一個專案的意義就在於它是為誰而做",
+        "category": "藝術與人文",
+        "text": "<b>用新的 Opus 模型幫女友做一個會互動的鑰匙圈，當作送給心愛的人的禮物</b><br>▸ <a href=\"https://www.youtube.com/watch?v=LCQ0_t02OHY&t=2s\" target=\"_blank\">00:02</a> 講者一直相信科技也能像手寫卡片一樣充滿個人心意，所以用新的 Opus 模型幫女友做了一個小鑰匙圈<br>▸ <a href=\"https://www.youtube.com/watch?v=LCQ0_t02OHY&t=2s\" target=\"_blank\">00:02</a> 作品用兩塊小電路板，每塊都接上螢幕和天線。最初的構想很簡單：兩人靠近時就會發光，後來又加入兩人的小角色和 emoji，按一下按鈕就能送出一個親親<br>▸ <a href=\"https://www.youtube.com/watch?v=LCQ0_t02OHY&t=2s\" target=\"_blank\">00:02</a> 講者靠新的 Opus 模型學會怎麼接好所有零件、幫天線寫程式，還設計出好看又組得起來的外殼<br>▸ <a href=\"https://www.youtube.com/watch?v=LCQ0_t02OHY&t=33s\" target=\"_blank\">00:33</a> 講者說這是個又小又傻的東西，但為心愛的人親手做點東西，是他們最喜歡的表達方式之一\n\n📺 <a href=\"https://www.youtube.com/watch?v=LCQ0_t02OHY\" target=\"_blank\">Sometimes the whole point of a project is who it’s for</a>（2026/09/23 · 0 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片中這個鑰匙圈最初的構想是什麼？",
+          "options": [
+            "兩人靠近時會發光",
+            "記錄兩人一起走過的地點",
+            "每天自動傳送一則訊息",
+            "對方來電時會震動"
+          ],
+          "correct": 0,
+          "why": "字幕 [00:02] 提到 \"The initial idea was simple, glow when we're close to each other.\""
+        }
+      },
+      {
+        "id": "yt_JdqNda9JeaU",
+        "title": "🎬 用 Claude 拍攝星空",
+        "category": "藝術與人文",
+        "text": "<b>Shane Oakland 在 Death Valley 拍銀河全景，並說向 Claude 請教很有幫助</b><br>▸ <a href=\"https://www.youtube.com/watch?v=JdqNda9JeaU&t=0s\" target=\"_blank\">00:00</a> Shane Oakland 想學拍銀河的全景照片，他說向 Claude 請教做法「非常有幫助」。他把天文攝影形容成去荒野拍星星，成敗要看風，像在抽樂透。<br>▸ <a href=\"https://www.youtube.com/watch?v=JdqNda9JeaU&t=30s\" target=\"_blank\">00:30</a> 銀河幾乎沒辦法用肉眼看到。用鏡頭把光圈開到最大、讓大量光線進來，就能看到星空。<br>▸ <a href=\"https://www.youtube.com/watch?v=JdqNda9JeaU&t=30s\" target=\"_blank\">00:30</a> 拍攝地點在 Death Valley。每張轉大約 30° 來疊合成全景，目標是等銀河出現時把整座山拍進畫面，曝光時間 25 秒。\n\n📘 術語<br><b>Astrophotography</b>（天文攝影）：到荒野拍攝星星<br><b>Aperture</b>（光圈）：開到最大讓大量光線進來，就能拍到肉眼幾乎看不到的銀河<br><b>Panoramic photo</b>（全景照片）：每張轉大約 30° 來疊合，把整座山和銀河拍進畫面\n\n📺 <a href=\"https://www.youtube.com/watch?v=JdqNda9JeaU\" target=\"_blank\">Photographing the stars with Claude</a>（2026/07/07 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "Shane 在 Death Valley 拍銀河全景時，設定的曝光時間是多少？",
+          "options": [
+            "30 秒",
+            "60 秒",
+            "25 秒",
+            "15 秒"
+          ],
+          "correct": 2,
+          "why": "字幕 [00:30] 說 \"Exposure time 25 seconds.\""
+        }
+      },
+      {
+        "id": "yt_8--srKGAaMQ",
+        "title": "🎬 用 Claude 拍攝星空",
+        "category": "藝術與人文",
+        "text": "<b>Shane Auckland 用 Claude 學拍銀河全景，在 Death Valley 實地挑戰天文攝影</b><br>▸ <a href=\"https://www.youtube.com/watch?v=8--srKGAaMQ&t=0s\" target=\"_blank\">00:00</a> Shane Auckland 想學拍全景銀河照片，請 Claude 用條列重點說明怎麼拍，他覺得「超棒」。他喜歡需要大量練習的困難嗜好<br>▸ <a href=\"https://www.youtube.com/watch?v=8--srKGAaMQ&t=0s\" target=\"_blank\">00:00</a> 天文攝影就是跑到荒郊野外拍星星，條件要全部配合才行；這次拍攝地點在 Death Valley<br>▸ <a href=\"https://www.youtube.com/watch?v=8--srKGAaMQ&t=31s\" target=\"_blank\">00:31</a> 肉眼其實很難看見銀河，但把鏡頭光圈開到最大、讓光線進來，就能拍到外太空<br>▸ <a href=\"https://www.youtube.com/watch?v=8--srKGAaMQ&t=31s\" target=\"_blank\">00:31</a> 拍全景時相機每次旋轉約 30 度，讓照片互相重疊，目標是銀河出現時把整座山拍進畫面；曝光 25 秒<br>▸ <a href=\"https://www.youtube.com/watch?v=8--srKGAaMQ&t=62s\" target=\"_blank\">01:02</a> 他的心得：一定會失敗，但要繼續前進、持續思考\n\n📘 術語<br><b>Astrophotography</b>（天文攝影）：跑到荒郊野外去拍星星<br><b>Aperture</b>（光圈）：開到最大可以讓所有光線進來，拍到肉眼看不見的銀河<br><b>Panorama</b>（全景照片）：每次旋轉約 30 度讓照片重疊，把整座山拍進畫面\n\n📺 <a href=\"https://www.youtube.com/watch?v=8--srKGAaMQ\" target=\"_blank\">Photographing the stars with Claude</a>（2026/07/06 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "Shane 拍銀河全景時，說每張照片之間要轉多少度才能讓畫面重疊？",
+          "options": [
+            "約 30 度",
+            "約 180 度",
+            "約 90 度",
+            "約 15 度"
+          ],
+          "correct": 0,
+          "why": "[00:31] 他說 \"I'm going to rotate about 30 degrees, I think should be enough to overlap the panorama photo\""
+        }
+      }
+    ]
+  },
+  yt_other: {
+    "id": "yt_other",
+    "name": "📺 其他・官方頻道字幕版",
+    "badge": "官方字幕實證",
+    "lessons": [
+      {
+        "id": "yt_N4efO8viXXo",
+        "title": "🎬 Code with Claude Tokyo 2026：開幕主題演講",
+        "category": "其他",
+        "text": "<b>發表 Claude Fable 5／Mythos 5，並介紹 Claude Managed Agents 與 Claude Code 的新功能</b><br>▸ <a href=\"https://www.youtube.com/watch?v=N4efO8viXXo&t=143s\" target=\"_blank\">02:23</a> 幾小時前發表第五代模型 Claude Mythos 5 與 Claude Fable 5，是 Anthropic 目前能力最強的兩個模型<br>▸ <a href=\"https://www.youtube.com/watch?v=N4efO8viXXo&t=390s\" target=\"_blank\">06:30</a> 平台上的 API 用量年增將近 17 倍；Claude Managed Agents 新增兩項功能：排程部署，以及把環境變數存在 vault，讓 agent 不必拿到金鑰也能發出需要驗證的 API 請求<br>▸ <a href=\"https://www.youtube.com/watch?v=N4efO8viXXo&t=668s\" target=\"_blank\">11:08</a> Fable 5 在 Sweepbench Pro 拿到最高分。優勢有兩點：single-shot correctness，以及 long horizon autonomy（能連續跑好幾天、處理數百萬 tokens、調度 subagent）<br>▸ <a href=\"https://www.youtube.com/watch?v=N4efO8viXXo&t=855s\" target=\"_blank\">14:15</a> 新的防護機制：如果請求涉及資安、生物或化學，Fable 會改交給 Opus 4.8 處理，回應會清楚標示，並按 Opus 價格計費<br>▸ <a href=\"https://www.youtube.com/watch?v=N4efO8viXXo&t=948s\" target=\"_blank\">15:48</a> Mythos 5 和 Fable 5 是同一個底層模型，只是拿掉了資安與生物方面的防護；目前開放給 Project Glasswing 的合作夥伴使用<br>▸ <a href=\"https://www.youtube.com/watch?v=N4efO8viXXo&t=1071s\" target=\"_blank\">17:51</a> 給開發者的建議：架構要為下一版 Claude 設計；設計更難的 eval；讓模型升級變容易，例如建立自動化 eval 和測試流程<br>▸ <a href=\"https://www.youtube.com/watch?v=N4efO8viXXo&t=1295s\" target=\"_blank\">21:35</a> 要成為 AI native 公司需要三個要素：harness、context、infrastructure。Managed Agents 提供 outcomes、1M context、memory、skills 與 dreaming<br>▸ <a href=\"https://www.youtube.com/watch?v=N4efO8viXXo&t=2183s\" target=\"_blank\">36:23</a> Claude Code 推出 dynamic workflows，可以讓數十到數百個 agent 平行執行；示範中用一個 prompt 同時把網站翻成 12 種語言\n\n📘 術語<br><b>Claude Managed Agents</b>（Claude 託管代理）：整合 agentic harness、context 管理工具和正式環境等級基礎設施的產品，專為 Claude 打造<br><b>outcomes</b>（成果目標）：用 rubric 定義什麼算是好的結果，agent 會一直反覆修改，直到達成為止<br><b>dreaming</b>（做夢）：agent 回頭檢視自己過去所有的 session，更新 memory 和 skills，讓下次做得更好<br><b>dynamic workflows</b>（動態工作流程）：讓 Claude Code 以固定的結構，同時在數十到數百個 agent 上平行執行大型任務<br><b>time horizon</b>（時間跨度）：模型在失去方向、不知道下一步要做什麼之前，能自主工作多久\n\n📺 <a href=\"https://www.youtube.com/watch?v=N4efO8viXXo\" target=\"_blank\">Code with Claude Tokyo 2026: Opening Keynote</a>（2026/06/12 · 42 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據演講內容，當 Fable 5 收到涉及資安、生物或化學的請求時會怎麼處理？",
+          "options": [
+            "直接拒絕回應，並要求使用者提出申請",
+            "暫停請求，等人工審核通過後才回應",
+            "改交給 Opus 4.8 處理，回應會標示出來，並按 Opus 價格計費",
+            "自動改交給 Mythos 5 處理"
+          ],
+          "correct": 2,
+          "why": "[14:15] 講者說請求涉及 cyber security、biology 或 chemistry 時，Fable 會改交給 Opus 4.8 處理，回應會清楚標示，並按 Opus 價格計費"
+        }
+      },
+      {
+        "id": "yt_6amLO7I9xdg",
+        "title": "🎬 Code with Claude London 2026：開幕主題演講",
+        "category": "其他",
+        "text": "<b>從模型、Claude 平台到 Claude Code，三層介紹 Anthropic 最新進展與新功能</b><br>▸ <a href=\"https://www.youtube.com/watch?v=6amLO7I9xdg&t=249s\" target=\"_blank\">04:09</a> Boris 認為，從「有想法」到「程式跑起來」的距離正在縮短：描述問題，程式就出現，像當年寫計算機程式的感覺<br>▸ <a href=\"https://www.youtube.com/watch?v=6amLO7I9xdg&t=532s\" target=\"_blank\">08:52</a> 模型能力呈指數成長，多數組織卻是線性採用，兩者差距越來越大；平台 API 用量成長近 17 倍，Claude Code 開發者平均每週跑超過 20 小時<br>▸ <a href=\"https://www.youtube.com/watch?v=6amLO7I9xdg&t=1134s\" target=\"_blank\">18:54</a> Lisa 建議要替下一版 Claude 設計架構；模型變聰明後，舊的 scaffolding 反而可能拖累 Claude，要持續做更難的 evals，並自動化評估流程<br>▸ <a href=\"https://www.youtube.com/watch?v=6amLO7I9xdg&t=1349s\" target=\"_blank\">22:29</a> Advisor strategy：小模型負責執行，需要幫忙時向大模型請教；Eve Legal 表示用這方法以低五倍的成本拿到 frontier 模型品質<br>▸ <a href=\"https://www.youtube.com/watch?v=6amLO7I9xdg&t=1475s\" target=\"_blank\">24:35</a> Claude Managed Agents 新增 self-hosted sandboxes（首波支援 Daytona、Cloudflare、Vercel、Modal）和 MCP tunnels，可以安全存取防火牆後的內部 MCP server<br>▸ <a href=\"https://www.youtube.com/watch?v=6amLO7I9xdg&t=2219s\" target=\"_blank\">36:59</a> Claude Code 新功能：code review、remote control 與 iOS／Android、autofix、routines（排程、webhook 或 API 觸發），還有 Claude Security 夜間掃描漏洞<br>▸ <a href=\"https://www.youtube.com/watch?v=6amLO7I9xdg&t=2670s\" target=\"_blank\">44:30</a> Routines 是「higher order prompt」；預設模式從「我去 prompt Claude Code」變成「讓 Claude 去 prompt Claude Code」\n\n📘 術語<br><b>scaffolding</b>（鷹架）：agent 裡不是 Claude 的部分，例如迴圈、指令、工具；模型變聰明後可能反而拖累 Claude<br><b>task horizon</b>（任務時長）：模型能工作多久才會失去主線；去年是幾分鐘，現在多數是好幾小時<br><b>advisor strategy</b>（顧問策略）：把執行和提供建議分開：小模型執行，需要時向大模型請教，降低成本<br><b>MCP tunnels</b>（MCP 通道）：讓 MCP server 留在私有網路，Claude Managed Agents 不必經過公開網際網路也能存取<br><b>routines</b>（例行任務）：設定一次，Claude Code 就能依排程或 webhook、API 請求自動執行\n\n📺 <a href=\"https://www.youtube.com/watch?v=6amLO7I9xdg\" target=\"_blank\">Code with Claude London 2026: Opening Keynote</a>（2026/05/19 · 46 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片中介紹的 advisor strategy 是怎麼運作的？",
+          "options": [
+            "大模型負責執行，小模型負責審查結果",
+            "把任務拆給多個 subagent 平行執行再合併",
+            "多個同等級模型各自作答後投票",
+            "小模型負責執行，需要幫忙時向大模型請教"
+          ],
+          "correct": 3,
+          "why": "[22:29] 字幕說 execution 可以用較小的模型，小模型需要幫忙時會向較大的模型尋求建議，例如 Sonnet 執行、Opus 當 advisor"
         }
       }
     ]
@@ -1292,6 +1791,12 @@ function loadState() {
     if (saved) {
       const parsed = JSON.parse(saved);
       state = Object.assign(state, parsed);
+    }
+    // 分冊改名／拿掉後舊存檔會指到不存在的冊 → 回第一冊，不然整頁打不開
+    const lvl = CURRICULUM[state.currentLevel];
+    if (!lvl || state.currentLessonIdx >= lvl.lessons.length) {
+      state.currentLevel = Object.keys(CURRICULUM)[0];
+      state.currentLessonIdx = 0;
     }
   } catch (e) {
     console.error("Failed to load state", e);
