@@ -78,7 +78,7 @@ function bindLessonNotes(lesson) {
 function exportText() {
   const o = openItems();
   const d = new Date();
-  const vidOf = id => (id.match(/^yt_([A-Za-z0-9_-]{11})$/) || [])[1];
+  const vidOf = id => (id.match(/^yt_([A-Za-z0-9_-]{11})(?:_p\d+)?$/) || [])[1];
   const out = [`AI 課本｜我的筆記（${d.getMonth() + 1}/${d.getDate()}）請 Claude 一條一條深入講解`];
   if (o.wrong.length) {
     out.push("", "【答錯的題】");
