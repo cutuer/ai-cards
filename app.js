@@ -2571,6 +2571,8 @@ let state = {
   currentLessonIdx: 0,
   stars: {},
   answered: {},
+  notes: [],      // 畫線／寫下的（notebook.js）：{id, lessonId, text, kind: unclear|cantuse|keep, note, ts, done}
+  wrongLog: {},   // 答錯過的題：{lessonId: {picked, ts, times, done}}，再答對也留著給 Claude 重講
   theme: "light"
 };
 
@@ -2582,6 +2584,8 @@ function loadState() {
       const parsed = JSON.parse(saved);
       state = Object.assign(state, parsed);
     }
+    if (!Array.isArray(state.notes)) state.notes = [];
+    if (!state.wrongLog || typeof state.wrongLog !== "object") state.wrongLog = {};
     // 分冊改名／拿掉後舊存檔會指到不存在的冊 → 回第一冊，不然整頁打不開
     const lvl = CURRICULUM[state.currentLevel];
     if (!lvl || state.currentLessonIdx >= lvl.lessons.length) {
@@ -2654,6 +2658,12 @@ function selectLevel(lvlId) {
 // 渲染程度切換列
 function renderLevelTabs() {
   levelTabsEl.innerHTML = "";
+  const nBooks = Object.keys(CURRICULUM).length;
+  const nLessons = Object.values(CURRICULUM).reduce((a, l) => a + l.lessons.length, 0);
+  const t1 = document.getElementById("bookCountTitle");
+  if (t1) t1.textContent = `📚 ${nBooks} 本分冊選書`;
+  const t2 = document.getElementById("drawerBooksLabel");
+  if (t2) t2.textContent = `📚 快速切換分冊（共 ${nBooks} 本書 · ${nLessons} 課）：`;
   Object.values(CURRICULUM).forEach(lvl => {
     const chip = document.createElement("button");
     chip.className = `level-chip ${lvl.id === state.currentLevel ? "active" : ""}`;
@@ -2706,6 +2716,16 @@ function renderCard() {
       <div class="lesson-tip">${lesson.tip}</div>
     </div>
 
+    <div class="my-marks" id="myMarks"></div>
+    <div class="quick-note">
+      <div class="quick-note-label">✏️ 這課哪裡不懂、或看懂但不會用？寫下來（也可以反白句子畫線）</div>
+      <textarea id="quickNote" rows="2" placeholder="例如：subagent 是什麼？／我不知道什麼時候該用這招"></textarea>
+      <div class="mark-kinds">
+        <button class="mark-kind" data-qk="unclear">❓ 存成看不懂</button>
+        <button class="mark-kind" data-qk="cantuse">🛠 存成不會用</button>
+      </div>
+    </div>
+
     <div class="quiz-divider">隨堂小測驗</div>
     <div class="quiz-question">${lesson.quiz.q}</div>
 
@@ -2744,6 +2764,7 @@ function renderCard() {
   if (isAnswered) {
     showExplanation(lesson, isCorrect);
   }
+  if (typeof bindLessonNotes === "function") bindLessonNotes(lesson);  // notebook.js 載入後才有
 }
 
 // 處理答題
@@ -2760,6 +2781,9 @@ function handleAnswer(lesson, selectedIdx, btnEl) {
   } else {
     btnEl.classList.add("wrong");
     vibrate([60, 60, 60]);
+    const w = state.wrongLog[lesson.id] || {};
+    state.wrongLog[lesson.id] = { picked: selectedIdx, ts: Date.now(), times: (w.times || 0) + 1, done: false };
+    if (typeof updateNoteCount === "function") updateNoteCount();
     // 亮起正確解答
     const allBtns = document.querySelectorAll(".opt-btn");
     if (allBtns[lesson.quiz.correct]) {
@@ -2783,8 +2807,11 @@ function showExplanation(lesson, isCorrect) {
         ${isCorrect ? "🎉 恭喜答對！精準掌握！" : "💡 再接再厲！觀念解析："}
       </div>
       <div>${lesson.quiz.why}</div>
+      ${isCorrect ? "" : '<button class="retry-btn" id="retryBtn">🔁 再答一次（答錯紀錄會留在筆記本）</button>'}
     </div>
   `;
+  const rb = document.getElementById("retryBtn");
+  if (rb) rb.onclick = () => { delete state.answered[lesson.id]; saveState(); renderCard(); };
 }
 
 // 上一頁 / 下一頁
@@ -2892,6 +2919,10 @@ document.addEventListener("touchend", e => {
 }, { passive: true });
 
 function handleSwipe() {
+  // 反白句子、打字、開著筆記本時不換頁（不然畫線一拖就翻到下一課）
+  if (String(window.getSelection() || "").trim()) return;
+  if (document.querySelector(".drawer-content.show, .mark-sheet.show")) return;
+  if (document.activeElement && document.activeElement.tagName === "TEXTAREA") return;
   const swipeDist = touchEndX - touchStartX;
   if (Math.abs(swipeDist) > 75) {
     if (swipeDist < 0) {

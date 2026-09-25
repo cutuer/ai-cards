@@ -27,6 +27,7 @@
         <span class="star-counter" id="starCount">⭐ 0</span>
       </div>
       <div class="top-actions">
+        <button class="icon-btn" id="notebookBtn" title="我的筆記本">📝<span class="note-count" id="noteCount"></span></button>
         <button class="icon-btn" id="tocToggleBtn" title="章節目錄">📋</button>
         <button class="icon-btn" id="themeToggleBtn" title="切換夜讀模式">🌙</button>
       </div>
@@ -34,7 +35,7 @@
 
     <!-- Levels / Categories (10 大分冊) -->
     <div class="level-nav-header">
-      <span class="level-nav-title">📚 10 本分冊選書</span>
+      <span class="level-nav-title" id="bookCountTitle">📚 分冊選書</span>
       <span class="level-nav-hint">左右滑動 ↔️</span>
     </div>
     <nav class="level-nav" id="levelTabs"></nav>
@@ -66,11 +67,45 @@
       <div class="drawer-title" id="drawerTitle">📑 課本章節目錄</div>
       <button class="icon-btn" id="drawerCloseBtn">✕</button>
     </div>
-    <div class="drawer-section-label">📚 快速切換分冊（共 10 本書 · 67 課）：</div>
+    <div class="drawer-section-label" id="drawerBooksLabel">📚 快速切換分冊：</div>
     <div class="drawer-books-bar" id="drawerBooksBar"></div>
     <ul class="drawer-list" id="drawerList"></ul>
   </div>
 
+  <!-- 我的筆記本：答錯的題＋畫線的句子（9/25 兔兔要：一年下來知道到底哪裡不懂） -->
+  <div class="drawer-content" id="notebookDrawer">
+    <div class="drawer-header">
+      <div class="drawer-title">📝 我的筆記本</div>
+      <button class="icon-btn" id="notebookCloseBtn">✕</button>
+    </div>
+    <div class="nb-actions">
+      <button class="btn btn-primary" id="nbCopyBtn">📋 複製給 Claude</button>
+      <button class="btn btn-secondary" id="nbShareBtn">📤 分享</button>
+    </div>
+    <div class="nb-hint">複製後貼給 Claude，就會一條一條深入講給你聽</div>
+    <div id="notebookList"></div>
+  </div>
+
+  <!-- 反白句子後浮出來的畫線鈕 -->
+  <button class="mark-fab" id="markFab" hidden>🖍 畫線存起來</button>
+
+  <!-- 畫線後選「不懂／不會用」＋寫一句 -->
+  <div class="drawer-backdrop" id="markBackdrop"></div>
+  <div class="mark-sheet" id="markSheet">
+    <div class="mark-quote" id="markQuote"></div>
+    <div class="mark-kinds">
+      <button class="mark-kind active" data-kind="unclear">❓ 看不懂</button>
+      <button class="mark-kind" data-kind="cantuse">🛠 懂但不會用</button>
+      <button class="mark-kind" data-kind="keep">⭐ 重要，想記住</button>
+    </div>
+    <textarea id="markNote" rows="2" placeholder="想問什麼可以寫一句（不寫也可以）"></textarea>
+    <div class="nb-actions">
+      <button class="btn btn-secondary" id="markCancelBtn">取消</button>
+      <button class="btn btn-primary" id="markSaveBtn">存起來</button>
+    </div>
+  </div>
+
   <script src="app.js"></script>
+  <script src="notebook.js"></script>
 </body>
 </html>

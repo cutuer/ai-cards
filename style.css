@@ -577,3 +577,69 @@ body {
   font-size: 13px;
   color: var(--accent-gold);
 }
+
+/* ── 我的筆記本／畫線（9/25）── */
+.icon-btn { position: relative; }
+.note-count:not(:empty) {
+  position: absolute; top: -4px; right: -4px; min-width: 18px; height: 18px; padding: 0 4px;
+  border-radius: 9px; background: var(--wrong-border); color: #fff; font-size: 11px; font-weight: 700;
+  line-height: 18px; text-align: center;
+}
+#notebookList { overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.nb-actions { display: flex; gap: 10px; margin-bottom: 6px; }
+.nb-actions .btn { flex: 1; }
+.nb-hint { font-size: 13px; color: var(--text-muted); margin-bottom: 8px; }
+.nb-section { font-weight: 700; color: var(--title-color); margin: 16px 0 8px; font-size: 15px; }
+.nb-empty { font-size: 13px; color: var(--text-muted); padding: 4px 0 8px; }
+.nb-item {
+  background: var(--opt-bg); border: 1px solid var(--opt-border); border-radius: 12px;
+  padding: 10px 12px; margin-bottom: 8px; font-size: 15px; line-height: 1.6; color: var(--text-main);
+  overflow-wrap: anywhere;
+}
+.nb-item.done { opacity: 0.6; }
+.nb-kind { font-size: 12px; color: var(--text-muted); margin-bottom: 2px; }
+.nb-quote { border-left: 3px solid var(--accent-gold); padding-left: 8px; margin: 4px 0; }
+.nb-wrong { color: var(--wrong-text); font-size: 14px; }
+.nb-right { color: var(--correct-text); font-size: 14px; }
+.nb-btns { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.nb-btns button, .nb-mini, .retry-btn {
+  font: inherit; font-size: 13px; padding: 6px 12px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--opt-border); background: var(--card-bg); color: var(--text-main);
+}
+.retry-btn { display: block; margin-top: 10px; }
+.my-marks { margin-top: 14px; }
+.quick-note { margin-top: 14px; }
+.quick-note-label { font-size: 13px; color: var(--text-muted); margin-bottom: 6px; }
+.quick-note textarea, .mark-sheet textarea {
+  width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; padding: 10px; border-radius: 12px;
+  border: 1px solid var(--opt-border); background: var(--opt-bg); color: var(--text-main); resize: vertical;
+}
+.mark-kinds { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
+.mark-kind {
+  font: inherit; font-size: 14px; padding: 8px 12px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--opt-border); background: var(--card-bg); color: var(--text-main);
+}
+.mark-kind.active { border-color: var(--accent-gold); background: var(--tag-bg); color: var(--tag-text); font-weight: 700; }
+.mark-fab {
+  position: fixed; left: 50%; transform: translateX(-50%);
+  bottom: calc(84px + env(safe-area-inset-bottom, 0px)); z-index: 98;
+  font: inherit; font-size: 16px; font-weight: 700; padding: 12px 20px; border-radius: 999px; border: none;
+  background: var(--btn-main); color: var(--btn-main-text); box-shadow: var(--shadow-lg); cursor: pointer;
+}
+.mark-fab[hidden] { display: none; }
+.mark-sheet {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 101; background: var(--card-bg);
+  border-radius: 24px 24px 0 0; padding: 20px 20px calc(20px + env(safe-area-inset-bottom, 16px));
+  transform: translateY(100%); transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.3);
+}
+.mark-sheet.show { transform: translateY(0); }
+.mark-quote {
+  border-left: 3px solid var(--accent-gold); padding-left: 10px; margin-bottom: 8px; font-size: 15px;
+  line-height: 1.6; color: var(--text-main); max-height: 30vh; overflow-y: auto;
+}
+#markBackdrop { z-index: 100; }
+/* body 整頁禁反白（防誤觸）→ 課文、題目、解析開放反白才能畫線 */
+.lesson-box, .quiz-question, .explanation-box, .card-title, textarea {
+  user-select: text; -webkit-user-select: text;
+}
