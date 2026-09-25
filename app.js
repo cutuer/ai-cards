@@ -114,6 +114,42 @@ const CURRICULUM = {
         }
       },
       {
+        "id": "yt_l8fxVYIP4HQ",
+        "title": "🎬 在 Google Cloud 上用 Claude 打造應用",
+        "category": "Claude Code",
+        "text": "<b>講者分飾五種角色，示範用 Claude Code 搭配 Google Cloud 上的 Claude 模型，從草圖做到上線一個回饋 app</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這支影片示範怎麼在 Google Cloud（Google 的雲端服務平台）上使用 Claude 模型，並搭配 Claude Code（Anthropic 的工具，讓 Claude 直接在電腦上讀寫、執行程式）。講者一個人輪流扮演 PM、設計、工程、資安、分析五種角色，把一張手繪草圖一路做成上線的回饋 app。想知道 AI 怎麼從頭到尾做出一個產品、每個角色各怎麼用它的人，值得看這支。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=l8fxVYIP4HQ&t=239s\" target=\"_blank\">03:59</a> 設定方式：最簡單的是用 application default credential 依環境自動找到憑證，再用精靈偵測專案與區域、確認可用的 Claude 模型並把模型固定下來<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ application default credential 會依你的環境自動找到證明身分的登入資料。接著設定精靈會抓出專案和區域，確認能用哪些 Claude 模型，再固定版本。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=l8fxVYIP4HQ&t=269s\" target=\"_blank\">04:29</a> 在 Google Cloud 上用 Claude 模型的好處：按 token 計費、沒有訊息上限；可用 provisioned throughput 增加容量；不用保管 API key；資料留在自己的專案；有 global 和 multi-region 端點<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 按 token（AI 計算字數的單位）計費、不限訊息數，需要時可申請 provisioned throughput 加大容量。不用保管 API key 這種密碼，資料也不離開你的專案。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=l8fxVYIP4HQ&t=422s\" target=\"_blank\">07:02</a> PM 角色：在 CLAUDE.md 寫好角色設定，Claude 幾秒內就把手繪草圖做成 wireframe，不會 Git 的 PM 也能讓它開 PR 推上 GitHub<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ CLAUDE.md 是 Claude 開工先讀的說明檔。寫好 PM 角色後，草圖幾秒變 wireframe（版面線框圖）。不會 Git 也能請它開 PR，把修改送上 GitHub。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=l8fxVYIP4HQ&t=519s\" target=\"_blank\">08:39</a> UI/UX 角色：用 plan mode 讓 Claude 先思考、提出規格再動手寫，把 wireframe 轉成四個頁面的正式介面<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 設計角色開 plan mode：Claude 先想清楚、寫出規格給你看，你同意或調整後它才動手。這樣把 wireframe 做成四個正式頁面時，方向不會跑掉。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=l8fxVYIP4HQ&t=672s\" target=\"_blank\">11:12</a> Google Cloud 推出官方 Google Cloud skills 和 developer knowledge API 的 MCP server，文件每 24 小時更新，Claude 可以查文件來設計 Cloud Run、BigQuery、Looker 等架構<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Google 官方推出 skills（寫好的操作指南）和查文件的 MCP server（讓 Claude 連外部資料的接口），文件每天更新，Claude 能照最新做法設計架構。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=l8fxVYIP4HQ&t=794s\" target=\"_blank\">13:14</a> 工程師角色：用 subagents 平行處理 API、BigQuery 資料管線和 dashboard，跑完測試後用 Cloud Build 和 Cloud Deploy 建立 CI/CD pipeline<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 工程師用 subagents（Claude 的分身）同時做後端、資料處理和數據看板。測過後用 Cloud Build、Cloud Deploy 建好 CI/CD，改完程式就能自動上線。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=l8fxVYIP4HQ&t=1018s\" target=\"_blank\">16:58</a> 資安角色：用自訂 plugin 做安全審查，加上輸入驗證並限縮 service account 權限，再用 Cloud Deploy 審核後推到 production<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 資安角色裝了自訂 plugin（外掛功能）來檢查漏洞，補上輸入檢查，把 service account（程式用的帳號）權限縮到最小，經 Cloud Deploy 審核過才上正式環境。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=l8fxVYIP4HQ&t=1264s\" target=\"_blank\">21:04</a> 分析角色：用官方 BigQuery MCP server 分析原始資料，再用另一個 MCP server 在 Looker 建 dashboard，最後只給 PM 一個連結<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 分析師透過 BigQuery（Google 的大數據資料庫）的 MCP server 分析原始資料，再到報表工具 Looker 做成看板。PM 最後只拿到一個連結。</span>\n\n📘 術語<br><b>plan mode</b>（規劃模式）：讓 Claude 先思考並提出方案再開始寫程式，你可以依自己的偏好決定要做什麼<br><b>subagents</b>（子代理）：用來平行處理多個任務，就像模擬團隊一起跑 sprint<br><b>Developer Knowledge API</b>（開發者知識 API）：附有 MCP server，讓 Claude 查到最新文件和實作指南，每 24 小時更新一次<br><b>provisioned throughput</b>（預留吞吐量）：做 production 應用需要更多模型容量時可以申請<br><b>application default credential</b>（應用程式預設憑證）：依你的環境自動找到憑證（例如使用者憑證），是最簡單的設定方式\n\n📺 <a href=\"https://www.youtube.com/watch?v=l8fxVYIP4HQ\" target=\"_blank\">Building with Claude on Google Cloud</a>（2026/05/21 · 24 分鐘）",
+        "tip": "💡 你可以怎麼用：就算不寫程式，也可以學 PM 那招：在 CLAUDE.md 寫清楚要 Claude 扮演什麼角色、注意什麼。遇到大一點的任務就先開 plan mode，讓它交出計畫，你看過、改過再讓它動手。",
+        "quiz": {
+          "q": "講者提到，developer knowledge API 的 MCP server 提供的文件和實作指南多久更新一次？",
+          "options": [
+            "只在新產品發表時",
+            "每小時",
+            "每 24 小時",
+            "每週一次"
+          ],
+          "correct": 2,
+          "why": "[11:12] 字幕說文件和實作指南 \"get refreshed every 24 hours\""
+        }
+      },
+      {
+        "id": "yt_sRvUXLquiRg",
+        "title": "🎬 Claude Code 新功能介紹",
+        "category": "Claude Code",
+        "text": "<b>Anthropic 的 Ralph 從開發者體驗和自主性兩方面，介紹 Claude Code 近幾個月的新功能</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這支影片由 Anthropic 的 Ralph 介紹 Claude Code 近幾個月的新功能。Claude Code 是 Anthropic 的工具，讓 Claude 能直接在你的電腦上讀檔、寫程式、跑指令。新功能分兩類：一類讓人用起來更順手，另一類讓 Claude 更能自己把事情做完。就算你不寫程式，也能看出 AI 工具正在從「你問一句、它答一句」，變成「你交代任務、它自己去跑」。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=sRvUXLquiRg&t=142s\" target=\"_blank\">02:22</a> Remote control：在電腦上開 session，可從 Claude 手機 app 或其他裝置的瀏覽器接手；Claude 需要輸入時會推播通知。可在設定檔設成預設永遠開啟<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Session 就是你和 Claude 的一段工作對話。在電腦上開好後，出門可以用手機 app 或別台裝置的瀏覽器接著操作。Claude 需要你回覆時會推播通知，也能設成每次都自動開啟。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=sRvUXLquiRg&t=404s\" target=\"_blank\">06:44</a> 全螢幕模式：輸入 /tui 加 fullscreen 參數，把 scrollback 虛擬化、只繪製看得到的部分。畫面不再閃爍，長 session 的記憶體用量也能維持平穩，還能點擊展開內容<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Scrollback 是往上捲就能看到的對話紀錄。現在只畫出螢幕上看得到的那一段，所以畫面不會閃，對話拉很長時記憶體用量也維持平穩，收起來的內容還能點開來看。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=sRvUXLquiRg&t=589s\" target=\"_blank\">09:49</a> Claude Code Desktop 全面改版：session 可依專案分組，可以在 plan 和 diff 上直接留言讓 Claude 修改或解釋，還有 GitHub 整合<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 桌面版 App 可以按專案把對話分組。Plan 是 Claude 動手前寫的計畫，diff 是改了哪幾行的對照。你能直接在上面留言，請它修改或解釋，也能串接存放程式碼的 GitHub。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=sRvUXLquiRg&t=868s\" target=\"_blank\">14:28</a> Auto mode：用 classifier 檢查動作是否具破壞性、是否像 prompt injection。兩項都沒問題就直接執行；有問題時先找替代做法，找不到才來問你<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Classifier 是專門做判斷的檢查器，會先看每個動作會不會搞壞東西，或像 prompt injection（藏在檔案或網頁裡騙 AI 的指令）。沒問題就直接做，有疑慮先換做法，真的沒辦法才問你。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=sRvUXLquiRg&t=995s\" target=\"_blank\">16:35</a> 原生支援 worktree：用 claude --worktree 啟動，把 repo 複製到獨立目錄，讓多個 Claude 平行開發不同功能也不會互相衝突。Session 中也能直接請 Claude 建立 worktree<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Repo 是一個專案的程式碼資料夾。Worktree 把它複製一份到獨立資料夾，只給一個 Claude 用。這樣多個 Claude 同時做不同功能，也不會改到彼此的東西。可以在啟動時開，也能中途請 Claude 建。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=sRvUXLquiRg&t=1246s\" target=\"_blank\">20:46</a> Code review：多 agent、分階段的自動 PR 審查。第一階段由多個 agent 分頭找錯誤、bug、漏洞，第二階段拿實際程式碼驗證這些發現；也可以手動下 /ultra-review 啟動<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ PR 是「我改好了，請審核再合併」的申請，agent 是能自己分工做事的 AI 助手。審查時先派好幾個 agent 分頭找 bug 和漏洞，再對照實際程式碼確認問題是真的。也能手動輸入 /ultra-review 啟動。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=sRvUXLquiRg&t=1338s\" target=\"_blank\">22:18</a> Routines（research preview）：透過 API 呼叫、排程或 webhook 觸發 Claude Code session，在雲端執行，你的電腦不用開著<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Routines 目前是 research preview（搶先試用）。它可以照排程、由其他程式透過 API（程式之間溝通的介面）呼叫，或由 webhook（某件事發生時自動發出的通知）啟動 Claude 工作，全在雲端跑，電腦關著也行。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=sRvUXLquiRg&t=1693s\" target=\"_blank\">28:13</a> Agents view（public preview）：用 claude agents 啟動，在同一個畫面管理所有 session 並依狀態分組。Session 在背景執行，按空白鍵就能直接送 prompt 給某個 session<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Agents view 目前是 public preview（公開試用版）。輸入 claude agents，就能在同一個畫面看到所有對話，並依狀態分組。它們都在背景執行，選一個按空白鍵，就能直接送 prompt（給 AI 的指令）。</span>\n\n📘 術語<br><b>remote control</b>（遠端控制）：在電腦上開 session，出門時可用手機 app 或瀏覽器繼續和 Claude 互動<br><b>auto mode</b>（自動模式）：用 classifier 判斷動作是否具破壞性或像 prompt injection，安全就不打擾你直接執行<br><b>worktree</b>（工作樹）：專案在獨立子目錄裡的副本，只給一個 Claude session 使用，避免多個 Claude 互相干擾<br><b>auto memory</b>（自動記憶）：Claude 自動把你的程式風格、架構選擇等記在 memory.md，檔案只存在你的電腦上<br><b>routines</b>（例行流程）：不用手動觸發，由 API、排程或 webhook 啟動的 Claude Code session，在雲端執行\n\n📺 <a href=\"https://www.youtube.com/watch?v=sRvUXLquiRg\" target=\"_blank\">What&#x27;s new in Claude Code</a>（2026/05/20 · 32 分鐘）",
+        "tip": "💡 你可以怎麼用：如果你已經在用 Claude Code，可以先開 remote control，讓電腦上的長任務繼續跑，你出門時用手機回應。有每天固定要做的事，例如早上整理一份資料，就可以用 routines 排程在雲端自動執行。",
+        "quiz": {
+          "q": "根據影片，auto memory 產生的記憶檔案存放在哪裡？",
+          "options": [
+            "每個 worktree 各自保存一份獨立的記憶",
+            "自動推送到你的 GitHub repo",
+            "存放在 Anthropic 的雲端",
+            "只存在你的電腦上"
+          ],
+          "correct": 3,
+          "why": "[19:42] 講者說同一專案的所有 session 和 worktree 共用同一份記憶，而且記憶檔案不會離開你的電腦，不會推到 GitHub，也不存在雲端"
+        }
+      },
+      {
         "id": "yt_wI0ptqCSL0I",
         "title": "🎬 別再當 agent 的保母了",
         "category": "Claude Code",
@@ -240,6 +276,24 @@ const CURRICULUM = {
         }
       },
       {
+        "id": "yt_IMZa42k6L6M",
+        "title": "🎬 Claude Code 有什麼新功能",
+        "category": "Claude Code",
+        "text": "<b>介紹 Claude Code 新功能，分成開發者體驗和自主性兩大主題</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這支是 Anthropic 官方介紹 Claude Code 新功能的影片。Claude Code 是讓 Claude 直接在你電腦上讀寫程式、執行指令的 AI 工具。新功能分兩類：一類讓你用起來更順手，另一類讓 Claude 在你不在電腦前時也能自己把工作做下去。想知道 AI 寫程式工具正往哪個方向走，這支很值得看。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=IMZa42k6L6M&t=55s\" target=\"_blank\">00:55</a> 新功能分成兩大主題：開發者體驗（讓 Claude Code 更好用），以及自主性（讓 Claude 在你離開鍵盤時做更多事）<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 這次更新分兩類。「開發者體驗」是讓操作更順、更不卡；「自主性」是讓你去吃飯、開會時，Claude 還能繼續做事，不用一直守在螢幕前。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=IMZa42k6L6M&t=85s\" target=\"_blank\">01:25</a> Remote control：在自己電腦開的 session，可以用手機接著操作，開發環境相同。輸入 remote control 會拿到一個 Claude Code on the web 連結<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ session 是你跟 Claude 的一段工作對話。在電腦上開始工作後輸入 remote control，會拿到一個網頁版連結。出門用手機打開就能繼續下指令，用的還是你電腦上那套環境。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=IMZa42k6L6M&t=213s\" target=\"_blank\">03:33</a> 終端機 UI 新增 full screen 模式，把 scrollback 虛擬化，保證畫面不閃爍、元素可以點擊，長 session 記憶體用量也維持平穩。另外可用 /voice 切換 voice mode，按住空白鍵說出 prompt<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 終端機是打指令的文字視窗。新的全螢幕模式只畫出你正在看的那段歷史紀錄（scrollback），所以畫面不閃、可以用滑鼠點，聊很久也不會越來越吃記憶體。/voice 讓你按住空白鍵用講的下指令。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=IMZa42k6L6M&t=447s\" target=\"_blank\">07:27</a> Claude Code desktop：側邊欄有釘選區，可依專案分組，支援拖放開 split view；可開 plan、diff、files 檢視並留言；實驗功能「pin as chapter」可以建立對話目錄<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ desktop 是有視窗的桌面 App 版。常用對話可以釘選、按專案分組，拖一下就能左右並排看兩個。計畫、改動前後對照（diff）和檔案都能打開直接留言。實驗功能「pin as chapter」可以幫長對話做目錄。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=IMZa42k6L6M&t=668s\" target=\"_blank\">11:08</a> Auto mode：由 classifier 代替你決定權限，檢查動作是否具破壞性、是否像 prompt injection；判定安全就執行，不安全就擋下<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ auto mode 讓你不用每一步都按「允許」。改由一個判斷模型（classifier）檢查：這個動作會不會搞壞東西？像不像有人偷塞的惡意指令（prompt injection）？安全就放行，不安全就擋下。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=IMZa42k6L6M&t=769s\" target=\"_blank\">12:49</a> Worktrees：可在設定裡宣告要在各 worktree 間共用的檔案（例如 node modules），用 --worktree（-w）開新 session；Claude 也有 enter／exit worktree tool，可以自己建立 worktree<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ worktree 是 Git（管理程式版本的工具）的功能，等於把專案複製一份、另開分支，讓幾件事同時做互不干擾。現在可以指定共用的大資料夾（例如 node modules），用 -w 開新工作，Claude 也能自己開。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=IMZa42k6L6M&t=998s\" target=\"_blank\">16:38</a> Auto memory：Claude 會為每個專案管理一個目錄，裡面的 memory.md 是索引檔，連結到其他細節檔（progressive disclosure）；subagent 也能用<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Claude 會替每個專案自動記筆記。memory.md 像目錄，只列重點並連到細節檔，需要時才翻開細看（這叫 progressive disclosure），不用每次全部讀一遍。Claude 派出去分工的小幫手（subagent）也能用。</span>\n\n📘 術語<br><b>auto mode</b>（自動模式）：新的權限模式，由 classifier 代替你決定是否允許 tool call<br><b>worktree</b>（工作樹）：Git 功能，會建立新 branch 並複製 repo 檔案；Claude Code 把它的使用方式變得更友善<br><b>auto memory</b>（自動記憶）：讓 Claude 在不同 session 間累積知識，例如建置指令、除錯心得<br><b>routines</b>（例行任務）：設定一次 prompt、repo、connectors，選好觸發條件後，Claude 就會在你不在時自行執行<br><b>tool search</b>（工具搜尋）：在你和實際工具定義之間多加一層，能提供更多工具但不直接佔用 context\n\n📺 <a href=\"https://www.youtube.com/watch?v=IMZa42k6L6M\" target=\"_blank\">What&#x27;s new in Claude Code</a>（2026/05/06 · 24 分鐘）",
+        "tip": "💡 你可以怎麼用：如果妳常開 Claude Code 跑比較久的任務，可以先試 remote control：出門前輸入它，路上用手機看進度、補指令。固定要做的事，例如每天早上整理專案狀態，可以做成 routine，讓它排程自動跑。",
+        "quiz": {
+          "q": "根據影片，auto mode 的 classifier 會檢查 tool call 的哪兩件事？",
+          "options": [
+            "使用者是否在線上、是否屬於 subagent",
+            "動作是否具破壞性、是否像 prompt injection",
+            "是否超過 token 上限、是否需要網路連線",
+            "是否修改 main branch、是否通過測試"
+          ],
+          "correct": 1,
+          "why": "[11:08] 講者說 classifier 會看兩件事：動作是否具破壞性，以及看起來是否像 prompt injection"
+        }
+      },
+      {
         "id": "yt_91AJ0cpgLlQ",
         "title": "🎬 Anthropic 如何在 Product Management 中使用 Claude",
         "category": "Claude Code",
@@ -274,6 +328,24 @@ const CURRICULUM = {
           "correct": 2,
           "why": "[01:07]～[01:37] 字幕說：「Everything is still running on your machine. Nothing is moved to the cloud.」"
         }
+      },
+      {
+        "id": "yt_bjdBVZa66oU",
+        "title": "🎬 什麼是 skills？",
+        "category": "Claude Code",
+        "text": "<b>介紹 Claude Code 的 skills：寫一次，Claude 遇到相關任務就會自動套用</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這支影片介紹 Claude Code 的 skills 功能：把你常交代的做法寫成一份說明檔，之後 Claude 碰到相關工作就會自己照做。如果你常要跟 AI 重講同一套規矩，這支影片會告訴你怎麼一次解決。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bjdBVZa66oU&t=5s\" target=\"_blank\">00:05</a> 每次跟 Claude 解釋團隊的 coding 規範、PR review 回饋格式、commit message 格式都在重複講，skills 就是用來解決這個問題<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Claude 開新對話時不記得團隊習慣，寫程式的規矩、PR（請同事審改動的申請）怎麼回饋、commit message（存改動時附的說明）怎麼寫，都得重講。skills 就是要省掉這個麻煩。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bjdBVZa66oU&t=5s\" target=\"_blank\">00:05</a> skill 是一個 markdown 檔，教 Claude 怎麼做某件事，只要寫一次，之後遇到相關情況 Claude 就會自動套用<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ skill 就像寫給 Claude 的工作說明書，用 markdown（用簡單符號標出標題、清單的純文字格式）寫成。寫好放著，之後碰到相關工作，它會自己拿出來照做，你不用再提醒。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bjdBVZa66oU&t=36s\" target=\"_blank\">00:36</a> Claude Code 裡用的是 skill.md 檔；description 決定 Claude 要不要用這個 skill，Claude 會拿你的要求去比對所有 skill 的 description，啟用符合的那些<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Claude Code（Anthropic 給寫程式用的 Claude 工具）裡，skill 是 skill.md 檔。檔案裡的 description（一段用途說明）最重要：Claude 會拿你的要求去比對，對得上才會用。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bjdBVZa66oU&t=67s\" target=\"_blank\">01:07</a> 個人 skills 放在 home 目錄的 .claude/skills，所有專案都能用，適合放個人偏好，例如 commit message 風格、文件格式<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 放在個人資料夾（home 目錄）底下 .claude/skills 的 skill 只屬於你，不管開哪個專案都能用。適合放個人習慣，像你喜歡的 commit message 寫法、文件排版。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bjdBVZa66oU&t=67s\" target=\"_blank\">01:07</a> 專案 skills 放在 repository 根目錄的 .claude/skills，clone 這個 repo 的人都會自動拿到，適合放團隊標準，例如品牌規範、字型、配色<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 放在專案資料夾（repository，存整個專案的地方）最上層 .claude/skills 的 skill，同事 clone（把專案複製到自己電腦）時會一起拿到。適合放全隊要守的規範，像品牌字型、配色。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bjdBVZa66oU&t=98s\" target=\"_blank\">01:38</a> Claude.md 會載入每一次對話；skills 則是符合需求時才載入，平常只載入名稱和 description，不會塞滿 context window<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Claude.md 是每次對話都會先讀的固定說明。skill 平常只讓 Claude 看到名稱和用途說明，需要時才讀全文，所以不會塞爆 context window（Claude 一次能記住的內容量）。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bjdBVZa66oU&t=129s\" target=\"_blank\">02:09</a> slash commands 要自己打指令，skills 不用，Claude 認出情境就會自動套用<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ slash commands（打「/」開頭的指令來叫出功能）要你自己記得去打；skill 不用，Claude 看出你在做相關的事，就會自己套用。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bjdBVZa66oU&t=129s\" target=\"_blank\">02:09</a> skills 最適合用在特定任務的專業知識，例如 code review 標準、commit message 格式、組織的品牌規範；同一件事一直重複解釋，就該寫成 skill<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ skill 最適合放某類工作的專門做法，例如審程式的標準、commit message 格式、公司品牌規範。判斷方法很簡單：同一件事你已經講了好幾遍，就該寫成 skill。</span>\n\n📘 術語<br><b>skill</b>（技能）：一個 markdown 檔，教 Claude 怎麼做某件事，寫一次，相關時自動套用<br><b>Agent skills</b>（Agent 技能）：由指令、腳本和資源組成的資料夾，agent 能找到並用來把事情做得更準、更有效率<br><b>description</b>（描述）：Claude 靠它來判斷要不要用這個 skill，會和使用者的要求做比對<br><b>Claude.md</b>（Claude.md 檔）：每次對話都會載入，例如「一律使用 TypeScript strict mode」就寫在這裡<br><b>context window</b>（上下文視窗）：skills 平常只載入名稱和 description，所以不會塞滿 context window\n\n📺 <a href=\"https://www.youtube.com/watch?v=bjdBVZa66oU\" target=\"_blank\">What are skills?</a>（2026/02/27 · 2 分鐘）",
+        "tip": "💡 你可以怎麼用：先挑一件你最常跟 Claude 重複交代的事，例如報告格式或寫作語氣，把做法寫成一份 skill，並在 description 寫清楚「什麼情況要用」。只有你自己用的習慣放 home 目錄，團隊共用的規範放在專案裡。",
+        "quiz": {
+          "q": "根據影片，skills 跟 Claude.md 最主要的差別是什麼？",
+          "options": [
+            "skills 符合需求時才載入，Claude.md 則每次對話都會載入",
+            "skills 要手動輸入指令才會觸發，Claude.md 會自動載入",
+            "skills 只能放在 home 目錄，Claude.md 只能放在 repository 裡",
+            "skills 會把完整內容全部載入 context window，Claude.md 只載入名稱"
+          ],
+          "correct": 0,
+          "why": "[01:38] 字幕說 Claude.md 會載入每一次對話，skills 則在符合需求時才載入（load on demand），而且平常只載入名稱和 description"
+        }
       }
     ]
   },
@@ -298,6 +370,42 @@ const CURRICULUM = {
           ],
           "correct": 1,
           "why": "[04:59] 講者說，Sonnet 4.5 的 context window 明明還有空間，Claude 就開始提早收尾任務"
+        }
+      },
+      {
+        "id": "yt_DNRddIEoH3c",
+        "title": "🎬 能力曲線",
+        "category": "Agents 與 API",
+        "text": "<b>過去 12 個月 Claude 寫程式的能力如何躍進，以及開發者該怎麼跟上這條曲線</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這支影片回顧過去一年 Claude 寫程式的能力進步了多少，也說明開發者該怎麼調整用法。Sonnet 和 Opus 是 Claude 不同等級的模型型號。值得看的原因是：很多以前必須做的小心步驟，現在反而會綁住 AI。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=DNRddIEoH3c&t=158s\" target=\"_blank\">02:38</a> SweeBench Verified 上，Sonnet 3.7 去年約 60%，Opus 4.7 已超過 87%；Mythos Preview 已讓這個 benchmark 飽和，所以不再使用它<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ SweeBench Verified 是考 AI 修真實程式問題的考卷。一年內分數從約六成升到八成七以上；Mythos Preview 強到這份考卷已經分不出高下，所以不用了。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=DNRddIEoH3c&t=256s\" target=\"_blank\">04:16</a> Demo：一次從零重建整個 Claude.ai 網站。Sonnet 4 寫了 2,000 行但聊天功能不能用；Opus 4.7 只寫 1,700 行，就做出能用的 web app，還有 mermaid 圖和 dark mode<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 請 AI 從零重做 Claude.ai：Sonnet 4 寫了兩千行，聊天卻不能用；Opus 4.7 寫得更少，做出能用的網頁，還有 mermaid 流程圖和深色模式。寫得多不等於寫得好。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=DNRddIEoH3c&t=410s\" target=\"_blank\">06:50</a> 規劃：模型現在會先讀程式碼、自己擬計畫再動手，擬計畫時也會自己抓出錯誤；建議選高 reasoning effort，讓 Claude 自己把計畫想好<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 新模型會先讀懂現有程式，自己列好計畫再動手，列計畫時就會抓出錯誤。reasoning effort 是設定 AI 要想多深的選項，調高它，讓它自己把計畫想周全。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=DNRddIEoH3c&t=511s\" target=\"_blank\">08:31</a> 錯誤復原：doom looping 大致已經解決。模型會依照工具回傳的結果換個做法，用更少浪費的 token 達到更好的表現<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ doom looping 是 AI 卡關時一直重複同一招，還說已經修好。這問題現在大致解決了：它會看工具回報的結果改換做法。token 是 AI 處理文字的計量單位，少繞路就省 token，結果也更好。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=DNRddIEoH3c&t=617s\" target=\"_blank\">10:17</a> 長時間 agentic run：模型能在一百萬 token 以上維持連貫，不一定要把任務切成小塊，可以對任務更有野心<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ agentic run 是讓 AI 自己連續做很多步的長任務。現在處理量超過一百萬 token，它還是能前後連貫，所以不必把工作切碎，可以直接交給它更大的任務。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=DNRddIEoH3c&t=803s\" target=\"_blank\">13:23</a> Bunn 創辦人 Jared 有一套接近 100% 覆蓋率的測試套件，讓 Claude 花一週把整個 Bunn 改寫成 Rust，測試幾乎全數通過<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Jared 是 Bunn 的創辦人，他的自動測試幾乎涵蓋所有功能，所以敢讓 Claude 花一週把整個 Bunn 改寫成 Rust（另一種程式語言），測試幾乎全部通過。測試就是裁判。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=DNRddIEoH3c&t=1003s\" target=\"_blank\">16:43</a> Evals 就是 AI 時代的 unit test 和 regression test：先開始做，要貼近真實流量，並留意 eval 是否已經飽和<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ evals 是檢查 AI 表現的測驗題，功用就像 unit test（測單一功能）和 regression test（防止改版弄壞舊功能）。先開始做，題目要貼近真實使用情況；測不出進步了就該換題。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=DNRddIEoH3c&t=1354s\" target=\"_blank\">22:34</a> 換新模型時要縮減 scaffolding、審視 prompt；給模型空間：開 adaptive thinking、調高 effort、用 auto-mode，並形成 agent loop 的閉環<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 換新模型時要精簡 scaffolding（包在 AI 外面的指令和工具），也要重看指令。開 adaptive thinking（讓它自己決定想多深）、調高思考強度、用 auto-mode（安全的動作自動放行），讓它自己測試、自己改。</span>\n\n📘 術語<br><b>doom looping</b>（死亡迴圈）：失敗後一直重複同樣的解法，或只做小幅變化，卻宣稱已經修好<br><b>saturated (eval)</b>（飽和的評測）：評測已沒有進步空間，剩下的題目沒有模型能解，無法再衡量模型進步<br><b>scaffolding / harness</b>（鷹架／外層框架）：包在 LLM 外面的 prompt、工具、執行環境、skills 等，讓模型能以 agent 身分運作<br><b>auto-mode</b>（自動模式）：Claude Code 裡用 prompted classifier 檢查每個工具呼叫是否安全，安全就自動核准，否則交給人核准<br><b>close the agent loop</b>（讓 agent 迴圈形成閉環）：讓 Claude 自己跑 agent 和 eval、檢查輸出，反覆改進你的 agent\n\n📺 <a href=\"https://www.youtube.com/watch?v=DNRddIEoH3c\" target=\"_blank\">The capability curve</a>（2026/05/22 · 26 分鐘）",
+        "tip": "💡 你可以怎麼用：下次請 Claude 做事，先別幫它拆成小步驟。把目標和「怎樣算做好」講清楚，例如要通過哪些檢查，再把思考強度調高，讓它自己規劃、自己檢查。",
+        "quiz": {
+          "q": "Bunn 的創辦人讓 Claude 把整個 Bunn 改寫成 Rust，花了多少時間？",
+          "options": [
+            "一個月",
+            "一天",
+            "一週",
+            "三個月"
+          ],
+          "correct": 2,
+          "why": "字幕 [13:23] 說 Claude 連續跑了一整週，在一週內把 Bunn 全部改寫成 Rust"
+        }
+      },
+      {
+        "id": "yt_QIriO1-vHYw",
+        "title": "🎬 更充分發揮 Claude Platform 的效益",
+        "category": "Agents 與 API",
+        "text": "<b>用 prompt caching、context engineering 與 advisor strategy 降低 agent 成本並維持智慧</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這支影片教開發者讓 AI agent 更省錢，同時不降低它的能力。AI agent 是會自己連續做好幾個步驟的 AI 程式。花費主要看兩個東西：token 是模型計費、計量用的文字單位；context 是模型每次回答前看到的全部內容。讓模型少重複讀、只讀有用的，費用就能明顯下降。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=QIriO1-vHYw&t=172s\" target=\"_blank\">02:52</a> Prompt caching：快取的 token 享 90% 折扣；快取 token 不計入 rate limit，80% 命中率等同約 5 倍 rate limit；首個 token 延遲也會下降<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Prompt caching 是把讀過的內容先存起來，下次同樣的部分就不用重新處理。存起來的 token 只收一成價，也不算進 rate limit（一段時間內可用量的上限）。八成命中，等於額度大約變 5 倍，回應也更快開始。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=QIriO1-vHYw&t=205s\" target=\"_blank\">03:25</a> agentic 應用建議把快取命中率目標設在 80% 以上；講者提到 Replit、Cursor、Perplexity、Claude Code 都達到 90% 以上<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 命中率是這次輸入裡能直接從快取拿的比例。agentic 應用是指 AI 會自己連做多步的產品，這類應用最好做到 80% 以上。講者說 Replit、Cursor、Perplexity、Claude Code 都超過 90%。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=QIriO1-vHYw&t=267s\" target=\"_blank\">04:27</a> Console 可以查看 prompt caching 分析和快取失效原因；在 system prompt 放時間戳記會破壞快取，因為 token 必須完全相同<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Console 是 Claude 的開發者後台網頁，可以查快取命中情況和失效原因。快取要求內容一字不差。system prompt 是每次都先給模型的基本指示，放了時間戳記，每次內容都不同，快取就失效。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=QIriO1-vHYw&t=299s\" target=\"_blank\">04:59</a> 可以先用 auto caching 做一行程式的基本快取，或在 Claude Code 等 coding agent 用內建的 Claude API skill 提升命中率<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 入門可以開 auto caching（自動快取），加一行程式就有基本效果。coding agent 是幫你寫程式的 AI。用 Claude Code 這類工具時，可以讓它用內建的 Claude API skill（現成的做法指引）幫你提高命中率。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=QIriO1-vHYw&t=645s\" target=\"_blank\">10:45</a> Tool search：先只給模型一個搜尋工具，需要時才把工具定義放進 context。講者說 Lovable 用後整體 token 消耗下降、表現也更好<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Tool search：工具很多時，不要一開始就把所有工具的說明塞給模型。先只給一個「找工具」的工具，要用哪個再放進 context。講者說 Lovable 用了之後更省 token，表現也更好。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=QIriO1-vHYw&t=746s\" target=\"_blank\">12:26</a> Programmatic tool calling：讓 Claude 寫簡單的 Python 腳本呼叫工具並篩選結果，只把最相關的內容給模型（講者舉 Quora 處理 HTML 為例）<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Programmatic tool calling：讓 Claude 寫一段 Python（常見的程式語言）小程式去呼叫工具，先篩過結果，只把重點交給模型。例子是 Quora 處理網頁的 HTML（網頁原始碼）。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=QIriO1-vHYw&t=815s\" target=\"_blank\">13:35</a> Compaction：context 滿時依你的 prompt 做摘要、移除不相關的回合，讓對話繼續。建議門檻從 500K 或 400K 開始，最佳值依模型而異<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Compaction：對話長到 context 快裝不下時，照你給的指示做摘要，刪掉不相關的舊回合，對話就能接著進行。建議先從 500K 或 400K token 開始觸發，最適合的數值依模型而不同。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=QIriO1-vHYw&t=1166s\" target=\"_blank\">19:26</a> Advisor strategy：由 Sonnet 或 Haiku 當 executor，遇到難題才請教 advisor。Demo 用 Sonnet 4.6 搭 Opus 4.7 advisor，成本從約 31 英鎊降到約 11 英鎊<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Advisor strategy：平常讓 Sonnet 或 Haiku 當 executor（負責動手做事），碰到難題才請教 advisor（顧問）。Demo 用 Sonnet 4.6 搭 Opus 4.7 當顧問，成本從約 31 英鎊降到約 11 英鎊。</span>\n\n📘 術語<br><b>prompt caching</b>（提示快取）：處理過的輸入 token 會先快取，後續對話只處理新增的 token，其餘直接從快取取用<br><b>context engineering</b>（情境工程）：決定要讓 Claude 看到哪些 context，讓 agent 表現最好的技術與方法<br><b>tool search tool</b>（工具搜尋工具）：預先定義所有工具，但只在需要時才把該工具的定義放進 context<br><b>compaction</b>（壓縮）：context 滿時摘要內容、移除不再相關的回合，讓對話幾乎可以無限延續<br><b>advisor strategy</b>（顧問策略）：Sonnet/Haiku 執行任務，遇到難題時請教 advisor，類似資深工程師帶資淺工程師\n\n📺 <a href=\"https://www.youtube.com/watch?v=QIriO1-vHYw\" target=\"_blank\">Getting more out of the Claude Platform</a>（2026/05/22 · 26 分鐘）",
+        "tip": "💡 你可以怎麼用：如果你有用 Claude API 做自己的 AI 小工具，先到 Console 看快取命中率，並把日期、時間這類每次都會變的內容移出 system prompt。想省錢又不想犧牲品質，可以日常任務交給 Sonnet，難題才請 Opus 當顧問。",
+        "quiz": {
+          "q": "根據影片，如果 prompt cache 命中率是 80%，實際上的 rate limit 大約變成原本的幾倍？",
+          "options": [
+            "約 5 倍",
+            "約 2 倍",
+            "不變，因為快取 token 仍計入 rate limit",
+            "約 10 倍"
+          ],
+          "correct": 0,
+          "why": "[02:52] 講者說 rate limit 不計算快取的 token，80% 命中率等同約五倍的 rate limit"
         }
       },
       {
@@ -406,6 +514,60 @@ const CURRICULUM = {
           ],
           "correct": 2,
           "why": "[11:29] 提到 Harvey 在法律 benchmark 中導入 dreaming 後，其中一個法律情境的 task completion rate 增加六倍。減少 90% 第一輪錯誤是 Rakuten 導入 memory 的結果（[03:48]）。"
+        }
+      },
+      {
+        "id": "yt_7oO37GRhwGk",
+        "title": "🎬 更充分運用 Claude Platform",
+        "category": "Agents 與 API",
+        "text": "<b>agent 上線後，用 prompt caching、context engineering 和 advisor 管控成本、延遲與可靠度</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這支是 Anthropic 給開發者的實務分享：agent（會自己連續跑很多步、呼叫工具來完成任務的 AI 程式）上線以後，要怎麼顧好費用、速度和穩定度。你不寫程式也值得看，看完會知道 AI 產品為什麼有時很貴或很慢，還有官方建議的省錢做法。文中的 token 是模型計算文字量和收費的單位。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=7oO37GRhwGk&t=178s\" target=\"_blank\">02:58</a> 長時間執行的 agent 一定要用 prompt caching：input tokens 可享 90% 折扣，time to first token 更快，cache tokens 也不計入 API rate limits<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Prompt caching 是把每輪都一樣的內容（像固定指示）存起來重複用。好處有三個：輸入 token 打一折；time to first token（等到第一個字出現的時間）變短；也不算進 rate limit（API 用量上限）。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=7oO37GRhwGk&t=272s\" target=\"_blank\">04:32</a> console 的 Analytics 底下有新的 prompt cache dashboard。Claude Code 預設內建 prompt caching skill，說「improve my cache hit rate」就會帶你加 cache control markers<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ console（開發者後台）的 Analytics 分析頁新增了快取儀表板，能看快取命中率。Claude Code（寫程式的 AI 助手）內建相關 skill（現成做法包），說一句話，它就帶你標出 prompt 裡要快取的段落。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=7oO37GRhwGk&t=487s\" target=\"_blank\">08:07</a> inference 系統第一次看到某段 prompt 時會寫入 cache，下一輪就變成 cache hit。KV 值預設保存 5 分鐘，可用選項延長<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ inference 是模型實際運算、產生回答的過程。一段內容第一次出現時先算好存起來，下一輪再遇到就直接拿來用，這叫 cache hit。存下來的 KV 值是模型讀完內容後的中間結果，預設留 5 分鐘，可以延長。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=7oO37GRhwGk&t=585s\" target=\"_blank\">09:45</a> Context engineering 是決定哪些內容該放進 Claude context 的一門功夫。建議別用會把 context 藏起來的抽象層，要直接看完整 transcript<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ context 是模型這一輪看得到的全部資料，放錯或放太多都會多花錢，也可能讓它做錯，所以要主動挑。講者建議別用會把細節藏起來的框架，直接讀 transcript（完整對話紀錄），才知道模型到底看到什麼。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=7oO37GRhwGk&t=710s\" target=\"_blank\">11:50</a> Tool Search Tool：tools 照樣事先宣告，但延後載入，模型需要時才即時載入。Lovable 的 token 用量因此減少 10%，模型的表現也更聰明<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ tools 是模型能呼叫的外部功能，例如查資料、寄信。Tool Search Tool 的做法是工具清單照樣先交代，詳細內容等用到時才載入那幾個。Lovable 這家公司因此少用 10% token，模型表現也更好。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=7oO37GRhwGk&t=801s\" target=\"_blank\">13:21</a> Programmatic tool calling：tool 回傳的資料留在記憶體，模型寫 Python 只取出需要的部分放進 context。Quora 靠這招省了很多錢<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Programmatic tool calling：工具回傳的一大包資料先不直接給模型看，模型寫一小段 Python（一種程式語言）挑出需要的部分，再放進 context。例如查到一萬筆訂單，只取總數。Quora 靠這招省了很多錢。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=7oO37GRhwGk&t=893s\" target=\"_blank\">14:53</a> Compaction 把不再需要的舊對話輪次濃縮成摘要，讓模型能接著做下去。Hex 已用在正式環境。demo 刻意把門檻設低到約 500k，講者說這可能省成本、降延遲<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Compaction：對話拉太長時，把用不到的舊內容濃縮成摘要，模型就能接著做，不會因為塞滿而卡住。Hex 已經在正式產品上使用。demo 把觸發門檻刻意設低到約 50 萬 token，講者說這樣可能省錢又變快。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=7oO37GRhwGk&t=1270s\" target=\"_blank\">21:10</a> Advisor 策略：由 Haiku 或 Sonnet 當 executor 執行，需要時請 Opus 給建議，用接近小模型的成本拿到 Opus 等級的智慧。demo 中 Opus 抓到了 Sonnet 漏掉的細節<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Haiku、Sonnet、Opus 是 Claude 由小到大的模型，越大越強也越貴。Advisor 讓小模型當 executor（負責動手做事），需要時才請 Opus 出主意，成本接近小模型。demo 裡 Opus 抓到了 Sonnet 漏掉的細節。</span>\n\n📘 術語<br><b>Prompt caching</b>（提示快取）：標出 prompt 裡共用的段落，預先算好 KV 值存起來，省掉 inference 的前段處理，降低成本和延遲<br><b>Context engineering</b>（情境工程）：決定哪些內容該放進 Claude context 的一門功夫，由開發者主動決定要放什麼<br><b>Tool Search Tool</b>（工具搜尋工具）：tools 延後載入，模型需要時才從數百個 tools 裡挑出三、四個即時加入<br><b>Programmatic tool calling</b>（程式化工具呼叫）：模型寫 Python 呼叫 tools，從回傳資料中只取需要的部分放進 context<br><b>Compaction</b>（壓縮）：context 到門檻時暫停，把整份 transcript 交給另一次模型呼叫摘要，讓模型能繼續執行\n\n📺 <a href=\"https://www.youtube.com/watch?v=7oO37GRhwGk\" target=\"_blank\">Getting more out of the Claude Platform</a>（2026/05/07 · 28 分鐘）",
+        "tip": "💡 你可以怎麼用：如果你用 Claude Code 或 API 做會跑很久的自動化，先在 Claude Code 說「improve my cache hit rate」讓它幫你加上快取，再到 console 的快取儀表板確認命中率。結果不對時，打開完整對話紀錄，看模型實際讀到了什麼。",
+        "quiz": {
+          "q": "講者說 prompt caching 對 input tokens 有多少折扣？",
+          "options": [
+            "75%",
+            "10%",
+            "50%",
+            "90%"
+          ],
+          "correct": 3,
+          "why": "[02:58] 講者說 prompt caching 是 90% 的折扣，沒用就等於錯過 input tokens 的 90% 折扣。10% 是 Lovable 用 Tool Search Tool 減少的 token 用量 [11:50]"
+        }
+      },
+      {
+        "id": "yt_E9gaQHrw_rg",
+        "title": "🎬 如何用 Claude Managed Agents 更快上線到 production",
+        "category": "Agents 與 API",
+        "text": "<b>介紹 Claude Managed Agents 的設計動機、基本元件、進階功能與示範</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這支影片介紹 Claude Managed Agents。agent 是能自己規劃步驟、動手用工具把整件事做完的 AI，而這個服務把 agent 需要的執行環境整套代管起來，開發者不用自己架。影片依序說明為什麼要做這個服務、它由哪些元件組成、有哪些進階功能，最後用實例示範。如果你想知道 AI 怎麼從「一問一答的聊天助理」變成「能自己跑一整晚的工作者」，這支很值得看。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=E9gaQHrw_rg&t=120s\" target=\"_blank\">02:00</a> 模型能力呈指數成長，任務時間越拉越長；瓶頸越來越在基礎設施，不在智慧。從前要一路盯著修正，現在已經有人讓 agent 跑一整晚<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 模型越來越強，能連續做的事也越來越久。現在常卡關的是基礎設施，也就是讓程式穩定運作的主機和系統，而不是 AI 不夠聰明。以前得一路盯著它修正，現在已經有人放它整晚自己跑。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=E9gaQHrw_rg&t=180s\" target=\"_blank\">03:00</a> 長時間任務特別需要可靠性和安全性，也需要新的互動模式：outcome-oriented tasks（給任務加上定義完成標準的 rubric），以及能中途停下、之後再繼續<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 任務一跑好幾個小時，就更怕中途出錯或亂動東西。所以要先訂好 rubric，也就是評分標準，寫清楚怎樣才算完成，讓 AI 朝這個結果努力。另外也要能中途暫停，之後再接著做。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=E9gaQHrw_rg&t=242s\" target=\"_blank\">04:02</a> 推出前的研究發現：三分之一開發者卡在 context management，基礎設施問題被列為上 production 的頭號障礙，多數 agent 沒有正式的 observability<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 官方事前調查發現：三分之一的開發者卡在 context management，就是決定要給 AI 看哪些資訊。基礎設施是上 production（正式上線給人用）的最大障礙。多數 agent 也沒有 observability，就是看得到它在做什麼的監控。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=E9gaQHrw_rg&t=308s\" target=\"_blank\">05:08</a> Claude Managed Agents 把基礎設施和 harness（工具權限、工具執行、自動 context 管理、checkpointing、重試）整合起來，再加上基本元件和 observability 平台<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 它把底層環境和 harness 一起包好。harness 是包在模型外面、負責執行的框架，管工具權限、實際執行工具、自動整理資訊、checkpointing（存進度點）和失敗重試。另外還提供基本元件和監控平台。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=E9gaQHrw_rg&t=338s\" target=\"_blank\">05:38</a> 心智模型：Agent 是設定（model、prompt、tools、skills）；Environment 可設定網路和套件；每次執行是一個 session，可帶入資源（如 GitHub repos）和 outcome，並發出 events<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Agent 是一份設定，寫好用哪個模型、給什麼指令、可用哪些工具和 skills（可重複使用的做事說明）。Environment 是它工作的空間。每跑一次叫一個 session，可以附上資料和目標，過程中會留下 events（事件紀錄）。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=E9gaQHrw_rg&t=400s\" target=\"_blank\">06:40</a> Events 分四類：user（引導、中斷、定義結束條件）、agent（在做什麼、用哪些工具）、session（生命週期）、span（把相關 events 分組）<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ events 分四種。user 是你下的指令，例如引導方向、中途打斷、設定何時算完成。agent 記錄它在做什麼、用了哪些工具。session 記錄這次執行的開始和結束。span 則把相關的事件歸成一組，方便一起看。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=E9gaQHrw_rg&t=523s\" target=\"_blank\">08:43</a> console 可即時看 event stream，也有 debug agent 分析瓶頸、給出建議；另有 Claude Code 內建的 skill、CLI（可用 YAML 設定 agent）和 cookbooks 幫你起步<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 在 console（網頁管理後台）可以即時看事件一筆筆出來，還有專門除錯的 agent 幫你找哪裡慢、給建議。起步可以用 Claude Code 內建的 skill、CLI（下指令的工具，能用 YAML 設定檔定義 agent）和 cookbooks（範例集）。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=E9gaQHrw_rg&t=616s\" target=\"_blank\">10:16</a> 進階功能：multi-agent orchestration、Outcomes（反覆迭代直到符合結束條件）、memory（已進入 public beta）、Dreaming（把新學到的東西整理成新記憶）<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 進階功能有四個。multi-agent orchestration 是讓多個 agent 分工合作。Outcomes 讓它反覆修改直到達標。memory 讓它記得以前的經驗，現在已開放公開測試。Dreaming 是讓它回頭整理學到的東西，存成新記憶。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=E9gaQHrw_rg&t=869s\" target=\"_blank\">14:29</a> CEO dashboard 示範：用 Outcomes 的 rubric 自主優化速度，做法包括平行化工具呼叫、fast mode、prompt 優化和 multi-agent，渲染時間從約 37 秒降到 10 秒<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 示範是做一個 CEO 用的數據看板。先給它一份「要更快」的 rubric，它就自己想辦法加速：同時呼叫多個工具、開 fast mode（輸出較快的模式）、改寫提示、分工給多個 agent。結果產出畫面的時間從約 37 秒降到 10 秒。</span>\n\n📘 術語<br><b>Session</b>（工作階段）：agent 的每一次執行；可以帶入資源（例如 GitHub repos）和 outcome，執行時會發出 events<br><b>Environment</b>（執行環境）：讓 agent 使用的環境，可設定網路和套件，例如 agent 在裡面寫程式<br><b>Outcomes</b>（成果目標）：先指定一份 rubric，agent 跑完後由另一個 sub-agent 檢查產出，agent 再反覆迭代直到達標<br><b>outer loop</b>（外層迴圈）：使用者看完結果給回饋，由 Claude Code 透過 CLI 拉 session log，修改 rubric 或指令後再開一個新 session<br><b>Dreaming</b>（Dreaming）：Claude 反思並把新學到的東西整理成新記憶，讓 agent 每次執行之間都能進步\n\n📺 <a href=\"https://www.youtube.com/watch?v=E9gaQHrw_rg\" target=\"_blank\">How to get to production faster with Claude Managed Agents</a>（2026/05/06 · 17 分鐘）",
+        "tip": "💡 你可以怎麼用：就算不寫程式，也可以借用 Outcomes 的做法：交代 AI 任務時，先寫 3～5 條完成標準（例如「表格要有哪幾欄」「每個數字都附來源」），再請它做完後逐條自我檢查，沒達標就繼續改。",
+        "quiz": {
+          "q": "在 Claude Managed Agents 用 Outcomes 時，agent 跑完之後由誰檢查產出？",
+          "options": [
+            "主 agent 自己重看一遍",
+            "使用者手動在 console 審核",
+            "另外啟動的一個 sub-agent",
+            "預先寫好的單元測試"
+          ],
+          "correct": 2,
+          "why": "[12:58] 字幕說 agent 完成後會啟動一個獨立的 sub-agent，檢查產出的 artifacts，再把分析結果送回主 agent"
+        }
+      },
+      {
+        "id": "yt_GMIWm5y90xA",
+        "title": "🎬 Code with Claude 2026：開幕主題演講",
+        "category": "Agents 與 API",
+        "text": "<b>開幕主題演講：提高 rate limit，發表 Managed Agents 與 Claude Code 新功能</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這是 Anthropic 2026 年開發者大會的開場演講。這次沒有發表新模型，重點是用量額度變多，Claude 也能在背景自己做更多事。Claude Code 是讓 Claude 直接讀程式、改程式的工具，這場大部分新功能都跟它有關。想知道 AI 工具接下來往哪走，看這支就對了。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=GMIWm5y90xA&t=378s\" target=\"_blank\">06:18</a> 上個月 Mythos 讀完整個 OpenBSD 原始碼，找出一個存在 27 年、之前的人工審查、fuzzer 和靜態分析工具都沒抓到的漏洞<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Mythos 是 Anthropic 的模型。OpenBSD 是出了名重視安全的開源作業系統。fuzzer 會一直丟亂七八糟的資料進去，看程式會不會壞掉。靜態分析是不執行程式、只讀程式碼找錯。人跟工具漏看了 27 年的洞，這次被 AI 找到。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=GMIWm5y90xA&t=440s\" target=\"_blank\">07:20</a> Claude 平台的 API 用量一年成長近 17 倍；Claude Code 的開發者平均每週執行 Claude 20 小時。這次沒有發表新模型<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ API 是讓其他程式直接呼叫 Claude 的接口。用量一年成長快 17 倍，每人每週讓 Claude 跑 20 小時，表示 AI 已經是日常工作的一部分。這場的重點是怎麼把現有的模型用好。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=GMIWm5y90xA&t=571s\" target=\"_blank\">09:31</a> Pro、Max、Team 和按席位計費的 Enterprise 方案，Claude Code 五小時 rate limit 加倍；Opus 的 API 上限也大幅提高。算力來自與 SpaceX 合作，使用 Colossus One 資料中心<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ rate limit 是一段時間內可以用的額度，用完就要等。付費方案的 Claude Code 每五小時額度變兩倍；最強的 Opus 模型透過 API 也能用更多。多出來的算力來自和 SpaceX 的合作。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=GMIWm5y90xA&t=1114s\" target=\"_blank\">18:34</a> Diane 建議要為下一版 Claude 做設計：維持更難的 evals、保持 scaffolding 簡單、做有企圖心的原型，讓模型升級的成本變低<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ evals 是測模型能力的考題，scaffolding 是包在模型外面的流程程式。考題要出到現在的模型還考不好，外層程式寫簡單，原型大膽做。這樣新模型一出，直接換上去就會變強，不用整個重做。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=GMIWm5y90xA&t=1337s\" target=\"_blank\">22:17</a> Advisor strategy：在 Messages API 的 tools array 設定，由 Haiku 或 Sonnet 執行、Opus 當顧問。EVE Legal 用這個做法，以低 5 倍的成本拿到前沿模型的品質<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Messages API 是程式呼叫 Claude 的主要接口，tools array 是列出它能用哪些工具的清單。平常讓便宜的 Haiku 或 Sonnet 做事，卡關了才去問貴的 Opus。EVE Legal 這樣做，成本少了 5 倍，品質還是頂尖。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=GMIWm5y90xA&t=1494s\" target=\"_blank\">24:54</a> Claude Managed Agents 新增三個功能：multi-agent orchestration、outcomes（用 markdown rubric 定義成功標準，由 grader agent 評分）、Dreaming（回顧過去的 session，把學到的東西寫進 memory）<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Managed Agents 是由 Anthropic 代管、能自己分步驟做事的 AI 助手（agent）。這次新增三項：讓多個 agent 分工合作；用 markdown 這種簡單文字格式寫評分標準，由另一個 agent 打分數，沒達標就繼續改；還有回顧過去的工作紀錄（session），把學到的東西自己寫進記憶（memory）。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=GMIWm5y90xA&t=2231s\" target=\"_blank\">37:11</a> Claude Code 新功能：code review、remote control、Autofix、routines（可由排程、webhook 或 API 事件觸發）、Claude Security（整晚掃描整個 codebase）<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ code review 幫你檢查程式，Autofix 自動修錯，remote control 讓你遠端操控 Claude Code。routines 可以照排程啟動，也可以被 webhook（外部系統自動發出的通知）觸發。Claude Security 會花一整晚掃過全部程式碼找漏洞。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=GMIWm5y90xA&t=2635s\" target=\"_blank\">43:55</a> Boris 說 routines 是「higher-order prompt」：現在預設的做法從自己去 prompt Claude Code，變成讓 Claude 去 prompt Claude Code<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ prompt 就是你下給 AI 的指令。以前是你一句一句叫 Claude Code 做事；有了 routines，改成由 Claude 照排程或事件自己去下指令。你的角色從下指令的人，變成定規則的人。</span>\n\n📘 術語<br><b>advisor strategy</b>（顧問策略）：把執行和建議分開：小模型負責執行，需要建議時再去問大模型<br><b>outcomes</b>（成果標準）：明確定義成功長什麼樣子，Claude 會一直反覆修正到達成為止<br><b>Dreaming</b>（Dreaming（夢境學習））：Claude 檢視過去的 session，找出漏掉的 skill 和該學到的教訓，自己寫進 memory<br><b>routines</b>（例行任務）：設定一次後，會監聽 webhook、API 事件或照排程，自動啟動 Claude Code<br><b>task horizon</b>（任務時間跨度）：衡量模型能自主工作多久，同時持續提升產出的品質\n\n📺 <a href=\"https://www.youtube.com/watch?v=GMIWm5y90xA\" target=\"_blank\">Code with Claude 2026: Opening Keynote</a>（2026/05/06 · 47 分鐘）",
+        "tip": "💡 你可以怎麼用：如果你常叫 Claude 重複做同一件事，例如每週整理報告，可以把指令寫成固定流程交給排程去跑。簡單的事用 Haiku 或 Sonnet，遇到難題再換 Opus，比較省額度。",
+        "quiz": {
+          "q": "根據這場演講，Claude Code 的五小時 rate limit 有什麼變化？",
+          "options": [
+            "Pro、Max、Team 和按席位計費的 Enterprise 方案都加倍",
+            "所有方案都取消五小時限制",
+            "只有 Max 方案變成三倍",
+            "只有 Enterprise 方案提高 50%"
+          ],
+          "correct": 0,
+          "why": "[09:31] 字幕說 doubling Claude Code's five-hour rate limits for pro, max, team, and seat-based enterprise plans"
         }
       },
       {
@@ -657,6 +819,24 @@ const CURRICULUM = {
         }
       },
       {
+        "id": "yt_Uvl-tRga98g",
+        "title": "🎬 用 Claude 做設計：從 prompt 到正式上線",
+        "category": "產品功能",
+        "text": "<b>Anthropic Labs 用小團隊快速迭代打造 Claude Design 的過程與心得</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這支影片是 Anthropic Labs（Anthropic 內部用小團隊做實驗性新產品的單位）在分享他們怎麼做出 Claude Design。重點不是功能介紹，而是一套「先做出來、給人用、再快速改」的做事方法。就算不是工程師，做任何專案都用得上。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=Uvl-tRga98g&t=15s\" target=\"_blank\">00:15</a> Claude Design 是 Anthropic Labs 的新產品，可以和 Claude 協作做出設計、原型、投影片、one-pager 等視覺成品。主要由三人團隊花約十週從構想做到上線<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Claude Design 讓你跟 Claude 一起做出設計稿、原型（可以實際點點看的試作版）、投影片和單頁簡介。這麼完整的產品，主要只靠三個人、大約十週就做到上線。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=Uvl-tRga98g&t=112s\" target=\"_blank\">01:52</a> Anthropic Labs 自稱 bet factory：由小團隊探索模型的極限並做實驗。有效的就加碼，無效的就收掉<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ bet factory 直譯是「押注工廠」。很多小團隊各自去試模型能做到什麼，每個點子都像一次下注：有效就多投人力，沒效就收掉，不會因為捨不得而硬撐。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=Uvl-tRga98g&t=243s\" target=\"_blank\">04:03</a> 他們不預測未來，只反覆跑「ship、觀察、學習」的循環。Claude Design 在十週內跑了 50 到 100 次<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ ship 就是把東西推出去給人用。他們不花時間猜市場要什麼，而是推出、看大家怎麼用、修正，再推出。十週內轉了 50 到 100 圈，幾乎一兩天就一圈。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=Uvl-tRga98g&t=368s\" target=\"_blank\">06:08</a> 起點是設計師 Nate 花一個週末做出的原型：用 agent SDK 加上很薄的 IDE wrapper 和一個現成的 skill，做完就丟到 Slack 收意見<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 設計師 Nate 一個週末就做出原型：用 agent SDK（讓 AI 自己動手做事的工具包）套個陽春介面，加上現成的 skill（教 Claude 做某件事的說明包），就丟到公司群組收意見。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=Uvl-tRga98g&t=465s\" target=\"_blank\">07:45</a> 他們不寫 PRD，改用原型，因為文件不夠精確。做法是先錄下討論並轉成逐字稿，再交給 Claude Design，請它給幾個方案<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ PRD 是產品需求文件，傳統上用來寫清楚要做什麼。但同一份文件，每個人讀完想像的產品都不一樣。所以他們把討論錄音轉成文字交給 Claude Design，直接生出幾個版本來比。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=Uvl-tRga98g&t=1171s\" target=\"_blank\">19:31</a> 早期做的精細像素控制只有少數 power user 喜歡，其他人都很討厭，一週內就拿掉了。他們因此決定讓工具提升所有人的做工水準，並且盡量開放<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 他們做過能微調到每個像素的控制，只有少數 power user（很懂工具的重度使用者）喜歡，多數人很討厭，一週就撤掉。之後方向改成讓每個人做出的東西都更精緻，也盡量讓大家都能用。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=Uvl-tRga98g&t=1359s\" target=\"_blank\">22:39</a> Claude Design 週五上線，到下週一已經根據使用者回饋推出 62 項改進<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 週五上線，下週一就根據使用者回饋推出 62 項改進。上線不是終點，而是開始大量學習的起點。真實使用者的反應，比上線前團隊自己想破頭還有用。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=Uvl-tRga98g&t=1450s\" target=\"_blank\">24:10</a> 講者建議去做「幾乎可行」的東西，因為下一代模型可能會解決工程上解不掉的問題。Claude Design 早期的一些問題就是靠 Opus 4.7 解決的<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 講者建議做「差一點就行」的東西：現在卡住的難題，下一代模型可能就解掉了。Claude Design 早期有些問題，正是換上 Opus 4.7（較新一代的 Claude 模型）才解決。</span>\n\n📘 術語<br><b>bet factory</b>（下注工廠）：Labs 的自稱：很多小團隊一起探索，用實驗判斷每個點子能不能成，決定加碼還是收掉<br><b>PRD</b>（產品需求文件）：講者認為文件不夠精確，每個人讀完想像的產品都不一樣，所以他們改用原型<br><b>pitch-off</b>（提案大會）：Labs 定期聚在一起腦力激盪，拉其他人加入自己想做的專案<br><b>feedback clustering</b>（回饋分群）：團隊花一個下午自建的工具，讓 Claude 分析所有回饋、找出共同趨勢，再給修正建議<br><b>multiplayer</b>（多人協作）：讓多人同時在同一份設計上迭代，一開始是做給團隊自己用的\n\n📺 <a href=\"https://www.youtube.com/watch?v=Uvl-tRga98g\" target=\"_blank\">Designing with Claude: From prompt to production</a>（2026/05/22 · 28 分鐘）",
+        "tip": "💡 你可以怎麼用：下次要跟別人說明想法時，別只寫文件，先用 Claude 做個粗略的樣品或投影片給同事看，收到意見再改。遇到 AI 現在做不好的事也先記下來，等新模型出來再試一次。",
+        "quiz": {
+          "q": "Claude Design 週五上線後，到下週一團隊推出了幾項改進？",
+          "options": [
+            "10 項",
+            "62 項",
+            "26 項",
+            "100 項"
+          ],
+          "correct": 1,
+          "why": "講者說週五上線、到下週一已推出 62 項改進（22:39）"
+        }
+      },
+      {
         "id": "yt_EPUg9pmfPk0",
         "title": "🎬 法務團隊如何使用 Claude Cowork",
         "category": "產品功能",
@@ -826,6 +1006,24 @@ const CURRICULUM = {
         }
       },
       {
+        "id": "yt_bGCL-Ahb1Z8",
+        "title": "🎬 在最前線工作：Thomson Reuters",
+        "category": "企業與客戶案例",
+        "text": "<b>Thomson Reuters 談與 Anthropic 合作如何改善法律研究</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這支影片請來 Thomson Reuters（專門提供法律等專業資訊的老牌公司）的人，談他們跟 Anthropic（開發 Claude 的公司）合作後，律師查資料的方式有什麼改變。如果你想知道 AI 在需要高度準確的專業領域能做到什麼程度，這是個很好懂的實例。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bGCL-Ahb1Z8&t=4s\" target=\"_blank\">00:04</a> Thomson Reuters 歷史悠久，現在是一家科技公司，專注在需要專業資訊的職業<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Thomson Reuters 是歷史很久的資訊公司，現在把自己定位成科技公司，主要服務像律師這樣工作上很依賴專業、準確資料的人。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bGCL-Ahb1Z8&t=4s\" target=\"_blank\">00:04</a> AI 出現前，律師只能用搜尋列找和手上案件相關的判例，過程漫長又累人<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 判例就是法院以前判過的案子，律師會拿來支持自己的論點。以前只能自己想關鍵字，在搜尋列一次次查、一篇篇翻，很花時間也很累。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bGCL-Ahb1Z8&t=4s\" target=\"_blank\">00:04</a> 過去一年和 Anthropic 合作，最大的躍進是 agent search 和真正的 deep research 出現<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ agent search 通常指 AI 自己拆步驟、換關鍵字、反覆查；deep research 則是 AI 讀大量資料後整理成報告。影片沒細講，只說這是最大的進步。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bGCL-Ahb1Z8&t=34s\" target=\"_blank\">00:34</a> 講者認為 AI 讓這類搜尋與研究的品質和準確度大幅提升<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 重點不只是變快。講者強調找到的東西更對、更完整。法律工作只要漏掉關鍵判例或引用錯誤就可能出問題，所以準確度特別重要。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bGCL-Ahb1Z8&t=34s\" target=\"_blank\">00:34</a> 模型持續進步，對他們能打造的法律解決方案品質有真正的累積效應（字幕原文為「claw models」）<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 字幕寫的 claw models 應該是 Claude 模型被聽錯了。意思是：底層模型每進步一次，他們做的法律工具就跟著變好，而且效果會一直疊加上去。</span>\n\n📘 術語<br><b>agent search</b>（代理式搜尋）：字幕把它列為過去一年和 Anthropic 合作的一大躍進，沒有進一步解釋<br><b>deep research</b>（深度研究）：字幕說它和 agent search 一起出現，是一大躍進，沒有進一步解釋\n\n📺 <a href=\"https://www.youtube.com/watch?v=bGCL-Ahb1Z8\" target=\"_blank\">Working at the Frontier: Thomson Reuters</a>（2026/07/08 · 0 分鐘）",
+        "tip": "💡 你可以怎麼用：下次要查一個需要翻很多資料的問題時，別只丟一個關鍵字給 AI，試試有「深度研究」功能的工具，讓它自己多查幾輪、整理成報告。不過要像律師一樣，把它引用的關鍵來源點開核對一遍。",
+        "quiz": {
+          "q": "根據影片，Thomson Reuters 過去一年和 Anthropic 合作，最大的躍進是什麼？",
+          "options": [
+            "能自動幫律師寫好整份訴狀",
+            "出現 agent search 和真正的 deep research",
+            "判決書可以即時翻成多種語言",
+            "律師可以直接用語音查詢判例"
+          ],
+          "correct": 1,
+          "why": "[00:04] 字幕說：「A huge leap in the last year in the partnership with Anthropic has been the emergence of agent search and truly deep research.」"
+        }
+      },
+      {
         "id": "yt_CuzipWWYvFo",
         "title": "🎬 用 Claude 輔助再生式養蜂",
         "category": "企業與客戶案例",
@@ -916,6 +1114,24 @@ const CURRICULUM = {
         }
       },
       {
+        "id": "yt_bjrmYsFae_g",
+        "title": "🎬 解題者｜Legora 的 Max Junestrand",
+        "category": "企業與客戶案例",
+        "text": "<b>Legora 談用 Claude 模型打造法律工作平台，以及 AI 對法律產業的改變</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這支是 Claude 官方的訪談影片，Legora 的 Max Junestrand 談他們怎麼用 Claude 做一個給律師用的工作平台。法律這行很怕出錯，看他們怎麼把 AI 放進律師每天的工作裡，可以大概看出 AI 在專業工作上能用到多深。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bjrmYsFae_g&t=0s\" target=\"_blank\">00:00</a> Legora 處在法律產業的核心；詮釋法律是世界上最古老的工作之一，因此責任重大<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 法律文件錯一個字，就可能影響一場官司或一筆交易。Legora 想說的是，他們的工具處理的東西很重要，不能只求快，還要可靠。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bjrmYsFae_g&t=0s\" target=\"_blank\">00:00</a> Legora 是法律工作發生的地方，工作可以由人、由 agent 完成，或由兩者協作完成<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ agent 是能自己分步驟把一件事做完的 AI，不只回答問題。Legora 想當律師的辦公桌：有些事人做，有些交給 agent，也能人和 AI 接力完成。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bjrmYsFae_g&t=32s\" target=\"_blank\">00:32</a> Legora 在審閱、起草和研究上幫法律工作加快速度，並把這些整合成單一、完整的工作空間<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 律師的日常工作有三大塊：審閱文件、起草文書、查資料。Legora 用 AI 讓每一塊都做得更快，還把三塊放在同一個地方，不用在好幾個工具之間切來切去。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bjrmYsFae_g&t=32s\" target=\"_blank\">00:32</a> 起草和審閱的細節很看情境，例如要配合既有文件的風格，甚至是特定律師的風格<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 法律文件光寫對還不夠。例如在舊合約裡加一條新條款，用語和格式要跟原本的一致，有些律師還有自己習慣的寫法，AI 也要跟得上。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bjrmYsFae_g&t=62s\" target=\"_blank\">01:02</a> 他們發現 Claude 模型，尤其是 Opus，在精細起草上表現非常好<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Opus 是 Anthropic 的 Claude 模型裡能力最高的等級。Legora 發現，需要仔細拿捏用字的起草工作，交給 Opus 寫出來的東西特別到位。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bjrmYsFae_g&t=93s\" target=\"_blank\">01:33</a> 大約每三個月就有新東西推出，像水漲船高；Legora 想讓系統隨每次新模型發布一起變好<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ AI 模型大約每三個月就有新進展。Legora 的目標是讓產品跟著新模型一起變好：模型一變強，客戶用到的功能也跟著進步。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bjrmYsFae_g&t=125s\" target=\"_blank\">02:05</a> 差異化的關鍵是讓 Legora 成為業界速度最快的公司；客戶全力投入 Legora，Legora 也全力投入客戶<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 模型每家公司都能用，真正拉開差距的是誰最快把新能力做成客戶用得到的功能。客戶把工作全押在 Legora 上，Legora 也全力服務客戶。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bjrmYsFae_g&t=125s\" target=\"_blank\">02:05</a> 懂得駕馭 AI 的人未來能做更多事，能做多少事的限制正在消失<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 以前一個人能做多少事，被時間和人力卡住。會用 AI 的人可以把重複的工作交出去，一個人能完成的量會大幅增加，重點是學會指揮 AI。</span>\n\n📘 術語<br><b>agent</b>（代理）：字幕說法律工作可以由人、由 agent 完成，或兩者協作完成<br><b>Opus</b>（Opus（Claude 模型））：Legora 發現它在精細起草上表現非常好\n\n📺 <a href=\"https://www.youtube.com/watch?v=bjrmYsFae_g\" target=\"_blank\">The Problem Solvers | Max Junestrand at Legora</a>（2026/06/02 · 2 分鐘）",
+        "tip": "💡 你可以怎麼用：挑一件你常做的文書工作，例如回客戶信或整理合約重點，把你以前寫過的範本一起給 AI，要它照你的語氣和格式寫，寫完再自己檢查修改。先從這種小事開始，練習怎麼指揮 AI。",
+        "quiz": {
+          "q": "根據影片，Legora 發現 Claude 模型（尤其是 Opus）特別擅長哪件事？",
+          "options": [
+            "精細的法律文件起草",
+            "自動出庭辯論",
+            "計算律師事務所的帳務",
+            "即時翻譯各國法律條文"
+          ],
+          "correct": 0,
+          "why": "[01:02] 提到 Claude 模型，尤其是 Opus，在精細起草上表現非常好"
+        }
+      },
+      {
         "id": "yt_CG7Rcl49C2w",
         "title": "🎬 在 Claude 模型正式推出前，這些團隊會先試著把它弄壞",
         "category": "企業與客戶案例",
@@ -931,6 +1147,24 @@ const CURRICULUM = {
           ],
           "correct": 1,
           "why": "[01:02] 提到第一件事是啟動 automated evals，讓它們在背景執行"
+        }
+      },
+      {
+        "id": "yt_A3rmSUp6Dxg",
+        "title": "🎬 Metaview 如何在履歷審查中打造自我改進的 prompt",
+        "category": "企業與客戶案例",
+        "text": "<b>Metaview 用會從招募者決策中學習的 ICP prompt 來輔助履歷審查</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：招募軟體公司 Metaview 分享他們怎麼用 Claude 幫招募者初篩履歷。AI 讓大家投履歷變得太容易，應徵量暴增，所以他們讓 AI 從招募者每次的決定中學習，自動更新篩選標準。就算你不做招募，「讓給 AI 的指令跟著人的判斷一起變」這個做法，也適用在任何要反覆調整 AI 的工作。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=A3rmSUp6Dxg&t=44s\" target=\"_blank\">00:44</a> 從 2023 年起，AI 降低了求職門檻，應徵數量暴增；有客戶的一個職缺在 24 小時內收到 2,740 份應徵<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 2023 年之後，AI 讓投履歷變得超省力，應徵數量跟著暴增。有客戶開一個職缺，24 小時就收到 2,740 份，招募者根本不可能一份一份細看。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=A3rmSUp6Dxg&t=77s\" target=\"_blank\">01:17</a> 應徵問題（例如「為什麼想來這裡工作」）的平均回答長度，近兩年大約增加了 50%，原因是有 LLM 幫忙寫<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 像「為什麼想來這裡工作」這種問題，平均回答近兩年變長了約 50%，因為很多人請 LLM（大型語言模型，像 ChatGPT 這類會寫文章的 AI）代寫。字變多了，內容卻不一定更好，篩選起來反而更吃力。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=A3rmSUp6Dxg&t=140s\" target=\"_blank\">02:20</a> 招募者的偏好一直在變（例如突然要求要有新創經驗、zero to one 經驗），所以 prompt 也得跟著變。要把這件事當成系統的基礎，不要最後才補上<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 招募者想找的人會一直變，例如突然說要有新創經驗、要有 zero to one（從零開始把東西做出來）的經驗。給 AI 的指令（prompt）也得跟著改，所以一開始設計系統就要考慮到「標準會變」，不能等出問題才補。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=A3rmSUp6Dxg&t=206s\" target=\"_blank\">03:26</a> 流程：先遮蔽候選人的姓名、email、電話等個資，再拿去和 ideal candidate profile（ICP）比對，產出評估結果。ICP 是會自我改進的那部分 prompt<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 流程是先把姓名、email、電話等個資遮起來，再拿去和 ICP（理想人選描述，寫清楚這個職缺要找什麼人、要補什麼缺）比對，產出評估結果。ICP 就是 prompt 裡會越改越準的那一段。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=A3rmSUp6Dxg&t=241s\" target=\"_blank\">04:01</a> 不只是 human in the loop，而是 human in the center：系統扮演 apprentice（學徒），負責做粗活，由使用者決定候選人要進入下一關還是被淘汰<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ human in the loop 的意思是流程中有人把關；這裡更進一步，叫 human in the center，人才是主角。系統像學徒（apprentice）一樣先做粗活，候選人要過關還是淘汰，都由招募者決定。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=A3rmSUp6Dxg&t=304s\" target=\"_blank\">05:04</a> ICP agent 會把使用者的進關／淘汰決定、回饋和手動編輯當成輸入，再用 Query Files 工具查看被遮蔽個資的履歷，搞懂那些相對性的回饋，最後交給 ICP Manager agent 更新 ICP<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ ICP agent（會自己查資料、做判斷的 AI 助手）會收集招募者的過關／淘汰決定、回饋和修改，再用 Query Files（專門查履歷的工具）翻出履歷，搞懂「比上一位強」這種比較式的評語，最後交給 ICP Manager 更新 ICP。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=A3rmSUp6Dxg&t=430s\" target=\"_blank\">07:10</a> 每天要處理幾千份應徵，無法全部交給 agent 處理；所以底層用 workflow，上層再放一個 agent，藉此控制 token 用量<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 每天有幾千份應徵，全部交給 agent 自由發揮，會太耗 token（AI 計算和計費的單位）。所以大量的評估走固定的 workflow（照既定步驟跑的流程），只在上層放一個 agent 處理需要判斷的事，才控制得住成本。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=A3rmSUp6Dxg&t=553s\" target=\"_blank\">09:13</a> 選用 Claude 是因為模型要能批判性思考、看穿履歷裡的誇大內容：Haiku 負責大量評估，Sonnet 負責找出使用者決策中的模式<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 選 Claude 是因為模型要能批判性思考、看穿履歷裡的灌水。分工上，比較輕量便宜的 Haiku 負責大量評估履歷，能力比較強的 Sonnet 負責從招募者的決定中找出規律。</span>\n\n📘 術語<br><b>Ideal Candidate Profile (ICP)</b>（理想候選人輪廓）：類似 ideal customer profile，描述這個職缺在找什麼樣的人、要補什麼缺<br><b>Human in the center</b>（以人為中心）：不只是 human in the loop；決策由使用者做，系統只是輔助的 apprentice<br><b>Query Files</b>（檔案查詢工具）：專門用來翻查候選人履歷的工具，因為用 grep 很難處理非結構化資料<br><b>ICP Manager agent</b>（ICP 管理 agent）：只有一個任務：讓 ICP 這份 prompt 保持在最新狀態<br><b>Prose, not rules</b>（用文字敘述，不用規則）：ICP 是 markdown 文件，不用權重、if 判斷或流程圖，改用自然語言來描述\n\n📺 <a href=\"https://www.youtube.com/watch?v=A3rmSUp6Dxg\" target=\"_blank\">How Metaview built self-improving prompts for application review</a>（2026/05/22 · 16 分鐘）",
+        "tip": "💡 你可以怎麼用：你給 AI 的判斷標準，可以像 Metaview 的 ICP 一樣，用白話文字寫成一份文件，不用寫評分公式或規則清單。每次覺得 AI 判斷不對，就把你實際的決定和理由補進這份文件，讓它越用越符合你的想法。",
+        "quiz": {
+          "q": "根據演講，Metaview 用 Haiku 來做哪一項工作？",
+          "options": [
+            "遮蔽候選人的姓名、email 等個資",
+            "把 ICP 轉成有權重的關鍵字規則",
+            "每天處理幾千份的候選人評估",
+            "從使用者決策中找出模式、更新 ICP"
+          ],
+          "correct": 2,
+          "why": "[09:13] 講者說「Haiku for our evaluations」，每天要跑幾千份評估；[09:44] 則說找模式的工作交給 Sonnet。另外 [07:42] 講者也明說不使用權重。"
         }
       },
       {
@@ -970,6 +1204,24 @@ const CURRICULUM = {
         }
       },
       {
+        "id": "yt_T8N0MED3IJo",
+        "title": "🎬 程式碼與法庭交會之處：站在法律與技術前沿的 AI",
+        "category": "企業與客戶案例",
+        "text": "<b>Solve Intelligence 說明專利工作為何不適合「委派」模式，並分享三個協作式 AI 設計原則</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這場是做專利 AI 工具的公司 Solve Intelligence 的分享。他們解釋為什麼寫專利不能像寫程式那樣，交代完就整個丟給 AI 做，而是要讓 AI 和律師邊做邊討論。如果你常用 AI 處理重要文件，他們的三個設計原則可以直接拿來用。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=T8N0MED3IJo&t=80s\" target=\"_blank\">01:20</a> 專利法同時需要軟體開發用到的深度技術推理，也需要法律工作那種從大量文件中找出關鍵資訊的能力，Solve Intelligence 就是為這個交叉領域打造產品<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 寫專利要懂技術，懂到看得懂工程細節；也要像律師一樣，從一大堆文件裡挑出關鍵。兩種能力很少有人同時具備，Solve Intelligence 就是專做這一塊的 AI 工具。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=T8N0MED3IJo&t=142s\" target=\"_blank\">02:22</a> 專利是發明人和社會之間的契約：發明人公開發明怎麼運作，換取國家給予 20 年的獨占權<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 專利的本質是交換：發明人把發明怎麼運作公開寫清楚，讓社會學得到；國家則保證 20 年內，別人不能擅自使用。所以文件怎麼寫，直接決定能保護到多少。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=T8N0MED3IJo&t=575s\" target=\"_blank\">09:35</a> 「委派」模式不適合專利工作的第一個原因：軟體可以用測試驗證，但專利沒辦法「執行」，它對不對取決於未來審查、競爭對手和訴訟會怎麼發展<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 「委派」是把需求講清楚後，實作全交給 AI。寫程式可以跑測試，馬上知道對錯。專利沒辦法這樣試，要等之後的審查、競爭對手挑戰，甚至打官司，才知道寫得好不好。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=T8N0MED3IJo&t=669s\" target=\"_blank\">11:09</a> 第二個原因：專利裡的各項決策彼此牽連。例如改寫 claim 1，常常得回頭修改其他 claims、說明書和圖式，所以律師的判斷必須隨著文件成形一步步加進去<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ claim 是專利裡劃定保護範圍的條文。改了第一條，其他條文、說明書、圖式常常都得跟著改，牽一髮動全身。所以律師要邊寫邊判斷，不能等全部寫完才看。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=T8N0MED3IJo&t=1106s\" target=\"_blank\">18:26</a> 原則一：把 citations 當成一等公民。任何交給 LLM 的資訊都要用可以引用的格式呈現，讓人能核對 AI 說的內容是否正確<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ citation 就是標出處；LLM 是 Claude 這類大型語言模型。餵給 AI 的資料都先整理成能標出處的形式，AI 講的每句話都能連回原文，人才能快速核對它有沒有講錯。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=T8N0MED3IJo&t=1236s\" target=\"_blank\">20:36</a> 原則二：專用介面裡使用者設定的需求，可以轉成指令交給通用 agent（必要時加上額外工具）。這樣通用 agent 變強時，各項特定功能也會一起變好<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ agent 是能自己規劃步驟、動手做事的 AI。使用者在專用畫面上的設定，背後會轉成文字指令，交給同一個通用 agent。底層 agent 變強時，各個功能不用重做就一起進步。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=T8N0MED3IJo&t=1303s\" target=\"_blank\">21:43</a> 原則三：先平行處理「對齊」，再依序「執行」。主動找出需要使用者拍板的決策，減少和使用者來回確認的次數與時間<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 「對齊」是先確認雙方要的方向一致。AI 先把所有需要人拍板的問題一次列出來，你一次回完，它再照順序動手改。這比做到一半卡住、一次又一次回頭問你省時很多。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=T8N0MED3IJo&t=1693s\" target=\"_blank\">28:13</a> Demo 的申請書審查：每項審查標準各自跑一個平行的 sub-review，先產生 comments 讓律師回覆或駁回，雙方對齊後才交給 agent 依序修改<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 示範中，AI 審一份申請書時，每項審查標準各開一個 sub-review（子審查）同時跑，先留下 comments（批註）。律師逐條回覆或駁回，雙方意見一致後，AI 才依序修改。</span>\n\n📘 術語<br><b>delegation model</b>（委派模式）：描述你要什麼，把實作交給 agent 去做；講者認為 Claude Code、Cowork 是這種模式<br><b>collaboration model</b>（協作模式）：AI 在需要時提出待決定的事項並說明取捨，等使用者決定後再執行<br><b>person having ordinary skill in the art</b>（該領域具通常知識者）：假想的從業者，具備相關專業、讀過相關 prior art，但不會自己發揮創造力<br><b>office action</b>（審查意見通知）：審查委員發出的通知，指出 claims 缺乏新穎性、顯而易見或揭露不足等問題<br><b>file history</b>（審查歷史檔案）：答辯過程中所有論點都會存成永久紀錄，專利核准後會影響 claims 的解釋方式\n\n📺 <a href=\"https://www.youtube.com/watch?v=T8N0MED3IJo\" target=\"_blank\">Where code meets court: AI at the legal-technical frontier</a>（2026/05/22 · 32 分鐘）",
+        "tip": "💡 你可以怎麼用：下次請 AI 改合約、企劃這類重要文件時，先別叫它直接改。請它「先列出所有需要我決定的地方和各自的取捨，並註明每個依據出自原文哪一段」，你一次回覆完，再讓它動手。",
+        "quiz": {
+          "q": "在 Demo 的申請書審查功能中，為什麼系統先產生 comments，而不是直接修改文件？",
+          "options": [
+            "因為各個平行 sub-review 直接產生的修改建議會彼此衝突",
+            "因為產生 comments 比直接修改更省 token",
+            "因為模型無法直接編輯專利文件",
+            "因為法規要求所有修改都必須由律師親手完成"
+          ],
+          "correct": 0,
+          "why": "講者在 [28:13] 說，如果各個 sub-review 直接產出修改，建議會互相衝突，所以先產生 comments 讓律師對齊。"
+        }
+      },
+      {
         "id": "yt_tUoO4ucrNc0",
         "title": "🎬 用 Claude Cowork 打擊金融犯罪",
         "category": "企業與客戶案例",
@@ -1003,6 +1255,96 @@ const CURRICULUM = {
           ],
           "correct": 0,
           "why": "講者說追查後發現原因是 cost center code 被寫死（hard coded）了（[10:17]）"
+        }
+      },
+      {
+        "id": "yt_K4-flzsPraE",
+        "title": "🎬 打造最好的 agentic 資料分析 harness：由 Claude 驅動，用 Claude Code 打造",
+        "category": "企業與客戶案例",
+        "text": "<b>Omni 的 CTO 分享他們怎麼用 Claude Code 開發，又怎麼一步步打造資料分析 agent Blobby</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：Omni 是做資料分析工具的公司，這支影片由他們的 CTO 分享兩件事：團隊怎麼用 Claude Code（Anthropic 出的 AI 寫程式助手）開發產品，以及怎麼打造資料分析 agent Blobby（agent 是能自己規劃步驟、呼叫工具完成任務的 AI）。值得看的地方在於，他把 harness（包在模型外面、提供工具、規則和流程的那層程式）一路踩過的坑和改法都講得很具體。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=K4-flzsPraE&t=83s\" target=\"_blank\">01:23</a> 2025 年初團隊開始試用 AI 工具。Claude Code 搭配 Opus 推出後，資深工程師認為它能穩定帶來幫助；一月起 commit 數明顯變多<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 2025 年初團隊還在試用 AI 工具。Claude Code 搭配 Opus（Claude 能力最強的模型）推出後，連資深工程師都覺得它能穩定幫上忙；一月起 commit（每次存進程式庫的一筆修改）數量明顯變多。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=K4-flzsPraE&t=205s\" target=\"_blank\">03:25</a> 使用者提問後，Claude 會把問題轉成 semantic query。semantic layer 架在資料倉儲上面，負責轉成 SQL，也處理資料篩選、context 和權限<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Claude 會先把你的問題轉成 semantic query，也就是用公司定義好的指標和欄位來描述的查詢。接著由 semantic layer 這層轉譯器翻成 SQL（查資料庫用的語言），同時處理篩選和權限。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=K4-flzsPraE&t=361s\" target=\"_blank\">06:01</a> context 放在它描述的欄位定義旁邊效果更好，就像 Claude.md 越靠近對應的程式碼越好<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ context（給 AI 看的背景說明）要緊貼著它說明的那個欄位寫，AI 才對得上號。道理和 Claude.md（寫給 Claude Code 看的專案說明檔）一樣，放得越靠近相關程式碼越有用。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=K4-flzsPraE&t=580s\" target=\"_blank\">09:40</a> 早期版本補上 AI context、sample queries，以及欄位值範例（例如 region 的 EMEA、NAM、APAC），回答品質因此提升<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 早期版本靠多給資料：AI context（寫給 AI 看、告訴它什麼問題該用哪個欄位的說明）、sample queries（範例查詢），還有欄位實際值的例子，像 region 裡填的是 EMEA、NAM、APAC，AI 就不用亂猜。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=K4-flzsPraE&t=701s\" target=\"_blank\">11:41</a> 加上 agentic loop 之後，教 Blobby 怎麼從錯誤中恢復、給它重試的額度，再把錯誤訊息寫清楚，品質分數大幅上升<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ agentic loop 是讓 AI 自己執行、看結果、再修正的循環。他們教 Blobby 出錯時怎麼補救，給它重試的次數，也把錯誤訊息寫到 AI 看得懂，品質分數因此大幅上升。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=K4-flzsPraE&t=731s\" target=\"_blank\">12:11</a> 對話變得更複雜後，模型從 Haiku 換成 Sonnet。token 用量增加，但使用量也跟著大幅成長<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 對話變複雜後，模型從便宜又快的 Haiku 換成更聰明的 Sonnet。token（AI 計算用量的單位，和費用直接相關）用得更多，但答得更好，使用量也跟著大幅成長。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=K4-flzsPraE&t=948s\" target=\"_blank\">15:48</a> 從 trace 發現外層 agent 不知道 subagent 一個查詢能做到什麼，於是把工具收回外層，也就是「consolidating the brain」<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 看 trace（AI 每一步做了什麼的紀錄）才發現，外層 agent 不清楚負責查詢的 subagent（被分派子任務的小 agent）能做到什麼，等於兩個腦各想各的。所以他們把工具收回外層，由一個腦統一指揮。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=K4-flzsPraE&t=1075s\" target=\"_blank\">17:55</a> 查詢格式從自訂的 JSON 改成直接寫 SQL，再用 parser 解析。Claude 愛用 CTE，parser 也能處理，查詢常常一次就寫對<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 原本要 AI 填自訂的 JSON（一種結構化資料格式），後來改成讓它直接寫 SQL，再用 parser（解析程式）拆解。Claude 很愛用 CTE（把查詢拆成幾段具名步驟的寫法），parser 也處理得來，常常一次就寫對。</span>\n\n📘 術語<br><b>semantic layer</b>（語意層）：架在資料倉儲上的轉譯層，負責篩選資料、放 context、管權限，並把查詢轉成 SQL<br><b>AI context</b>（AI 脈絡欄位）：專門寫給 LLM 看的說明，告訴它被問到某件事時該用哪個欄位<br><b>Blobotomies</b>（Blobby 大手術）：Omni 根據 trace 裡看到的問題，對 Blobby 做的一連串大改造<br><b>consolidating the brain</b>（整合大腦）：避免外層 agent 和 subagent 分成兩個腦，把工具收回外層 harness<br><b>CTE (common table expressions)</b>（通用資料表運算式）：講者觀察到 Claude 很愛用的 SQL 寫法，而他們的 parser 很會解析\n\n📺 <a href=\"https://www.youtube.com/watch?v=K4-flzsPraE\" target=\"_blank\">Building the best agentic analytics harness: Powered by Claude, built with Claude Code</a>（2026/05/21 · 26 分鐘）",
+        "tip": "💡 你可以怎麼用：請 AI 幫你分析資料時，把每個欄位的意思和實際值的例子（例如地區代碼怎麼寫）直接附在欄位旁邊。答錯時，把完整的錯誤訊息貼回去讓它重試，不要只回一句「不對」。",
+        "quiz": {
+          "q": "Omni 從 trace 發現 subagent 架構出了什麼問題？",
+          "options": [
+            "subagent 產生的 SQL 無法在資料倉儲上執行",
+            "subagent 無法存取 semantic layer 的權限設定",
+            "外層 agent 不知道一個查詢能回答什麼，丟給 subagent 的問題需要跑好幾個查詢",
+            "subagent 用的是 Haiku，速度太慢"
+          ],
+          "correct": 2,
+          "why": "[14:48]–[15:18]：subagent 只負責依指示產生一個查詢，但外層 agent 不知道單一查詢能回答什麼，subagent 只好回覆必須跑多個查詢才行"
+        }
+      },
+      {
+        "id": "yt_nho1YAEPuwA",
+        "title": "🎬 法律 agent 從 coding agent 繼承了什麼：來自 Legora 的經驗",
+        "category": "企業與客戶案例",
+        "text": "<b>Legora 工程師分享如何借用 coding agent 的做法，打造處理法律工作的 agent</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：Legora 是做法律 AI 平台的公司。他們的工程師在這支影片分享：怎麼把 coding agent（會自己讀檔、改程式、跑檢查的 AI 助手）的做法搬去處理法律工作。重點是哪些可以直接照用、哪些要改一改、哪些得自己想。想知道 AI 怎麼可靠地處理長篇專業文件的人，很值得一看。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=nho1YAEPuwA&t=127s\" target=\"_blank\">02:07</a> 寫程式與法律工作有很多相似處：都高度依賴先前的成果、以文字文件為主、組織內有嚴格慣例，而且都有很強的審閱文化<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 寫程式和做法律其實很像：都要沿用前人的成果（舊程式、舊合約），主要處理文字，公司內有固定寫法，交出去前一定有人審。所以寫程式的經驗搬得過來。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=nho1YAEPuwA&t=192s\" target=\"_blank\">03:12</a> 向 coding agent 學習可分三類：可以直接沿用的（to-dos、planning、subagent、sandbox、human in the loop）、需要轉化的、需要自己發明的<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 可以學的分三種：直接搬、要改造、要自創。直接搬的有待辦清單、planning、subagent（分工的子 agent）、sandbox（隔離區）、human in the loop。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=nho1YAEPuwA&t=325s\" target=\"_blank\">05:25</a> 直接沿用的例子：先規劃再執行的 planning 模式，以及危險動作（例如刪除客戶文件）前先詢問使用者的 tool call 核准機制<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ planning 就是先列好步驟再動手。tool call（agent 動用工具做事）碰到危險動作，像刪客戶文件，會先問你、你同意了才執行，這就是 human in the loop。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=nho1YAEPuwA&t=517s\" target=\"_blank\">08:37</a> 舊的 docx 編輯做法是把任務交給多個獨立的 LLM 呼叫，各自有不同的 context 和工具，衍生出很多交接問題<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 以前改 Word 檔（docx）是拆給好幾次獨立的 LLM（大型語言模型）呼叫，每次看到的 context（手上的資料）和工具都不一樣，交棒時資訊很容易漏掉。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=nho1YAEPuwA&t=618s\" target=\"_blank\">10:18</a> 改用和 coding agent 一樣的 read、edit、verify 迴圈：先把 docx 轉成扁平的文字中介表示，agent 再用編輯工具直接修改<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 改用 coding agent 的讀、改、檢查循環：先把 docx 攤平成一份純文字的「中介表示」，agent 直接用編輯工具改它，改完再檢查，不用再一層層交接。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=nho1YAEPuwA&t=742s\" target=\"_blank\">12:22</a> POC 測試：用 Haiku 把 10 頁文件逐段從英文翻成瑞典文，agent 會自己回頭檢查補上漏掉的段落，最後全部翻完<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ POC 就是先小規模試試看行不行。他們用 Haiku（Claude 比較小、比較快的模型）把 10 頁英文文件逐段翻成瑞典文，agent 會自己回頭檢查、補翻漏掉的段落，最後全部翻完。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=nho1YAEPuwA&t=808s\" target=\"_blank\">13:28</a> 需要轉化的例子：法律文件版的 ESLint，例如用靜態方式檢查條款之間的引用是否還有效，提供 agent 回饋迴圈<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 要改造的例子：仿照 ESLint（自動挑出程式碼錯誤的檢查工具），做一個法律文件版，比如自動檢查「依第 5 條」這類引用還對不對得上。agent 改完馬上知道有沒有改壞。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=nho1YAEPuwA&t=976s\" target=\"_blank\">16:16</a> 需要自己發明的例子：做 due diligence 時讓 agent 使用平台上的 Tabular Review，自行指定要擷取的欄位，再篩選出重點<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 要自創的例子：做 due diligence（併購前審完對方所有合約，可能上千份）時，agent 用 Tabular Review（每列一份文件的表格）自己訂要抓的欄位，再篩出重點。</span>\n\n📘 術語<br><b>human in the loop</b>（人在迴路中）：某些動作要先問使用者、得到同意後 agent 才能執行，例如執行 shell 指令或刪除文件<br><b>intermediate representation</b>（中介表示）：把 docx 轉成扁平的單一文字檔，讓 agent 可以讀取並用編輯工具修改<br><b>Tabular Review</b>（表格式審閱）：Legora 的格狀介面，每一列是一份文件，加欄位就能用 LLM 做結構化資料擷取<br><b>due diligence</b>（盡職調查）：A 公司收購 B 公司時，律師要審閱 B 公司的所有合約，數量可能多達好幾千份<br><b>redline</b>（修訂標示）：律師常在 Word 裡做的工作之一；示範中 agent 的修改會以 redline 版本呈現\n\n📺 <a href=\"https://www.youtube.com/watch?v=nho1YAEPuwA\" target=\"_blank\">What legal agents inherit from coding agents: Lessons from Legora</a>（2026/05/21 · 28 分鐘）",
+        "tip": "💡 你可以怎麼用：下次請 AI 處理長文件（翻譯、改合約），先叫它列計畫、分段做，做完要它對照原文檢查有沒有漏段。也可以給它一張檢查清單，例如「條號引用有沒有對上」，讓它自己核對。",
+        "quiz": {
+          "q": "Legora 用 POC 測試「逐段把英文翻成瑞典文」時，用的是哪個模型？",
+          "options": [
+            "Opus",
+            "Sonnet",
+            "Haiku",
+            "自家微調的法律專用模型"
+          ],
+          "correct": 2,
+          "why": "[12:22] 講者說為了測試新 harness 和工具設計的效果，整個流程是用 Haiku 跑的（\"we run this whole thing on Haiku\"）"
+        }
+      },
+      {
+        "id": "yt_VueeyKcquoA",
+        "title": "🎬 從 1 人到 80 人：用 Claude Code 擴張高速成長的工程組織",
+        "category": "企業與客戶案例",
+        "text": "<b>Base44 從 1 名工程師擴張到 80 人，靠 Claude Code 和簡單流程維持開發速度</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這支影片由 Base44 分享經驗。Base44 是一個讓不懂技術的人也能開發軟體的平台，講者把這種做法稱為 vibe coding，一般指用說的請 AI 寫程式。團隊從 1 名工程師擴張到 80 人，靠的是 Claude Code（Anthropic 推出、幫你讀程式、寫程式的 AI 工具）維持開發速度。值得看的原因是他們的做法都不複雜，而且把品質檢查提早到開發階段做（shift left），不等到最後才補救。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=VueeyKcquoA&t=202s\" target=\"_blank\">03:22</a> 新進工程師開工前先下兩個 prompt：一是看過所有 commits，說出每個人在意什麼，馬上就能掌握組織分工的全貌<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ prompt 就是你下給 AI 的指令。commit 是每次存進程式庫的修改紀錄，會記下誰改了什麼。讓 Claude 讀完所有紀錄，新人第一天就知道誰負責哪一塊、各自在意什麼，不用到處問。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=VueeyKcquoA&t=233s\" target=\"_blank\">03:53</a> 第二個 prompt：請 Claude 畫出元件運作的 mermaid chart。內容隨時反映最新程式碼，不必另外維護 onboarding 文件<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ mermaid chart 是用文字語法產生的流程圖。Claude 直接看程式碼，畫出各元件怎麼串在一起。因為每次都是當下重畫，內容永遠是最新的，不用再有人維護 onboarding（新人上手）文件。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=VueeyKcquoA&t=299s\" target=\"_blank\">04:59</a> 讓 Claude 從 Maor 累積的 PR comments 歸納審查重點，寫進 instructions，每隔幾天跑一次，等於多了一個「Maor PR reviewer」<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ PR 是「我改好了，請審查後合併」的申請，PR comments 是審查者留下的意見。把資深工程師 Maor 過去的意見整理成規則交給 Claude，定期照規則審查，等於把他的眼光複製了一份。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=VueeyKcquoA&t=365s\" target=\"_blank\">06:05</a> WhatsApp 整合原本預估要 1～2 週。新工程師週四拿到任務，週日早上就完成，PR 審查只留了兩三個小意見<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 這是實際成果：串接 WhatsApp 的功能原本預估要一到兩週，新人週四接到任務，週日早上就做完。審查時只被挑出兩三個小問題，代表新人靠前面那些方法，很快就能交出合格的東西。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=VueeyKcquoA&t=490s\" target=\"_blank\">08:10</a> 用簡單的小模型判斷每則使用者訊息的挫折程度是高還是低。新版 agent 先開放給一小部分客戶，觀察挫折程度的變化<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ agent 是能自己分好幾步完成任務的 AI 助手。他們用便宜的小模型判斷每則使用者訊息是不是很挫折。新版先開放給少數客戶，挫折的人變多就知道改壞了，不必等客訴上門。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=VueeyKcquoA&t=768s\" target=\"_blank\">12:48</a> Claude Code 接上 A/B 測試平台的 MCP，從最近 100 個實驗和對應的 PR 歸納出指引。之後每個 PR 都會得到判定：直接上線、漸進式上線，或做 A/B 測試及測多久<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ MCP 是讓 Claude 接上外部工具的標準接口；A/B 測試是把用戶分兩組，比較新舊版哪個好。Claude 從最近 100 個實驗學會判斷，之後每個 PR 都會建議：直接上線、慢慢開放，還是先測、要測多久。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=VueeyKcquoA&t=951s\" target=\"_blank\">15:51</a> 建立 user simulator：AI 程式碼一有變更，CI/CD 就會啟動真實的 Base44 app，再用 StageHand 模擬使用者操作<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ user simulator 就是模擬使用者。CI/CD 是程式一改就自動測試、上線的流程；StageHand 是用 AI 操作網頁的工具。AI 相關程式一改，就開一個真的 app 讓它實際操作，沒通過的部分再交回 agent 修正。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=VueeyKcquoA&t=1137s\" target=\"_blank\">18:57</a> 把常用流程包成 skills，另做 CLI 工具來設定測試情境，最後整合成一個 QA meta skill。PR 一開就自動寫測試計畫、實際測試並回報，約 80% 的情況行得通<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ skills 是寫好的做事步驟，Claude 需要時會拿出來照做；CLI 是打指令操作的工具；QA 是品質檢查。這些組成一個總技能後，PR 一開，Claude 就自動規劃測試、實際測完再回報，十次大約八次能順利完成。</span>\n\n📘 術語<br><b>vibe coding</b>（氛圍式寫程式）：講者稱這是新名詞；Base44 想做的是讓任何人（不論懂不懂技術）都能開發軟體的平台<br><b>mermaid chart</b>（Mermaid 圖表）：請 Claude 畫出元件怎麼運作的圖，內容即時反映最新程式碼<br><b>frustration level</b>（挫折程度）：用小模型把使用者訊息分成挫折程度高或低，拿來衡量新版 agent 的表現<br><b>user simulator</b>（使用者模擬器）：eval 失敗的部分會回傳給 agent 去補修，同時追蹤延遲、回合數和成本<br><b>shift left</b>（左移）：把產品決策和品質驗證提早到開發階段處理，不等到後面才做\n\n📺 <a href=\"https://www.youtube.com/watch?v=VueeyKcquoA\" target=\"_blank\">From one person to 80: Scaling a hypergrowth engineering org with Claude Code</a>（2026/05/20 · 23 分鐘）",
+        "tip": "💡 你可以怎麼用：就算不寫程式也能用同一招：把主管或前輩過去給你的修改意見整理起來，請 AI 歸納成一份檢查清單並存成固定指示。之後每次交件前，先讓 AI 照這份清單幫你審一遍。",
+        "quiz": {
+          "q": "Base44 讓新進工程師開工前用的第二個 prompt，是請 Claude 做什麼？",
+          "options": [
+            "產生該元件的單元測試清單",
+            "列出所有 PR comments 的審查規則",
+            "畫出元件運作的 mermaid chart",
+            "寫一份每晚自動更新的 onboarding 文件"
+          ],
+          "correct": 2,
+          "why": "[03:53] 字幕提到深入各個區塊前，先請 Claude 畫出元件運作的 mermaid chart；[03:22] 也說他們刻意不做每晚更新的 onboarding 文件"
+        }
+      },
+      {
+        "id": "yt_XFaeIbL-lvE",
+        "title": "🎬 在企業規模打造 AI-native：monday.com、Doctolib 與 Delivery Hero",
+        "category": "企業與客戶案例",
+        "text": "<b>三家 2011–2013 年創立的公司，分享怎麼在舊程式碼上用 Claude 轉型成 AI-native</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：monday.com、Doctolib、Delivery Hero 三家公司，都在 LLM（像 ChatGPT、Claude 這種大型語言模型）出現之前就成立了。這場座談在聊，老公司背著十幾年的舊系統，怎麼讓 AI 變成日常工作的核心。大部分公司都有舊包袱，所以他們的經驗比新創公司的更貼近一般人的處境。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=XFaeIbL-lvE&t=18s\" target=\"_blank\">00:18</a> 三家公司都在 2011 到 2013 年間創立，早於 LLM 時代。這場座談的主題是它們怎麼轉型成 AI-native enterprise<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ AI-native enterprise 是指大公司把 AI 當成預設的做事方式，而不是偶爾拿出來用的工具。三家都不是從零開始，難的是讓累積多年的舊程式碼和舊流程接得上 AI。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=XFaeIbL-lvE&t=238s\" target=\"_blank\">03:58</a> Delivery Hero 打造了自主軟體交付系統 HeroGen：把 Jira ticket 或 GitHub issue 一路做成可以合併的 pull request<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Jira ticket 和 GitHub issue 都是工程師的待辦單。pull request（PR）是「我改好了，請審核後合併」的申請。HeroGen 是會自己動手的 AI agent，從接單一路做到交件。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=XFaeIbL-lvE&t=299s\" target=\"_blank\">04:59</a> HeroGen 最近 10 天平均每天有約 173 個 PR 被合併；2 月上線以來累計約 7,000 個<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 「被合併」代表工程師看過、覺得能用，才真的放進產品。每天大約 173 個，2 月上線到現在累計大約 7,000 個，可見它不是實驗品，而是天天在用的產線。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=XFaeIbL-lvE&t=366s\" target=\"_blank\">06:06</a> Doctolib 建了 skills marketplace，可以看出哪些 skill 最多人用、正在流行；另有「Build With AI」頻道讓大家分享經驗<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ skill 是寫給 AI 看的做事說明書，例如「照公司格式寫測試」。Doctolib 把 skill 集中在一個像內部 App Store 的平台，看得出哪些最多人用；另外開一個頻道，讓好做法傳開。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=XFaeIbL-lvE&t=486s\" target=\"_blank\">08:06</a> monday.com 的 Monday Vibe 把一句簡單的 prompt 變成詳細的 PRD，幾分鐘內就能做出可用的應用程式。早期投資的 open platform 讓 POC 只花幾天<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ prompt 是你下給 AI 的指令，PRD 是寫清楚要做哪些功能的產品需求文件。POC 是先做個小樣品，驗證做不做得起來。因為他們早年就把系統開放給外部串接，AI 才能快速接上。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=XFaeIbL-lvE&t=826s\" target=\"_blank\">13:46</a> monday.com 從 Opus 4.5 換到 4.6 時，原本最佳化好的 system prompt 效果不好，只好重新調整 prompt 技巧，並和 Anthropic 的 solution engineer 合作<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Opus 4.5 和 4.6 是 Claude 的兩個模型版本。system prompt 是預先交給 AI 的固定工作守則。換成新版以後，舊守則反而效果不好，只好重新調整，還找了 Anthropic 的技術顧問一起調。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=XFaeIbL-lvE&t=1041s\" target=\"_blank\">17:21</a> Delivery Hero 用「council of agents」（多個不同模型一起 review 同一份程式碼），把成功率拉高到 85%，成本也沒有預期中增加那麼多<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ review 就是檢查程式碼。讓不同模型各自挑毛病，比較不會只有單一模型的盲點。success rate 是被合併的 PR 和被工程師拒絕的 PR 之間的比例，衝到 85%，多花的錢也比預期少。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=XFaeIbL-lvE&t=1171s\" target=\"_blank\">19:31</a> Doctolib 的心得：程式碼庫越小、越標準化、內建越多文件，模型表現就越好；monolith 裡則要額外告訴模型哪一種才是新做法<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ monolith 是把所有功能塞在同一大包的程式架構，裡面常常新舊寫法並存，AI 分不出該照哪一種做，所以要明講。反過來說，程式碼越小、越整齊、附越多說明，AI 越好上手。</span>\n\n📘 術語<br><b>HeroGen</b>（HeroGen 自主軟體交付系統）：Delivery Hero 的 agent，接收 Jira ticket 或 GitHub issue，產出可以合併的 PR<br><b>council of agents</b>（agent 評議會）：多個不同模型一起 review 同一份程式碼，避免單一模型有盲點或偏誤<br><b>success rate</b>（成功率）：Delivery Hero 的定義：被合併的 PR 和被工程師主動拒絕的 PR 之間的比例<br><b>Monday Vibe</b>（Monday Vibe）：monday.com 的 prompt 建 app 工具，把簡單的 prompt 變成詳細的 PRD，再做出可用的應用程式<br><b>skills marketplace</b>（skills 市集）：Doctolib 內部的平台，所有 skill 都找得到，也能看出使用量和趨勢\n\n📺 <a href=\"https://www.youtube.com/watch?v=XFaeIbL-lvE\" target=\"_blank\">Building AI-native at enterprise scale: monday.com, Doctolib, and Delivery Hero</a>（2026/05/20 · 29 分鐘）",
+        "tip": "💡 你可以怎麼用：在公司用 AI 的話，可以先把常做的工作整理成固定的說明範本，跟同事共用；給 AI 的資料裡也要寫清楚「現在用這個做法，舊的別照做」。換新版模型時，把平常用的指令重跑一遍確認效果，不要以為換新版就一定比較好。",
+        "quiz": {
+          "q": "Delivery Hero 導入「council of agents」後，HeroGen 的成功率最高到多少？",
+          "options": [
+            "73%",
+            "85%",
+            "100%",
+            "60%"
+          ],
+          "correct": 1,
+          "why": "[17:21] Ulrich 說 council of agents 把成功率拉高到 85%（up to 85%）"
+        }
+      },
+      {
+        "id": "yt_mhW-XXnDFSU",
+        "title": "🎬 Lovable 如何大規模用 vibecode 打造可上線的正式軟體",
+        "category": "企業與客戶案例",
+        "text": "<b>Lovable 分享平台怎麼靠 Lovable Overflow 和 vent 工具自我修復，減少使用者卡關</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：Lovable 是一個讓你用打字描述需求，由 AI agent（能自己動手寫程式、改網站的 AI 助手）幫你做出網站或 App 的平台。這支影片講他們怎麼讓平台 self-heal（自我修復，也就是自己發現哪裡做得不好、再自己補起來），減少使用者跟 AI 來回鬼打牆。如果你常用 AI 工具，看完會比較懂 AI 為什麼會卡住，還有背後的人怎麼調整它。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=mhW-XXnDFSU&t=85s\" target=\"_blank\">01:25</a> 共同創辦人 Anton 在 35 個月前建立 GPT-Engineer，當時是 GitHub 上成長最快的 repository。Lovable 的目標是讓不會寫程式的 99% 的人也能打造軟體<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 共同創辦人 Anton 在 35 個月前做了 GPT-Engineer（叫 AI 寫出整套程式的工具），它曾是 GitHub（程式碼分享網站）上成長最快的專案。Lovable 的目標是讓 99% 不懂程式的人也能做軟體。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=mhW-XXnDFSU&t=254s\" target=\"_blank\">04:14</a> 平台上已經建立了 5,000 萬個專案，用 Lovable 做的網站每月合計有 6 億次造訪。依職能區分，最大的使用者族群是工程師<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 平台上已經有 5,000 萬個專案，做出來的網站每月合計被造訪 6 億次，表示成品真的有人在用。最大的使用族群反而是工程師，可見不只新手在用，專業的人也在用。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=mhW-XXnDFSU&t=610s\" target=\"_blank\">10:10</a> 內部指標 is_stuck 用來判斷使用者是否卡關：連續 3 次要求同一件事、抱怨實作結果，或提出要求後就離開。判斷是透過一個小型分類模型<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ is_stuck 是 Lovable 內部判斷使用者卡關的指標：同一件事講 3 次、抱怨做出來的不對、提完需求就離開，都算卡關。判斷交給一個小型分類模型（專門把對話分成卡住／沒卡住的小 AI）。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=mhW-XXnDFSU&t=800s\" target=\"_blank\">13:20</a> Lovable Overflow 是一個「問題描述＋解法」的大型資料庫。系統會搜尋相符的問題，再由一個輕量模型把改寫過的相關內容加進主 agent 的 context<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Lovable Overflow 的名字學工程師問答網站 Stack Overflow，是一個「問題＋解法」資料庫。系統先找出相似的問題，再由小模型整理好，放進主 agent 的 context（AI 當下看得到的參考資料）。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=mhW-XXnDFSU&t=986s\" target=\"_blank\">16:26</a> 每一筆知識都會追蹤成功率，過時的就刪掉，同時持續補進新知識。調整何時淘汰、何時新增，是這套系統能運作的關鍵<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 每一筆解法都會記錄用了之後有沒有真的解決問題，沒效或過時的就刪掉，新的一直補進來。什麼時候刪、什麼時候加要抓得準，整套系統才會越用越準，不會被舊資料拖累。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=mhW-XXnDFSU&t=1170s\" target=\"_blank\">19:30</a> vent 工具讓 agent 遇到挫折時送出回饋到 Slack。另一個 agent 先過濾、調查，必要時開 PR，再交給工程師審查，約 50% 的 PR 是合理的<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ vent 工具讓 AI 覺得被工具或文件拖慢時，可以到 Slack（公司內部聊天軟體）抱怨。另一個 AI 先過濾、查原因，需要時開 PR（申請修改程式），再交給工程師審，大約一半是合理的。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=mhW-XXnDFSU&t=1415s\" target=\"_blank\">23:35</a> vent 呼叫次數突然暴增的時段，都對應到正式環境的事故。這個 Slack 頻道好幾次比監控系統更早發出訊號，也有助於除錯<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 只要 vent 的抱怨突然暴增，事後看都剛好碰上正式環境（使用者實際在用的線上服務）出事。這個頻道好幾次比監控系統更早示警，AI 抱怨的內容也幫工程師更快找到原因。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=mhW-XXnDFSU&t=1693s\" target=\"_blank\">28:13</a> 成效：Lovable Overflow 第一版讓卡關率降低 5%、發布率提升 2%。vent 工具每天約有 10 個修正被 merge 進正式環境<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Lovable Overflow 第一版讓卡關率降 5%，publish rate（做完願意公開分享的比例，代表滿意）升 2%。vent 工具每天約有 10 個修正被 merge（正式併入程式）上線。</span>\n\n📘 術語<br><b>is_stuck</b>（卡關指標）：連續 3 次要求同一件事、抱怨實作結果，或提出要求後離開，就會被判定為卡關<br><b>Lovable Overflow</b>（Lovable Overflow 知識庫）：命名是向 Stack Overflow 致敬，收集問題描述與對應解法的大型資料庫<br><b>vent tool</b>（發洩回饋工具）：工具、文件或平台行為明顯拖慢 agent 的工作時，agent 可以用它回報問題<br><b>self-heal</b>（自我修復）：平台自己在功能的邊界上持續改進，補上做得不夠好的地方<br><b>publish rate</b>（發布率）：用來推斷使用者對成品滿意、願意分享給別人的重要指標\n\n📺 <a href=\"https://www.youtube.com/watch?v=mhW-XXnDFSU\" target=\"_blank\">How Lovable vibecodes production software at scale</a>（2026/05/20 · 31 分鐘）",
+        "tip": "💡 你可以怎麼用：用 AI 做東西時，同一件事講到第 3 次還是不行，就換個說法或拆成小步驟，不要一直重複同一句。也可以學 Lovable：把踩過的坑和解法記成一份筆記，下次開新對話時先貼給 AI 當參考。",
+        "quiz": {
+          "q": "在 code-copy 工具無法處理檔名含空格的案例中，Lovable 收到 agent 的 vent 之後，多久就有修正 merge 進正式環境？",
+          "options": [
+            "一週後",
+            "1 小時後",
+            "隔天",
+            "10 分鐘後"
+          ],
+          "correct": 3,
+          "why": "[22:03] 講者提到收到這則 vent 之後 10 分鐘，就有 merge 好的 PR 上線到正式環境"
         }
       },
       {
@@ -1111,6 +1453,60 @@ const CURRICULUM = {
           ],
           "correct": 3,
           "why": "[24:19] Bradley 說整合在兩個層級都有做：直接接到自家 AI teammates 的 agent loop，也在 MCP 層接到 managed agents"
+        }
+      },
+      {
+        "id": "yt_EdmuYPBt_EM",
+        "title": "🎬 Datadog 如何為 Claude Code 打造通用的 machine tool",
+        "category": "企業與客戶案例",
+        "text": "<b>Datadog 分享用 Claude Code 建系統的歷程，以及 machine tool「TEMPR」的設計</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：Datadog 是一家做系統監控的軟體公司。這支影片由他們的工程師分享，團隊怎麼從純手工寫程式，走到把大量工作交給 Claude Code（Anthropic 出的 AI 寫程式工具，可以直接在電腦上寫程式、跑指令）。後半段介紹他們做的 TEMPR：AI 寫得比人快太多時，要用事先定好的規則和自動檢查來把關。想放手讓 AI 做大事的人很值得看。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=EdmuYPBt_EM&t=83s\" target=\"_blank\">01:23</a> 講者以製造業的 machine tools（jigs、fixtures、gauges、mills）做比喻：靠標準化和精準度做出可互換的零件，才能擴大規模<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 製造業靠 machine tool 量產：jigs、fixtures 負責固定和導引工件，gauges 量尺寸，mills 負責切削。零件標準又精準，才能互相替換、放大規模。他想把這套思路搬到軟體。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=EdmuYPBt_EM&t=147s\" target=\"_blank\">02:27</a> 講者說 2025 年底曲線開始變陡，大約在 Opus 4.5 這個轉折點，他開始把規模更大、更模糊的系統工作交給 Claude<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Opus 4.5 是 Anthropic 的其中一代 AI 模型。講者覺得從那時起，AI 的進步明顯加快，所以開始把範圍大、需求還沒講清楚的系統工作也交給 Claude。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=EdmuYPBt_EM&t=213s\" target=\"_blank\">03:33</a> 2024 年純手工打造分散式佇列系統 Courier，花了一年。2025 年 9 月做出 Bits Evolve：受 DeepMind 的 Alpha Evolve 啟發，由多個模型產生程式碼變體，再交給 benchmarks、tests、production observability 篩選<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Courier 是花一年手寫的佇列系統，幫多台機器排隊分配工作。Bits Evolve 參考 DeepMind 的 Alpha Evolve：讓多個模型各寫一版，再用跑分、測試和線上監控數據挑出好的。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=EdmuYPBt_EM&t=365s\" target=\"_blank\">06:05</a> 一個人主要靠 Claude Code 完成建構，幾天內就做出與 Kafka 相容的系統 Helix。拿 Helix shadow 正式環境流量時，發現有 2 到 5 倍的降低成本空間<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Kafka 是業界常用的資料串流系統。一個人靠 Claude Code，幾天就做出能和它相容的 Helix。shadow 是複製真實流量給新系統試跑，不影響線上。結果發現成本能降到原本的一半到五分之一。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=EdmuYPBt_EM&t=582s\" target=\"_blank\">09:42</a> 最近四個月，大約 90% 的 Datadog（約 3,000 名工程師）用 AI coding tools 寫正式環境程式碼，其中至少三分之二是由 Claude Code 帶動<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 最近四個月，Datadog 約 3,000 名工程師裡，大約九成用 AI 寫程式工具寫出正式上線的程式碼。這些程式碼當中，至少三分之二是靠 Claude Code 做出來的。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=EdmuYPBt_EM&t=800s\" target=\"_blank\">13:20</a> Agents 比人快兩個數量級，但工具鏈是為人設計的，結果人變成 agent 執行和人類系統之間的橋樑。每個 agent 還會各自發明工具和慣例，很難共享和維運<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Agent 是能自己連續動手做事的 AI，速度快人約百倍。但現有的開發工具和流程都是照人的節奏設計的，結果人卡在中間傳話。每個 agent 還各自發明工具和規矩，很難共用、維護。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=EdmuYPBt_EM&t=1228s\" target=\"_blank\">20:28</a> TEMPR 讓 agent 產出 blueprint，定義有哪些狀態、哪些轉換合法、允許哪些 effects、必須維持哪些 invariants。blueprint 在 LLM 之外編譯成正式的狀態轉換表，可以 hot reload<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ TEMPR 要 agent 先交出 blueprint：系統有哪些狀態、能怎麼切換、可以做哪些動作（effects）、哪些規則絕不能破（invariants）。接著用一般程式、不靠 AI 轉成正式規則表，能不停機直接換上。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=EdmuYPBt_EM&t=1559s\" target=\"_blank\">25:59</a> Verifier 在轉換表載入 runtime 前把關，像 Swiss cheese 分層：第 1 層檢查代數，第 2 層做 model check，第 3 層注入故障，第 4 層跑 property tests<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Verifier 是規則表上線執行前的檢查關卡，像幾片瑞士起司疊在一起。四層分別是：查邏輯算式、逐一檢查所有可能狀態、故意製造故障、用大量隨機情境測試。每層都可能漏，疊起來就能擋住大部分問題。</span>\n\n📘 術語<br><b>machine tool</b>（工具機）：製造業用來做出精準、可重複零件的工具，例如 jigs、fixtures、gauges、mills<br><b>dark factory</b>（無人工廠（關燈工廠））：agents 在虛擬廠房裡持續工作、不需要人在場的軟體流程。人負責設計工廠、限制條件、成果和驗證迴圈<br><b>blueprint</b>（藍圖）：agent 產出的宣告式產物，描述狀態、合法轉換、誰能發出請求、允許的 effects 和 invariants<br><b>transition table</b>（狀態轉換表）：TEMPR 由 spec 產生的表，讓關鍵控制邏輯變成像資料一樣、可互換也可檢查<br><b>Swiss cheese pattern</b>（瑞士起司模型）：verifier 分成多層，不需要每一層都把所有問題找出來\n\n📺 <a href=\"https://www.youtube.com/watch?v=EdmuYPBt_EM\" target=\"_blank\">How Datadog built a universal machine tool for Claude Code</a>（2026/05/06 · 30 分鐘）",
+        "tip": "💡 你可以怎麼用：請 AI 做比較大的東西之前，先要它列清楚「有哪些步驟和狀態、可以做什麼、什麼絕對不能發生」，你確認後再讓它動手。完成後用幾道簡單檢查把關，例如實際試跑、抽查結果、請另一個 AI 挑錯。每道不必完美，疊起來就夠用。",
+        "quiz": {
+          "q": "Datadog 用 Claude Code 在幾天內做出的 Helix，是與哪個系統相容的串流服務？",
+          "options": [
+            "Temporal",
+            "Erlang",
+            "Kafka",
+            "Kubernetes"
+          ],
+          "correct": 2,
+          "why": "字幕 [06:05] 說幾天內做出「a full functional Kafka-compatible system」，並取名為 Helix；[16:54] 也說 Helix 是「a Kafka-like streaming service」"
+        }
+      },
+      {
+        "id": "yt_OFDm3T7pVlc",
+        "title": "🎬 打造 AI-native：揭密支撐 Cognition、Gamma 與 Harvey 的技術架構",
+        "category": "企業與客戶案例",
+        "text": "<b>Harvey、Cognition、Gamma 三家公司分享創業賭注、架構重構經驗與未來布局</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這支影片找來三家 AI-native 公司（從一開始就以 AI 為核心打造產品的公司）：做法律 AI 的 Harvey、做寫程式 AI 的 Cognition、做 AI 簡報的 Gamma。他們分享當初的賭注、每次模型大升級後怎麼重做產品，以及接下來的計畫。影片常提到的 agent，是指能自己分步驟把任務做完的 AI，不只是一問一答；想知道 AI 公司怎麼跟上模型變化的人很值得看。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=OFDm3T7pVlc&t=176s\" target=\"_blank\">02:56</a> Harvey 的核心賭注：模型能力會快速進步，而且能很好地延伸到法律領域；模型層的指數級進步讓公司能提高野心<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Harvey 押注 AI 模型會快速變強，而且這些進步能直接用在法律工作上。模型進步得越快，公司敢訂的目標就越大。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=OFDm3T7pVlc&t=206s\" target=\"_blank\">03:26</a> Cognition 的核心賭注是 autonomous agents：Devon 自己有電腦，能執行、測試、修正程式，最後交出可運作的 PR；2026 年到目前為止，客戶的 agent 使用量是 2025 年最佳一週的 5 到 7 倍<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ autonomous agents 是能自己把整件事做完的 AI。Devin 有自己的電腦，會自己跑、測、修程式，交出 PR（等人審核的程式修改）。今年用量是去年最高那週的 5~7 倍。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=OFDm3T7pVlc&t=487s\" target=\"_blank\">08:07</a> Gamma 很早就投入 MCP，做出連接其他平台的 connector，改變了 GTM：使用者不用離開原本的工作流程，而且這也成為很重要的新用戶獲取管道<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ MCP 是讓 AI 接上外部工具的共通規格。Gamma 用它做 connector（接頭），讓人不用離開原本的工具就能用 Gamma，這也變成拉新客的管道，改變了 GTM（產品推廣和銷售的方式）。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=OFDm3T7pVlc&t=617s\" target=\"_blank\">10:17</a> Walden 說現在的模型會直接使用檔案系統，以前要自己打造的規劃系統和記憶系統，現在可以改用檔案系統，也就是大家正在從 RAG 轉向檔案系統<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ RAG 是先從資料庫找出相關段落，再交給 AI 參考的做法。Walden 說現在模型會自己開檔、寫檔，以前要另外做的規劃和記憶系統，現在用資料夾和檔案就能取代。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=OFDm3T7pVlc&t=710s\" target=\"_blank\">11:50</a> Harvey 經歷三個轉折點：foundation models、reasoning models、以 Opus 4.5 為代表的 coding agents；現在用 Opus 4.7 仿照律所的層級分工，建立多 agent 協作<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Harvey 經歷三波變化：foundation models（通用大模型）、reasoning models（回答前會先推理）、以 Opus 4.5 為代表的 coding agents（會自己寫程式做事）。現在用 Opus 4.7 照律所的層級分工，讓多個 agent 合作。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=OFDm3T7pVlc&t=801s\" target=\"_blank\">13:21</a> 每個轉折點都得整個重構產品，不能一決定就不改；Harvey 仍然按季規劃，但每週會做 retro，重新排優先順序<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ retro 是回顧會議，檢討哪些做法有效、哪些沒用。模型每換一代，Harvey 就得把產品整個重做，所以計畫不能定死：大方向按季排，但每週回顧、調整先後。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=OFDm3T7pVlc&t=893s\" target=\"_blank\">14:53</a> Walden 認為最值得投資的是 logging、observability 和 evals，才能判斷新模型是否做得更好，不會「在黑暗中開發」<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ logging 是記下 AI 每一步做了什麼；observability 是能回頭查看、重播每個決策；evals 是用固定考題評分。有了這些，才知道新模型是不是真的變好。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=OFDm3T7pVlc&t=1047s\" target=\"_blank\">17:27</a> Gamma 正在重構生成架構：不是在速度和品質中二選一，而是把兩者做成可以調整的參數，並交給使用者決定<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 產生內容時，通常得在「快」和「好」之間選一個。Gamma 正在重寫底層架構，把速度和品質做成可以調整的設定，讓使用者自己決定這次要快一點，還是精緻一點。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=OFDm3T7pVlc&t=1179s\" target=\"_blank\">19:39</a> Cognition 大約有 50 位工程師，每人使用約 10 個 Devon；目標是讓程式碼庫能「self-driving」，AI 只在需要時才拉人類介入<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Cognition 約 50 位工程師，每人帶約 10 個 Devin。目標是 self-driving 程式碼庫：從規劃、寫程式、審查到測試都交給 AI，需要時才找人。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=OFDm3T7pVlc&t=1364s\" target=\"_blank\">22:44</a> Harvey 先從基礎架構做起，例如用「ethical walls」建立硬性資料邊界，防止不同客戶的敏感資料互相混用<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ ethical walls 是律所的資料隔離規定：代表互相競爭客戶的律師，資料必須完全分開。Harvey 先把這種隔離做進系統底層，不讓不同客戶的機密混在一起。</span>\n\n📘 術語<br><b>autonomous agents</b>（自主代理）：不只會寫程式，還有自己的電腦，能執行、測試、修正，最後交出可運作的 PR<br><b>MCP</b>（MCP）：Gamma 用它建立連接其他平台的 connector，讓 Gamma 以 agent 的形式出現在使用者原本就在用的工具裡<br><b>observability</b>（可觀測性）：讓工程師能深入查看、重播 agent 的每個決策，判斷新模型能不能做得更好<br><b>ethical walls</b>（道德牆）：律所裡代表互相競爭客戶的同事之間，必須有硬性的資料邊界，防止資料混用<br><b>self-driving code bases</b>（自動駕駛程式碼庫）：由 AI 從頭到尾負責規劃、寫程式、審查和測試，需要時才拉人類進來\n\n📺 <a href=\"https://www.youtube.com/watch?v=OFDm3T7pVlc\" target=\"_blank\">Building AI-native: Inside the stacks powering Cognition, Gamma, and Harvey</a>（2026/05/06 · 28 分鐘）",
+        "tip": "💡 你可以怎麼用：挑 3~5 個你常交給 AI 的任務當固定考題，把題目和滿意的答案存起來；以後換新模型或新工具，就用同一組題目重跑一次比較，不要憑印象判斷。也可以查查你常用的工具有沒有 MCP 連接器，讓 AI 直接在原本的工具裡幫你做事。",
+        "quiz": {
+          "q": "根據 Walden 的說法，Cognition 目前工程團隊的規模與 Devon 使用情況是？",
+          "options": [
+            "約 10 位工程師，每人使用約 50 個 Devon",
+            "約 50 位工程師，每人使用約 10 個 Devon",
+            "約 70 位工程師，全部工作都交給 Devon，不需要人類審查",
+            "約 500 位工程師，每人使用 1 個 Devon"
+          ],
+          "correct": 1,
+          "why": "[19:39] Walden 說：Cognition 目前大約有 50 位工程師，每位工程師都在用約 10 個 Devon 處理需要做的事。"
+        }
+      },
+      {
+        "id": "yt_bJKdXhnw7NU",
+        "title": "🎬 為模型的跳躍式進步設計架構：與 Vercel 的 Guillermo Rauch 爐邊對談",
+        "category": "企業與客戶案例",
+        "text": "<b>Vercel CEO 分享內部怎麼用 agent、快速導入新模型，以及怎麼為下一代模型調整架構</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這支是 Vercel 執行長 Guillermo Rauch 的對談。Vercel 是幫人把網站和應用程式放上網的雲端平台。他分享公司內部怎麼大量使用 agent（能自己規劃步驟、動手把事情做完的 AI 助手），也談每次新模型變強，產品設計該怎麼跟著改。想知道 AI 變強之後工作方式會怎麼變，這支很值得看。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bJKdXhnw7NU&t=233s\" target=\"_blank\">03:53</a> Vercel 現在聚焦在 agentic infrastructure：幫大家部署 agents，也讓雲端基礎設施本身變成 agent，可以自我修復、自我最佳化、自我設定。<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Vercel 主打 agentic infrastructure，也就是專門給 AI agent 用的雲端底層。一方面幫客戶把 agent 架上線，一方面讓伺服器本身也變成 agent：出問題自己修，效能和設定也自己調。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bJKdXhnw7NU&t=329s\" target=\"_blank\">05:29</a> 拿到 Claude Code preview 之後，Guillermo 給全公司無上限的 token 預算。員工開始自己做工具，例如設計團隊的內部工具 Leap，形成「AI software factory」。<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Claude Code 是讓 AI 直接幫你寫程式的工具；token 是 AI 計算用量的單位。老闆不設用量上限，員工就自己做工具，像設計團隊做的 Leap。他稱這叫 AI software factory：人人都能自己打造工具。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bJKdXhnw7NU&t=626s\" target=\"_blank\">10:26</a> 在 AI Gateway 上，Opus tokens 的用量約占 20 幾 %，花費卻約占 70 幾 %。Guillermo 從中看到的是：大家都在追求能拿到的最強智慧。<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ AI Gateway 是 Vercel 讓客戶呼叫各家 AI 模型的中轉站。Opus 是 Claude 最強也最貴的等級，用量只占兩成多，花費卻占七成多。這表示大家寧可多花錢，也要用最聰明的模型。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bJKdXhnw7NU&t=690s\" target=\"_blank\">11:30</a> 導入 Opus 4.5 後，模型變聰明，v0 可以簡化架構，例如拿掉先前為了修語法錯誤而設計的 autofix 步驟；模型產出的品味也更好。<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ v0 是 Vercel 用對話就能生出網頁的產品。以前模型常寫出語法錯誤，得加一道 autofix（自動修錯）步驟來補救。換成 Opus 4.5 後錯誤變少，這步可以拿掉，做出來的畫面也更有品味。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bJKdXhnw7NU&t=754s\" target=\"_blank\">12:34</a> Vercel 把 flags 和實驗當成平台的一等公民，靠 A-B 測試快速擴大 Opus 的使用；今年初最近一次升級 Anthropic 模型以來，v0 的 credit 花費成長 2 倍。<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ flags 是功能開關，可以先讓部分使用者試新功能；A-B 測試是把使用者分兩組比結果。Vercel 平台內建這些，才能邊測邊擴大用 Opus。今年初換新模型後，v0 的用量點數（credit）花費翻倍。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bJKdXhnw7NU&t=935s\" target=\"_blank\">15:35</a> 最大的能力躍進是讓每個 agent 有自己的電腦（sandbox），減少固定工具，讓解法在 agentic 過程中自然浮現；工程重點轉向 tool approvals 和安全護欄。<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ sandbox 是隔離的電腦環境，AI 在裡面怎麼亂搞也傷不到外面。給每個 agent 一台，就不用先把工具寫死，讓它自己找解法。工程師改成專心設計哪些動作要人核准（tool approvals），以及安全防線。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bJKdXhnw7NU&t=1025s\" target=\"_blank\">17:05</a> Vercel 做了 CLI 工具 Agent Browser，讓 v0 能看輸出、截圖、讀開發者 logs，後來再用 skills 補強。原則是把人類有的工具交給 agent，不要微管理。<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ CLI 是打指令操作的程式。Agent Browser 讓 v0 能自己看成果、截圖、讀錯誤紀錄（logs），後來再用 skills（寫好的操作說明包）補強。原則是：人有的工具就交給 agent，不要一步一步盯著指揮。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bJKdXhnw7NU&t=1272s\" target=\"_blank\">21:12</a> 他看好非同步、少監督的模式：CTO 用 sandbox 讓 Claude Code 和 Codex 平行掃描大型程式碼庫，交回可重現的安全漏洞，已經和將近十幾個開源專案合作。<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 他看好交代完就讓 AI 自己跑、不用一直盯的做法。Vercel 的技術長（CTO）在 sandbox 裡同時派 Claude Code 和 OpenAI 的 Codex 掃大型程式碼，交回能重現的資安漏洞。已經和將近十幾個開源專案合作。</span>\n\n📘 術語<br><b>agentic infrastructure</b>（代理式基礎設施）：當 Claude Code 等工具的最佳基礎設施夥伴，幫忙部署 agents，並讓基礎設施本身變成 agent<br><b>AI software factory</b>（AI 軟體工廠）：軟體開發成本下降後，員工自己組出符合團隊需求的工具，像是設計工廠、安全檢查產線<br><b>AI Gateway</b>（AI 閘道）：Guillermo 稱它是「tokens 的 CDN」，彙整大量 Vercel 客戶的 token 使用量<br><b>sandbox</b>（沙盒）：給每個 agent 自己的電腦；模型寫的程式碼什麼都可能有，所以需要安全的隔離環境\n\n📺 <a href=\"https://www.youtube.com/watch?v=bJKdXhnw7NU\" target=\"_blank\">Architecting for model step-changes: A fireside with Vercel&#x27;s Guillermo Rauch</a>（2026/05/06 · 27 分鐘）",
+        "tip": "💡 你可以怎麼用：用 AI 做事時，別把每一步都規定死。把完整資料給它（檔案、截圖、錯誤訊息），講清楚目標，讓它自己想辦法；只有付款、刪檔這類重要動作，才設成要你確認。新模型出來時，回頭看看以前為了補 AI 弱點多加的步驟，也許可以直接刪掉。",
+        "quiz": {
+          "q": "根據 Guillermo 的說法，Opus tokens 在 Vercel AI Gateway 上大約占總花費多少？",
+          "options": [
+            "約 70 幾 %",
+            "約 90 幾 %",
+            "約 20 幾 %",
+            "約 50 %"
+          ],
+          "correct": 0,
+          "why": "[10:26] 他說 Opus tokens 的用量約占 20 幾 %，但花費約占 70 幾 %。"
         }
       },
       {
@@ -1439,6 +1835,24 @@ const CURRICULUM = {
           "correct": 3,
           "why": "[22:29] 字幕說 execution 可以用較小的模型，小模型需要幫忙時會向較大的模型尋求建議，例如 Sonnet 執行、Opus 當 advisor"
         }
+      },
+      {
+        "id": "yt_7xco5Qd2Oo8",
+        "title": "🎬 與 Dario Amodei 和 Daniela Amodei 的對談",
+        "category": "其他",
+        "text": "<b>兩位創辦人談成長、開發者生態、未來趨勢、公司使命與產品思維</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這支影片是 Anthropic 兩位創辦人 Dario 和 Daniela Amodei 的對談。他們講到公司成長快到算力不夠用、為什麼特別重視開發者，也講到未來 AI 會怎麼改變工作。想知道 Claude 背後的公司怎麼判斷趨勢、怎麼決定做什麼產品，這支值得看。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=7xco5Qd2Oo8&t=209s\" target=\"_blank\">03:29</a> Dario 表示，他和其他共同創辦人在 10 多年前就用 scaling laws 預測了指數成長，而且預測都成真了<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ scaling laws（規模定律）是一種規律：投入的算力和資料越多，模型能力就會穩定變強。創辦人十多年前就照這個規律畫出成長曲線，後來的發展真的一路照著走。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=7xco5Qd2Oo8&t=340s\" target=\"_blank\">05:40</a> 原本規劃每年成長 10x，但今年第一季的營收和用量若換算成年增率是 80x，所以算力吃緊；他們提到 SpaceX 算力合作，會盡快把更多算力提供給使用者<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 原本預估每年成長 10 倍，結果今年第一季換算成一年是 80 倍，遠超預期，所以算力（跑 AI 需要的電腦運算資源）不夠用。他們提到和 SpaceX 的算力合作，會盡快補給使用者。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=7xco5Qd2Oo8&t=466s\" target=\"_blank\">07:46</a> Daniela 認為開發者在許多方面是 Claude 最重要的使用者：Anthropic 內部多數人本身就是開發者，而開發者社群會給誠實的回饋<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 開發者就是寫程式的人。Anthropic 多數員工本身就是開發者，最懂這群人要什麼；而且開發者覺得不好用會直接講，這種誠實回饋最能幫產品變好。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=7xco5Qd2Oo8&t=655s\" target=\"_blank\">10:55</a> 大約一年前，Mike Krieger 問第一家一人十億美元公司何時出現，Dario 回答 2026，並認為目前進度符合預期<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 「一人十億美元公司」是指只靠一個人加上 AI，就做出價值十億美元的公司。大約一年前 Mike Krieger 問這何時會出現，Dario 答 2026 年，他覺得目前進度符合預期。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=7xco5Qd2Oo8&t=780s\" target=\"_blank\">13:00</a> 趨勢一：從單一 agent 走向多個 agent，就像管理一個由 Claude 組成的團隊，形成階層式分工<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ agent（代理）是能自己拆步驟、動手把任務做完的 AI。未來不會只用一個，而是像主管帶一整個 Claude 團隊，有的負責分派工作，有的負責執行，一層一層分工。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=7xco5Qd2Oo8&t=874s\" target=\"_blank\">14:34</a> 趨勢二：從提升個人生產力，進一步提升整個團隊和組織的生產力；同時要用 Amdahl&#x27;s Law 找出沒被加速的環節，例如安全性與驗證<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ AI 先讓個人變快，下一步是讓整個團隊變快。Amdahl&#x27;s Law 提醒：只加速其中一段，最慢的環節還是會卡住整體。程式可以跑測試自動驗證，安全性、正確性就難驗證，容易變瓶頸。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=7xco5Qd2Oo8&t=1088s\" target=\"_blank\">18:08</a> 公司使命的兩大支柱：開發對所有人都有益的技術，同時負責任地處理風險；內部文化價值是 hold light and shade，Mythos 和 Glasswing 就是謹慎發布的例子<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 使命是讓 AI 對所有人都有益，同時認真處理風險。hold light and shade 是內部文化，意思是機會和風險要一起看、一樣重視。Mythos 和 Glasswing 就是他們刻意謹慎發布的例子。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=7xco5Qd2Oo8&t=1461s\" target=\"_blank\">24:21</a> 很多產品要等模型能力夠了才做得出來，所以要一再重新嘗試。2022 年模型還不夠強，類似 Claude Code 的東西做不起來；另外 API 這個市場永遠不會消失<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 很多產品要等模型夠強才做得出來，所以要反覆重試。像 Claude Code（讓 Claude 幫你寫程式的工具），在 2022 年就做不起來。API 是讓別的程式直接串接 Claude 的管道，他們認為這個市場不會消失。</span>\n\n📘 術語<br><b>scaling laws</b>（規模定律）：創辦人 10 多年前用它在圖表上畫出預測：投入的花費和模型能力會隨時間成長<br><b>Amdahl&#x27;s Law</b>（Amdahl 定律）：當你加速了一件事，要去想還有哪些事沒被加速，而那些就會拖慢整體或出問題<br><b>hold light and shade</b>（兼顧光明與陰影）：Anthropic 的內部文化價值：同時看待技術的巨大機會與風險，兩者並重<br><b>verifiability</b>（可驗證性）：寫程式能靠跑單元測試來驗證，所以訓練進展快；但安全性、正確性這類比較難驗證\n\n📺 <a href=\"https://www.youtube.com/watch?v=7xco5Qd2Oo8\" target=\"_blank\">A conversation with Dario Amodei &amp; Daniela Amodei</a>（2026/05/06 · 33 分鐘）",
+        "tip": "💡 你可以怎麼用：以前試過、AI 做不好的事，換了新模型之後再試一次，結果可能完全不同。要把一件大工作拆給好幾個 Claude 對話分工時，先想清楚哪一步還是得靠你親自檢查，那一步最可能拖慢整件事。",
+        "quiz": {
+          "q": "Dario 說今年第一季的營收和用量，若換算成年增率是每年幾倍？",
+          "options": [
+            "10x",
+            "80x",
+            "100x",
+            "2x"
+          ],
+          "correct": 1,
+          "why": "[05:40] 字幕說第一季換算成年增率是每年 80x；10x 是他們原本規劃的成長幅度（[05:05]）"
+        }
       }
     ]
   },
@@ -1745,102 +2159,85 @@ const CURRICULUM = {
     ]
   }
 ,
-  grok_master: {
-    id: "grok_master",
-    name: "⚡ Grok・xAI 官方即時體系",
-    badge: "先鋒・xAI 即時情報與算力",
-    lessons: [
+  grok_yt: {
+    "id": "grok_yt",
+    "name": "🤖 Grok・官方影片字幕版",
+    "badge": "官方字幕實證",
+    "lessons": [
       {
-        id: "gk_x_search",
-        title: "🎬 X Search 獨家殺手鐧：全球即時輿情與突發脈搏直連",
-        category: "即時情報與輿情",
-        text: "在所有大模型中，Grok 擁有全網唯一且無可取代的核武器：**原生直連 X（Twitter）全球實時數據流**！\n\n**突破時間延遲的絕對防線**：\n• **三分鐘內的突發情報**：傳統搜尋引擎（Google/Bing）需要數十分鐘甚至數小時才能完成網頁爬蟲與索引更新；而當美股突發異動、某科技巨頭傳出並購或黑天鵝時，第一手情報永遠在 X 上率先爆發！\n• **原生 X Search 工具**：Grok 內建 `x_search` 工具，直接精準檢索全球最關鍵 KOL、權威記者、分析師推文，並進行社群情緒（Sentiment）加權分析。\n• **去偽存真**：不僅能抓推文，還能交叉比對多個信號源，在 30 秒內為你釐清是空穴來風的假消息，還是主力正動手的大事件！",
-        tip: "⚡ 情報之王：掌握盤後與盤中突發事件，調度 Grok 的 X Search 是全網最快且唯一的即時情報源！",
-        quiz: {
-          q: "美股盤中指數突然出現毫無預警的跳水急跌，想要在 30 秒內查證市場上剛剛瘋傳的即時消息與主力情緒，最佳的 AI 工具調度策略是？",
-          options: [
-            "調度 Grok 並啟用原生 X Search 工具，秒級檢索 X 全球即時情報與社群關鍵推文",
-            "等待明天的紙本早報印出來再看",
-            "叫模型憑半年前的歷史記憶猜測原因",
-            "重新開機三次"
+        "id": "yt_OvBayqdwUag",
+        "title": "🎬 Odyssey 試播片段，由 Genre AI 與 Grok Imagine 製作",
+        "category": "其他",
+        "text": "<b>改編奧德賽海妖段落的短劇：Odysseus 被綁在桅杆上抵抗 sirens 的歌聲</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這是一支用 AI 做的短劇，標題寫了用上 Grok Imagine（Grok 是 xAI 的 AI 助理，Grok Imagine 是它生成圖片和影片的功能）。內容改編希臘史詩《奧德賽》最有名的海妖橋段。值得看有兩個原因：可以看到 AI 影片把經典故事演到什麼程度，故事本身也在講「明知道會被誘惑時該怎麼辦」。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=OvBayqdwUag&t=8s\" target=\"_blank\">00:08</a> Odysseus 說要帶部下回家，並警告大家提防 sirens 和她們的歌聲，說她們的島上滿是腐爛的屍體。<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Odysseus（奧德修斯）是《奧德賽》的主角，打完仗要帶船員回家。他一開場就警告大家要小心 sirens（海妖，用歌聲引誘水手的怪物）。她們島上堆滿屍體，就是被歌聲引過去的人的下場。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=OvBayqdwUag&t=8s\" target=\"_blank\">00:08</a> Odysseus 要部下用蠟塞住耳朵，把他綁在桅杆上；就算他哀求放開，也要把他綁到皮膚流血。<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 他的做法是：船員耳朵塞蠟，根本聽不到；他自己留著耳朵，但先叫人把他綁死在桅杆上。關鍵是先講好「等一下我怎麼求都別放」，因為他知道到時候的自己靠不住。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=OvBayqdwUag&t=77s\" target=\"_blank\">01:17</a> sirens 說想和他分享能救他部下的祕密知識。Odysseus 說她們低估了他的力量，sirens 回答她們不在乎他有多強。<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 海妖不硬來，而是開條件：說有祕密能救他的部下，剛好打中他最在乎的事。他覺得自己夠強撐得住，海妖卻說強不強無所謂，意思是這種誘惑不是靠意志力硬撐就能贏的。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=OvBayqdwUag&t=139s\" target=\"_blank\">02:19</a> 結尾台詞：被慾望支配的人活不過 sirens，接著反問「你呢？」<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 最後一句把問題丟給觀眾：被慾望牽著走的人，都逃不過海妖。「你呢？」就是在問你：有沒有什麼東西一出現，你就會把原本的決定丟到腦後。</span>\n\n📘 術語<br><b>sirens</b>（海妖（賽蓮））：字幕裡說她們用歌聲引誘人，島上滿是腐爛的屍體；被慾望支配的人活不過她們。\n\n📺 <a href=\"https://www.youtube.com/watch?v=OvBayqdwUag\" target=\"_blank\">Odyssey Pilot Scene featuring Genre AI and Grok Imagine</a>（2026/09/18 · 2 分鐘）",
+        "tip": "💡 你可以怎麼用：想用 AI 做影片時，可以學它挑一段大家都熟的經典故事，只拍一個關鍵場景，觀眾不用前情提要就看得懂。故事的道理也能直接拿來用：先幫自己「綁桅杆」，例如睡前把手機放在客廳，不要跟當下的意志力硬拚。",
+        "quiz": {
+          "q": "Odysseus 要部下怎麼應付 sirens 的歌聲？",
+          "options": [
+            "靠 Odysseus 的力量和 sirens 正面對決",
+            "跟 sirens 交換祕密知識",
+            "連夜划船繞過 sirens 的島",
+            "用蠟塞住耳朵，並把他綁在桅杆上"
           ],
-          correct: 0,
-          why: "Grok 原生深度整合 X（Twitter）即時數據流，能在突發事件爆發的前幾十秒內迅速捕捉第一線消息與市場情緒，是掌握即時輿情的最強利器！"
+          "correct": 3,
+          "why": "[00:08] Odysseus 說「Fill your ears with wax and bind me to the mast.」"
         }
       },
       {
-        id: "gk_colossus",
-        title: "🎬 Colossus 算力巨獸：十萬卡 H100 訓練的極速迭代",
-        category: "超算硬體與迭代",
-        text: "xAI 在美國曼菲斯（Memphis）以短短 122 天創下人類工程奇蹟：打造了全球最大的 AI 超算叢集 **「Colossus（巨像）」**！\n\n**十萬卡 GPU 的狂暴威力**：\n• **100,000～200,000 張 NVIDIA H100/H200**：單一龐大算力叢集日夜並行，擁有全球最高的訓練與推論吞吐量。\n• **極速迭代節奏**：從 Grok 4.5、4.6 到 4.7，模型迭代週期壓縮至幾週之內，每一次升級推理能力都產生指數級飛躍。\n• **低延遲高吞吐**：在處理超長代碼生成或巨量上下文時，背後強大的分散式網路架構保證了極高打字速度，毫無卡頓！",
-        tip: "🏎️ 算力奇蹟：Colossus 超算叢集是 Grok 極速推論與幾週一迭代背後的鋼鐵基石！",
-        quiz: {
-          q: "支撐 xAI 與 Grok 模型能夠實現極速推論吞吐與數週內版本快速迭代的核心硬體基礎設施是？",
-          options: [
-            "幾百台家用遊戲主機",
-            "xAI 打造的 Memphis「Colossus（巨像）」十萬卡級 H100 超級計算叢集",
-            "太陽能小算盤",
-            "完全不依賴任何 GPU 算力"
+        "id": "yt__Prvw5G-gEc",
+        "title": "🎬 Grok Bot Galaxy 第三天",
+        "category": "其他",
+        "text": "<b>72 小時用 Grokbot 打造遊戲工作室，第三天正式上線第一款遊戲</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這是 Grokbot Galaxy 活動的第三天，也是最後一天：團隊要在 72 小時內靠 Grokbot 從零做出一間遊戲公司，今天正式推出第一款遊戲。影片裡示範了怎麼讓一群 AI 自己分工、寫程式、測試，也有行銷人分享怎麼用它做內部工具。就算你不寫程式，也能看到 AI 從陪你聊天的助手，變成真的能分工做事的團隊。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=_Prvw5G-gEc&t=374s\" target=\"_blank\">06:14</a> 第三天是上線日：團隊在舊金山 Grokbot Galaxy 活動現場，要在 72 小時內打造一間公司。主持人是 Matt、Lauren（potato）和 Roshan<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 三天挑戰今天收尾。團隊在舊金山的活動現場，要在 72 小時內做出一間公司，今天要把成品拿出來給大家看。主持人是 Matt、Lauren（綽號 potato）和 Roshan。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=_Prvw5G-gEc&t=621s\" target=\"_blank\">10:21</a> Lauren 用她自己的 p-stack plugin 裡的 potato mode skill。下 /potato mode 搭配 full autopilot，就會把計畫拆成小階段，由 agents 實作 PR、驗證並 fuzz，最後自動 merge<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ skill 是教 AI 做某件事的說明書，plugin 是把一包 skill 裝進工具的外掛。開了這個模式，AI 會自己把計畫切成小步，派 agent（自動執行的 AI 助手）寫程式、測試、故意亂操作找 bug，全部過關就自動併進正式版本。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=_Prvw5G-gEc&t=686s\" target=\"_blank\">11:26</a> 一個晚上就合併了超過一百個 PR（提到 145、170）。另外有一個名叫 play 的 QA bot，只要 PR 通過 CI，就會實際把整個遊戲玩一遍並回饋意見<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ PR 是「我改了這些程式碼」的修改申請，merge 就是核准併入。一晚上併了一百多份，人根本看不完。所以有個 QA（品質檢查）bot，修改只要通過自動測試，它就真的把遊戲玩一輪，再回報問題。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=_Prvw5G-gEc&t=1941s\" target=\"_blank\">32:21</a> MarOps 講者說，有了 Grokbot 就能「打造工具，而不只是訂規則」：直接做出內部 app，讓團隊照著規則做事，不必只靠發 checklist 要大家遵守<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ MarOps 是行銷營運，負責讓行銷團隊的流程跑得順。以前訂了規則只能發檢查表，拜託大家照做。現在可以直接做一個小工具，把規則寫進去，大家用這個工具就自然照規則走。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=_Prvw5G-gEc&t=2139s\" target=\"_blank\">35:39</a> 「自動完成的待辦清單」：Fisher 監看所有收件匣，把新訊息交給 chief of staff bot OP1 拆成任務，再轉給專門的 bot（例如 territory planning bot）先產出初稿<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ bot 叫 Fisher 盯著所有收件匣，新訊息交給像幕僚長一樣負責分派工作的 OP1，拆成一件件待辦，再轉給專門的 bot 先寫初稿。等你打開電腦，很多事已經做好一半。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=_Prvw5G-gEc&t=2855s\" target=\"_blank\">47:35</a> 講者用 Grokbot 做了一個「leads 的交友 app」，左滑就結束 lead，右滑就排進後續 sequence。從點子到上線兩週，實際開發只花 10 小時，上線後 leads 審閱率明顯提升<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ leads 是可能成交的潛在客戶，sequence 是事先排好的一連串追蹤信。審客戶名單很無聊，改成像滑交友軟體一樣左右滑，大家就真的會去看。開發只花 10 小時。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=_Prvw5G-gEc&t=6305s\" target=\"_blank\">105:05</a> 遊戲正式上線：ThursdayArena.com 和 X 帳號 @ThursdayArena 是唯一官方來源。這是一款卡牌自動對戰遊戲，卡牌都來自 Grokbot marketplace 的 bot<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 遊戲叫 Thursday Arena，只有這個網站和這個 X 帳號是官方的，其他管道都不算。玩法是卡牌自動對戰：你出牌組，雙方自己打。每張卡都是 Grokbot 市集（大家分享 bot 的地方）上真的 bot。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=_Prvw5G-gEc&t=6681s\" target=\"_blank\">111:21</a> 技術架構：後端用 Go 寫，跑在 Vercel Functions 上（serverless），資料庫用 PlanetScale，登入驗證用 Clerk。前端用 Zod 解析後端回應，確保型別安全<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 伺服器程式用 Go 語言寫，放在 Vercel 的 serverless 服務上（有人用才啟動，不用自己顧主機）。PlanetScale 存資料，Clerk 管登入。畫面那端用 Zod 檢查收到的資料格式，免得欄位一改畫面就讀不到。</span>\n\n📘 術語<br><b>potato mode</b>（potato 模式）：p-stack 裡的一個 skill，教 bot 做事更嚴謹，也更擅長協調其他 bots 和 agents<br><b>p-stack</b>（p-stack 技能包）：Lauren 個人整理的一組 skills，有 cursor plugin 和 Grokbot plugin 兩種版本<br><b>fuzzing</b>（模糊測試）：像重度使用者一樣實際操作 app，點遍每個按鈕、試各種邊界情況，想辦法把它弄壞<br><b>type safety</b>（型別安全）：確保前後端各自修改欄位時不會互相衝突，避免 UI 讀不到資料<br><b>PLG (product led growth)</b>（產品導向成長）：使用者自己註冊使用的商業模式，重點是吸引使用者、了解他們在產品裡怎麼用\n\n📺 <a href=\"https://www.youtube.com/watch?v=_Prvw5G-gEc\" target=\"_blank\">Grok Bot Galaxy Day 3</a>（2026/09/18 · 474 分鐘）",
+        "tip": "💡 你可以怎麼用：挑一件你每週都在重複做的事，請 AI 直接做成小工具或自動流程，別只寫一份 SOP 叫大家照做。交代 AI 做大事時，也學 potato mode：叫它先拆成小步驟，每一步做完先自己檢查，再往下做。",
+        "quiz": {
+          "q": "講者提到那個「leads 交友 app」，實際開發（live build）花了多少時間？",
+          "options": [
+            "10 小時",
+            "2 小時",
+            "72 小時",
+            "24 小時"
           ],
-          correct: 1,
-          why: "Colossus 是全球規模最大的單一 AI 超算叢集之一，為 Grok 系列模型提供了前所未有的極限訓練吞吐量與低延遲推論支援！"
+          "correct": 0,
+          "why": "[47:35] 講者說從點子到上線花了兩週，但 live build time 實際上只有 10 小時"
         }
       },
       {
-        id: "gk_openai_compat",
-        title: "🎬 OpenAI 相容協定：零磨合無縫平移的開發者架構",
-        category: "開發者生態",
-        text: "xAI 在設計 Grok API 時採取了最聰明的工程決策：**100% 擁抱 OpenAI 相容協定（OpenAI-compatible Format）**！\n\n**開發者零遷移成本**：\n• **代碼一行不改**：如果你原本的專案或 Agent 系統已經基於 OpenAI SDK 撰寫，只需將 `base_url` 改為 `https://api.x.ai/v1`，填入 `XAI_API_KEY`，系統立刻無縫切換到 Grok！\n• **全套 Tool Use 完美支援**：Function Calling、JSON Schema、System Prompt、Streaming 串流輸出全面無縫相容。\n• **雙引擎熱備份**：在企業級 Agent 系統中，可將 OpenAI 與 Grok 設為互為備援，當一邊遇上升級維護時，另一邊能零延遲接管流量！",
-        tip: "🔄 雙擎自由：相同的介面規範，讓你隨時在 OpenAI 與 Grok 之間任意切換，永無供應商鎖定！",
-        quiz: {
-          q: "如果你現有的專案原本使用 OpenAI API 跑 Agent，想切換至 xAI Grok 模型，最標準的工程操作是？",
-          options: [
-            "把整個專案的代碼架構全數刪除重寫",
-            "保留既有 Tool Calling 與訊息結構，僅需將 API Base URL 指向 xAI 端點並更換 API 金鑰即可無縫切換",
-            "必須手動把程式碼編譯成組合語言",
-            "重新購買十台伺服器"
+        "id": "yt_bRt1b4SHJ1g",
+        "title": "🎬 Grok Bot Galaxy 第二天：實際上發生了什麼",
+        "category": "其他",
+        "text": "<b>整理 GrokBot Galaxy 第二天：團隊轉向做出 Cupcake 遊戲，以及業務、客服的 agent 工作流</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這支是 xAI 活動 GrokBot Galaxy 第二天的紀錄：一個小團隊用一群 AI 從零做一款遊戲，也示範業務和客服怎麼交給 AI 處理。值得看是因為它把好的和翻車的地方都攤開了。它也讓人看到，用 AI 把 build test learn loop（做出來、測試、學到教訓再改的循環）加快，實際上會卡在哪。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bRt1b4SHJ1g&t=31s\" target=\"_blank\">00:31</a> GrokBot Galaxy 是 xAI 為期 3 天的活動，Matt Palmer、Lauren Tan、Roshan Sadhnani 用 GrokBot 從零打造產品；第二天主題是業務、sales engineering、sales development 和客服<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 這是 xAI 辦的三天活動，三個人用 GrokBot（xAI 的 AI 機器人）從零做產品。第二天談業務：sales engineering 是幫客戶解決技術問題的業務，sales development 是開發新客戶，外加客服。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bRt1b4SHJ1g&t=61s\" target=\"_blank\">01:01</a> 原本的概念太大，時間不夠，團隊決定簡化，改做 Cupcake：把可分享的 GrokBot 範本變成遊戲角色（有 charisma、dexterity、intelligence 屬性），玩家組 3 人隊伍、選隊長、打 3 回合自動對戰<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 原本的點子太大，時間內做不完，團隊就 pivot（中途轉向，把目標縮小），改做 Cupcake。大家分享的 bot 範本會變成有魅力、敏捷、智力數值的角色，玩家組三人隊、選隊長，自動打三回合。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bRt1b4SHJ1g&t=121s\" target=\"_blank\">02:01</a> 第二天結束時，已有 X 登入、後端、隊長選擇、拖放排陣容、配對、3 回合對戰和賽後評分變化；不過用連結匯入 bot 在直播中失敗、排行榜沒正確顯示、廣告功能還沒測完<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 一天下來主體已經能跑：X 帳號登入、後端（在背後存資料、跑規則的伺服器）、排陣、配對、對戰、賽後分數變化都有了。不過貼連結匯入 bot 在直播時失敗，排行榜和廣告也還沒好。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bRt1b4SHJ1g&t=183s\" target=\"_blank\">03:03</a> 團隊沒用一個大 bot 包辦全部，而是分成工程、設計、生圖、營運、廣告、測試等專職 agent；play tester bot Crumb 負責找 bug，Dr. Eggbot 負責審查其他 agent 的成果<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ agent 是能自己接任務、動手做事的 AI。團隊不靠一個萬能 bot，而是像公司分部門：工程、設計、生圖、營運、廣告、測試各一個。play tester Crumb 到處點找 bug，Dr. Eggbot 負責驗收。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bRt1b4SHJ1g&t=213s\" target=\"_blank\">03:33</a> Dr. Eggbot 發現瓶頸之一就是人類團隊：太多變更在等人 merge 或核准。agent 加得再多，也不會自動帶來更多產出<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ bottleneck 是整條流程裡最卡的那一段。Dr. Eggbot 發現卡的是人：AI 改好的東西都在等人 merge（把修改併進正式版本）或核准。AI 加再多，人審不完，產出也不會變多。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bRt1b4SHJ1g&t=244s\" target=\"_blank\">04:04</a> Sales development 示範處理 25 筆潛在客戶名單，系統只準備草稿，要不要寄出還是由人決定<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 業務示範：AI 一次整理 25 個潛在客戶，把聯絡信草稿寫好，但要不要寄出還是人決定。信寄出去就收不回來，對方看到的是公司，所以最後一關留給人。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bRt1b4SHJ1g&t=277s\" target=\"_blank\">04:37</a> 客服用 build、reply、alert、tune 四個 bot，串接 Plane 處理退款申請；bot 可以調查、擬稿，最後決定由人負責<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 客服拆成四個 bot，分別負責建置、回覆、警示、調校，接上 Plane（團隊追蹤工作項目的工具）來處理退款申請。bot 負責調查、寫回覆草稿，退不退錢由人拍板，因為這牽涉到真的錢。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=bRt1b4SHJ1g&t=338s\" target=\"_blank\">05:38</a> 給一般上班族的建議：從一個可重複的工作流開始、每個 bot 給明確角色、定義交接；寄送、退款、購買、發布、上線要經過核准；先用實際案例測試；衡量流程，不只看結果<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 先挑一件常重複做的事交給 AI，每個 bot 只管一件事，講清楚誰做完交給誰。寄信、退款、付款、發布、上線這種收不回來的動作要人核准。先拿真實案例試，也要看流程卡在哪，不能只看成果。</span>\n\n📘 術語<br><b>pivot</b>（轉向）：原本概念對剩下的時間來說太大，團隊於是簡化點子，改做 Cupcake<br><b>play tester bot</b>（試玩測試 bot）：名叫 Crumb 的 bot，會在產品裡到處點、找 bug<br><b>bottleneck</b>（瓶頸）：Dr. Eggbot 找出的卡點，其中之一是太多變更在等人 merge 或核准<br><b>build test learn loop</b>（建置-測試-學習循環）：這個小團隊用 agent 把這個循環壓縮變快\n\n📺 <a href=\"https://www.youtube.com/watch?v=bRt1b4SHJ1g\" target=\"_blank\">Grok Bot Galaxy Day 2: What Actually Happened</a>（2026/09/17 · 6 分鐘）",
+        "tip": "💡 你可以怎麼用：挑一件你每週都在做的事，例如回覆某類客戶來信，讓 AI 先整理資料、寫好草稿，最後由你確認再寄出。跑幾輪以後，看時間是卡在 AI 還是卡在你自己審稿，再決定下一步要調整哪裡。",
+        "quiz": {
+          "q": "影片裡，審查其他 agent 成果的 Dr. Eggbot 找出的瓶頸之一是什麼？",
+          "options": [
+            "人類團隊本身：太多變更在等人 merge 或核准",
+            "缺少負責生圖的 agent",
+            "後端資料庫容量不夠",
+            "模型回應速度太慢"
           ],
-          correct: 1,
-          why: "xAI 採用 OpenAI-compatible 標準，這讓開發者能夠以極低的零成本在兩者之間無痛遷移或進行多模型動態備援！"
+          "correct": 0,
+          "why": "[03:33] 字幕說 Dr. Eggbot 找出瓶頸，其中之一是人類團隊本身，太多變更在等人 merge 或核准"
         }
       },
       {
-        id: "gk_voice_agent",
-        title: "🎬 Voice Agent Builder：端到端低延遲語音代理工廠",
-        category: "語音代理前沿",
-        text: "官方最新發布的 《Grok Voice Agent Builder》 解鎖了下一代人機語音互動範式：\n\n**告別傳統慢半拍的三段式語音**：\n• **傳統的痛點**：舊架構必須先經過 STT（語音轉文字）➡️ 送進 LLM 思考 ➡️ 再走 TTS（文字轉語音），中途延遲高達 2~3 秒，對話卡頓像在講對講機。\n• **端到端原生語音閉環**：Grok Voice Agent 實現極低延遲的語音輸入直達語音輸出，延遲壓縮至 300 毫秒內（接近人類自然交談反應）！\n• **自然打斷（Interruption Handling）**：支援隨時插話打斷，Agent 會自然停下來聽你說，並具備擬真語調與情緒起伏。",
-        tip: "🎙️ 語音新標準：端到端低延遲＋支援隨時插話打斷，這才是真正像真人的語音代理！",
-        quiz: {
-          q: "現代原生語音 Agent（如 Grok Voice Agent）相比傳統「STT ➡️ LLM ➡️ TTS」三段式架構，最核心的體驗突破是？",
-          options: [
-            "把對話延遲大幅壓縮至幾百毫秒以內，實現近乎人類真人流暢度的即時雙向交流與自然插話打斷",
-            "強制將所有聲音轉成機器電音",
-            "每次講話前必須等待 10 秒鐘",
-            "不能使用任何麥克風"
+        "id": "yt_PMTsvd5Jld4",
+        "title": "🎬 Grok Bot Galaxy 直播：第 1 天",
+        "category": "其他",
+        "text": "<b>三人用 Grockbot 72 小時從零打造公司，中間穿插 Grockbot 101 教學示範</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這是 Grok 官方直播的第一天：三位主持人要在 72 小時內，主要靠 Grockbot 這類 AI 工具從零做出一間公司，中間穿插 Grockbot 入門教學。如果你想知道 AI 能不能真的幫你把事情做完，而不只是回答問題，這支很適合看。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=PMTsvd5Jld4&t=0s\" target=\"_blank\">00:00</a> Lauren、Roshan、Matt Palmer 預計在 3 天（72 小時）內，從零開始用 Grockbot 等 AI 工具打造一間公司。開播時連要做什麼點子都還沒決定<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Lauren、Roshan 和 Matt Palmer 要在三天內從零開一間公司，開播時連點子都還沒有。看點不在成品多厲害，而是看 AI 從想點子到實際執行，能幫上哪些步驟。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=PMTsvd5Jld4&t=153s\" target=\"_blank\">02:33</a> Grockbot Galaxy 直播挑戰：分享你怎麼把 Grockbot 用在工作上。首獎是到 Starbase 看 Starship 發射，第二名以下可以參觀 Hawthorne 的 SpaceX 火箭工廠<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 官方同時辦比賽，請大家分享怎麼用 Grockbot 工作。首獎是去 SpaceX 在德州的發射基地 Starbase 看 Starship 火箭發射，其他得獎者可以參觀 SpaceX 在洛杉磯地區 Hawthorne 的火箭工廠。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=PMTsvd5Jld4&t=214s\" target=\"_blank\">03:34</a> 參加方式：追蹤 Grok 和 bot 帳號，在 X 上引用官方貼文，附上 bot 的說明和 share template 連結，截止日為 9 月 29 日<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 參加方式：追蹤 Grok 和 bot 帳號，在 X 上引用官方貼文，附上你的 bot 用途說明和 share template 連結（把 bot 做成範本，別人能直接拿去改）。9 月 29 日截止。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=PMTsvd5Jld4&t=1978s\" target=\"_blank\">32:58</a> Grockbot 的設計概念是把 AI 當隊友：每個 bot 負責一類工作，會記住你的偏好；它有自己的電腦，全部在雲端執行，筆電闔上也會繼續做<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Grockbot 不只是一問一答的聊天工具，更像分工的同事：每個 bot 專管一類事，而且會記住你的習慣。它在雲端（遠端伺服器）有自己的電腦，所以你闔上筆電，它還是會繼續做。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=PMTsvd5Jld4&t=2660s\" target=\"_blank\">44:20</a> 用「teach a task」親自操作 bot 的電腦示範一次（例如加投影片動畫），bot 看完會把錄製內容轉成 skill，以後可以重複使用<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ teach a task 就是「做一次給它看」：你直接操作 bot 的電腦，例如幫投影片加動畫。它看完會整理成 skill，也就是可以重複使用的做法。下次同樣的事交給它就好，不用再教。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=PMTsvd5Jld4&t=2842s\" target=\"_blank\">47:22</a> 可以在設定裡寫規則，指定哪些事要先問你（例如回 email）。底層還有一個 autoreview classifier，會判斷每個動作的風險高低<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 你可以在設定裡寫規則，例如「回 email 前先問我」。系統底層還有 autoreview：用 classifier（自動判斷類別的模型）評估每個動作的風險高低，決定要不要先請你批准。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=PMTsvd5Jld4&t=3245s\" target=\"_blank\">54:05</a> bot 之間可以互傳訊息、分工合作，也可以開 group chat 看它們怎麼溝通；還能建立 manager 或 chief of staff bot 定期收集進度和卡關的狀況<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ bot 之間能互傳訊息、分工合作，你也能開 group chat（群組聊天）看它們怎麼溝通。還可以設一個 manager 或 chief of staff（幕僚長）bot，定期收集大家的進度和卡關的地方。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=PMTsvd5Jld4&t=6932s\" target=\"_blank\">115:32</a> 團隊最後決定做 pop-up 平台（Pop-up OS），同時 dog food 自己的產品，在舊金山實際辦一場美食 pop-up<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 他們最後決定做 Pop-up OS，一個幫人辦 pop-up（快閃活動、期間限定小店）的平台。他們也要 dog food，就是自己先當用戶，實際在舊金山辦一場美食快閃來測試產品。</span>\n\n📘 術語<br><b>Pstack</b>（Pstack 外掛）：Lauren 開源的外掛，收錄她做嚴謹工程工作用的 skills 和 workflows，可以在 Grockbot marketplace 搜尋安裝<br><b>teach a task</b>（教學任務）：你親自操作 bot 的電腦示範一次，bot 看完後把錄製內容轉成 skill<br><b>autoreview</b>（自動審查）：底層用 classifier 判斷動作的風險，決定要不要請你批准<br><b>routine</b>（例行任務）：讓 bot 定時執行工作，例如每天早上 9 點整理投影片的變更<br><b>share as template</b>（分享為範本）：把 bot 分享成範本給團隊或 marketplace，別人拿去可以再依自己需求調整\n\n📺 <a href=\"https://www.youtube.com/watch?v=PMTsvd5Jld4\" target=\"_blank\">Grok Bot Galaxy Livestream  - day 1</a>（2026/09/16 · 525 分鐘）",
+        "tip": "💡 你可以怎麼用：先挑一件你每週都要重複做的電腦工作，例如整理投影片。用 teach a task 示範一次存成 skill，再用 routine（讓 bot 定時自動執行）排在每天早上跑。想參加比賽的話，記得 9 月 29 日前把你的用法分享到 X。",
+        "quiz": {
+          "q": "根據講者說明，在 Grockbot 裡 duplicate（複製）一個 bot 之後，新的 bot 會是什麼狀態？",
+          "options": [
+            "只複製 memory，不複製 description",
+            "Grockbot 不支援複製 bot",
+            "完整複製原本 bot 的所有 memory",
+            "保留相同 persona，但 context 和 memory 從零開始"
           ],
-          correct: 0,
-          why: "端到端語音架構消除了中途多次格式轉譯的累積延遲，能達到人類對話級別的即時反饋與自然的插話交互！"
-        }
-      },
-      {
-        id: "gk_imagine",
-        title: "🎬 Grok Imagine 1.5：14 張參考圖的多模態影音一致性突破",
-        category: "視覺與影像生成",
-        text: "在官方展示的《Use 14 references in Grok Imagine videos》中，xAI 攻克了長久以來 AI 生成影片的最大難題：**角色與風格的一致性跳針**！\n\n**影視級多模態生成突破**：\n• **14 張參考圖輸入（14 Reference Frames）**：以往 AI 生產影片只能給一張圖，鏡頭一切換人物臉部就變形走樣；Grok Imagine 允許輸入多達 14 張不同角度、不同光影的角色與場景參考圖！\n• **分鏡連續性**：模型深度鎖定主角外貌、服裝細節與背景物理特徵，生成複雜運鏡鏡頭時，主角臉孔與光影完全保持同一人！\n• **文字即分鏡**：結合自然語言提示詞，精確控制運鏡軌跡（推鏡、拉遠、環繞），讓個人創作者也能具備好萊塢級導演能力。",
-        tip: "🎬 視覺新高度：多圖參考鎖定特徵，徹底告別 AI 影片鏡頭跳針走樣的歷史痛點！",
-        quiz: {
-          q: "Grok Imagine 1.5 影片生成技術支援高達 14 張參考圖（References），解決了 AI 影視製作中哪項最棘手的問題？",
-          options: [
-            "讓影片的檔案大小自動縮小為 1KB",
-            "解決跨鏡頭運鏡時角色外貌、服裝細節與場景風格跳針走樣的痛點，實現高度連續一致的視覺分鏡",
-            "強制刪除影片的所有顏色",
-            "讓影片只能播放 3 秒鐘"
-          ],
-          correct: 1,
-          why: "支援多達 14 張參考圖能讓神經網路在多視角運鏡中深度鎖定目標特徵，保證鏡頭切換時角色與畫風的絕對一致性！"
+          "correct": 3,
+          "why": "[85:55] 講者說複製 bot 時，新 bot 會以全新的 context 和 memory 開始，persona 維持一樣，但原本的記憶都不會帶過去"
         }
       }
-    ]  },
+    ]
+  },
   blender_3d: {
     id: "blender_3d",
     name: "🎨 3D 視覺・Claude + Blender MCP",
