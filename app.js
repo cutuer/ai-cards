@@ -279,6 +279,42 @@ const CURRICULUM = {
     "badge": "官方字幕實證",
     "lessons": [
       {
+        "id": "yt_S-sYlFiGFv8",
+        "title": "🎬 Claude Code 團隊如何使用 Claude Code",
+        "category": "Claude Code",
+        "text": "<b>Claude Code 團隊成員聊這一年的工作方式轉變：從 Claude Tag、loops、workflows 談到 code review</b><br>▸ <a href=\"https://www.youtube.com/watch?v=S-sYlFiGFv8&t=60s\" target=\"_blank\">01:00</a> 有成員約 70~80% 的工作在 Claude Tag 上完成；Claude Tag 是一個 Slack native agent，能查到產品脈絡與團隊決策。其餘約 20% 才開 TUI 或 desktop app 微調<br>▸ <a href=\"https://www.youtube.com/watch?v=S-sYlFiGFv8&t=184s\" target=\"_blank\">03:04</a> to do list 的例子：Sonnet 3.5 時代，模型給五件事常只做三件就放棄，加上 to do list 效果很好；一年後就不需要了，所以對自己做的功能不要太執著<br>▸ <a href=\"https://www.youtube.com/watch?v=S-sYlFiGFv8&t=337s\" target=\"_blank\">05:37</a> ask user question tool 當初很難設計到讓 Claude 呼叫得好；現在成員反而較常讓 artifact（HTML、含圖表與 mockup）來向自己提問<br>▸ <a href=\"https://www.youtube.com/watch?v=S-sYlFiGFv8&t=430s\" target=\"_blank\">07:10</a> loops 的演進：從在筆電本機跑，到遠端 developer box，再到 Claude Code on the web 的 hosted containers；跑在雲端後可以設 routines，例如每天整理回饋、分級，並修掉有把握的問題<br>▸ <a href=\"https://www.youtube.com/watch?v=S-sYlFiGFv8&t=556s\" target=\"_blank\">09:16</a> Code review 的轉變：挑小毛病（nit pick）的事交給 Claude 自動處理，人類 reviewer 專注在大方向，例如 API 為什麼這樣設計、服務邊界為什麼劃在那裡<br>▸ <a href=\"https://www.youtube.com/watch?v=S-sYlFiGFv8&t=677s\" target=\"_blank\">11:17</a> Workflows 起源於 code review：先 fan out 找 bug，再從三種觀點做 adversarial review，篩出最需要人看的問題；同一招也能用在效能問題或 deep research<br>▸ <a href=\"https://www.youtube.com/watch?v=S-sYlFiGFv8&t=799s\" target=\"_blank\">13:19</a> Workflows 由 agent 寫程式來編排 subagent，結合確定性的程式碼（例如 for loop 不會漏掉項目）與 agentic 行為，讓人更信任結果<br>▸ <a href=\"https://www.youtube.com/watch?v=S-sYlFiGFv8&t=891s\" target=\"_blank\">14:51</a> Claude Tag 的使用者介面和 transcript 分開：Claude 透過工具在 Slack 傳訊息，看不到內部思考，但有連結可以看完整 transcript\n\n📘 術語<br><b>Claude Tag</b>（Claude Tag（產品名））：住在 Slack 裡的 Slack native agent，能查到產品脈絡與團隊做過的決策<br><b>fan out</b>（扇出／平行展開）：讓大量 agent 分頭搜尋（例如找 bug），再把結果彙整回來，類似 MapReduce<br><b>test time compute</b>（測試時運算）：花大量 inference 時間，把更多思考和運算投入同一個問題<br><b>adversarial review</b>（對抗式審查）：針對每個 bug，從三種不同觀點檢視它是不是真的 bug<br><b>routines</b>（例行任務）：Claude 跑在雲端後可以設定，例如每天看回饋、分級，並修掉有把握的問題\n\n📺 <a href=\"https://www.youtube.com/watch?v=S-sYlFiGFv8\" target=\"_blank\">How the Claude Code team uses Claude Code</a>（2026/09/02 · 22 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片中有成員提到，現在大約多少比例的工作是在 Claude Tag 上完成的？",
+          "options": [
+            "大約一半",
+            "大約 70~80%",
+            "幾乎 100%",
+            "大約 30~40%"
+          ],
+          "correct": 1,
+          "why": "[01:00] 成員說「70 to 80% of my work happens on Claude Tag now」，剩下約 20% 才開 TUI 或 desktop app。"
+        }
+      },
+      {
+        "id": "yt_b8SV4U6fEIc",
+        "title": "🎬 Claude Code 的 auto mode 如何運作",
+        "category": "Claude Code",
+        "text": "<b>說明 auto mode 如何用 classifier 與 probe 審查動作，以及如何設定信任邊界</b><br>▸ <a href=\"https://www.youtube.com/watch?v=b8SV4U6fEIc&t=0s\" target=\"_blank\">00:00</a> 研究顯示 Claude Code 有 97% 的 permission prompt 會被核准；逐一核准在多步驟任務中容易造成 approval fatigue，因此推出 Auto Mode<br>▸ <a href=\"https://www.youtube.com/watch?v=b8SV4U6fEIc&t=31s\" target=\"_blank\">00:31</a> Auto Mode 不是讓 Claude 核准自己的動作，因為那等於自己寫、自己審、自己 merge PR，會帶來偏誤<br>▸ <a href=\"https://www.youtube.com/watch?v=b8SV4U6fEIc&t=65s\" target=\"_blank\">01:05</a> Claude 提出的動作會交給另一個 classifier 審查。它看得到你的訊息和 Claude 的 tool calls，看不到 Claude 的推理、回覆和 tool output，會把每個動作拿來比對你的意圖<br>▸ <a href=\"https://www.youtube.com/watch?v=b8SV4U6fEIc&t=99s\" target=\"_blank\">01:39</a> 動作被拒時，Claude 通常會自己找更安全的做法，例如改推到新 branch；如果一直被拒，auto mode 會暫停，交給你自己核准<br>▸ <a href=\"https://www.youtube.com/watch?v=b8SV4U6fEIc&t=131s\" target=\"_blank\">02:11</a> 伺服器端 probe 會掃描每個 tool result 裡的惡意指令並加上警告。在他們的評估中，同時啟用 probe 和 auto mode 後，prompt injection 攻擊成功率降到零<br>▸ <a href=\"https://www.youtube.com/watch?v=b8SV4U6fEIc&t=161s\" target=\"_blank\">02:41</a> deny／ask／allow rules 會先執行，接著由 tier check 分流：唯讀或可復原的動作跳過 classifier，shell 指令、web fetch 等較高風險的動作則要送審<br>▸ <a href=\"https://www.youtube.com/watch?v=b8SV4U6fEIc&t=194s\" target=\"_blank\">03:14</a> 預設只有工作目錄和 git remotes 算內部。可以用 environment 欄位以白話描述基礎設施；admin 設在 managed settings，developer 能在 user settings 加項目，但不能刪掉 admin 的設定<br>▸ <a href=\"https://www.youtube.com/watch?v=b8SV4U6fEIc&t=255s\" target=\"_blank\">04:15</a> allow、soft deny、hard deny 只是 classifier 參考的指引，不是硬規則。要設硬性限制請用 deny rules 和 ask rules\n\n📘 術語<br><b>approval fatigue</b>（核准疲勞）：每個動作都要核准或拒絕，在多步驟任務中會讓人疲乏<br><b>classifier</b>（分類器）：獨立的檢查機制，會篩檢 Claude 提出的動作，比對你的意圖後核准或拒絕<br><b>probe</b>（探測器）：伺服器端機制，會在內容進入 context 前掃描 tool result 裡的惡意指令<br><b>tier check</b>（層級檢查）：決定哪些動作需要送 classifier 審查；唯讀或可復原的動作會跳過<br><b>soft deny / hard deny</b>（軟性拒絕／硬性拒絕）：soft deny 會擋住動作，除非你明確要求；hard deny 則不管你怎麼要求都擋\n\n📺 <a href=\"https://www.youtube.com/watch?v=b8SV4U6fEIc\" target=\"_blank\">How auto mode works with Claude Code</a>（2026/08/04 · 5 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "在 auto mode 中，下列哪一種動作會跳過 classifier？",
+          "options": [
+            "執行 shell 指令",
+            "web fetch",
+            "搜尋你的 codebase",
+            "觸及你環境外部的操作"
+          ],
+          "correct": 2,
+          "why": "[02:41] 提到大部分動作是唯讀或可復原的，例如搜尋 codebase，這些會跳過 classifier；[03:14] 則說 shell 指令、web fetch 和觸及環境外部的操作都要送 classifier 審查"
+        }
+      },
+      {
         "id": "yt_Hth_tLaC2j8",
         "title": "🎬 回顧 Claude Code 的這一年",
         "category": "Claude Code",
@@ -384,6 +420,24 @@ const CURRICULUM = {
           ],
           "correct": 0,
           "why": "[02:07] 影片說 we recommend you start off a project without a Claude.md file，並看你在哪些地方得一直修正模型，這樣 CLAUDE.md 才會保持精簡"
+        }
+      },
+      {
+        "id": "yt_SqHsS737CeA",
+        "title": "🎬 在 Google Cloud 上用 Claude 打造應用程式",
+        "category": "Claude Code",
+        "text": "<b>示範用 Claude Code 搭配 Google Cloud 上的 Claude 模型，從構想到部署做出一個回饋 app</b><br>▸ <a href=\"https://www.youtube.com/watch?v=SqHsS737CeA&t=227s\" target=\"_blank\">03:47</a> 在 Claude Code 使用 Google Cloud 上的模型有多種設定方式，最簡單快速的是 application default credential（ADC），會自動找到你的憑證<br>▸ <a href=\"https://www.youtube.com/watch?v=SqHsS737CeA&t=258s\" target=\"_blank\">04:18</a> Claude Code 新增設定精靈，可偵測專案與模型所在 region、檢查專案裡有哪些模型可用，並將模型固定下來<br>▸ <a href=\"https://www.youtube.com/watch?v=SqHsS737CeA&t=289s\" target=\"_blank\">04:49</a> 在 Google Cloud 上用 Claude 的理由：按 token 計費、沒有訊息上限；可用 provisioned throughput；不用輪替 API key；資料留在你的專案裡；有 global 與 regional endpoint<br>▸ <a href=\"https://www.youtube.com/watch?v=SqHsS737CeA&t=449s\" target=\"_blank\">07:29</a> PM 角色：在 CLAUDE.md 寫好指示，只靠一張手繪草圖，幾分鐘內就讓 Claude 產出 app 的 wireframe 原型<br>▸ <a href=\"https://www.youtube.com/watch?v=SqHsS737CeA&t=541s\" target=\"_blank\">09:01</a> UI/UX 角色：用 plan mode 讓 Claude 在寫程式前先思考、提出計畫，確認沒問題再實作；Figma 的設計指示這次改用一份 design doc 模擬<br>▸ <a href=\"https://www.youtube.com/watch?v=SqHsS737CeA&t=726s\" target=\"_blank\">12:06</a> Google Cloud 推出 developer knowledge API（附 MCP server）與 Google Cloud Skills：前者提供最新文件、幫忙規劃架構，後者負責個別元件的實作，例如部署到 Cloud Run<br>▸ <a href=\"https://www.youtube.com/watch?v=SqHsS737CeA&t=879s\" target=\"_blank\">14:39</a> 軟體工程師角色：同時開三個 subagent，分別負責 API、ingestion pipeline 和 dashboard 並行實作，架構用到 Cloud Run、Firestore、BigQuery、Looker<br>▸ <a href=\"https://www.youtube.com/watch?v=SqHsS737CeA&t=1100s\" target=\"_blank\">18:20</a> 資安角色：使用 Claude Code 內建的 security review，它找到一個可能的問題並自動修好，接著部署到 Cloud Run 讓 app 上線\n\n📘 術語<br><b>application default credential (ADC)</b>（應用程式預設憑證）：依照你使用的環境自動找到憑證（例如使用者憑證），不用輪替 API key，也不用設定環境變數<br><b>provisioned throughput</b>（預留輸送量）：替你預留一部分輸送量，適合要上線到 production 的企業應用<br><b>plan mode</b>（規劃模式）：讓 Claude 在寫任何程式碼前先思考，並提出它打算怎麼做<br><b>developer knowledge API</b>（開發者知識 API）：提供 Google Cloud 的最新文件，Claude Code 可透過 MCP server 直接取用<br><b>agent registry</b>（agent 註冊中心）：屬於 agent platform，列出 Google Cloud 原生支援的 MCP server，並說明設定方式、工具描述，也提供 observability 功能\n\n📺 <a href=\"https://www.youtube.com/watch?v=SqHsS737CeA\" target=\"_blank\">Building with Claude on Google Cloud</a>（2026/05/08 · 26 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "在示範中，講者同時開了三個 subagent 並行實作，它們分別負責哪三個部分？",
+          "options": [
+            "前端、後端、資料庫",
+            "Cloud Run、Firestore、BigQuery 的設定",
+            "wireframe、security review、部署",
+            "API、ingestion pipeline、dashboard"
+          ],
+          "correct": 3,
+          "why": "講者在 [14:39] 說要開三個 subagent：一個負責 API、一個負責 ingestion pipeline、一個負責 dashboard，並行實作就像跑團隊 sprint 一樣。"
         }
       },
       {
@@ -520,6 +574,24 @@ const CURRICULUM = {
         }
       },
       {
+        "id": "yt_TQd_YQvydVg",
+        "title": "🎬 在 Microsoft Foundry 中使用 Claude 打造 AI agents",
+        "category": "Agents 與 API",
+        "text": "<b>Workshop 實作：在 Microsoft Foundry 部署 Claude，建立 agent，再透過 MCP 接上工具</b><br>▸ <a href=\"https://www.youtube.com/watch?v=TQd_YQvydVg&t=50s\" target=\"_blank\">00:50</a> Workshop 目標：在 Microsoft Foundry 部署 Claude 模型，把模型接進 agent，再讓 agent 使用工具<br>▸ <a href=\"https://www.youtube.com/watch?v=TQd_YQvydVg&t=111s\" target=\"_blank\">01:51</a> Agentic 系統有三個新挑戰：長 context 的多步推理；系統要可靠、有 observability、安全；要能連接各種工具、外部系統和資料來源<br>▸ <a href=\"https://www.youtube.com/watch?v=TQd_YQvydVg&t=202s\" target=\"_blank\">03:22</a> Microsoft Foundry 是建構 AI 應用與 agents 的統一平台，包含 Foundry models（如 Claude）、agent service、工具與整合、fine-tuning 等機器學習服務<br>▸ <a href=\"https://www.youtube.com/watch?v=TQd_YQvydVg&t=233s\" target=\"_blank\">03:53</a> Foundry 支援超過 1,400 個內建 connectors 和 MCP 工具，agent 可以接上 SAP、ServiceNow 等真實系統<br>▸ <a href=\"https://www.youtube.com/watch?v=TQd_YQvydVg&t=265s\" target=\"_blank\">04:25</a> Foundry 內建安全、observability、governance，並整合 Microsoft Defender、Microsoft Purview 和 Entra ID<br>▸ <a href=\"https://www.youtube.com/watch?v=TQd_YQvydVg&t=759s\" target=\"_blank\">12:39</a> 在 Foundry 的 models 頁面選 Claude Sonnet 4.6 會開啟 playground，可以和模型對話、更換 system prompt、比較不同模型<br>▸ <a href=\"https://www.youtube.com/watch?v=TQd_YQvydVg&t=1001s\" target=\"_blank\">16:41</a> 在 .env 填入 target URI 與 API key 時，endpoint 要刪掉結尾的 v1/messages，讓它以 Anthropic 結尾<br>▸ <a href=\"https://www.youtube.com/watch?v=TQd_YQvydVg&t=1309s\" target=\"_blank\">21:49</a> 用 Microsoft Agent Framework（開源，Python）建立 agent，把 cupcake store MCP server 當成 tool 提供給 agent，再從 MCP 載入 prompt 和歡迎橫幅\n\n📘 術語<br><b>MCP (Model Context Protocol)</b>（模型上下文協定）：讓 AI agents 和外部系統溝通的開放標準，只需要一個 URL 就能接上<br><b>MCP tools / prompts / resources</b>（MCP 工具／提示／資源）：tools 是 agent 可呼叫的函式；prompts 是可重複使用的指令片段；resources 是透過 HTTP 傳送的資料<br><b>Microsoft Foundry</b>（Microsoft Foundry 平台）：Microsoft 用來大規模建構 AI 應用程式和 agents 的統一平台<br><b>Microsoft Agent Framework</b>（Microsoft Agent 框架）：Microsoft 開發的開源框架，有 Python 版，適合入門建構 agents<br><b>Playground</b>（遊樂場（測試環境））：Foundry 裡可以和模型對話、試不同 system prompt、比較模型的環境\n\n📺 <a href=\"https://www.youtube.com/watch?v=TQd_YQvydVg\" target=\"_blank\">Build AI agents using Claude in Microsoft Foundry</a>（2026/05/20 · 34 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "把 Foundry 的 endpoint 貼進 .env 時，講者說要怎麼處理？",
+          "options": [
+            "在結尾加上 /openai/deployments",
+            "刪掉結尾的 v1/messages，讓 endpoint 以 Anthropic 結尾",
+            "保留完整網址，不需要修改",
+            "把 endpoint 換成 Microsoft Learn 的網址"
+          ],
+          "correct": 1,
+          "why": "[16:41] 講者說要刪掉結尾的 v1/messages，endpoint 應該以 Anthropic 結尾，否則會無法運作"
+        }
+      },
+      {
         "id": "yt_KLCuxMDZSDg",
         "title": "🎬 不斷擴充的工具組",
         "category": "Agents 與 API",
@@ -535,6 +607,24 @@ const CURRICULUM = {
           ],
           "correct": 1,
           "why": "[13:09] 字幕說 Opus 47 可以接收原生解析度截圖，並回傳一對一像素座標，最高到 1440p；[14:40] 另外提到 4K 仍建議自己先縮小解析度。"
+        }
+      },
+      {
+        "id": "yt_RtywqDFBYnQ",
+        "title": "🎬 讓 agent 自我學習的 memory 與 dreaming",
+        "category": "Agents 與 API",
+        "text": "<b>介紹 Managed Agents API 中的 memory 設計，以及新推出的 dreaming 功能</b><br>▸ <a href=\"https://www.youtube.com/watch?v=RtywqDFBYnQ&t=131s\" target=\"_blank\">02:11</a> 繼 MCP、skills 之後，memory 是下一個 primitive，目標是讓 agent 持續自我學習，並在長時間任務中管理 context。<br>▸ <a href=\"https://www.youtube.com/watch?v=RtywqDFBYnQ&t=228s\" target=\"_blank\">03:48</a> Claude Managed Agents 的 memory 幾週前進入 public beta。Rakuten 的內部知識 agent 第一輪錯誤減少 90%，token 效率、成本和延遲也都改善。<br>▸ <a href=\"https://www.youtube.com/watch?v=RtywqDFBYnQ&t=324s\" target=\"_blank\">05:24</a> memory 以檔案系統的形式呈現給 Claude，Claude 用 bash、grep 自己管理。Claude Opus 4.7 在檔案系統型 memory 上達到 state-of-the-art。<br>▸ <a href=\"https://www.youtube.com/watch?v=RtywqDFBYnQ&t=446s\" target=\"_blank\">07:26</a> memory 支援權限範圍：同一個 agent 可以對組織層級知識只有唯讀權限，對工作用的 memory store 則可讀寫。<br>▸ <a href=\"https://www.youtube.com/watch?v=RtywqDFBYnQ&t=476s\" target=\"_blank\">07:56</a> 為了讓大量 agent 同時存取 memory，採用 optimistic concurrency：更新前先用 content hash 檢查，避免覆寫其他 agent 的 memory。<br>▸ <a href=\"https://www.youtube.com/watch?v=RtywqDFBYnQ&t=507s\" target=\"_blank\">08:27</a> 為了讓企業能掌控，提供 version history、attribution metadata（哪個 agent、哪個 session、什麼時間改的），另外也提供可攜的 standalone API。<br>▸ <a href=\"https://www.youtube.com/watch?v=RtywqDFBYnQ&t=689s\" target=\"_blank\">11:29</a> dreaming 今天以 research preview 在 Managed Agents API 推出，會在近期 session 的 transcript 中找出模式和錯誤，自動產生整理好的 memory。Harvey 的 task completion rate 提升六倍。<br>▸ <a href=\"https://www.youtube.com/watch?v=RtywqDFBYnQ&t=815s\" target=\"_blank\">13:35</a> dreaming 是非同步批次、out of band 的流程：可以跨多個 agent 找出共同模式，把 memory 品質從任務目標中獨立出來，也不會增加主要任務的延遲。\n\n📘 術語<br><b>dreaming</b>（作夢（memory 整理流程））：回顧近期 session transcript，找出模式與錯誤，自動產出整理好且最新的 memory 內容<br><b>optimistic concurrency</b>（樂觀並行控制）：agent 更新前用 content hash 確認，避免覆寫其他 agent 的 memory<br><b>permission scopes</b>（權限範圍）：agent 可以對某個 memory store 唯讀，對另一個可讀寫<br><b>version history</b>（版本歷史）：完整的 audit log，記錄每一次 memory 更新，可以回溯查看改了什麼<br><b>out of band</b>（頻外執行）：不在 agent 執行特定 session 或任務的 context 裡進行\n\n📺 <a href=\"https://www.youtube.com/watch?v=RtywqDFBYnQ\" target=\"_blank\">Memory and dreaming for self-learning agents</a>（2026/05/08 · 24 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，Harvey 在法律 benchmark 中導入 dreaming 後，有什麼結果？",
+          "options": [
+            "token 用量減少一半",
+            "第一輪錯誤減少 90%",
+            "其中一個法律情境的 task completion rate 提升六倍",
+            "回應延遲降低六倍"
+          ],
+          "correct": 2,
+          "why": "[11:29] 提到 Harvey 在法律 benchmark 中導入 dreaming 後，其中一個法律情境的 task completion rate 增加六倍。減少 90% 第一輪錯誤是 Rakuten 導入 memory 的結果（[03:48]）。"
         }
       },
       {
@@ -581,6 +671,60 @@ const CURRICULUM = {
         }
       },
       {
+        "id": "yt_RyjROxHLi_g",
+        "title": "🎬 當你跟 AI 對話時，背後發生了什麼事？",
+        "category": "提示與模型選擇",
+        "text": "<b>說明 Claude 這類 AI 模型靠「預測」逐字產生回覆，以及它還會看到哪些 context</b><br>▸ <a href=\"https://www.youtube.com/watch?v=RyjROxHLi_g&t=0s\" target=\"_blank\">00:00</a> 傳訊息給 AI 時，它看起來像在思考，但像 Claude 這類 AI 模型其實是以「預測」為基礎運作<br>▸ <a href=\"https://www.youtube.com/watch?v=RyjROxHLi_g&t=0s\" target=\"_blank\">00:00</a> 模型讀取你的訊息後，結合訓練時學到的一切和你在訊息中提供的內容，分段寫出回覆<br>▸ <a href=\"https://www.youtube.com/watch?v=RyjROxHLi_g&t=0s\" target=\"_blank\">00:00</a> 回覆是一個字一個字出現的，每個字都是根據前面所有內容挑選出來的<br>▸ <a href=\"https://www.youtube.com/watch?v=RyjROxHLi_g&t=0s\" target=\"_blank\">00:00</a> 除了你的訊息，模型還會看到其他 context：app 開發者給的指示（稱為 system request）、你下載的檔案，以及依設定而定的過往對話記憶等<br>▸ <a href=\"https://www.youtube.com/watch?v=RyjROxHLi_g&t=30s\" target=\"_blank\">00:30</a> 了解 AI 模型是預測系統之後，你就更能跟它合作，也更能解讀它的回覆\n\n📘 術語<br><b>prediction</b>（預測）：AI 模型運作的基礎；根據前面所有內容，逐字挑選下一個字來寫出回覆<br><b>system request</b>（系統指示）：app 開發者提供給模型的指示，屬於模型除了使用者訊息之外會看到的 context<br><b>memory</b>（記憶）：依你的設定而定，模型可能會看到先前對話的記憶\n\n📺 <a href=\"https://www.youtube.com/watch?v=RyjROxHLi_g\" target=\"_blank\">What happens when you talk to AI?</a>（2026/08/08 · 0 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，Claude 這類 AI 模型產生回覆時，每個字是怎麼決定的？",
+          "options": [
+            "根據前面所有內容挑選出來的",
+            "只根據使用者最後一句話決定",
+            "從網路上即時搜尋最相關的句子",
+            "先寫好完整答案，再一次全部顯示"
+          ],
+          "correct": 0,
+          "why": "字幕 [00:00] 提到回覆會逐字出現，「each one chosen based on everything that came before it」"
+        }
+      },
+      {
+        "id": "yt_Ua_5vH_n8j4",
+        "title": "🎬 AI 模型實際上知道些什麼？",
+        "category": "提示與模型選擇",
+        "text": "<b>說明 AI 模型的知識從哪裡來、有什麼邊界，以及什麼情況下最容易出現知識缺口</b><br>▸ <a href=\"https://www.youtube.com/watch?v=Ua_5vH_n8j4&t=0s\" target=\"_blank\">00:00</a> 像 Claude 這樣的模型處理過的資料，比人類花好幾輩子能吸收的還要多，看起來好像什麼都懂，但其實不是<br>▸ <a href=\"https://www.youtube.com/watch?v=Ua_5vH_n8j4&t=0s\" target=\"_blank\">00:00</a> AI 模型靠閱讀大量文字來學習，來源主要是網路、公開資料集和其他書面資料；模型本身沒有自己的經驗<br>▸ <a href=\"https://www.youtube.com/watch?v=Ua_5vH_n8j4&t=0s\" target=\"_blank\">00:00</a> 除非產品特別提供搜尋工具，模型不會即時瀏覽網頁<br>▸ <a href=\"https://www.youtube.com/watch?v=Ua_5vH_n8j4&t=0s\" target=\"_blank\">00:00</a> 訓練會在某個日期結束，在那之後發生的事都不在模型的記憶裡<br>▸ <a href=\"https://www.youtube.com/watch?v=Ua_5vH_n8j4&t=0s\" target=\"_blank\">00:00</a> 可以把模型的知識想成一條連續光譜：常見、一致而且直到資料截止日都持續出現的主題，模型懂得非常深入<br>▸ <a href=\"https://www.youtube.com/watch?v=Ua_5vH_n8j4&t=30s\" target=\"_blank\">00:30</a> 光譜另一端是少見主題、截止日之後的事件、狹窄領域和在地知識，越往這一端，答案越不可信<br>▸ <a href=\"https://www.youtube.com/watch?v=Ua_5vH_n8j4&t=30s\" target=\"_blank\">00:30</a> 最容易出現知識缺口的情況：主題跟時間有關、領域高度專業或很在地、語言比較少人使用、依賴模型對「典型」或「正常」的判斷，或是 web search 沒開<br>▸ <a href=\"https://www.youtube.com/watch?v=Ua_5vH_n8j4&t=30s\" target=\"_blank\">00:30</a> 模型的知識同時具備廣、深、凍結在某個時間點、不完美這幾個特性；看清邊界在哪裡，就不會再被它嚇到\n\n📘 術語<br><b>data cutoff / cut-off date</b>（資料截止日）：訓練結束的日期，在那之後發生的事都不在模型的記憶裡<br><b>knowledge gaps</b>（知識缺口）：模型知識不足的地方，最常出現在跟時間有關、高度專業、在地或少用語言的主題<br><b>search tool / web search</b>（搜尋工具／網路搜尋）：產品特別提供時，模型才能即時瀏覽網頁；沒開的話比較容易出現知識缺口\n\n📺 <a href=\"https://www.youtube.com/watch?v=Ua_5vH_n8j4\" target=\"_blank\">What do AI models actually know?</a>（2026/07/24 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，AI 模型在什麼情況下會即時瀏覽網頁？",
+          "options": [
+            "每次回答問題時都會自動瀏覽",
+            "只有在使用者問到時事新聞時",
+            "只有在產品特別提供搜尋工具時",
+            "只有在問題使用比較少見的語言時"
+          ],
+          "correct": 2,
+          "why": "[00:00] 字幕說模型不會即時瀏覽網頁，除非產品特別提供搜尋工具（unless the product specifically provides her with a search tool）"
+        }
+      },
+      {
+        "id": "yt_RlQ4xpDnoaw",
+        "title": "🎬 AI 為什麼會產生幻覺？",
+        "category": "提示與模型選擇",
+        "text": "<b>說明 AI 為何會編造事實、哪些情況容易發生，以及怎麼減少</b><br>▸ <a href=\"https://www.youtube.com/watch?v=RlQ4xpDnoaw&t=0s\" target=\"_blank\">00:00</a> AI 被訓練成要有幫助，所以即使不確定也想給出答案，這類錯誤就叫做 hallucination（幻覺）<br>▸ <a href=\"https://www.youtube.com/watch?v=RlQ4xpDnoaw&t=0s\" target=\"_blank\">00:00</a> 幻覺通常比一般錯誤更糟，因為 AI 看起來很有自信，錯的答案也常常看起來像是對的<br>▸ <a href=\"https://www.youtube.com/watch?v=RlQ4xpDnoaw&t=0s\" target=\"_blank\">00:00</a> 容易發生幻覺的情況：問特定事實、統計數據或引言，或主題冷門、高度專業、非常新<br>▸ <a href=\"https://www.youtube.com/watch?v=RlQ4xpDnoaw&t=30s\" target=\"_blank\">00:30</a> 問到真實但不太有名的人或地點，或需要日期、名字、數字等精確細節時，也容易出現幻覺<br>▸ <a href=\"https://www.youtube.com/watch?v=RlQ4xpDnoaw&t=30s\" target=\"_blank\">00:30</a> 減少幻覺的方法一：一開始就告訴 AI「不知道也沒關係」（It&#x27;s okay if you don&#x27;t know）<br>▸ <a href=\"https://www.youtube.com/watch?v=RlQ4xpDnoaw&t=30s\" target=\"_blank\">00:30</a> 方法二：開一個新的對話，請 AI 找出答案裡的錯誤；方法三：保持懷疑，自己核對數字、日期和引言<br>▸ <a href=\"https://www.youtube.com/watch?v=RlQ4xpDnoaw&t=30s\" target=\"_blank\">00:30</a> 每個新版本的 Claude 都有改善，但這是整個 AI 領域長期存在、尚未完全解決的挑戰\n\n📘 術語<br><b>hallucination</b>（幻覺）：AI 在不確定時仍給出答案而編造事實的錯誤，而且常常看起來很有自信\n\n📺 <a href=\"https://www.youtube.com/watch?v=RlQ4xpDnoaw\" target=\"_blank\">Why does AI hallucinate?</a>（2026/07/23 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，下列哪一項是減少 AI 幻覺的建議做法？",
+          "options": [
+            "要求 AI 每個回答都附上來源網址",
+            "同一個問題連續問三次，比較答案",
+            "只用英文提問，避免用其他語言",
+            "開一個新的對話，請 AI 找出答案中的錯誤"
+          ],
+          "correct": 3,
+          "why": "影片 [00:30] 提到「Start a new chat and ask the AI to find errors in the answer」；其他選項字幕都沒有提到"
+        }
+      },
+      {
         "id": "yt_G2B0YWuJUgI",
         "title": "🎬 提示工程實戰手冊（The prompting playbook）",
         "category": "提示與模型選擇",
@@ -597,6 +741,60 @@ const CURRICULUM = {
           "correct": 0,
           "why": "[18:39] 講者指出，叫模型「好好做」卻沒給它做到的能力沒有幫助，所以改成給它 calculate proration tool；[19:40] 的結論是「instructions don't add capability」。"
         }
+      },
+      {
+        "id": "yt_P0uMXS6emHA",
+        "title": "🎬 挑選合適的模型",
+        "category": "提示與模型選擇",
+        "text": "<b>自己建 eval，並用 effort、thinking、prompt caching 和 context engineering 挑出最合適的模型</b><br>▸ <a href=\"https://www.youtube.com/watch?v=P0uMXS6emHA&t=202s\" target=\"_blank\">03:22</a> 三個重點：一、小而設計良好的 eval 比公開 benchmark 更能判斷該用哪個模型。二、該選「每次成功結果最便宜」的模型，不是每個 token 最便宜的。三、可以用各種調整選項控制成本和準確度的取捨。<br>▸ <a href=\"https://www.youtube.com/watch?v=P0uMXS6emHA&t=264s\" target=\"_blank\">04:24</a> SWE bench verified 這類公開 benchmark 只能提供大方向。實際工作通常橫跨多種任務，甚至會用到 benchmark 沒涵蓋的語言，所以要自己建 eval。<br>▸ <a href=\"https://www.youtube.com/watch?v=P0uMXS6emHA&t=356s\" target=\"_blank\">05:56</a> eval 可以想成學校的數學考試：除了答案要對，計算過程也很重要。評分可以混用 LLM as a judge（例如檢查 SQL 查詢）和固定規則的程式檢查（例如一定要呼叫某個 tool）。<br>▸ <a href=\"https://www.youtube.com/watch?v=P0uMXS6emHA&t=540s\" target=\"_blank\">09:00</a> 建 eval 常見的三個陷阱：一、把雜訊當成訊號，每個任務要跑好幾次。二、把 API 或 tool call 失敗這類基礎設施問題誤算成模型表現差。三、資料集沒有反映 production 的真實輸入。<br>▸ <a href=\"https://www.youtube.com/watch?v=P0uMXS6emHA&t=691s\" target=\"_blank\">11:31</a> 每個模型的行為都有差異。同一個 prompt，Opus 4.5 太少觸發某個 tool，Opus 4.6 卻觸發太多。建議閱讀新模型的 prompting guide，或把 guide 交給 Claude，請它更新 prompt。<br>▸ <a href=\"https://www.youtube.com/watch?v=P0uMXS6emHA&t=785s\" target=\"_blank\">13:05</a> 一定要讀 transcript。有一次在 Claude Code 的 eval 裡分數很高，細看才發現 Claude 去翻 git history，從先前的嘗試中抄答案。<br>▸ <a href=\"https://www.youtube.com/watch?v=P0uMXS6emHA&t=846s\" target=\"_blank\">14:06</a> 內部 code fix pipeline 的例子：Haiku 4.5 不開 thinking 得 92%，開 thinking 達到 100%。Sonnet 和 Opus 也都是 100%，而且花的時間少很多，因為它們能用更少回合完成。<br>▸ <a href=\"https://www.youtube.com/watch?v=P0uMXS6emHA&t=1093s\" target=\"_blank\">18:13</a> prompt caching 讓快取的 input token 只付定價的 1/10，很好的系統命中率大約 80～90%。system prompt 裡不要放日期時間這類變數，messages 陣列只往後加。精簡 tool 回傳後，token 減少 66.4%。\n\n📘 術語<br><b>eval</b>（評測）：由一組 task 組成，每個 task 包含輸入和成功標準，用來判斷該選哪個模型<br><b>LLM as a judge</b>（用 LLM 當評審）：用 LLM 檢查最終回覆或執行步驟是否正確，SQL 寫法略有不同也能判斷<br><b>adaptive thinking</b>（自適應思考）：4.6 系列模型起，由模型自己決定一項任務需要思考多少<br><b>effort</b>（投入程度參數）：告訴 Claude 在思考、tool call 和回覆上要寫多少、投入多少工夫<br><b>prompt caching</b>（提示快取）：重複使用已預先計算並快取的 prompt 前段，input token 只付定價的 1/10\n\n📺 <a href=\"https://www.youtube.com/watch?v=P0uMXS6emHA\" target=\"_blank\">Picking the right model</a>（2026/05/21 · 31 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，使用 prompt caching 時，快取的 input token 要付多少錢？",
+          "options": [
+            "定價的一半",
+            "完全免費",
+            "定價的 1/10",
+            "定價的 1/4"
+          ],
+          "correct": 2,
+          "why": "[18:45] 講者說使用 prompt caching 時，要付 input token 定價的 1/10。"
+        }
+      },
+      {
+        "id": "yt_T7KqH7kYnE4",
+        "title": "🎬 思考的槓桿（The thinking lever）",
+        "category": "提示與模型選擇",
+        "text": "<b>說明 Claude 怎麼運用 test time compute，以及 effort 等級要怎麼選</b><br>▸ <a href=\"https://www.youtube.com/watch?v=T7KqH7kYnE4&t=80s\" target=\"_blank\">01:20</a> test time compute 跟 train time compute 一樣能提升智慧：Claude 花越多 token 思考，表現越好。Deep Search QA、OSWorld、Humanity&#x27;s Last Exam 都看得到這個現象<br>▸ <a href=\"https://www.youtube.com/watch?v=T7KqH7kYnE4&t=173s\" target=\"_blank\">02:53</a> 交通模擬示範：同一個 prompt 用 low、high、max 三種 effort 跑。high 花的時間和 token 大約是兩倍，max 大約是 10 倍，模擬也明顯更細緻<br>▸ <a href=\"https://www.youtube.com/watch?v=T7KqH7kYnE4&t=388s\" target=\"_blank\">06:28</a> test time compute 分三種：thinking（推理用的 scratch pad）、tool calling（Claude 跟外部世界的介面）、text（最後輸出）<br>▸ <a href=\"https://www.youtube.com/watch?v=T7KqH7kYnE4&t=480s\" target=\"_blank\">08:00</a> 使用者有兩種方式調整 test time compute：effort（從 low 到 max 的轉盤）和 budgets（max token 限制或 API 的 task budgets）<br>▸ <a href=\"https://www.youtube.com/watch?v=T7KqH7kYnE4&t=606s\" target=\"_blank\">10:06</a> adaptive thinking 是 interleaved thinking 的進化版：由 Claude 自己決定什麼時候要思考，也可以完全不思考。它不是 model router，而且相對 interleaved thinking 是 Pareto efficient<br>▸ <a href=\"https://www.youtube.com/watch?v=T7KqH7kYnE4&t=727s\" target=\"_blank\">12:07</a> thinking 開關並不能代表 Claude 應該投入多少 effort。關掉 extended thinking 只是拿掉 Claude 的一項核心能力<br>▸ <a href=\"https://www.youtube.com/watch?v=T7KqH7kYnE4&t=1002s\" target=\"_blank\">16:42</a> effort 選擇原則：max 可能報酬遞減；extra high 是 Claude Code 和 claude.ai 的預設；需要任何智慧就用 high；low 適合對延遲敏感的分類、摘要、資料擷取<br>▸ <a href=\"https://www.youtube.com/watch?v=T7KqH7kYnE4&t=1096s\" target=\"_blank\">18:16</a> Haiku 4.5 花的時間大約一半，token 差不多，但結果差很多。只要任務需要一點智慧，即使 effort 設 low，用大模型通常比較好\n\n📘 術語<br><b>test time compute</b>（推論時運算）：在推論時多花 token，讓模型把問題解得更好<br><b>effort</b>（努力程度）：從 low 到 max 的轉盤，effort 越高，工作越久、花的 token 越多<br><b>interleaved thinking</b>（交錯式思考）：讓 Claude 每次 tool call 之後都能有一個思考步驟<br><b>adaptive thinking</b>（自適應思考）：給 Claude 一個 thinking 工具，由它自己決定何時思考、要不要思考<br><b>task budgets</b>（任務預算）：API 裡的功能，用比較嚴格的限制來約束 Claude 的工作方式\n\n📺 <a href=\"https://www.youtube.com/watch?v=T7KqH7kYnE4\" target=\"_blank\">The thinking lever</a>（2026/05/20 · 21 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據講者，Claude Code 和 claude.ai 預設使用哪個 effort 等級？",
+          "options": [
+            "max",
+            "high",
+            "low",
+            "extra high"
+          ],
+          "correct": 3,
+          "why": "[16:42] 講者說 extra high 是 Claude Code 和 claude.ai 的預設，是智慧、速度和 token 數之間最好的取捨之一"
+        }
+      },
+      {
+        "id": "yt_OXJO4LldSnc",
+        "title": "🎬 思考的槓桿（The thinking lever）",
+        "category": "提示與模型選擇",
+        "text": "<b>Claude 如何在推論時運用 test time compute，以及怎麼用 effort、budget 控制</b><br>▸ <a href=\"https://www.youtube.com/watch?v=OXJO4LldSnc&t=72s\" target=\"_blank\">01:12</a> Scaling test time compute：模型從 Haiku、Sonnet 到 Opus 越聰明，分數越高；同一個 Opus 花越多時間處理問題，分數也越高<br>▸ <a href=\"https://www.youtube.com/watch?v=OXJO4LldSnc&t=162s\" target=\"_blank\">02:42</a> 用 Opus 4.7 做交通號誌模擬：low 約 50 秒、約 4,600 output tokens；high 時間與 token 約兩倍；max 約 10 倍，結果最好<br>▸ <a href=\"https://www.youtube.com/watch?v=OXJO4LldSnc&t=352s\" target=\"_blank\">05:52</a> Claude 花的 token 分三類：thinking（內心獨白）、tool calling（和環境互動）、text（和使用者溝通）<br>▸ <a href=\"https://www.youtube.com/watch?v=OXJO4LldSnc&t=508s\" target=\"_blank\">08:28</a> 使用者可以用 effort 設定時間、成本和品質的取捨，也能用 task budgets 設定 token 上限，例如 100,000 tokens<br>▸ <a href=\"https://www.youtube.com/watch?v=OXJO4LldSnc&t=659s\" target=\"_blank\">10:59</a> Adaptive thinking 是 interleaved thinking 的下一步：Claude 可以隨時思考，順序不受限，簡單問題也可以不思考；它不是 model router<br>▸ <a href=\"https://www.youtube.com/watch?v=OXJO4LldSnc&t=814s\" target=\"_blank\">13:34</a> Thinking 開關不適合拿來代替 effort dial：它限制的是 Claude「怎麼做事」而不是「多努力」；effort 會同時調整 thinking、tool use 和 text<br>▸ <a href=\"https://www.youtube.com/watch?v=OXJO4LldSnc&t=1125s\" target=\"_blank\">18:45</a> extra high 是 Opus 4.7 新增的等級，最適合大多數 coding 和 agentic 用途，也是 Claude Code、Claude.ai 裡 Opus 4.7 的預設；high 適合當測試起點<br>▸ <a href=\"https://www.youtube.com/watch?v=OXJO4LldSnc&t=1277s\" target=\"_blank\">21:17</a> 小模型適合追求快速 time to first token；大模型搭配低 effort 適合追求快速 time to last token；可以的話兩者都做 eval 比較\n\n📘 術語<br><b>test time compute</b>（推論時運算）：Claude 在推論時為了解決問題而花費的任何 token<br><b>adaptive thinking</b>（自適應思考）：Claude 可以在任何適當的時機思考，思考多少、順序都不受限；簡單問題也可以不思考<br><b>interleaved thinking</b>（交錯式思考）：讓 Claude 在兩次 tool call 之間思考前一個結果，再決定下一步<br><b>effort</b>（努力程度設定）：告訴 Claude 要怎麼在時間、成本和品質之間取捨<br><b>task budgets</b>（任務預算）：告訴 Claude 處理一項任務最多能花多少 token\n\n📺 <a href=\"https://www.youtube.com/watch?v=OXJO4LldSnc\" target=\"_blank\">The thinking lever</a>（2026/05/08 · 24 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，Claude Code 和 Claude.ai 裡 Opus 4.7 的預設 effort 等級是哪一個？",
+          "options": [
+            "medium",
+            "high",
+            "max",
+            "extra high"
+          ],
+          "correct": 3,
+          "why": "講者說 extra high 是 Opus 4.7 新增的設定，目前是 Claude Code 和 Claude.ai 裡 Opus 4.7 的預設（18:45）"
+        }
       }
     ]
   },
@@ -605,6 +803,24 @@ const CURRICULUM = {
     "name": "📺 產品功能・官方頻道字幕版",
     "badge": "官方字幕實證",
     "lessons": [
+      {
+        "id": "yt_V-OOEC5RNaQ",
+        "title": "🎬 用 Claude for Teachers 更聰明地備課",
+        "category": "產品功能",
+        "text": "<b>小學老師示範用語音讓 Claude 回顧課堂、產出隔天教案，並設定每天自動執行</b><br>▸ <a href=\"https://www.youtube.com/watch?v=V-OOEC5RNaQ&t=0s\" target=\"_blank\">00:00</a> Karina 是小學老師，多數學生是英語學習者；Claude for Teachers 能串接她既有的工具，並依她自訂的時間表持續幫她做事<br>▸ <a href=\"https://www.youtube.com/watch?v=V-OOEC5RNaQ&t=0s\" target=\"_blank\">00:00</a> 她用語音下一個指令：從 TeachFX 抓最新的二年級 ELA 課程，分析學生反應、說話時間、提問和參與度<br>▸ <a href=\"https://www.youtube.com/watch?v=V-OOEC5RNaQ&t=31s\" target=\"_blank\">00:31</a> 同一個指令還要求起草明天的教案，對齊州標準，並符合加州 ELD 標準；Claude 一次交回教學回饋摘要和已調整好的教案<br>▸ <a href=\"https://www.youtube.com/watch?v=V-OOEC5RNaQ&t=62s\" target=\"_blank\">01:02</a> 教學回饋摘要：開場和 turn-and-talk 效果好，學生說得比老師多；待改進的是等待時間不夠，明天目標是提問後等五秒再點人<br>▸ <a href=\"https://www.youtube.com/watch?v=V-OOEC5RNaQ&t=92s\" target=\"_blank\">01:32</a> 不用等每個月跟教學教練面談，馬上就能拿到回饋<br>▸ <a href=\"https://www.youtube.com/watch?v=V-OOEC5RNaQ&t=92s\" target=\"_blank\">01:32</a> 教案用了內建的 lesson planning skill，並參考 Learning Commons knowledge graph 加入 ELD 支援；教學回饋也直接寫進教案裡<br>▸ <a href=\"https://www.youtube.com/watch?v=V-OOEC5RNaQ&t=122s\" target=\"_blank\">02:02</a> 她對 Claude 說「每個平日下午 4 點做一次」，先手動跑一次確認，之後開車回家時 Claude 就會自動處理<br>▸ <a href=\"https://www.youtube.com/watch?v=V-OOEC5RNaQ&t=122s\" target=\"_blank\">02:02</a> Claude for Teachers 對所有通過驗證的美國 K-12 老師免費\n\n📘 術語<br><b>TeachFX</b>（TeachFX）：Claude 從這裡找到前一天的課程，也就是課堂實際進行情況的錄音<br><b>ELD standards</b>（ELD 標準）：加州針對英語學習者的標準，教案要符合它<br><b>teacher-to-student talk ratio</b>（師生說話比例）：比較老師和學生各說了多少話；學生說得比老師多就是她想看到的<br><b>wait time</b>（等待時間）：提問後留給學生思考的時間；她的目標是提問後等五秒再點人<br><b>Learning Commons knowledge graph</b>（Learning Commons 知識圖譜）：Claude 加入加州 ELD 支援時參考的資料來源\n\n📺 <a href=\"https://www.youtube.com/watch?v=V-OOEC5RNaQ\" target=\"_blank\">Plan smarter with Claude for Teachers</a>（2026/07/14 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據教學回饋摘要，Karina 明天要改進的「一件事」是什麼？",
+          "options": [
+            "把 turn-and-talk 改成個人練習",
+            "讓老師多說一點，增加講解時間",
+            "減少開放式問題的數量",
+            "提問後等五秒再點學生"
+          ],
+          "correct": 3,
+          "why": "[01:02] 回饋指出她問了很多很好的開放式問題，但沒有留足夠的等待時間，所以明天的目標是「Ask the question then wait five seconds before I call on anyone」"
+        }
+      },
       {
         "id": "yt_MhfnicQVkgY",
         "title": "🎬 與 @Claude 一起工作的未來",
@@ -621,6 +837,24 @@ const CURRICULUM = {
           ],
           "correct": 1,
           "why": "[08:47] 講者說在 product org 裡，Tag 寫的 PR「I think it's like 65% now」，而且還在持續上升"
+        }
+      },
+      {
+        "id": "yt_VojDzHaciKQ",
+        "title": "🎬 直接在你工作的地方把 Claude tag 進來",
+        "category": "產品功能",
+        "text": "<b>發表 Claude Tag：在團隊頻道裡 tag Claude，讓它和團隊一起協作</b><br>▸ <a href=\"https://www.youtube.com/watch?v=VojDzHaciKQ&t=12s\" target=\"_blank\">00:12</a> Anthropic 負責 Claude Code 的 Lydia 宣布推出 Claude Tag，讓 Claude 直接和團隊一起協作<br>▸ <a href=\"https://www.youtube.com/watch?v=VojDzHaciKQ&t=12s\" target=\"_blank\">00:12</a> Anthropic 今年大部分時間都在 tag Claude；在 Anthropic 內部，Claude Tag 開了 65% 的產品 pull request<br>▸ <a href=\"https://www.youtube.com/watch?v=VojDzHaciKQ&t=43s\" target=\"_blank\">00:43</a> 示範：Nadia 在群組討論串 tag Claude，Claude 跟上討論、即時回應產品決策，開 PR 並完成修改（Scheduled Exports 功能）<br>▸ <a href=\"https://www.youtube.com/watch?v=VojDzHaciKQ&t=43s\" target=\"_blank\">00:43</a> Claude 知道這個功能是什麼、要改 codebase 的哪裡；它依每個頻道界定範圍與各團隊的 context，並隨著工作進行累積 memory<br>▸ <a href=\"https://www.youtube.com/watch?v=VojDzHaciKQ&t=73s\" target=\"_blank\">01:13</a> Claude 知道自己推上去的修改會影響上市行銷，減少跨團隊溝通的延遲；Priya 不用打開 drive，Claude 自己完成編輯<br>▸ <a href=\"https://www.youtube.com/watch?v=VojDzHaciKQ&t=73s\" target=\"_blank\">01:13</a> Claude 有自己的帳號和權限，依團隊、依頻道存取所需系統：legal 頻道看得到合約資訊，engineering 頻道可以改 codebase<br>▸ <a href=\"https://www.youtube.com/watch?v=VojDzHaciKQ&t=105s\" target=\"_blank\">01:45</a> 在 legal 頻道叫 Claude 改 codebase，它不會做，因為它根本看不到；memory 也遵守同樣的界線，private channel 或 DM 學到的只留在那裡<br>▸ <a href=\"https://www.youtube.com/watch?v=VojDzHaciKQ&t=105s\" target=\"_blank\">01:45</a> 因為 Claude 有自己的帳號，每次使用 credential 都會被記錄；建議先把 Claude 加進一個頻道 tag 看看\n\n📘 術語<br><b>Claude Tag</b>（Claude Tag（tag 標記 Claude））：讓 Claude 直接和你的團隊一起協作，在頻道裡 tag 它進來<br><b>multi-player</b>（多人協作）：Nadia tag Claude 後，Claude 跟上群組討論串，即時回應產品決策<br><b>memory</b>（記憶）：隨著工作進行累積；遵守頻道界線，private channel 或 DM 學到的留在原處<br><b>per-team, per-channel access</b>（依團隊、依頻道授權）：Claude 依團隊與頻道存取所需系統，例如 legal 頻道看得到合約資訊\n\n📺 <a href=\"https://www.youtube.com/watch?v=VojDzHaciKQ\" target=\"_blank\">Tag Claude in, right where you already work</a>（2026/06/23 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "在 legal 頻道 tag Claude，要它修改 codebase，會發生什麼事？",
+          "options": [
+            "Claude 會先請 engineering 團隊核准再修改",
+            "Claude 會禮貌地婉拒，但其實有能力修改",
+            "Claude 會直接修改，並把紀錄存到 private channel",
+            "Claude 不會修改，因為它在那個頻道根本看不到 codebase"
+          ],
+          "correct": 3,
+          "why": "[01:45] 字幕說 Claude 不會修改，「不是因為它有禮貌，而是因為它真的看不到」"
         }
       },
       {
@@ -660,6 +894,42 @@ const CURRICULUM = {
         }
       },
       {
+        "id": "yt_TkSZqH0n7m0",
+        "title": "🎬 用 Claude 優化 PowerPoint 簡報",
+        "category": "產品功能",
+        "text": "<b>用 Claude 在 PowerPoint 裡新增投影片、局部修改，並把條列和表格轉成原生圖表</b><br>▸ <a href=\"https://www.youtube.com/watch?v=TkSZqH0n7m0&t=42s\" target=\"_blank\">00:42</a> 在指令最後加一句「需要時可以先提問」，Claude 會先讀過現有內容、找出缺什麼，再問你要放哪些 AI native 業者、內容要多技術，然後才動手做投影片<br>▸ <a href=\"https://www.youtube.com/watch?v=TkSZqH0n7m0&t=73s\" target=\"_blank\">01:13</a> 新投影片的字型、顏色、間距都跟原本的簡報一致。選取投影片後要求補一個資料點，Claude 只改這張，也會說明新資料的來源<br>▸ <a href=\"https://www.youtube.com/watch?v=TkSZqH0n7m0&t=103s\" target=\"_blank\">01:43</a> Claude 知道你目前選取的是哪張投影片、哪個物件，所以可以快速做指定範圍的修改<br>▸ <a href=\"https://www.youtube.com/watch?v=TkSZqH0n7m0&t=134s\" target=\"_blank\">02:14</a> 選取法規投影片的 compliance 段落，要求濃縮成一行；Claude 只改這一段，同一張投影片的另外三段都沒動<br>▸ <a href=\"https://www.youtube.com/watch?v=TkSZqH0n7m0&t=164s\" target=\"_blank\">02:44</a> 選取標題，要求改得更貼近簡報要講的故事，Claude 把標題改成「regulation as a growth catalyst」，內文不變<br>▸ <a href=\"https://www.youtube.com/watch?v=TkSZqH0n7m0&t=225s\" target=\"_blank\">03:45</a> 把條列很多的投影片轉成四個區塊，每塊有趨勢名稱、關鍵數字和一句說明；都是原生 PowerPoint 圖形，可以個別移動、縮放、改色<br>▸ <a href=\"https://www.youtube.com/watch?v=TkSZqH0n7m0&t=286s\" target=\"_blank\">04:46</a> 把列出五家公司的表格轉成 2x2 矩陣（x 軸是營收規模、y 軸是成長率），用原生圖形和標籤排出來，之後可以直接修改<br>▸ <a href=\"https://www.youtube.com/watch?v=TkSZqH0n7m0&t=350s\" target=\"_blank\">05:50</a> 把只能呈現一個面向的長條圖換成 clustered horizontal bar chart，同時呈現市占率和成長率，不用再看圖例文字\n\n📘 術語<br><b>clarifying questions</b>（釐清問題）：Claude 動手前先問的問題，例如要放哪些 AI native 業者、內容要多技術<br><b>native PowerPoint visuals</b>（原生 PowerPoint 圖像）：用原生圖形和文字方塊做的，不是靜態圖片，可以個別移動、縮放、改色、編輯<br><b>2x2 matrix</b>（2x2 矩陣）：x 軸是營收規模、y 軸是成長率，依表格資料標出每家公司的位置<br><b>clustered horizontal bar chart</b>（群組橫條圖）：用來取代原本的長條圖，一次就看得到市占率和成長率兩個面向\n\n📺 <a href=\"https://www.youtube.com/watch?v=TkSZqH0n7m0\" target=\"_blank\">Refining a PowerPoint with Claude</a>（2026/04/16 · 6 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片中選取「regulatory landscape」標題並要求改得更具體後，Claude 把標題改成什麼？",
+          "options": [
+            "Regulatory landscape overview",
+            "Compliance drives fintech innovation",
+            "Open banking and beyond",
+            "Regulation as a growth catalyst"
+          ],
+          "correct": 3,
+          "why": "字幕 [02:44] 提到 Claude 把標題改成「regulation as a growth catalyst」，內文維持不變"
+        }
+      },
+      {
+        "id": "yt_TxS-1invhzg",
+        "title": "🎬 用 Claude 製作 PowerPoint 簡報",
+        "category": "產品功能",
+        "text": "<b>示範 Claude in PowerPoint 如何依品牌範本產生並修改整份簡報</b><br>▸ <a href=\"https://www.youtube.com/watch?v=TxS-1invhzg&t=2s\" target=\"_blank\">00:02</a> Claude in PowerPoint 是 AI agent，會讀取投影片版面、字型和配色，產生並修改符合品牌風格的投影片<br>▸ <a href=\"https://www.youtube.com/watch?v=TxS-1invhzg&t=2s\" target=\"_blank\">00:02</a> Claude 知道你選取的是哪張投影片、哪個物件，也能把條列清單轉成可以直接編輯的圖表<br>▸ <a href=\"https://www.youtube.com/watch?v=TxS-1invhzg&t=33s\" target=\"_blank\">00:33</a> 可以用加號按鈕上傳其他檔案，給 Claude 更多脈絡<br>▸ <a href=\"https://www.youtube.com/watch?v=TxS-1invhzg&t=33s\" target=\"_blank\">00:33</a> 示範：在品牌範本裡要求產生 10 張評估 fintech 產業的簡報，並指定主題與「分析、以數據為本」的語氣<br>▸ <a href=\"https://www.youtube.com/watch?v=TxS-1invhzg&t=63s\" target=\"_blank\">01:03</a> 產出的字型、顏色、間距都和範本一致；Claude 修改前會先徵求同意，也會說明資料來源<br>▸ <a href=\"https://www.youtube.com/watch?v=TxS-1invhzg&t=123s\" target=\"_blank\">02:03</a> 摘要頁有六點太多，要求改成三個重點（粗體標題＋一句說明），版面維持不變<br>▸ <a href=\"https://www.youtube.com/watch?v=TxS-1invhzg&t=154s\" target=\"_blank\">02:34</a> 第 4、5 張內容大幅重疊，要求合併成一張；Claude 刪除多出來的投影片前會先詢問<br>▸ <a href=\"https://www.youtube.com/watch?v=TxS-1invhzg&t=184s\" target=\"_blank\">03:04</a> 把法規環境那張移到市場規模之後，讓論述順序更合理；Claude 負責機械性工作，並維持範本的完整性\n\n📘 術語<br><b>Claude in PowerPoint</b>（PowerPoint 裡的 Claude）：會讀取版面、字型、配色，並產生、修改符合品牌風格投影片的 AI agent<br><b>template</b>（範本）：已經載入的品牌範本，內含現成的投影片版面和配色<br><b>executive summary</b>（執行摘要）：產出的簡報裡，接在標題頁後面的摘要投影片\n\n📺 <a href=\"https://www.youtube.com/watch?v=TxS-1invhzg\" target=\"_blank\">Building a PowerPoint with Claude</a>（2026/04/16 · 4 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片裡，Claude 把第 4、5 張投影片合併成一張後，對多出來的那張投影片怎麼處理？",
+          "options": [
+            "把它移到簡報最後",
+            "直接自動刪除",
+            "刪除前先詢問使用者",
+            "把它隱藏起來但保留"
+          ],
+          "correct": 2,
+          "why": "字幕 [03:04]：「It merges two slides into one and asks before deleting the extra slide.」"
+        }
+      },
+      {
         "id": "yt_54BdUqMQUMI",
         "title": "🎬 Claude in Excel 入門",
         "category": "產品功能",
@@ -684,6 +954,24 @@ const CURRICULUM = {
     "name": "📺 客戶案例・官方頻道字幕版",
     "badge": "官方字幕實證",
     "lessons": [
+      {
+        "id": "yt_S_lzYIvtEaQ",
+        "title": "🎬 Patrick Collison 談 Stripe 如何使用 Claude Code",
+        "category": "企業與客戶案例",
+        "text": "<b>Stripe 執行長談如何用 Claude Code 加速開發，同時守住高可靠度</b><br>▸ <a href=\"https://www.youtube.com/watch?v=S_lzYIvtEaQ&t=31s\" target=\"_blank\">00:31</a> Stripe 核心 API 的可靠度達 five and a half nines，同時堅持持續部署，希望一天內多次拿到客戶回饋<br>▸ <a href=\"https://www.youtube.com/watch?v=S_lzYIvtEaQ&t=154s\" target=\"_blank\">02:34</a> 一位工程師在上半年（H1）合併了 600 多個 pull request，全部用 AI 寫，只有一個被 revert<br>▸ <a href=\"https://www.youtube.com/watch?v=S_lzYIvtEaQ&t=186s\" target=\"_blank\">03:06</a> 內部工具 Minions 可從 Slack 或網頁介面用 prompt 派工，自動開新 VM 完成任務、跑測試並送出<br>▸ <a href=\"https://www.youtube.com/watch?v=S_lzYIvtEaQ&t=218s\" target=\"_blank\">03:38</a> 過去 18 個月每個 pull request 的品質提升；單位時間事故數略增但多為小事故，整體可靠度基本不變<br>▸ <a href=\"https://www.youtube.com/watch?v=S_lzYIvtEaQ&t=279s\" target=\"_blank\">04:39</a> 守住品質的關鍵是依靠 invariants 與硬性關卡，而不是主觀、看情況或機率性的東西；Stripe 從 2017 年就開始投資資料防護<br>▸ <a href=\"https://www.youtube.com/watch?v=S_lzYIvtEaQ&t=402s\" target=\"_blank\">06:42</a> 每台 devbox 都預裝 Claude Code；Stripe Projects 由 2～3 位工程師約兩個月從構想做到公開上線，整合約 50 個服務<br>▸ <a href=\"https://www.youtube.com/watch?v=S_lzYIvtEaQ&t=678s\" target=\"_blank\">11:18</a> 有工程師先用最聰明的模型花大量心力規劃，再派出 10 台 devbox 由不同 agent 執行計畫的不同部分<br>▸ <a href=\"https://www.youtube.com/watch?v=S_lzYIvtEaQ&t=861s\" target=\"_blank\">14:21</a> 過去一年在 Stripe 上新成立的公司數約增為兩倍；Stripe 預期約三年內多數交易會發生在 agent 之間\n\n📘 術語<br><b>devbox</b>（開發機）：Stripe 工程師的開發環境，每台都預裝 Claude Code，並具備監測與可觀測性<br><b>Minions</b>（Minions（內部工具））：透過 Slack 或網頁用 prompt 調度 VM，自動實作功能、跑測試並送出<br><b>Stripe Projects</b>（Stripe Projects）：讓 agent 能非常輕鬆地在 PostHog、Vercel 等服務開帳號的產品<br><b>five and a half nines</b>（五個半 9 的可靠度）：Stripe 核心 API 的極高可靠度標準\n\n📺 <a href=\"https://www.youtube.com/watch?v=S_lzYIvtEaQ\" target=\"_blank\">Patrick Collison on Claude Code at Stripe</a>（2026/09/24 · 17 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，Stripe Projects 從最初構想到公開上線，投入的人力與時間大約是多少？",
+          "options": [
+            "1 位工程師，約兩週",
+            "2～3 位工程師，約兩個月",
+            "一個較大的團隊，約六個月",
+            "10 位工程師，約一個月"
+          ],
+          "correct": 1,
+          "why": "[07:43] 提到「between two and three engineers for about two months」從構想到公開上線；「較大團隊、六個月」是工程師對過去做法的估計（[08:13]）"
+        }
+      },
       {
         "id": "yt_LQkcGtkSLNQ",
         "title": "🎬 Frontier Day｜Claude 新創專場",
@@ -718,6 +1006,24 @@ const CURRICULUM = {
           ],
           "correct": 1,
           "why": "[00:44] 字幕說：「The review is machine-only. What comes out is intentionally limited to defined findings, not customer content.」"
+        }
+      },
+      {
+        "id": "yt_YCSeSVHNj7k",
+        "title": "🎬 用 Claude 做再生式養蜂",
+        "category": "企業與客戶案例",
+        "text": "<b>一位做了約十年再生式養蜂的養蜂人，分享 Claude 怎麼幫她整理資料</b><br>▸ <a href=\"https://www.youtube.com/watch?v=YCSeSVHNj7k&t=0s\" target=\"_blank\">00:00</a> 講者做再生式養蜂約十年，工作一部分靠直覺，但也有大量資訊，Claude 幫她同時兼顧兩者<br>▸ <a href=\"https://www.youtube.com/watch?v=YCSeSVHNj7k&t=0s\" target=\"_blank\">00:00</a> 分蜂（swarming）是蜜蜂自然繁殖的方式，離巢的蜂群會聚在樹枝之類的地方，這時她就會接到電話<br>▸ <a href=\"https://www.youtube.com/watch?v=YCSeSVHNj7k&t=31s\" target=\"_blank\">00:31</a> 講者認為養蜂主要靠觀察，跟蜜蜂相處越久越了解牠們，也越清楚什麼是正常狀態<br>▸ <a href=\"https://www.youtube.com/watch?v=YCSeSVHNj7k&t=31s\" target=\"_blank\">00:31</a> Claude 幫她把累積的常見問題資料整合成一頁式 FAQ，方便直接交給客戶<br>▸ <a href=\"https://www.youtube.com/watch?v=YCSeSVHNj7k&t=63s\" target=\"_blank\">01:03</a> 沒有一體適用的解法，每個蜂巢、每種情境都要個別判斷；她認為這更像是和大自然建立夥伴關係\n\n📘 術語<br><b>Regenerative beekeeping</b>（再生式養蜂）：重點在觀察蜜蜂在野外怎麼生活<br><b>Swarming</b>（分蜂）：蜜蜂自然繁殖的方式，就像蜂巢自己生出新的蜂巢\n\n📺 <a href=\"https://www.youtube.com/watch?v=YCSeSVHNj7k\" target=\"_blank\">Regenerative beekeeping with Claude</a>（2026/07/14 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片中，Claude 幫養蜂人把常見問題整理成什麼？",
+          "options": [
+            "每週的蜂巢觀察報告",
+            "養蜂教學影片腳本",
+            "分蜂預測模型",
+            "一頁式 FAQ，方便交給客戶"
+          ],
+          "correct": 3,
+          "why": "[00:31] 她提到 Claude 幫她把收集到的常見問題資料整合成一頁 FAQ，可以直接交給客戶"
         }
       },
       {
@@ -883,6 +1189,24 @@ const CURRICULUM = {
         }
       },
       {
+        "id": "yt__kSAptN8TAY",
+        "title": "🎬 The Problem Solvers：Cognition 的 Scott Wu",
+        "category": "企業與客戶案例",
+        "text": "<b>Cognition 的 Scott Wu 談 Devin、公司使命，以及和 Anthropic 的合作</b><br>▸ <a href=\"https://www.youtube.com/watch?v=_kSAptN8TAY&t=0s\" target=\"_blank\">00:00</a> Scott 從小就參加數學和程式競賽，2014 年拿下競技程式設計（competitive programming）世界冠軍<br>▸ <a href=\"https://www.youtube.com/watch?v=_kSAptN8TAY&t=31s\" target=\"_blank\">00:31</a> Cognition 開發 Devin 和周邊的一系列工具，他們稱 Devin 是「第一位 AI 軟體工程師」。客戶有銀行、健康保險公司、政府和私募股權公司<br>▸ <a href=\"https://www.youtube.com/watch?v=_kSAptN8TAY&t=31s\" target=\"_blank\">00:31</a> Cognition 的使命是幫助全世界把開發軟體的速度提升 10 倍<br>▸ <a href=\"https://www.youtube.com/watch?v=_kSAptN8TAY&t=63s\" target=\"_blank\">01:03</a> Scott 說團隊很在乎軟體工程第一線的手藝，想辦法讓它變得更快，並解決實際遇到的問題<br>▸ <a href=\"https://www.youtube.com/watch?v=_kSAptN8TAY&t=63s\" target=\"_blank\">01:03</a> Scott 回憶第一次和 Daria 通話時，對方說不用推銷，他完全懂這個概念。當時很多人不相信這件事做得到<br>▸ <a href=\"https://www.youtube.com/watch?v=_kSAptN8TAY&t=93s\" target=\"_blank\">01:33</a> 談到 Claude Code，Scott 認為不會有單一產品包辦所有程式和軟體工程，雙方一起做的事比各自做的多<br>▸ <a href=\"https://www.youtube.com/watch?v=_kSAptN8TAY&t=123s\" target=\"_blank\">02:03</a> Scott 說和 Anthropic 合作，讓他們能提供客戶真正想要的能力。他描述的未來是：寫軟體就像告訴電腦要做什麼一樣簡單\n\n📘 術語<br><b>Devin</b>（Devin（Cognition 的產品））：Cognition 開發的產品，被稱為第一位 AI 軟體工程師，周邊還有一系列工具<br><b>competitive programming</b>（競技程式設計）：Scott 從小參加的程式競賽，他在 2014 年拿到世界冠軍\n\n📺 <a href=\"https://www.youtube.com/watch?v=_kSAptN8TAY\" target=\"_blank\">The Problem Solvers: Scott Wu at Cognition</a>（2026/05/19 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，Cognition 的使命是幫助全世界用多快的速度開發軟體？",
+          "options": [
+            "快 5 倍",
+            "快 10 倍",
+            "快 100 倍",
+            "快 2 倍"
+          ],
+          "correct": 1,
+          "why": "[00:31] Scott 說：「Our whole mission is to help build software around the world 10 times faster.」"
+        }
+      },
+      {
         "id": "yt_IGAVa4uyo2w",
         "title": "🎬 Emergent 如何用 Claude 讓更多人能打造 app",
         "category": "企業與客戶案例",
@@ -973,6 +1297,24 @@ const CURRICULUM = {
         }
       },
       {
+        "id": "yt_U9s9Kxb7p5I",
+        "title": "🎬 HubSpot 如何用 Claude 做客戶成功",
+        "category": "企業與客戶案例",
+        "text": "<b>HubSpot 分享 Claude 在行銷、客戶成功與工程上的使用成果</b><br>▸ <a href=\"https://www.youtube.com/watch?v=U9s9Kxb7p5I&t=0s\" target=\"_blank\">00:00</a> HubSpot 的使命是幫小型企業成長得更好，他們很早就開始用 Claude，認為這會從根本改變自己和客戶的工作方式<br>▸ <a href=\"https://www.youtube.com/watch?v=U9s9Kxb7p5I&t=0s\" target=\"_blank\">00:00</a> 他們很早就發現，Claude 的表現比其他開發中或試用過的工具更好；他們也說 Claude 很有品味，而行銷講的就是品味<br>▸ <a href=\"https://www.youtube.com/watch?v=U9s9Kxb7p5I&t=31s\" target=\"_blank\">00:31</a> Claude 產出的第一批產品頁面很符合品牌調性；給它通話逐字稿和幾篇知識庫文章後，產出的內容讀起來就像自己的口吻<br>▸ <a href=\"https://www.youtube.com/watch?v=U9s9Kxb7p5I&t=31s\" target=\"_blank\">00:31</a> 一家飯店旅宿業者營收不理想。Claude 分析了歷史報表，指出哪些週末表現最好、哪些較差<br>▸ <a href=\"https://www.youtube.com/watch?v=U9s9Kxb7p5I&t=61s\" target=\"_blank\">01:01</a> 一位 CSM 說，這已經遠遠超出他平常的工作範圍，客戶也說這是和 HubSpot 聊過最好的一次<br>▸ <a href=\"https://www.youtube.com/watch?v=U9s9Kxb7p5I&t=61s\" target=\"_blank\">01:01</a> 維護 code base 的時間大幅縮短，從想法做到 prototype 的時間也大幅減少<br>▸ <a href=\"https://www.youtube.com/watch?v=U9s9Kxb7p5I&t=91s\" target=\"_blank\">01:31</a> 開發者能空出時間做真正有價值的功能開發；有工程師說 Claude Code 讓他成為更好的工程師<br>▸ <a href=\"https://www.youtube.com/watch?v=U9s9Kxb7p5I&t=91s\" target=\"_blank\">01:31</a> 他們的生產力提升了 40%；HubSpot 和 Anthropic 有共同使命，要讓大家取得工具和資訊，用過去做不到的方式經營事業\n\n📘 術語<br><b>taste</b>（品味）：字幕說 Claude 很有品味，而行銷講的就是品味<br><b>CSM</b>（CSM）：字幕裡用來指講者自己的職位，但沒有說明全名\n\n📺 <a href=\"https://www.youtube.com/watch?v=U9s9Kxb7p5I\" target=\"_blank\">How HubSpot uses Claude for customer success</a>（2026/02/09 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片中 HubSpot 提到生產力提升了多少？",
+          "options": [
+            "40%",
+            "30%",
+            "20%",
+            "50%"
+          ],
+          "correct": 0,
+          "why": "[01:31] 字幕說：We've seen a 40% increase in productivity."
+        }
+      },
+      {
         "id": "yt_Jp83_JMK74o",
         "title": "🎬 Anthropic 行銷團隊如何使用 Claude",
         "category": "企業與客戶案例",
@@ -997,6 +1339,42 @@ const CURRICULUM = {
     "name": "📺 研究與安全・官方頻道字幕版",
     "badge": "官方字幕實證",
     "lessons": [
+      {
+        "id": "yt_PQGxYvkMobQ",
+        "title": "🎬 使用 Claude 時的資料保留機制說明",
+        "category": "研究與安全",
+        "text": "<b>說明從 Claude Fable 5 起為安全監控保留 30 天資料，以及新方案 Enterprise Frontier Safeguards</b><br>▸ <a href=\"https://www.youtube.com/watch?v=PQGxYvkMobQ&t=0s\" target=\"_blank\">00:00</a> Mythos 等級的模型（如 Claude Fable 5.1）能力大幅提升，也可能被濫用，從詐騙到複雜的網路攻擊都有。最進階的濫用會分散在多個 session 和帳號，只看單次互動很難發現，所以需要把資料保存一段夠長的時間。<br>▸ <a href=\"https://www.youtube.com/watch?v=PQGxYvkMobQ&t=31s\" target=\"_blank\">00:31</a> 未經明確許可，Anthropic 不會用企業資料訓練模型。預設情況下，Anthropic 人員都無法讀取監控用的資料。<br>▸ <a href=\"https://www.youtube.com/watch?v=PQGxYvkMobQ&t=62s\" target=\"_blank\">01:02</a> 人工審查只在少數情況下發生，例如自動安全系統把內容標記為可能有害，而且只由一小群核准的審查人員進行。每次存取都會記錄在防竄改的 log 裡。<br>▸ <a href=\"https://www.youtube.com/watch?v=PQGxYvkMobQ&t=62s\" target=\"_blank\">01:02</a> 新方案 Enterprise Frontier Safeguards 結合零資料保留（zero data retention）的隱私與偵測濫用的防護機制，由 Anthropic 與超過一百家客戶共同開發。<br>▸ <a href=\"https://www.youtube.com/watch?v=PQGxYvkMobQ&t=92s\" target=\"_blank\">01:32</a> 符合資格的組織可以把監控用資料存在自己的雲端基礎架構，並使用自己的加密金鑰、存取政策和稽核紀錄。偵測到異常時，警示會直接送給組織團隊，不需要 Anthropic 人工審查。<br>▸ <a href=\"https://www.youtube.com/watch?v=PQGxYvkMobQ&t=92s\" target=\"_blank\">01:32</a> Enterprise Frontier Safeguards 會從今年秋天稍晚開始分階段推出。在它準備好之前，符合資格的組織在 Claude Fable 5 和 Fable 5.1 上可以享有零資料保留。\n\n📘 術語<br><b>safety monitoring</b>（安全監控）：保存最近 30 天的 prompts 和輸出，由自動化系統分析有沒有嚴重濫用的跡象<br><b>zero data retention</b>（零資料保留）：字幕沒有定義它。只提到新方案結合了它的隱私保障，過渡期間符合資格的組織也可以使用<br><b>Enterprise Frontier Safeguards</b>（企業前沿防護方案）：讓符合資格的組織把監控資料存在自己的雲端，警示直接送給自家團隊<br><b>tamper-proof log</b>（防竄改紀錄）：任何人工存取監控資料的行為都會記錄在裡面\n\n📺 <a href=\"https://www.youtube.com/watch?v=PQGxYvkMobQ\" target=\"_blank\">How data retention works when using Claude</a>（2026/09/14 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "從 Claude Fable 5 開始，為了安全監控會保存多久的 prompts 和 Claude 的輸出？",
+          "options": [
+            "最近一年",
+            "最近 90 天",
+            "最近 30 天",
+            "最近 7 天"
+          ],
+          "correct": 2,
+          "why": "字幕 [00:31] 說 \"the last thirty days of prompts and Claude's outputs are stored for safety monitoring\"。"
+        }
+      },
+      {
+        "id": "yt_V12aLcjX23Q",
+        "title": "🎬 AI 到底知道你哪些事？",
+        "category": "研究與安全",
+        "text": "<b>說明 AI 供應商保留你資料的四種用途，以及你可以怎麼掌控</b><br>▸ <a href=\"https://www.youtube.com/watch?v=V12aLcjX23Q&t=0s\" target=\"_blank\">00:00</a> 人們每天把醫療問題、金錢煩惱等不會公開講的事輸入 AI 工具，你應該能查看並控制 AI 供應商保留了你的哪些資料。<br>▸ <a href=\"https://www.youtube.com/watch?v=V12aLcjX23Q&t=0s\" target=\"_blank\">00:00</a> 保留的資料可分四種用途：一是只用在這次對話，AI 只知道你自己放進去的內容；二是產品記憶，會把有用的細節從一次對話帶到下一次。<br>▸ <a href=\"https://www.youtube.com/watch?v=V12aLcjX23Q&t=31s\" target=\"_blank\">00:31</a> 三是供應商自己的系統：關掉對話後，資料依供應商政策、按其時程保存。四是訓練未來模型：對話不會存在模型裡讀給其他使用者看，很多供應商也可以選擇退出。\n\n📘 術語<br><b>product memory</b>（產品記憶）：很多 AI 工具現在能把有用的細節從一次對話保存到下一次<br><b>opt out</b>（選擇退出）：供應商用對話訓練未來模型時，很多會讓你選擇退出\n\n📺 <a href=\"https://www.youtube.com/watch?v=V12aLcjX23Q\" target=\"_blank\">What does AI actually know about you?</a>（2026/08/14 · 0 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，用對話來「訓練未來模型」這種用途，下列哪個說法正確？",
+          "options": [
+            "關掉對話後，所有內容都會立刻永久刪除",
+            "所有供應商都強制用對話訓練模型，不能選擇退出",
+            "對話會存在模型裡，其他使用者可以查詢到",
+            "對話不會存在模型裡讀給其他使用者看，而且很多供應商讓你選擇退出"
+          ],
+          "correct": 3,
+          "why": "[00:31] 字幕說：Your conversations aren't stored in the model to be read back to other users. Where providers train future models on conversations many let you opt out."
+        }
+      },
       {
         "id": "yt_ANDl5Tkru7g",
         "title": "🎬 AI 到底知道你哪些事？",
@@ -1049,6 +1427,24 @@ const CURRICULUM = {
           ],
           "correct": 2,
           "why": "[00:01] 字幕提到，訓練模型變得有幫助、模仿溫暖、友善或支持的語氣時，sycophancy 會以非預期的方式一起出現"
+        }
+      },
+      {
+        "id": "yt_RnOWJoHU_NY",
+        "title": "🎬 為什麼 AI 模型會有偏見？",
+        "category": "研究與安全",
+        "text": "<b>以政治偏見為例，說明 AI 偏見的來源、Anthropic 怎麼訓練與測試 Claude，以及使用者可以怎麼應對</b><br>▸ <a href=\"https://www.youtube.com/watch?v=RnOWJoHU_NY&t=8s\" target=\"_blank\">00:08</a> AI 偏見有很多種形式。除了刻板印象和政治偏見，也可能比較間接，例如預設給某類答案或觀點，或是某些語言的回答品質比較好<br>▸ <a href=\"https://www.youtube.com/watch?v=RnOWJoHU_NY&t=40s\" target=\"_blank\">00:40</a> Anthropic 無法完全掌握偏見會怎麼出現，但會投入大量心力訓練 Claude 保持中立，並測試成效。這是所有 AI 開發者共同面對的挑戰<br>▸ <a href=\"https://www.youtube.com/watch?v=RnOWJoHU_NY&t=40s\" target=\"_blank\">00:40</a> 政治偏見是指模型偏好某一種政治觀點。有的很明顯，例如拒絕解釋某一方的立場；有的比較隱微，例如對某一方的回答比較詳細<br>▸ <a href=\"https://www.youtube.com/watch?v=RnOWJoHU_NY&t=72s\" target=\"_blank\">01:12</a> 偏見的來源：AI 從網路上大量文字（例如新聞、評論文章）學習，可能從中學到偏向某一方的模式<br>▸ <a href=\"https://www.youtube.com/watch?v=RnOWJoHU_NY&t=106s\" target=\"_blank\">01:46</a> 處理方式有兩種：訓練和測試。訓練時教 Claude 保持中立、公平對待對立觀點，對議題的正反兩方都給出同樣有幫助的回答<br>▸ <a href=\"https://www.youtube.com/watch?v=RnOWJoHU_NY&t=140s\" target=\"_blank\">02:20</a> 測試時用 paired prompts：針對同一個政治議題，從兩個立場各問一次（例如共和黨和民主黨的醫療政策），再比較兩個回答的深度和投入程度是否相當<br>▸ <a href=\"https://www.youtube.com/watch?v=RnOWJoHU_NY&t=174s\" target=\"_blank\">02:54</a> 測試涵蓋數千個 prompt、數百個主題。模型在測試中維持高度中立，資料集也已公開，任何人都能跑同樣的測試並給回饋<br>▸ <a href=\"https://www.youtube.com/watch?v=RnOWJoHU_NY&t=206s\" target=\"_blank\">03:26</a> 使用建議：覺得回答偏頗就反駁、要求更細緻平衡的觀點、說明你想要誠實的討論、請 AI 蒐集證據再自己查看連結、從不同角度問同一個問題\n\n📘 術語<br><b>political bias</b>（政治偏見）：模型偏好某一種政治觀點；可能很明顯，也可能很隱微<br><b>paired prompts</b>（成對提示）：針對同一個政治議題，從兩個立場各問一次，用來比較回答是否對等<br><b>AI Fluency</b>（AI 素養）：影片最後提到可以在 Anthropic Academy 進一步了解（字幕沒有解釋內容）\n\n📺 <a href=\"https://www.youtube.com/watch?v=RnOWJoHU_NY\" target=\"_blank\">Why does bias exist in AI models?</a>（2026/04/24 · 4 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "Anthropic 用哪種方法測試 Claude 有沒有政治偏見？",
+          "options": [
+            "把 Claude 的回答拿去和網路新聞的立場比對",
+            "請不同政治立場的真人評審幫每個回答打分數",
+            "用 paired prompts，從兩個立場針對同一個主題提問，再比較兩個回答",
+            "只檢查 Claude 有沒有拒絕回答政治問題"
+          ],
+          "correct": 2,
+          "why": "[02:20] 字幕說評估方法使用 paired prompts，請 Claude 從兩個立場回應同一個政治主題，再依幾項標準比較兩個回答，包括深度和投入程度是否相同"
         }
       },
       {
@@ -1128,6 +1524,24 @@ const CURRICULUM = {
           ],
           "correct": 0,
           "why": "[00:31] 他說 \"I'm going to rotate about 30 degrees, I think should be enough to overlap the panorama photo\""
+        }
+      },
+      {
+        "id": "yt_YovuEy7ufhE",
+        "title": "🎬 Squidsoup 如何用 Claude 打造藝術裝置",
+        "category": "藝術與人文",
+        "text": "<b>藝術團體 Squidsoup 分享與管弦樂團合作的裝置作品，以及用 Claude 簡化創作工具</b><br>▸ <a href=\"https://www.youtube.com/watch?v=YovuEy7ufhE&t=5s\" target=\"_blank\">00:05</a> Squidsoup 是由藝術家與設計師組成的合作團體，做沉浸式體驗，包括聲音、燈光，最重要的是空間<br>▸ <a href=\"https://www.youtube.com/watch?v=YovuEy7ufhE&t=35s\" target=\"_blank\">00:35</a> 「Echoes of Hill and Horizon」是他們第一次和管弦樂團合作，對象是古樂團 Orchestra of the Age of Enlightenment；整個作品要精密編排，他們也跟著指揮走<br>▸ <a href=\"https://www.youtube.com/watch?v=YovuEy7ufhE&t=67s\" target=\"_blank\">01:07</a> 靈感來自 Gloucester Cathedral 的彩繪玻璃：紅色與藍色光群重疊交織時，看起來就像彩繪玻璃的顏色<br>▸ <a href=\"https://www.youtube.com/watch?v=YovuEy7ufhE&t=110s\" target=\"_blank\">01:50</a> 他們認為藝術家一直在和媒材對話；電子零件、軟體和 LED 都有各自的材料特性，就像他們的顏料<br>▸ <a href=\"https://www.youtube.com/watch?v=YovuEy7ufhE&t=142s\" target=\"_blank\">02:22</a> 他們用 Claude 幾個月了，用它繞過現有軟體難用的介面，讓軟體更快做到想要的事<br>▸ <a href=\"https://www.youtube.com/watch?v=YovuEy7ufhE&t=142s\" target=\"_blank\">02:22</a> Claude 幫他們把非常複雜的 node 結構建模，轉成符合他們空間創作思路的工具組，也讓團隊其他成員能用這些工具<br>▸ <a href=\"https://www.youtube.com/watch?v=YovuEy7ufhE&t=172s\" target=\"_blank\">02:52</a> Claude 就像介於技術觀點和藝術觀點之間的合作者，扮演雙方的翻譯層，讓團隊能更緊密合作<br>▸ <a href=\"https://www.youtube.com/watch?v=YovuEy7ufhE&t=172s\" target=\"_blank\">02:52</a> 他們的目標是讓觀眾完全不去注意技術，只專注於空間中的光與聲音，以及身邊的人\n\n📘 術語<br><b>immersive experiences</b>（沉浸式體驗）：Squidsoup 的創作類型，結合聲音、燈光與空間<br><b>period orchestra</b>（古樂團）：字幕用這個詞形容 Orchestra of the Age of Enlightenment<br><b>node structure-based modeling</b>（以 node 結構為基礎的建模）：原本非常複雜的建模方式，他們透過 Claude 把它轉成更直覺的工具組<br><b>translation layer</b>（翻譯層）：Claude 在技術觀點和藝術觀點之間扮演的角色\n\n📺 <a href=\"https://www.youtube.com/watch?v=YovuEy7ufhE\" target=\"_blank\">How Squidsoup makes art installations with Claude</a>（2026/07/03 · 3 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "Squidsoup 在作品中重疊交織哪兩種顏色的光群，營造出彩繪玻璃的效果？",
+          "options": [
+            "藍色與黃色",
+            "紫色與白色",
+            "紅色與藍色",
+            "金色與綠色"
+          ],
+          "correct": 2,
+          "why": "[01:07] 字幕提到，紅色和藍色的光群重疊交織時，看起來就像彩繪玻璃的顏色"
         }
       }
     ]
