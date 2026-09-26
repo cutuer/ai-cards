@@ -643,3 +643,7 @@ body {
 .lesson-box, .quiz-question, .explanation-box, .card-title, textarea {
   user-select: text; -webkit-user-select: text;
 }
+/* 課的完成狀態（9/25） */
+.status-badge { display: inline-block; font-size: 13px; padding: 4px 10px; border-radius: 999px; margin: -4px 0 12px; }
+.status-badge.full { background: var(--correct-bg); color: var(--correct-text); border: 1px solid var(--correct-border); }
+.status-badge.old, .status-badge.long { background: var(--tag-bg); color: var(--tag-text); border: 1px solid var(--accent-gold); }
