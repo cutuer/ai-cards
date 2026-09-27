@@ -7763,6 +7763,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_2g1e1QUiY8s",
+        "title": "🎬 2026/04/06 LG Uplus 打造次世代 AICC",
+        "category": "企業與客戶案例",
+        "text": "<b>LG Uplus 用 Real-time API 打造 Agentic AICC，並從 POC 快速推進到正式上線</b><br>▸ <a href=\"https://www.youtube.com/watch?v=2g1e1QUiY8s&t=11s\" target=\"_blank\">00:11</a> 講者 Daniel 是一位 solutions architect，分享與 LG Uplus 團隊合作的經驗<br>▸ <a href=\"https://www.youtube.com/watch?v=2g1e1QUiY8s&t=11s\" target=\"_blank\">00:11</a> LG Uplus 團隊從第一天起目標就很一致，商業意圖和工程執行同步推進，這是專案能成功交付的關鍵<br>▸ <a href=\"https://www.youtube.com/watch?v=2g1e1QUiY8s&t=11s\" target=\"_blank\">00:11</a> 團隊很擅長把想要的成果轉成清楚的技術方向，決策也做得又快又乾淨<br>▸ <a href=\"https://www.youtube.com/watch?v=2g1e1QUiY8s&t=41s\" target=\"_blank\">00:41</a> 工程團隊做事有急迫感也很嚴謹，特別是測試、迭代和納入回饋的方式，所以這個 POC 很快就進入 production<br>▸ <a href=\"https://www.youtube.com/watch?v=2g1e1QUiY8s&t=41s\" target=\"_blank\">00:41</a> Real-time 最大的優勢是能做到真正像對話、low latency 的體驗：語音串流進出，助理可以自然回應、處理插話，不那麼像一問一答輪流進行<br>▸ <a href=\"https://www.youtube.com/watch?v=2g1e1QUiY8s&t=41s\" target=\"_blank\">00:41</a> Real-time 是完全 event-driven 的 API，可以在對話進行中觸發動作、串接後端工具，在真實環境下也能維持即時回應<br>▸ <a href=\"https://www.youtube.com/watch?v=2g1e1QUiY8s&t=71s\" target=\"_blank\">01:11</a> Real-time API 原生就是 speech-to-speech，中間不需要轉錄，模型能利用語氣、抑揚頓挫和說話節奏，保留更多訊號，讓互動更像真人<br>▸ <a href=\"https://www.youtube.com/watch?v=2g1e1QUiY8s&t=103s\" target=\"_blank\">01:43</a> 傳統 rule-based AICC 通常是一棵 decision tree，適合可預測的情況；但現實不會那麼好預測，客戶一脫離腳本，系統就容易出問題<br>▸ <a href=\"https://www.youtube.com/watch?v=2g1e1QUiY8s&t=103s\" target=\"_blank\">01:43</a> Agentic AICC 能理解自然語言中的意圖、跨多輪對話保留上下文，並採取行動，例如查詢正確的政策、檢查帳戶狀態、啟動下一步<br>▸ <a href=\"https://www.youtube.com/watch?v=2g1e1QUiY8s&t=103s\" target=\"_blank\">01:43</a> Agentic AICC 不會強迫使用者走死板的逐步流程<br>▸ <a href=\"https://www.youtube.com/watch?v=2g1e1QUiY8s&t=103s\" target=\"_blank\">01:43</a> 和 LG Uplus 合作時，觀察到一個關鍵轉變：從照腳本分流（scripted routing），轉向能推理、能調整，並在適當防護機制（safeguards）下保持有所依據（grounded）的系統<br>▸ <a href=\"https://www.youtube.com/watch?v=2g1e1QUiY8s&t=133s\" target=\"_blank\">02:13</a> 這不只是韓國或單一產業的創新，而是未來全球次世代 contact center 運作方式的藍圖<br>▸ <a href=\"https://www.youtube.com/watch?v=2g1e1QUiY8s&t=133s\" target=\"_blank\">02:13</a> 每個市場和產業追求的都一樣：更快解決問題、更自然的語音體驗、可規模化的營運<br>▸ <a href=\"https://www.youtube.com/watch?v=2g1e1QUiY8s&t=163s\" target=\"_blank\">02:43</a> 以 real-time 為基礎的 AICC 能在客戶所在之處服務他們，並整合完成任務所需的工具和知識，適用於任何領域<br>▸ <a href=\"https://www.youtube.com/watch?v=2g1e1QUiY8s&t=163s\" target=\"_blank\">02:43</a> LG Uplus 示範了三者結合的可能性：營運紀律、前沿 AI 能力，以及建立在頂尖 speech-to-speech 技術上的模組化框架<br>▸ <a href=\"https://www.youtube.com/watch?v=2g1e1QUiY8s&t=163s\" target=\"_blank\">02:43</a> 接下來的重點是擴大已經有效的做法，讓營運比現在更穩健<br>▸ <a href=\"https://www.youtube.com/watch?v=2g1e1QUiY8s&t=193s\" target=\"_blank\">03:13</a> 具體做法是加強評估（evaluation）、監控和有結構的實驗，確保擴大使用情境時效能仍維持高水準<br>▸ <a href=\"https://www.youtube.com/watch?v=2g1e1QUiY8s&t=193s\" target=\"_blank\">03:13</a> 會繼續和 LG Uplus 合作：LG Uplus 要把它產品化成進階（premium）方案，並擴大企業客戶的採用\n\n📘 術語<br><b>AICC</b>（AI 客服中心）：字幕沒有說明縮寫全名；影片把它和次世代 contact center 放在一起談<br><b>POC</b>（概念驗證）：字幕沒有解釋；只提到這個 POC 很快被推進到 production<br><b>Real-time API</b>（即時 API）：語音串流進出、low latency、event-driven，原生 speech-to-speech，中間不需要轉錄<br><b>low latency</b>（低延遲）：讓對話體驗更自然，不那麼一問一答輪流進行<br><b>event-driven API</b>（事件驅動 API）：可以在對話中觸發動作、串接後端工具，維持即時回應<br><b>speech-to-speech</b>（語音到語音）：不需要中間轉錄，模型能利用語氣、抑揚頓挫和節奏，保留更多訊號<br><b>rule-based AICC</b>（規則式 AICC）：傳統做法，通常是 decision tree；情況可預測時好用，客戶脫離腳本就容易出問題<br><b>decision tree</b>（決策樹）：傳統 rule-based AICC 的運作形式<br><b>Agentic AICC</b>（代理式 AICC）：理解自然語言意圖、跨輪次保留上下文、能採取行動，不強迫使用者走死板流程<br><b>scripted routing</b>（照腳本分流）：傳統做法；合作中觀察到的轉變，是從它轉向能推理、能調整的系統<br><b>safeguards</b>（防護機制）：讓系統在推理、調整的同時保持有所依據（grounded）<br><b>contact center</b>（客服中心）：影片說這個案例是未來全球次世代 contact center 的藍圖\n\n📺 <a href=\"https://www.youtube.com/watch?v=2g1e1QUiY8s&t=0s\" target=\"_blank\">LG Uplus Creates Next Gen AICC</a>（2026/04/06 · 3 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，為什麼使用 Real-time API 時中間不需要轉錄？",
+          "options": [
+            "因為 Real-time API 只接受文字輸入",
+            "因為 Real-time API 採用 rule-based 的 decision tree",
+            "因為 Real-time API 原生就是 speech-to-speech",
+            "因為 Real-time API 內建高準確率的轉錄模型，會自動處理"
+          ],
+          "correct": 2,
+          "why": "[01:11] 字幕說 because the Real-time API is natively speech-to-speech, there's really no need for a transcription in the middle"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_ZXEAuZOSLs0",
         "title": "🎬 2026/04/01 Codex 為 Ramp 帶來了什麼",
         "category": "企業與客戶案例",
@@ -9158,6 +9177,25 @@ const CURRICULUM = {
           ],
           "correct": 1,
           "why": "[01:20] 字幕說 the Met 從報紙（newspapers）和她的親戚（her relatives）那裡蒐集她的生平資料"
+        },
+        "status": "full"
+      },
+      {
+        "id": "yt_2hT9_QrEhb0",
+        "title": "🎬 2024/07/18 Baby Alpaca · Sora 作品展示",
+        "category": "創作與人文",
+        "text": "<b>一支 Sora Showcase 影片，字幕內容全部是歌詞，不是教學</b><br>▸ <a href=\"https://www.youtube.com/watch?v=2hT9_QrEhb0&t=16s\" target=\"_blank\">00:16</a> 開頭歌詞：「I&#x27;m sorry I cannot explain it for myself」、「I keep on running from the depths of hell」（一直在逃離地獄深處）<br>▸ <a href=\"https://www.youtube.com/watch?v=2hT9_QrEhb0&t=16s\" target=\"_blank\">00:16</a> 歌詞對 baby 說 don&#x27;t worry，提到自己做過的壞事，並唱「when they come for me we both better run」（他們來找我時我們最好一起逃）<br>▸ <a href=\"https://www.youtube.com/watch?v=2hT9_QrEhb0&t=49s\" target=\"_blank\">00:49</a> 副歌反覆唱「why do my dreams come at night」（為什麼我的夢總在夜裡出現）和「when will I wake up tomorrow」（我明天什麼時候才會醒來）<br>▸ <a href=\"https://www.youtube.com/watch?v=2hT9_QrEhb0&t=49s\" target=\"_blank\">00:49</a> 字幕在這裡標出 [Applause]，接著唱「running on empty」、「flowers bleeding red」（花朵滲出紅色）<br>▸ <a href=\"https://www.youtube.com/watch?v=2hT9_QrEhb0&t=81s\" target=\"_blank\">01:21</a> 歌詞：「trying to save me」（試著拯救我）、「I&#x27;m haunted」（我被糾纏著）<br>▸ <a href=\"https://www.youtube.com/watch?v=2hT9_QrEhb0&t=123s\" target=\"_blank\">02:03</a> 歌詞：「I think I know my heart is some place」（我想我知道我的心在某個地方）<br>▸ <a href=\"https://www.youtube.com/watch?v=2hT9_QrEhb0&t=154s\" target=\"_blank\">02:34</a> 歌詞：「living in this time I think I&#x27;m bleeding」（活在這個時代，我想我正在流血）<br>▸ <a href=\"https://www.youtube.com/watch?v=2hT9_QrEhb0&t=188s\" target=\"_blank\">03:08</a> 最後以副歌結尾的「wake up tomorrow」收尾\n\n📺 <a href=\"https://www.youtube.com/watch?v=2hT9_QrEhb0&t=0s\" target=\"_blank\">Baby Alpaca · Sora Showcase</a>（2024/07/18 · 3 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "這支影片的副歌一直重複問的是哪一句？",
+          "options": [
+            "Why do the flowers never grow",
+            "Where did my heart go last night",
+            "Why do my dreams come at night",
+            "Why can't I stop running tomorrow"
+          ],
+          "correct": 2,
+          "why": "副歌反覆唱「why do my dreams come at night」，第一次出現在 [00:49]，之後 [01:21]、[02:03]、[02:34] 都有重複"
         },
         "status": "full"
       },
