@@ -4508,6 +4508,25 @@ const CURRICULUM = {
     "badge": "官方字幕實證",
     "lessons": [
       {
+        "id": "yt_2f9bBlGOuX4",
+        "title": "🎬 2026/08/25 Codex，但來點怪的。Haha Hacks",
+        "category": "Codex 與寫程式",
+        "text": "<b>Haha Hacks 活動紀錄：參加者用 Codex 做出各種搞笑、荒謬的作品</b><br>▸ <a href=\"https://www.youtube.com/watch?v=2f9bBlGOuX4&t=4s\" target=\"_blank\">00:04</a> Haha Hacks 是一場好玩的 hack 活動，主題是做出蠢、荒謬、離譜的東西<br>▸ <a href=\"https://www.youtube.com/watch?v=2f9bBlGOuX4&t=4s\" target=\"_blank\">00:04</a> 主辦方提供參加者使用 Codex Pro plan，希望大家做出最異想天開、混亂、好玩又調皮的專案<br>▸ <a href=\"https://www.youtube.com/watch?v=2f9bBlGOuX4&t=4s\" target=\"_blank\">00:04</a> 作品一「進我家請脫鞋」：偵測到門口有人；準備好脫鞋時會亮綠燈，表示有人準備好要進屋了<br>▸ <a href=\"https://www.youtube.com/watch?v=2f9bBlGOuX4&t=4s\" target=\"_blank\">00:04</a> 作品二：把無聊的信箱改造成讓人真的想打開、還會被逗笑的有趣信箱<br>▸ <a href=\"https://www.youtube.com/watch?v=2f9bBlGOuX4&t=34s\" target=\"_blank\">00:34</a> 作品三：開發者左眼視力弱、看不清遠處文字，戴上有小孔的眼鏡後就能看清楚遠方文字；目前只做好左眼<br>▸ <a href=\"https://www.youtube.com/watch?v=2f9bBlGOuX4&t=34s\" target=\"_blank\">00:34</a> 作品四：偵測說謊的 app，抓到你說謊就往你臉上潑水，模擬冒汗<br>▸ <a href=\"https://www.youtube.com/watch?v=2f9bBlGOuX4&t=34s\" target=\"_blank\">00:34</a> 參加者分享：可以快速打開 Codex，把整個專案描述給它，它就做出了很棒的 app<br>▸ <a href=\"https://www.youtube.com/watch?v=2f9bBlGOuX4&t=66s\" target=\"_blank\">01:06</a> 活動最後大家互相鼓掌，感謝所有人做出這些很棒的作品\n\n📘 術語<br><b>hack</b>（駭客松式的創作活動）：字幕稱 Haha Hacks 是「一場好玩的 hack」，目標是做出蠢又荒謬的東西<br><b>Codex Pro plan</b>（Codex Pro 方案）：活動提供給參加者使用的 Codex 方案\n\n📺 <a href=\"https://www.youtube.com/watch?v=2f9bBlGOuX4&t=0s\" target=\"_blank\">Codex, but make it weird. Hahahacks.</a>（2026/08/25 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "Haha Hacks 裡那個「測謊 app」偵測到說謊後會做什麼？",
+          "options": [
+            "把結果寄到信箱",
+            "往臉上潑水，模擬冒汗",
+            "發出警報聲",
+            "亮起紅燈警告"
+          ],
+          "correct": 1,
+          "why": "[00:34] 字幕說這個 app 會偵測你說謊，然後往你臉上潑水，模擬冒汗"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_1fL_lwsdMd4",
         "title": "🎬 2026/07/16 別再下 prompt，開始給 AI 目標｜Katia Gil Guzman｜OpenAI France",
         "category": "Codex 與寫程式",
