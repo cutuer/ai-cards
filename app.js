@@ -6720,6 +6720,25 @@ const CURRICULUM = {
         "status": "old"
       },
       {
+        "id": "yt_1PaoWKvcJP0",
+        "title": "🎬 2025/09/30 打開聲音看 Sora 2",
+        "category": "模型發表與 DevDay",
+        "text": "<b>發表 Sora app 與 Sora 2：影片有聲音、更寫實，並新增 Cameo 功能</b><br>▸ <a href=\"https://www.youtube.com/watch?v=1PaoWKvcJP0&t=8s\" target=\"_blank\">00:08</a> 一年前，Sora 1 重新定義了動態影像能做到的事。<br>▸ <a href=\"https://www.youtube.com/watch?v=1PaoWKvcJP0&t=8s\" target=\"_blank\">00:08</a> 今天宣布推出 Sora app，背後由全新的 Sora 2 驅動。<br>▸ <a href=\"https://www.youtube.com/watch?v=1PaoWKvcJP0&t=8s\" target=\"_blank\">00:08</a> 影片稱 Sora 2 是「史上最強大的想像力引擎」，並加入許多新功能。接著由 Bill 說明細節。<br>▸ <a href=\"https://www.youtube.com/watch?v=1PaoWKvcJP0&t=8s\" target=\"_blank\">00:08</a> 新功能：現在每支影片都有聲音。<br>▸ <a href=\"https://www.youtube.com/watch?v=1PaoWKvcJP0&t=47s\" target=\"_blank\">00:47</a> Sora 2 在動作、物理、IQ、身體力學（body mechanics）方面都是 state-of-the-art，寫實度大幅躍進。<br>▸ <a href=\"https://www.youtube.com/watch?v=1PaoWKvcJP0&t=47s\" target=\"_blank\">00:47</a> 推出 Cameo：讓你走進任何世界或場景，也讓朋友把你和他們自己放進影片裡。<br>▸ <a href=\"https://www.youtube.com/watch?v=1PaoWKvcJP0&t=86s\" target=\"_blank\">01:26</a> 在通往 AGI 的路上，重點不只是生產力，而是創造新的可能，也關乎創意與喜悅。<br>▸ <a href=\"https://www.youtube.com/watch?v=1PaoWKvcJP0&t=86s\" target=\"_blank\">01:26</a> 因此 Sora 2 放在 Sora app 裡推出，讓每個人都能突破想像的極限，用前所未有的方式創作。\n\n📘 術語<br><b>Sora 2</b>（Sora 2（影片生成模型））：Sora 1 的下一代，驅動 Sora app，影片附聲音，動作與物理表現更寫實<br><b>Sora app</b>（Sora 應用程式）：由 Sora 2 驅動的 app，讓每個人都能用它來創作<br><b>Cameo</b>（客串功能）：讓你走進任何世界或場景，朋友也可以把你和他們自己放進影片<br><b>state-of-the-art</b>（業界最先進）：字幕用這個詞形容 Sora 2 在動作、物理、IQ、身體力學上的表現<br><b>body mechanics</b>（身體力學）：字幕把它列為 Sora 2 領先的項目之一，但沒有進一步解釋<br><b>AGI</b>（通用人工智慧）：字幕只說「on the path to AGI」（在通往 AGI 的路上），沒有解釋\n\n📺 <a href=\"https://www.youtube.com/watch?v=1PaoWKvcJP0&t=0s\" target=\"_blank\">Sound on for Sora 2</a>（2025/09/30 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，Sora 2 讓每支影片多了什麼？",
+          "options": [
+            "4K 畫質",
+            "聲音",
+            "多國語言配音",
+            "自動字幕"
+          ],
+          "correct": 1,
+          "why": "[00:08] 影片說「Now, every video comes with sound.」（現在每支影片都有聲音）"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_2jqS7JD0hrY",
         "title": "🎬 2025/08/07 GPT-5：我們最適合工作的模型",
         "category": "模型發表與 DevDay",
