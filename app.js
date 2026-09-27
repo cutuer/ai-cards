@@ -5853,6 +5853,25 @@ const CURRICULUM = {
         },
         "status": "long",
         "parts": 44
+      },
+      {
+        "id": "yt_F1_0Lkp16Rc",
+        "title": "🎬 介紹 Grok Bot",
+        "category": "其他",
+        "text": "<b>使用者現身說法，分享 Bot 如何在另一台電腦 instance 上替他們實際完成工作</b><br>▸ <a href=\"https://www.youtube.com/watch?v=F1_0Lkp16Rc&t=1s\" target=\"_blank\">00:01</a> 使用者對 Bot 下的指令例子：寄 NDA 給所有 campus leads、問週一有幾位員工到職、確認正在 LinkedIn 上解析哪些公司<br>▸ <a href=\"https://www.youtube.com/watch?v=F1_0Lkp16Rc&t=1s\" target=\"_blank\">00:01</a> 使用者說不需要學什麼，就像替團隊加入一位同事<br>▸ <a href=\"https://www.youtube.com/watch?v=F1_0Lkp16Rc&t=1s\" target=\"_blank\">00:01</a> Bot 可以觀察你的工作方式並錄下操作過程，再整理成一套實際的 workflow<br>▸ <a href=\"https://www.youtube.com/watch?v=F1_0Lkp16Rc&t=32s\" target=\"_blank\">00:32</a> Bot 不使用你的電腦，而是在另一個 instance 上工作，所以你可以同時繼續做自己的事<br>▸ <a href=\"https://www.youtube.com/watch?v=F1_0Lkp16Rc&t=32s\" target=\"_blank\">00:32</a> 使用者說其他 AI 產品的輸出多半留在聊天視窗裡，Bot 的輸出則出現在別的地方<br>▸ <a href=\"https://www.youtube.com/watch?v=F1_0Lkp16Rc&t=32s\" target=\"_blank\">00:32</a> 使用者認為 Bot 好用，是因為它有實際的電腦 instance、開著瀏覽器，而且懂網站實際怎麼運作<br>▸ <a href=\"https://www.youtube.com/watch?v=F1_0Lkp16Rc&t=32s\" target=\"_blank\">00:32</a> 一開始先從 email 用起：使用者叫 Bot 直接去寄，結果全部照指示寄出，慢慢建立起信任<br>▸ <a href=\"https://www.youtube.com/watch?v=F1_0Lkp16Rc&t=62s\" target=\"_blank\">01:02</a> 建立信任之後，使用者對放手交給 Bot 做感到完全放心<br>▸ <a href=\"https://www.youtube.com/watch?v=F1_0Lkp16Rc&t=62s\" target=\"_blank\">01:02</a> 有一個 Figma agent 會在會議中做投影片：抓取 discovery notes，通話結束時就產生 slide deck<br>▸ <a href=\"https://www.youtube.com/watch?v=F1_0Lkp16Rc&t=62s\" target=\"_blank\">01:02</a> 與會者常驚訝地問，這份簡報怎麼能在通話中就做出來<br>▸ <a href=\"https://www.youtube.com/watch?v=F1_0Lkp16Rc&t=62s\" target=\"_blank\">01:02</a> 使用者覺得 bots 彼此對話、互相下指示這點很有趣<br>▸ <a href=\"https://www.youtube.com/watch?v=F1_0Lkp16Rc&t=62s\" target=\"_blank\">01:02</a> 使用者發現自己漸漸不用其他 app，整天待在 bots 的視窗裡，不必在各種工具之間切換<br>▸ <a href=\"https://www.youtube.com/watch?v=F1_0Lkp16Rc&t=62s\" target=\"_blank\">01:02</a> 使用者以前有 AI thinking partner（陪想的夥伴），但從沒有 AI doing partner（動手做事的夥伴）<br>▸ <a href=\"https://www.youtube.com/watch?v=F1_0Lkp16Rc&t=96s\" target=\"_blank\">01:36</a> 使用者強調 Bot 是真的會動手做事<br>▸ <a href=\"https://www.youtube.com/watch?v=F1_0Lkp16Rc&t=96s\" target=\"_blank\">01:36</a> 使用者說 Bot 沒有限制、用起來很自然，已經無法想像回到舊的工作方式\n\n📘 術語<br><b>NDA</b>（保密協議）：字幕沒有解釋，只當成請 Bot 寄給 campus leads 的文件例子<br><b>workflow</b>（工作流程）：Bot 觀察並錄下你的操作後，整理出來的一套實際流程<br><b>instance</b>（執行個體）：Bot 在另一個 instance 上工作，不占用你的電腦，讓你可以同時做事<br><b>Figma agent</b>（Figma 代理）：在會議中抓取 discovery notes，並在通話結束時產生 slide deck<br><b>discovery notes</b>（探索會議筆記）：字幕沒有解釋，只提到 Figma agent 會抓取它來做投影片<br><b>slide deck</b>（簡報投影片）：Figma agent 在通話結束時產生的簡報<br><b>AI thinking partner / AI doing partner</b>（陪想的 AI 夥伴／動手做事的 AI 夥伴）：使用者說以前只有陪想的夥伴，Bot 是真的會動手做事的夥伴\n\n📺 <a href=\"https://www.youtube.com/watch?v=F1_0Lkp16Rc&t=0s\" target=\"_blank\">Introducing Grok Bot</a>（2026/08/11 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，為什麼 Bot 工作的時候，你還能同時繼續做自己的事？",
+          "options": [
+            "因為 Bot 的所有輸出都只顯示在聊天視窗裡",
+            "因為 Bot 不使用你的電腦，而是在另一個 instance 上工作",
+            "因為 Bot 只在你閒置時才在背景執行",
+            "因為 Bot 會先把工作排進佇列，等你下班後再處理"
+          ],
+          "correct": 1,
+          "why": "[00:32] It's not using your computer, so you can keep doing work in parallel while Bot is working on another instance."
+        },
+        "status": "full"
       }
     ]
   },
