@@ -5636,6 +5636,25 @@ const CURRICULUM = {
         "status": "old"
       },
       {
+        "id": "yt_RNcXWPCaLqg",
+        "title": "🎬 2024/12/17 OpenAI DevDay 2024｜社群焦點｜Dust",
+        "category": "API 與開發者",
+        "text": "<b>Dust 示範如何用自然語言查詢資料倉儲、試算表與 CSV，並說明背後 text to SQL 架構</b><br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=7s\" target=\"_blank\">00:07</a> 演講主題：針對資料倉儲（data warehouse）、試算表與 CSV 的統一 text to SQL。講者 Alden 是 Dust 的 Solutions engineer<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=7s\" target=\"_blank\">00:07</a> Dust 自稱是「AI operating system」，協助企業建立掛載公司知識的專屬助理（assistant），可以接上許多不同的「積木（bricks）」<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=38s\" target=\"_blank\">00:38</a> Dust 有完整的 API 與開發平台，所以助理可以嵌入到各種地方。例如在 Zendesk 側邊放 Dust 助理，客服可以直接查公司資料與其他 Zendesk 工單<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=38s\" target=\"_blank\">00:38</a> 可掛載的積木包括：內部知識、semantic search、code interpretation、web search、transcription 等<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=69s\" target=\"_blank\">01:09</a> 本場重點是 table queries 積木：只用一般文字就能查詢資料表<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=69s\" target=\"_blank\">01:09</a> Demo 一：接上 Snowflake 倉儲的助理，要求畫出 Dust 平台每週平均訊息數，前 10 名 workspace 用不同顏色，其餘用另一種顏色<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=99s\" target=\"_blank\">01:39</a> 執行流程：助理查詢資料表並說明正在做什麼，從 Snowflake 取回資料，再產生 react component，交給 code interpreter 繪出圖表<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=99s\" target=\"_blank\">01:39</a> 圖表呈現指數成長曲線，講者表示這對 Dust 是好消息<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=99s\" target=\"_blank\">01:39</a> 打開助理使用的工具，可以看到 chain of thoughts，說明它為何這樣做<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=129s\" target=\"_blank\">02:09</a> 工具裡也看得到實際使用的 SQL query。這段 SQL 很長，若由人來寫，需要花不少時間或很多 SQL 知識<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=129s\" target=\"_blank\">02:09</a> 在同一段對話中接著要求對 active users 與最常用的 assistants 做相同分析，一段對話就產生三張圖<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=159s\" target=\"_blank\">02:39</a> 資料點不會直接放進 prompt，因為那樣產生 component 會花太多時間<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=159s\" target=\"_blank\">02:39</a> 接著要求把三張圖合併成一個 react component，並加上按鈕切換不同圖表<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=190s\" target=\"_blank\">03:10</a> 合併時會重用先前的資料，因為查詢結果已存成 CSV 檔（message、users、agents 三個），模型可以直接取用<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=190s\" target=\"_blank\">03:10</a> 結果是三張圖加上切換按鈕。使用者不需要懂 SQL，也不需要會寫程式<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=222s\" target=\"_blank\">03:42</a> Demo 二：跨來源查詢。HR 團隊在 Google Drive 放員工與職位檔案，另有一份使用者 workspace 用量 CSV，目標是找出哪些職位最常用 Dust<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=222s\" target=\"_blank\">03:42</a> 想知道這件事的原因：了解哪些團隊在使用 Dust、各有什麼使用情境<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=253s\" target=\"_blank\">04:13</a> assistant 的定義：一組指令加上掛載的工具。這裡掛的工具是 query tables，並附上工具描述「info about users activity and roles」<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=253s\" target=\"_blank\">04:13</a> 設定 assistant 時要勾選資料庫。若勾選 web search，就能問外部問題並畫圖，例如 2024 巴黎奧運各國獎牌數<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=283s\" target=\"_blank\">04:43</a> query tables 工具的資料來源有兩個：員工職位的 Google Sheet，以及從 Dust API 下載的用量 CSV<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=283s\" target=\"_blank\">04:43</a> 提問「我們前五名使用者的職位是什麼」。前 20、前 100 名等也都可以問<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=313s\" target=\"_blank\">05:13</a> 產生的 SQL 對兩張表（即兩個來自不同儲存位置的檔案）以員工 email 做 left join，結果包含姓名、使用者、訊息數與職位<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=313s\" target=\"_blank\">05:13</a> 重點：只要用問的，就能合併兩個來自不同地方的檔案<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=345s\" target=\"_blank\">05:45</a> Dust 架構之一 front：客戶接觸的入口，例如 API、web UI 等<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=345s\" target=\"_blank\">05:45</a> 架構之二 connectors：使用者接入 Google Drive、Notion、Slack、GitHub 等資料時，透過 connector 同步<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=375s\" target=\"_blank\">06:15</a> 同步的資料存進資料庫，再交給 core。core 是 Rust 應用程式，直接與 LLM 溝通，也連接向量搜尋資料庫 quadrant，Dust 用它來做 RAG<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=375s\" target=\"_blank\">06:15</a> 檔案可以從 front 上傳（例如直接把 CSV 丟進 UI），也可以透過 connector 同步進來（例如 Google Drive 出現新試算表）<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=405s\" target=\"_blank\">06:45</a> 不論原始格式是試算表、資料庫或 Google Sheet，一律統一轉成 CSV，再解析並推斷欄位型別<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=405s\" target=\"_blank\">06:45</a> 會替欄位取與原檔不同、對 LLM 較好用的名稱，存進 PG database，這份資料稱為 augmented schema<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=436s\" target=\"_blank\">07:16</a> 使用者提問時，會把 augmented schema 與實際問題一起送給 LLM，schema 以 dbml 語言格式傳送<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=436s\" target=\"_blank\">07:16</a> Dust 是 model agnostic，但這個工具需要支援 function calls 的模型<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=466s\" target=\"_blank\">07:46</a> 送給 LLM 的內容第一項：完整的對話歷史，例如前面「對 users 做同樣的事」這類後續要求<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=466s\" target=\"_blank\">07:46</a> 第二項：augmented schema，也就是加上說明的欄位資訊<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=496s\" target=\"_blank\">08:16</a> 第三項：若欄位中有 enum，會一併送出該欄位可能的值，讓工作更容易<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=496s\" target=\"_blank\">08:16</a> 第四項：範例資料。取每張表（每個檔案）的前 16 列送給 LLM，確保它了解資料結構<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=496s\" target=\"_blank\">08:16</a> Dust 實際用的是 function call，因為這功能在 structured outputs 推出前就做好了，現在可以改用 structured output call<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=527s\" target=\"_blank\">08:47</a> 回傳三樣東西：chain of thought（開啟工具時看到的紫色方塊）、可下載結果檔的標題、SQL query<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=527s\" target=\"_blank\">08:47</a> 若使用者問的內容與資料庫無關、沒有東西可查，就不會產生也不會執行 SQL query<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=558s\" target=\"_blank\">09:18</a> 取得 SQL 後有兩條路徑。若是 warehouse，就直接在倉儲執行並取回結果。目前只支援 Snowflake，之後會支援 Red shift 與 bit query（字幕原文）<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=558s\" target=\"_blank\">09:18</a> 若是檔案，會用 Rust 即時啟動一個 in-memory 的 SQLite 資料庫，速度非常快<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=588s\" target=\"_blank\">09:48</a> LLM 的延遲夠長，所以能趁 LLM 思考時啟動資料庫並把所有檔案灌進去當成資料表，之後就能對任意資料表做 left join<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=588s\" target=\"_blank\">09:48</a> 執行查詢後，把結果存成 CSV，上傳到 S3 或 GCS<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=619s\" target=\"_blank\">10:19</a> 之後產生的 component 直接讀取檔案，不必輸出大量 token<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=619s\" target=\"_blank\">10:19</a> 早期做法是把所有資料點直接輸入 LLM，非常昂貴也非常慢，因為 LLM 要在 component 裡寫出所有資料點；改用檔案容易得多<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=650s\" target=\"_blank\">10:50</a> 會讓 LLM 看結果的幾列資料，確保它理解資料結構，再產生繪圖程式碼<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=650s\" target=\"_blank\">10:50</a> 繪圖使用 recharts，也正在導入 D3 GS（字幕原文）。component 會下載 CSV 檔並畫出圖表<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=680s\" target=\"_blank\">11:20</a> 講者表示他們做到了「natural language BI」：許多非技術團隊能用它做以前做不到的 BI<br>▸ <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=680s\" target=\"_blank\">11:20</a> 相較於建 dashboard，直接向倉儲或各種檔案提問所省下的時間非常多\n\n📘 術語<br><b>text to SQL</b>（文字轉 SQL）：用一般文字提問，由系統產生 SQL 查詢資料表<br><b>data warehouse</b>（資料倉儲）：字幕中的例子是 Snowflake，查詢會直接在倉儲裡執行<br><b>table queries</b>（資料表查詢）：Dust 的積木之一，讓使用者用一般文字查詢資料表<br><b>assistant</b>（助理）：一組指令加上掛載的工具<br><b>bricks</b>（積木（功能模組））：可掛到助理上的功能，如內部知識、semantic search、web search 等<br><b>semantic search</b>（語意搜尋）：字幕只列為可掛載的積木之一，未進一步解釋<br><b>code interpreter</b>（程式碼直譯器）：負責解譯 react component，產生圖表<br><b>react component</b>（React 元件）：助理產生、用來呈現圖表的元件，可讀取 CSV 檔繪圖<br><b>chain of thought</b>（思考鏈）：工具中顯示的推理說明，告訴使用者助理為何這樣做<br><b>connector</b>（連接器）：接入 Google Drive、Notion、Slack、GitHub 等資料時負責同步<br><b>RAG</b>（檢索增強生成）：字幕說 Dust 透過向量搜尋資料庫 quadrant 來做 RAG<br><b>vector search database</b>（向量搜尋資料庫）：core 會連接的資料庫（quadrant），用於 RAG<br><b>augmented schema</b>（增強版結構描述）：推斷出欄位型別並換成對 LLM 好用的欄位名稱後，存進 PG database 的結構<br><b>dbml</b>（dbml 格式）：Dust 送 augmented schema 給 LLM 時使用的語言格式<br><b>model agnostic</b>（不綁定特定模型）：Dust 不限定模型，但此工具需要支援 function calls 的模型<br><b>function call</b>（函式呼叫）：Dust 用它取得 chain of thought、檔案標題與 SQL query<br><b>structured outputs</b>（結構化輸出）：Dust 建這功能時它還沒推出，現在可以改用它取代 function call<br><b>enum</b>（列舉值）：欄位中若有固定的可能值，會一併送給 LLM<br><b>left join</b>（左外部連接）：Demo 中以員工 email 合併兩個不同來源檔案所用的 SQL 操作<br><b>in-memory database (SQLite)</b>（記憶體內資料庫）：查詢檔案時用 Rust 即時啟動的 SQLite，把檔案灌入成資料表<br><b>latency</b>（延遲）：LLM 延遲夠長，足以趁它思考時啟動並填好資料庫<br><b>recharts</b>（recharts 繪圖函式庫）：Dust 用來產生繪圖程式碼的工具<br><b>BI</b>（商業智慧）：講者稱達成 natural language BI，讓非技術團隊能自行分析資料<br><b>dashboard</b>（儀表板）：傳統做法。建儀表板比直接提問花費多得多的時間\n\n📺 <a href=\"https://www.youtube.com/watch?v=RNcXWPCaLqg&t=0s\" target=\"_blank\">OpenAI DevDay 2024 | Community Spotlight | Dust</a>（2024/12/17 · 12 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "Dust 為了讓 LLM 了解資料結構，會把每張資料表的前幾列送給 LLM？",
+          "options": [
+            "前 20 列",
+            "前 10 列",
+            "前 16 列",
+            "前 100 列"
+          ],
+          "correct": 2,
+          "why": "[08:16] 講者說會取所有 table heads，把前 16 列送給 LLM，確保它了解資料結構"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_CqWpJFK-hOo",
         "title": "🎬 2024/12/17 OpenAI DevDay 2024｜用 distillation 調校強大的小模型",
         "category": "API 與開發者",
@@ -7611,6 +7630,25 @@ const CURRICULUM = {
           ],
           "correct": 3,
           "why": "[00:02] 使用者請 ChatGPT 把英文翻成西班牙文、把西班牙文翻成英文"
+        },
+        "status": "full"
+      },
+      {
+        "id": "yt_RI-BxtCx32s",
+        "title": "🎬 2024/05/13 GPT-4o 視覺能力現場展示",
+        "category": "ChatGPT 產品功能",
+        "text": "<b>現場示範 ChatGPT 透過鏡頭看紙上內容，用提示引導解一元一次方程式</b><br>▸ <a href=\"https://www.youtube.com/watch?v=RI-BxtCx32s&t=2s\" target=\"_blank\">00:02</a> 展示完語音能力後，接著展示視覺能力：模型能看見周遭環境，除了即時聊天，也能透過影像（video）和 ChatGPT 互動<br>▸ <a href=\"https://www.youtube.com/watch?v=RI-BxtCx32s&t=32s\" target=\"_blank\">00:32</a> 示範者要在紙上寫一個線性方程式給 ChatGPT 看，並特別要求：不要直接給答案，只在過程中給提示<br>▸ <a href=\"https://www.youtube.com/watch?v=RI-BxtCx32s&t=32s\" target=\"_blank\">00:32</a> 小插曲：還沒拿紙給它看，ChatGPT 就說「看到了」；被糾正後回應「我太興奮了」，等示範者準備好<br>▸ <a href=\"https://www.youtube.com/watch?v=RI-BxtCx32s&t=67s\" target=\"_blank\">01:07</a> ChatGPT 讀出紙上寫的方程式是 3x + 1 = 4<br>▸ <a href=\"https://www.youtube.com/watch?v=RI-BxtCx32s&t=67s\" target=\"_blank\">01:07</a> 第一步提示：把含 x 的項放一邊、常數放另一邊，並反問該怎麼處理那個 +1<br>▸ <a href=\"https://www.youtube.com/watch?v=RI-BxtCx32s&t=67s\" target=\"_blank\">01:07</a> 示範者決定兩邊同減 1，ChatGPT 稱讚是好主意<br>▸ <a href=\"https://www.youtube.com/watch?v=RI-BxtCx32s&t=97s\" target=\"_blank\">01:37</a> ChatGPT 看了新寫的結果，確認已把含 x 的項獨立在一邊，得到 3x = 3<br>▸ <a href=\"https://www.youtube.com/watch?v=RI-BxtCx32s&t=128s\" target=\"_blank\">02:08</a> 第二個提示：想想什麼運算能抵銷乘法；示範者猜減法，ChatGPT 說接近了，提醒 3x 代表 3 × x，要想乘法的相反<br>▸ <a href=\"https://www.youtube.com/watch?v=RI-BxtCx32s&t=128s\" target=\"_blank\">02:08</a> 示範者改答除法，兩邊同除以 3，ChatGPT 回「Bingo」<br>▸ <a href=\"https://www.youtube.com/watch?v=RI-BxtCx32s&t=158s\" target=\"_blank\">02:38</a> ChatGPT 確認解出 x = 1，並問示範者現在對解線性方程式的感覺<br>▸ <a href=\"https://www.youtube.com/watch?v=RI-BxtCx32s&t=158s\" target=\"_blank\">02:38</a> 示範者質疑現實中為何用得到；ChatGPT 舉例：計算開銷、規劃旅行、烹飪、商業上的損益計算<br>▸ <a href=\"https://www.youtube.com/watch?v=RI-BxtCx32s&t=190s\" target=\"_blank\">03:10</a> ChatGPT 總結：線性方程式基本上是用來解決需要找出未知數的問題<br>▸ <a href=\"https://www.youtube.com/watch?v=RI-BxtCx32s&t=190s\" target=\"_blank\">03:10</a> 另一位示範者提到 ChatGPT 向朋友 Mark 說明了數學的價值<br>▸ <a href=\"https://www.youtube.com/watch?v=RI-BxtCx32s&t=222s\" target=\"_blank\">03:42</a> 最後示範者在紙上寫字給它看，ChatGPT 讀出內容是「I love ChatGPT」並回應「你真貼心」\n\n📘 術語<br><b>vision capabilities</b>（視覺能力）：模型也能「看見」周遭世界，可透過影像與它互動<br><b>linear equation</b>（線性方程式）：用來解決需要找出未知數的問題，日常如開銷、旅行、烹飪、損益計算都會用到<br><b>constants</b>（常數）：解題第一步要把含 x 的項放一邊、常數放另一邊\n\n📺 <a href=\"https://www.youtube.com/watch?v=RI-BxtCx32s&t=0s\" target=\"_blank\">Live demo of GPT-4o vision capabilities</a>（2024/05/13 · 4 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "示範中，ChatGPT 從紙上讀出的方程式是哪一個？",
+          "options": [
+            "x + 3 = 4",
+            "3x + 1 = 4",
+            "3x - 1 = 4",
+            "2x + 1 = 5"
+          ],
+          "correct": 1,
+          "why": "[01:07] ChatGPT 說「you wrote down 3x + 1 equals 4」"
         },
         "status": "full"
       },
@@ -11648,6 +11686,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_Ru5fQZ714x8",
+        "title": "🎬 2021/08/10 用 OpenAI Codex 做資料科學",
+        "category": "創作與人文",
+        "text": "<b>字幕與標題不符：內容是地底文明內戰的西班牙文科幻故事</b><br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=0s\" target=\"_blank\">00:00</a> 敘述者在閱覽室得知，事件比前一天的官方通告所說的更黑暗<br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=0s\" target=\"_blank\">00:00</a> 一群太陽飛彈在封鎖第一個月潛伏空中，最後擊中城市，由「最有耐心、最有條理的砲手」送入軌道<br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=0s\" target=\"_blank\">00:00</a> 天空之城（la ciudad de los Cielos）已經好幾週完全處於「白晝休眠」階段<br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=31s\" target=\"_blank\">00:31</a> 燈光熄滅；輻射與磁波像冰冷又灼熱的冬風，擊中後幾小時就能熔化金屬<br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=31s\" target=\"_blank\">00:31</a> 太陽封鎖一個月後，地表餘熱消散，海洋結凍成中空的冰塊<br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=62s\" target=\"_blank\">01:02</a> 河流乾涸到露出黑色河床，沙漠蔓延過山脈<br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=62s\" target=\"_blank\">01:02</a> 祖先是另一個時代的生物工程師，讓大型陸地哺乳動物擁有智慧<br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=62s\" target=\"_blank\">01:02</a> 多數同胞死於氣候劇變，「我們」躲在防太陽的地窖裡存活下來<br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=93s\" target=\"_blank\">01:33</a> 倖存者定居在 Nueva Atlántida 這類海底城市，或深層火山洞穴<br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=93s\" target=\"_blank\">01:33</a> 社會分成兩派：Solares 主張回到地表戰鬥，Lunares 主張躲藏到太陽熄滅為止；兩派爆發內戰<br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=123s\" target=\"_blank\">02:03</a> 敘述者屬於 Solares，他們打造了能抵抗輻射與極端高溫的盔甲<br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=123s\" target=\"_blank\">02:03</a> 因為自己人背叛而失敗，Lunares 趁機封閉出口，他們被困在地底黑暗中<br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=154s\" target=\"_blank\">02:34</a> 他們世代傳承陽光世界的故事，並為重返地表做準備<br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=154s\" target=\"_blank\">02:34</a> 地下城以生物發光水晶照明、靠地熱供能，是封閉且永續的生態系，孕育出獨特的動植物<br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=186s\" target=\"_blank\">03:06</a> 文化重視藝術與哲學，強調與大地連結、尊重所有生命，並努力維持自然循環的平衡<br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=186s\" target=\"_blank\">03:06</a> 對地表的渴望始終沒有消失，祖先的故事激勵他們尋找突破囚禁的方法<br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=217s\" target=\"_blank\">03:37</a> Solares 發動大攻勢當晚，敘述者在控制室監督城市防禦系統；Solares 突破防線，警報響遍全城<br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=248s\" target=\"_blank\">04:08</a> Solares 人數更多、武裝更好；戰鬥持續數日，城市陷入混亂與毀滅<br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=248s\" target=\"_blank\">04:08</a> 敘述者在前線被雷射擊中昏迷，數日後在城市深處的臨時醫院醒來<br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=280s\" target=\"_blank\">04:40</a> Solares 控制了城市，許多領袖被捕或被殺，城市成為廢墟<br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=280s\" target=\"_blank\">04:40</a> 敘述者不願投降，加入一小群反抗者，決心奪回城市<br>▸ <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=280s\" target=\"_blank\">04:40</a> 字幕結尾突然出現一句英文：「he has been here longer than I have.」\n\n📘 術語<br><b>Solares</b>（太陽派）：主張應該回到地表戰鬥的派系，敘述者自稱屬於這一派<br><b>Lunares</b>（月亮派）：主張繼續躲藏、直到太陽熄滅的派系；曾封閉出口困住 Solares<br><b>Nueva Atlántida</b>（新亞特蘭提斯）：倖存者定居的海底城市之一\n\n📺 <a href=\"https://www.youtube.com/watch?v=Ru5fQZ714x8&t=0s\" target=\"_blank\">Data Science with OpenAI Codex</a>（2021/08/10 · 5 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據字幕，Lunares 派系主張什麼？",
+          "options": [
+            "立刻回到地表戰鬥",
+            "躲藏起來，直到太陽熄滅",
+            "打造抗輻射盔甲攻打天空之城",
+            "搬到海底城市與 Solares 和解"
+          ],
+          "correct": 1,
+          "why": "[01:33] 字幕說 Lunares「preferían permanecer ocultos hasta que el sol se apagara」（寧願躲藏直到太陽熄滅）；回到地表戰鬥是 Solares 的主張"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_KisG5I0DcpY",
         "title": "🎬 2020/07/02 藝術構圖屬性 + CycleGAN｜Holly Grimm｜OpenAI Scholars Demo Day 2018",
         "category": "創作與人文",
@@ -11981,6 +12038,25 @@ const CURRICULUM = {
           ],
           "correct": 3,
           "why": "[00:01] 學生說：\"Now, I know, it has seven zero.\""
+        },
+        "status": "full"
+      },
+      {
+        "id": "yt_UWXbJah6RGs",
+        "title": "🎬 2024/08/16 Steven Schardt · Sora 作品展示",
+        "category": "其他",
+        "text": "<b>講者回顧一門三單元課程的內容安排（字幕內容與標題的 Sora 無關）</b><br>▸ <a href=\"https://www.youtube.com/watch?v=UWXbJah6RGs&t=0s\" target=\"_blank\">00:00</a> 時間有限：共 36 個章節、只有三小時（三個單元），講者形容只能像掠過海面般淺淺帶過<br>▸ <a href=\"https://www.youtube.com/watch?v=UWXbJah6RGs&t=0s\" target=\"_blank\">00:00</a> 講者試著帶入自己的真實經歷，幫助學生想像各主題在實務上的應用樣貌<br>▸ <a href=\"https://www.youtube.com/watch?v=UWXbJah6RGs&t=30s\" target=\"_blank\">00:30</a> 第一部分：講者如何看待工作的本質、僱傭安排（employment arrangements）與相關事項，以及其中的一些法律意涵<br>▸ <a href=\"https://www.youtube.com/watch?v=UWXbJah6RGs&t=30s\" target=\"_blank\">00:30</a> 講者提到學生會在 policy course 中更深入這部分內容<br>▸ <a href=\"https://www.youtube.com/watch?v=UWXbJah6RGs&t=30s\" target=\"_blank\">00:30</a> 第二部分：講者把大部分的重點放在安全（safety）<br>▸ <a href=\"https://www.youtube.com/watch?v=UWXbJah6RGs&t=63s\" target=\"_blank\">01:03</a> 第三部分：講者剛開始說明就中斷，字幕未交代具體內容\n\n📺 <a href=\"https://www.youtube.com/watch?v=UWXbJah6RGs&t=0s\" target=\"_blank\">Steven Schardt · Sora Showcase</a>（2024/08/16 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "講者提到這門課一共有多少個章節？",
+          "options": [
+            "48 個",
+            "12 個",
+            "36 個",
+            "24 個"
+          ],
+          "correct": 2,
+          "why": "講者說 \"with 36 chapters and only three hours\"（00:00）"
         },
         "status": "full"
       },
