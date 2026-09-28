@@ -6484,6 +6484,25 @@ const CURRICULUM = {
         "status": "old"
       },
       {
+        "id": "yt_g-g6E-qtCjA",
+        "title": "🎬 2026/07/28 ChatGPT Work for Sales：給業務主管的 Revenue Intelligence（營收智慧）",
+        "category": "ChatGPT 產品功能",
+        "text": "<b>示範用 ChatGPT Enterprise 產出每週營收報告、深入追問，並把洞察轉成團隊行動</b><br>▸ <a href=\"https://www.youtube.com/watch?v=g-g6E-qtCjA&t=1s\" target=\"_blank\">00:01</a> OpenAI 的 revenue learning system 持續運作，靠 ChatGPT Enterprise 不斷學習<br>▸ <a href=\"https://www.youtube.com/watch?v=g-g6E-qtCjA&t=1s\" target=\"_blank\">00:01</a> 取得分析的方式之一，是由 ChatGPT Enterprise 產生的每週營收報告<br>▸ <a href=\"https://www.youtube.com/watch?v=g-g6E-qtCjA&t=1s\" target=\"_blank\">00:01</a> 示範案例是 Blossom Systems，主題是新產品 Blossom Observability 的上市<br>▸ <a href=\"https://www.youtube.com/watch?v=g-g6E-qtCjA&t=1s\" target=\"_blank\">00:01</a> 報告由 ChatGPT Enterprise（網頁版與行動版）產生，整合業務人員活動、客戶對話、市場資料等多種來源的訊號<br>▸ <a href=\"https://www.youtube.com/watch?v=g-g6E-qtCjA&t=1s\" target=\"_blank\">00:01</a> 報告把這些訊號轉成洞察（insights）與行動（actions）<br>▸ <a href=\"https://www.youtube.com/watch?v=g-g6E-qtCjA&t=1s\" target=\"_blank\">00:01</a> 報告第一部分：呈現隨時間變化的趨勢，用來追蹤團隊績效<br>▸ <a href=\"https://www.youtube.com/watch?v=g-g6E-qtCjA&t=31s\" target=\"_blank\">00:31</a> 接著是 executive summary（執行摘要），讓人在看細節前先掌握報告重點<br>▸ <a href=\"https://www.youtube.com/watch?v=g-g6E-qtCjA&t=31s\" target=\"_blank\">00:31</a> 再來列出策略型交易（strategic deals）中聽到的客戶異議，並依類別分類<br>▸ <a href=\"https://www.youtube.com/watch?v=g-g6E-qtCjA&t=31s\" target=\"_blank\">00:31</a> 接著呈現競爭對手在交易中出現的情況，依據是和客戶對話時被提到的內容<br>▸ <a href=\"https://www.youtube.com/watch?v=g-g6E-qtCjA&t=31s\" target=\"_blank\">00:31</a> 往下捲動，報告會列出團隊的機會、客戶關注的重點，以及應該重新分配資源的領域<br>▸ <a href=\"https://www.youtube.com/watch?v=g-g6E-qtCjA&t=61s\" target=\"_blank\">01:01</a> 特別關注 field efficiency：找出表現最好的業務做了什麼，並用這些技巧提升團隊其他成員<br>▸ <a href=\"https://www.youtube.com/watch?v=g-g6E-qtCjA&t=61s\" target=\"_blank\">01:01</a> 洞察最後變成建議與行動，用於精進產品策略、強化業務訓練、改善營運<br>▸ <a href=\"https://www.youtube.com/watch?v=g-g6E-qtCjA&t=61s\" target=\"_blank\">01:01</a> 這不只是靜態報告，可以直接和報告背後的智慧對話、進一步深入追問<br>▸ <a href=\"https://www.youtube.com/watch?v=g-g6E-qtCjA&t=61s\" target=\"_blank\">01:01</a> 用 revenue analytics plugin 提問範例：策略型交易中最常見的異議與競爭威脅是什麼？<br>▸ <a href=\"https://www.youtube.com/watch?v=g-g6E-qtCjA&t=91s\" target=\"_blank\">01:31</a> 追問範例：表現最好的業務和表現最差的業務，處理這些異議的方式有何不同？<br>▸ <a href=\"https://www.youtube.com/watch?v=g-g6E-qtCjA&t=91s\" target=\"_blank\">01:31</a> 詢問哪些異議該改變優先順序並要求舉例時，它會處理底層資料，給出詳細、有推理依據的回答，並建議公司該聚焦的重點<br>▸ <a href=\"https://www.youtube.com/watch?v=g-g6E-qtCjA&t=91s\" target=\"_blank\">01:31</a> 把洞察轉成行動：用 ChatGPT Enterprise 產出一份精簡的建議變更清單，直接在 Slack 分享給管理團隊<br>▸ <a href=\"https://www.youtube.com/watch?v=g-g6E-qtCjA&t=121s\" target=\"_blank\">02:01</a> 這份清單會總結關鍵發現、建議下一步，並為每個領域建議一位負責人，讓知識轉成協調一致的行動<br>▸ <a href=\"https://www.youtube.com/watch?v=g-g6E-qtCjA&t=121s\" target=\"_blank\">02:01</a> 這些做法整合進工作流程後，團隊採取行動，結果直接回饋到系統，下一輪就用更好的資料開始<br>▸ <a href=\"https://www.youtube.com/watch?v=g-g6E-qtCjA&t=121s\" target=\"_blank\">02:01</a> 這個系統始終運作、持續學習，不斷改善銷售與營運的方式\n\n📘 術語<br><b>revenue learning system</b>（營收學習系統）：持續運作、靠 ChatGPT Enterprise 不斷學習，結果回饋後以更好資料進入下一輪的系統<br><b>ChatGPT Enterprise</b>（ChatGPT 企業版）：影片中用來產生每週營收報告、回答追問、產出建議清單的工具，有網頁版與行動版<br><b>executive summary</b>（執行摘要）：讓人在深入細節前，先了解報告的重點<br><b>objections</b>（（客戶）異議）：在策略型交易中聽到的客戶反對意見，報告會依類別分類<br><b>strategic deals</b>（策略型交易）：報告分析異議與競爭威脅時聚焦的交易類型；字幕未進一步定義<br><b>field efficiency</b>（現場（業務）效率）：看表現最好的業務做了什麼，並用這些技巧提升團隊其他人<br><b>reps (representatives)</b>（業務代表）：業務人員；影片比較表現最好與最差的業務如何處理異議<br><b>revenue analytics plugin</b>（營收分析外掛）：用來和報告背後的智慧對話、進一步追問的 plugin\n\n📺 <a href=\"https://www.youtube.com/watch?v=g-g6E-qtCjA&t=0s\" target=\"_blank\">ChatGPT Work for Sales: Revenue Intelligence for Sales Leaders</a>（2026/07/28 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片中，用 ChatGPT Enterprise 產出的建議變更清單，是直接透過哪個工具分享給管理團隊？",
+          "options": [
+            "Email",
+            "Google Docs",
+            "Microsoft Teams",
+            "Slack"
+          ],
+          "correct": 3,
+          "why": "[01:31]–[02:01] 字幕說會建立一份精簡的建議變更清單，並「directly in Slack」分享給管理團隊。"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_5DbZAMGZ5oM",
         "title": "🎬 2026/07/28 ChatGPT Work 用於業務：客戶研究與客戶開發聯繫",
         "category": "ChatGPT 產品功能",
