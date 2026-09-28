@@ -12107,6 +12107,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_fmzaw4HB9N0",
+        "title": "🎬 2025/02/06 十張小畫布",
+        "category": "創作與人文",
+        "text": "<b>一位美甲師分享如何用 ChatGPT 發想並聚焦指甲設計靈感</b><br>▸ <a href=\"https://www.youtube.com/watch?v=fmzaw4HB9N0&t=12s\" target=\"_blank\">00:12</a> 用 ChatGPT 發想指甲設計靈感，例如在幾片指甲上混合綠松石色與鮮綠色<br>▸ <a href=\"https://www.youtube.com/watch?v=fmzaw4HB9N0&t=12s\" target=\"_blank\">00:12</a> 她是美甲師，也是社群媒體網紅；原本是彩妝師，同時做彩妝與美甲後，發現美甲才是她的熱情所在<br>▸ <a href=\"https://www.youtube.com/watch?v=fmzaw4HB9N0&t=12s\" target=\"_blank\">00:12</a> 她把指甲形容為「10 張小畫布」<br>▸ <a href=\"https://www.youtube.com/watch?v=fmzaw4HB9N0&t=42s\" target=\"_blank\">00:42</a> 她在手機上用 ChatGPT，腦中有秋天主題，想看看能和 ChatGPT 一起想出什麼設計<br>▸ <a href=\"https://www.youtube.com/watch?v=fmzaw4HB9N0&t=42s\" target=\"_blank\">00:42</a> 第一次使用時，她想測試 ChatGPT 的極限；她知道它懂藝術、也懂色彩<br>▸ <a href=\"https://www.youtube.com/watch?v=fmzaw4HB9N0&t=73s\" target=\"_blank\">01:13</a> 客戶常對她說「你什麼都能做」，她會幫客戶把想法聚焦、收斂<br>▸ <a href=\"https://www.youtube.com/watch?v=fmzaw4HB9N0&t=73s\" target=\"_blank\">01:13</a> 用 ChatGPT 把近乎無限的點子縮減到 10 或 20 個，這個過程對客戶很有幫助<br>▸ <a href=\"https://www.youtube.com/watch?v=fmzaw4HB9N0&t=105s\" target=\"_blank\">01:45</a> 影片最後，她請 ChatGPT 協助火焰設計（fire design）\n\n📺 <a href=\"https://www.youtube.com/watch?v=fmzaw4HB9N0&t=0s\" target=\"_blank\">Ten tiny canvases</a>（2025/02/06 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片中的美甲師說，ChatGPT 能幫她把近乎無限的點子縮減到多少個？",
+          "options": [
+            "10 或 20 個",
+            "剛好 1 個",
+            "3 到 5 個",
+            "50 到 100 個"
+          ],
+          "correct": 0,
+          "why": "[01:13] 她說 \"let's go from a million or infinite amount of ideas to like give me 10 or 20\""
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_ZAOSfZyoaus",
         "title": "🎬 2025/01/31 Sora Selects：《也許我有點太過頭了》，作者 Panaviscope",
         "category": "創作與人文",
