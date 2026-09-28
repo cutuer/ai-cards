@@ -4546,6 +4546,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_jaYDbeQTUR0",
+        "title": "🎬 2026/07/16 有個瘋狂點子？用 Codex 把它做出來｜Romain Huet｜OpenAI France",
+        "category": "Codex 與寫程式",
+        "text": "<b>Romain Huet 談在巴黎的見聞，鼓勵大家保持好奇，大膽把點子交給 AI 做</b><br>▸ <a href=\"https://www.youtube.com/watch?v=jaYDbeQTUR0&t=1s\" target=\"_blank\">00:01</a> 把你最瘋狂的點子、拖延太久的專案交給 AI，你會很驚訝（字幕寫作「Kodak」，標題為 Codex）<br>▸ <a href=\"https://www.youtube.com/watch?v=jaYDbeQTUR0&t=1s\" target=\"_blank\">00:01</a> 最大的收穫是「energy」：巴黎在這個技術領域有非常多事正在發生<br>▸ <a href=\"https://www.youtube.com/watch?v=jaYDbeQTUR0&t=1s\" target=\"_blank\">00:01</a> 很想聽聽用 AI 和 OpenAI 模型創業的創辦人分享<br>▸ <a href=\"https://www.youtube.com/watch?v=jaYDbeQTUR0&t=1s\" target=\"_blank\">00:01</a> 主要建議：保持好奇，有一直想嘗試的事就放手去做<br>▸ <a href=\"https://www.youtube.com/watch?v=jaYDbeQTUR0&t=31s\" target=\"_blank\">00:31</a> 這些模型已經非常聰明，很多方面比我們還聰明，但我們使用時仍太害羞<br>▸ <a href=\"https://www.youtube.com/watch?v=jaYDbeQTUR0&t=31s\" target=\"_blank\">00:31</a> 他們大多想多聽我們分享經驗與 best practices，例如如何創造出更多東西<br>▸ <a href=\"https://www.youtube.com/watch?v=jaYDbeQTUR0&t=31s\" target=\"_blank\">00:31</a> 他們也想知道下一個模型什麼時候推出<br>▸ <a href=\"https://www.youtube.com/watch?v=jaYDbeQTUR0&t=31s\" target=\"_blank\">00:31</a> 變化速度驚人：每 6 週發布一次模型，但大家幾天就習慣，已在期待下一個\n\n📘 術語<br><b>best practices</b>（最佳實務）：字幕沒有解釋，只提到大家想多聽相關分享\n\n📺 <a href=\"https://www.youtube.com/watch?v=jaYDbeQTUR0&t=0s\" target=\"_blank\">Have a Crazy Idea? Build It with Codex | Romain Huet | OpenAI France</a>（2026/07/16 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，OpenAI 多久發布一次模型？",
+          "options": [
+            "每 6 個月",
+            "每 6 週",
+            "每 3 個月",
+            "每年一次"
+          ],
+          "correct": 1,
+          "why": "[00:31] 字幕原文：We release models every 6 weeks"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_1fL_lwsdMd4",
         "title": "🎬 2026/07/16 別再下 prompt，開始給 AI 目標｜Katia Gil Guzman｜OpenAI France",
         "category": "Codex 與寫程式",
@@ -5194,6 +5213,25 @@ const CURRICULUM = {
           ],
           "correct": 3,
           "why": "[06:44] 字幕說因為要求 responsive，它截了兩張圖：一張常見桌機解析度、一張常見手機畫面，而且是整頁截圖"
+        },
+        "status": "full"
+      },
+      {
+        "id": "yt_iqNzfK4_meQ",
+        "title": "🎬 2025/10/14 搭配 GPT-5-Codex 使用 OpenAI Codex CLI",
+        "category": "Codex 與寫程式",
+        "text": "<b>示範用 Codex CLI 把小遊戲改成多人版、介紹常用指令並部署到 Vercel</b><br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=2s\" target=\"_blank\">00:02</a> 示範題目：用 Codex 修改一個小球遊戲，把它改成多人（multiplayer）版本<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=2s\" target=\"_blank\">00:02</a> OpenAI 推出 GPT-5 與 GPT-5-Codex，也大幅改進 Codex CLI，讓它更能發揮這些模型的 agentic coding 能力<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=32s\" target=\"_blank\">00:32</a> 安裝方式：用 npm 或 brew 安裝，再用 ChatGPT 帳號登入<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=32s\" target=\"_blank\">00:32</a> 在終端機（terminal）輸入 codex 就能啟動<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=32s\" target=\"_blank\">00:32</a> 先下指令請 Codex「規劃如何把這個遊戲改成多人版」<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=32s\" target=\"_blank\">00:32</a> 這個遊戲是 GPT-5 發表時的範例之一，當初只用一個 prompt 就完整做出來，這次在它的基礎上繼續開發<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=62s\" target=\"_blank\">01:02</a> 示範使用的模型是新的 GPT-5-Codex，適合處理各種寫程式的任務<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=62s\" target=\"_blank\">01:02</a> Codex 規劃時會列出接下來要執行的步驟<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=62s\" target=\"_blank\">01:02</a> 按 Ctrl+T 可進入 transcript mode，查看 chain of thought 和它正在寫的確切程式碼<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=92s\" target=\"_blank\">01:32</a> 不想看細節的話，可以直接讓它執行，它只會用高層次的方式告訴你正在做什麼<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=92s\" target=\"_blank\">01:32</a> 第一個 Codex 還在工作時，可以再開第二個 Codex 同時操作<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=92s\" target=\"_blank\">01:32</a> model switcher（/model）：可依不同工作切換模型，也能調整 reasoning level<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=92s\" target=\"_blank\">01:32</a> GPT-5-Codex 處理很簡單的任務速度很快；遇到較進階的任務，Codex 可以連續工作長達數小時<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=123s\" target=\"_blank\">02:03</a> approvals 設定屬於 Codex 的 sandboxing 功能，共有三種模式：read only、auto、full access<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=123s\" target=\"_blank\">02:03</a> auto 是預設模式：可讀取、修改目前目錄內的檔案，範圍限制在專案內，不會動到筆電上的其他東西<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=153s\" target=\"_blank\">02:33</a> read only 適用情境：在 git repository 以外執行時，或只想規劃、不想讓 Codex 分心去改檔案時<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=153s\" target=\"_blank\">02:33</a> codex resume 可以接續先前任何一個 session 繼續工作<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=183s\" target=\"_blank\">03:03</a> Codex 除了寫程式，也能拿來部署，並處理類似維運的工作（字幕記為「S sur type things」）<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=183s\" target=\"_blank\">03:03</a> 例子：使用者回報某個 bug 時，可以叫 Codex 查 logs、整合分散的資料來源找出原因，它在這方面出乎意料地擅長<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=215s\" target=\"_blank\">03:35</a> 打算把遊戲部署到 Vercel，先用搜尋功能（字幕記為「code- search」）叫它查最新的 Vercel docs<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=215s\" target=\"_blank\">03:35</a> 網路搜尋的適用情境：要部署很特定的東西、需要 persistence，或要查某個 API 的最新變動<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=215s\" target=\"_blank\">03:35</a> 部署前先進 approvals，把模式切成 full access<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=247s\" target=\"_blank\">04:07</a> 接著叫 Codex 用 Vercel 的命令列工具部署這個 app，部署成功<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=247s\" target=\"_blank\">04:07</a> 兩人用各自的筆電開啟部署後的連結，實際玩多人遊戲，畫面即時同步<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=278s\" target=\"_blank\">04:38</a> 回顧流程：用 ChatGPT 訂閱登入 Codex CLI → 規劃並實作多人遊戲 → 瀏覽常用指令<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=278s\" target=\"_blank\">04:38</a> 回顧流程（續）：用 web search 從網路取得資訊 → 切換 approval 模式 → 部署遊戲並實際遊玩<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=308s\" target=\"_blank\">05:08</a> 講者表示，他做正式工作也用同一套流程，涵蓋多種程式語言、框架和專案<br>▸ <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=308s\" target=\"_blank\">05:08</a> OpenAI 正在改進所有 Codex 介面，讓你在任何工作環境都有 AI teammate 可用，這次示範的是在終端機裡\n\n📘 術語<br><b>Codex CLI</b>（Codex 命令列工具）：在終端機裡輸入 codex 啟動的 Codex，用 npm 或 brew 安裝，以 ChatGPT 帳號登入<br><b>GPT-5-Codex</b>（GPT-5-Codex 模型）：新模型，適合各種寫程式任務；簡單任務很快，進階任務可連續工作長達數小時<br><b>agentic coding</b>（代理式寫程式）：字幕未解釋，只提到 Codex CLI 的改進是為了更能發揮模型的這項能力<br><b>terminal</b>（終端機）：執行 Codex CLI 的地方，在這裡輸入 codex 就能啟動<br><b>npm / brew</b>（套件管理工具）：字幕只提到可以用 npm 或 brew 安裝 Codex CLI<br><b>prompt</b>（提示詞）：字幕未解釋，只提到示範遊戲是 GPT-5 用一個 prompt 做出來的<br><b>transcript mode</b>（逐字紀錄模式）：按 Ctrl+T 進入，可以看到 chain of thought 和它正在寫的確切程式碼<br><b>chain of thought</b>（思考鏈）：字幕未解釋，只提到可在 transcript mode 中查看<br><b>model switcher (/model)</b>（模型切換器）：依不同工作切換模型，也能調整 reasoning level<br><b>reasoning level</b>（推理程度）：字幕未詳細解釋，只提到可以在 model switcher 裡調整<br><b>approvals</b>（授權模式設定）：進入 Codex 的 sandboxing 功能，有 read only、auto、full access 三種模式<br><b>sandboxing</b>（沙盒機制）：字幕形容這個功能很酷、很強大，透過 approvals 的三種模式控制 Codex 能做什麼<br><b>read only</b>（唯讀模式）：適合在 git repository 外執行，或只想規劃、不讓 Codex 去改檔案時使用<br><b>auto</b>（自動模式）：預設模式，可讀取、修改目前目錄內的檔案，不會影響筆電其他東西<br><b>full access</b>（完全存取模式）：字幕未解釋細節；示範中部署到 Vercel 前切換成這個模式<br><b>git repository</b>（Git 儲存庫）：字幕未解釋，只提到在它以外執行時適合用 read only 模式<br><b>codex resume</b>（接續工作指令）：可以接續先前任何一個 session<br><b>session</b>（工作階段）：字幕未解釋，只提到 codex resume 能接續先前的 session<br><b>web search</b>（網路搜尋）：讓 Codex 從網路取得資訊，例如查最新的 Vercel docs 或 API 的最新變動<br><b>deploy</b>（部署）：示範中用 Vercel 命令列工具把遊戲部署上線，再用連結實際遊玩<br><b>logs</b>（日誌）：排查使用者遇到的 bug 時，可以叫 Codex 去查看<br><b>persistence</b>（資料持久化）：字幕未解釋，只提到部署時若需要它，可以用搜尋查資料<br><b>multiplayer</b>（多人遊戲）：示範目標：把小球遊戲改成多人即時同步遊玩\n\n📺 <a href=\"https://www.youtube.com/watch?v=iqNzfK4_meQ&t=0s\" target=\"_blank\">Using OpenAI Codex CLI with GPT-5-Codex</a>（2025/10/14 · 5 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "Codex CLI 的預設 approvals 模式（auto）允許 Codex 做什麼？",
+          "options": [
+            "可以存取、修改整台筆電上的所有檔案",
+            "只能讀取檔案，不能做任何修改",
+            "讀取並修改目前目錄內的檔案，不影響筆電上的其他東西",
+            "只能在 git repository 以外執行"
+          ],
+          "correct": 2,
+          "why": "[02:03] auto 是預設模式，允許 Codex 讀取、修改目前目錄內的檔案，範圍限制在專案內，不會影響筆電上的其他東西"
         },
         "status": "full"
       },
@@ -6049,6 +6087,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_iZE2r-Vx5b8",
+        "title": "🎬 2026/09/16 評估 ChatGPT Work 的使用情形與價值",
+        "category": "ChatGPT 產品功能",
+        "text": "<b>管理員如何用 admin console 的 Insights 與 admin plugin 把 AI 使用量連結到工作與成果</b><br>▸ <a href=\"https://www.youtube.com/watch?v=iZE2r-Vx5b8&t=0s\" target=\"_blank\">00:00</a> AI 採用增加後，管理員要回答更大的問題：AI 在哪裡創造價值、下一步該投資在哪裡<br>▸ <a href=\"https://www.youtube.com/watch?v=iZE2r-Vx5b8&t=0s\" target=\"_blank\">00:00</a> admin console 的 Insights 能把 AI 使用量連結到實際進行的工作與產出的成果，協助決定賦能（enablement）重點、預算分配與擴大存取權<br>▸ <a href=\"https://www.youtube.com/watch?v=iZE2r-Vx5b8&t=0s\" target=\"_blank\">00:00</a> 可以看到誰在使用這些工具，以及 credits 和 tokens 用到哪裡去<br>▸ <a href=\"https://www.youtube.com/watch?v=iZE2r-Vx5b8&t=0s\" target=\"_blank\">00:00</a> 可依群組（group）或使用者篩選，了解使用量在哪些地方成長<br>▸ <a href=\"https://www.youtube.com/watch?v=iZE2r-Vx5b8&t=31s\" target=\"_blank\">00:31</a> Insights 分頁會把使用者活動分類到預先定義的 use case 類別，並再細分成具體任務<br>▸ <a href=\"https://www.youtube.com/watch?v=iZE2r-Vx5b8&t=31s\" target=\"_blank\">00:31</a> 可以先看總覽，再往下鑽研（drill down）細節<br>▸ <a href=\"https://www.youtube.com/watch?v=iZE2r-Vx5b8&t=31s\" target=\"_blank\">00:31</a> 和 Usage 一樣，Insights 也能依群組篩選，看不同團隊如何使用 AI，再與團隊合作把它連結到商業成果<br>▸ <a href=\"https://www.youtube.com/watch?v=iZE2r-Vx5b8&t=31s\" target=\"_blank\">00:31</a> 示範：點進 sales 底下的 account research and planning（客戶研究與規劃）<br>▸ <a href=\"https://www.youtube.com/watch?v=iZE2r-Vx5b8&t=61s\" target=\"_blank\">01:01</a> model、reasoning、speed 的細分資料可用來檢查設定是否適合任務，以及哪裡改用更快、成本更低的選項會更好<br>▸ <a href=\"https://www.youtube.com/watch?v=iZE2r-Vx5b8&t=61s\" target=\"_blank\">01:01</a> 可看到哪些 plugins 支援這項工作；例如客戶研究預期會由 Salesforce 提供脈絡，若沒被使用，就是該加強培訓的地方<br>▸ <a href=\"https://www.youtube.com/watch?v=iZE2r-Vx5b8&t=61s\" target=\"_blank\">01:01</a> Skills 能讓工作流程可重複、並符合公司的做法；看哪些 Skills 被使用，可決定哪些要維護、哪些要廣泛分享<br>▸ <a href=\"https://www.youtube.com/watch?v=iZE2r-Vx5b8&t=91s\" target=\"_blank\">01:31</a> 寫程式方面，可直接在 admin console 看到可衡量的成果：Codex 對 commits、merged code 與 code review 的貢獻<br>▸ <a href=\"https://www.youtube.com/watch?v=iZE2r-Vx5b8&t=91s\" target=\"_blank\">01:31</a> 追蹤這些貢獻隨時間、跨開發者的變化，可作為與工程主管討論 rollout 成效、決定擴大存取權的依據<br>▸ <a href=\"https://www.youtube.com/watch?v=iZE2r-Vx5b8&t=91s\" target=\"_blank\">01:31</a> admin plugin 把這些分析集中到同一段對話中：可探索採用情形或花費、合併檢視，並在調查時追問<br>▸ <a href=\"https://www.youtube.com/watch?v=iZE2r-Vx5b8&t=122s\" target=\"_blank\">02:02</a> 範例情境：準備每月的 AI rollout review（AI 導入檢討會議）<br>▸ <a href=\"https://www.youtube.com/watch?v=iZE2r-Vx5b8&t=122s\" target=\"_blank\">02:02</a> 示範提示：視覺化過去 30 天各團隊 Codex 與 Work 的使用量與 credits 趨勢，以及各團隊主要 use case 與任務細分<br>▸ <a href=\"https://www.youtube.com/watch?v=iZE2r-Vx5b8&t=122s\" target=\"_blank\">02:02</a> 提示中也要求：工程團隊要包含 Codex 對 commits 和 code review 的貢獻，並找出最大變化與下一步該聚焦之處<br>▸ <a href=\"https://www.youtube.com/watch?v=iZE2r-Vx5b8&t=154s\" target=\"_blank\">02:34</a> 可接著追問：把結果做成含圖表、重點與建議下一步的簡短主管簡報，並分享到 AI Rollout Slack 頻道<br>▸ <a href=\"https://www.youtube.com/watch?v=iZE2r-Vx5b8&t=154s\" target=\"_blank\">02:34</a> 總結：透過 admin console 的 Insights 了解全組織使用量與花費指標、AI 被用來做什麼，並連結到企業成果<br>▸ <a href=\"https://www.youtube.com/watch?v=iZE2r-Vx5b8&t=184s\" target=\"_blank\">03:04</a> 呼籲今天就打開 admin console 或 admin plugin，看看團隊把 AI 用在哪裡\n\n📘 術語<br><b>admin console</b>（管理主控台）：管理員查看使用量、花費與 Insights 的地方，可連結 AI 使用與工作成果<br><b>Insights</b>（洞察分頁）：把使用者活動分類成預先定義的 use case 類別並細分成具體任務<br><b>credits</b>（額度點數）：字幕未解釋，只說可看到 credits 和 tokens 用到哪裡<br><b>tokens</b>（tokens）：字幕未解釋，與 credits 並列為可追蹤的用量<br><b>use case</b>（使用情境）：使用者活動被分類成的預先定義類別，底下再細分成具體任務<br><b>drill down</b>（往下鑽研）：從總覽深入查看細節<br><b>enablement</b>（賦能）：字幕未解釋，列為 Insights 可協助決定聚焦的方向之一<br><b>plugins</b>（外掛）：支援工作的工具，例如客戶研究預期由 Salesforce 提供脈絡<br><b>Skills</b>（Skills）：讓工作流程可重複、並符合公司做法<br><b>commits</b>（提交）：字幕未解釋，列為可看到 Codex 貢獻的程式成果之一<br><b>merged code</b>（已合併程式碼）：字幕未解釋，列為可看到 Codex 貢獻的程式成果之一<br><b>code review</b>（程式碼審查）：字幕未解釋，列為可看到 Codex 貢獻的程式成果之一<br><b>admin plugin</b>（管理外掛）：把分析集中在同一段對話中，可探索採用或花費、合併檢視並追問<br><b>rollout</b>（導入推行）：字幕未解釋；如每月 AI rollout review 用來檢討 AI 導入情形\n\n📺 <a href=\"https://www.youtube.com/watch?v=iZE2r-Vx5b8&t=0s\" target=\"_blank\">Assess Usage and Value of ChatGPT Work</a>（2026/09/16 · 3 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片中，若 account research 工作沒有用到預期的 Salesforce plugin，管理員應該怎麼看待？",
+          "options": [
+            "代表應該減少該團隊的預算",
+            "代表該團隊應該換用更快的模型",
+            "代表應該刪除這個 plugin",
+            "那是應該加強培訓（training）的地方"
+          ],
+          "correct": 3,
+          "why": "[01:01] 字幕說：若 Salesforce 沒被使用，that's a place to focus training"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_gKyEzP_jhZc",
         "title": "🎬 2026/09/16 用 ChatGPT 整理日常事務｜OpenAI Academy",
         "category": "ChatGPT 產品功能",
@@ -6560,6 +6617,25 @@ const CURRICULUM = {
           "why": "[02:01] 使用者說「Don't book anything, just take it to the final review step」，ChatGPT 回答會在付款前停下來"
         },
         "status": "old"
+      },
+      {
+        "id": "yt_hjXi7b01s2c",
+        "title": "🎬 2026/07/28 ChatGPT Work for Sales：客戶經營規劃與會議準備",
+        "category": "ChatGPT 產品功能",
+        "text": "<b>示範 OpenAI 的個人業務助理如何規劃行程並準備 Catalyst seminar 教材</b><br>▸ <a href=\"https://www.youtube.com/watch?v=hjXi7b01s2c&t=1s\" target=\"_blank\">00:01</a> 營收主管的最大挑戰之一：確保整個業務組織的穩定，尤其在導入新銷售策略時<br>▸ <a href=\"https://www.youtube.com/watch?v=hjXi7b01s2c&t=1s\" target=\"_blank\">00:01</a> OpenAI 開發了個人業務助理（personal sales assistant），幫助每位業務發揮最佳表現<br>▸ <a href=\"https://www.youtube.com/watch?v=hjXi7b01s2c&t=1s\" target=\"_blank\">00:01</a> 示範情境：業務請助理幫他規劃當天行程<br>▸ <a href=\"https://www.youtube.com/watch?v=hjXi7b01s2c&t=1s\" target=\"_blank\">00:01</a> 系統整合 Slack、Google Calendar、Salesforce 等商業工具，能找出業務最高優先的任務，不只是一份行程表<br>▸ <a href=\"https://www.youtube.com/watch?v=hjXi7b01s2c&t=33s\" target=\"_blank\">00:33</a> 助理辨識出明天排有 Catalyst seminar，這是聚焦客戶互動（customer engagement）與建立 funnel 的新銷售策略<br>▸ <a href=\"https://www.youtube.com/watch?v=hjXi7b01s2c&t=33s\" target=\"_blank\">00:33</a> 助理自動建立 control center 頁面，內含 opportunity context、stakeholder map 與 workshop objectives<br>▸ <a href=\"https://www.youtube.com/watch?v=hjXi7b01s2c&t=33s\" target=\"_blank\">00:33</a> Catalyst seminar 是需要投入大量心力的新銷售方式，而多數業務沒有能隨時支援的專屬設計與創意團隊<br>▸ <a href=\"https://www.youtube.com/watch?v=hjXi7b01s2c&t=33s\" target=\"_blank\">00:33</a> 業務助理在這裡擴展了業務的能力<br>▸ <a href=\"https://www.youtube.com/watch?v=hjXi7b01s2c&t=64s\" target=\"_blank\">01:04</a> 助理製作了 PowerPoint 簡報，包含為特定客戶設計的 mobile mockup workshop 架構與內容<br>▸ <a href=\"https://www.youtube.com/watch?v=hjXi7b01s2c&t=64s\" target=\"_blank\">01:04</a> 這些教材也同步顯示在更新後的 control center 頁面上<br>▸ <a href=\"https://www.youtube.com/watch?v=hjXi7b01s2c&t=64s\" target=\"_blank\">01:04</a> 教材還包含帶動畫的 video story，以及業務可在研討會前寄給客戶、引發興趣的吸睛預告<br>▸ <a href=\"https://www.youtube.com/watch?v=hjXi7b01s2c&t=64s\" target=\"_blank\">01:04</a> 最後業務彙整教材，發到客戶的 Slack channel，讓整個團隊為明天的會議做好準備<br>▸ <a href=\"https://www.youtube.com/watch?v=hjXi7b01s2c&t=94s\" target=\"_blank\">01:34</a> 銷售主管導入新策略時，個人化助理能協助把策略融入公司的工作節奏<br>▸ <a href=\"https://www.youtube.com/watch?v=hjXi7b01s2c&t=94s\" target=\"_blank\">01:34</a> 個人化助理讓每位業務都能獲得所需的指引與脈絡\n\n📘 術語<br><b>Catalyst seminar</b>（Catalyst 研討會）：一種新銷售策略，聚焦客戶互動與建立 funnel，需要投入大量心力執行<br><b>control center page</b>（控制中心頁面）：助理自動建立的頁面，含 opportunity context、stakeholder map、workshop objectives 與教材<br><b>opportunity context</b>（商機背景）：control center 頁面包含的內容之一，字幕未進一步解釋<br><b>stakeholder map</b>（利害關係人地圖）：control center 頁面包含的內容之一，字幕未進一步解釋<br><b>workshop objectives</b>（工作坊目標）：control center 頁面包含的內容之一，字幕未進一步解釋<br><b>funnel</b>（銷售漏斗）：Catalyst seminar 策略聚焦的重點之一是 funnel building<br><b>mobile mockup workshop</b>（行動版原型工作坊）：助理為特定客戶製作的 PowerPoint 簡報主題<br><b>Salesforce</b>（Salesforce）：與系統整合的商業工具之一，另外還有 Slack、Google Calendar\n\n📺 <a href=\"https://www.youtube.com/watch?v=hjXi7b01s2c&t=0s\" target=\"_blank\">ChatGPT Work for Sales: Account Planning and Meeting Prep</a>（2026/07/28 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片中，助理自動建立的 control center 頁面包含哪些內容？",
+          "options": [
+            "會議逐字稿、錄音檔、待辦清單",
+            "opportunity context、stakeholder map、workshop objectives",
+            "客戶合約、報價單、發票紀錄",
+            "競品分析、定價策略、年度預算"
+          ],
+          "correct": 1,
+          "why": "[00:33] 字幕提到助理自動建立 control center 頁面，內容包含 opportunity context、stakeholder map 與 workshop objectives"
+        },
+        "status": "full"
       },
       {
         "id": "yt_g-g6E-qtCjA",
@@ -7328,6 +7404,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_iFHmvwvVCSg",
+        "title": "🎬 2025/07/21 再加 5 個 ChatGPT Prompts 到你的收藏",
+        "category": "ChatGPT 產品功能",
+        "text": "<b>介紹五個讓生活更輕鬆、更有生產力的 ChatGPT hacks</b><br>▸ <a href=\"https://www.youtube.com/watch?v=iFHmvwvVCSg&t=1s\" target=\"_blank\">00:01</a> 影片主題：五個讓生活更輕鬆、更有生產力的 ChatGPT hacks<br>▸ <a href=\"https://www.youtube.com/watch?v=iFHmvwvVCSg&t=1s\" target=\"_blank\">00:01</a> 不想看很長的影片時，可以複製影片連結貼到對話中，請 ChatGPT 幫你摘要，它會告訴你這支影片需要知道的所有內容<br>▸ <a href=\"https://www.youtube.com/watch?v=iFHmvwvVCSg&t=1s\" target=\"_blank\">00:01</a> 摘要影片時，ChatGPT 也可以產生問題讓你自我測驗，確認自己真的理解<br>▸ <a href=\"https://www.youtube.com/watch?v=iFHmvwvVCSg&t=1s\" target=\"_blank\">00:01</a> 可以請 ChatGPT 針對該主題或任何其他主題製作一套投影片（slides），並直接下載<br>▸ <a href=\"https://www.youtube.com/watch?v=iFHmvwvVCSg&t=1s\" target=\"_blank\">00:01</a> 投影片可以再客製化，例如請它加入圖片和主題（theme）<br>▸ <a href=\"https://www.youtube.com/watch?v=iFHmvwvVCSg&t=1s\" target=\"_blank\">00:01</a> voice assistant 可以用在很多地方，例如練習工作面試<br>▸ <a href=\"https://www.youtube.com/watch?v=iFHmvwvVCSg&t=1s\" target=\"_blank\">00:01</a> 面試示範：問「你為什麼想來我們公司工作？」，回答後它會回饋，例如肯定你有凸顯專業和獨特之處<br>▸ <a href=\"https://www.youtube.com/watch?v=iFHmvwvVCSg&t=1s\" target=\"_blank\">00:01</a> voice assistant 也可以用來練習簡報、練習語言，或當作傾訴心事（therapy）的對象<br>▸ <a href=\"https://www.youtube.com/watch?v=iFHmvwvVCSg&t=32s\" target=\"_blank\">00:32</a> 可以個人化 ChatGPT：告訴它你的名字、職業、希望它具備的特質、你的價值觀和興趣<br>▸ <a href=\"https://www.youtube.com/watch?v=iFHmvwvVCSg&t=32s\" target=\"_blank\">00:32</a> 個人化之後，你問的所有問題得到的結果都會更貼合你本人<br>▸ <a href=\"https://www.youtube.com/watch?v=iFHmvwvVCSg&t=32s\" target=\"_blank\">00:32</a> 可以用 projects 功能為手上的專案建立專屬工作區，放入該專案專屬的檔案、脈絡和目標<br>▸ <a href=\"https://www.youtube.com/watch?v=iFHmvwvVCSg&t=32s\" target=\"_blank\">00:32</a> projects 裡也可以放針對該專案的特定指示\n\n📘 術語<br><b>hack</b>（小技巧）：字幕指讓生活更輕鬆、更有生產力的 ChatGPT 使用方法<br><b>slides</b>（投影片）：可請 ChatGPT 針對某主題製作，能直接下載，也能要求加入圖片和主題<br><b>theme</b>（主題樣式）：客製化投影片時可以要求 ChatGPT 加上的外觀主題<br><b>voice assistant</b>（語音助理）：可用來練習工作面試、簡報、語言，或當作傾訴心事的對象<br><b>personalize</b>（個人化）：告訴 ChatGPT 你的名字、職業、想要的特質、價值觀和興趣，讓回答更貼合你<br><b>projects</b>（專案功能）：建立專屬工作區，放入專案的檔案、脈絡、目標和特定指示<br><b>workspace</b>（工作區）：用 projects 功能建立、專屬於某個專案的空間\n\n📺 <a href=\"https://www.youtube.com/watch?v=iFHmvwvVCSg&t=0s\" target=\"_blank\">5 More ChatGPT Prompts to Add to Your Collection</a>（2025/07/21 · 0 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片示範 voice assistant 時，舉的第一個例子是用它來做什麼？",
+          "options": [
+            "規劃旅遊行程",
+            "練習工作面試",
+            "翻譯外文合約",
+            "幫程式除錯"
+          ],
+          "correct": 1,
+          "why": "[00:01] 字幕說 voice assistant 可以用在很多地方，例如 practicing job interviews，並示範了面試問答"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_Ht2QW5PV-eY",
         "title": "🎬 2025/07/18 ChatGPT agent 能做研究也能執行動作",
         "category": "ChatGPT 產品功能",
@@ -7482,6 +7577,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_jELUAaGqjSA",
+        "title": "🎬 2025/06/18 大學生使用 ChatGPT 的真實方式",
+        "category": "ChatGPT 產品功能",
+        "text": "<b>多位北美大學生分享日常、求職、學業與創作中如何使用 ChatGPT</b><br>▸ <a href=\"https://www.youtube.com/watch?v=jELUAaGqjSA&t=4s\" target=\"_blank\">00:04</a> 受訪學生來自 George Washington University、UC Berkeley、University of Western Ontario、Dartmouth College<br>▸ <a href=\"https://www.youtube.com/watch?v=jELUAaGqjSA&t=34s\" target=\"_blank\">00:34</a> 廚藝不熟的學生第一次煎鮭魚，用 voice mode 確認熟了沒，結果還是生的，於是放回鍋裡繼續煎<br>▸ <a href=\"https://www.youtube.com/watch?v=jELUAaGqjSA&t=34s\" target=\"_blank\">00:34</a> 規劃 San Francisco 旅遊：輸入抵達與離開時間等細節，請它產生一份範例行程<br>▸ <a href=\"https://www.youtube.com/watch?v=jELUAaGqjSA&t=34s\" target=\"_blank\">00:34</a> 請它畫出自己在它眼中的樣子，產生的圖片不像本人，只是好奇它怎麼看待自己<br>▸ <a href=\"https://www.youtube.com/watch?v=jELUAaGqjSA&t=66s\" target=\"_blank\">01:06</a> 準備暑期餐廳 hostess 面試：請它根據對該餐廳的了解與此職位常見題目列出可能的面試問題，最後順利錄取<br>▸ <a href=\"https://www.youtube.com/watch?v=jELUAaGqjSA&t=96s\" target=\"_blank\">01:36</a> 設定每日早上 9:00 的提醒，每天推送依自己喜好策劃的新聞簡報<br>▸ <a href=\"https://www.youtube.com/watch?v=jELUAaGqjSA&t=96s\" target=\"_blank\">01:36</a> 買菜後拍下收據照片，請 ChatGPT 依微量營養素與個人飲食偏好，替自己的食物選擇打分數<br>▸ <a href=\"https://www.youtube.com/watch?v=jELUAaGqjSA&t=96s\" target=\"_blank\">01:36</a> 記憶功能：記得連使用者自己都忘記的聊天、問題與興趣，並在最適當的時機提起<br>▸ <a href=\"https://www.youtube.com/watch?v=jELUAaGqjSA&t=126s\" target=\"_blank\">02:06</a> 記憶功能不只對學業與工作有幫助，在社交生活甚至面對悲傷等情境也非常有力<br>▸ <a href=\"https://www.youtube.com/watch?v=jELUAaGqjSA&t=126s\" target=\"_blank\">02:06</a> 有學生指出，許多人只把 ChatGPT 當成虛擬助理或圖片生成器<br>▸ <a href=\"https://www.youtube.com/watch?v=jELUAaGqjSA&t=156s\" target=\"_blank\">02:36</a> 用它共同創作藝術並公開說明過程，認為這為作品增添了新穎感與情感深度\n\n📘 術語<br><b>voice mode</b>（語音模式）：學生煎鮭魚時使用的功能，用來詢問鮭魚是生的還是熟的<br><b>image generation</b>（圖片生成）：學生請它畫出自己的樣子，產生了一張不像本人的圖片<br><b>itinerary</b>（行程表）：輸入抵達與離開時間後，請它產生 San Francisco 的範例行程<br><b>micronutrients</b>（微量營養素）：學生請它依微量營養素與飲食偏好，替購買的食物打分數<br><b>virtual assistant</b>（虛擬助理）：學生說很多人只把 ChatGPT 看成虛擬助理或圖片生成器<br><b>co-create</b>（共同創作）：學生與 ChatGPT 一起創作藝術並公開過程，認為增添了作品的情感深度\n\n📺 <a href=\"https://www.youtube.com/watch?v=jELUAaGqjSA&t=0s\" target=\"_blank\">The real ways college students use ChatGPT</a>（2025/06/18 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片中有學生設定了每日提醒，讓 ChatGPT 推送新聞簡報，這個提醒設在每天幾點？",
+          "options": [
+            "早上 7:00",
+            "早上 8:00",
+            "晚上 9:00",
+            "早上 9:00"
+          ],
+          "correct": 3,
+          "why": "[01:36] 學生說每天 9:00 a.m. 會收到依自己喜好策劃的新聞簡報"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_9lSRViLugE0",
         "title": "🎬 2025/06/04 ChatGPT for Business 更新",
         "category": "ChatGPT 產品功能",
@@ -7500,6 +7614,25 @@ const CURRICULUM = {
         },
         "status": "long",
         "parts": 2
+      },
+      {
+        "id": "yt_i_cskqmWA3U",
+        "title": "🎬 2025/05/12 用 custom instructions 打造個人化的 ChatGPT",
+        "category": "ChatGPT 產品功能",
+        "text": "<b>示範如何設定 custom instructions 與 memory，讓 ChatGPT 配合你的工作方式</b><br>▸ <a href=\"https://www.youtube.com/watch?v=i_cskqmWA3U&t=10s\" target=\"_blank\">00:10</a> memory 與 custom instructions 的位置：點右上角的個人檔案 → settings → personalization<br>▸ <a href=\"https://www.youtube.com/watch?v=i_cskqmWA3U&t=10s\" target=\"_blank\">00:10</a> custom instructions 被形容為許多 ChatGPT 進階使用者（power users）的「秘密技巧」<br>▸ <a href=\"https://www.youtube.com/watch?v=i_cskqmWA3U&t=10s\" target=\"_blank\">00:10</a> custom instructions 讓 ChatGPT 配合你的工作方式，包括工作品質、語氣、重點、產出風格，甚至用字<br>▸ <a href=\"https://www.youtube.com/watch?v=i_cskqmWA3U&t=10s\" target=\"_blank\">00:10</a> custom instructions 可理解為「主動告訴 ChatGPT 你要什麼」<br>▸ <a href=\"https://www.youtube.com/watch?v=i_cskqmWA3U&t=10s\" target=\"_blank\">00:10</a> 新的強化版 memory 能參考你過去的對話與聊天紀錄，而不只是目前這個對話<br>▸ <a href=\"https://www.youtube.com/watch?v=i_cskqmWA3U&t=40s\" target=\"_blank\">00:40</a> 可以設定暱稱，講者示範請 ChatGPT 叫他「demo legend」（純屬好玩）<br>▸ <a href=\"https://www.youtube.com/watch?v=i_cskqmWA3U&t=40s\" target=\"_blank\">00:40</a> 可以填寫自己的職務，講者示範填入 solutions engineer<br>▸ <a href=\"https://www.youtube.com/watch?v=i_cskqmWA3U&t=40s\" target=\"_blank\">00:40</a> traits 區塊用來設定 ChatGPT 的回應方式；講者希望它直來直往，但抱持懷疑態度、具前瞻性<br>▸ <a href=\"https://www.youtube.com/watch?v=i_cskqmWA3U&t=40s\" target=\"_blank\">00:40</a> 講者認為 poetic（詩意）風格很有趣，但用在工作上有點太冗長<br>▸ <a href=\"https://www.youtube.com/watch?v=i_cskqmWA3U&t=71s\" target=\"_blank\">01:11</a> 最後可以補充任何想讓 ChatGPT 知道的事；講者寫入：需要解釋時希望有例子和比喻<br>▸ <a href=\"https://www.youtube.com/watch?v=i_cskqmWA3U&t=71s\" target=\"_blank\">01:11</a> 講者也要求 ChatGPT 對自己提出的建議一律扮演 devil&#x27;s advocate（唱反調）<br>▸ <a href=\"https://www.youtube.com/watch?v=i_cskqmWA3U&t=71s\" target=\"_blank\">01:11</a> 可以選擇讓這些設定套用到哪些 ChatGPT 功能上<br>▸ <a href=\"https://www.youtube.com/watch?v=i_cskqmWA3U&t=71s\" target=\"_blank\">01:11</a> 儲存後實測，提問：幫忙向觀眾解釋 system prompts 和 evals 的重要性，要簡單直接<br>▸ <a href=\"https://www.youtube.com/watch?v=i_cskqmWA3U&t=102s\" target=\"_blank\">01:42</a> 測試結果：ChatGPT 已採納設定，主動表示會用簡單直接的解釋、已提供比喻，並使用講者要的淺白語言<br>▸ <a href=\"https://www.youtube.com/watch?v=i_cskqmWA3U&t=102s\" target=\"_blank\">01:42</a> 講者總結：memory 讓 ChatGPT 從「你使用的工具」變成「懂你工作方式的隊友」，也正在改變他團隊使用 ChatGPT 的方式\n\n📘 術語<br><b>custom instructions</b>（自訂指令）：主動告訴 ChatGPT 你要什麼，讓它配合你的工作方式、語氣、風格與用字<br><b>memory</b>（記憶）：強化版 memory 能參考過去的對話與聊天紀錄，不只看目前這個對話<br><b>personalization</b>（個人化）：settings 裡的頁面，memory 與 custom instructions 都在這裡<br><b>traits</b>（特質）：custom instructions 裡設定 ChatGPT 回應方式的區塊<br><b>power users</b>（進階使用者）：字幕說 custom instructions 是許多 ChatGPT power users 的秘密技巧，未進一步解釋<br><b>devil&#x27;s advocate</b>（唱反調的人）：講者希望 ChatGPT 對它自己提出的建議唱反調<br><b>system prompts</b>（系統提示詞）：字幕中僅作為示範提問的主題，未解釋<br><b>evals</b>（評估）：字幕中僅作為示範提問的主題，未解釋\n\n📺 <a href=\"https://www.youtube.com/watch?v=i_cskqmWA3U&t=0s\" target=\"_blank\">Personalize ChatGPT with custom instructions</a>（2025/05/12 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，要在哪裡找到 memory 與 custom instructions？",
+          "options": [
+            "對話輸入框旁的附件按鈕 → 工具",
+            "左側對話列表 → 新增對話 → 設定",
+            "右上角個人檔案 → settings → data controls",
+            "右上角個人檔案 → settings → personalization"
+          ],
+          "correct": 3,
+          "why": "[00:10] 講者說點右上角的個人檔案，再點 settings，然後進入 personalization。"
+        },
+        "status": "full"
       },
       {
         "id": "yt_ZWwquOvw5Bk",
@@ -8945,6 +9078,25 @@ const CURRICULUM = {
         },
         "status": "long",
         "parts": 2
+      },
+      {
+        "id": "yt_iBfQTnA2n2s",
+        "title": "🎬 2024/12/05 ChatGPT 中的 OpenAI o1 與 o1 pro mode — 12 Days of OpenAI：第 1 天",
+        "category": "模型發表與 DevDay",
+        "text": "<b>發表完整版 o1 與每月 200 美元的 ChatGPT Pro，並示範速度、多模態與 pro mode</b><br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=24s\" target=\"_blank\">00:24</a> 12 Days of OpenAI：接下來 12 個工作天，每天發表或展示一項新東西；講者說就他們所知，沒有科技公司這樣做過<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=24s\" target=\"_blank\">00:24</a> 第一天發表兩項東西，第一項是完整版的 o1<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=54s\" target=\"_blank\">00:54</a> 使用者喜歡 o1 preview，但希望它更聰明、更快、支援多模態、更會遵循指示；講者認為科學家、工程師、寫程式的人會很喜歡<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=54s\" target=\"_blank\">00:54</a> 圖表比較 GPT-4o、o1 preview、o1 在競賽數學、競賽程式、GPQA Diamond 的表現，o1 是明顯的一大步<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=84s\" target=\"_blank\">01:24</a> 講者說他們在乎原始智力；寫程式是大家很常使用這個模型的領域<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=84s\" target=\"_blank\">01:24</a> 第二項發表是新方案 ChatGPT Pro，對象是需要比每月 20 美元更多運算量的 power users<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=116s\" target=\"_blank\">01:56</a> ChatGPT Pro 可無限使用模型與 advanced voice mode，並提供新的 o1 pro mode<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=116s\" target=\"_blank\">01:56</a> 講者說 o1 是世界上最聰明的模型，唯一更強的是 pro mode 下的 o1；在競賽數學、GPQA Diamond 的提升看似小，但在複雜工作流程中很顯著<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=147s\" target=\"_blank\">02:27</a> 使用者很想要可靠度；圖表比較 pro mode 與 o1 答案的可靠度，差距更大<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=147s\" target=\"_blank\">02:27</a> ChatGPT Pro 每月 200 美元、當天上線，12 天期間還會加入其他東西<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=179s\" target=\"_blank\">02:59</a> o1 是他們訓練的第一個「先思考再回答」的模型，回答更好、常常更詳細也更正確<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=179s\" target=\"_blank\">02:59</a> o1 當天開始推出給 Plus 訂閱者，Pro 訂閱者隨後也會有，取代 o1 preview<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=211s\" target=\"_blank\">03:31</a> o1 比 9 月推出的 o1 preview 更快、更聰明；新增多模態輸入，能同時對圖片與文字推理<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=211s\" target=\"_blank\">03:31</a> ChatGPT Pro 提供無限使用最好的模型，例如 o1、4o 與 advanced voice<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=243s\" target=\"_blank\">04:03</a> o1 pro mode 讓模型用更多運算、更努力思考最困難的問題；目標族群是在數學、程式、寫作上把模型推到極限的 power users<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=273s\" target=\"_blank\">04:33</a> o1 也更適合日常使用；o1 preview 最常被抱怨太慢，連說 hi 都會想 10 秒，這個問題已修正<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=303s\" target=\"_blank\">05:03</a> o1 會依問題難度調整：簡單問題很快回答，很難的問題會想很久<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=303s\" target=\"_blank\">05:03</a> 詳細人類評估結果：o1 犯重大錯誤的頻率比 o1 preview 少約 34%，思考速度約快 50%<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=333s\" target=\"_blank\">05:33</a> 示範：左邊 o1、右邊 o1 preview，問「列出二世紀的羅馬皇帝、在位時間與作為」；GPT-4o 有相當比例會答錯<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=333s\" target=\"_blank\">05:33</a> 講者離線測試數次，o1 平均比 o1 preview 快約 60% 回應<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=364s\" target=\"_blank\">06:04</a> 示範時正在把 GPU 從 o1 preview 換到 o1：o1 想約 14 秒，preview 約 33 秒；部署完成後兩者都應更快<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=364s\" target=\"_blank\">06:04</a> 這題的難處：有些皇帝只在位 6 天、12 天、一個月左右，GPT-4o 有時會漏掉<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=395s\" target=\"_blank\">06:35</a> 多模態示範：用手繪圖出題，拍照上傳到 ChatGPT，點圖片可看放大版<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=425s\" target=\"_blank\">07:05</a> 題目是太空中的資料中心：太陽、太陽能板、資料中心（GPU racks）、pump<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=455s\" target=\"_blank\">07:35</a> 地球上能用空氣或水冷卻 GPU，太空中什麼都沒有，只能把熱輻射到深太空，因此需要巨大的散熱板<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=486s\" target=\"_blank\">08:06</a> 問題：估算運作 1 GW 資料中心所需散熱板面積的下限<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=546s\" target=\"_blank\">09:06</a> 模型只想了 10 秒；1 GW 只畫在紙上，模型也有抓到；並正確只考慮輻射熱傳，做了一些簡化假設<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=546s\" target=\"_blank\">09:06</a> 講者刻意讓題目條件不足，漏掉關鍵參數「散熱板溫度」，測試模型處理模糊資訊的能力<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=576s\" target=\"_blank\">09:36</a> 模型察覺這個未給定但重要的參數，選了正確範圍（約室溫），再繼續分析<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=642s\" target=\"_blank\">10:42</a> o1 在 MMMU、MathVista 等標準 benchmark 上達到 state-of-the-art<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=642s\" target=\"_blank\">10:42</a> 講者說 o1 pro mode 最適合困難的數學、科學或程式問題<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=673s\" target=\"_blank\">11:13</a> pro mode 示範一道 o1 preview 通常答錯的化學題；很難的題目模型可能想到幾分鐘，這題通常 1～3 分鐘<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=703s\" target=\"_blank\">11:43</a> 題目要找出符合 6 項條件的蛋白質，每項都需要化學領域專業知識<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=734s\" target=\"_blank\">12:14</a> 沒有任何一項條件直接洩漏答案，每項條件可能有幾十種蛋白質符合，模型必須逐一檢查候選是否符合全部條件<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=734s\" target=\"_blank\">12:14</a> 這次 53 秒就完成；可點開看模型的思考過程，它先考慮不同候選，最後得出正確答案<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=764s\" target=\"_blank\">12:44</a> 總結：o1 比 o1 preview 更聰明更快、能同時推理文字與圖片、pro mode 可處理最難的科學與數學問題<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=795s\" target=\"_blank\">13:15</a> 未來：Pro 方案將有更吃運算的功能，支援更長更大的任務；o1 將加入網頁瀏覽、檔案上傳等工具<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=795s\" target=\"_blank\">13:15</a> o1 將上 API，並新增 structured outputs、function calling、developer messages 與 API 圖片理解<br>▸ <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=855s\" target=\"_blank\">14:15</a> 隔天會帶來給開發者的東西\n\n📘 術語<br><b>12 Days of OpenAI</b>（OpenAI 的 12 天）：接下來 12 個工作天，每天發表或展示一項新東西<br><b>o1 preview</b>（o1 預覽版）：9 月推出的版本，被抱怨太慢，現由 o1 取代<br><b>GPQA Diamond</b>（GPQA Diamond 評測）：字幕只列為比較模型表現的項目之一，沒有解釋<br><b>multimodal</b>（多模態）：模型能同時對圖片與文字推理<br><b>power users</b>（重度使用者）：大量使用 ChatGPT、需要比每月 20 美元更多運算量的人<br><b>compute</b>（運算量）：pro mode 讓模型用更多運算、更努力思考<br><b>ChatGPT Pro</b>（ChatGPT Pro 方案）：每月 200 美元，無限使用模型與 advanced voice，含 o1 pro mode<br><b>advanced voice mode</b>（進階語音模式）：字幕只提到 Pro 可無限使用，沒有解釋<br><b>o1 pro mode</b>（o1 專業模式）：使用 o1 的特殊方式，用更多運算想得更努力，處理最難的問題<br><b>reliability</b>（可靠度）：使用者很想要；圖表比較 pro mode 與 o1 答案的可靠度<br><b>human evaluations</b>（人類評估）：用來比較 o1 與 o1 preview 的重大錯誤率與速度<br><b>radiative heat transfer</b>（輻射熱傳）：太空無法用空氣或水冷卻，只能把熱輻射到深太空<br><b>lower bound estimate</b>（下限估計）：示範題要估算散熱板所需面積的下限<br><b>under specified</b>（條件不足）：刻意漏掉散熱板溫度，測試模型處理模糊資訊的能力<br><b>benchmark</b>（基準評測）：字幕提到 MMMU、MathVista 等標準 benchmark<br><b>state-of-the-art</b>（目前最佳）：o1 在 MMMU、MathVista 上的表現<br><b>API</b>（應用程式介面）：字幕只說 o1 將上 API 並加入開發者功能，沒有解釋<br><b>structured outputs</b>（結構化輸出）：將加入 API 的開發者功能之一，字幕沒有解釋<br><b>function calling</b>（函式呼叫）：將加入 API 的開發者功能之一，字幕沒有解釋<br><b>developer messages</b>（開發者訊息）：將加入 API 的開發者功能之一，字幕沒有解釋\n\n📺 <a href=\"https://www.youtube.com/watch?v=iBfQTnA2n2s&t=0s\" target=\"_blank\">OpenAI o1 and o1 pro mode in ChatGPT — 12 Days of OpenAI: Day 1</a>（2024/12/05 · 14 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片中的人類評估，o1 犯重大錯誤的頻率比 o1 preview 少了大約多少？",
+          "options": [
+            "約 2%",
+            "約 60%",
+            "約 50%",
+            "約 34%"
+          ],
+          "correct": 3,
+          "why": "[05:03] 人類評估發現 o1 犯重大錯誤的頻率比 o1 preview 少約 34%。50% 是思考速度的提升，60% 是羅馬皇帝題離線測試的回應速度差，2% 是散熱板面積約占舊金山陸地面積的比例"
+        },
+        "status": "full"
       },
       {
         "id": "yt_eZDmDn6Iq9Y",
@@ -10441,6 +10593,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_iupsBLiNznU",
+        "title": "🎬 2026/02/05 讓家族 tamale 小店成長｜with ChatGPT｜Super Bowl 2026",
+        "category": "企業與客戶案例",
+        "text": "<b>家族 tamale 店用 ChatGPT 算價格、做地圖、寫信、練演講，想把生意傳承下去</b><br>▸ <a href=\"https://www.youtube.com/watch?v=iupsBLiNznU&t=0s\" target=\"_blank\">00:00</a> 請 ChatGPT 計算 tamales 以 60% margin 賣批發（wholesale）的價格，ChatGPT 回答會一步一步拆解計算<br>▸ <a href=\"https://www.youtube.com/watch?v=iupsBLiNznU&t=0s\" target=\"_blank\">00:00</a> 他們想從家族生意轉型成正式的企業，但覺得非常困難<br>▸ <a href=\"https://www.youtube.com/watch?v=iupsBLiNznU&t=0s\" target=\"_blank\">00:00</a> 說話者從 Christian 還是嬰兒時就開始用汽車後車廂賣 tamales，一路邊做邊學<br>▸ <a href=\"https://www.youtube.com/watch?v=iupsBLiNznU&t=0s\" target=\"_blank\">00:00</a> 在農夫市集（farmers markets）賣 tamales 占生意的 50%，要跑很多市集、工作量很大，因此想讓顧客更容易找到他們<br>▸ <a href=\"https://www.youtube.com/watch?v=iupsBLiNznU&t=30s\" target=\"_blank\">00:30</a> Christian 請 ChatGPT 做一張包含所有農夫市集的地圖，他說自己一輩子沒寫過一行程式，一下子就做出來了，家人認為這會改變公司<br>▸ <a href=\"https://www.youtube.com/watch?v=iupsBLiNznU&t=30s\" target=\"_blank\">00:30</a> 說話者表示沒念過商學院，這裡很多事都是做中學<br>▸ <a href=\"https://www.youtube.com/watch?v=iupsBLiNznU&t=62s\" target=\"_blank\">01:02</a> 遇到錯誤訊息時，ChatGPT 判斷該錯誤訊息可能和感測器（sensor）的問題有關<br>▸ <a href=\"https://www.youtube.com/watch?v=iupsBLiNznU&t=62s\" target=\"_blank\">01:02</a> 有時知道西班牙文怎麼說卻不知道英文怎麼說；請 ChatGPT 幫忙寫一封給員工、關於排班變動的正式信<br>▸ <a href=\"https://www.youtube.com/watch?v=iupsBLiNznU&t=62s\" target=\"_blank\">01:02</a> 說話者覺得用了 ChatGPT 像上過研討會，現在有自信跟任何人說話，從清潔人員到公司 CEO 都可以<br>▸ <a href=\"https://www.youtube.com/watch?v=iupsBLiNznU&t=93s\" target=\"_blank\">01:33</a> 公開演講是大家最大的恐懼之一；說話者希望講話聽起來友善、溫暖但專業，並在台上介紹 Xochitl<br>▸ <a href=\"https://www.youtube.com/watch?v=iupsBLiNznU&t=93s\" target=\"_blank\">01:33</a> tamales 是一個傳統，不只成為家族的一部分，也成為他們所服務社群的一部分<br>▸ <a href=\"https://www.youtube.com/watch?v=iupsBLiNznU&t=93s\" target=\"_blank\">01:33</a> The Original Tamale Company 由說話者的父母在後院創立；說話者認為和家人一起工作是人生最好的回報<br>▸ <a href=\"https://www.youtube.com/watch?v=iupsBLiNznU&t=127s\" target=\"_blank\">02:07</a> 說話者的夢想是讓這門生意由年輕世代延續，也要持續競爭、保持領先，希望這份傳承能延續多年\n\n📘 術語<br><b>margin</b>（利潤率）：字幕沒有解釋，只出現在「請 ChatGPT 用 60% margin 計算批發價」這句<br><b>wholesale</b>（批發）：字幕沒有解釋，出現在計算 tamales 批發價格的情境<br><b>farmers markets</b>（農夫市集）：字幕沒有解釋，說在這裡賣 tamales 占生意的 50%<br><b>tamales</b>（tamales（墨西哥粽））：字幕沒有解釋，是這家店販售的產品，也是家族傳統\n\n📺 <a href=\"https://www.youtube.com/watch?v=iupsBLiNznU&t=0s\" target=\"_blank\">Growing a family tamale shop | with ChatGPT | Super Bowl 2026</a>（2026/02/05 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，在農夫市集賣 tamales 占這家店生意的多少比例？",
+          "options": [
+            "30%",
+            "50%",
+            "70%",
+            "60%"
+          ],
+          "correct": 1,
+          "why": "[00:00] 字幕說 \"Selling tamales at the farmers markets is 50% of our business.\"（60% 是計算批發價時用的 margin，不是市集占比）"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_W6c7XcB6HwM",
         "title": "🎬 2026/02/05 用 ChatGPT 讓一間 86 年歷史的廢料回收場現代化｜Super Bowl 2026",
         "category": "企業與客戶案例",
@@ -10671,6 +10842,44 @@ const CURRICULUM = {
         },
         "status": "full",
         "parts": 5
+      },
+      {
+        "id": "yt_i-O37AtVkp0",
+        "title": "🎬 2025/09/29 在 OpenAI 把合約變成可搜尋的資料",
+        "category": "企業與客戶案例",
+        "text": "<b>Doc GPT 把大量已簽署合約轉成可查詢的表格，加快財務團隊審閱合約</b><br>▸ <a href=\"https://www.youtube.com/watch?v=i-O37AtVkp0&t=3s\" target=\"_blank\">00:03</a> Doc GPT 推出後，合約審閱時間縮短超過 50%。<br>▸ <a href=\"https://www.youtube.com/watch?v=i-O37AtVkp0&t=3s\" target=\"_blank\">00:03</a> 團隊的任務是打造 data engineering 解決方案，改善所服務財務專業人員的工作與生活品質。<br>▸ <a href=\"https://www.youtube.com/watch?v=i-O37AtVkp0&t=3s\" target=\"_blank\">00:03</a> 過去合約是人工審閱：逐份用肉眼看，費力擷取每一個條款。<br>▸ <a href=\"https://www.youtube.com/watch?v=i-O37AtVkp0&t=35s\" target=\"_blank\">00:35</a> 每月結案的合約數量，現在甚至達到數千份等級（low thousands）。<br>▸ <a href=\"https://www.youtube.com/watch?v=i-O37AtVkp0&t=35s\" target=\"_blank\">00:35</a> Doc GPT（字幕中亦拼作 Docy GBT）是一套解決方案，可批次處理已簽署的企業合約，一次數百份、數千份。<br>▸ <a href=\"https://www.youtube.com/watch?v=i-O37AtVkp0&t=35s\" target=\"_blank\">00:35</a> 它從合約中解析出有用資訊，寫入 data warehouse 裡一張可查詢的表格。<br>▸ <a href=\"https://www.youtube.com/watch?v=i-O37AtVkp0&t=35s\" target=\"_blank\">00:35</a> 另外還有 rack prompt：參照一份參考文件（例如可能長達上千頁的 ASC 606），找出讓某份合約成為 non-standard 的所有條款。<br>▸ <a href=\"https://www.youtube.com/watch?v=i-O37AtVkp0&t=66s\" target=\"_blank\">01:06</a> 背後運作不只是從 PDF 推斷數值，還會推理分析為什麼是這個值、而不是別的值。<br>▸ <a href=\"https://www.youtube.com/watch?v=i-O37AtVkp0&t=66s\" target=\"_blank\">01:06</a> 整個過程像是模仿人類審閱合約的方式，並把合約轉換成表格形式。<br>▸ <a href=\"https://www.youtube.com/watch?v=i-O37AtVkp0&t=66s\" target=\"_blank\">01:06</a> 產出由熟悉這些合約的專家閱讀使用；他們現在處理的是表格輸出，而不是動輒上千字的 PDF。<br>▸ <a href=\"https://www.youtube.com/watch?v=i-O37AtVkp0&t=97s\" target=\"_blank\">01:37</a> 過去人工審閱合約的財務團隊，現在能跟上業務成長的步調。\n\n📘 術語<br><b>data engineering</b>（資料工程）：團隊為財務專業人員打造的解決方案類型，用來改善他們的工作品質。<br><b>data warehouse</b>（資料倉儲）：合約解析出的資訊會寫入其中一張可查詢的表格。<br><b>rack prompt</b>（（字幕原文，未翻譯））：參照一份參考文件（如 ASC 606），找出讓合約成為 non-standard 的所有條款。<br><b>ASC 606</b>（ASC 606（參考文件））：字幕舉的參考文件例子，可能長達上千頁。<br><b>non-standard</b>（非標準）：rack prompt 會找出使某份合約屬於非標準的條款。<br><b>tabular output</b>（表格化輸出）：合約轉換後的表格形式結果，專家改讀這個而不是 PDF。\n\n📺 <a href=\"https://www.youtube.com/watch?v=i-O37AtVkp0&t=0s\" target=\"_blank\">Turning contracts into searchable data at OpenAI</a>（2025/09/29 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，Doc GPT 推出後，合約審閱時間縮短了多少？",
+          "options": [
+            "超過 50%",
+            "大約 30%",
+            "大約 10%",
+            "超過 75%"
+          ],
+          "correct": 0,
+          "why": "[00:03] 提到 Doc GPT 推出後，合約審閱時間縮短超過 50%（cut by more than 50%）。"
+        },
+        "status": "full"
+      },
+      {
+        "id": "yt_hzpPKuaJISk",
+        "title": "🎬 2025/09/29 賦能團隊更快挖掘洞察：OpenAI 的做法",
+        "category": "企業與客戶案例",
+        "text": "<b>OpenAI User Ops 打造 research assistant，讓任何人都能直接從客服工單中取得客戶洞察</b><br>▸ <a href=\"https://www.youtube.com/watch?v=hzpPKuaJISk&t=2s\" target=\"_blank\">00:02</a> 講者認為好產品建立在「以客戶為中心」（customer centricity）的基礎上<br>▸ <a href=\"https://www.youtube.com/watch?v=hzpPKuaJISk&t=2s\" target=\"_blank\">00:02</a> User Ops 每年從客戶那裡收到數百萬張 tickets，團隊發現自己手上坐擁一座資訊寶庫<br>▸ <a href=\"https://www.youtube.com/watch?v=hzpPKuaJISk&t=2s\" target=\"_blank\">00:02</a> 許多 stakeholders 對客戶非常好奇：客戶喜歡和不喜歡產品的哪些地方？在哪裡遇到摩擦（friction）？在哪裡得到啟發？<br>▸ <a href=\"https://www.youtube.com/watch?v=hzpPKuaJISk&t=33s\" target=\"_blank\">00:33</a> 過去要回答這些問題非常仰賴人工，需要大量排定優先順序，結果限制了大家的好奇心<br>▸ <a href=\"https://www.youtube.com/watch?v=hzpPKuaJISk&t=33s\" target=\"_blank\">00:33</a> 團隊想把這項工作規模化，research assistant 因此誕生<br>▸ <a href=\"https://www.youtube.com/watch?v=hzpPKuaJISk&t=33s\" target=\"_blank\">00:33</a> 講者用「choose your own adventure（自選冒險）」來形容這個工具：使用者可以依自己的需求選擇使用方式<br>▸ <a href=\"https://www.youtube.com/watch?v=hzpPKuaJISk&t=33s\" target=\"_blank\">00:33</a> 有人想快速把資料視覺化，例如客服 tickets 的數量、數量隨時間的變化，以及 tickets 較有結構的主要主題<br>▸ <a href=\"https://www.youtube.com/watch?v=hzpPKuaJISk&t=63s\" target=\"_blank\">01:03</a> 工具的其中一個前端提供上述的視覺化總覽<br>▸ <a href=\"https://www.youtube.com/watch?v=hzpPKuaJISk&t=63s\" target=\"_blank\">01:03</a> 工具的另一部分讓使用者帶著問題進來，像跟 ChatGPT 對話一樣「跟資料對話」<br>▸ <a href=\"https://www.youtube.com/watch?v=hzpPKuaJISk&t=63s\" target=\"_blank\">01:03</a> 使用者可以針對客戶、客戶使用的產品或已推出的政策提出非常具體的問題，並看到客戶對這件事的反應<br>▸ <a href=\"https://www.youtube.com/watch?v=hzpPKuaJISk&t=63s\" target=\"_blank\">01:03</a> 使用 SQL 或其他 dashboard 工具時，必須先非常清楚自己要找什麼，因此這些工具非常靜態<br>▸ <a href=\"https://www.youtube.com/watch?v=hzpPKuaJISk&t=94s\" target=\"_blank\">01:34</a> 這個工具的不同之處在於問題可以即時定義，而且任何使用者都能即時提出自己在意的問題<br>▸ <a href=\"https://www.youtube.com/watch?v=hzpPKuaJISk&t=94s\" target=\"_blank\">01:34</a> 工具的限制在於資料集，而這個資料集非常有彈性；限制並不在於你想回答什麼問題<br>▸ <a href=\"https://www.youtube.com/watch?v=hzpPKuaJISk&t=94s\" target=\"_blank\">01:34</a> 現在想取得客戶洞察，不需要 coding、SQL 或進階分析的背景，只要帶著滿滿的好奇心和關於客戶的好問題就行\n\n📘 術語<br><b>customer centricity</b>（以客戶為中心）：字幕未解釋。講者以此說明好產品的出發點<br><b>User Ops</b>（使用者營運團隊）：字幕未解釋。只提到該團隊每年從客戶那裡收到數百萬張 tickets<br><b>tickets</b>（客服工單）：字幕未另外定義。指客戶送來的 customer support tickets<br><b>stakeholders</b>（利害關係人）：字幕未定義。指講者合作的對象，他們對客戶深感好奇<br><b>friction</b>（摩擦、卡關之處）：字幕未定義。用來指客戶使用產品時遇到阻礙的地方<br><b>research assistant</b>（研究助理（工具））：為了把客戶洞察研究規模化而做的工具，可以視覺化資料，也能用對話的方式提問<br><b>front end</b>（前端）：字幕未定義。指工具中提供視覺化總覽的那一部分<br><b>SQL</b>（SQL（資料庫查詢語言））：字幕未定義。講者提到使用它時必須先很清楚自己要找什麼<br><b>dashboarding tool</b>（儀表板工具）：字幕說這類工具需要先有明確目標，因此非常靜態<br><b>data set</b>（資料集）：字幕說它是這個工具的限制所在，但非常有彈性<br><b>advanced analytics</b>（進階分析）：字幕未定義。講者提到使用這個工具不需要具備這方面的背景\n\n📺 <a href=\"https://www.youtube.com/watch?v=hzpPKuaJISk&t=0s\" target=\"_blank\">Empowering teams to unlock insights faster at OpenAI</a>（2025/09/29 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，使用這個 research assistant 取得客戶洞察需要具備什麼？",
+          "options": [
+            "熟練的 SQL 查詢能力",
+            "進階分析的專業訓練",
+            "coding 背景加上 dashboard 工具的操作經驗",
+            "滿滿的好奇心和關於客戶的好問題"
+          ],
+          "correct": 3,
+          "why": "[01:34] 字幕說不需要 coding、SQL 或 advanced analytics 的背景，只要帶著大量好奇心和關於客戶的好問題"
+        },
+        "status": "full"
       },
       {
         "id": "yt_Up7LFjsH6aU",
@@ -11201,6 +11410,25 @@ const CURRICULUM = {
           ],
           "correct": 2,
           "why": "[00:03] 字幕說 Royal Standard 旗在 Buckingham Palace 上方飄揚，是君主在場的訊號"
+        },
+        "status": "full"
+      },
+      {
+        "id": "yt_iXq50gPo-go",
+        "title": "🎬 2023/11/15 AI 前沿：Helena Merk（OpenAI DevDay）",
+        "category": "企業與客戶案例",
+        "text": "<b>AI 如何加速氣候轉型，以及 Streamline 用 LLM 幫氣候公司申請政府補助</b><br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=0s\" target=\"_blank\">00:00</a> 開場先請現場舉手：是否了解氣候要克服的問題、軟體如何加速氣候轉型、AI 又能怎麼幫忙<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=31s\" target=\"_blank\">00:31</a> 氣候變遷是當今最大的問題之一，而從去年起也成了最大的經濟機會之一<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=61s\" target=\"_blank\">01:01</a> 光是 Inflation Reduction Act 這一項法案就有 4,000 億美元，並帶動各國競相推出促進氣候創新的政策<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=61s\" target=\"_blank\">01:01</a> 講者認為現在正是投入氣候領域的時機，並列出六大需要推動的類別<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=94s\" target=\"_blank\">01:34</a> 這些都是實體世界的問題，軟體能幫我們加快腳步；目前幾乎每個目標都落後<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=94s\" target=\"_blank\">01:34</a> 先介紹傳統 AI／ML 的應用，再談語言模型（ChatGPT、GPT-4）的角色<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=126s\" target=\"_blank\">02:06</a> 土壤很適合儲存 CO2；採用 regenerative agriculture 能把 CO2 帶進土壤，但更耗時、成本更高<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=126s\" target=\"_blank\">02:06</a> 農民利潤微薄，需要誘因才會採用；目前雖有獎勵，但檢驗是否遵守最佳做法非常耗時<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=157s\" target=\"_blank\">02:37</a> 現行認證要人到田裡採土樣送實驗室、重複多次；新創 perennial 改用感測器與衛星影像持續串流資料<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=157s\" target=\"_blank\">02:37</a> Windlift 打造以 8 字形飛行的無人機發電，比傳統風車更模組化，可繫在地面並依風向或鳥類動態移位<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=187s\" target=\"_blank\">03:07</a> 風是混亂、紊流的能量，現今風機不會對此反應，只是一直轉<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=218s\" target=\"_blank\">03:38</a> Windscape 用 neural networks 即時調整葉片位置，從紊流中擷取更多能量，提高風場 ROI、讓再生能源更便宜<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=218s\" target=\"_blank\">03:38</a> 有了更多乾淨能源後，需要讓住家全面電氣化；現實上必須 retrofit 舊房子<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=248s\" target=\"_blank\">04:08</a> 舊屋改造需要加隔熱、升級爐具，充滿 soft costs：承包商多次到府用感測器找漏熱處，因為客戶要多份報價<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=248s\" target=\"_blank\">04:08</a> Kestrix 透過建立熱能洩漏位置的模型，大幅降低這些成本<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=278s\" target=\"_blank\">04:38</a> Chemix 能模擬該進行哪些實驗，大幅加快電池設計的迭代；若全面用於 R&amp;D，可帶來更多研究突破<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=278s\" target=\"_blank\">04:38</a> 講者 2022 年整年投入氣候領域，訪談數百位創辦人與工程師，了解什麼阻礙他們擴大規模<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=308s\" target=\"_blank\">05:08</a> 每段對話最後都繞回許可申請、補助撰寫、閱讀企業揭露，全是文書與資金問題，流程非常過時<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=339s\" target=\"_blank\">05:39</a> LLM 擅長處理大量文書的流程；Streamline 的使命是加速氣候轉型，幫公司取得政府關鍵資金<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=339s\" target=\"_blank\">05:39</a> 4,000 億美元被卡在一堵 PDF 牆後面；硬科技公司因風險高拿不到 VC 資金，一向仰賴補助<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=369s\" target=\"_blank\">06:09</a> 找補助要翻遍聯邦、州、地方政府機會；常讀到 150 頁 PDF 的第 37 頁才發現其實不符資格<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=399s\" target=\"_blank\">06:39</a> 花 100 到 200 小時準備申請，卻可能因申請書最後多一頁空白頁被取消資格<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=399s\" target=\"_blank\">06:39</a> 空白頁是被取消資格的頭號原因，與申請不適合自身技術的補助並列<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=399s\" target=\"_blank\">06:39</a> 拿到補助後還得精確回報每一塊錢的用途，出錯就拿不回錢<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=431s\" target=\"_blank\">07:11</a> Streamline 開發補助管理軟體，協助搜尋、撰寫與回報，可為氣候科技公司省下最多 80% 的時間<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=431s\" target=\"_blank\">07:11</a> Streamline 從第一天起就使用 ChatGPT 與整個 GPT 家族，大幅加快這些工作流程<br>▸ <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=464s\" target=\"_blank\">07:44</a> 講者 Helena 是 Streamline 的 CEO 暨共同創辦人\n\n📘 術語<br><b>Inflation Reduction Act</b>（降低通膨法案）：政府透過這一項法案就投入 4,000 億美元於氣候<br><b>VC</b>（創投）：投資新創的資金來源；因硬科技風險高，通常不投這類公司<br><b>regenerative agriculture</b>（再生農業）：回歸較傳統的耕作方式，能把 CO2 帶進土壤，但更耗時、成本更高<br><b>neural networks</b>（神經網路）：Windscape 用它即時調整風機葉片位置以擷取更多能量<br><b>ROI</b>（投資報酬率）：風場 ROI 提高，代表再生能源更便宜<br><b>retrofit</b>（舊屋改造）：替舊房子加隔熱、升級爐具，而非全部蓋新屋<br><b>soft costs</b>（軟性成本）：舊屋改造中承包商多次到府檢測、估價等成本<br><b>R&amp;D</b>（研發）：若更廣泛採用模擬等創新做法，可帶來更多研究突破<br><b>LLM</b>（大型語言模型）：擅長協助大量文書的流程，如補助的搜尋、撰寫與回報<br><b>grant</b>（補助款）：政府提供的資金，硬科技氣候公司一向仰賴它\n\n📺 <a href=\"https://www.youtube.com/watch?v=iXq50gPo-go&t=0s\" target=\"_blank\">AI Frontiers: Helena Merk (OpenAI DevDay)</a>（2023/11/15 · 8 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據講者，Streamline 的補助管理軟體最多可為氣候科技公司節省多少申請政府資金的時間？",
+          "options": [
+            "80%",
+            "50%",
+            "95%",
+            "30%"
+          ],
+          "correct": 0,
+          "why": "[07:11] 講者說 Streamline 可為氣候科技公司省下最多 80% 尋求政府資金的時間。"
         },
         "status": "full"
       },
@@ -12065,6 +12293,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_hyZ1sRfRbgM",
+        "title": "🎬 2018/09/11 穩健的視覺式狀態估計 | Hsiao-Yu 'Fish' Tung | 2018 夏季實習生 Open House",
+        "category": "研究與安全",
+        "text": "<b>只用三台相機的影像，以神經網路估計機器手中物體的位置與方向，並讓系統不怕相機位置改變</b><br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=7s\" target=\"_blank\">00:07</a> 講者是 Carnegie Mellon 機器學習系的博士生，在機器人團隊實習，主題是穩健的視覺式狀態估計器（vision-based state estimator）<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=7s\" target=\"_blank\">00:07</a> 團隊目標是建立很強的機器人基礎，用來解決真正的 AGI；重點放在開發通用、以學習為基礎、能用在多種機器人任務上的演算法<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=38s\" target=\"_blank\">00:38</a> 為了確認演算法夠通用，團隊挑了一個困難任務：讓 shadow hand 把物體轉到指定的姿態<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=38s\" target=\"_blank\">00:38</a> shadow hand 外型和人手一樣，有五根手指和多個關節，能做很精細的動作；要工程師手寫這種高維度控制幾乎不可能<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=70s\" target=\"_blank\">01:10</a> 機器人動手之前要先回答：物體在哪裡、擺成什麼姿態，也就是物體的位置與方向。在機器人學和強化學習裡，這叫做 state<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=101s\" target=\"_blank\">01:41</a> 其中一種取得 state 的方法是 3D tracker：在物體上貼 marker，把機器人放進大籠子，四周架設 3D 感測器，讀取 marker 的 3D 位置<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=133s\" target=\"_blank\">02:13</a> 3D tracker 能給出相當準的物體 state，缺點是很貴、機器人只能看到籠子裡的物體，而且每遇到新物體都要請人先貼 marker，不實際<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=164s\" target=\"_blank\">02:44</a> 改用比較像生物的做法：只用相機。在籠子上架三台相機拍機器人和物體，再從影像推算物體的 state<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=164s\" target=\"_blank\">02:44</a> 視覺式狀態估計器的好處：比較有彈性、比較便宜、容易架設，也是團隊真正想讓機器人具備的能力<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=196s\" target=\"_blank\">03:16</a> 整體環境是：籠子中央放機器人，三台相機從不同視角各拍一張影像。要解的問題是如何從這三張影像得到物體的 state<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=196s\" target=\"_blank\">03:16</a> 模型採用深度神經網路，原因是它能推廣到很多任務、達到 state-of-the-art 的結果，而且工程師不必手動設計特徵<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=228s\" target=\"_blank\">03:48</a> 網路架構：三張影像各自通過幾層 convolution layers 和 fully connected layers，再把這些 convolutional towers 的輸出合併，預測最終的物體 state<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=259s\" target=\"_blank\">04:19</a> 訓練這種網路需要大量的輸入與輸出範例，也就是三張影像配上物體的 state<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=259s\" target=\"_blank\">04:19</a> 這類資料在真實世界拿不到：影像拍得到，但無法得知物體真正的位置<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=289s\" target=\"_blank\">04:49</a> 解法是用模擬器：在模擬器裡建立很相似的機器人、物體，以及從右、上、左拍攝的三台相機，並且能直接讀出物體的 ground truth state<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=320s\" target=\"_blank\">05:20</a> 在模擬器裡可以輕易改變機器人的材質和顏色、光線亮度和背景，得到很多樣的資料集，盡量涵蓋真實世界可能遇到的各種情況<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=350s\" target=\"_blank\">05:50</a> 目標函數是最小化預測值和 ground truth 之間的距離。網路在模擬器中訓練，在真實世界也表現良好，能非常準確地預測物體 state<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=380s\" target=\"_blank\">06:20</a> 問題一：模擬器裡的相機必須和真實相機的位置完全一致，工程師要進模擬器一點一點調整，直到影像完全對齊<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=412s\" target=\"_blank\">06:52</a> 這很費工，因為每次改變相機的旋轉角度都要工程師重調一次；測試時如果有人不小心碰到籠子上的相機，視覺系統就會失效<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=444s\" target=\"_blank\">07:24</a> 實驗顯示：藍線是使用校準過的相機，其他線是相機沒對齊的情況，後者在真實影像上的預測誤差明顯變差很多<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=444s\" target=\"_blank\">07:24</a> 原因是網路只是在找某種有用的 pattern，而唯一的目標函數只有預測值和 ground truth 之間的歐氏距離<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=475s\" target=\"_blank\">07:55</a> 人類遇到同樣的問題時，會先注意物體本身，再看機器手臂來推斷相機的位置，兩者結合後得出物體的全域 state<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=506s\" target=\"_blank\">08:26</a> 因此人類其實需要兩樣東西：幾何知識，以及把注意力放在正確的物體上<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=537s\" target=\"_blank\">08:57</a> 解法是利用模擬器可以取得任何 3D 資訊的特性，從中取出更多監督訊號，把這兩項能力加進神經網路<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=568s\" target=\"_blank\">09:28</a> 強化幾何學習：在每張影像的輸出上加一個輔助任務，要求網路同時預測相機的位置與方向，確認它知道影像是從哪裡拍的<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=599s\" target=\"_blank\">09:59</a> 加入這個輔助任務後，物體位置的預測變好了（紅線是沒加，綠線是有加），網路也被迫產生比較合理的解法<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=629s\" target=\"_blank\">10:29</a> 強化正確注意力：預測物體要看物體而不是背景；推斷相機位置要看機器手臂，所以這兩者都應該被注意<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=629s\" target=\"_blank\">10:29</a> 做法是要求網路預測物體和機器手臂的 bounding box（可以從模擬器取得），再從 bounding box 位置取出局部特徵，串接起來做最終預測<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=659s\" target=\"_blank\">10:59</a> 這種強制注意力改善了方向的預測：紅線是沒有注意力的 baseline，藍線是注意 cube，橘線是同時注意 cube 和機器手臂<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=691s\" target=\"_blank\">11:31</a> 結論：提出一套以學習為基礎、對相機位置很穩健的視覺系統，並希望它能順利轉移到真實環境<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=723s\" target=\"_blank\">12:03</a> 先前的釋出版本使用 domain randomization，隨機化模擬器裡的材質、亮度和背景<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=723s\" target=\"_blank\">12:03</a> 這次強調的是：要讓視覺模型真正理解 3D 和幾何，可以從模擬器取出更多監督訊號，包括預測相機姿態，以及預測 bounding box 並使用注意力特徵<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=802s\" target=\"_blank\">13:22</a> Q&amp;A：講者試過大幅隨機化相機位置，結果連在模擬器中整體預測都明顯變差；只把影像丟進 convolution 的單純模型學不出答案<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=802s\" target=\"_blank\">13:22</a> 先前的版本也試過隨機化相機位置，但降低了在真實影像上的最終表現，所以後來拿掉了；網路結構不夠好，需要額外的東西幫助它學習<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=871s\" target=\"_blank\">14:31</a> Q&amp;A：被問到物體離得比較遠時是否適用。講者回答，如果物體不在訓練資料的分布內，預測一定會偏離<br>▸ <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=974s\" target=\"_blank\">16:14</a> 講者認為深度方向的額外難度，可以用一台從側面拍的相機來確保該維度正確；但東西非常遠時，就像人也無法精確判斷對街車子的距離\n\n📘 術語<br><b>vision-based state estimator</b>（視覺式狀態估計器）：只用相機影像來推算物體的位置與方向<br><b>state</b>（狀態）：在機器人學和強化學習中，指物體的位置與方向<br><b>shadow hand</b>（shadow hand 機器手）：外型和人手一樣的機器人，有五根手指和多個關節，能做精細動作<br><b>3D tracker / marker</b>（3D 追蹤器／標記）：在物體上貼 marker，由籠子周圍的 3D 感測器讀出它的 3D 位置；準但貴<br><b>convolution layers</b>（卷積層）：字幕只提到每張影像會經過數層卷積層，沒有進一步解釋<br><b>fully connected layers</b>（全連接層）：字幕只提到接在卷積層之後，沒有進一步解釋<br><b>simulator</b>（模擬器）：建立相似的機器人、物體和相機，可以讀出 ground truth，並改變材質、光線、背景<br><b>ground truth</b>（真實值）：物體真正的 state，可以從模擬器直接讀出<br><b>objective function</b>（目標函數）：最小化預測值和 ground truth 之間的（歐氏）距離<br><b>calibrated camera</b>（校準過的相機）：模擬器相機和真實相機位置完全對齊；沒對齊時表現大幅下降<br><b>auxiliary task</b>（輔助任務）：額外要求網路預測相機的位置與方向，逼它學會幾何<br><b>bounding box</b>（邊界框）：框出物體和機器手臂，可從模擬器取得，用來取出局部特徵<br><b>attention</b>（注意力）：讓網路專注在物體和機器手臂上，而不是背景<br><b>domain randomization</b>（領域隨機化）：在模擬器中隨機化各種材質、亮度和背景<br><b>AGI</b>（通用人工智慧）：字幕只提到團隊目標是用來解決真正的 AGI，沒有解釋\n\n📺 <a href=\"https://www.youtube.com/watch?v=hyZ1sRfRbgM&t=0s\" target=\"_blank\">Robust Vision-Based State Estimation | Hsiao-Yu &#x27;Fish&#x27; Tung | 2018 Summer Intern Open House</a>（2018/09/11 · 16 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "為了讓網路學會幾何知識，講者在每張影像的輸出上加了哪一個輔助任務？",
+          "options": [
+            "預測 shadow hand 每個手指關節的角度",
+            "預測場景的光線亮度",
+            "預測物體的顏色與材質",
+            "預測相機的位置與方向"
+          ],
+          "correct": 3,
+          "why": "[09:28] 講者提到在每張影像的輸出上加入輔助任務，要求網路同時預測相機的位置與方向，以確認它知道影像是從哪裡拍的"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_1_sYif82CtY",
         "title": "🎬 2018/09/11 探討用於連續控制的 Model Based RL｜Alex Botev｜2018 暑期實習生成果發表會",
         "category": "研究與安全",
@@ -12453,6 +12700,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_jC0i_0wnly8",
+        "title": "🎬 2024/12/09 如何在 Sora 使用 recut",
+        "category": "創作與人文",
+        "text": "<b>示範用 Sora 的 recut 功能，把影片中喜歡的片段修剪後延伸成新影片</b><br>▸ <a href=\"https://www.youtube.com/watch?v=jC0i_0wnly8&t=2s\" target=\"_blank\">00:02</a> recut 是 Sora 最強大的剪輯工具之一，可以修剪（trim）並延伸（extend）既有影片中的任何片段<br>▸ <a href=\"https://www.youtube.com/watch?v=jC0i_0wnly8&t=2s\" target=\"_blank\">00:02</a> 範例：Sora 生成了一支影片，裡面有三個不同的 cut，內容是一台機器人在偏遠的山坡上<br>▸ <a href=\"https://www.youtube.com/watch?v=jC0i_0wnly8&t=2s\" target=\"_blank\">00:02</a> 講者很喜歡影片的第一秒，但後面切到特寫（closeup）不是他想要的畫面<br>▸ <a href=\"https://www.youtube.com/watch?v=jC0i_0wnly8&t=2s\" target=\"_blank\">00:02</a> 目標：用 recut 把第一段延伸成一支新的 5 秒影片<br>▸ <a href=\"https://www.youtube.com/watch?v=jC0i_0wnly8&t=2s\" target=\"_blank\">00:02</a> 按下 recut 後，Sora 會把原本的片段匯入 storyboard<br>▸ <a href=\"https://www.youtube.com/watch?v=jC0i_0wnly8&t=34s\" target=\"_blank\">00:34</a> 可以在 timeline 上檢視並播放片段，也可以把片段修剪到只剩喜歡的那一段<br>▸ <a href=\"https://www.youtube.com/watch?v=jC0i_0wnly8&t=34s\" target=\"_blank\">00:34</a> timeline 其餘部分保持空白，讓 Sora 有空間自行想像延伸的內容<br>▸ <a href=\"https://www.youtube.com/watch?v=jC0i_0wnly8&t=34s\" target=\"_blank\">00:34</a> 設定好之後按 create，讓 Sora 生成結果<br>▸ <a href=\"https://www.youtube.com/watch?v=jC0i_0wnly8&t=34s\" target=\"_blank\">00:34</a> 結果：Sora 把原本 1 秒的影片無縫延伸成一支新的 5 秒影片<br>▸ <a href=\"https://www.youtube.com/watch?v=jC0i_0wnly8&t=64s\" target=\"_blank\">01:04</a> 原本的三個不同 cut，變成機器人在偏遠山坡上的一個連續鏡頭\n\n📘 術語<br><b>recut</b>（重新剪輯）：Sora 的剪輯工具，可以修剪並延伸既有影片中的任何片段<br><b>trim</b>（修剪）：把片段剪短，只留下喜歡的那一段<br><b>extend</b>（延伸）：把保留的片段延長成較長的新影片，例如從 1 秒延伸到 5 秒<br><b>storyboard</b>（分鏡板）：recut 會把既有的片段匯入 storyboard 進行編輯<br><b>timeline</b>（時間軸）：在上面播放、修剪片段；留空的部分讓 Sora 想像延伸內容<br><b>cut</b>（鏡頭／剪接段落）：影片中不同的鏡頭段落，範例影片原本有三個不同的 cut<br><b>closeup</b>（特寫）：範例中影片切到特寫，不是講者想要的畫面\n\n📺 <a href=\"https://www.youtube.com/watch?v=jC0i_0wnly8&t=0s\" target=\"_blank\">How to recut with Sora</a>（2024/12/09 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "用 recut 延伸影片時，講者怎麼處理 timeline 上保留片段以外的部分，好讓 Sora 想像延伸內容？",
+          "options": [
+            "複製保留的片段填滿整條 timeline",
+            "保持空白",
+            "輸入文字描述每一秒的畫面",
+            "填入另一段參考影片"
+          ],
+          "correct": 1,
+          "why": "[00:34] 講者說會讓 timeline 其餘部分保持空白（leave the rest of the timeline empty），讓 Sora 有空間想像延伸的內容"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_OXapuT2iVqM",
         "title": "🎬 2024/12/09 如何用 Sora 融合影片（Blend）",
         "category": "創作與人文",
@@ -12744,6 +13010,25 @@ const CURRICULUM = {
     "name": "🟢 其他・OpenAI 官方字幕版",
     "badge": "官方字幕實證",
     "lessons": [
+      {
+        "id": "yt_ihnqxynwtYk",
+        "title": "🎬 2026/07/08 OpenAI Academy Abilene：在第一座 Stargate 資料中心的所在地教授 AI 素養",
+        "category": "其他",
+        "text": "<b>Abilene 社區與教育工作者參加 OpenAI Academy，分享如何把 AI 用在教學與工作</b><br>▸ <a href=\"https://www.youtube.com/watch?v=ihnqxynwtYk&t=1s\" target=\"_blank\">00:01</a> Abilene 的經濟已相當多元化，當地的 AI 資料中心是難得的機會，可以向建造它的人學習<br>▸ <a href=\"https://www.youtube.com/watch?v=ihnqxynwtYk&t=1s\" target=\"_blank\">00:01</a> 這次活動的主旨：OpenAI Academy 能為你帶來什麼，讓你帶回生活與工作中，再回饋給社區未來的勞動力<br>▸ <a href=\"https://www.youtube.com/watch?v=ihnqxynwtYk&t=1s\" target=\"_blank\">00:01</a> 活動中提到可以加入不同的 guardrails（字幕僅此片段，未進一步說明）<br>▸ <a href=\"https://www.youtube.com/watch?v=ihnqxynwtYk&t=1s\" target=\"_blank\">00:01</a> 參加者來到 OpenAI Academy，想了解它為社區做了什麼；AI 是走到哪裡都會被討論的大議題<br>▸ <a href=\"https://www.youtube.com/watch?v=ihnqxynwtYk&t=31s\" target=\"_blank\">00:31</a> 參加者表示，更有信心、也更了解如何開始打造為自己與自己的事業量身訂做的 GPTs<br>▸ <a href=\"https://www.youtube.com/watch?v=ihnqxynwtYk&t=31s\" target=\"_blank\">00:31</a> AI 正逐漸成為他們的核心理念（ethos）的一部分<br>▸ <a href=\"https://www.youtube.com/watch?v=ihnqxynwtYk&t=31s\" target=\"_blank\">00:31</a> 現場滿是教育工作者；AI 將影響世界上所有產業與部門，教育也包含在內<br>▸ <a href=\"https://www.youtube.com/watch?v=ihnqxynwtYk&t=31s\" target=\"_blank\">00:31</a> 學區積極探索如何用 AI 強化老師原本就在做的事，並取代部分較繁瑣的工作<br>▸ <a href=\"https://www.youtube.com/watch?v=ihnqxynwtYk&t=31s\" target=\"_blank\">00:31</a> AI 可以當作思考夥伴（thought partner）<br>▸ <a href=\"https://www.youtube.com/watch?v=ihnqxynwtYk&t=62s\" target=\"_blank\">01:02</a> 一位老師用 AI 了解學校面臨的競爭情勢，以及新課程需要教哪些主題<br>▸ <a href=\"https://www.youtube.com/watch?v=ihnqxynwtYk&t=62s\" target=\"_blank\">01:02</a> 講者邀請志願者分享產出成果；焊接科老師用 AI 產出每日所需的耗材與設備清單，並附上理由<br>▸ <a href=\"https://www.youtube.com/watch?v=ihnqxynwtYk&t=62s\" target=\"_blank\">01:02</a> 學校的任務是讓畢業生一走下畢業典禮舞台就具備職場能力<br>▸ <a href=\"https://www.youtube.com/watch?v=ihnqxynwtYk&t=62s\" target=\"_blank\">01:02</a> 學生要把 AI 當成工具，不是放在後口袋備用，而是直接擺在眼前使用<br>▸ <a href=\"https://www.youtube.com/watch?v=ihnqxynwtYk&t=62s\" target=\"_blank\">01:02</a> AI 是未來勞動力的一部分，學校希望學生做好充分準備\n\n📘 術語<br><b>OpenAI Academy</b>（OpenAI 學院）：本次活動名稱；字幕說來這裡是想看它為社區做了什麼<br><b>GPTs</b>（GPTs（自訂 GPT））：字幕說可以打造為自己與自己的事業量身訂做的 GPTs<br><b>guardrails</b>（防護機制）：字幕只提到「可以加入的不同 guardrails」，沒有進一步解釋<br><b>thought partner</b>（思考夥伴）：字幕說 AI 可以當作自己的思考夥伴<br><b>workforce ready</b>（具備職場能力）：指畢業生一走下畢業典禮舞台，就能進入職場工作\n\n📺 <a href=\"https://www.youtube.com/watch?v=ihnqxynwtYk&t=0s\" target=\"_blank\">OpenAI Academy Abilene: Teaching AI literacy in the home of the first Stargate data center</a>（2026/07/08 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片中，焊接科（welding department）的老師用 AI 產出了什麼？",
+          "options": [
+            "每日所需的耗材與設備清單，並附上理由",
+            "焊接安全規範的教學講義",
+            "學生的焊接作業評分標準",
+            "焊接證照考試的模擬題庫"
+          ],
+          "correct": 0,
+          "why": "[01:02] 焊接科老師說：I need daily consumables and equipments with justifications."
+        },
+        "status": "full"
+      },
       {
         "id": "yt_KS4X-BPjxN8",
         "title": "🎬 2026/07/08 用 GPT-Live 進行圖像互動",
