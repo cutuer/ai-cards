@@ -8204,6 +8204,25 @@ const CURRICULUM = {
         "status": "old"
       },
       {
+        "id": "yt_IEYU-CgLo3E",
+        "title": "🎬 2026/06/09 Codex for Finance：更快產出報告、儀表板與決策",
+        "category": "企業與客戶案例",
+        "text": "<b>OpenAI 財務技術負責人分享財務部門如何用 Codex 把雜亂流程變成可重複流程</b><br>▸ <a href=\"https://www.youtube.com/watch?v=IEYU-CgLo3E&t=2s\" target=\"_blank\">00:02</a> Codex 已是核心工作流程中不可或缺的工具，不只是小眾工具，也不只用來寫程式<br>▸ <a href=\"https://www.youtube.com/watch?v=IEYU-CgLo3E&t=2s\" target=\"_blank\">00:02</a> 講者 Way Loh 在 OpenAI 領導 finance technology（財務技術）；本片屬於「OpenAI on OpenAI」系列<br>▸ <a href=\"https://www.youtube.com/watch?v=IEYU-CgLo3E&t=2s\" target=\"_blank\">00:02</a> 用 Codex 建立 skills，讓其他 Codex 工作流程使用<br>▸ <a href=\"https://www.youtube.com/watch?v=IEYU-CgLo3E&t=2s\" target=\"_blank\">00:02</a> 用 Codex 建立跨 finance、procurement、accounting（財務、採購、會計）的內部 app<br>▸ <a href=\"https://www.youtube.com/watch?v=IEYU-CgLo3E&t=2s\" target=\"_blank\">00:02</a> 也用 Codex 處理較簡單的任務，例如製作簡報和備忘錄（memo）<br>▸ <a href=\"https://www.youtube.com/watch?v=IEYU-CgLo3E&t=2s\" target=\"_blank\">00:02</a> 財務部門的用途：month-end（月結）、主管簡報（executive slides）<br>▸ <a href=\"https://www.youtube.com/watch?v=IEYU-CgLo3E&t=32s\" target=\"_blank\">00:32</a> 財務部門的用途：客製化儀表板（custom dashboards）、廠商風險審查（vendor risk reviews），以及協助準備分錄（journal entry）<br>▸ <a href=\"https://www.youtube.com/watch?v=IEYU-CgLo3E&t=32s\" target=\"_blank\">00:32</a> 最主要的價值是用 Codex 把雜亂的工作流程變成可重複的工作流程，也帶來許多新的可能\n\n📘 術語<br><b>skills</b>（技能）：字幕說可以用 Codex 建立 skills，提供給其他 Codex 工作流程使用<br><b>procurement</b>（採購）：字幕將它與財務、會計並列，是內部 app 涵蓋的領域之一，沒有另外解釋<br><b>month-end</b>（月結）：字幕列為財務部門使用 Codex 的工作之一，沒有另外解釋<br><b>vendor risk review</b>（廠商風險審查）：字幕列為財務部門使用 Codex 的工作之一，沒有另外解釋<br><b>journal entry</b>（會計分錄）：字幕提到 Codex 可以協助準備分錄，沒有另外解釋\n\n📺 <a href=\"https://www.youtube.com/watch?v=IEYU-CgLo3E&t=0s\" target=\"_blank\">Codex for Finance: Faster Reports, Dashboards, and Decisions</a>（2026/06/09 · 0 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片中的講者 Way Loh 在 OpenAI 負責什麼？",
+          "options": [
+            "擔任會計長",
+            "擔任 Codex 產品經理",
+            "領導 finance technology（財務技術）",
+            "擔任採購部門主管"
+          ],
+          "correct": 2,
+          "why": "[00:02] 講者自我介紹：「I'm Way Loh, leading finance technology at OpenAI」"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_76ABuBGX4IY",
         "title": "🎬 2026/06/09 OpenAI CFO 與加州大學投資長（Chief Investment Officer）對談財務的未來",
         "category": "企業與客戶案例",
