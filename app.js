@@ -4662,6 +4662,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_bhgYFRZLyKI",
+        "title": "🎬 2026/06/12 在 Codex 中用 Browser Use 除錯網頁應用程式",
+        "category": "Codex 與寫程式",
+        "text": "<b>Codex 的 Browser Use 支援 CDP，可實際分析效能與網路流量來除錯網頁 app</b><br>▸ <a href=\"https://www.youtube.com/watch?v=bhgYFRZLyKI&t=0s\" target=\"_blank\">00:00</a> Codex 現在更能除錯和測試你正在開發的網頁應用程式<br>▸ <a href=\"https://www.youtube.com/watch?v=bhgYFRZLyKI&t=0s\" target=\"_blank\">00:00</a> Codex 的 Browser Use 功能新增支援 Chrome DevTools Protocol（CDP）<br>▸ <a href=\"https://www.youtube.com/watch?v=bhgYFRZLyKI&t=0s\" target=\"_blank\">00:00</a> 透過 CDP，Codex 可以做效能分析（performance profiling），也可以檢查網路流量<br>▸ <a href=\"https://www.youtube.com/watch?v=bhgYFRZLyKI&t=0s\" target=\"_blank\">00:00</a> 透過 CDP，Codex 也能檢查 console logs、runtime errors、local storage，以及套用的樣式（applied styling）<br>▸ <a href=\"https://www.youtube.com/watch?v=bhgYFRZLyKI&t=0s\" target=\"_blank\">00:00</a> 使用方式：在 Codex app 的瀏覽器設定中開啟 Developer Mode<br>▸ <a href=\"https://www.youtube.com/watch?v=bhgYFRZLyKI&t=30s\" target=\"_blank\">00:30</a> Developer Mode 讓 Codex 更深入掌握它所控制的應用程式，所以 Codex 開始用 CDP 檢查網站時，你必須明確核准<br>▸ <a href=\"https://www.youtube.com/watch?v=bhgYFRZLyKI&t=30s\" target=\"_blank\">00:30</a> 範例：一個聊天 app 最近明顯變慢，對話清單越長越嚴重，載入要等一段時間，打字也明顯延遲<br>▸ <a href=\"https://www.youtube.com/watch?v=bhgYFRZLyKI&t=30s\" target=\"_blank\">00:30</a> 可以請 Codex 用 Browser Use 來除錯。它不只看過一遍程式碼，還會實際檢查網路流量並分析應用程式效能<br>▸ <a href=\"https://www.youtube.com/watch?v=bhgYFRZLyKI&t=60s\" target=\"_blank\">01:00</a> Codex 會先分析 app 中特定互動的效能，或查看 app 發出的網路請求，找出真正的瓶頸，再動手修正<br>▸ <a href=\"https://www.youtube.com/watch?v=bhgYFRZLyKI&t=60s\" target=\"_blank\">01:00</a> 範例結果：Codex 找到幾個問題並修好，還附上清楚的量測數據，證明效能有改善<br>▸ <a href=\"https://www.youtube.com/watch?v=bhgYFRZLyKI&t=60s\" target=\"_blank\">01:00</a> 這只是其中一個例子，說明開發應用程式時，Codex 可以靠 CDP 取得更深入的 Browser Use 能力\n\n📘 術語<br><b>Chrome DevTools Protocol (CDP)</b>（Chrome 開發者工具協定）：加進 Codex Browser Use 的支援，讓 Codex 能用效能分析、檢查網路流量等進階功能<br><b>Browser Use</b>（瀏覽器操作功能）：Codex 的一項功能，可操作瀏覽器來除錯和測試網頁 app，不只是看過一遍程式碼<br><b>Developer Mode</b>（開發者模式）：在 Codex app 瀏覽器設定中開啟，讓 Codex 更深入掌握它控制的應用程式<br><b>performance profiling</b>（效能分析）：字幕提到 Codex 可分析 app 中特定互動的效能，藉此找出真正的瓶頸<br><b>network traffic / network requests</b>（網路流量／網路請求）：字幕提到 Codex 可檢查網路流量，以及查看 app 發出的網路請求<br><b>console logs</b>（主控台紀錄）：字幕只列為 Codex 可檢查的項目之一，沒有進一步解釋<br><b>runtime errors</b>（執行時期錯誤）：字幕只列為 Codex 可檢查的項目之一，沒有進一步解釋<br><b>local storage</b>（本機儲存空間）：字幕只列為 Codex 可檢查的項目之一，沒有進一步解釋<br><b>applied styling</b>（套用的樣式）：字幕只列為 Codex 可檢查的項目之一，沒有進一步解釋<br><b>bottleneck</b>（瓶頸）：字幕說 Codex 先透過效能分析和網路請求找出真正的瓶頸，再動手修正<br><b>code pass</b>（看過一遍程式碼）：字幕用來對比：用 Browser Use 除錯時，不只看程式碼，還會實際檢查流量和分析效能\n\n📺 <a href=\"https://www.youtube.com/watch?v=bhgYFRZLyKI&t=0s\" target=\"_blank\">Debug web apps with browser use in Codex</a>（2026/06/12 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "要讓 Codex 的 Browser Use 使用 CDP 功能，字幕說必須先做什麼？",
+          "options": [
+            "在 Codex app 的瀏覽器設定中開啟 Developer Mode",
+            "把專案部署到正式環境後再讓 Codex 檢查",
+            "在終端機設定 CDP 的 API key",
+            "在 Chrome 安裝 Codex 擴充功能"
+          ],
+          "correct": 0,
+          "why": "[00:00] 字幕說要使用這項功能，必須在 Codex app 的瀏覽器設定中開啟 Developer Mode。"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_Rlju1Z9e110",
         "title": "🎬 2026/06/12 用 Codex 分析財報並更新你的投資論點",
         "category": "Codex 與寫程式",
@@ -5780,6 +5799,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_bbNTY8O0GTY",
+        "title": "🎬 2026/09/18 用 ChatGPT Work 讓分析以你的 semantic layer 為依據",
+        "category": "ChatGPT 產品功能",
+        "text": "<b>用 data plugin 把資料定義整理成 semantic layer，讓 ChatGPT 查對資料</b><br>▸ <a href=\"https://www.youtube.com/watch?v=bbNTY8O0GTY&t=3s\" target=\"_blank\">00:03</a> 講者說，許多人會問：怎麼能信任 ChatGPT 找到並查詢正確的資料？<br>▸ <a href=\"https://www.youtube.com/watch?v=bbNTY8O0GTY&t=3s\" target=\"_blank\">00:03</a> 即使是簡單的資料問題，背後也可能是很複雜的查詢或指標定義。<br>▸ <a href=\"https://www.youtube.com/watch?v=bbNTY8O0GTY&t=3s\" target=\"_blank\">00:03</a> 這些知識可能分散在不同工具和不同人之間。agent 取得不到這些知識，就無法做出正確判斷。<br>▸ <a href=\"https://www.youtube.com/watch?v=bbNTY8O0GTY&t=3s\" target=\"_blank\">00:03</a> 關鍵在於把這些知識提供給 agent。<br>▸ <a href=\"https://www.youtube.com/watch?v=bbNTY8O0GTY&t=3s\" target=\"_blank\">00:03</a> 透過 data plugin，可以把既有的知識轉成一個共享的 skill。<br>▸ <a href=\"https://www.youtube.com/watch?v=bbNTY8O0GTY&t=33s\" target=\"_blank\">00:33</a> semantic layer 包含關鍵實體（key entities）、關鍵指標（key metrics），以及各種標準篩選條件（filters）或維度（dimensions）。<br>▸ <a href=\"https://www.youtube.com/watch?v=bbNTY8O0GTY&t=33s\" target=\"_blank\">00:33</a> semantic layer 也可以包含一些特定資訊，例如開放式問題或可能的陷阱（pitfalls）。<br>▸ <a href=\"https://www.youtube.com/watch?v=bbNTY8O0GTY&t=33s\" target=\"_blank\">00:33</a> 應由資料團隊中熟悉這些資訊的人審閱並修正內容。<br>▸ <a href=\"https://www.youtube.com/watch?v=bbNTY8O0GTY&t=33s\" target=\"_blank\">00:33</a> 確認內容沒問題後，可以打包成 plugin，推行到整間公司使用。<br>▸ <a href=\"https://www.youtube.com/watch?v=bbNTY8O0GTY&t=33s\" target=\"_blank\">00:33</a> 如果範圍定義得相對清楚，就很適合拿來測試這個 skill。<br>▸ <a href=\"https://www.youtube.com/watch?v=bbNTY8O0GTY&t=63s\" target=\"_blank\">01:03</a> 如果團隊已經投入建置 semantic layer，無論是做成 skill，或已存在於 Snowflake Cortex 或 Databricks Genie，都可以直接加入，不必重新建置。<br>▸ <a href=\"https://www.youtube.com/watch?v=bbNTY8O0GTY&t=63s\" target=\"_blank\">01:03</a> 它可以直接從你現有的東西學習。<br>▸ <a href=\"https://www.youtube.com/watch?v=bbNTY8O0GTY&t=63s\" target=\"_blank\">01:03</a> 要做得真正好，需要專注的投入，也需要一個專責團隊持續投資。<br>▸ <a href=\"https://www.youtube.com/watch?v=bbNTY8O0GTY&t=63s\" target=\"_blank\">01:03</a> 組織必須真心相信這件事很重要。講者表示可以證實確實如此，但這件事真的需要持續關注。<br>▸ <a href=\"https://www.youtube.com/watch?v=bbNTY8O0GTY&t=93s\" target=\"_blank\">01:33</a> 講者預告這個領域之後還會有另一項產品發表，請大家拭目以待。\n\n📘 術語<br><b>semantic layer</b>（語意層）：包含關鍵實體、關鍵指標、標準篩選條件或維度，以及開放式問題或可能陷阱等資訊<br><b>data plugin</b>（資料外掛）：可以把既有知識轉成共享的 skill<br><b>skill</b>（技能）：由 data plugin 把既有知識轉成、可共享的形式<br><b>plugin</b>（外掛）：審閱完成的 semantic layer 可打包成 plugin，推行到整間公司<br><b>agent</b>（代理）：執行查詢與判斷的一方；取得不到相關知識就無法做出正確判斷<br><b>metric definitions</b>（指標定義）：簡單的資料問題背後可能牽涉複雜的指標定義<br><b>key entities</b>（關鍵實體）：semantic layer 包含的資訊之一<br><b>dimensions</b>（維度）：semantic layer 包含的標準篩選條件或維度<br><b>pitfalls</b>（陷阱）：semantic layer 可包含的「可能陷阱」資訊<br><b>Snowflake Cortex</b>（Snowflake Cortex）：semantic layer 可能已經存在的地方之一，可直接加入、不必重建<br><b>Databricks Genie</b>（Databricks Genie）：semantic layer 可能已經存在的地方之一，可直接加入、不必重建\n\n📺 <a href=\"https://www.youtube.com/watch?v=bbNTY8O0GTY&t=0s\" target=\"_blank\">Use ChatGPT Work to ground analysis in your semantic layer</a>（2026/09/18 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，semantic layer 整理好之後，應該由誰來審閱並修正？",
+          "options": [
+            "資料團隊中熟悉這些資訊的人",
+            "公司的產品經理",
+            "由 ChatGPT 自動審核，不需要人工",
+            "外部顧問"
+          ],
+          "correct": 0,
+          "why": "[00:33] 講者說：Someone on your data team who is familiar with this information should review and refine this."
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_Wb8MhkpQpX8",
         "title": "🎬 2026/09/18 用 ChatGPT Work 為每位 stakeholder 量身打造 dashboard",
         "category": "ChatGPT 產品功能",
@@ -6175,6 +6213,25 @@ const CURRICULUM = {
           ],
           "correct": 2,
           "why": "[02:05] 講者說最後請 ChatGPT 監看資料來源，如果發表過程中上市細節有變，就提出文章的更新建議"
+        },
+        "status": "full"
+      },
+      {
+        "id": "yt_bl2eGejkbaU",
+        "title": "🎬 2026/08/13 用 ChatGPT Work 取得每日 CFO 簡報",
+        "category": "ChatGPT 產品功能",
+        "text": "<b>示範財務主管如何用 ChatGPT Enterprise 整合訊號、分析收購案並模擬營收情境</b><br>▸ <a href=\"https://www.youtube.com/watch?v=bl2eGejkbaU&t=0s\" target=\"_blank\">00:00</a> 財務領導者、財務長會收到大量訊號，影片說 ChatGPT Enterprise 是把這些訊號整合起來的工具<br>▸ <a href=\"https://www.youtube.com/watch?v=bl2eGejkbaU&t=0s\" target=\"_blank\">00:00</a> 情境：搭火車上班途中開啟 CFO command center，查看季度結帳（quarterly close）進度與所有未完成任務<br>▸ <a href=\"https://www.youtube.com/watch?v=bl2eGejkbaU&t=0s\" target=\"_blank\">00:00</a> 這些資料都透過 ChatGPT Enterprise 裡的中央 command center 蒐集<br>▸ <a href=\"https://www.youtube.com/watch?v=bl2eGejkbaU&t=30s\" target=\"_blank\">00:30</a> 也能追蹤非標準協議與特殊合約條款，例如 Nimbus Cloud 和 GrowSpark 提交了含特殊條款、值得查看的合約<br>▸ <a href=\"https://www.youtube.com/watch?v=bl2eGejkbaU&t=30s\" target=\"_blank\">00:30</a> 除了公司內部訊號，也要掌握外部動態。例如 Refactor Technologies 可能是公司 observability 策略的收購候選<br>▸ <a href=\"https://www.youtube.com/watch?v=bl2eGejkbaU&t=30s\" target=\"_blank\">00:30</a> 通勤途中在 ChatGPT 輸入查詢，請它建立一份供決策用的分析筆記<br>▸ <a href=\"https://www.youtube.com/watch?v=bl2eGejkbaU&t=61s\" target=\"_blank\">01:01</a> 抵達公司時分析已完成，內容包括公司分析、收購的 business case，以及建議啟動調查的有條件建議<br>▸ <a href=\"https://www.youtube.com/watch?v=bl2eGejkbaU&t=61s\" target=\"_blank\">01:01</a> 為了檢驗假設，打開 ChatGPT Enterprise 建立的詳細 Excel 模型，內含歷史資料與交易假設，並可向資料模型提問、模擬不同情境<br>▸ <a href=\"https://www.youtube.com/watch?v=bl2eGejkbaU&t=61s\" target=\"_blank\">01:01</a> 示範要求建立未來 3 年營收成長的樂觀與悲觀情境<br>▸ <a href=\"https://www.youtube.com/watch?v=bl2eGejkbaU&t=92s\" target=\"_blank\">01:32</a> 隨即產生一個新分頁，內容是三年營收預測<br>▸ <a href=\"https://www.youtube.com/watch?v=bl2eGejkbaU&t=92s\" target=\"_blank\">01:32</a> 影片說這能幫財務領導者從被動回應事件，轉為主動形塑未來的業務成果\n\n📘 術語<br><b>CFO command center</b>（財務長指揮中心）：字幕指 ChatGPT Enterprise 裡的中央 command center，可查看季度結帳進度與未完成任務，資料都集中在這裡<br><b>quarterly close</b>（季度結帳）：字幕未解釋，只提到可在 command center 查看它的進度<br><b>non-standard agreements</b>（非標準協議）：字幕將它與特殊合約條款並列，作為可追蹤的項目<br><b>acquisition candidate</b>（收購候選對象）：字幕以 Refactor Technologies 為例，說它可能是 observability 策略的收購候選<br><b>observability</b>（可觀測性）：字幕未解釋，只以「observability 策略」的形式出現<br><b>business case</b>（商業論證）：字幕指分析筆記中針對收購提出的 business case<br><b>conditional recommendation</b>（有條件建議）：字幕指分析中「有條件地建議啟動調查」<br><b>scenario</b>（情境模擬）：字幕指在 Excel 模型中模擬不同情境，例如樂觀與悲觀的營收成長\n\n📺 <a href=\"https://www.youtube.com/watch?v=bl2eGejkbaU&t=0s\" target=\"_blank\">Get a daily CFO briefing with ChatGPT Work</a>（2026/08/13 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片中，使用者請 ChatGPT Enterprise 在 Excel 模型裡建立哪一種情境？",
+          "options": [
+            "未來 5 年營收成長的樂觀與悲觀情境",
+            "未來 3 年營收成長的樂觀與悲觀情境",
+            "收購後的人力配置情境",
+            "下一季的成本削減情境"
+          ],
+          "correct": 1,
+          "why": "[01:01] 字幕說使用者要求建立未來 3 年的樂觀與悲觀營收成長情境；[01:32] ChatGPT 隨即產生一個含三年營收預測的新分頁。"
         },
         "status": "full"
       },
@@ -6614,6 +6671,25 @@ const CURRICULUM = {
           ],
           "correct": 3,
           "why": "字幕 [00:35]–[01:07] 說 Slate 會回覆建議並開 Jira ticket，因為這個申請需要 IT 支援增加授權席次"
+        },
+        "status": "full"
+      },
+      {
+        "id": "yt_bk2H8WfHZZk",
+        "title": "🎬 2026/04/22 ChatGPT 中的 Workspace agents：產品回饋分流 agent",
+        "category": "ChatGPT 產品功能",
+        "text": "<b>示範在 ChatGPT 建立能彙整產品回饋、發 Slack 摘要並在 Linear 開單的 agent</b><br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=5s\" target=\"_blank\">00:05</a> 示範目標：建立一個 agent，讀取產品回饋、摘要反覆出現的問題，建立後續工作並分派給正確的團隊。<br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=5s\" target=\"_blank\">00:05</a> 第一步在 agent 建立步驟中，用白話描述希望 agent 做什麼。<br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=5s\" target=\"_blank\">00:05</a> ChatGPT 會把白話描述轉成一份結構化計畫，規劃如何建出這個 agent。<br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=5s\" target=\"_blank\">00:05</a> ChatGPT 做的第一件事是設定 app connections（應用程式連線）。<br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=37s\" target=\"_blank\">00:37</a> 本例要讀取網路論壇的回饋，所以需要 web search；也需要 Slack，所以要設定 Slack connector。<br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=37s\" target=\"_blank\">00:37</a> agent 要把回饋歸納成反覆出現的問題與痛點。<br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=37s\" target=\"_blank\">00:37</a> agent 要每天在 Slack 發一份摘要給產品領導團隊。<br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=37s\" target=\"_blank\">00:37</a> agent 要能依據發現的內容，在 Linear（講者用的工單管理系統）建立 issue。<br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=37s\" target=\"_blank\">00:37</a> 畫面上可看到 ChatGPT 自動設定這些工具。<br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=67s\" target=\"_blank\">01:07</a> 可以檢視並修改這些工具的權限。<br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=67s\" target=\"_blank\">01:07</a> 權限很重要，因為 agent 只能使用你授權給它的工具和資料。<br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=67s\" target=\"_blank\">01:07</a> ChatGPT 也會草擬 instructions，說明 agent 該如何運作、輸出格式為何。<br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=67s\" target=\"_blank\">01:07</a> 對 instructions 滿意後，就可以建立 agent。<br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=67s\" target=\"_blank\">01:07</a> 觸發方式：本例直接在 ChatGPT 內觸發，也可以排程執行，或從其他工作介面觸發，例如直接從 Slack。<br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=97s\" target=\"_blank\">01:37</a> 講者要求 agent 執行並摘要產品的回饋。<br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=97s\" target=\"_blank\">01:37</a> 執行時，agent 會從被授權的各個來源讀取資料，將回饋分組，再彙整成給產品領導團隊的摘要。<br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=97s\" target=\"_blank\">01:37</a> agent 會自動把摘要發到正確的 Slack 頻道。<br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=128s\" target=\"_blank\">02:08</a> 接著請 agent 把發現的資訊更新到 Linear，agent 會使用 Linear integration。<br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=128s\" target=\"_blank\">02:08</a> agent 會先檢查是否已有相關 issue；若有，就用新客戶回饋的資料點補充內容。<br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=128s\" target=\"_blank\">02:08</a> 若相關 issue 不存在，agent 就會建立新的 issue。<br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=160s\" target=\"_blank\">02:40</a> 本例中 agent 在 Linear 自動建立了三張新工單。<br>▸ <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=160s\" target=\"_blank\">02:40</a> 每張工單都有豐富的脈絡，說明客戶觀察到什麼，以及該如何修正。\n\n📘 術語<br><b>agent</b>（代理程式）：能讀取回饋、摘要問題、建立後續工作並分派給團隊的自動化助手<br><b>app connections</b>（應用程式連線）：建立 agent 時 ChatGPT 第一步設定的項目，讓 agent 能存取外部工具<br><b>connector</b>（連接器）：讓 agent 存取 Slack 需要設定 Slack connector<br><b>web search</b>（網路搜尋）：agent 要讀取網路論壇的回饋，所以需要 web search<br><b>Slack</b>（Slack）：agent 讀取回饋的來源之一，也是發送每日摘要給產品領導團隊的地方<br><b>Linear</b>（Linear）：講者使用的工單管理系統，agent 會在其中建立或補充 issue<br><b>ticket management system</b>（工單管理系統）：講者用來形容 Linear 的說法<br><b>issue / ticket</b>（議題／工單）：agent 在 Linear 建立的待辦項目，內含客戶觀察到的問題與修正方式<br><b>permissions</b>（權限）：可檢視並修改；agent 只能使用被授權的工具和資料<br><b>instructions</b>（指示）：ChatGPT 草擬的內容，說明 agent 如何運作、輸出格式為何<br><b>trigger</b>（觸發）：啟動 agent 執行，可從 ChatGPT 內、排程或 Slack 等工作介面觸發<br><b>integration</b>（整合）：agent 透過 Linear integration 檢查並建立 issue<br><b>pain points</b>（痛點）：agent 要把回饋歸納成反覆出現的問題與痛點\n\n📺 <a href=\"https://www.youtube.com/watch?v=bk2H8WfHZZk&t=0s\" target=\"_blank\">Workspace agents in ChatGPT: Product feedback routing agent</a>（2026/04/22 · 3 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "agent 要把資訊更新到 Linear 時，如果已經有相關的 issue，它會怎麼做？",
+          "options": [
+            "用新客戶回饋的資料點補充既有 issue",
+            "刪除舊 issue 後重新建立",
+            "略過該 issue，只建立全新的工單",
+            "先在 Slack 詢問產品領導團隊是否要更新"
+          ],
+          "correct": 0,
+          "why": "[02:08] 字幕說 agent 會先檢查是否已有 issue，若有，就用新客戶回饋的資料點補充這些 issue；若沒有才建立新的。"
         },
         "status": "full"
       },
@@ -7611,6 +7687,25 @@ const CURRICULUM = {
           ],
           "correct": 0,
           "why": "[03:07] AI 說使用者眼神接觸良好，但建議避免太常摸臉，因為這可能讓人分心，也可能顯得緊張"
+        },
+        "status": "full"
+      },
+      {
+        "id": "yt_c2DFg53Zhvw",
+        "title": "🎬 2024/05/13 GPT-4o 即時翻譯現場示範",
+        "category": "ChatGPT 產品功能",
+        "text": "<b>現場示範讓 ChatGPT 擔任英文與義大利文之間的即時翻譯</b><br>▸ <a href=\"https://www.youtube.com/watch?v=c2DFg53Zhvw&t=2s\" target=\"_blank\">00:02</a> 團隊請 X 上的線上觀眾提交想看的測試請求，其中一位想知道 GPT-4o 能不能做即時翻譯<br>▸ <a href=\"https://www.youtube.com/watch?v=c2DFg53Zhvw&t=2s\" target=\"_blank\">00:02</a> Mark 會說義大利文，所以決定示範英文與義大利文互譯<br>▸ <a href=\"https://www.youtube.com/watch?v=c2DFg53Zhvw&t=33s\" target=\"_blank\">00:33</a> 給 ChatGPT 的指示：擔任翻譯，聽到英文就翻成義大利文，聽到義大利文就翻回英文<br>▸ <a href=\"https://www.youtube.com/watch?v=c2DFg53Zhvw&t=33s\" target=\"_blank\">00:33</a> 說義大利文的一方提問，ChatGPT 譯成英文：她想知道如果鯨魚會說話，牠們會告訴我們什麼<br>▸ <a href=\"https://www.youtube.com/watch?v=c2DFg53Zhvw&t=64s\" target=\"_blank\">01:04</a> 說英文的一方回答「牠們可能會問怎麼解線性方程式」，ChatGPT 翻譯後現場確認翻譯功能可以運作\n\n📘 術語<br><b>real time translation</b>（即時翻譯）：字幕中的示範做法：聽到英文就翻成義大利文，聽到義大利文就翻回英文<br><b>prompt</b>（提示／請求）：字幕中指觀眾在 X 上提交、希望團隊現場測試的請求\n\n📺 <a href=\"https://www.youtube.com/watch?v=c2DFg53Zhvw&t=0s\" target=\"_blank\">Live demo of GPT-4o realtime translation</a>（2024/05/13 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片示範中，ChatGPT 被要求在哪兩種語言之間即時翻譯？",
+          "options": [
+            "英文與日文",
+            "英文與義大利文",
+            "英文與西班牙文",
+            "英文與法文"
+          ],
+          "correct": 1,
+          "why": "[00:02] Mark 說他會義大利文，決定示範英文與義大利文；[00:33] 指示聽到英文翻成義大利文、聽到義大利文翻回英文"
         },
         "status": "full"
       },
@@ -8874,6 +8969,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_cFyFF3Ad2aM",
+        "title": "🎬 2026/07/22 加州小型企業如何使用 ChatGPT | OpenAI Academy",
+        "category": "企業與客戶案例",
+        "text": "<b>一場讓小型企業現場動手試用 ChatGPT 的工作坊紀錄與參加者心得</b><br>▸ <a href=\"https://www.youtube.com/watch?v=cFyFF3Ad2aM&t=4s\" target=\"_blank\">00:04</a> 開場致詞：現在大家都在談 AI，這場活動讓參加者親自試用工具，並希望帶走能用在日常工作與生意上的點子<br>▸ <a href=\"https://www.youtube.com/watch?v=cFyFF3Ad2aM&t=4s\" target=\"_blank\">00:04</a> 講者表示 AI 正在改變做生意的許多面向，而且變化非常快<br>▸ <a href=\"https://www.youtube.com/watch?v=cFyFF3Ad2aM&t=4s\" target=\"_blank\">00:04</a> 這場活動是更認識 ChatGPT、並向專家求助的機會<br>▸ <a href=\"https://www.youtube.com/watch?v=cFyFF3Ad2aM&t=40s\" target=\"_blank\">00:40</a> 一位受訪者說，看到 AI 對自己和學生的影響很有轉變性，並認為對小型企業也是如此<br>▸ <a href=\"https://www.youtube.com/watch?v=cFyFF3Ad2aM&t=40s\" target=\"_blank\">00:40</a> 受訪者認為，把同樣的知識帶給社群很重要<br>▸ <a href=\"https://www.youtube.com/watch?v=cFyFF3Ad2aM&t=40s\" target=\"_blank\">00:40</a> 受訪者提到新功能和能力不斷加入，因此想弄清楚 ChatGPT 到底能提供什麼，特別是對創業者<br>▸ <a href=\"https://www.youtube.com/watch?v=cFyFF3Ad2aM&t=76s\" target=\"_blank\">01:16</a> 參加者說這場工作坊正是大多數人需要的，內容不會太難，簡報很實用<br>▸ <a href=\"https://www.youtube.com/watch?v=cFyFF3Ad2aM&t=76s\" target=\"_blank\">01:16</a> 參加者特別肯定能當場實際操作，卡住時旁邊就有人可以幫忙\n\n📺 <a href=\"https://www.youtube.com/watch?v=cFyFF3Ad2aM&t=0s\" target=\"_blank\">How California Small Businesses Are Using ChatGPT | OpenAI Academy</a>（2026/07/22 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，參加者特別肯定這場工作坊的哪一點？",
+          "options": [
+            "活動提供免費的付費版方案試用",
+            "結束後可以拿到官方認證證書",
+            "課程內容以進階程式開發為主",
+            "可以當場實際操作，卡住時旁邊有人幫忙"
+          ],
+          "correct": 3,
+          "why": "[01:16] 參加者說能當場做所有操作，卡住時旁邊就有人能幫忙，這點非常好"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_4Nv--b12hxQ",
         "title": "🎬 2026/07/22 歐洲中小企業如何運用 ChatGPT 與 Codex｜OpenAI Academy",
         "category": "企業與客戶案例",
@@ -9637,6 +9751,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_bxJkxBUFeEE",
+        "title": "🎬 2026/03/24 Codex 為 Notion 帶來了什麼",
+        "category": "企業與客戶案例",
+        "text": "<b>Notion 的 Ryan Nystrom 分享他用 Codex 獨力開發 Notion AI voice input 的經驗</b><br>▸ <a href=\"https://www.youtube.com/watch?v=bxJkxBUFeEE&t=2s\" target=\"_blank\">00:02</a> 講者 Ryan Nystrom 在 Notion 負責 AI product engineering<br>▸ <a href=\"https://www.youtube.com/watch?v=bxJkxBUFeEE&t=2s\" target=\"_blank\">00:02</a> 他用 Codex 獨自一人，大約 3 到 4 小時就把這個功能做出來<br>▸ <a href=\"https://www.youtube.com/watch?v=bxJkxBUFeEE&t=2s\" target=\"_blank\">00:02</a> 他開發的功能是 Notion AI voice input，讓使用者用說的取代打字<br>▸ <a href=\"https://www.youtube.com/watch?v=bxJkxBUFeEE&t=2s\" target=\"_blank\">00:02</a> 做法：讓 Codex 參考 Notion 行動版 App 裡一個既有的功能，大約一次（one shot）就做出整個功能<br>▸ <a href=\"https://www.youtube.com/watch?v=bxJkxBUFeEE&t=32s\" target=\"_blank\">00:32</a> 接著再把這個功能搬到 Notion 的網頁版與桌面版客戶端<br>▸ <a href=\"https://www.youtube.com/watch?v=bxJkxBUFeEE&t=32s\" target=\"_blank\">00:32</a> 他認為 Codex 的「超能力」是會先向外延伸、把 context 弄清楚，然後才開始動工<br>▸ <a href=\"https://www.youtube.com/watch?v=bxJkxBUFeEE&t=32s\" target=\"_blank\">00:32</a> 他管理一個團隊，傳統上主管沒時間寫程式；現在他能一邊支援團隊、一邊獨力做出這個功能，他覺得很驚人\n\n📘 術語<br><b>Codex</b>（Codex）：影片中講者用來開發功能的工具；他讓它參考既有功能，就做出整個新功能<br><b>one shot</b>（一次到位）：字幕說 Codex 大約一次就把整個功能做出來<br><b>context</b>（脈絡／上下文）：字幕說 Codex 會先向外延伸、弄清楚 context，才開始動工<br><b>web and desktop clients</b>（網頁版與桌面版客戶端）：功能先在行動版參考既有功能做出，之後再搬到網頁版與桌面版\n\n📺 <a href=\"https://www.youtube.com/watch?v=bxJkxBUFeEE&t=0s\" target=\"_blank\">What Codex Unlocks for Notion</a>（2026/03/24 · 0 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，Ryan Nystrom 用 Codex 獨力做出 Notion AI voice input 大約花了多少時間？",
+          "options": [
+            "大約 30 分鐘",
+            "大約 3 到 4 小時",
+            "大約 3 到 4 天",
+            "大約一週"
+          ],
+          "correct": 1,
+          "why": "講者說 \"I was able to build this in maybe 3 or 4 hours entirely by myself\"（00:02）"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_W6c7XcB6HwM",
         "title": "🎬 2026/02/05 用 ChatGPT 讓一間 86 年歷史的廢料回收場現代化｜Super Bowl 2026",
         "category": "企業與客戶案例",
@@ -10055,6 +10188,25 @@ const CURRICULUM = {
           ],
           "correct": 1,
           "why": "[00:32] 字幕說爸爸教他分辨魚是真的咬餌了，還是只是勾到石頭"
+        },
+        "status": "full"
+      },
+      {
+        "id": "yt_be3hAgGGyKo",
+        "title": "🎬 2024/12/17 OpenAI DevDay 2024｜社群焦點｜Genmab",
+        "category": "企業與客戶案例",
+        "text": "<b>Genmab 介紹用 AI agent 框架 CELI 自動產生臨床試驗法規文件並現場展示</b><br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=7s\" target=\"_blank\">00:07</a> 講者是 Genmab AI 創新團隊負責人 Scott 與 Sam Wagner，主題是用 AI agents 加快臨床試驗流程<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=39s\" target=\"_blank\">00:39</a> Genmab 是專注生物學的生技公司，致力於在生物學與抗體領域做到最好，也要推動 AI 往前，而不只是採用 AI<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=70s\" target=\"_blank\">01:10</a> 臨床試驗又長又貴：一種藥物針對一種疾病需要 8 年以上、數十億美元<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=70s\" target=\"_blank\">01:10</a> 本次案例是文件生成：要提交給政府的法規文件（regulatory documents），其中一種可以想成「病人的故事」<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=101s\" target=\"_blank\">01:41</a> 每個試驗中的每位病人，在試驗中的每一天都要產生特定臨床文件，需熟練人員花大量時間彙整<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=101s\" target=\"_blank\">01:41</a> 撰寫時要翻閱數百份文件或數百頁資料、數千個資料點，再以臨床專業彙整成摘要；這只是眾多文件之一<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=132s\" target=\"_blank\">02:12</a> 病人數以千計，且除了內部利害關係人與資料，還常要和外部合作夥伴協作<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=166s\" target=\"_blank\">02:46</a> CELI 架構：模型接收自然語言的任務 user story，在 context 中規劃，執行 Step 1 時就知道 Step 10 要做什麼<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=166s\" target=\"_blank\">02:46</a> CELI 能自我修正、有 guideline，並能評估每一步的執行與表現<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=199s\" target=\"_blank\">03:19</a> 能依執行狀況調整後續計畫；每一步呼叫的工具與產出，會成為下一步的 Step zero，可反覆迭代<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=199s\" target=\"_blank\">03:19</a> 他們表示這樣可以收斂到所追求的 100% 準確度<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=199s\" target=\"_blank\">03:19</a> 即將發表的成果顯示，CELI 也能解決「知道如何評估解答」的一般性問題<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=231s\" target=\"_blank\">03:51</a> Demo 重點：邊做邊了解病人、逐步逐節撰寫草稿，過程中有檢索（retrieval）流程取得所需資訊<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=263s\" target=\"_blank\">04:23</a> 初始化時送出 system message，由一系列說明工作的 prompts 組成，彙整自事先寫好的 job description<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=263s\" target=\"_blank\">04:23</a> prompts 內容包含：角色與目標（撰寫這份文件）、任務準則，以及需依序完成的任務清單<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=296s\" target=\"_blank\">04:56</a> 任務清單像 checklist，完成第一項再做第二、第三項；若某任務做不到，它能設法解決<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=296s\" target=\"_blank\">04:56</a> medical writers 與臨床醫師提供撰寫指引，這些指引也寫進 prompts 的指示中<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=296s\" target=\"_blank\">04:56</a> prompt completion mechanics 是 CELI 的「秘密武器」：要求模型回報已完成、正在做、接下來要做什麼<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=327s\" target=\"_blank\">05:27</a> GPT 收到 system message 後，第一步是做 function call 取得該臨床試驗的識別碼<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=327s\" target=\"_blank\">05:27</a> 取得的 ID 或 key 會留在 context 中，因此之後任何 function call 都能隨時做 key-value 查詢<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=360s\" target=\"_blank\">06:00</a> GPT 回報 Task 1 完成、正在做 Task 2，並指示自己下次呼叫時繼續 Task 2<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=360s\" target=\"_blank\">06:00</a> function call 取回表格，結果附加到 context，context 持續累積<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=360s\" target=\"_blank\">06:00</a> 它有一段持續更新的敘述（revolving narrative），說明從每次檢索得到哪些資訊<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=392s\" target=\"_blank\">06:32</a> 它知道資訊之後怎麼用：在 Task 2 就知道這資訊撰寫時要用，因為所有任務都在 system prompt 裡，能看到 Task 10<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=392s\" target=\"_blank\">06:32</a> 每次送給 GPT 都會附上 system message，所以全程都有這份藍圖（blueprint）<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=424s\" target=\"_blank\">07:04</a> 取得所需表格後開始撰寫：先寫 background 章節，再寫 Day 1，逐節完成後彙整成一份<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=424s\" target=\"_blank\">07:04</a> 切成小章節撰寫的原因是這樣非常準確，且能從 context 取得所需的全部資訊<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=456s\" target=\"_blank\">07:36</a> 流程最後有 monitoring agent 確認檔案已儲存、所有步驟都依序完成，產出完整草稿<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=456s\" target=\"_blank\">07:36</a> Demo 的工作原本可能要花數小時，用這個流程只要幾分鐘；而且涉及數千病人、多個試驗、許多天數<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=488s\" target=\"_blank\">08:08</a> 目標：試驗若能縮短一個月，就有數百到數千名重症病人能及早用到藥，這是他們工作的動力<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=488s\" target=\"_blank\">08:08</a> 提供 QR code，CELI 是開源的；他們認為 CELI 作為問題解決器與文件產生器是通用的<br>▸ <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=519s\" target=\"_blank\">08:39</a> 另一個 QR code 是給有興趣一起幫助重症病人的人（徵才）\n\n📘 術語<br><b>AI agent</b>（AI 代理）：本影片中用來加快臨床試驗流程、能規劃、執行並自我修正步驟的 AI<br><b>clinical trial</b>（臨床試驗）：一種藥物對一種疾病需 8 年以上、數十億美元，過程又長又貴<br><b>regulatory document</b>（法規文件）：必須提交給政府的文件，需 100% 正確，99% 不夠<br><b>CELI</b>（CELI 框架）：Genmab 的框架，能規劃、自我修正、評估每步並迭代，已開源<br><b>system message</b>（系統訊息）：由描述工作的 prompts 組成，每次呼叫 GPT 都會附上，作為全程藍圖<br><b>job description</b>（工作說明）：事先寫好，彙整成 system message 的內容<br><b>prompt completion mechanics</b>（prompt 完成機制）：要求模型回報已完成、進行中與下一步的任務，被稱為秘密武器<br><b>function call</b>（函式呼叫）：模型用來取得試驗識別碼、表格等資料，結果會附加到 context<br><b>context</b>（上下文）：累積檢索結果與 ID 的地方，ID 留在其中可隨時查詢<br><b>key-value pair lookup</b>（鍵值查詢）：因取得的 ID 或 key 留在 context，function call 可隨時用它們查詢<br><b>retrieval</b>（檢索）：撰寫過程中取得所需資訊的流程<br><b>revolving narrative</b>（持續更新的敘述）：模型說明它從各次檢索中得到了哪些資訊<br><b>monitoring agent</b>（監控代理）：流程最後確認檔案已儲存、所有步驟都依序完成\n\n📺 <a href=\"https://www.youtube.com/watch?v=be3hAgGGyKo&t=0s\" target=\"_blank\">OpenAI DevDay 2024 | Community Spotlight | Genmab</a>（2024/12/17 · 8 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據講者說法，為什麼只對 GPT-4o 下 prompt 不足以產生法規文件？",
+          "options": [
+            "因為法規文件必須 100% 正確，99% 還不夠",
+            "因為法規文件只需要 90% 正確，但速度不夠快",
+            "因為 GPT-4o 無法讀取表格資料",
+            "因為外部合作夥伴不允許使用 AI"
+          ],
+          "correct": 0,
+          "why": "[02:12] 講者說 GPT-4o 只靠 prompting 做不到，法規文件需要 100% 正確，99% 不夠好"
         },
         "status": "full"
       },
@@ -11029,6 +11181,25 @@ const CURRICULUM = {
         },
         "status": "long",
         "parts": 13
+      },
+      {
+        "id": "yt_bbGMb3ZxAPk",
+        "title": "🎬 2019/04/27 開幕主題演講 | OpenAI Five 總決賽（1/6）",
+        "category": "研究與安全",
+        "text": "<b>OpenAI Five 對戰 OG 前的開場，說明 deep reinforcement learning 與此次活動意義</b><br>▸ <a href=\"https://www.youtube.com/watch?v=bbGMb3ZxAPk&t=6s\" target=\"_blank\">00:06</a> 這是 2019 年 OpenAI 5 finals，主秀是 OpenAI 5 對戰 OG，賽後還有幾個驚喜<br>▸ <a href=\"https://www.youtube.com/watch?v=bbGMb3ZxAPk&t=39s\" target=\"_blank\">00:39</a> 主持人 Sheever 與 Blitz、Purge 一同主持，會聊 Dota，也會訪問 OpenAI 成員談這個專案<br>▸ <a href=\"https://www.youtube.com/watch?v=bbGMb3ZxAPk&t=70s\" target=\"_blank\">01:10</a> Greg Brockman（OpenAI chairman 暨 CTO）上台致詞<br>▸ <a href=\"https://www.youtube.com/watch?v=bbGMb3ZxAPk&t=70s\" target=\"_blank\">01:10</a> 這是 AI 第一次嘗試在 eSports 遊戲中挑戰世界冠軍<br>▸ <a href=\"https://www.youtube.com/watch?v=bbGMb3ZxAPk&t=101s\" target=\"_blank\">01:41</a> OG 的水準遠高於先前交手過的任何隊伍，OpenAI 自己也不知道結果會如何<br>▸ <a href=\"https://www.youtube.com/watch?v=bbGMb3ZxAPk&t=101s\" target=\"_blank\">01:41</a> OpenAI 5 與 DeepMind 的 StarCraft bot 都曾私下擊敗優秀職業選手，但從沒人看過現場直播的版本<br>▸ <a href=\"https://www.youtube.com/watch?v=bbGMb3ZxAPk&t=131s\" target=\"_blank\">02:11</a> 活動重點不在輸贏，而是讓大家接觸當今快速進步的 AI 技術所產生的「陌生但具體」的智慧<br>▸ <a href=\"https://www.youtube.com/watch?v=bbGMb3ZxAPk&t=131s\" target=\"_blank\">02:11</a> 傳統程式由人類工程師寫死，遇到沒預料到的狀況就會壞掉，所以我們把電腦當成不會思考的機器<br>▸ <a href=\"https://www.youtube.com/watch?v=bbGMb3ZxAPk&t=163s\" target=\"_blank\">02:43</a> 但玩 Dota 需要創新、有創意、真正理解，所以必須用不同的做法<br>▸ <a href=\"https://www.youtube.com/watch?v=bbGMb3ZxAPk&t=163s\" target=\"_blank\">02:43</a> OpenAI 5 採用 deep reinforcement learning：不是寫程式教它怎麼玩 Dota，而是寫程式教它怎麼學<br>▸ <a href=\"https://www.youtube.com/watch?v=bbGMb3ZxAPk&t=163s\" target=\"_blank\">02:43</a> Five 會隨機嘗試動作，再從獎勵或懲罰中學習<br>▸ <a href=\"https://www.youtube.com/watch?v=bbGMb3ZxAPk&t=163s\" target=\"_blank\">02:43</a> 它誕生 10 個月以來，已累積玩了超過 45,000 年的 Dota，而且還沒玩膩<br>▸ <a href=\"https://www.youtube.com/watch?v=bbGMb3ZxAPk&t=195s\" target=\"_blank\">03:15</a> 它的打法完全是自己的，是電腦自行構想出來的創意；對 Five 來說，今天是它第一次遇到「外星智慧」<br>▸ <a href=\"https://www.youtube.com/watch?v=bbGMb3ZxAPk&t=225s\" target=\"_blank\">03:45</a> 學習程式碼本身並不知道自己是為 Dota 而寫，因此非常通用，有潛力造福人類生活<br>▸ <a href=\"https://www.youtube.com/watch?v=bbGMb3ZxAPk&t=225s\" target=\"_blank\">03:45</a> 去年同樣的技術被用來控制一隻沒人能用程式寫出控制方式的機械手<br>▸ <a href=\"https://www.youtube.com/watch?v=bbGMb3ZxAPk&t=225s\" target=\"_blank\">03:45</a> 預期類似技術會出現在新的互動系統中，例如長照機器人、創作助理，以及今天還無法想像的系統<br>▸ <a href=\"https://www.youtube.com/watch?v=bbGMb3ZxAPk&t=225s\" target=\"_blank\">03:45</a> 這是 OpenAI Five 最後一場公開活動，但未來預期還會做其他 Dota 專案<br>▸ <a href=\"https://www.youtube.com/watch?v=bbGMb3ZxAPk&t=255s\" target=\"_blank\">04:15</a> 感謝 OpenAI 團隊，以及支持者 Valve、Google Cloud、Microsoft Azure、數十支測試隊伍、今天的主播與 Reddit 留言者<br>▸ <a href=\"https://www.youtube.com/watch?v=bbGMb3ZxAPk&t=285s\" target=\"_blank\">04:45</a> 特別感謝 OG 在比賽行程中抽空前來\n\n📘 術語<br><b>deep reinforcement learning</b>（深度強化學習）：不寫程式教怎麼玩，而是寫程式教怎麼學；隨機嘗試動作，從獎勵或懲罰中學習<br><b>reward / punishment</b>（獎勵／懲罰）：Five 嘗試隨機動作後，依據得到的獎勵或懲罰來學習<br><b>eSports</b>（電子競技）：字幕未解釋，只提到這是 AI 首次在 eSports 遊戲挑戰世界冠軍<br><b>general-purpose</b>（通用）：學習程式碼不知道自己是為 Dota 而寫，所以很通用，也曾用來控制機械手\n\n📺 <a href=\"https://www.youtube.com/watch?v=bbGMb3ZxAPk&t=0s\" target=\"_blank\">Opening Keynote | OpenAI Five Finals (1/6)</a>（2019/04/27 · 5 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "依影片所述，OpenAI Five 在 10 個月內累積玩了多少 Dota？",
+          "options": [
+            "約 10 年",
+            "超過 45,000 年",
+            "超過 4,500 年",
+            "超過 450,000 年"
+          ],
+          "correct": 1,
+          "why": "[02:43] 提到 in its 10 months of existence, it's now played over 45,000 years，[03:15] 也再次確認是 45,000 years of Dota gameplay"
+        },
+        "status": "full"
       },
       {
         "id": "yt_LVrpWrvHVNE",
@@ -12152,6 +12323,25 @@ const CURRICULUM = {
           ],
           "correct": 2,
           "why": "[01:31] 字幕：「we have a piece of software that runs on one computer can you make it run on 3000 and you have three weeks?」"
+        },
+        "status": "full"
+      },
+      {
+        "id": "yt_cLQc-5BJz4g",
+        "title": "🎬 2021/08/10 用 OpenAI Codex 寫「Hello World」",
+        "category": "其他",
+        "text": "<b>字幕與標題不符：內容是家人追查喇叭為何自己播出聲音，未提到 Codex</b><br>▸ <a href=\"https://www.youtube.com/watch?v=cLQc-5BJz4g&t=0s\" target=\"_blank\">00:00</a> 屋內喇叭突然傳出聲音，說話者表示自己沒在看任何東西，身上也沒帶手機<br>▸ <a href=\"https://www.youtube.com/watch?v=cLQc-5BJz4g&t=0s\" target=\"_blank\">00:00</a> 兩人湊近逐一聽，確認聲音是從其中特定的喇叭傳出來<br>▸ <a href=\"https://www.youtube.com/watch?v=cLQc-5BJz4g&t=31s\" target=\"_blank\">00:31</a> 聲音聽起來像廣告，他們懷疑是爸爸在外面聽的內容，猜測是不是連錯 Bluetooth<br>▸ <a href=\"https://www.youtube.com/watch?v=cLQc-5BJz4g&t=31s\" target=\"_blank\">00:31</a> 這些喇叭是 studio 用的獨立 monitors，他們檢查後面有沒有接線<br>▸ <a href=\"https://www.youtube.com/watch?v=cLQc-5BJz4g&t=61s\" target=\"_blank\">01:01</a> 發現兩顆喇叭接在一起往下走，有很多多餘的 speaker wire，線從牆裡出去<br>▸ <a href=\"https://www.youtube.com/watch?v=cLQc-5BJz4g&t=91s\" target=\"_blank\">01:31</a> 懷疑外面的人連上了他們的設備；確認不是鄰居而是爸爸，並發現線一路接到屋外<br>▸ <a href=\"https://www.youtube.com/watch?v=cLQc-5BJz4g&t=122s\" target=\"_blank\">02:02</a> 在下方找到一堆設備，推測爸爸用 Bluetooth 連進了這套系統<br>▸ <a href=\"https://www.youtube.com/watch?v=cLQc-5BJz4g&t=152s\" target=\"_blank\">02:32</a> 結論：爸爸坐在外面的椅子上用手機聽，可能誤連到錯的喇叭，以為是外面那組，結果接進了這邊的 amp\n\n📘 術語<br><b>Bluetooth</b>（藍牙）：字幕推測爸爸透過 Bluetooth 誤連到屋內這組喇叭／amp<br><b>amp</b>（擴大機）：字幕未解釋；他們懷疑喇叭是接到 amp，最後推測爸爸接進了這台 amp<br><b>studio monitors</b>（監聽喇叭）：字幕稱這些是 studio 用的 individual monitors（獨立喇叭）<br><b>speaker wire</b>（喇叭線）：字幕未解釋；他們發現有很多多餘的喇叭線從牆裡接出去\n\n📺 <a href=\"https://www.youtube.com/watch?v=cLQc-5BJz4g&t=0s\" target=\"_blank\">“Hello World” with OpenAI Codex</a>（2021/08/10 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片最後推測喇叭自己發出聲音的原因是什麼？",
+          "options": [
+            "說話者自己的手機正在播放影片",
+            "喇叭收到附近電台的干擾訊號",
+            "爸爸在外面用手機聽，可能透過 Bluetooth 連錯喇叭",
+            "鄰居在外面播放音樂"
+          ],
+          "correct": 2,
+          "why": "[02:32] 提到他可能連錯喇叭，以為是外面那組；他坐在外面的椅子上用手機聽，結果接進了 amp。[01:31] 已排除鄰居，[00:00] 說話者表示身上沒帶手機。"
         },
         "status": "full"
       },
