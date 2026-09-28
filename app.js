@@ -7825,6 +7825,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_jevonM6gBcA",
+        "title": "🎬 2025/03/25 用 4o Image Generation 做視覺風格轉換",
+        "category": "ChatGPT 產品功能",
+        "text": "<b>OpenAI 研究員 Lu 示範把手繪圖上傳 ChatGPT，轉成漫畫、換角色、變成真實風格</b><br>▸ <a href=\"https://www.youtube.com/watch?v=jevonM6gBcA&t=0s\" target=\"_blank\">00:00</a> 講者 Lu 是 OpenAI 研究科學家，研究領域是 multi-modal。<br>▸ <a href=\"https://www.youtube.com/watch?v=jevonM6gBcA&t=0s\" target=\"_blank\">00:00</a> Lu 認為這個模型的圖像生成能力越來越強。<br>▸ <a href=\"https://www.youtube.com/watch?v=jevonM6gBcA&t=0s\" target=\"_blank\">00:00</a> Lu 提到很多人用這個工具來生成漫畫書；示範素材是他們在攝影棚裡畫的一張圖。<br>▸ <a href=\"https://www.youtube.com/watch?v=jevonM6gBcA&t=32s\" target=\"_blank\">00:32</a> 步驟一：把手繪圖上傳到 ChatGPT，輸入 prompt，模型開始生成這張圖變成真正漫畫的樣子。<br>▸ <a href=\"https://www.youtube.com/watch?v=jevonM6gBcA&t=32s\" target=\"_blank\">00:32</a> Lu 表示，越常玩這個模型，越常發現令人驚喜的結果；這次得到一張很好笑的漫畫。<br>▸ <a href=\"https://www.youtube.com/watch?v=jevonM6gBcA&t=32s\" target=\"_blank\">00:32</a> 步驟二：要求把漫畫中的龍換成一隻可愛的企鵝，Lu 覺得結果看起來不錯。<br>▸ <a href=\"https://www.youtube.com/watch?v=jevonM6gBcA&t=64s\" target=\"_blank\">01:04</a> 步驟三：Lu 說自己一向好奇圖畫在真實生活中會長什麼樣子，看了結果後覺得很可愛。\n\n📘 術語<br><b>multi-modal</b>（多模態）：字幕沒有解釋，只提到這是 Lu 在 OpenAI 的研究領域。<br><b>prompt</b>（提示詞）：字幕沒有解釋，只說上傳圖後輸入 prompt，模型就開始生成。\n\n📺 <a href=\"https://www.youtube.com/watch?v=jevonM6gBcA&t=0s\" target=\"_blank\">Visual Restyling with 4o Image Generation</a>（2025/03/25 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "示範中，Lu 要求把漫畫裡的龍換成什麼？",
+          "options": [
+            "一隻可愛的貓",
+            "一隻老鷹",
+            "一隻可愛的企鵝",
+            "一隻恐龍"
+          ],
+          "correct": 2,
+          "why": "[00:32] Lu 說：I wanna replace this dragon with this cutie penguin."
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_NO7Uo2ii1Sw",
         "title": "🎬 2025/03/25 用 4o Image Generation 渲染文字",
         "category": "ChatGPT 產品功能",
