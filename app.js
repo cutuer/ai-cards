@@ -10306,6 +10306,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_ZL9C1B46nlY",
+        "title": "🎬 2024/08/26 Arizona State University 以 ChatGPT Edu 加速學習與研究",
+        "category": "企業與客戶案例",
+        "text": "<b>ASU 導入 ChatGPT Edu，從教職員提案到語言學伴、寫作課與隱私保護的應用</b><br>▸ <a href=\"https://www.youtube.com/watch?v=ZL9C1B46nlY&t=4s\" target=\"_blank\">00:04</a> ASU 不以地位或排他性作為目標與建立聲譽的手段，而追求讓最廣泛的人們都能獲得成功<br>▸ <a href=\"https://www.youtube.com/watch?v=ZL9C1B46nlY&t=4s\" target=\"_blank\">00:04</a> ASU 做的每件事都聚焦在影響力；要聚焦科技的影響，應先詢問社群想解決什麼問題<br>▸ <a href=\"https://www.youtube.com/watch?v=ZL9C1B46nlY&t=4s\" target=\"_blank\">00:04</a> 取得 OpenAI 的 AI 工具後，ASU 對內發起 grant 提案徵件<br>▸ <a href=\"https://www.youtube.com/watch?v=ZL9C1B46nlY&t=39s\" target=\"_blank\">00:39</a> 教職員送回超過 400 份提案，目前正在推動其中 200 項<br>▸ <a href=\"https://www.youtube.com/watch?v=ZL9C1B46nlY&t=39s\" target=\"_blank\">00:39</a> ASU 期待 AI 改變與知識的關係、讓知識取得民主化，使學生更會解決問題、更像研究者般工作<br>▸ <a href=\"https://www.youtube.com/watch?v=ZL9C1B46nlY&t=39s\" target=\"_blank\">00:39</a> 跨領域研究合作的障礙之一是成員專業各異<br>▸ <a href=\"https://www.youtube.com/watch?v=ZL9C1B46nlY&t=69s\" target=\"_blank\">01:09</a> ChatGPT 協助建立共同語言與共同流程，被形容為真正的 game changer<br>▸ <a href=\"https://www.youtube.com/watch?v=ZL9C1B46nlY&t=69s\" target=\"_blank\">01:09</a> 大家感到興奮，因為現在有具體案例可說明 AI 如何改善課堂成果<br>▸ <a href=\"https://www.youtube.com/watch?v=ZL9C1B46nlY&t=69s\" target=\"_blank\">01:09</a> School of International Letters and Cultures 以 ChatGPT 打造 language buddy：有耐心、隨時可用、以個人化且易懂方式說話的家教<br>▸ <a href=\"https://www.youtube.com/watch?v=ZL9C1B46nlY&t=69s\" target=\"_blank\">01:09</a> 第二個專案是在寫作（composition）課使用 AI<br>▸ <a href=\"https://www.youtube.com/watch?v=ZL9C1B46nlY&t=100s\" target=\"_blank\">01:40</a> 許多說法認為 AI 會終結寫作，但團隊想展示 AI 如何支援寫出更好的文章<br>▸ <a href=\"https://www.youtube.com/watch?v=ZL9C1B46nlY&t=100s\" target=\"_blank\">01:40</a> ASU 以學生的成功來衡量自身的成功<br>▸ <a href=\"https://www.youtube.com/watch?v=ZL9C1B46nlY&t=100s\" target=\"_blank\">01:40</a> ChatGPT Edu 的推出非常重要：保護學生隱私、保護研究成果與智慧財產，並支援研究與教學環境的資安需求<br>▸ <a href=\"https://www.youtube.com/watch?v=ZL9C1B46nlY&t=130s\" target=\"_blank\">02:10</a> 這是每位 CIO、甚至每位大學校長都需要留意的事<br>▸ <a href=\"https://www.youtube.com/watch?v=ZL9C1B46nlY&t=130s\" target=\"_blank\">02:10</a> ASU 長久以來夢想不受限制的個人化學習，不再有「誰聰明、誰不聰明」的先入為主觀念<br>▸ <a href=\"https://www.youtube.com/watch?v=ZL9C1B46nlY&t=130s\" target=\"_blank\">02:10</a> AI 系統讓每個人能依自己想要的學習成果去追求學習，預期會帶來巨大提升，且可能非常正面\n\n📘 術語<br><b>ChatGPT Edu</b>（ChatGPT 教育版）：字幕說它能保護學生隱私、研究成果與智慧財產，並支援研究與教學環境的資安需求<br><b>grant proposal</b>（補助計畫提案）：ASU 取得 OpenAI 工具後發起的內部提案徵件，收到超過 400 份<br><b>interdisciplinary</b>（跨領域）：研究合作常跨領域，成員專業各不相同，是合作障礙之一<br><b>language buddy</b>（語言學伴）：以 ChatGPT 打造、有耐心且隨時可用、以個人化易懂方式說話的家教<br><b>composition classes</b>（寫作課）：ASU 在此課程中使用 AI，想展示 AI 能支援寫出更好的文章<br><b>intellectual property</b>（智慧財產）：ChatGPT Edu 協助保護的對象之一，與研究成果並列<br><b>CIO</b>（資訊長）：字幕說每位 CIO 與大學校長都需留意隱私與資安問題\n\n📺 <a href=\"https://www.youtube.com/watch?v=ZL9C1B46nlY&t=0s\" target=\"_blank\">Arizona State University accelerates learning and research with ChatGPT Edu</a>（2024/08/26 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "ASU 內部 grant 提案徵件收到多少份教職員提案？目前推動其中幾項？",
+          "options": [
+            "超過 400 份，全部都在推動",
+            "超過 200 份，推動其中 100 項",
+            "超過 1000 份，推動其中 400 項",
+            "超過 400 份，推動其中 200 項"
+          ],
+          "correct": 3,
+          "why": "[00:39] 字幕提到收到 more than 400 proposals，且 working on 200 of them"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_KwNUJ69RbwY",
         "title": "🎬 2024/05/13 Be My Eyes 以 GPT-4o 實現無障礙輔助",
         "category": "企業與客戶案例",
@@ -12133,6 +12152,25 @@ const CURRICULUM = {
           ],
           "correct": 2,
           "why": "[01:31] 字幕：「we have a piece of software that runs on one computer can you make it run on 3000 and you have three weeks?」"
+        },
+        "status": "full"
+      },
+      {
+        "id": "yt_Zm9B-DvwOgw",
+        "title": "🎬 2021/08/10 用 OpenAI Codex 打造太空遊戲",
+        "category": "其他",
+        "text": "<b>字幕與標題不符：內容是職涯建議對談，以及 Xero 帳務審查示範</b><br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=19s\" target=\"_blank\">00:19</a> 講者從小就對時尚有興趣，一直在畫草圖、設計衣服；真正踏入時尚造型（fashion styling）則純屬巧合<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=19s\" target=\"_blank\">00:19</a> 建議去找想進入的領域的實習或 shadowing 機會，實際了解日常工作內容<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=19s\" target=\"_blank\">00:19</a> 不要害怕主動聯絡別人，請對方做 informational interview 或給建議<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=50s\" target=\"_blank\">00:50</a> 在任何產業，networking 都是關鍵<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=50s\" target=\"_blank\">00:50</a> 職涯路徑不一定是直線，途中可能要繞路或轉向，但每段經驗都有助於形塑最終的職涯目標<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=50s\" target=\"_blank\">00:50</a> 例子：有人原本想當老師，幾年後發現不適合，花了些時間摸索，最後走進活動企劃（event planning）並且很喜歡<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=80s\" target=\"_blank\">01:20</a> 改變心意、嘗試新事物沒關係，重要的是持續學習與成長<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=80s\" target=\"_blank\">01:20</a> 職涯只是人生的一部分，要取得平衡、重視身心健康；別讓工作吞噬自己，要留時間給嗜好、朋友和家人<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=110s\" target=\"_blank\">01:50</a> 找不到方向時，可以向職涯諮商師或教練尋求協助，他們能提供指引和資源，外部觀點也有幫助<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=110s\" target=\"_blank\">01:50</a> 一路上別忘了慶祝成功，花時間回顧自己的成就、肯定自己，不要只埋頭苦幹<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=303s\" target=\"_blank\">05:03</a> 帳務審查示範：和客戶一起逐項檢查標準審查項目；目前只分類到十一月<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=303s\" target=\"_blank\">05:03</a> 有兩筆待處理項目共 $143，屬於未知支出；客戶幾天內不回覆就會記入 owner&#x27;s draw，無法在報稅時當作扣除額<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=303s\" target=\"_blank\">05:03</a> 要自己檢查未分類支出（uncategorized expenses），並把它們分類好<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=336s\" target=\"_blank\">05:36</a> 很多人完全忽略 balance sheet；講者指出這份帳在 cash basis 下看起來很糟<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=336s\" target=\"_blank\">05:36</a> 這位客戶的銀行帳戶和 Xero 的金額完全一致，精確到分<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=336s\" target=\"_blank\">05:36</a> 按下 pay from invoice，或透過 Stripe、Square 等信用卡 app 收款時，款項都會先進 undeposited funds<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=370s\" target=\"_blank\">06:10</a> 客戶沒有使用 Stripe、Square、PayPal 或 GoCardless，所以要手動清理 undeposited funds，列入待辦事項<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=370s\" target=\"_blank\">06:10</a> inventory 的兩個數字必須完全一致<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=370s\" target=\"_blank\">06:10</a> historical adjustments 是負的將近 $15,000；不為零代表有 journal entries 沒有正確平衡到零<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=403s\" target=\"_blank\">06:43</a> 推測原因：檔案從前一套軟體轉入 Xero 時，opening balances 沒有正確輸入或沒有完全平衡<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=403s\" target=\"_blank\">06:43</a> 這筆餘額本應由前任稅務專業人士清掉；不該帶著 historical adjustment 餘額進入新年度<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=436s\" target=\"_blank\">07:16</a> fixed assets 列了原始成本，卻沒有提列 2021 年及以前各年的 accumulated depreciation；好的報稅人會處理這件事<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=436s\" target=\"_blank\">07:16</a> owner&#x27;s draw 和 owner&#x27;s investment 列在一起：代表業主投入經營事業的資金，加上業主提領的款項<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=467s\" target=\"_blank\">07:47</a> 進入下一年度時，這些數字應該歸零；淨利扣掉這些項目後結轉到 retained earnings，不該年年留著往下結轉<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=467s\" target=\"_blank\">07:47</a> retained earnings 保存所有利潤，扣除業主投資與提領；要記得確認 2021 年是否已正確轉入 retained earnings<br>▸ <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=502s\" target=\"_blank\">08:22</a> 講者表示，照清單把這些問題問出來很有必要；他接手這份檔案後，已經自行修正所有先前的錯誤\n\n📘 術語<br><b>shadowing</b>（跟班見習）：跟著該領域的專業人士，了解日常工作實際在做什麼<br><b>informational interview</b>（資訊性訪談）：主動聯絡業界人士，請教資訊或建議<br><b>networking</b>（建立人脈）：字幕說它在任何產業都是關鍵<br><b>Xero</b>（Xero（記帳軟體））：字幕中用來比對銀行帳戶、處理帳務的軟體<br><b>owner&#x27;s draw</b>（業主提領）：業主從事業提領的款項；未分類支出若沒處理會記進這裡，不能在報稅時扣除<br><b>owner&#x27;s investment</b>（業主投資）：業主投入經營事業的資金<br><b>balance sheet</b>（資產負債表）：字幕說很多人完全忽略這張表<br><b>cash basis</b>（現金制）：字幕只提到這份帳在 cash basis 下看起來很糟，沒有進一步解釋<br><b>undeposited funds</b>（未存入款項）：按 pay from invoice 或透過 Stripe、Square 等收款時，款項會先經過這裡<br><b>historical adjustments</b>（歷史調整）：不為零代表有 journal entries 沒平衡到零，不該帶進新年度<br><b>journal entries</b>（分錄）：字幕說 historical adjustments 不為零時，代表這些分錄沒有正確平衡<br><b>opening balances</b>（期初餘額）：從前一套軟體轉入時若沒輸入正確，可能造成不平衡<br><b>fixed assets</b>（固定資產）：字幕中列有原始成本（original cost）<br><b>accumulated depreciation</b>（累計折舊）：字幕指出客戶沒有提列 2021 年及以前各年的累計折舊<br><b>retained earnings</b>（保留盈餘）：保存所有利潤，扣除業主投資與提領，在新年度時結轉進來\n\n📺 <a href=\"https://www.youtube.com/watch?v=Zm9B-DvwOgw&t=0s\" target=\"_blank\">Creating a Space Game with OpenAI Codex</a>（2021/08/10 · 8 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "字幕中，那筆 $143 的未知支出如果客戶幾天內沒有回覆，會被記入哪裡？",
+          "options": [
+            "undeposited funds",
+            "retained earnings",
+            "owner's draw",
+            "fixed assets"
+          ],
+          "correct": 2,
+          "why": "[05:03] 講者說如果幾天內沒回答，這筆會進 owner's draw，就不會在報稅時成為扣除額"
         },
         "status": "full"
       },
