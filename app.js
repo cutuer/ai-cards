@@ -25,6 +25,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_mQZB0l-rhxE",
+        "title": "🎬 2026/09/25 在 Claude Code 中建立驗證迴圈（verification loops）",
+        "category": "Claude Code",
+        "text": "<b>把手動驗證步驟寫成 skill，讓 Claude Code 自己跑驗證、修正、再驗證</b><br>▸ <a href=\"https://www.youtube.com/watch?v=mQZB0l-rhxE&t=0s\" target=\"_blank\">00:00</a> 你送出的每個 prompt，Claude Code 都會跑一個迴圈：收集脈絡、採取行動、驗證成果、回應。<br>▸ <a href=\"https://www.youtube.com/watch?v=mQZB0l-rhxE&t=0s\" target=\"_blank\">00:00</a> 目前驗證步驟有一部分是你自己在瀏覽器裡點來點去、看 console，再告訴 Claude 要修什麼；但這部分不一定都要由你來做。<br>▸ <a href=\"https://www.youtube.com/watch?v=mQZB0l-rhxE&t=0s\" target=\"_blank\">00:00</a> Claude 本來就擅長對照 code base 檢查成果：會跑測試、type check、linter，並修正它們抓到的問題。<br>▸ <a href=\"https://www.youtube.com/watch?v=mQZB0l-rhxE&t=34s\" target=\"_blank\">00:34</a> 但全部通過不代表改動符合你的本意；真正能證明的，是你事後手動做的檢查。<br>▸ <a href=\"https://www.youtube.com/watch?v=mQZB0l-rhxE&t=34s\" target=\"_blank\">00:34</a> 手動檢查例子：web app 打開頁面點一點、看 console；後端呼叫 endpoint 讀回應；行動 app 在模擬器裡逐一點過畫面。<br>▸ <a href=\"https://www.youtube.com/watch?v=mQZB0l-rhxE&t=34s\" target=\"_blank\">00:34</a> 把這些步驟寫進專案（codify），Claude 就能用瀏覽器、terminal、iOS simulator 等工具自己執行。<br>▸ <a href=\"https://www.youtube.com/watch?v=mQZB0l-rhxE&t=65s\" target=\"_blank\">01:05</a> 發現問題時，Claude 可以自己修正並重新執行這些檢查。<br>▸ <a href=\"https://www.youtube.com/watch?v=mQZB0l-rhxE&t=65s\" target=\"_blank\">01:05</a> 好的起點是 Claude Code 內建的 verify skill：第一次使用時，它會執行你的 app，並在 app 本身檢查你的改動。<br>▸ <a href=\"https://www.youtube.com/watch?v=mQZB0l-rhxE&t=65s\" target=\"_blank\">01:05</a> 接著它會把成功的步驟存成專案裡的一個 skill。<br>▸ <a href=\"https://www.youtube.com/watch?v=mQZB0l-rhxE&t=65s\" target=\"_blank\">01:05</a> 產生出來的 skill 應當作起點，再自行擴充 Claude 要檢查的項目。<br>▸ <a href=\"https://www.youtube.com/watch?v=mQZB0l-rhxE&t=97s\" target=\"_blank\">01:37</a> 講者在 web app 上一定會看 layout shift，也就是內容載入時頁面部分區塊跳動。<br>▸ <a href=\"https://www.youtube.com/watch?v=mQZB0l-rhxE&t=97s\" target=\"_blank\">01:37</a> 可透過 Google Chrome 的 DevTools MCP 把它寫成 performance trace，它會把 layout shift 當作 Core Web Vitals 之一來量測。<br>▸ <a href=\"https://www.youtube.com/watch?v=mQZB0l-rhxE&t=97s\" target=\"_blank\">01:37</a> 在 skill 裡可以寫明：Claude 何時該執行、檢查失敗時該怎麼做、以及什麼能證明每項檢查通過。<br>▸ <a href=\"https://www.youtube.com/watch?v=mQZB0l-rhxE&t=97s\" target=\"_blank\">01:37</a> 檢查越可量測，Claude 越容易判斷是否通過。<br>▸ <a href=\"https://www.youtube.com/watch?v=mQZB0l-rhxE&t=132s\" target=\"_blank\">02:12</a> 示範：請 Claude 在一個頁面加上 like button，該頁面還有尚未修好的 layout shift。<br>▸ <a href=\"https://www.youtube.com/watch?v=mQZB0l-rhxE&t=132s\" target=\"_blank\">02:12</a> 因為是 UI 改動，Claude 改完後會自行執行 skill：啟動 dev server、開啟頁面、點 like button、截圖證明它能用。<br>▸ <a href=\"https://www.youtube.com/watch?v=mQZB0l-rhxE&t=132s\" target=\"_blank\">02:12</a> 接著執行 performance trace，找到了 layout shift。<br>▸ <a href=\"https://www.youtube.com/watch?v=mQZB0l-rhxE&t=165s\" target=\"_blank\">02:45</a> Claude 修正後再跑一次檢查，這次通過。<br>▸ <a href=\"https://www.youtube.com/watch?v=mQZB0l-rhxE&t=165s\" target=\"_blank\">02:45</a> 最終拿到：能用的 like button、載入時不再跳動的頁面，以及作為證明的截圖與分數。<br>▸ <a href=\"https://www.youtube.com/watch?v=mQZB0l-rhxE&t=165s\" target=\"_blank\">02:45</a> 整個驗證迴圈由 Claude 自己完成，講者不需要指出任何問題。\n\n📘 術語<br><b>verification loop</b>（驗證迴圈）：Claude 自己執行檢查、發現問題就修正、再重新檢查的循環<br><b>type check</b>（型別檢查）：Claude 會對照 code base 執行的檢查之一，並修正抓到的問題<br><b>linter</b>（程式碼檢查工具）：Claude 會執行的檢查之一，並修正抓到的問題<br><b>console</b>（主控台）：手動驗證 web app 時會看的地方<br><b>endpoint</b>（端點）：驗證後端時會呼叫它並讀取回應<br><b>simulator / iOS simulator</b>（模擬器）：驗證行動 app 時在裡面點過各個畫面；Claude 也能使用<br><b>codify</b>（寫成規範／程式化）：把手動檢查步驟寫進專案，讓 Claude 能自己執行<br><b>verify skill</b>（verify skill）：Claude Code 內建；首次使用會執行 app 檢查改動，並把成功步驟存成專案 skill<br><b>skill</b>（skill）：存在專案裡的步驟，可寫明何時執行、失敗怎麼辦、怎樣算通過<br><b>layout shift</b>（版面位移）：內容載入時頁面部分區塊跳動<br><b>performance trace</b>（效能追蹤）：透過 DevTools MCP 執行，可量測 layout shift<br><b>DevTools MCP</b>（DevTools MCP）：Google Chrome 的工具，可用來做 performance trace<br><b>Core Web Vitals</b>（Core Web Vitals）：layout shift 是其中一項量測指標<br><b>dev server</b>（開發伺服器）：示範中 Claude 執行 skill 時會先啟動它\n\n📺 <a href=\"https://www.youtube.com/watch?v=mQZB0l-rhxE&t=0s\" target=\"_blank\">Building verification loops in Claude Code</a>（2026/09/25 · 3 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，第一次使用 Claude Code 內建的 verify skill 後，它會做什麼？",
+          "options": [
+            "把 layout shift 分數上傳到 Google Chrome",
+            "自動把改動部署到正式環境",
+            "把成功的驗證步驟存成專案裡的一個 skill",
+            "產生一份新的單元測試檔案取代原本的測試"
+          ],
+          "correct": 2,
+          "why": "[01:05] 第一次使用時會執行 app 檢查改動，接著把成功的步驟存成專案裡的 skill。"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_S-sYlFiGFv8_p1",
         "title": "🎬 2026/09/02 Claude Code 團隊如何使用 Claude Code（第 1/2 段）",
         "category": "Claude Code",
