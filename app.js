@@ -12816,6 +12816,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_rnC10yXhj4M",
+        "title": "🎬 2024/04/24 Oscar 把 AI 帶進健康保險，降低成本並改善病患照護",
+        "category": "企業與客戶案例",
+        "text": "<b>健康保險公司 Oscar 分享如何用 OpenAI 模型自動化理賠工作並處理病歷</b><br>▸ <a href=\"https://www.youtube.com/watch?v=rnC10yXhj4M&t=4s\" target=\"_blank\">00:04</a> Mario Schuster 是 Oscar 共同創辦人、技術總裁暨 CTO，公司於 2012 年創立<br>▸ <a href=\"https://www.youtube.com/watch?v=rnC10yXhj4M&t=4s\" target=\"_blank\">00:04</a> 創業動機：他們認為醫療太昂貴、太複雜、太繁瑣，使用起來太麻煩<br>▸ <a href=\"https://www.youtube.com/watch?v=rnC10yXhj4M&t=4s\" target=\"_blank\">00:04</a> 他最自豪的成就之一：Oscar 是第一家與 OpenAI 簽署 BAA 的保險公司<br>▸ <a href=\"https://www.youtube.com/watch?v=rnC10yXhj4M&t=35s\" target=\"_blank\">00:35</a> language model 讓他們第一次覺得能把現實世界的混亂，轉成更清楚的數位化方案<br>▸ <a href=\"https://www.youtube.com/watch?v=rnC10yXhj4M&t=35s\" target=\"_blank\">00:35</a> 用 language model 解決問題可能還不是最難的；難在把解法放進 workflow、取代既有系統，並在公司日常中真正有用<br>▸ <a href=\"https://www.youtube.com/watch?v=rnC10yXhj4M&t=35s\" target=\"_blank\">00:35</a> Nikita Lua 是 Oscar Health 資深產品經理，帶領 AI R&amp;D 團隊<br>▸ <a href=\"https://www.youtube.com/watch?v=rnC10yXhj4M&t=66s\" target=\"_blank\">01:06</a> 她看好 AI，因為 AI 能在醫療領域開啟許多過去做不到的使用情境<br>▸ <a href=\"https://www.youtube.com/watch?v=rnC10yXhj4M&t=66s\" target=\"_blank\">01:06</a> Oscar 自建專屬資料集，用醫療專屬情境來 benchmark 模型，OpenAI 的模型一直表現最好<br>▸ <a href=\"https://www.youtube.com/watch?v=rnC10yXhj4M&t=66s\" target=\"_blank\">01:06</a> 字幕中寫作「gb4」的模型幫他們做出 claim assistant，將自動處理每月至少 4,000 張、每年 48,000 張 ticket<br>▸ <a href=\"https://www.youtube.com/watch?v=rnC10yXhj4M&t=97s\" target=\"_blank\">01:37</a> 這為內部團隊省下大量時間，也讓他們能更快回覆會員與醫療提供者<br>▸ <a href=\"https://www.youtube.com/watch?v=rnC10yXhj4M&t=97s\" target=\"_blank\">01:37</a> 她的 pod 六人中有五位是女性，都是 20、30 多歲，說明推動 AI 前沿的人沒有單一刻板形象<br>▸ <a href=\"https://www.youtube.com/watch?v=rnC10yXhj4M&t=97s\" target=\"_blank\">01:37</a> Oscar 想朝極端方向前進，讓模型處理臨床問題（此句字幕轉錄不完整）<br>▸ <a href=\"https://www.youtube.com/watch?v=rnC10yXhj4M&t=97s\" target=\"_blank\">01:37</a> 目標是在未來約 3 到 5 年，把看醫師和住院的成本降為十分之一<br>▸ <a href=\"https://www.youtube.com/watch?v=rnC10yXhj4M&t=127s\" target=\"_blank\">02:07</a> 唯一的方法是讓模型全程參與對話，不只當 scribe、不只記錄，而是真正進行對話<br>▸ <a href=\"https://www.youtube.com/watch?v=rnC10yXhj4M&t=127s\" target=\"_blank\">02:07</a> 病歷是醫療中病患資訊的「聖杯」；最複雜的病患，病歷可長達 500 頁<br>▸ <a href=\"https://www.youtube.com/watch?v=rnC10yXhj4M&t=127s\" target=\"_blank\">02:07</a> Oscar 有個情境：臨床人員要審閱超過 1,700 件病歷，每件約 20 分鐘，合計約 9 週的工作時間<br>▸ <a href=\"https://www.youtube.com/watch?v=rnC10yXhj4M&t=157s\" target=\"_blank\">02:37</a> 系統存在 selection bias：病情最急、最複雜的病患，病歷也最長<br>▸ <a href=\"https://www.youtube.com/watch?v=rnC10yXhj4M&t=157s\" target=\"_blank\">02:37</a> 因此她對 AI 很興奮：AI 讓病得最重的病患也能和其他人一樣，獲得最好的照護\n\n📘 術語<br><b>BAA</b>（BAA（字幕未展開全名））：字幕未解釋，只說 Oscar 是第一家與 OpenAI 簽 BAA 的保險公司<br><b>language model</b>（語言模型）：能把現實世界的混亂轉成更清楚的數位化方案，用來解決問題<br><b>workflow</b>（工作流程）：把模型找到的解法放進去、取代既有系統，才能在公司日常中有用<br><b>benchmark</b>（基準評測）：用自建的醫療專屬資料集比較各模型的表現<br><b>proprietary data sets</b>（專屬資料集）：Oscar 自建的資料集，用來評測模型在醫療情境的表現<br><b>claim assistant</b>（理賠助理）：用模型打造的工具，每月自動處理至少 4,000 張 ticket<br><b>ticket</b>（工單）：內部團隊要處理的案件，自動化後能更快回覆會員與醫療提供者<br><b>R&amp;D</b>（研發）：Nikita Lua 帶領的是 AI R&amp;D 團隊<br><b>pod</b>（小組）：她所屬的團隊單位，六人中五位是女性<br><b>scribe</b>（記錄員）：只負責記錄；目標是讓模型不只記錄，而是真正參與對話<br><b>medical record</b>（病歷）：醫療中病患資訊的聖杯，複雜病患可長達 500 頁<br><b>selection bias</b>（選擇偏誤）：病情最急、最複雜的病患，病歷也最長\n\n📺 <a href=\"https://www.youtube.com/watch?v=rnC10yXhj4M&t=0s\" target=\"_blank\">Oscar brings AI to health insurance, reducing costs and improving patient care</a>（2024/04/24 · 3 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，Oscar 用模型打造的 claim assistant 預計每月自動處理多少張 ticket？",
+          "options": [
+            "至少 4,000 張",
+            "約 500 張",
+            "48,000 張",
+            "約 1,700 張"
+          ],
+          "correct": 0,
+          "why": "[01:06] 提到 claim assistant 將自動處理每月至少 4,000 張、每年 48,000 張 ticket；1,700 是待審病歷件數，500 是病歷頁數"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_iXq50gPo-go",
         "title": "🎬 2023/11/15 AI 前沿：Helena Merk（OpenAI DevDay）",
         "category": "企業與客戶案例",
