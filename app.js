@@ -2155,6 +2155,25 @@ const CURRICULUM = {
     "badge": "官方字幕實證",
     "lessons": [
       {
+        "id": "yt__f_rtbW_uFM",
+        "title": "🎬 2026/09/29 開始使用 Claude Tag",
+        "category": "產品功能",
+        "text": "<b>介紹把 @Claude 加進 Slack 等團隊工作區頻道，與全隊即時協作</b><br>▸ <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=1s\" target=\"_blank\">00:01</a> Claude 現在能在團隊已在用的地方與整個團隊協作：把 Claude 加進團隊工作區（如 Slack）的頻道，它就能即時跟上全隊進度<br>▸ <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=1s\" target=\"_blank\">00:01</a> 不必再來回切換到 Claude 聊天視窗，也不必複製貼上來提供 Claude 需要的所有脈絡<br>▸ <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=1s\" target=\"_blank\">00:01</a> @Claude 已經在團隊工作區裡跟著看，可以直接在頻道中請它做複雜任務<br>▸ <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=1s\" target=\"_blank\">00:01</a> 範例：整理本週待辦事項清單，檢查這個頻道過去 3 天的討論串、Google Drive 裡的會議紀錄，以及未完成的 Asana 任務<br>▸ <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=31s\" target=\"_blank\">00:31</a> @Claude 能翻查你授權給它的所有內容：聊天紀錄、共享文件，甚至團隊的 connectors 和工具<br>▸ <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=31s\" target=\"_blank\">00:31</a> 它能快速回答問題、彙整多個來源的資訊，也能標記問題、起草整份文件，甚至直接在團隊工具裡做更新與修改<br>▸ <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=31s\" target=\"_blank\">00:31</a> 它用自己的帳號運作，會記錄每一項變更以及是誰要求的<br>▸ <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=31s\" target=\"_blank\">00:31</a> 它也能存取個人工具，在合適時代表你回覆，但每次都會先徵求你的許可<br>▸ <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=63s\" target=\"_blank\">01:03</a> @Claude 為協作而設計：頻道裡任何人都能接續既有的請求，或交給 Claude 新任務<br>▸ <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=63s\" target=\"_blank\">01:03</a> Claude 會把任務拆成步驟，讓所有人在它工作時都看得到進度<br>▸ <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=63s\" target=\"_blank\">01:03</a> 你去處理其他要事時它能繼續做，完成時或需要你做決定時會通知你<br>▸ <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=63s\" target=\"_blank\">01:03</a> 可以從任何連接到工作區的裝置查看進度、後續追問<br>▸ <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=98s\" target=\"_blank\">01:38</a> Claude 在頻道中跟著看時，能記住重要細節，並儲存你給它的指示<br>▸ <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=98s\" target=\"_blank\">01:38</a> 範例指示：「這個頻道請記住：回答問題時，直接附上活動試算表中原始資料的連結」，Claude 會存下來，不必一再重複說明<br>▸ <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=98s\" target=\"_blank\">01:38</a> 任何人都能在頻道中 tag Claude 來讀取或更新它的記憶<br>▸ <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=98s\" target=\"_blank\">01:38</a> Claude 會學習團隊的風格與偏好，因此隨著時間可以交給它更難的任務<br>▸ <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=129s\" target=\"_blank\">02:09</a> 可以指引 Claude 參照風格指南、檢查清單等文件交叉比對；之後更新檢查清單，Claude 預設也會跟著保持最新<br>▸ <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=129s\" target=\"_blank\">02:09</a> @Claude 提供給 Team 與 Enterprise 帳號使用<br>▸ <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=129s\" target=\"_blank\">02:09</a> 以組織需求設計，讓你完全掌控它對敏感資料與工具的存取程度<br>▸ <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=129s\" target=\"_blank\">02:09</a> 在每個加入它的頻道中，可個別決定它做哪些事、多常插話，以及能自主做多少事<br>▸ <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=159s\" target=\"_blank\">02:39</a> 可以讓它存取其他公開頻道的資訊與資料，而 DM 與私人頻道會保持私密\n\n📘 術語<br><b>channel</b>（頻道）：團隊工作區（如 Slack）中的討論空間，可把 Claude 加進去與全隊協作<br><b>team workspace</b>（團隊工作區）：團隊已經在工作的地方，字幕舉 Slack 為例<br><b>thread</b>（討論串）：頻道中的對話串，範例請 Claude 檢查過去 3 天的討論串<br><b>connectors</b>（連接器）：字幕列為 Claude 可翻查的團隊資源之一，與工具並列，未進一步解釋<br><b>memory</b>（記憶）：Claude 在頻道中儲存的重要細節與指示，任何人都能 tag Claude 讀取或更新<br><b>DM</b>（私訊）：字幕說 DM 與私人頻道會保持私密<br><b>Team / Enterprise</b>（Team／Enterprise 方案帳號）：@Claude 開放使用的帳號類型\n\n📺 <a href=\"https://www.youtube.com/watch?v=_f_rtbW_uFM&t=0s\" target=\"_blank\">Getting started with Claude Tag</a>（2026/09/29 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "依影片內容，@Claude 在代表你於個人工具中回覆時，會怎麼做？",
+          "options": [
+            "只能由管理員替你批准",
+            "完全自動回覆，事後才通知你",
+            "每次都先徵求你的許可",
+            "只有第一次會徵求許可，之後自動回覆"
+          ],
+          "correct": 2,
+          "why": "字幕 [00:31] 至 [01:03]：它能存取個人工具並在合適時代表你回覆，\"asking for permission every time\"（每次都會徵求許可）"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_kF1BvUK5_Mc",
         "title": "🎬 2026/09/21 Claude Cowork 與 chat 現在合而為一",
         "category": "產品功能",
