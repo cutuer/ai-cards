@@ -11390,6 +11390,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_zq88iLsSfMA",
+        "title": "🎬 2026/07/23 企業團隊如何使用 ChatGPT Work｜Zapier、Shopify 與 Virgin Atlantic",
+        "category": "企業與客戶案例",
+        "text": "<b>使用者分享用 ChatGPT 加快工作、自動化流程、一人完成多人工作量</b><br>▸ <a href=\"https://www.youtube.com/watch?v=zq88iLsSfMA&t=1s\" target=\"_blank\">00:01</a> 發表以來的這 3–4 個月，ChatGPT 成了受訪者工作中最喜歡的部分<br>▸ <a href=\"https://www.youtube.com/watch?v=zq88iLsSfMA&t=1s\" target=\"_blank\">00:01</a> ChatGPT 讓人工作更快、減少對他人的依賴，也能做到以前做不到的事<br>▸ <a href=\"https://www.youtube.com/watch?v=zq88iLsSfMA&t=1s\" target=\"_blank\">00:01</a> 流程動能與速度提升，可以在很短時間內從點子做到完成的產品<br>▸ <a href=\"https://www.youtube.com/watch?v=zq88iLsSfMA&t=1s\" target=\"_blank\">00:01</a> 主要優點：已建立好的 workflow 可以幾乎不費力地自動化，套用到之後的每一場活動<br>▸ <a href=\"https://www.youtube.com/watch?v=zq88iLsSfMA&t=31s\" target=\"_blank\">00:31</a> 一人團隊因此能有效完成四到五人的工作量，每週發布數百則內容<br>▸ <a href=\"https://www.youtube.com/watch?v=zq88iLsSfMA&t=31s\" target=\"_blank\">00:31</a> ChatGPT 讓團隊在時間與金錢上更有效率，更快把產品交付給團隊<br>▸ <a href=\"https://www.youtube.com/watch?v=zq88iLsSfMA&t=31s\" target=\"_blank\">00:31</a> 受訪者雖然是一人團隊，但有 ChatGPT 支援，並不覺得自己是一個人<br>▸ <a href=\"https://www.youtube.com/watch?v=zq88iLsSfMA&t=31s\" target=\"_blank\">00:31</a> ChatGPT 改變了團隊的工作方式，也擴展了能做到的事\n\n📘 術語<br><b>workflow</b>（工作流程）：字幕指已建立好的流程，可用 ChatGPT 自動化，套用到後續每場活動<br><b>dependencies</b>（依賴）：字幕沒有解釋，只提到用 ChatGPT 後依賴變少\n\n📺 <a href=\"https://www.youtube.com/watch?v=zq88iLsSfMA&t=0s\" target=\"_blank\">How Enterprise Teams Use ChatGPT Work | Zapier, Shopify &amp; Virgin Atlantic</a>（2026/07/23 · 0 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，有了 ChatGPT 之後，一人團隊能有效完成多少人的工作量？",
+          "options": [
+            "四到五人",
+            "二十人",
+            "兩到三人",
+            "十人"
+          ],
+          "correct": 0,
+          "why": "[00:31] 字幕說 a one-person team could effectively do the work of four or five，並能每週發布數百則內容"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_MX95QbxSc9Q",
         "title": "🎬 2026/07/23 AI Agents 將如何重新設計企業工作｜Barak Kaufman，Wonderful",
         "category": "企業與客戶案例",
