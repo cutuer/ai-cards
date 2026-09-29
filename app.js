@@ -5352,6 +5352,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_sd21Igx4HtA",
+        "title": "🎬 2025/10/17 在你的 code editor 裡使用 OpenAI Codex",
+        "category": "Codex 與寫程式",
+        "text": "<b>示範 Codex IDE extension：在編輯器裡問答、實作 to-do、local 與 cloud 任務互轉</b><br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=3s\" target=\"_blank\">00:03</a> 主持人 Roma：團隊持續改進 Codex，希望它成為更能幹、更可靠的 coding 協作者，並且出現在你工作的每個地方<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=3s\" target=\"_blank\">00:03</a> 因此推出 IDE extension，可以在 VS Code、Cursor 等多種 code editor 裡直接使用 Codex<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=3s\" target=\"_blank\">00:03</a> 由 extension 的 engineering lead Gabriel 進行示範導覽<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=33s\" target=\"_blank\">00:33</a> 示範情境：Gabriel 發現專案使用 service workers，其中有一個 return clause，直接在 Codex 問「這個 clause 是做什麼的？」<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=33s\" target=\"_blank\">00:33</a> extension 有 auto context 按鈕，會把你最近在 IDE 裡做過的事都告訴 Codex<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=33s\" target=\"_blank\">00:33</a> 在 IDE 裡使用的是團隊新推出的模型（字幕原文作「GPD5 codeex」），但在 IDE 中的提示方式會略有不同<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=64s\" target=\"_blank\">01:04</a> Codex 回答：當瀏覽器不支援 service workers 時，這段會讓 effect 直接 short circuit<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=64s\" target=\"_blank\">01:04</a> 如果 Codex 判斷問題很簡單或只是單純聊天型的 prompt，通常會很快回應<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=64s\" target=\"_blank\">01:04</a> 程式碼中的 button 元件有一個「加上 hover state」的 to-do；裝了 Codex 後，任何 to-do comment 都能一鍵交給 Codex 實作<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=94s\" target=\"_blank\">01:34</a> 點下後會啟動一段 local conversation，並把修正所需的 context 全部交給 Codex；backlog 裡的任務都能這樣丟給 Codex<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=94s\" target=\"_blank\">01:34</a> 幕後運作：Codex 會探索 codebase、執行指令，你可以即時看到進度；它會先讀程式碼，再決定是否執行指令<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=124s\" target=\"_blank\">02:04</a> 執行指令時在安全的 sandbox 中進行，確保不會修改專案以外的檔案<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=124s\" target=\"_blank\">02:04</a> 如果模型認為某件事無法在 sandbox 裡成功執行，會向你請求權限<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=124s\" target=\"_blank\">02:04</a> 完成後可以直接在 IDE 裡，把 Codex 做的所有變更集中在同一處 review<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=154s\" target=\"_blank\">02:34</a> 到瀏覽器驗證：滑鼠移上按鈕時出現細緻的 hover 效果，陰影擴大、卡片稍微往上移<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=154s\" target=\"_blank\">02:34</a> 網站上還有其他元素缺少 hover state，Gabriel 把剛才的對話從 local 移到 cloud，讓 Codex 在雲端繼續任務，不佔用自己的電腦<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=154s\" target=\"_blank\">02:34</a> Roma 形容：可以在本地開始一個任務，再上傳給雲端的「隊友」處理<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=185s\" target=\"_blank\">03:05</a> 移到 cloud 的任務會包含剛才在本地做的變更；本地變更可以 stash 或直接丟掉，之後需要時再從 remote task 取回<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=215s\" target=\"_blank\">03:35</a> 把 IDE 設定改成在 cloud 執行，開一個新任務，不需要本地變更或 IDE context<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=215s\" target=\"_blank\">03:35</a> 新任務內容：在 header 加一個有趣的按鈕，要比 dark mode 更有意思<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=215s\" target=\"_blank\">03:35</a> 可以設定要 Codex 嘗試幾次；示範中 Codex Cloud 分別獨立做了四次，每次可能想出不同解法<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=246s\" target=\"_blank\">04:06</a> 每一次嘗試結果都會有些不同；此時 Codex 同時在處理 hover states 和 theme 兩個任務，還可以另開 local 對話<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=246s\" target=\"_blank\">04:06</a> Gabriel 的經驗：Codex Web 上線當天凌晨 1:30，一個動畫在本地正常，推上 production 後卻只有它失效<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=276s\" target=\"_blank\">04:36</a> 他們請 Codex 嘗試四次，其中三次失敗，一次找出很冷門的 content security policy 問題，它擋住了該動畫裡的 inline JavaScript，救回了上線<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=306s\" target=\"_blank\">05:06</a> 適用情境：難纏、複雜、難以找出原因的 bug，可讓 Codex 從不同角度、不同觀點嘗試<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=306s\" target=\"_blank\">05:06</a> Gabriel 也用多次嘗試來做規劃，或處理自己也不確定要怎麼做的複雜 refactor，有時會取每個版本最好的部分<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=306s\" target=\"_blank\">05:06</a> 檢視四次結果：先 apply attempt 1 到瀏覽器看效果，被評為很有創意<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=336s\" target=\"_blank\">05:36</a> 接著 revert attempt 1、apply attempt 2，整個 theme 都被改變了；再繼續看下一個 attempt<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=336s\" target=\"_blank\">05:36</a> 反過來也可以：任何 cloud task 都能 check out 到本地，在 code editor 裡繼續工作<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=366s\" target=\"_blank\">06:06</a> 一開始從 local 丟到 cloud 的 hover state 任務已完成，又多修改了幾個檔案<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=366s\" target=\"_blank\">06:06</a> apply 到本地後，「start building」按鈕和右上角的 switch 都加上了 hover state<br>▸ <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=398s\" target=\"_blank\">06:38</a> extension 已包含在 ChatGPT 訂閱中；可到官網的 /codex 頁面（字幕原文作 opener.com/codex）下載，或在 extension marketplace 搜尋 Codex\n\n📘 術語<br><b>IDE extension</b>（IDE 擴充功能）：讓 Codex 直接出現在 VS Code、Cursor 等 code editor 裡的外掛<br><b>auto context</b>（自動脈絡）：一個按鈕，會把你最近在 IDE 裡做的事都告訴 Codex<br><b>service workers</b>（Service Worker）：示範專案使用的技術；程式碼會在瀏覽器不支援它時直接跳出<br><b>short circuit</b>（短路（提前跳出））：Codex 的回答：瀏覽器不支援 service workers 時，讓 effect 直接結束<br><b>to-do comment</b>（待辦註解）：程式碼裡標記待做事項的註解，例如「加 hover state」，可一鍵交給 Codex 實作<br><b>hover state</b>（滑鼠懸停效果）：滑鼠移上元素時的變化，示範中是陰影擴大、卡片上移<br><b>codebase</b>（程式碼庫）：專案的程式碼整體；Codex 會先探索它再動手<br><b>sandbox</b>（沙盒）：Codex 執行指令的安全環境，確保不會改到專案以外的檔案<br><b>local / cloud</b>（本地／雲端）：任務可在自己電腦跑，也可移到雲端讓 Codex 繼續，不佔用電腦；兩者可互轉<br><b>stash</b>（暫存變更）：任務移到 cloud 後，可把本地變更 stash 或丟掉，之後再從 remote task 取回<br><b>apply / revert</b>（套用／還原）：把某次 attempt 的變更套用到本地，或撤銷它再試下一個<br><b>attempt</b>（嘗試）：同一任務可設定讓 Codex 做幾次，每次各自獨立、結果不同<br><b>production</b>（正式環境）：故事中動畫在本地正常，推上 production 後卻失效<br><b>content security policy</b>（內容安全政策）：故事中的冷門問題，擋住了動畫裡的 inline JavaScript<br><b>refactor</b>（重構）：Gabriel 會讓 Codex 多次嘗試複雜的 refactor，再挑各版本的優點<br><b>backlog</b>（待辦清單）：累積待處理的任務，可以逐一丟給 Codex\n\n📺 <a href=\"https://www.youtube.com/watch?v=sd21Igx4HtA&t=0s\" target=\"_blank\">OpenAI Codex in your code editor</a>（2025/10/17 · 7 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "當 Codex 認為某件事無法在 sandbox 裡成功執行時，它會怎麼做？",
+          "options": [
+            "放棄該任務並回報錯誤",
+            "自動把任務移到 cloud 執行",
+            "向使用者請求權限",
+            "直接修改專案以外的檔案"
+          ],
+          "correct": 2,
+          "why": "[02:04] 字幕說 if the model ever needs to do something that it thinks it can't run successfully in the sandbox, it can ask you for permission."
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_iqNzfK4_meQ",
         "title": "🎬 2025/10/14 搭配 GPT-5-Codex 使用 OpenAI Codex CLI",
         "category": "Codex 與寫程式",
@@ -6628,6 +6647,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_syML5KT-HzI",
+        "title": "🎬 2026/08/28 建立簡報、文件與範本",
+        "category": "ChatGPT 產品功能",
+        "text": "<b>用 ChatGPT Work 把會議逐字稿轉成 Google Doc 與主管簡報，並存成範本重複使用</b><br>▸ <a href=\"https://www.youtube.com/watch?v=syML5KT-HzI&t=3s\" target=\"_blank\">00:03</a> 情境：團隊每週開內部 AI adoption 會議，討論有用但逐字稿內容很多。講者想整理成團隊可用的格式，也想要一份能分享給主管的版本<br>▸ <a href=\"https://www.youtube.com/watch?v=syML5KT-HzI&t=3s\" target=\"_blank\">00:03</a> 做法：用 ChatGPT Work 搭配 Google Drive，把逐字稿轉成給團隊的 Google Doc 和給主管的 slide deck，再把兩種格式存成 template，下週不用從頭開始<br>▸ <a href=\"https://www.youtube.com/watch?v=syML5KT-HzI&t=3s\" target=\"_blank\">00:03</a> 示範使用 desktop app，也可以在網頁或手機上透過 chatgpt.com 使用 ChatGPT Work<br>▸ <a href=\"https://www.youtube.com/watch?v=syML5KT-HzI&t=35s\" target=\"_blank\">00:35</a> Plugins 能把 ChatGPT 連到自己已經在用的 app；講者已經連好 Gmail 和 Calendar<br>▸ <a href=\"https://www.youtube.com/watch?v=syML5KT-HzI&t=35s\" target=\"_blank\">00:35</a> 安裝步驟：開啟 Plugins、搜尋 Google Drive、選 install、連結帳號，讓 ChatGPT 能建立真正的 Google Docs 和 slides<br>▸ <a href=\"https://www.youtube.com/watch?v=syML5KT-HzI&t=35s\" target=\"_blank\">00:35</a> 在 Work mode 開新對話並貼上逐字稿。內容有更新和決策，也有至少三段不需要放進摘要的旁支對話<br>▸ <a href=\"https://www.youtube.com/watch?v=syML5KT-HzI&t=66s\" target=\"_blank\">01:06</a> 明確指定 Google Doc 的結構：executive summary、本週更新、decisions、risks and blockers、action items、open questions、next steps<br>▸ <a href=\"https://www.youtube.com/watch?v=syML5KT-HzI&t=66s\" target=\"_blank\">01:06</a> 格式要求：清楚的段落標題、簡短條列、決策用粗體、action items 做成表格<br>▸ <a href=\"https://www.youtube.com/watch?v=syML5KT-HzI&t=66s\" target=\"_blank\">01:06</a> 逐字稿裡如果沒寫負責人（owner）或期限（deadline），ChatGPT 可以把它標註出來，不會自己猜<br>▸ <a href=\"https://www.youtube.com/watch?v=syML5KT-HzI&t=98s\" target=\"_blank\">01:38</a> 完成的 Google Doc：決策容易找到，action items 都在表格裡，也看得出哪些問題還需要回答<br>▸ <a href=\"https://www.youtube.com/watch?v=syML5KT-HzI&t=98s\" target=\"_blank\">01:38</a> 以這份 Doc 為起點做主管簡報：共五張 slides，內容是最大的更新、哪些有效、哪些無效、下一步要做什麼、需要的決策<br>▸ <a href=\"https://www.youtube.com/watch?v=syML5KT-HzI&t=98s\" target=\"_blank\">01:38</a> 把上週自己做的簡報傳進去，讓 ChatGPT 用相同格式排版<br>▸ <a href=\"https://www.youtube.com/watch?v=syML5KT-HzI&t=129s\" target=\"_blank\">02:09</a> 兩者分工：摘要文件給團隊完整細節；簡報讓主管幾分鐘內就能吸收<br>▸ <a href=\"https://www.youtube.com/watch?v=syML5KT-HzI&t=129s\" target=\"_blank\">02:09</a> 輸入 template creator，請它使用這份 Google Docs 的格式；它會學習標題、格式和 action items 表格<br>▸ <a href=\"https://www.youtube.com/watch?v=syML5KT-HzI&t=160s\" target=\"_blank\">02:40</a> 用同樣方式把主管簡報存成範本，template creator 會學習投影片順序、版面和視覺風格，下次的主管更新就會是相同外觀<br>▸ <a href=\"https://www.youtube.com/watch?v=syML5KT-HzI&t=160s\" target=\"_blank\">02:40</a> 下週流程：加入新的會議逐字稿，用 meeting summary 範本建立 Google Doc，再用「leadership」update 範本把文件轉成主管簡報<br>▸ <a href=\"https://www.youtube.com/watch?v=syML5KT-HzI&t=160s\" target=\"_blank\">02:40</a> 成果：一份清楚的文件、一份精緻的簡報，下週不用重做\n\n📘 術語<br><b>ChatGPT Work</b>（ChatGPT Work）：影片示範的 ChatGPT 使用方式，可用 desktop app，或在網頁、手機的 chatgpt.com 使用<br><b>Work mode</b>（Work 模式）：講者在 Work mode 開新對話，貼上會議逐字稿<br><b>Plugins</b>（外掛）：把 ChatGPT 連到自己已經在用的 app，例如 Gmail、Calendar、Google Drive<br><b>Google Drive</b>（Google 雲端硬碟）：安裝並連結帳號後，ChatGPT 能建立真正的 Google Docs 和 slides<br><b>transcript</b>（逐字稿）：每週會議的完整紀錄，內容很多，包含更新、決策和旁支對話<br><b>executive summary</b>（執行摘要）：講者指定 Google Doc 要包含的段落之一<br><b>risks and blockers</b>（風險與阻礙）：講者指定 Google Doc 要包含的段落之一<br><b>action items</b>（待辦事項）：要求做成表格；逐字稿沒寫負責人或期限時，ChatGPT 會標註出來<br><b>open questions</b>（未決問題）：講者指定 Google Doc 要包含的段落之一，完成後能看出哪些還需要回答<br><b>slide deck</b>（簡報）：給主管看的版本，讓他們幾分鐘內就能吸收<br><b>template creator</b>（範本建立工具）：輸入後能把格式存成範本：文件會學習標題、格式、表格；簡報會學習順序、版面、視覺風格<br><b>template</b>（範本）：存下文件與簡報的格式，下週直接套用，不必從頭開始\n\n📺 <a href=\"https://www.youtube.com/watch?v=syML5KT-HzI&t=0s\" target=\"_blank\">Create Slides, Docs, and Templates</a>（2026/08/28 · 3 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片中，如果會議逐字稿裡沒有寫出某個待辦事項的負責人或期限，ChatGPT 會怎麼處理？",
+          "options": [
+            "把它標註出來，而不是用猜的",
+            "根據上下文推測最可能的負責人和期限",
+            "直接把該待辦事項從表格中刪除",
+            "自動寄 Gmail 詢問與會者"
+          ],
+          "correct": 0,
+          "why": "字幕 [01:06]–[01:38]：If an owner or deadline isn't in the transcript, ChatGPT can flag it instead of guessing."
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_Rk4VyQxDq5s",
         "title": "🎬 2026/08/28 ChatGPT Work 入門",
         "category": "ChatGPT 產品功能",
@@ -6719,6 +6757,25 @@ const CURRICULUM = {
           ],
           "correct": 2,
           "why": "[01:07] 字幕說：If I share it with specific people, they can sign in with ChatGPT to see it."
+        },
+        "status": "full"
+      },
+      {
+        "id": "yt_t64oZKCdG8Q",
+        "title": "🎬 2026/08/27 如何用 ChatGPT Work 打造個人化餐點規劃工具",
+        "category": "ChatGPT 產品功能",
+        "text": "<b>示範用 ChatGPT 替有食物過敏的一歲女兒規劃餐點、架站、訂購食材並追蹤回饋</b><br>▸ <a href=\"https://www.youtube.com/watch?v=t64oZKCdG8Q&t=2s\" target=\"_blank\">00:02</a> 講者的一歲女兒 Violet 有食物過敏，也像多數幼兒一樣對要吃什麼很有主見<br>▸ <a href=\"https://www.youtube.com/watch?v=t64oZKCdG8Q&t=2s\" target=\"_blank\">00:02</a> 先請 ChatGPT 規劃 Violet 一週的餐點，要求簡單、營養、容易製作<br>▸ <a href=\"https://www.youtube.com/watch?v=t64oZKCdG8Q&t=32s\" target=\"_blank\">00:32</a> 同時傳送她飲食筆記的 Appshot，讓 ChatGPT 看得到她的過敏原與喜好<br>▸ <a href=\"https://www.youtube.com/watch?v=t64oZKCdG8Q&t=32s\" target=\"_blank\">00:32</a> 把餐點計畫做成網站，分享給伴侶和同樣會幫 Violet 準備食物的祖父母<br>▸ <a href=\"https://www.youtube.com/watch?v=t64oZKCdG8Q&t=32s\" target=\"_blank\">00:32</a> 網站內容包含每週餐點、採買清單、Violet 的飲食檔案，風格指定為復古拍立得風加上大膽用色<br>▸ <a href=\"https://www.youtube.com/watch?v=t64oZKCdG8Q&t=62s\" target=\"_blank\">01:02</a> 請 ChatGPT 建立 Instacart 採買清單，購物車備妥後講者只需要核准訂單<br>▸ <a href=\"https://www.youtube.com/watch?v=t64oZKCdG8Q&t=62s\" target=\"_blank\">01:02</a> 在網站加入依家人喜好替餐點評分的功能，並可選填過敏備註，能直接用手機記錄哪些餐點合適或不合適<br>▸ <a href=\"https://www.youtube.com/watch?v=t64oZKCdG8Q&t=62s\" target=\"_blank\">01:02</a> 設定每週的排程任務（scheduled task）<br>▸ <a href=\"https://www.youtube.com/watch?v=t64oZKCdG8Q&t=93s\" target=\"_blank\">01:33</a> 排程任務會提醒講者檢視餐點，並根據家人的回饋開始規劃下週的菜單<br>▸ <a href=\"https://www.youtube.com/watch?v=t64oZKCdG8Q&t=93s\" target=\"_blank\">01:33</a> 若有人在餐後記錄到值得擔心的狀況，ChatGPT 會草擬訊息，由講者審閱後再寄給 Violet 的過敏科醫師<br>▸ <a href=\"https://www.youtube.com/watch?v=t64oZKCdG8Q&t=93s\" target=\"_blank\">01:33</a> 結語：照顧同一位小老闆，行政雜務少很多；ChatGPT 用於工作，也用於工作前的事\n\n📘 術語<br><b>Appshot</b>（應用程式截圖）：講者傳送飲食筆記的 Appshot，讓 ChatGPT 能看到女兒的過敏原與喜好<br><b>Instacart</b>（Instacart（線上採買服務））：ChatGPT 依計畫建立 Instacart 採買清單與購物車，使用者只需核准訂單<br><b>scheduled task</b>（排程任務）：設定為每週執行，提醒檢視餐點，並用回饋開始規劃下週菜單<br><b>allergist</b>（過敏科醫師）：若餐後有人記錄到擔心的狀況，ChatGPT 會草擬訊息供講者審閱後寄給這位醫師\n\n📺 <a href=\"https://www.youtube.com/watch?v=t64oZKCdG8Q&t=0s\" target=\"_blank\">How to Build a Personalized Meal Planner with ChatGPT Work</a>（2026/08/27 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "講者要求 ChatGPT 把分享給家人的餐點網站做成什麼風格？",
+          "options": [
+            "極簡黑白風格",
+            "手繪水彩風格",
+            "像素遊戲風格",
+            "復古拍立得風格搭配大膽用色"
+          ],
+          "correct": 3,
+          "why": "[00:32] 講者說 \"Think retro Polaroid style and bold colors.\""
         },
         "status": "full"
       },
@@ -7042,6 +7099,25 @@ const CURRICULUM = {
           ],
           "correct": 0,
           "why": "[01:01] 字幕提到：After the meeting, the ChatGPT agent automatically searches for the call transcript and generates an overview of the conversation."
+        },
+        "status": "full"
+      },
+      {
+        "id": "yt_t8Ej9aeW388",
+        "title": "🎬 2026/07/23 IT 管理員如何大規模管理 ChatGPT Work｜OpenAI",
+        "category": "ChatGPT 產品功能",
+        "text": "<b>示範 IT 管理員用 APIs for admins 與 Work 管理 ChatGPT Enterprise</b><br>▸ <a href=\"https://www.youtube.com/watch?v=t8Ej9aeW388&t=3s\" target=\"_blank\">00:03</a> AI 成為日常工作的一部分後，IT 管理員的角色更具策略性，要負責管理存取權限、成本，並衡量成果。<br>▸ <a href=\"https://www.youtube.com/watch?v=t8Ej9aeW388&t=3s\" target=\"_blank\">00:03</a> OpenAI 為管理員打造專用工具；新的 APIs for admins 讓管理員能在更大規模下工作。<br>▸ <a href=\"https://www.youtube.com/watch?v=t8Ej9aeW388&t=3s\" target=\"_blank\">00:03</a> 本影片以 ChatGPT Enterprise 為例示範實際操作。<br>▸ <a href=\"https://www.youtube.com/watch?v=t8Ej9aeW388&t=3s\" target=\"_blank\">00:03</a> 第一步：建立 restricted admin key 並存放在 Keychain，讓 worker agent 能安全地使用 API。<br>▸ <a href=\"https://www.youtube.com/watch?v=t8Ej9aeW388&t=3s\" target=\"_blank\">00:03</a> 接著可以直接詢問：每天哪些群組和使用者最活躍。<br>▸ <a href=\"https://www.youtube.com/watch?v=t8Ej9aeW388&t=33s\" target=\"_blank\">00:33</a> Work 會摘要採用程度（adoption），並顯示使用量集中在哪裡。<br>▸ <a href=\"https://www.youtube.com/watch?v=t8Ej9aeW388&t=33s\" target=\"_blank\">00:33</a> 這能幫管理員看出哪些團隊投入程度高，以及哪些地方可能需要更多支援。<br>▸ <a href=\"https://www.youtube.com/watch?v=t8Ej9aeW388&t=33s\" target=\"_blank\">00:33</a> 可進一步詢問每位使用者與每個群組的平均花費，以及哪些群組超過 workspace 平均。<br>▸ <a href=\"https://www.youtube.com/watch?v=t8Ej9aeW388&t=33s\" target=\"_blank\">00:33</a> Work 會標示出差異，讓管理員在成本變成問題之前就能輕鬆檢查。<br>▸ <a href=\"https://www.youtube.com/watch?v=t8Ej9aeW388&t=63s\" target=\"_blank\">01:03</a> 針對花費最高的群組，請 Work 建議每位使用者的每月上限，並顯示預估影響。<br>▸ <a href=\"https://www.youtube.com/watch?v=t8Ej9aeW388&t=63s\" target=\"_blank\">01:03</a> Work 會提供清楚的建議，以及做任何變更前應考慮的背景資訊。<br>▸ <a href=\"https://www.youtube.com/watch?v=t8Ej9aeW388&t=63s\" target=\"_blank\">01:03</a> 管理員審閱後確認變更，Work 套用上限，再到 admin interface 檢查，完全掌控所有變更。<br>▸ <a href=\"https://www.youtube.com/watch?v=t8Ej9aeW388&t=63s\" target=\"_blank\">01:03</a> ChatGPT Enterprise 讓管理員更容易看到 workspace 裡發生什麼並採取行動；影片內容只是其中幾個例子。<br>▸ <a href=\"https://www.youtube.com/watch?v=t8Ej9aeW388&t=93s\" target=\"_blank\">01:33</a> Work 讓日常 workspace 管理更輕鬆；APIs for administrators 則為每個 workflow 提供資料與控制功能。\n\n📘 術語<br><b>APIs for admins / APIs for administrators</b>（管理員 API）：新推出的管理員專用 API，讓管理員能在更大規模下工作，並為每個 workflow 提供資料與控制功能。<br><b>restricted admin key</b>（受限管理員金鑰）：示範中第一步建立的金鑰，存放在 Keychain，讓 worker agent 能安全使用 API。<br><b>Keychain</b>（鑰匙圈（金鑰儲存處））：字幕只提到把 restricted admin key 存放在這裡。<br><b>worker agent / Work</b>（工作代理）：透過 API 執行任務的 agent，能摘要使用狀況、提出建議並套用變更。<br><b>adoption</b>（採用程度）：Work 會摘要的使用程度，並顯示使用量集中在哪裡。<br><b>workspace</b>（工作區）：ChatGPT Enterprise 中管理的範圍，可比較群組花費與 workspace 平均。<br><b>admin interface</b>（管理介面）：Work 套用上限後，管理員在這裡檢查變更，確保完全掌控。<br><b>workflow</b>（工作流程）：APIs for administrators 為每個 workflow 提供資料與控制功能。\n\n📺 <a href=\"https://www.youtube.com/watch?v=t8Ej9aeW388&t=0s\" target=\"_blank\">How IT Admins can manage ChatGPT Work at scale | OpenAI</a>（2026/07/23 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "示範中，建立 restricted admin key 之後，要把它存放在哪裡？",
+          "options": [
+            "workspace 設定頁",
+            "admin interface",
+            "Keychain",
+            "ChatGPT 對話紀錄"
+          ],
+          "correct": 2,
+          "why": "[00:03] 講者說先建立 restricted admin key 並存放在 Keychain，讓 worker agent 能安全使用 API。"
         },
         "status": "full"
       },
@@ -7965,6 +8041,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_szJI9YJNEZk",
+        "title": "🎬 2025/07/17 ChatGPT agent 幫你做簡報",
+        "category": "ChatGPT 產品功能",
+        "text": "<b>示範 ChatGPT agent 自動研究新加坡設點資訊並產出 PowerPoint 簡報</b><br>▸ <a href=\"https://www.youtube.com/watch?v=szJI9YJNEZk&t=2s\" target=\"_blank\">00:02</a> 講者 Aiden 是 OpenAI 的研究員；團隊想把各種工具整合在一起，讓模型擁有大量能力<br>▸ <a href=\"https://www.youtube.com/watch?v=szJI9YJNEZk&t=2s\" target=\"_blank\">00:02</a> 示範 prompt：請它研究在新加坡開設辦公室的選項<br>▸ <a href=\"https://www.youtube.com/watch?v=szJI9YJNEZk&t=2s\" target=\"_blank\">00:02</a> 同一個 prompt 也要求提供新加坡的商業補助、政府支持，以及可以合作的夥伴等細節<br>▸ <a href=\"https://www.youtube.com/watch?v=szJI9YJNEZk&t=32s\" target=\"_blank\">00:32</a> 要求它做一份完整又漂亮的簡報，涵蓋所有研究發現<br>▸ <a href=\"https://www.youtube.com/watch?v=szJI9YJNEZk&t=32s\" target=\"_blank\">00:32</a> 它會自己完成工作：使用者可以闔上電腦離開，之後再回來看它做出的成果<br>▸ <a href=\"https://www.youtube.com/watch?v=szJI9YJNEZk&t=32s\" target=\"_blank\">00:32</a> 過程中它會搜尋適合科技公司的好地段<br>▸ <a href=\"https://www.youtube.com/watch?v=szJI9YJNEZk&t=32s\" target=\"_blank\">00:32</a> 它會查看文章來了解租金等價格資訊<br>▸ <a href=\"https://www.youtube.com/watch?v=szJI9YJNEZk&t=32s\" target=\"_blank\">00:32</a> 它會搜尋針對科技公司的政府補助，並從可信任的網站取得細節<br>▸ <a href=\"https://www.youtube.com/watch?v=szJI9YJNEZk&t=32s\" target=\"_blank\">00:32</a> 它也會尋找該地段的相關圖片<br>▸ <a href=\"https://www.youtube.com/watch?v=szJI9YJNEZk&t=62s\" target=\"_blank\">01:02</a> 它工作的同時，使用者可以繼續提供新資訊讓它使用<br>▸ <a href=\"https://www.youtube.com/watch?v=szJI9YJNEZk&t=62s\" target=\"_blank\">01:02</a> 資料蒐集完成後，它會在 terminal 裡開始製作 PowerPoint<br>▸ <a href=\"https://www.youtube.com/watch?v=szJI9YJNEZk&t=62s\" target=\"_blank\">01:02</a> 工程師做了手機通知功能，完成時手機會收到通知<br>▸ <a href=\"https://www.youtube.com/watch?v=szJI9YJNEZk&t=62s\" target=\"_blank\">01:02</a> 成果評價：講者滿意，它找到很好的潛在辦公地點圖片<br>▸ <a href=\"https://www.youtube.com/watch?v=szJI9YJNEZk&t=62s\" target=\"_blank\">01:02</a> 若有想修改的地方，可以再 prompt 它，或下載下來之後自己修改<br>▸ <a href=\"https://www.youtube.com/watch?v=szJI9YJNEZk&t=93s\" target=\"_blank\">01:33</a> 團隊希望它能幫助大家做構想的原型，或用簡報傳達想法\n\n📘 術語<br><b>ChatGPT agent</b>（ChatGPT 代理）：整合多種工具的模型，能自己完成研究與做簡報，使用者可以離開後再回來看成果<br><b>prompt</b>（提示／指令）：給模型的指示；成果不滿意時可以再 prompt 它修改<br><b>terminal</b>（終端機）：字幕提到它蒐集完資料後在 terminal 裡開始製作 PowerPoint<br><b>PowerPoint</b>（PowerPoint 簡報）：影片中 agent 最後產出的簡報檔，可以下載後自行修改<br><b>government grants</b>（政府補助）：示範中要它研究的內容之一，例如針對科技公司的政府補助\n\n📺 <a href=\"https://www.youtube.com/watch?v=szJI9YJNEZk&t=0s\" target=\"_blank\">ChatGPT agent Makes Slideshows</a>（2025/07/17 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片中 ChatGPT agent 蒐集完資料後，在 terminal 裡開始製作什麼？",
+          "options": [
+            "PowerPoint",
+            "Excel 試算表",
+            "Word 文件",
+            "網頁"
+          ],
+          "correct": 0,
+          "why": "字幕 [01:02]：once it gathered everything you'll see it start to create a PowerPoint in the terminal"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_Wgn4JeYI9lY",
         "title": "🎬 2025/07/17 介紹 ChatGPT agent",
         "category": "ChatGPT 產品功能",
@@ -8477,6 +8572,25 @@ const CURRICULUM = {
           ],
           "correct": 3,
           "why": "[00:02] 講者說只要在螢幕上 press and hold，就能停頓、思考，一放開模型就會回應"
+        },
+        "status": "full"
+      },
+      {
+        "id": "yt_skrKS3xN8F8",
+        "title": "🎬 2025/03/13 你在 ChatGPT Advanced Voice 上最喜歡用哪種口音？",
+        "category": "ChatGPT 產品功能",
+        "text": "<b>多段使用者與 ChatGPT 語音對話片段，請它切換各種口音與俚語</b><br>▸ <a href=\"https://www.youtube.com/watch?v=skrKS3xN8F8&t=1s\" target=\"_blank\">00:01</a> 開場片段中，使用者說出「America runs on」，ChatGPT 接話表示懂對方在講 Duncan（字幕原文拼法）<br>▸ <a href=\"https://www.youtube.com/watch?v=skrKS3xN8F8&t=47s\" target=\"_blank\">00:47</a> 有使用者表示，光是聽到某些聲音就勾起美好回憶，ChatGPT 接著問對方記得哪些事<br>▸ <a href=\"https://www.youtube.com/watch?v=skrKS3xN8F8&t=47s\" target=\"_blank\">00:47</a> 有使用者驚訝地說不敢相信 ChatGPT 是「Mexican Korean」，並要求它模仿某種人的說話方式（字幕部分不清楚）<br>▸ <a href=\"https://www.youtube.com/watch?v=skrKS3xN8F8&t=77s\" target=\"_blank\">01:17</a> 使用者要求 ChatGPT 加入更多 Malaysian slangs（馬來西亞俚語），ChatGPT 以自介「hello I&#x27;m chat GPT your AI Budd」回應，並用了「can or not」等說法<br>▸ <a href=\"https://www.youtube.com/watch?v=skrKS3xN8F8&t=77s\" target=\"_blank\">01:17</a> 另一段對話以俚語閒聊近況，內容提到 school run（接送小孩上下學），ChatGPT 回應這些都是「part of the hustle」<br>▸ <a href=\"https://www.youtube.com/watch?v=skrKS3xN8F8&t=108s\" target=\"_blank\">01:48</a> 使用者覺得 ChatGPT 的口音像到「scary」「mad」，追問它怎麼學會這種口音<br>▸ <a href=\"https://www.youtube.com/watch?v=skrKS3xN8F8&t=108s\" target=\"_blank\">01:48</a> ChatGPT 回答：只是一點練習加上對口音的好耳力，重點在於「catching a Vibe」<br>▸ <a href=\"https://www.youtube.com/watch?v=skrKS3xN8F8&t=108s\" target=\"_blank\">01:48</a> 使用者說它聽起來像在當地長大、上學，ChatGPT 回應這就是 AI 的魔力，它被設計成能適應並融入<br>▸ <a href=\"https://www.youtube.com/watch?v=skrKS3xN8F8&t=140s\" target=\"_blank\">02:20</a> ChatGPT 表示很高興自己把 South London Vibe 詮釋得有說服力，最後以「fam」「in a bit」等道別語結束對話\n\n📘 術語<br><b>Malaysian slangs</b>（馬來西亞俚語）：使用者要求 ChatGPT 在說話時加入更多這類俚語<br><b>South London Vibe</b>（南倫敦腔調／氛圍）：ChatGPT 自稱成功詮釋出的口音風格<br><b>school run</b>（接送小孩上下學）：對話中被提到的日常事務，ChatGPT 稱之為 part of the hustle\n\n📺 <a href=\"https://www.youtube.com/watch?v=skrKS3xN8F8&t=0s\" target=\"_blank\">What’s your favorite accent to use on ChatGPT Advanced Voice?</a>（2025/03/13 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "使用者問 ChatGPT 怎麼學會這種口音時，它怎麼回答？",
+          "options": [
+            "它在南倫敦的學校上過學",
+            "使用者先開啟了一個特別的口音設定",
+            "它的訓練資料裡只有英國口音",
+            "只是一點練習加上對口音的好耳力，重點在抓到那種 vibe"
+          ],
+          "correct": 3,
+          "why": "[01:48] ChatGPT 說：「just a bit of practice and a good ear for accents it's all about catching a Vibe」"
         },
         "status": "full"
       },
@@ -9498,6 +9612,26 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_sWkGomJ3TLI",
+        "title": "🎬 2026/04/21 推出 ChatGPT Images 2.0",
+        "category": "模型發表與 DevDay",
+        "text": "<b>發表新一代影像生成模型，現場展示文字、設計、多語言、思考模式與寫實度</b><br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=10s\" target=\"_blank\">00:10</a> 今天推出新模型（字幕稱 Imagen 2.0）。比喻：Dali 像洞穴壁畫，Imagen 1 像古代藝術，Imagen 2.0 則是文藝復興<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=10s\" target=\"_blank\">00:10</a> 號稱史上最聰明的影像生成模型，能產出複雜、精緻、可直接用於正式作品的視覺內容，文字準確、設計有結構<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=10s\" target=\"_blank\">00:10</a> 模型不只是生成，還會思考與研究，甚至能上網搜尋，用最準確的資訊來生成圖片<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=42s\" target=\"_blank\">00:42</a> 可以生成資訊圖表來解釋複雜系統，也能生成附證明的數學解題圖<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=42s\" target=\"_blank\">00:42</a> 新增多語言能力，可以用多種語言製作視覺內容<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=42s\" target=\"_blank\">00:42</a> 影像生成首次能一次產出多張不同的圖：整本雜誌、全屋每個房間的翻修計畫、角色固定且劇情延續的漫畫<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=72s\" target=\"_blank\">01:12</a> 支援 2K 解析度與多種長寬比，細節非常豐富<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=111s\" target=\"_blank\">01:51</a> 一年多前 ChatGPT 推出圖片功能；這次的進步被形容為像是一口氣從 GPT-3 跳到 GPT-5<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=141s\" target=\"_blank\">02:21</a> 即日起可在 ChatGPT 與 API 使用<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=141s\" target=\"_blank\">02:21</a> 講者：Gabe（ChatGPT research lead），以及影像生成團隊研究員 Kuan、Kenji、Alex<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=171s\" target=\"_blank\">02:51</a> Gabe 認為新圖片看起來就像普通照片；看久了再回頭看舊模型的圖，會發現許多以前沒注意到的錯誤<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=171s\" target=\"_blank\">02:51</a> 示範：用四人前一天的合照生成雜誌封面<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=202s\" target=\"_blank\">03:22</a> 模型很擅長設計，會刻意安排文字在畫面中的位置<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=232s\" target=\"_blank\">03:52</a> 以前影像生成連一個字都很難不出錯，現在錯字非常少，很難找到一個<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=262s\" target=\"_blank\">04:22</a> 整段文字、整頁文字，甚至整份雜誌版面都能不出錯<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=262s\" target=\"_blank\">04:22</a> 推出兩個版本：instant 版與 thinking 版<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=292s\" target=\"_blank\">04:52</a> thinking 版要切換 thinking mode 才能使用，僅限付費使用者。生成前會先思考，能寫出很好的 prompt，也能上網搜尋<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=322s\" target=\"_blank\">05:22</a> thinking mode 能用單一 prompt 生成整部漫畫，例如一次生成三頁，也能一次生成多張圖<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=352s\" target=\"_blank\">05:52</a> instant mode 從今天起開放所有人使用，視覺智慧比先前模型好很多，被稱為第一個真正能用在日常生活的影像模型<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=383s\" target=\"_blank\">06:23</a> 示範：Kuan 上傳自己的人像照，請模型為暑假建議八套夏季穿搭<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=383s\" target=\"_blank\">06:23</a> 這類任務需要兩種視覺智慧：視覺理解（看懂照片裡的人）與視覺生成（把規劃好的版面做成條理清楚的圖），兩者都有很大進步<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=444s\" target=\"_blank\">07:24</a> 接著追問：放大第一套造型，生成一張主圖、幾個不同角度的視圖和服裝細節<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=505s\" target=\"_blank\">08:25</a> 穿搭圖中每件單品都有對應的文字標示（例如 sneakers、fitted tee），人物也很像本人，顯示模型能同時處理大量圖像與文字<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=536s\" target=\"_blank\">08:56</a> 結果呈現本人穿上這套衣服的多角度樣貌，體驗很像去店裡試穿<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=536s\" target=\"_blank\">08:56</a> 新模型不再只是「給 prompt、回一張圖」的產生器，而是可以互動對話、用易懂的圖片回應的 AI<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=566s\" target=\"_blank\">09:26</a> thinking 讓模型先思考再輸出，適合很複雜的 prompt：需要上網搜尋、多張圖要彼此一致，或輸出前先檢查自己的成果<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=596s\" target=\"_blank\">09:56</a> Gabe 與 Sam 的自拍被做成漫畫，三頁中人物長相、畫風都維持一致，故事也連貫<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=657s\" target=\"_blank\">10:57</a> 幾週前 instant 版以代號 Duct Tape 在 Llama Arena 上做 beta 測試，有網友推理出是 OpenAI，現在正式承認<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=657s\" target=\"_blank\">10:57</a> 示範 prompt：請模型搜尋社群上對 Duct Tape 的反應並引用，圖中出現 Threads、LinkedIn、Reddit 等平台的留言<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=688s\" target=\"_blank\">11:28</a> 同一張圖還放了連到 chat.openai.com 的 QR code，現場測試可以用。等於一張圖內同時完成上網搜尋、整合答案與放 QR code<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=719s\" target=\"_blank\">11:59</a> 自然度大幅提升，輸出可以像真實照片<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=749s\" target=\"_blank\">12:29</a> 加入 photorealistic 可觸發寫實風格，也可以用 professional photography、shot on iPhone、disposable camera 等說法<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=749s\" target=\"_blank\">12:29</a> 範例：假設回到 OpenAI 成立的 2015 年，場景卻出現 GPT Images 2。模型重現了演講廳的細微瑕疵、顆粒感與光線，投影片文字也很連貫<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=779s\" target=\"_blank\">12:59</a> 長寬比更有彈性，可做到很寬或很高的圖，最多到 1x3 與 3x1；也可以選 1x1<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=840s\" target=\"_blank\">14:00</a> 範例：生成登月的 360 度全景圖，放進 Alex 自己寫程式做的全景檢視器，畫面一致，太陽與陰影方向也正確<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=904s\" target=\"_blank\">15:04</a> Gabe 推薦關鍵字：photorealism 會觸發模型很有趣的表現，值得一試<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=935s\" target=\"_blank\">15:35</a> Boyuan（影像研究團隊）與 Nithanth（ChatGPT Images 團隊工程師）登場，介紹改進後的文字渲染能力<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=967s\" target=\"_blank\">16:07</a> 目標是讓模型在世界各種語言、文化中都能完美生成文字<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=967s\" target=\"_blank\">16:07</a> 示範一：生成以世界各地語言為主題的字體藝術海報<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=997s\" target=\"_blank\">16:37</a> 示範二：為虛構的 OpenAI Bakery 在日本開店，製作日文海報<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=997s\" target=\"_blank\">16:37</a> 進步最多的是亞洲語言，例如印地語、中文、韓文、日文。這些語言有上千個字元，不像英文只有 26 個，以前模型很難記住<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=1029s\" target=\"_blank\">17:09</a> 字體海報呈現為真實雜誌的照片，字元正確，可看到中文「ni hao」、hello、法文 bonjour<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=1060s\" target=\"_blank\">17:40</a> 日文麵包店海報把 OpenAI 的 logo 做進麵包裡，漢字與平假名放大後細節都正確<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=1091s\" target=\"_blank\">18:11</a> 用實驗性的 4K API 生成一堆米，其中一粒米上寫著 GPT Image 2，展示細節能做到多細<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=1122s\" target=\"_blank\">18:42</a> 已開放所有使用者試用；用 App 的話要更新到最新版，看到歡迎畫面就代表可以用了<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=1122s\" target=\"_blank\">18:42</a> 示範：請模型用印地語做食譜，結果選了 aloo paratha，乍看沒有錯字<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=1153s\" target=\"_blank\">19:13</a> 對多種印度語言（Hindi、Telugu、Kannada、Tamil、Marathi 等）明顯進步，文字越密集差異越明顯<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=1187s\" target=\"_blank\">19:47</a> App 新增預設風格，選「create images」就能看到，有些特別能發揮新模型的能力<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=1217s\" target=\"_blank\">20:17</a> 示範：拍下麵包店海報，請模型發想 logo，一次產出 16 到 20 個點子<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=1217s\" target=\"_blank\">20:17</a> 模型很會遵循詳細指示；有特定品牌語言或設計美學時，可以在 ChatGPT 反覆修改，得到想要的結果<br>▸ <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=1278s\" target=\"_blank\">21:18</a> 總結：今天起在 ChatGPT 與 API 上線\n\n📘 術語<br><b>instant mode</b>（即時模式）：從今天起開放所有人使用的版本，視覺智慧比先前模型好很多<br><b>thinking mode</b>（思考模式）：付費使用者可切換，生成前先思考，能上網搜尋、一次生成多張圖、檢查自己的成果<br><b>prompt</b>（提示詞）：給模型的指令；thinking 版會先思考，寫出很好的 prompt 再生成<br><b>API</b>（應用程式介面）：新模型除了 ChatGPT，也可以在 API 使用；另有實驗性的 4K API<br><b>visual understanding</b>（視覺理解）：模型看懂輸入的圖片，例如理解使用者長什麼樣子<br><b>visual generation</b>（視覺生成）：把規劃好的版面轉成連貫、有條理的圖片<br><b>infographic</b>（資訊圖表）：能用來解釋複雜系統的圖<br><b>multilingual</b>（多語言）：能用多種語言製作視覺內容，給全世界使用<br><b>typography</b>（字體排印）：示範中生成了以多國語言為主題的字體藝術海報<br><b>aspect ratio</b>（長寬比）：支援多種長寬比，最寬或最高可到 1x3 與 3x1，也可以是 1x1<br><b>photorealistic</b>（照片般寫實）：加進 prompt 可觸發像真實照片的輸出<br><b>panorama / 360 image</b>（全景圖／360 度圖）：示範生成登月 360 度圖，可放進全景檢視器觀看<br><b>QR code</b>（QR 碼）：示範中模型在圖裡放了連到 chat.openai.com 的 QR code，可以掃<br><b>beta test</b>（測試版試用）：instant 版曾以代號 Duct Tape 在 Llama Arena 上做 beta 測試<br><b>preset styles</b>（預設風格）：App 裡選 create images 就能看到的新風格選項\n\n📺 <a href=\"https://www.youtube.com/watch?v=sWkGomJ3TLI&t=0s\" target=\"_blank\">Introducing ChatGPT Images 2.0</a>（2026/04/21 · 21 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "影片提到，新模型的 instant 版在正式發表前，曾用什麼代號在 Llama Arena 上做 beta 測試？",
+          "options": [
+            "Duct Tape",
+            "Rice Grain",
+            "Renaissance",
+            "OpenAI Bakery"
+          ],
+          "correct": 0,
+          "why": "[10:57] 講者說幾週前以代號 Duct Tape 在 Llama Arena 上 beta 測試 instant 版。Renaissance 是 [00:10] 的比喻，Rice Grain 是 [18:11] 米粒圖示範的內容，OpenAI Bakery 是 [16:37] 虛構的麵包店"
+        },
+        "status": "full",
+        "parts": 2
+      },
+      {
         "id": "yt_YICiHiU2GBU",
         "title": "🎬 2026/03/05 GPT-5.4 Thinking 的 Computer Use 與前端 UI",
         "category": "模型發表與 DevDay",
@@ -9691,6 +9825,26 @@ const CURRICULUM = {
           "why": "[02:28] 測試者說喜歡鵜鶘的腳有踩在踏板上，這是他試過的其他模型大多漏掉的細節"
         },
         "status": "full"
+      },
+      {
+        "id": "yt_sq8GBPUb3rk",
+        "title": "🎬 2025/04/16 OpenAI o3 與 o4-mini",
+        "category": "模型發表與 DevDay",
+        "text": "<b>發表會使用工具的推理模型 o3、o4-mini，並推出開源的 Codex CLI</b><br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=5s\" target=\"_blank\">00:05</a> Greg Brockman 與 Mark Chen（領導 OpenAI 研究）開場，宣布發表 o3 與 o4-mini 兩個模型<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=5s\" target=\"_blank\">00:05</a> 頂尖科學家表示，這是第一批能產生真正好、有用的新點子的模型<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=38s\" target=\"_blank\">00:38</a> 字幕提到在法律領域有很好的成果；一位同事說 o3 提出了很好的系統架構點子<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=38s\" target=\"_blank\">00:38</a> 這些不只是模型，而是 AI 系統：訓練它們使用工具（先前推理模型沒有），並在 chain of thought 中邊想邊用工具<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=68s\" target=\"_blank\">01:08</a> 曾看到 o3 為解一個很難的任務，連續使用約 600 次 tool call<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=68s\" target=\"_blank\">01:08</a> 今天起逐步推出，盡快上線到 API 與 ChatGPT<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=68s\" target=\"_blank\">01:08</a> 軟體工程能力：不只寫一次性的程式碼，而能在真實 codebase 中工作；Greg 覺得它們比他更會瀏覽 OpenAI 的 codebase<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=100s\" target=\"_blank\">01:40</a> 工具使用讓推理模型更有用、更聰明，就像人用計算機解數學題、用地圖 app 找陌生街道<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=132s\" target=\"_blank\">02:12</a> O series 推理模型結合完整工具組，在多個困難 benchmark（字幕寫 Amy、GPQA、Code Forces、Sweetbench）達到 state-of-the-art<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=132s\" target=\"_blank\">02:12</a> 新功能 think with images：模型可用 Python 操作、裁切、轉換圖片來完成任務<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=163s\" target=\"_blank\">02:43</a> 可上傳複雜、模糊、甚至上下顛倒的圖片，模型都能處理<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=163s\" target=\"_blank\">02:43</a> 進步來自 RL 範式的持續演算法突破，同時擴大 train time scaling 與 test time scaling<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=163s\" target=\"_blank\">02:43</a> 一兩週前有篇凝態物理新論文，用 o3-mini high 協助證明一個新的未解定理<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=196s\" target=\"_blank\">03:16</a> Demo 由 Brandon McKenzie（multimodal reasoning）與 Eric Mitchell（O series 的 post training）示範<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=228s\" target=\"_blank\">03:48</a> Brandon 餵給 o3 一張 2015 年物理實習的海報，專案目標是估計一個超出粒子物理標準模型、描述短程交互作用強度的量<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=258s\" target=\"_blank\">04:18</a> o3 在圖片上放大、四處瀏覽找相關數值；任務是找出結果並與近期文獻比較，但結果其實不在海報上<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=289s\" target=\"_blank\">04:49</a> 模型需找到對的圖、求斜率、外推到特定 quark 質量，再乘上另一個量做正規化<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=289s\" target=\"_blank\">04:49</a> 接著依提示上網搜尋近期有更新估計值的研究<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=320s\" target=\"_blank\">05:20</a> 模型主動指出結果不在海報中；Brandon 估計自己重新上手要好幾天、查文獻再幾天，模型幾秒內讀了至少約 10 篇論文<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=350s\" target=\"_blank\">05:50</a> 模型算出未正規化值，乘上特定常數重新正規化；Brandon 論文中的結果約 1.2<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=382s\" target=\"_blank\">06:22</a> 模型指出 bare value 偏高需重新正規化，正規化後與 state-of-the-art 較一致，但精確度不如最新結果<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=443s\" target=\"_blank\">07:23</a> Eric 示範 o3 能使用 ChatGPT 中所有工具，並開啟 memory 讓模型知道關於他的事<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=474s\" target=\"_blank\">07:54</a> 提示：根據你對我的了解讀新聞，教我一件我可能不知道但會覺得很酷的事，並畫出可放進部落格的資料圖<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=505s\" target=\"_blank\">08:25</a> 模型結合他潛水與玩音樂的興趣，找到一項研究：錄下健康珊瑚礁的聲音，用水下喇叭播放，可加速新珊瑚與魚類定居、讓珊瑚礁更快再生<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=565s\" target=\"_blank\">09:25</a> 模型流暢地同時 browsing、用 advanced data analysis 畫圖、用 canvas 產生部落格文章，最後附 citations 摘要<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=626s\" target=\"_blank\">10:26</a> 底層仍是 next token prediction 加上 RL；改變了目標與訓練資料來源，讓模型能接上真實世界<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=657s\" target=\"_blank\">10:57</a> Wenda（scaling RL systems）與 Ana（模型演算法）說明訓練與評測；圖中深黃為新模型、淺黃為舊模型，提升顯著<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=657s\" target=\"_blank\">10:57</a> 在字幕稱為 AM 的困難數學競賽上，o4-mini 使用工具達 99% 準確率，幾乎讓該評測飽和<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=689s\" target=\"_blank\">11:29</a> Code Forces 超過 2700 分，相當於全球前 200 名參賽者；GPQA（博士級難題）o3 超過 83%<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=719s\" target=\"_blank\">11:59</a> 數學題例：2x2 方格著色計數；模型先寫暴力程式並用 Python interpreter 執行，得到正確答案 82<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=749s\" target=\"_blank\">12:29</a> 模型認為暴力解不優雅，自行簡化成更聰明的解法，再 double check 提高可靠度，最後用文字向人解釋<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=749s\" target=\"_blank\">12:29</a> 團隊沒有直接訓練模型簡化或檢查答案，這些策略是它自然學會的<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=780s\" target=\"_blank\">13:00</a> 實用寫程式 benchmark（字幕記為 sweet answer 與 polydot）上，模型端到端使用工具、不需任何 harness 即達 state-of-the-art<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=811s\" target=\"_blank\">13:31</a> Sweetbench 範例：在 API 用 o3 high 搭配 container tool；此工具還需幾週才能在 API 使用，今天無法執行<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=842s\" target=\"_blank\">14:02</a> 任務是修一個處理符號數學的 Python 套件（字幕記為 senpai）的 bug；container 是預載該 repo 的虛擬機，模型可用 shell<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=842s\" target=\"_blank\">14:02</a> 模型先確認問題確實存在：max 被印成圓括號而非應有的方括號<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=872s\" target=\"_blank\">14:32</a> 模型用日常常見的終端工具（列出檔案、開檔）瀏覽 repo，掌握整體結構<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=903s\" target=\"_blank\">15:03</a> 模型檢查 MRO，發現某類別繼承自 application 而非 function，用 apply patch 修改檔案，再跑 unit test 確認修好<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=933s\" target=\"_blank\">15:33</a> 此例在 Sweet Bench 中偏短：約 22 次互動、16,000 tokens；有時超過 100 次 container 互動，平均 37 次<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=964s\" target=\"_blank\">16:04</a> 多模態 benchmark（字幕記為 MMU、Math Vista、Charive、Vstar）數字非常驚人<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=995s\" target=\"_blank\">16:35</a> 把推理範式應用到多模態是先前做不到的；模型能在 chain of thought 中直接操作圖片，大幅提升多模態能力<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=995s\" target=\"_blank\">16:35</a> 外部評測（字幕記為 humanity tax exam）：o3 接近 deep research，但快得多，在 ChatGPT 中 rate limits 也少得多<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1026s\" target=\"_blank\">17:06</a> 若不需要 deep research 那樣的完整報告、但想要 agentic 行為找資訊，o3 很適合<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1026s\" target=\"_blank\">17:06</a> 效能對推論成本圖：在任何推論成本下，o4-mini 都明顯優於 o3-mini；o4-mini 是小而快的多模態推理模型<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1056s\" target=\"_blank\">17:36</a> o3 能以少得多的推論成本達到相同效能，付和 o1 一樣的成本則分數更高，因此將以新模型取代 o1<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1088s\" target=\"_blank\">18:08</a> 為成本效率與實用性做了優化，benchmark 不像 12 days of Christmas 公布時那麼針對性，數字可能小幅上下，多模態普遍上升<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1088s\" target=\"_blank\">18:08</a> 新模型更針對真實使用情境優化，等待答案的時間也更短<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1122s\" target=\"_blank\">18:42</a> o3 使用超過 o1 十倍的 training compute；compute 增加時，評測（字幕記為 Amy）表現持續上升<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1122s\" target=\"_blank\">18:42</a> 這是重走 GPT 系列 pre-training 可預測 scaling 的路，目標是證明投入更多 RL compute 也能得到相應增益<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1190s\" target=\"_blank\">19:50</a> Fouad 與 Michael（agents research）回顧幾年前的 Codex demo，那是大家第一次看到現在所謂的 vibe coding<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1190s\" target=\"_blank\">19:50</a> 當年命名 Codex，是因為程式碼是訓練模型要做的事的核心<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1221s\" target=\"_blank\">20:21</a> 將推出一系列定義程式設計未來的應用，今天第一個是 Codex CLI：連接模型、使用者與其電腦的輕量介面<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1221s\" target=\"_blank\">20:21</a> Codex CLI 可視為如何安全部署 code executing agent 的 reference implementation<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1252s\" target=\"_blank\">20:52</a> 它建立在 responses API 等公開 API 上，利用 chain of thought summaries 新功能，以及具多模態推理能力的 o3、o4-mini<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1252s\" target=\"_blank\">20:52</a> Demo：依網路上一篇貼文，用 Codex 與 o4-mini 重做一個以 o3-mini 做的圖片轉 ASCII 產生器<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1284s\" target=\"_blank\">21:24</a> 把截圖拖進終端機，用 image flag 傳給 Codex，觸發 o4-mini 的多模態推理<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1284s\" target=\"_blank\">21:24</a> 可把任何檔案或 codebase 交給 Codex；能看到部分 chain of thought，它會問澄清問題並提出建議<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1314s\" target=\"_blank\">21:54</a> 現場加碼要求：加入 web camera API，並維持 16:9 比例<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1344s\" target=\"_blank\">22:24</a> Codex 能讓你看到它思考，並直接在你的機器上執行工具；未來 API 也會有完整工具組<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1344s\" target=\"_blank\">22:24</a> 預設為 suggest mode：建議要執行的指令或要編輯的檔案，每一項都需使用者核准<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1376s\" target=\"_blank\">22:56</a> full auto mode：讓 agent 自行工作但維持安全，執行指令時停用網路，編輯限制在啟動它的目錄內<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1376s\" target=\"_blank\">22:56</a> 成品很快完成：產生 ASCII HTML 檔，有寬度滑桿，顯示低解析度的攝影機畫面<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1408s\" target=\"_blank\">23:28</a> 團隊用 Codex 來開發 Codex；Codex CLI 全面開放，程式碼開源於 GitHub 的 OpenAI/Codex，也能用 Codex 解釋這個 repo<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1439s\" target=\"_blank\">23:59</a> 宣布 100 萬美元開源計畫，以 API credits 支持使用最新模型與 Codex CLI 的開源專案，詳情見研究部落格連結<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1469s\" target=\"_blank\">24:29</a> ChatGPT 的 Pro、Plus、Team 訂閱者今天起陸續可用 o3、o4-mini、o4-mini high，取代 o1 與 o3-mini 系列<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1469s\" target=\"_blank\">24:29</a> Enterprise 與 Edu 需再等一週；o3 Pro 會推出，但需要一些時間完成剩餘功能<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1500s\" target=\"_blank\">25:00</a> 模型今天也在 API 釋出，未來幾週 API 將加入工具使用<br>▸ <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=1500s\" target=\"_blank\">25:00</a> 團隊視此為邁向讓 AGI 造福全人類使命的一大步，適用於科學應用，也適用於日常生活\n\n📘 術語<br><b>reasoning model</b>（推理模型）：指 O series 模型；這次首次訓練它們使用工具<br><b>chain of thought</b>（思維鏈）：模型解難題時的思考過程；新模型會在其中使用工具、操作圖片<br><b>tool call</b>（工具呼叫）：模型使用工具的動作；o3 曾連續約 600 次<br><b>benchmark / eval</b>（評測基準）：衡量模型的標準測驗，如數學競賽、Code Forces、GPQA<br><b>GPQA</b>（GPQA）：一組困難的博士級問題<br><b>state-of-the-art</b>（目前最佳水準）：新模型在多項 benchmark 上達到的成績<br><b>think with images</b>（用圖片思考）：模型用 Python 操作、裁切、轉換圖片來完成任務<br><b>multimodal</b>（多模態）：能處理圖片等輸入；o4-mini 是多模態推理模型<br><b>RL (reinforcement learning)</b>（強化學習）：新模型進步的來源範式；投入更多 RL compute 能得到相應增益<br><b>train time scaling / test time scaling</b>（訓練時與推論時擴展）：字幕說兩者都持續擴大，推動模型進步<br><b>post training</b>（後訓練）：Eric Mitchell 為 O series 模型負責的工作<br><b>next token prediction</b>（預測下一個 token）：模型底層仍是思考接下來該出現什麼，再加上 RL<br><b>memory</b>（記憶）：ChatGPT 工具之一；開啟後模型知道一些關於使用者的事<br><b>advanced data analysis</b>（進階資料分析）：demo 中模型用來呈現與繪製資料的工具<br><b>canvas</b>（canvas）：demo 中模型用來產生部落格文章的工具<br><b>codebase / repository</b>（程式碼庫）：真實專案的程式碼；模型能在其中瀏覽與工作<br><b>harness</b>（harness）：字幕說模型端到端用工具，不需任何 harness 就達最佳成績<br><b>container</b>（容器）：一台預載 repo 的虛擬機，模型可透過 shell 操作<br><b>MRO</b>（MRO）：一種 Python 結構，告訴你類別的繼承關係<br><b>apply patch</b>（套用修補）：模型用來修改檔案、實作修正的方式<br><b>unit test</b>（單元測試）：模型修完 bug 後執行以確認修正正確<br><b>rollout</b>（一次完整執行過程）：模型連續多次與 container 互動的長流程，可靠完成並不容易<br><b>deep research</b>（deep research）：會產出完整報告；o3 分數接近它但快得多<br><b>rate limits</b>（使用次數限制）：字幕說在 ChatGPT 中使用 o3 的限制比 deep research 少得多<br><b>inference cost</b>（推論成本）：圖表 x 軸；比較同成本下各模型的效能<br><b>training compute</b>（訓練算力）：o3 用了超過 o1 十倍的 training compute<br><b>vibe coding</b>（vibe coding）：字幕說幾年前的 Codex demo 是大家第一次看到這種做法<br><b>Codex CLI</b>（Codex CLI）：連接模型與使用者電腦的輕量介面，已開源<br><b>reference implementation</b>（參考實作）：Codex CLI 示範如何安全部署 code executing agent<br><b>responses API</b>（responses API）：Codex CLI 所建立的公開 API，有 chain of thought summaries 功能<br><b>suggest mode</b>（建議模式）：Codex 預設模式，建議指令或編輯，每項需使用者核准<br><b>full auto mode</b>（全自動模式）：agent 自行工作；停用網路執行指令，編輯限在啟動目錄內\n\n📺 <a href=\"https://www.youtube.com/watch?v=sq8GBPUb3rk&t=0s\" target=\"_blank\">OpenAI o3 &amp; o4-mini</a>（2025/04/16 · 25 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "Codex CLI 的 full auto mode 用什麼方式在自動執行時維持安全？",
+          "options": [
+            "只允許讀取檔案，完全不能修改任何檔案",
+            "每一條指令都需要使用者手動核准後才執行",
+            "所有指令都送到 OpenAI 雲端的虛擬機上執行",
+            "執行指令時停用網路，且只能編輯啟動它的目錄內的檔案"
+          ],
+          "correct": 3,
+          "why": "[22:56] 字幕說 full auto mode 能在停用網路下執行指令，並把編輯限制在啟動它的目錄內；逐項核准是 suggest mode 的做法（[22:24]）"
+        },
+        "status": "full",
+        "parts": 2
       },
       {
         "id": "yt_kA-P9ood-cE",
@@ -11005,6 +11159,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_sqXsMDOxP0Y",
+        "title": "🎬 2026/07/09 ChatGPT Work｜Zapier：每月七位數的 pipeline",
+        "category": "企業與客戶案例",
+        "text": "<b>Zapier 員工用 ChatGPT 與 Codex 建立潛在客戶品管系統，帶來每月七位數 pipeline</b><br>▸ <a href=\"https://www.youtube.com/watch?v=sqXsMDOxP0Y&t=5s\" target=\"_blank\">00:05</a> 講者表示，Codex app 推出後這 3、4 個月，ChatGPT with Codex 成了他工作中最喜歡的部分<br>▸ <a href=\"https://www.youtube.com/watch?v=sqXsMDOxP0Y&t=5s\" target=\"_blank\">00:05</a> Zapier 有一項「no lead missed」計畫，目標是盡量減少流失的 inbound lead，確保每個 lead 都能安排到會議<br>▸ <a href=\"https://www.youtube.com/watch?v=sqXsMDOxP0Y&t=5s\" target=\"_blank\">00:05</a> 原本由一個人處理一個 lead，但 Zapier 的 lead 有數千個<br>▸ <a href=\"https://www.youtube.com/watch?v=sqXsMDOxP0Y&t=5s\" target=\"_blank\">00:05</a> 過去處理一個 lead、搞清楚到底哪裡出錯，大約要花 35–45 分鐘<br>▸ <a href=\"https://www.youtube.com/watch?v=sqXsMDOxP0Y&t=5s\" target=\"_blank\">00:05</a> 講者花了一個週末深入研究 ChatGPT 和 Codex，用它們打造這套系統<br>▸ <a href=\"https://www.youtube.com/watch?v=sqXsMDOxP0Y&t=35s\" target=\"_blank\">00:35</a> 這套系統會替團隊做品質控管（quality control），重現人工處理時的每一個步驟<br>▸ <a href=\"https://www.youtube.com/watch?v=sqXsMDOxP0Y&t=35s\" target=\"_blank\">00:35</a> 專案成效以 pipeline 中「每月七位數營收」來衡量，這些 pipeline 隨後交給業務團隊<br>▸ <a href=\"https://www.youtube.com/watch?v=sqXsMDOxP0Y&t=35s\" target=\"_blank\">00:35</a> 講者表示，這徹底改變了他們的工作方式，以及他們能做到的事\n\n📘 術語<br><b>Codex app</b>（Codex 應用程式）：字幕只提到它約在 3、4 個月前推出，講者之後開始用 ChatGPT with Codex<br><b>inbound lead</b>（主動來詢的潛在客戶）：字幕未直接定義；計畫目標是不流失這些 lead，並替每一個安排會議<br><b>no lead missed</b>（不漏接任何 lead（計畫名稱））：Zapier 的一項計畫，目標是減少流失的 inbound lead，確保每個都排到會議<br><b>quality control</b>（品質控管）：新系統負責做這件事，重現人工處理 lead 時的所有步驟<br><b>pipeline</b>（業務管道／銷售漏斗）：字幕未直接定義；專案成效以 pipeline 中每月七位數營收衡量，並交給業務\n\n📺 <a href=\"https://www.youtube.com/watch?v=sqXsMDOxP0Y&t=0s\" target=\"_blank\">ChatGPT Work | Zapier: Seven Figures in Monthly Pipeline</a>（2026/07/09 · 0 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，Zapier 過去人工處理一個 lead、找出哪裡出錯，大約要花多少時間？",
+          "options": [
+            "5–10 分鐘",
+            "1–2 小時",
+            "15–20 分鐘",
+            "35–45 分鐘"
+          ],
+          "correct": 3,
+          "why": "講者說 It took about 35–45 minutes to process one lead to understand what exactly went wrong.（00:05）"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_hWhfrR9WJ_c",
         "title": "🎬 2026/07/09 認識用 GPT-5.6 經營農場的花椰菜農夫",
         "category": "企業與客戶案例",
@@ -11195,6 +11368,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_sha3EL1ngN8",
+        "title": "🎬 2026/07/06 Thomson Reuters CEO Steve Hasker 奉行不渝的 AI 日常習慣",
+        "category": "企業與客戶案例",
+        "text": "<b>Thomson Reuters CEO 分享每週一親自使用 AI 工具、帶領組織一起學習的習慣</b><br>▸ <a href=\"https://www.youtube.com/watch?v=sha3EL1ngN8&t=0s\" target=\"_blank\">00:00</a> 他認為 Thomson Reuters 學到最大的一課是：大家都是學習者，一起走在學習的旅程上<br>▸ <a href=\"https://www.youtube.com/watch?v=sha3EL1ngN8&t=0s\" target=\"_blank\">00:00</a> 他認為 Thomson Reuters 正在導入 artificial intelligence，而在這類大規模轉型中，authenticity（以身作則的真誠）很重要<br>▸ <a href=\"https://www.youtube.com/watch?v=sha3EL1ngN8&t=0s\" target=\"_blank\">00:00</a> 週一早上第一件事是親自使用工具：分析當天或當週的文件、查看行事曆、取得分析數據並做準備<br>▸ <a href=\"https://www.youtube.com/watch?v=sha3EL1ngN8&t=31s\" target=\"_blank\">00:31</a> 他會問：誰最先行動、誰行動最快、誰犯最多錯並因此學到最多教訓<br>▸ <a href=\"https://www.youtube.com/watch?v=sha3EL1ngN8&t=31s\" target=\"_blank\">00:31</a> 他經常問團隊從同事、競爭對手、客戶、合作夥伴那裡看到和聽到什麼，用這些知識加速轉型旅程<br>▸ <a href=\"https://www.youtube.com/watch?v=sha3EL1ngN8&t=31s\" target=\"_blank\">00:31</a> 他會聽 Reuters News World podcast，節目大多在英國錄製，所以他週一早上醒來時就已經可以收聽<br>▸ <a href=\"https://www.youtube.com/watch?v=sha3EL1ngN8&t=61s\" target=\"_blank\">01:01</a> 這個 podcast 能讓他掌握世界大事的概況，包括突發新聞、地緣政治、衝突等<br>▸ <a href=\"https://www.youtube.com/watch?v=sha3EL1ngN8&t=61s\" target=\"_blank\">01:01</a> 他的建議：投入整個過程、親自使用工具，並持續和團隊討論工具的好處與缺點（字幕在此中斷）\n\n📘 術語<br><b>authenticity</b>（真誠／以身作則）：字幕沒有直接定義。他說這是大規模轉型的重要部分，接著提到自己會親自使用工具<br><b>geopolitics</b>（地緣政治）：字幕沒有定義，只列為 podcast 涵蓋的世界大事之一\n\n📺 <a href=\"https://www.youtube.com/watch?v=sha3EL1ngN8&t=0s\" target=\"_blank\">Thomson Reuters CEO Steve Hasker swears by this AI Routine</a>（2026/07/06 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "Steve Hasker 週一早上會聽哪一個 podcast？",
+          "options": [
+            "BBC Global News Podcast",
+            "Thomson Reuters Legal Insights",
+            "Reuters News World podcast",
+            "OpenAI Podcast"
+          ],
+          "correct": 2,
+          "why": "[00:31] 他說 I'm listening to the Reuters News World podcast，而且節目大多在英國錄製，週一早上醒來時就已經可以收聽"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_f-HiB82Tl94",
         "title": "🎬 2026/06/29 Advent 以 ChatGPT + Codex 加速交易",
         "category": "企業與客戶案例",
@@ -11305,6 +11497,25 @@ const CURRICULUM = {
           ],
           "correct": 2,
           "why": "[00:02] 字幕提到 have 50 agents running concurrently, have them review MRs"
+        },
+        "status": "full"
+      },
+      {
+        "id": "yt_sU9-u5p-jA0",
+        "title": "🎬 2026/06/12 從資料到決策：LSEG 如何擴展值得信賴的 AI",
+        "category": "企業與客戶案例",
+        "text": "<b>LSEG 分享如何以可信資料為基礎，與 OpenAI 合作加速 AI 產品與營運</b><br>▸ <a href=\"https://www.youtube.com/watch?v=sU9-u5p-jA0&t=1s\" target=\"_blank\">00:01</a> 現在能取用的資料量比以往更大，而且可以用非常精準的方式取用<br>▸ <a href=\"https://www.youtube.com/watch?v=sU9-u5p-jA0&t=1s\" target=\"_blank\">00:01</a> LSEG 位於金融市場的核心，角色是為整個生態系提供可信賴的資訊與服務<br>▸ <a href=\"https://www.youtube.com/watch?v=sU9-u5p-jA0&t=1s\" target=\"_blank\">00:01</a> 人們對 AI 的信任，始於對資料的信任<br>▸ <a href=\"https://www.youtube.com/watch?v=sU9-u5p-jA0&t=1s\" target=\"_blank\">00:01</a> LSEG 評估每個產品時，不只看資料的準確度（data accuracy）<br>▸ <a href=\"https://www.youtube.com/watch?v=sU9-u5p-jA0&t=31s\" target=\"_blank\">00:31</a> 也評估回應的 groundedness、模型推理金融資訊的方式、data surplus 與 data fidelity<br>▸ <a href=\"https://www.youtube.com/watch?v=sU9-u5p-jA0&t=31s\" target=\"_blank\">00:31</a> 目標是讓他們打造的資料與分析內容，人類和 AI 都能取用<br>▸ <a href=\"https://www.youtube.com/watch?v=sU9-u5p-jA0&t=31s\" target=\"_blank\">00:31</a> 許多客戶過去花了很多心力，處理這些資料模型的運作方式、如何重新對齊與 rebase，以及如何以可擴展的方式取用<br>▸ <a href=\"https://www.youtube.com/watch?v=sU9-u5p-jA0&t=61s\" target=\"_blank\">01:01</a> 許多 LSEG 客戶也在使用 OpenAI 的 ChatGPT，LSEG 透過 MCP（model context protocol）在 ChatGPT 中提供可信資料與服務<br>▸ <a href=\"https://www.youtube.com/watch?v=sU9-u5p-jA0&t=61s\" target=\"_blank\">01:01</a> OpenAI 是關鍵合作夥伴，雙方密切合作，探索如何加速 LSEG 的營運模式、一起走得更快<br>▸ <a href=\"https://www.youtube.com/watch?v=sU9-u5p-jA0&t=61s\" target=\"_blank\">01:01</a> 現在能更輕鬆地擴展最佳實務，同時落實必要的標準與技能，維持預期的品質水準<br>▸ <a href=\"https://www.youtube.com/watch?v=sU9-u5p-jA0&t=91s\" target=\"_blank\">01:31</a> 分析師的角色可以大幅擴展，有更多機會做更深入的研究，提出過去沒時間做的 orthogonal insights<br>▸ <a href=\"https://www.youtube.com/watch?v=sU9-u5p-jA0&t=91s\" target=\"_blank\">01:31</a> 過去依產品不同，發布週期約三或六個月；現在所有 AI 產品的發布週期縮短為兩週，每兩週發布一次<br>▸ <a href=\"https://www.youtube.com/watch?v=sU9-u5p-jA0&t=122s\" target=\"_blank\">02:02</a> 資訊流動更快，決策流程快很多，迭代也因此全面加速<br>▸ <a href=\"https://www.youtube.com/watch?v=sU9-u5p-jA0&t=122s\" target=\"_blank\">02:02</a> LSEG 有 27,000 名員工共同投入 AI 的力量<br>▸ <a href=\"https://www.youtube.com/watch?v=sU9-u5p-jA0&t=122s\" target=\"_blank\">02:02</a> 目標是以安全、可擴展的方式快速前進，並運用 OpenAI 的前沿能力\n\n📘 術語<br><b>MCP (model context protocol)</b>（模型上下文協定）：LSEG 透過它將可信資料與服務提供給在 ChatGPT 上的客戶<br><b>groundedness</b>（有依據程度）：LSEG 評估 AI 產品回應時檢視的項目之一，字幕未進一步解釋<br><b>data fidelity</b>（資料保真度）：LSEG 評估 AI 產品時檢視的資料面向之一，字幕未進一步解釋<br><b>data accuracy</b>（資料準確度）：LSEG 評估每個產品時的基本面向，但不是唯一的評估項目<br><b>rebase</b>（重新設定基準）：客戶處理資料模型時要做的工作之一，與重新對齊並列，字幕未進一步解釋<br><b>orthogonal insights</b>（不同角度的洞見）：分析師過去沒時間做、現在有更多機會提出的見解<br><b>release cycle</b>（發布週期）：過去約三或六個月，現在 LSEG 的 AI 產品縮短為兩週\n\n📺 <a href=\"https://www.youtube.com/watch?v=sU9-u5p-jA0&t=0s\" target=\"_blank\">From data to decisions: how LSEG is scaling trusted AI</a>（2026/06/12 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，LSEG 現在所有 AI 產品的發布週期是多久？",
+          "options": [
+            "兩週",
+            "六個月",
+            "一個月",
+            "三個月"
+          ],
+          "correct": 0,
+          "why": "[01:31] 過去發布週期約三或六個月，現在所有 AI 產品縮短為兩週，改為每兩週發布一次"
         },
         "status": "full"
       },
@@ -11976,6 +12187,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_t6pyiLyol0Q",
+        "title": "🎬 2026/01/05 BNY Legal 法務團隊使用 OpenAI",
+        "category": "企業與客戶案例",
+        "text": "<b>BNY 法務團隊如何在治理護欄下用 AI 做法律研究與合約審閱</b><br>▸ <a href=\"https://www.youtube.com/watch?v=t6pyiLyol0Q&t=2s\" target=\"_blank\">00:02</a> 處理新的法律問題時，會先用 deep research 做第一輪研究<br>▸ <a href=\"https://www.youtube.com/watch?v=t6pyiLyol0Q&t=2s\" target=\"_blank\">00:02</a> BNY 是受高度監管、在金融市場中居於受信任地位的公司，已有成熟穩健的韌性與風險管理框架<br>▸ <a href=\"https://www.youtube.com/watch?v=t6pyiLyol0Q&t=2s\" target=\"_blank\">00:02</a> 建立治理護欄（governance guardrails），並從設計階段就納入 responsible AI principles，被視為非常重要<br>▸ <a href=\"https://www.youtube.com/watch?v=t6pyiLyol0Q&t=2s\" target=\"_blank\">00:02</a> 公司組成跨部門小組，共同訂出一套基準防護措施（baseline safeguard）<br>▸ <a href=\"https://www.youtube.com/watch?v=t6pyiLyol0Q&t=33s\" target=\"_blank\">00:33</a> 有人把 AI 治理看成阻礙，但他們的實際經驗是 AI 治理能推動 AI 的使用（enabler）<br>▸ <a href=\"https://www.youtube.com/watch?v=t6pyiLyol0Q&t=33s\" target=\"_blank\">00:33</a> 字幕提到一款合約審閱助理（原文為 contract … assistant，部分被音樂蓋過），能幫律師提升審閱的速度、品質和一致性<br>▸ <a href=\"https://www.youtube.com/watch?v=t6pyiLyol0Q&t=33s\" target=\"_blank\">00:33</a> 這款助理讓審閱時間平均減少 75%<br>▸ <a href=\"https://www.youtube.com/watch?v=t6pyiLyol0Q&t=33s\" target=\"_blank\">00:33</a> 受訪者認為 AI 的一大機會在於它能真正成為策略夥伴\n\n📘 術語<br><b>deep research</b>（深度研究）：受訪者遇到新的法律問題時，用它做第一輪研究<br><b>governance guardrails</b>（治理護欄）：受高度監管的公司導入 AI 時要建立的規範，字幕說這點非常重要<br><b>responsible AI principles</b>（負責任 AI 原則）：字幕提到要從設計階段就納入這些原則<br><b>baseline safeguard</b>（基準防護措施）：跨部門小組共同訂出的基本保護機制<br><b>AI governance</b>（AI 治理）：有人把它當阻礙，BNY 的經驗則是它能推動 AI 的使用\n\n📺 <a href=\"https://www.youtube.com/watch?v=t6pyiLyol0Q&t=0s\" target=\"_blank\">BNY Legal uses OpenAI</a>（2026/01/05 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，合約審閱助理平均讓律師的審閱時間減少多少？",
+          "options": [
+            "75%",
+            "50%",
+            "90%",
+            "25%"
+          ],
+          "correct": 0,
+          "why": "[00:33] 字幕說 \"It's helped reduce the time by 75% on average.\""
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_XrEWL98JOIY",
         "title": "🎬 2026/01/05 BNY 業務團隊如何使用 OpenAI",
         "category": "企業與客戶案例",
@@ -12476,6 +12706,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_sp6B1bPC3ss",
+        "title": "🎬 2025/03/04 OpenAI 與 Howard University",
+        "category": "企業與客戶案例",
+        "text": "<b>Howard University 研究中心主任談與 OpenAI 合作，以及館藏數位化帶來的取用公平</b><br>▸ <a href=\"https://www.youtube.com/watch?v=sp6B1bPC3ss&t=3s\" target=\"_blank\">00:03</a> 學術界沒人抱怨時間太多，問題是時間不夠，所以這會是 game changer。<br>▸ <a href=\"https://www.youtube.com/watch?v=sp6B1bPC3ss&t=3s\" target=\"_blank\">00:03</a> 講者 Dr. Benjamin Talton 是 Howard University 的 Moorland-Spingarn Research Center 主任，也是歷史學教授。<br>▸ <a href=\"https://www.youtube.com/watch?v=sp6B1bPC3ss&t=3s\" target=\"_blank\">00:03</a> 大學的工作是規劃未來，而規劃之前必須先知道手上有哪些工具可用。<br>▸ <a href=\"https://www.youtube.com/watch?v=sp6B1bPC3ss&t=34s\" target=\"_blank\">00:34</a> 學生、教職員（faculty and staff）都將可以使用。<br>▸ <a href=\"https://www.youtube.com/watch?v=sp6B1bPC3ss&t=34s\" target=\"_blank\">00:34</a> 接下來要觀察三件事：學生如何用它學習、教授如何用它教學、行政人員如何用它精簡服務流程。<br>▸ <a href=\"https://www.youtube.com/watch?v=sp6B1bPC3ss&t=34s\" target=\"_blank\">00:34</a> Howard 可能擁有全球黑人經驗（global Black experience）相關文件、書籍與 ephemera 的最大收藏。<br>▸ <a href=\"https://www.youtube.com/watch?v=sp6B1bPC3ss&t=34s\" target=\"_blank\">00:34</a> 館藏包含 Alain Locke（Harlem Renaissance 的 Dean）的檔案收藏。<br>▸ <a href=\"https://www.youtube.com/watch?v=sp6B1bPC3ss&t=34s\" target=\"_blank\">00:34</a> 館藏包含迦納首任總統 Kwame Nkrumah 的個人與專業文件。<br>▸ <a href=\"https://www.youtube.com/watch?v=sp6B1bPC3ss&t=64s\" target=\"_blank\">01:04</a> 目前想看 Kwame Nkrumah 的演講，必須親自到 Howard University。<br>▸ <a href=\"https://www.youtube.com/watch?v=sp6B1bPC3ss&t=64s\" target=\"_blank\">01:04</a> 希望透過數位化創造更公平的取用：迦納的學生不應該非得來 Howard 才能看到 Nkrumah 的文件。<br>▸ <a href=\"https://www.youtube.com/watch?v=sp6B1bPC3ss&t=64s\" target=\"_blank\">01:04</a> 講者認為 OpenAI 擁有能帶他們向前邁進的技術，並期待這項合作在短期與長期的發展。\n\n📘 術語<br><b>digitization</b>（數位化）：字幕說希望藉由數位化創造更公平的取用，讓人不必親自到 Howard 查看文件。<br><b>archival collections</b>（檔案收藏）：字幕舉例 Howard 擁有 Alain Locke 的檔案收藏。<br><b>ephemera</b>（短期性印刷品／零散文物）：字幕未解釋，只和文件、書籍並列為館藏的一種。<br><b>Moorland-Spingarn Research Center</b>（Moorland-Spingarn 研究中心）：Howard University 的研究中心，由講者 Dr. Benjamin Talton 擔任主任。\n\n📺 <a href=\"https://www.youtube.com/watch?v=sp6B1bPC3ss&t=0s\" target=\"_blank\">OpenAI &amp; Howard University</a>（2025/03/04 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，Howard University 館藏中的 Kwame Nkrumah 是什麼身分？",
+          "options": [
+            "Harlem Renaissance 的 Dean",
+            "Howard University 歷史學教授",
+            "迦納首任總統",
+            "Moorland-Spingarn Research Center 主任"
+          ],
+          "correct": 2,
+          "why": "[00:34] 講者說館藏有 Kwame Nkrumah 的個人與專業文件，並稱他為 First President of Ghana。"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_rOT4fwKFrlo",
         "title": "🎬 2025/03/04 OpenAI 與 Harvard University",
         "category": "企業與客戶案例",
@@ -12890,6 +13139,25 @@ const CURRICULUM = {
           ],
           "correct": 2,
           "why": "[00:03] 字幕說 Royal Standard 旗在 Buckingham Palace 上方飄揚，是君主在場的訊號"
+        },
+        "status": "full"
+      },
+      {
+        "id": "yt_t3UHnKLVS1M",
+        "title": "🎬 2024/04/24 Moderna 與 OpenAI 合作，加速開發救命療法",
+        "category": "企業與客戶案例",
+        "text": "<b>Moderna 用 ChatGPT Enterprise 與自建 GPTs 改造各部門流程、擴大對病患的影響</b><br>▸ <a href=\"https://www.youtube.com/watch?v=t3UHnKLVS1M&t=12s\" target=\"_blank\">00:12</a> Moderna 深信 ChatGPT 與 OpenAI 正在做的事會改變世界<br>▸ <a href=\"https://www.youtube.com/watch?v=t3UHnKLVS1M&t=12s\" target=\"_blank\">00:12</a> 公司正檢視 legal、research、manufacturing、commercial 等每個業務流程，思考如何用 ChatGPT 類工具重新設計<br>▸ <a href=\"https://www.youtube.com/watch?v=t3UHnKLVS1M&t=12s\" target=\"_blank\">00:12</a> 90% 的公司想導入生成式 AI，但只有 10% 成功，原因是沒有建立讓員工真正採用新技術與新能力的機制<br>▸ <a href=\"https://www.youtube.com/watch?v=t3UHnKLVS1M&t=42s\" target=\"_blank\">00:42</a> Moderna 自認生來就是 platform company，也把藥物開發當作一個 platform 來思考<br>▸ <a href=\"https://www.youtube.com/watch?v=t3UHnKLVS1M&t=42s\" target=\"_blank\">00:42</a> 導入 Enterprise ChatGPT 後，GPTs 被嵌入使用者實際的工作流程中<br>▸ <a href=\"https://www.youtube.com/watch?v=t3UHnKLVS1M&t=42s\" target=\"_blank\">00:42</a> 2 個月內已累積 400 個 GPTs，遠超過原本預期<br>▸ <a href=\"https://www.youtube.com/watch?v=t3UHnKLVS1M&t=42s\" target=\"_blank\">00:42</a> 可能出乎意料的是，legal 部門是公司第一個全面採用 ChatGPT 的部門<br>▸ <a href=\"https://www.youtube.com/watch?v=t3UHnKLVS1M&t=42s\" target=\"_blank\">00:42</a> 公司內 ChatGPT 與其他生成式 AI 大型語言模型的採用率達 100%<br>▸ <a href=\"https://www.youtube.com/watch?v=t3UHnKLVS1M&t=72s\" target=\"_blank\">01:12</a> 最受期待的 GPT 之一是 Contract Companion：上傳合約後可要求快速的高層次摘要，或提出具體問題<br>▸ <a href=\"https://www.youtube.com/watch?v=t3UHnKLVS1M&t=72s\" target=\"_blank\">01:12</a> Contract Companion 讓 legal 部門把時間與注意力放在真正對病患有影響的事務上，以達成公司使命<br>▸ <a href=\"https://www.youtube.com/watch?v=t3UHnKLVS1M&t=72s\" target=\"_blank\">01:12</a> Dose ID GPT 可以把數千頁的大型資料集輸入到 GPT 中<br>▸ <a href=\"https://www.youtube.com/watch?v=t3UHnKLVS1M&t=102s\" target=\"_blank\">01:42</a> Dose ID GPT 能從數千頁資料中給出最佳劑量建議，並提供為何選這個劑量而非其他劑量的支持理由<br>▸ <a href=\"https://www.youtube.com/watch?v=t3UHnKLVS1M&t=102s\" target=\"_blank\">01:42</a> Dose ID GPT 能建立客製化視覺化圖表，幫助真正理解資料<br>▸ <a href=\"https://www.youtube.com/watch?v=t3UHnKLVS1M&t=102s\" target=\"_blank\">01:42</a> 研究團隊成員可以和 Dose ID GPT 對話，從多個不同角度分析資料<br>▸ <a href=\"https://www.youtube.com/watch?v=t3UHnKLVS1M&t=132s\" target=\"_blank\">02:12</a> Moderna 未來 5 年要推出 15 項產品；若用傳統生技製藥方式可能需要 10 萬人，目前公司不到 6,000 人<br>▸ <a href=\"https://www.youtube.com/watch?v=t3UHnKLVS1M&t=132s\" target=\"_blank\">02:12</a> 公司相信靠技術與 AI，用幾千人就能擴大規模、把對病患的影響最大化<br>▸ <a href=\"https://www.youtube.com/watch?v=t3UHnKLVS1M&t=132s\" target=\"_blank\">02:12</a> 感謝 OpenAI 團隊投入的時間與合作，希望一起拯救更多生命\n\n📘 術語<br><b>generative AI</b>（生成式 AI）：字幕未解釋；提到 90% 公司想導入但只有 10% 成功<br><b>large language models</b>（大型語言模型）：字幕未解釋；與 ChatGPT 並列，公司內採用率達 100%<br><b>GPTs</b>（GPTs（自訂 GPT））：字幕未定義；描述為嵌入工作流程的工具，例如可上傳合約或資料集來分析<br><b>Enterprise ChatGPT</b>（企業版 ChatGPT）：字幕未解釋；導入後 GPTs 被嵌入使用者的工作流程<br><b>platform company</b>（平台型公司）：字幕未解釋；Moderna 自稱生來就是平台型公司，並把藥物開發視為平台<br><b>adoption rate</b>（採用率）：字幕未解釋；提到公司內 ChatGPT 等工具採用率達 100%<br><b>dose recommendation</b>（劑量建議）：Dose ID GPT 從數千頁資料中給出的最佳劑量建議，並附支持理由\n\n📺 <a href=\"https://www.youtube.com/watch?v=t3UHnKLVS1M&t=0s\" target=\"_blank\">Moderna partners with OpenAI to accelerate the development of life-saving treatments</a>（2024/04/24 · 2 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "根據影片，Moderna 在導入 Enterprise ChatGPT 後，2 個月內累積了多少個 GPTs？",
+          "options": [
+            "6,000 個",
+            "400 個",
+            "4,000 個",
+            "40 個"
+          ],
+          "correct": 1,
+          "why": "[00:42] 字幕提到 we're up to now 400 gpts within 2 months，且遠超過原本預期"
         },
         "status": "full"
       },
@@ -14463,6 +14731,25 @@ const CURRICULUM = {
           ],
           "correct": 3,
           "why": "[00:34] 敘事者說「I started dropping small colorful balloons into the air and it worked」"
+        },
+        "status": "full"
+      },
+      {
+        "id": "yt_tC2ZELc4bOA",
+        "title": "🎬 2024/12/09 如何用 Sora 進行 remix",
+        "category": "創作與人文",
+        "text": "<b>示範用 Sora 的 remix 以自然語言修改既有影片，並依改動大小選擇強度</b><br>▸ <a href=\"https://www.youtube.com/watch?v=tC2ZELc4bOA&t=2s\" target=\"_blank\">00:02</a> Remix 是一個迭代工具，可以用自然語言在既有影片中新增、移除或編輯物件<br>▸ <a href=\"https://www.youtube.com/watch?v=tC2ZELc4bOA&t=2s\" target=\"_blank\">00:02</a> 範例影片是一段 wide shot，拍的是海岸邊的一棟 brutalist 住宅。講者想看看換成 mid-century 住宅會是什麼樣子<br>▸ <a href=\"https://www.youtube.com/watch?v=tC2ZELc4bOA&t=2s\" target=\"_blank\">00:02</a> 點選 remix 會開啟 remix editor，只要描述想在影片中看到的改變即可<br>▸ <a href=\"https://www.youtube.com/watch?v=tC2ZELc4bOA&t=2s\" target=\"_blank\">00:02</a> 範例指令：「replace the cement building with a mid-century home」（把水泥建築換成 mid-century 住宅）<br>▸ <a href=\"https://www.youtube.com/watch?v=tC2ZELc4bOA&t=34s\" target=\"_blank\">00:34</a> 這次改動幅度很大，所以 remix strength 選 strong 比較合理<br>▸ <a href=\"https://www.youtube.com/watch?v=tC2ZELc4bOA&t=34s\" target=\"_blank\">00:34</a> 如果只是想加幾棵樹，可以用 mild，會保留較多原始影片的內容<br>▸ <a href=\"https://www.youtube.com/watch?v=tC2ZELc4bOA&t=34s\" target=\"_blank\">00:34</a> 如果改動更小，例如只移除建築的窗戶，可以用 subtle<br>▸ <a href=\"https://www.youtube.com/watch?v=tC2ZELc4bOA&t=34s\" target=\"_blank\">00:34</a> 範例最後維持 strong，按下 remix 產生結果<br>▸ <a href=\"https://www.youtube.com/watch?v=tC2ZELc4bOA&t=34s\" target=\"_blank\">00:34</a> 結果保留了原影片的鏡頭運動和場景，並把 brutalist 建築換成海岸邊的 mid-century 住宅\n\n📘 術語<br><b>remix</b>（重混／重新改編）：一個迭代工具，可以用自然語言在既有影片中新增、移除或編輯物件<br><b>remix editor</b>（remix 編輯器）：點選 remix 後開啟的介面，在這裡描述想在影片中看到的改變<br><b>remix strength</b>（remix 強度）：依改動大小選擇的設定，字幕提到 strong、mild、subtle 三種<br><b>strong</b>（強）：適合大幅度的改動，例如把整棟建築換成另一種風格的住宅<br><b>mild</b>（中等／溫和）：適合加幾棵樹之類的改動，會保留較多原始影片<br><b>subtle</b>（細微）：適合更小的改動，例如只移除建築的窗戶<br><b>brutalist</b>（粗獷主義（建築風格））：字幕沒有解釋，只用來描述範例影片中海岸邊的水泥建築<br><b>mid-century</b>（世紀中期（建築風格））：字幕沒有解釋，是範例中想把原建築替換成的住宅風格<br><b>wide shot</b>（廣角鏡頭／遠景）：字幕沒有解釋，只用來描述範例影片的畫面\n\n📺 <a href=\"https://www.youtube.com/watch?v=tC2ZELc4bOA&t=0s\" target=\"_blank\">How to remix with Sora</a>（2024/12/09 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "依影片說明，如果只想移除建築物的窗戶這種很小的改動，應該選哪一種 remix strength？",
+          "options": [
+            "subtle",
+            "mild",
+            "strong",
+            "不需設定強度，直接描述即可"
+          ],
+          "correct": 0,
+          "why": "[00:34] 講者說若要做更小的改動，例如只移除建築的窗戶，可以用 subtle"
         },
         "status": "full"
       },
