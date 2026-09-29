@@ -14215,6 +14215,25 @@ const CURRICULUM = {
         "status": "full"
       },
       {
+        "id": "yt_qnXfZ_cQgEU",
+        "title": "🎬 2024/10/23 Dreams · Wayne Price 與 IN-Q 以 Sora 創作",
+        "category": "創作與人文",
+        "text": "<b>一首以「想成為飛機的鳥」為主角的詩，講渴望、嫉妒與夢想</b><br>▸ <a href=\"https://www.youtube.com/watch?v=qnXfZ_cQgEU&t=5s\" target=\"_blank\">00:05</a> 敘述者是一隻想成為飛機的鳥。牠知道這聽起來很瘋狂，但認為每個生命都值得擁有夢想<br>▸ <a href=\"https://www.youtube.com/watch?v=qnXfZ_cQgEU&t=5s\" target=\"_blank\">00:05</a> 牠在跑道旁看著飛機起飛，一邊詛咒自己長著羽毛的翅膀<br>▸ <a href=\"https://www.youtube.com/watch?v=qnXfZ_cQgEU&t=5s\" target=\"_blank\">00:05</a> 牠嫉妒這些「巨大的金屬之王」：引擎會唱歌，能離地飄浮，還會留下煙雲和閃著虹彩的尾跡<br>▸ <a href=\"https://www.youtube.com/watch?v=qnXfZ_cQgEU&t=37s\" target=\"_blank\">00:37</a> 牠試著跟隨飛機，希望它們帶路，但飛機沒注意到牠，牠也跟不上它們的速度<br>▸ <a href=\"https://www.youtube.com/watch?v=qnXfZ_cQgEU&t=37s\" target=\"_blank\">00:37</a> 牠總是卡在半路上。飛機的尾跡消散在空中時，牠難以呼吸<br>▸ <a href=\"https://www.youtube.com/watch?v=qnXfZ_cQgEU&t=37s\" target=\"_blank\">00:37</a> 牠很希望能加入飛機的隊伍，心碎全寫在臉上。牠張嘴喊叫，但飛機太遠，聽不到<br>▸ <a href=\"https://www.youtube.com/watch?v=qnXfZ_cQgEU&t=37s\" target=\"_blank\">00:37</a> 在飛機眼中，牠只是「鳥飼料」，因為它們不懂牠想達成的志向<br>▸ <a href=\"https://www.youtube.com/watch?v=qnXfZ_cQgEU&t=67s\" target=\"_blank\">01:07</a> 牠想要的不只是漂亮的池塘和輕輕搖曳的蘆葦<br>▸ <a href=\"https://www.youtube.com/watch?v=qnXfZ_cQgEU&t=67s\" target=\"_blank\">01:07</a> 牠想親吻月亮、穿過無垠海面上的雨雲、彎折微風。牠覺得只要永遠自由，自然元素都無關緊要<br>▸ <a href=\"https://www.youtube.com/watch?v=qnXfZ_cQgEU&t=67s\" target=\"_blank\">01:07</a> 但現實是，牠終究只是牠自己<br>▸ <a href=\"https://www.youtube.com/watch?v=qnXfZ_cQgEU&t=67s\" target=\"_blank\">01:07</a> 結尾轉折：更荒謬的是，牠聽說某處有一架想成為鳥的飛機\n\n📺 <a href=\"https://www.youtube.com/watch?v=qnXfZ_cQgEU&t=0s\" target=\"_blank\">Dreams · Made by Wayne Price and IN-Q with Sora</a>（2024/10/23 · 1 分鐘）",
+        "tip": "💡 點時間碼會跳到原片那一秒；每條重點都對過字幕。",
+        "quiz": {
+          "q": "詩的結尾，敘述者說牠聽說在某處有什麼？",
+          "options": [
+            "一架想成為鳥的飛機",
+            "一架想登上月球的飛機",
+            "一群願意讓鳥加入的飛機",
+            "一隻想成為月亮的鳥"
+          ],
+          "correct": 0,
+          "why": "[01:07]–[01:39]：「I heard that somewhere there's a plane that wants to be a bird」"
+        },
+        "status": "full"
+      },
+      {
         "id": "yt_S_ZcwhTXm1c",
         "title": "🎬 2024/09/09 David Sheldrick · Sora 作品展示",
         "category": "創作與人文",
