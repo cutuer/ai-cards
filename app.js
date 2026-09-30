@@ -21013,6 +21013,25 @@ const CURRICULUM = {
     "badge": "官方字幕實證",
     "lessons": [
       {
+        "id": "yt_3gNg7NdoPIk",
+        "title": "🎬 2026/09/29 Odyssey 前導片：Wonder Studios 與 Grok Imagine 聯合呈現",
+        "category": "其他",
+        "text": "<b>敘事短片：異鄉人在王宮請求歸鄉，自述戰後漂泊，最後表明自己是 Odysseus</b><br><span style=\"color:var(--text-muted);font-size:14px\">🧑‍🏫 白話（Claude 補充，不是影片原話）：這是 Wonder Studios 和 Grok Imagine 合作的一支敘事短片。Grok Imagine 是 xAI 旗下 Grok 的影像生成功能。片名的 Pilot 意思是「先導片」，也就是正式推出前先拍來試水溫的第一集。故事改編自希臘史詩《奧德賽》：一個流浪的陌生人在王宮講自己打完仗卻回不了家的經過，最後才說出自己是誰。這支值得看，因為它示範了 AI 影像工具怎麼拿來講一個有起伏、有情緒的完整故事，不只是生出漂亮畫面。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=3gNg7NdoPIk&t=0s\" target=\"_blank\">00:00</a> 開場旁白：黑色船隊在異國海岸等了十年，父親們埋葬了兒子，兒子們在戰爭中老去<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 開場只用兩句話交代戰爭有多長、多殘酷：船在別人的海岸一等就是十年。老一輩親手埋了年輕人，年輕人也在戰場上熬成了中年。重點在時間被戰爭吃掉。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=3gNg7NdoPIk&t=53s\" target=\"_blank\">00:53</a> 月光下出現木馬，Trojans 打開城門迎它進城，也迎來自己的毀滅<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Trojans 是特洛伊人，也就是被圍城的那一方。他們以為木馬是對方留下的禮物，自己開門把它拉進城，結果裡面藏著敵人，城就這樣破了。戰爭也在這裡結束。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=3gNg7NdoPIk&t=53s\" target=\"_blank\">00:53</a> 宴席上眾人感謝統治天地的 Zeus，並舉杯向國王致敬<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ Zeus 是希臘神話裡的眾神之王，管天也管地。畫面切到宴會，大家先謝神、再敬國王，呈現一個安穩、有秩序的王宮，跟前面的戰場形成強烈對比。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=3gNg7NdoPIk&t=92s\" target=\"_blank\">01:32</a> 一名自稱歷經磨難的異鄉人來到國王與王后面前，請求讓他通行、再見故鄉<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 一個陌生人走進王宮，沒報上名字，只說自己吃了很多苦。他請國王和王后讓他通行、讓他回家。他開口要的只有「回家」，不是錢，也不是地位。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=3gNg7NdoPIk&t=132s\" target=\"_blank\">02:12</a> 國王表示不能讓異鄉人在爐火旁沒受到款待，命人給他座位、酒與食物，並問他的名字與來處<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 國王先招待，再問話：給他座位、倒酒、端上食物，最後才問他叫什麼、從哪裡來。古希臘很看重款待陌生人，這一幕也讓故事自然轉到他的自述。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=3gNg7NdoPIk&t=132s\" target=\"_blank\">02:12</a> 異鄉人說他為一場以為會結束的戰爭離家，十年後才轉身回家<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 他說當年出門，以為這場仗很快就會打完，沒想到一拖就是十年，打完才終於轉身回家。這講的是一種常見的落差：以為只是暫時的事，最後卻占掉大半人生。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=3gNg7NdoPIk&t=168s\" target=\"_blank\">02:48</a> 他們以為能渡海回家，卻每到一處海岸都離家更遠，他開始用身邊逝去同伴的臉來丈量歸途<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 他本來以為坐船回去就好，結果每靠一次岸，就離家更遠。他後來不再用路程算距離，而是看身邊又少了誰。回家的路，是用同伴的命一段一段換來的。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=3gNg7NdoPIk&t=168s\" target=\"_blank\">02:48</a> 有些地方讓他們忘了回家的路，有些地方則讓他記起失去家的意義<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 有些地方舒服到讓人不想走，連要回家都忘了。有些地方苦到讓他重新想起，沒有家是什麼滋味。這趟旅程一邊誘惑他放棄，一邊提醒他為什麼要撐下去。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=3gNg7NdoPIk&t=198s\" target=\"_blank\">03:18</a> 越過每一片海，始終有一張臉是他不願讓它變成回憶的<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 不管漂到哪片海，他心裡一直有一張臉，他拚命不讓它只剩回憶。影片沒說那是誰，但意思很清楚：支撐他一路回家的，是一個他還想再見到的人。</span><br>▸ <a href=\"https://www.youtube.com/watch?v=3gNg7NdoPIk&t=229s\" target=\"_blank\">03:49</a> 最後他表明身分：故鄉是 Ithaca，名字是 Odysseus<br><span style=\"color:var(--text-muted);font-size:14px\">　↳ 最後他才揭曉身分：他叫 Odysseus（奧德修斯），故鄉是 Ithaca（伊薩卡，希臘的一座島）。前面那些漂泊經歷全是他的，這也是荷馬史詩《奧德賽》的主角。</span>\n\n📘 術語<br><b>Trojans</b>（特洛伊人）：字幕中打開城門迎入木馬、因此迎來毀滅的一方<br><b>Zeus</b>（宙斯）：字幕稱祂為全能之神，其手統治大地與天空<br><b>Ithaca</b>（伊薩卡）：Odysseus 自述的故鄉\n\n📺 <a href=\"https://www.youtube.com/watch?v=3gNg7NdoPIk&t=0s\" target=\"_blank\">Odyssey Pilot featuring Wonder Studios and Grok Imagine</a>（2026/09/29 · 4 分鐘）",
+        "tip": "💡 你可以怎麼用：自己用 AI 做短影片時，可以照這支的結構來：先用兩三句旁白交代背景，再讓一個角色開口講自己的故事，名字留到最後才揭曉。這樣比單純堆漂亮畫面更能讓人看到最後。",
+        "quiz": {
+          "q": "片中異鄉人最後說他的故鄉是哪裡？",
+          "options": [
+            "Ithaca",
+            "Sparta",
+            "Athens",
+            "Troy"
+          ],
+          "correct": 0,
+          "why": "[03:49] 他說 \"my home is ithaca my name is odysseus\""
+        },
+        "status": "full"
+      },
+      {
         "id": "yt__Prvw5G-gEc_p1",
         "title": "🎬 2026/09/18 Grok Bot Galaxy 第三天（第 1/40 段）",
         "category": "其他",
