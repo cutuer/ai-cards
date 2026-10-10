@@ -84,8 +84,8 @@ function exportText() {
     out.push("", "【答錯的題】");
     o.wrong.forEach((id, i) => {
       const f = findLesson(id), q = f.lesson.quiz, w = state.wrongLog[id];
-      out.push(`${i + 1}. 《${plain(f.lesson.title)}》（${f.lvl.name.split("・")[0]}）`,
-        `   題目：${plain(q.q)}`, `   我選：${plain(q.options[w.picked] || "")}`, `   正確：${plain(q.options[q.correct])}`);
+      out.push(`${i + 1}. 《${plain(f.lesson.title)}》（${f.lvl.name.split("・")[0]}）`);
+      if (q) out.push(`   題目：${plain(q.q)}`, `   我選：${plain(q.options[w.picked] || "")}`, `   正確：${plain(q.options[q.correct])}`);
       if (w.times > 1) out.push(`   錯了 ${w.times} 次`);
       if (vidOf(id)) out.push(`   影片：https://www.youtube.com/watch?v=${vidOf(id)}`);
     });
@@ -171,9 +171,14 @@ function renderNotebook() {
 }
 const notebookEl = document.getElementById("notebookDrawer");
 function openNotebook() {
-  renderNotebook();
   drawerBackdropEl.classList.add("show");
   notebookEl.classList.add("show");
+  // 答錯的題要題目原文 → 那幾冊還沒下載就先載（課本拆冊後每冊點到才載）
+  const list = document.getElementById("notebookList");
+  list.innerHTML = '<div class="nb-empty">📖 載入中…</div>';
+  ensureLessons(Object.keys(state.wrongLog)).then(renderNotebook, () => {
+    list.innerHTML = '<div class="nb-empty">網路不穩，筆記本沒載到，關掉再開一次</div>';
+  });
 }
 function closeNotebook() {
   notebookEl.classList.remove("show");
@@ -246,7 +251,7 @@ document.getElementById("markSaveBtn").onclick = () => {
 // 這功能上線前就答錯的題（只存在 answered 裡）→ 補進答錯紀錄
 for (const [id, picked] of Object.entries(state.answered)) {
   const f = findLesson(id);
-  if (f && picked !== f.lesson.quiz.correct && !state.wrongLog[id]) state.wrongLog[id] = { picked, ts: 0, times: 1, done: false };
+  if (f && f.lesson.quiz && picked !== f.lesson.quiz.correct && !state.wrongLog[id]) state.wrongLog[id] = { picked, ts: 0, times: 1, done: false };
 }
 saveState();
 
