@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>使用 Claude 時的資料保留機制說明｜繁中重點＋時間戳</title>
+<meta name="description" content="說明從 Claude Fable 5 起為安全監控保留 30 天資料，以及新方案 Enterprise Frontier Safeguards">
+<link rel="canonical" href="https://ai-cards.pages.dev/lesson/yt_PQGxYvkMobQ/">
+<meta property="og:type" content="article"><meta property="og:url" content="https://ai-cards.pages.dev/lesson/yt_PQGxYvkMobQ/">
+<meta property="og:title" content="使用 Claude 時的資料保留機制說明｜繁中重點"><meta property="og:description" content="說明從 Claude Fable 5 起為安全監控保留 30 天資料，以及新方案 Enterprise Frontier Safeguards">
+<meta property="og:image" content="https://i.ytimg.com/vi/PQGxYvkMobQ/hqdefault.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>:root{--bg:#fbfaf7;--card:#fff;--text:#22201c;--mut:#6b665d;--line:#e6e1d8;--acc:#c2410c}
+@media (prefers-color-scheme:dark){:root{--bg:#17161a;--card:#211f25;--text:#ece9e3;--mut:#a39d93;--line:#34313a;--acc:#fb923c}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:17px/1.7 -apple-system,"PingFang TC","Noto Sans TC",sans-serif}
+main{max-width:680px;margin:0 auto;padding:20px 16px 48px}
+.crumb{font-size:14px;color:var(--mut)}.crumb a{color:var(--mut)}
+h1{font-size:24px;line-height:1.35;margin:8px 0 4px}.meta{color:var(--mut);font-size:14px;margin-bottom:16px}
+.one{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:10px;padding:12px 14px;font-weight:600}
+ul{padding-left:0;list-style:none;margin:16px 0}li{padding:8px 0;border-bottom:1px solid var(--line)}
+li a{color:var(--acc);font-variant-numeric:tabular-nums;margin-right:6px;text-decoration:none;font-weight:600}
+.plain{color:var(--mut);font-size:15px;margin-top:2px}
+.tip{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:15px}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:12px 0}
+summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--mut);font-size:15px}
+.opt{display:block;padding:6px 0}.ans{margin-top:8px;font-size:15px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.btns a{flex:1;min-width:140px;text-align:center;padding:12px;border-radius:10px;text-decoration:none;font-weight:600;border:1px solid var(--line);color:var(--text);background:var(--card)}
+.btns a.main{background:var(--acc);border-color:var(--acc);color:#fff}
+.list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
+.list small{color:var(--mut)}
+.support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
+</style></head><body><main>
+<div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/yt_research/">📺 研究與安全</a></div>
+<h1>使用 Claude 時的資料保留機制說明</h1>
+<div class="meta">2026/09/14 · 2 分鐘 · 官方字幕實證</div>
+<div class="one">說明從 Claude Fable 5 起為安全監控保留 30 天資料，以及新方案 Enterprise Frontier Safeguards</div>
+<ul><li><a href="https://www.youtube.com/watch?v=PQGxYvkMobQ&t=0s" target="_blank" rel="noopener">00:00</a> Mythos 等級的模型（如 Claude Fable 5.1）能力大幅提升，也可能被濫用，從詐騙到複雜的網路攻擊都有。最進階的濫用會分散在多個 session 和帳號，只看單次互動很難發現，所以需要把資料保存一段夠長的時間。</li><li><a href="https://www.youtube.com/watch?v=PQGxYvkMobQ&t=62s" target="_blank" rel="noopener">01:02</a> 人工審查只在少數情況下發生，例如自動安全系統把內容標記為可能有害，而且只由一小群核准的審查人員進行。每次存取都會記錄在防竄改的 log 裡。</li><li><a href="https://www.youtube.com/watch?v=PQGxYvkMobQ&t=92s" target="_blank" rel="noopener">01:32</a> 符合資格的組織可以把監控用資料存在自己的雲端基礎架構，並使用自己的加密金鑰、存取政策和稽核紀錄。偵測到異常時，警示會直接送給組織團隊，不需要 Anthropic 人工審查。</li></ul>
+<div class="tip">💡 你可以怎麼用：用 Fable 5 以後的模型時，要記得你貼進去的內容會另外保留 30 天做安全檢查，機密或個資貼之前先想一下。在公司用的話，可以問 IT：我們是否符合資格、有沒有申請零資料保留或 Enterprise Frontier Safeguards，還有公司的對話紀錄保留幾天。</div>
+<details><summary>看全部 6 條重點</summary><p class="intro">🧑‍🏫 這支影片在講：從 Claude Fable 5 開始，你跟 Claude 的對話會為了安全因素多保留 30 天，以及這些資料由誰看、怎麼保護。如果你在公司用 Claude 處理客戶資料或內部文件，這支影片告訴你資料去了哪裡、誰碰得到，也介紹了企業可以自己保管這些資料的新方案。</p><ul><li><a href="https://www.youtube.com/watch?v=PQGxYvkMobQ&t=0s" target="_blank" rel="noopener">00:00</a> Mythos 等級的模型（如 Claude Fable 5.1）能力大幅提升，也可能被濫用，從詐騙到複雜的網路攻擊都有。最進階的濫用會分散在多個 session 和帳號，只看單次互動很難發現，所以需要把資料保存一段夠長的時間。<div class="plain">↳ Mythos 等級是影片對最強一級模型的稱呼，模型越強，越可能被拿去做壞事。高手會把壞事拆散到多個 session（一次完整的使用過程）和多個帳號，單看一次看不出來，要留一段時間的資料才拼得出全貌。</div></li><li><a href="https://www.youtube.com/watch?v=PQGxYvkMobQ&t=31s" target="_blank" rel="noopener">00:31</a> 未經明確許可，Anthropic 不會用企業資料訓練模型。預設情況下，Anthropic 人員都無法讀取監控用的資料。<div class="plain">↳ 簡單說：公司的資料，沒有明確同意，Anthropic 不會拿去訓練模型（訓練就是讓 AI 從資料裡學習）。這 30 天的監控資料，預設連 Anthropic 的員工都打不開。</div></li><li><a href="https://www.youtube.com/watch?v=PQGxYvkMobQ&t=62s" target="_blank" rel="noopener">01:02</a> 人工審查只在少數情況下發生，例如自動安全系統把內容標記為可能有害，而且只由一小群核准的審查人員進行。每次存取都會記錄在防竄改的 log 裡。<div class="plain">↳ 只有自動系統判斷內容可能有害時，才可能有人工查看，而且只有少數核准過的審查員能看。每次查看都會寫進防竄改的 log（系統操作紀錄），事後改不掉，誰看過都查得到。</div></li><li><a href="https://www.youtube.com/watch?v=PQGxYvkMobQ&t=62s" target="_blank" rel="noopener">01:02</a> 新方案 Enterprise Frontier Safeguards 結合零資料保留（zero data retention）的隱私與偵測濫用的防護機制，由 Anthropic 與超過一百家客戶共同開發。<div class="plain">↳ Enterprise Frontier Safeguards 是給企業的新方案。zero data retention（零資料保留）一般是指服務商處理完就不保留你的資料；新方案想同時做到這種隱私和抓濫用，是和一百多家客戶一起開發的。</div></li><li><a href="https://www.youtube.com/watch?v=PQGxYvkMobQ&t=92s" target="_blank" rel="noopener">01:32</a> 符合資格的組織可以把監控用資料存在自己的雲端基礎架構，並使用自己的加密金鑰、存取政策和稽核紀錄。偵測到異常時，警示會直接送給組織團隊，不需要 Anthropic 人工審查。<div class="plain">↳ 符合資格的公司可以把監控資料放在自己的雲端，用自己的加密金鑰（解開資料的鑰匙），自己決定誰能看，也自己留稽核紀錄。發現異常時，警示直接通知公司自己的團隊，不用經過 Anthropic 的人。</div></li><li><a href="https://www.youtube.com/watch?v=PQGxYvkMobQ&t=92s" target="_blank" rel="noopener">01:32</a> Enterprise Frontier Safeguards 會從今年秋天稍晚開始分階段推出。在它準備好之前，符合資格的組織在 Claude Fable 5 和 Fable 5.1 上可以享有零資料保留。<div class="plain">↳ 新方案從今年秋天稍晚開始分批上線。在那之前有個過渡辦法：符合資格的組織用 Fable 5 和 Fable 5.1 時，可以先享有零資料保留。</div></li></ul></details>
+<details><summary>📘 術語</summary><div class="terms"><b>safety monitoring</b>（安全監控）：保存最近 30 天的 prompts 和輸出，由自動化系統分析有沒有嚴重濫用的跡象<br><b>zero data retention</b>（零資料保留）：字幕沒有定義它。只提到新方案結合了它的隱私保障，過渡期間符合資格的組織也可以使用<br><b>Enterprise Frontier Safeguards</b>（企業前沿防護方案）：讓符合資格的組織把監控資料存在自己的雲端，警示直接送給自家團隊<br><b>tamper-proof log</b>（防竄改紀錄）：任何人工存取監控資料的行為都會記錄在裡面</div></details>
+<details><summary>✏️ 小考一題</summary><p>從 Claude Fable 5 開始，為了安全監控會保存多久的 prompts 和 Claude 的輸出？</p><span class="opt">A. 最近一年</span><span class="opt">B. 最近 90 天</span><span class="opt">C. 最近 30 天</span><span class="opt">D. 最近 7 天</span><details><summary>看答案</summary><div class="ans">答案：C。字幕 [00:31] 說 &quot;the last thirty days of prompts and Claude&#39;s outputs are stored for safety monitoring&quot;。</div></details></details>
+<div class="btns"><a class="main" href="https://www.youtube.com/watch?v=PQGxYvkMobQ&amp;t=0s" target="_blank" rel="noopener">📺 看原片</a><a href="/?l=yt_PQGxYvkMobQ">📚 在課本 App 讀</a></div>
+<details class="support"><summary>💛 覺得有幫助？支持一下</summary><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>課本免費、沒有廣告，支持與否都能照常讀 🐰</div></details>
+<p class="meta" style="margin-top:24px">重點整理自 YouTube 影片字幕，每條附時間碼可跳回原片；🧑‍🏫／↳ 是 Claude 補充的白話，不是影片原話。</p>
+</main></body></html>

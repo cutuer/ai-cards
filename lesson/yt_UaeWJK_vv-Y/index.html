@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>介紹 Agent Plugins｜繁中重點＋時間戳</title>
+<meta name="description" content="多家公司合作推出開放、不綁定廠商的 agent 擴充功能打包格式 Agent Plugins">
+<link rel="canonical" href="https://ai-cards.pages.dev/lesson/yt_UaeWJK_vv-Y/">
+<meta property="og:type" content="article"><meta property="og:url" content="https://ai-cards.pages.dev/lesson/yt_UaeWJK_vv-Y/">
+<meta property="og:title" content="介紹 Agent Plugins｜繁中重點"><meta property="og:description" content="多家公司合作推出開放、不綁定廠商的 agent 擴充功能打包格式 Agent Plugins">
+<meta property="og:image" content="https://i.ytimg.com/vi/UaeWJK_vv-Y/hqdefault.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>:root{--bg:#fbfaf7;--card:#fff;--text:#22201c;--mut:#6b665d;--line:#e6e1d8;--acc:#c2410c}
+@media (prefers-color-scheme:dark){:root{--bg:#17161a;--card:#211f25;--text:#ece9e3;--mut:#a39d93;--line:#34313a;--acc:#fb923c}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:17px/1.7 -apple-system,"PingFang TC","Noto Sans TC",sans-serif}
+main{max-width:680px;margin:0 auto;padding:20px 16px 48px}
+.crumb{font-size:14px;color:var(--mut)}.crumb a{color:var(--mut)}
+h1{font-size:24px;line-height:1.35;margin:8px 0 4px}.meta{color:var(--mut);font-size:14px;margin-bottom:16px}
+.one{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:10px;padding:12px 14px;font-weight:600}
+ul{padding-left:0;list-style:none;margin:16px 0}li{padding:8px 0;border-bottom:1px solid var(--line)}
+li a{color:var(--acc);font-variant-numeric:tabular-nums;margin-right:6px;text-decoration:none;font-weight:600}
+.plain{color:var(--mut);font-size:15px;margin-top:2px}
+.tip{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:15px}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:12px 0}
+summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--mut);font-size:15px}
+.opt{display:block;padding:6px 0}.ans{margin-top:8px;font-size:15px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.btns a{flex:1;min-width:140px;text-align:center;padding:12px;border-radius:10px;text-decoration:none;font-weight:600;border:1px solid var(--line);color:var(--text);background:var(--card)}
+.btns a.main{background:var(--acc);border-color:var(--acc);color:#fff}
+.list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
+.list small{color:var(--mut)}
+.support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
+</style></head><body><main>
+<div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/oa_api/">🟢 API 開發</a></div>
+<h1>介紹 Agent Plugins</h1>
+<div class="meta">2026/08/06 · 1 分鐘 · 官方字幕實證</div>
+<div class="one">多家公司合作推出開放、不綁定廠商的 agent 擴充功能打包格式 Agent Plugins</div>
+<ul><li><a href="https://www.youtube.com/watch?v=UaeWJK_vv-Y&t=3s" target="_blank" rel="noopener">00:03</a> 每個 agent 產品要求的 manifest、資料夾結構、設定流程都不同；AWS、Cursor、GitHub、Microsoft、OpenAI、Vercel 的貢獻者因此合作推出 Agent Plugins，這是開放、不綁定特定廠商的 agent 擴充功能打包方式</li><li><a href="https://www.youtube.com/watch?v=UaeWJK_vv-Y&t=34s" target="_blank" rel="noopener">00:34</a> agent plugin 最簡單的形式就是一個資料夾，根目錄放一個叫 plugin.json 的 manifest；第一版聚焦在 agent skills 和 MCP servers</li><li><a href="https://www.youtube.com/watch?v=UaeWJK_vv-Y&t=65s" target="_blank" rel="noopener">01:05</a> plugin 作者要寫的平台專屬 glue code 變少；agent 產品可以支援 skills、MCP 或兩者都支援。這份 spec 只規範打包與探索，不管 marketplace、權限或 runtime；入門網址是 agentplugins.org</li></ul>
+<div class="tip">💡 你可以怎麼用：以後找 agent 擴充時，可以先看它是不是用 plugin.json 打包、裡面放的是 skills 還是 MCP。如果你用的工具有支援這個格式，同一包在不同工具間就比較可能直接沿用。想看完整規格可以到 agentplugins.org。</div>
+<details><summary>看全部 3 條重點</summary><p class="intro">🧑‍🏫 AI agent 是能自己動手幫你完成任務的 AI 助理，例如幫你查資料、改檔案。這支影片介紹 Agent Plugins：AWS、OpenAI 等公司一起訂的共通格式，讓替 agent 加新能力的擴充功能不必替每個產品各做一套。常在不同 AI 工具之間切換的人，看完會知道以後裝擴充為什麼可能更省事。</p><ul><li><a href="https://www.youtube.com/watch?v=UaeWJK_vv-Y&t=3s" target="_blank" rel="noopener">00:03</a> 每個 agent 產品要求的 manifest、資料夾結構、設定流程都不同；AWS、Cursor、GitHub、Microsoft、OpenAI、Vercel 的貢獻者因此合作推出 Agent Plugins，這是開放、不綁定特定廠商的 agent 擴充功能打包方式<div class="plain">↳ manifest 是擴充功能的說明檔，寫它叫什麼、裝了哪些東西。過去每家 agent 產品規定的說明檔、資料夾擺法、設定步驟都不同，所以六家公司的人合訂一套大家都能用的打包方式。</div></li><li><a href="https://www.youtube.com/watch?v=UaeWJK_vv-Y&t=34s" target="_blank" rel="noopener">00:34</a> agent plugin 最簡單的形式就是一個資料夾，根目錄放一個叫 plugin.json 的 manifest；第一版聚焦在 agent skills 和 MCP servers<div class="plain">↳ plugin 就是擴充包，就是個資料夾，最外層放說明檔 plugin.json。第一版只收兩種：skills（重複用的做事步驟）、MCP servers（讓 agent 接工具和資料）。</div></li><li><a href="https://www.youtube.com/watch?v=UaeWJK_vv-Y&t=65s" target="_blank" rel="noopener">01:05</a> plugin 作者要寫的平台專屬 glue code 變少；agent 產品可以支援 skills、MCP 或兩者都支援。這份 spec 只規範打包與探索，不管 marketplace、權限或 runtime；入門網址是 agentplugins.org<div class="plain">↳ 作者為各平台另寫的銜接程式會變少；產品可只支援 skills 或 MCP，或兩者都支援。規格只管怎麼打包、怎麼被找到，不管上架商店、權限和執行；入門看 agentplugins.org。</div></li></ul></details>
+<details><summary>📘 術語</summary><div class="terms"><b>Agent Plugins</b>（Agent 外掛）：開放、不綁定廠商的格式，用來打包 agent 的擴充功能<br><b>plugin.json</b>（外掛描述檔）：放在 plugin 資料夾根目錄的 manifest<br><b>agent skills</b>（agent 技能）：可重複使用的指示和工作流程<br><b>MCP servers</b>（MCP 伺服器）：讓 agent 連接工具和資料</div></details>
+<details><summary>✏️ 小考一題</summary><p>根據影片，Agent Plugins 這份 spec 標準化的是什麼？</p><span class="opt">A. Marketplace 上架機制</span><span class="opt">B. 打包（packaging）與探索（discovery）</span><span class="opt">C. Plugin 的權限（permissions）管理</span><span class="opt">D. Plugin 的執行環境（runtime）</span><details><summary>看答案</summary><div class="ans">答案：B。[01:05] 字幕說：This spec standardizes packaging and discovery, not marketplaces, permissions, or runtimes.</div></details></details>
+<div class="btns"><a class="main" href="https://www.youtube.com/watch?v=UaeWJK_vv-Y&amp;t=0s" target="_blank" rel="noopener">📺 看原片</a><a href="/?l=yt_UaeWJK_vv-Y">📚 在課本 App 讀</a></div>
+<details class="support"><summary>💛 覺得有幫助？支持一下</summary><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>課本免費、沒有廣告，支持與否都能照常讀 🐰</div></details>
+<p class="meta" style="margin-top:24px">重點整理自 YouTube 影片字幕，每條附時間碼可跳回原片；🧑‍🏫／↳ 是 Claude 補充的白話，不是影片原話。</p>
+</main></body></html>

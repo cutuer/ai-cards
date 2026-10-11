@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>用 ChatGPT Work 從一個商業問題建立 dashboard｜繁中重點＋時間戳</title>
+<meta name="description" content="示範用 data plugin 與 semantic layer 建立 dashboard，並介紹其視覺化與資料更新功能">
+<link rel="canonical" href="https://ai-cards.pages.dev/lesson/yt_GzCsKuDgr6Q/">
+<meta property="og:type" content="article"><meta property="og:url" content="https://ai-cards.pages.dev/lesson/yt_GzCsKuDgr6Q/">
+<meta property="og:title" content="用 ChatGPT Work 從一個商業問題建立 dashboard｜繁中重點"><meta property="og:description" content="示範用 data plugin 與 semantic layer 建立 dashboard，並介紹其視覺化與資料更新功能">
+<meta property="og:image" content="https://i.ytimg.com/vi/GzCsKuDgr6Q/hqdefault.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>:root{--bg:#fbfaf7;--card:#fff;--text:#22201c;--mut:#6b665d;--line:#e6e1d8;--acc:#c2410c}
+@media (prefers-color-scheme:dark){:root{--bg:#17161a;--card:#211f25;--text:#ece9e3;--mut:#a39d93;--line:#34313a;--acc:#fb923c}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:17px/1.7 -apple-system,"PingFang TC","Noto Sans TC",sans-serif}
+main{max-width:680px;margin:0 auto;padding:20px 16px 48px}
+.crumb{font-size:14px;color:var(--mut)}.crumb a{color:var(--mut)}
+h1{font-size:24px;line-height:1.35;margin:8px 0 4px}.meta{color:var(--mut);font-size:14px;margin-bottom:16px}
+.one{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:10px;padding:12px 14px;font-weight:600}
+ul{padding-left:0;list-style:none;margin:16px 0}li{padding:8px 0;border-bottom:1px solid var(--line)}
+li a{color:var(--acc);font-variant-numeric:tabular-nums;margin-right:6px;text-decoration:none;font-weight:600}
+.plain{color:var(--mut);font-size:15px;margin-top:2px}
+.tip{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:15px}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:12px 0}
+summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--mut);font-size:15px}
+.opt{display:block;padding:6px 0}.ans{margin-top:8px;font-size:15px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.btns a{flex:1;min-width:140px;text-align:center;padding:12px;border-radius:10px;text-decoration:none;font-weight:600;border:1px solid var(--line);color:var(--text);background:var(--card)}
+.btns a.main{background:var(--acc);border-color:var(--acc);color:#fff}
+.list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
+.list small{color:var(--mut)}
+.support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
+</style></head><body><main>
+<div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/oa_chatgpt/">🟢 ChatGPT</a></div>
+<h1>用 ChatGPT Work 從一個商業問題建立 dashboard</h1>
+<div class="meta">2026/09/18 · 0 分鐘 · 官方字幕實證</div>
+<div class="one">示範用 data plugin 與 semantic layer 建立 dashboard，並介紹其視覺化與資料更新功能</div>
+<ul><li><a href="https://www.youtube.com/watch?v=GzCsKuDgr6Q&t=2s" target="_blank" rel="noopener">00:02</a> 示範的需求：用 data plugin 和網站的 semantic layer 建立一個 dashboard，衡量網站的採用率（adoption）與使用程度（usage levels）</li><li><a href="https://www.youtube.com/watch?v=GzCsKuDgr6Q&t=32s" target="_blank" rel="noopener">00:32</a> 也可以設定 scheduled refresh，定期從任何資料來源抓取資料</li></ul>
+<div class="tip">💡 你可以怎麼用：下次要追蹤某個數字時，先把問題講清楚（例如「每個月的新用戶裡，有多少人持續在用」），再請它做成分頁的 dashboard，並設定排程更新。每次看數字之前，先確認一下最後更新時間。</div>
+<details><summary>看全部 8 條重點</summary><p class="intro">🧑‍🏫 這支影片示範在 ChatGPT Work 裡，從一個商業問題出發，做出一個 dashboard（把關鍵數字和圖表集中在同一頁的儀表板）。過程會用到 data plugin（一般指把資料來源接進來的外掛）和 semantic layer（一般指事先定義好「每個指標怎麼算」的一層規則，讓大家算出來的數字一致）。值得看的地方是：做報表、畫圖、更新資料，都在同一個地方完成。</p><ul><li><a href="https://www.youtube.com/watch?v=GzCsKuDgr6Q&t=2s" target="_blank" rel="noopener">00:02</a> 示範的需求：用 data plugin 和網站的 semantic layer 建立一個 dashboard，衡量網站的採用率（adoption）與使用程度（usage levels）<div class="plain">↳ 需求很明確：看網站的 adoption（採用率，也就是有多少人開始用）和使用程度（用得多頻繁、多深）。資料透過 plugin 接進來，指標照網站原本定義好的算法去算。</div></li><li><a href="https://www.youtube.com/watch?v=GzCsKuDgr6Q&t=2s" target="_blank" rel="noopener">00:02</a> 畫面右側顯示建好的 dashboard 樣子<div class="plain">↳ 做好的 dashboard 就放在畫面右邊，你可以一邊對話、一邊看成品長什麼樣。</div></li><li><a href="https://www.youtube.com/watch?v=GzCsKuDgr6Q&t=2s" target="_blank" rel="noopener">00:02</a> 可以在 dashboard 裡建立許多不同的特殊視覺化圖表<div class="plain">↳ 不只一般的長條圖、折線圖，還能做各種比較特殊的圖表，依你想回答的問題挑合適的呈現方式。</div></li><li><a href="https://www.youtube.com/watch?v=GzCsKuDgr6Q&t=2s" target="_blank" rel="noopener">00:02</a> 範例之一：可以看到隨時間變化的 funnel<div class="plain">↳ 例如 funnel（漏斗圖，看使用者一步步往下走時，每一步還剩多少人），而且能看它隨時間的變化，知道哪一段流失的人變多或變少。</div></li><li><a href="https://www.youtube.com/watch?v=GzCsKuDgr6Q&t=2s" target="_blank" rel="noopener">00:02</a> dashboard 上方有多個分頁（tabs）<div class="plain">↳ dashboard 上方有好幾個 tabs（分頁），跟瀏覽器分頁一樣，把不同主題的圖表分開放，不會全擠在同一頁。</div></li><li><a href="https://www.youtube.com/watch?v=GzCsKuDgr6Q&t=2s" target="_blank" rel="noopener">00:02</a> 例如 organizations 分頁，可以用客戶區隔（customer segment）的呈現方式看各種指標<div class="plain">↳ 例如 organizations（客戶組織）分頁，會按 customer segment（客戶區隔，例如依規模或類型把客戶分群）來看各項指標，方便比較不同群的差異。</div></li><li><a href="https://www.youtube.com/watch?v=GzCsKuDgr6Q&t=2s" target="_blank" rel="noopener">00:02</a> dashboard 上方會顯示資料最後更新的時間，也可以手動再更新一次<div class="plain">↳ 上方會標示資料最後更新的時間，讓你知道眼前的數字新不新。想看最新的，也可以手動再更新一次。</div></li><li><a href="https://www.youtube.com/watch?v=GzCsKuDgr6Q&t=32s" target="_blank" rel="noopener">00:32</a> 也可以設定 scheduled refresh，定期從任何資料來源抓取資料<div class="plain">↳ 也能設定 scheduled refresh（排程更新），讓它定期自動從資料來源抓新資料，不用每次都自己按更新。</div></li></ul></details>
+<details><summary>📘 術語</summary><div class="terms"><b>dashboard</b>（儀表板）：字幕中用來衡量網站採用率與使用程度的成品，裡面有多種視覺化圖表和分頁<br><b>data plugin</b>（資料外掛）：字幕未解釋，只說建立 dashboard 時會用到它<br><b>semantic layer</b>（語意層）：字幕未解釋，只說是網站的 semantic layer，建立 dashboard 時會用到<br><b>adoption</b>（採用率）：字幕中 dashboard 要衡量的項目之一，與使用程度並列<br><b>funnel</b>（漏斗）：字幕中的視覺化範例，可以看到隨時間變化的 funnel<br><b>customer segment</b>（客戶區隔）：organizations 分頁中呈現各種指標所用的方式<br><b>scheduled refresh</b>（排程更新）：定期從任何資料來源抓取資料的設定</div></details>
+<details><summary>✏️ 小考一題</summary><p>根據影片，設定 scheduled refresh 可以做到什麼？</p><span class="opt">A. 自動為 dashboard 新增分頁</span><span class="opt">B. 自動把 dashboard 寄給團隊成員</span><span class="opt">C. 定期從任何資料來源抓取資料</span><span class="opt">D. 定期刪除過期的舊資料</span><details><summary>看答案</summary><div class="ans">答案：C。字幕 [00:02]–[00:32] 提到可以設定 scheduled refresh，定期從任何資料來源抓取資料；其他選項字幕都沒有提到</div></details></details>
+<div class="btns"><a class="main" href="https://www.youtube.com/watch?v=GzCsKuDgr6Q&amp;t=0s" target="_blank" rel="noopener">📺 看原片</a><a href="/?l=yt_GzCsKuDgr6Q">📚 在課本 App 讀</a></div>
+<details class="support"><summary>💛 覺得有幫助？支持一下</summary><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>課本免費、沒有廣告，支持與否都能照常讀 🐰</div></details>
+<p class="meta" style="margin-top:24px">重點整理自 YouTube 影片字幕，每條附時間碼可跳回原片；🧑‍🏫／↳ 是 Claude 補充的白話，不是影片原話。</p>
+</main></body></html>

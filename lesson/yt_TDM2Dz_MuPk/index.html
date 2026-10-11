@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wayfair 如何用 GPT-5.5 為 4,000 萬件商品進行 Catalog Enrichment（商品目錄資料充實）｜繁中重點＋時間戳</title>
+<meta name="description" content="Wayfair 分享如何用 OpenAI 的模型和 API 充實 4,000 萬件商品的目錄資料">
+<link rel="canonical" href="https://ai-cards.pages.dev/lesson/yt_TDM2Dz_MuPk/">
+<meta property="og:type" content="article"><meta property="og:url" content="https://ai-cards.pages.dev/lesson/yt_TDM2Dz_MuPk/">
+<meta property="og:title" content="Wayfair 如何用 GPT-5.5 為 4,000 萬件商品進行 Catalog Enrichment（商品目錄資料充實）｜繁中重點"><meta property="og:description" content="Wayfair 分享如何用 OpenAI 的模型和 API 充實 4,000 萬件商品的目錄資料">
+<meta property="og:image" content="https://i.ytimg.com/vi/TDM2Dz_MuPk/hqdefault.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>:root{--bg:#fbfaf7;--card:#fff;--text:#22201c;--mut:#6b665d;--line:#e6e1d8;--acc:#c2410c}
+@media (prefers-color-scheme:dark){:root{--bg:#17161a;--card:#211f25;--text:#ece9e3;--mut:#a39d93;--line:#34313a;--acc:#fb923c}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:17px/1.7 -apple-system,"PingFang TC","Noto Sans TC",sans-serif}
+main{max-width:680px;margin:0 auto;padding:20px 16px 48px}
+.crumb{font-size:14px;color:var(--mut)}.crumb a{color:var(--mut)}
+h1{font-size:24px;line-height:1.35;margin:8px 0 4px}.meta{color:var(--mut);font-size:14px;margin-bottom:16px}
+.one{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:10px;padding:12px 14px;font-weight:600}
+ul{padding-left:0;list-style:none;margin:16px 0}li{padding:8px 0;border-bottom:1px solid var(--line)}
+li a{color:var(--acc);font-variant-numeric:tabular-nums;margin-right:6px;text-decoration:none;font-weight:600}
+.plain{color:var(--mut);font-size:15px;margin-top:2px}
+.tip{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:15px}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:12px 0}
+summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--mut);font-size:15px}
+.opt{display:block;padding:6px 0}.ans{margin-top:8px;font-size:15px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.btns a{flex:1;min-width:140px;text-align:center;padding:12px;border-radius:10px;text-decoration:none;font-weight:600;border:1px solid var(--line);color:var(--text);background:var(--card)}
+.btns a.main{background:var(--acc);border-color:var(--acc);color:#fff}
+.list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
+.list small{color:var(--mut)}
+.support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
+</style></head><body><main>
+<div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/oa_cases/">🟢 客戶案例</a></div>
+<h1>Wayfair 如何用 GPT-5.5 為 4,000 萬件商品進行 Catalog Enrichment（商品目錄資料充實）</h1>
+<div class="meta">2026/06/15 · 0 分鐘 · 官方字幕實證</div>
+<div class="one">Wayfair 分享如何用 OpenAI 的模型和 API 充實 4,000 萬件商品的目錄資料</div>
+<ul><li><a href="https://www.youtube.com/watch?v=TDM2Dz_MuPk&t=1s" target="_blank" rel="noopener">00:01</a> Wayfair 很期待導入 Codex，打算把它用在公司還沒想出解法的難題上</li><li><a href="https://www.youtube.com/watch?v=TDM2Dz_MuPk&t=32s" target="_blank" rel="noopener">00:32</a> Wayfair 用 OpenAI 的模型和 API 支撐目錄資料充實計畫的一大部分；影片中說「是模型在驅動我們」</li></ul>
+<div class="tip">💡 你可以怎麼用：如果你手上有大量格式不一的資料，例如商品清單或客戶名單，可以先挑 20 筆，請 AI 照固定欄位（尺寸、材質、風格等）補齊整理。自己檢查過正確率之後，再擴大到全部資料。</div>
+<details><summary>看全部 6 條重點</summary><p class="intro">🧑‍🏫 這支影片是美國家具家飾電商 Wayfair 分享，他們怎麼用 OpenAI 的模型，把 4,000 萬件商品的資料補齊、整理好。它的價值在於說明 AI 不只能拿來聊天，也能接手人力做不完的大量資料工作。</p><ul><li><a href="https://www.youtube.com/watch?v=TDM2Dz_MuPk&t=1s" target="_blank" rel="noopener">00:01</a> Wayfair 很期待導入 Codex，打算把它用在公司還沒想出解法的難題上<div class="plain">↳ Codex 是 OpenAI 推出的 AI 工具，專門幫忙寫程式、處理軟體開發工作。Wayfair 不只想用它做例行小事，還打算拿它挑戰公司自己都還沒找到解法的難題。</div></li><li><a href="https://www.youtube.com/watch?v=TDM2Dz_MuPk&t=1s" target="_blank" rel="noopener">00:01</a> Wayfair 和 OpenAI 合作最有影響力的方式之一，是他們的 catalog enrichment program（商品目錄資料充實計畫）<div class="plain">↳ catalog enrichment（商品目錄資料充實）就是把每件商品的資料補齊、修正，例如尺寸、材質、風格標籤。Wayfair 認為，這是他們跟 OpenAI 合作之中效果最明顯的一塊。</div></li><li><a href="https://www.youtube.com/watch?v=TDM2Dz_MuPk&t=1s" target="_blank" rel="noopener">00:01</a> 目標是把供應商提供的商品呈現得盡量準確，也盡量完整<div class="plain">↳ 供應商給的資料常常零散、有缺漏，寫法也不統一。這項計畫的目標，是讓網站上的商品頁把東西講對、講完整，顧客才不會買錯，也不會找不到想要的商品。</div></li><li><a href="https://www.youtube.com/watch?v=TDM2Dz_MuPk&t=32s" target="_blank" rel="noopener">00:32</a> Wayfair 用 OpenAI 的模型和 API 支撐目錄資料充實計畫的一大部分；影片中說「是模型在驅動我們」<div class="plain">↳ API 是讓公司自己的系統直接呼叫 AI 模型的接口，不用有人一筆筆貼進聊天視窗。這項計畫有很大一部分是模型自動在跑，他們甚至說是模型在推著他們前進。</div></li><li><a href="https://www.youtube.com/watch?v=TDM2Dz_MuPk&t=32s" target="_blank" rel="noopener">00:32</a> 這種規模的工作量，根本不會有人想用人工去做，所以影響很大<div class="plain">↳ 4,000 萬件商品就算一件只整理幾分鐘，靠人工也根本做不完，所以沒人會考慮用人力處理。AI 讓原本不可能做的事變得做得到，這就是它影響大的原因。</div></li><li><a href="https://www.youtube.com/watch?v=TDM2Dz_MuPk&t=32s" target="_blank" rel="noopener">00:32</a> 成果讓所有顧客受益，供應商也同樣受益<div class="plain">↳ 資料完整之後，顧客比較容易搜到商品、好比較，買起來也比較放心；供應商的商品也更容易被找到、被買走。同一件事，讓買方和賣方都得到好處。</div></li></ul></details>
+<details><summary>📘 術語</summary><div class="terms"><b>catalog enrichment</b>（商品目錄資料充實）：把供應商提供的商品資訊呈現得盡量準確、盡量完整<br><b>Codex</b>（Codex）：Wayfair 準備導入，打算用在公司還沒解決的難題上</div></details>
+<details><summary>✏️ 小考一題</summary><p>根據影片，Wayfair 大約有多少件商品？</p><span class="opt">A. 4 億件</span><span class="opt">B. 1,000 萬件</span><span class="opt">C. 400 萬件</span><span class="opt">D. 4,000 萬件</span><details><summary>看答案</summary><div class="ans">答案：D。[00:01] 講者說「we&#39;ve got 40 million products」</div></details></details>
+<div class="btns"><a class="main" href="https://www.youtube.com/watch?v=TDM2Dz_MuPk&amp;t=0s" target="_blank" rel="noopener">📺 看原片</a><a href="/?l=yt_TDM2Dz_MuPk">📚 在課本 App 讀</a></div>
+<details class="support"><summary>💛 覺得有幫助？支持一下</summary><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>課本免費、沒有廣告，支持與否都能照常讀 🐰</div></details>
+<p class="meta" style="margin-top:24px">重點整理自 YouTube 影片字幕，每條附時間碼可跳回原片；🧑‍🏫／↳ 是 Claude 補充的白話，不是影片原話。</p>
+</main></body></html>

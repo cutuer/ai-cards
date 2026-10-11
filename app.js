@@ -33,6 +33,15 @@ function loadState() {
   } catch (e) {
     console.error("Failed to load state", e);
   }
+  // 靜態頁「在課本 App 讀」帶 ?l=<課id> → 直接開那一課
+  const want = new URLSearchParams(location.search).get("l");
+  if (want) {
+    for (const [bid, lvl] of Object.entries(CURRICULUM)) {
+      const i = lvl.lessons.findIndex(x => x.id === want);
+      if (i >= 0) { state.currentLevel = bid; state.currentLessonIdx = i; break; }
+    }
+    history.replaceState(null, "", location.pathname);
+  }
 }
 
 function saveState() {

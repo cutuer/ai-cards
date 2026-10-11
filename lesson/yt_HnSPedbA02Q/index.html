@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ChatGPT 中的 Workspace agents：第三方風險管理 agent｜繁中重點＋時間戳</title>
+<meta name="description" content="示範在 ChatGPT 打造第三方風險管理 agent「Trove」，並預覽測試它的運作">
+<link rel="canonical" href="https://ai-cards.pages.dev/lesson/yt_HnSPedbA02Q/">
+<meta property="og:type" content="article"><meta property="og:url" content="https://ai-cards.pages.dev/lesson/yt_HnSPedbA02Q/">
+<meta property="og:title" content="ChatGPT 中的 Workspace agents：第三方風險管理 agent｜繁中重點"><meta property="og:description" content="示範在 ChatGPT 打造第三方風險管理 agent「Trove」，並預覽測試它的運作">
+<meta property="og:image" content="https://i.ytimg.com/vi/HnSPedbA02Q/hqdefault.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>:root{--bg:#fbfaf7;--card:#fff;--text:#22201c;--mut:#6b665d;--line:#e6e1d8;--acc:#c2410c}
+@media (prefers-color-scheme:dark){:root{--bg:#17161a;--card:#211f25;--text:#ece9e3;--mut:#a39d93;--line:#34313a;--acc:#fb923c}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:17px/1.7 -apple-system,"PingFang TC","Noto Sans TC",sans-serif}
+main{max-width:680px;margin:0 auto;padding:20px 16px 48px}
+.crumb{font-size:14px;color:var(--mut)}.crumb a{color:var(--mut)}
+h1{font-size:24px;line-height:1.35;margin:8px 0 4px}.meta{color:var(--mut);font-size:14px;margin-bottom:16px}
+.one{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:10px;padding:12px 14px;font-weight:600}
+ul{padding-left:0;list-style:none;margin:16px 0}li{padding:8px 0;border-bottom:1px solid var(--line)}
+li a{color:var(--acc);font-variant-numeric:tabular-nums;margin-right:6px;text-decoration:none;font-weight:600}
+.plain{color:var(--mut);font-size:15px;margin-top:2px}
+.tip{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:15px}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:12px 0}
+summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--mut);font-size:15px}
+.opt{display:block;padding:6px 0}.ans{margin-top:8px;font-size:15px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.btns a{flex:1;min-width:140px;text-align:center;padding:12px;border-radius:10px;text-decoration:none;font-weight:600;border:1px solid var(--line);color:var(--text);background:var(--card)}
+.btns a.main{background:var(--acc);border-color:var(--acc);color:#fff}
+.list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
+.list small{color:var(--mut)}
+.support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
+</style></head><body><main>
+<div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/oa_chatgpt/">🟢 ChatGPT</a></div>
+<h1>ChatGPT 中的 Workspace agents：第三方風險管理 agent</h1>
+<div class="meta">2026/04/24 · 2 分鐘 · 官方字幕實證</div>
+<div class="one">示範在 ChatGPT 打造第三方風險管理 agent「Trove」，並預覽測試它的運作</div>
+<ul><li><a href="https://www.youtube.com/watch?v=HnSPedbA02Q&t=3s" target="_blank" rel="noopener">00:03</a> 講者 Hojun 示範打造 Trove，一個第三方風險管理（third-party risk manager）agent</li><li><a href="https://www.youtube.com/watch?v=HnSPedbA02Q&t=65s" target="_blank" rel="noopener">01:05</a> Trove 完成後，可在同一個流程中啟動 preview，測試 agent 的行為</li><li><a href="https://www.youtube.com/watch?v=HnSPedbA02Q&t=97s" target="_blank" rel="noopener">01:37</a> agent 最後產出一份結構化、完整精緻的報告，交給人類分析師審閱</li></ul>
+<div class="tip">💡 你可以怎麼用：如果你手上有步驟固定、每次都差不多的查核或整理工作，可以先把團隊的做法逐條寫下來，當作 skill 的底稿，再用一段 prompt 描述整個流程，交給 ChatGPT 建 agent。建好後一定要先 preview 試跑，看 run traces 確認每一步的判斷都合理，再正式使用。</div>
+<details><summary>看全部 14 條重點</summary><p class="intro">🧑‍🏫 這支是 OpenAI 示範用 ChatGPT 的 Workspace agents 功能，做出一個叫 Trove 的 AI 助手，幫公司檢查合作廠商有沒有風險。值得看的地方是，整個建置過程幾乎都用聊天完成，不用寫程式，做好後還能直接試跑、檢查它每一步怎麼判斷。</p><ul><li><a href="https://www.youtube.com/watch?v=HnSPedbA02Q&t=3s" target="_blank" rel="noopener">00:03</a> 講者 Hojun 示範打造 Trove，一個第三方風險管理（third-party risk manager）agent<div class="plain">↳ 講者 Hojun 要做一個叫 Trove 的 agent，也就是能自己分步驟把事情做完的 AI 助手。它的角色是 third-party risk manager，專門幫公司評估合作廠商的風險。</div></li><li><a href="https://www.youtube.com/watch?v=HnSPedbA02Q&t=3s" target="_blank" rel="noopener">00:03</a> Trove 類似財務團隊現在使用的 agent，用來加速耗時的供應商盡職調查（vendor due diligence），並提升一致性與掌控度<div class="plain">↳ 公司跟新廠商合作前，要先做 vendor due diligence（供應商盡職調查），把對方的底細查清楚，很花時間。Trove 讓這件事變快，而且每次查法都一樣，主管也更好掌握。</div></li><li><a href="https://www.youtube.com/watch?v=HnSPedbA02Q&t=3s" target="_blank" rel="noopener">00:03</a> 建置流程從一段 prompt 開始，內容描述工作流程，以及這個 agent 需要的 tools、skills 與系統<div class="plain">↳ 第一步是寫一段 prompt，就是給 AI 的文字指示。內容要說明工作怎麼進行，還有它需要用哪些 tools（它可以使用的工具）、skills，以及要連接哪些系統。</div></li><li><a href="https://www.youtube.com/watch?v=HnSPedbA02Q&t=3s" target="_blank" rel="noopener">00:03</a> 加入財務團隊現在做供應商風險評估時使用的 skill，裡面定義了他們的最佳做法<div class="plain">↳ skill 可以想成一份打包好的做事準則。這裡把財務團隊平常評估廠商風險的標準做法放進去，agent 就會照團隊原本的方式做，不用重新教一次。</div></li><li><a href="https://www.youtube.com/watch?v=HnSPedbA02Q&t=33s" target="_blank" rel="noopener">00:33</a> 這個 skill 包含必要的指示與 metadata，讓 agent 能一致且準確地完成工作<div class="plain">↳ skill 裡除了做事步驟，還附有 metadata，也就是用來描述內容的補充資訊，例如標籤和說明。靠這兩樣，agent 每次做出來的結果才會穩定、準確。</div></li><li><a href="https://www.youtube.com/watch?v=HnSPedbA02Q&t=33s" target="_blank" rel="noopener">00:33</a> 只花幾秒，ChatGPT 就列出 Trove 的計畫，並可以開始實作<div class="plain">↳ 送出後只要幾秒，ChatGPT 就會先列出它打算怎麼建 Trove。你看過沒問題，就能直接開始做，不用自己從頭想架構。</div></li><li><a href="https://www.youtube.com/watch?v=HnSPedbA02Q&t=33s" target="_blank" rel="noopener">00:33</a> 左側窗格用自然語言和 ChatGPT 對話，持續建置與調整 agent；右側則同步設定它的 tools、skills 與 apps<div class="plain">↳ 畫面分成兩邊。左邊像聊天一樣，用平常講話的方式告訴它要改什麼。右邊會同步更新對應的 tools、skills 和 apps 設定，apps 就是它可以連接使用的應用程式。</div></li><li><a href="https://www.youtube.com/watch?v=HnSPedbA02Q&t=33s" target="_blank" rel="noopener">00:33</a> ChatGPT 會把這些內容產出成一套調校好的指令集（instruction set），不需要動用技術工程資源<div class="plain">↳ 你講的需求，ChatGPT 會自己整理成 instruction set，也就是 agent 實際照著執行的一整套指令。重點是整個過程不用找工程師幫忙。</div></li><li><a href="https://www.youtube.com/watch?v=HnSPedbA02Q&t=65s" target="_blank" rel="noopener">01:05</a> Trove 完成後，可在同一個流程中啟動 preview，測試 agent 的行為<div class="plain">↳ 做好之後，在同一個畫面就能開 preview，也就是試跑。先看它實際會怎麼做，確認沒問題再拿來用。</div></li><li><a href="https://www.youtube.com/watch?v=HnSPedbA02Q&t=65s" target="_blank" rel="noopener">01:05</a> 透過同樣直覺的引導式介面監看 preview 執行過程<div class="plain">↳ 試跑的畫面一樣是引導式介面，會一步一步帶你看。你可以跟著看 agent 正在做什麼，不懂技術也看得懂。</div></li><li><a href="https://www.youtube.com/watch?v=HnSPedbA02Q&t=65s" target="_blank" rel="noopener">01:05</a> 可以查看 agent 所有的 run traces，包括 tool calls、輸入內容與它做的決策<div class="plain">↳ run traces 是 agent 的完整工作紀錄，裡面有 tool calls（它每次呼叫了哪個工具）、當時輸入的內容，以及它做了哪些判斷。結果怪怪的時候，可以回頭查是哪一步出問題。</div></li><li><a href="https://www.youtube.com/watch?v=HnSPedbA02Q&t=65s" target="_blank" rel="noopener">01:05</a> agent 會蒐集證據，運用 skill 進行嚴謹的風險評估，並在多個系統之間協調工作<div class="plain">↳ 實際執行時，agent 會先去找資料當證據，再照 skill 裡的標準仔細評估風險，過程中還會在好幾個系統之間來回處理工作。</div></li><li><a href="https://www.youtube.com/watch?v=HnSPedbA02Q&t=97s" target="_blank" rel="noopener">01:37</a> agent 最後產出一份結構化、完整精緻的報告，交給人類分析師審閱<div class="plain">↳ 最後它會交出一份格式固定、內容完整的報告。不過最後拍板的還是人，由分析師審閱後再做決定。</div></li><li><a href="https://www.youtube.com/watch?v=HnSPedbA02Q&t=97s" target="_blank" rel="noopener">01:37</a> 整件工作只要幾分鐘就完成，讓分析師不必再處理流程中耗時的手動部分<div class="plain">↳ 原本要花很多時間手動整理的部分，現在幾分鐘就跑完了。分析師可以把力氣留給真正需要專業判斷的地方。</div></li></ul></details>
+<details><summary>📘 術語</summary><div class="terms"><b>third-party risk manager</b>（第三方風險管理者）：本片示範的 agent（Trove）的角色，用來加速供應商盡職調查<br><b>vendor due diligence</b>（供應商盡職調查）：字幕形容這是很耗時的工作，Trove 用來加速這項工作<br><b>agent</b>（代理）：字幕未直接定義；片中指能蒐集證據、做風險評估、跨系統協調工作並產出報告的 AI 助手<br><b>prompt</b>（提示詞）：用來開始建置 agent，內容描述工作流程，以及 agent 需要的 tools、skills 與系統<br><b>skill</b>（技能）：定義團隊的最佳做法，包含必要的指示與 metadata，讓 agent 一致且準確地工作<br><b>metadata</b>（中繼資料）：字幕未解釋，只說它和指示一起包含在 skill 裡<br><b>instruction set</b>（指令集）：ChatGPT 把 tools、skills、apps 等設定整理成一套調校好的 agent 指令<br><b>preview</b>（預覽）：在同一個流程中啟動，用來測試 agent 的行為<br><b>run traces</b>（執行軌跡）：可查看 agent 的 tool calls、輸入內容與決策<br><b>tool calls</b>（工具呼叫）：字幕未解釋，只說它是 run traces 裡可以查看的內容之一</div></details>
+<details><summary>✏️ 小考一題</summary><p>影片中，Trove 產出的最終結構化報告交給誰審閱？</p><span class="opt">A. 人類分析師</span><span class="opt">B. 供應商本身</span><span class="opt">C. 另一個審核用的 agent</span><span class="opt">D. 技術工程團隊</span><details><summary>看答案</summary><div class="ans">答案：A。[01:37] 字幕說 agent 會產出一份結構化、完整精緻的報告，交給人類分析師（human analyst）審閱</div></details></details>
+<div class="btns"><a class="main" href="https://www.youtube.com/watch?v=HnSPedbA02Q&amp;t=0s" target="_blank" rel="noopener">📺 看原片</a><a href="/?l=yt_HnSPedbA02Q">📚 在課本 App 讀</a></div>
+<details class="support"><summary>💛 覺得有幫助？支持一下</summary><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>課本免費、沒有廣告，支持與否都能照常讀 🐰</div></details>
+<p class="meta" style="margin-top:24px">重點整理自 YouTube 影片字幕，每條附時間碼可跳回原片；🧑‍🏫／↳ 是 Claude 補充的白話，不是影片原話。</p>
+</main></body></html>

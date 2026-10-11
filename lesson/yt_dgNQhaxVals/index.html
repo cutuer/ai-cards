@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>如何為任何任務選對 Claude 模型｜繁中重點＋時間戳</title>
+<meta name="description" content="介紹在 Claude Code 中如何選擇 Sonnet、Opus、Fable 模型，以及調整 effort level">
+<link rel="canonical" href="https://ai-cards.pages.dev/lesson/yt_dgNQhaxVals/">
+<meta property="og:type" content="article"><meta property="og:url" content="https://ai-cards.pages.dev/lesson/yt_dgNQhaxVals/">
+<meta property="og:title" content="如何為任何任務選對 Claude 模型｜繁中重點"><meta property="og:description" content="介紹在 Claude Code 中如何選擇 Sonnet、Opus、Fable 模型，以及調整 effort level">
+<meta property="og:image" content="https://i.ytimg.com/vi/dgNQhaxVals/hqdefault.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>:root{--bg:#fbfaf7;--card:#fff;--text:#22201c;--mut:#6b665d;--line:#e6e1d8;--acc:#c2410c}
+@media (prefers-color-scheme:dark){:root{--bg:#17161a;--card:#211f25;--text:#ece9e3;--mut:#a39d93;--line:#34313a;--acc:#fb923c}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:17px/1.7 -apple-system,"PingFang TC","Noto Sans TC",sans-serif}
+main{max-width:680px;margin:0 auto;padding:20px 16px 48px}
+.crumb{font-size:14px;color:var(--mut)}.crumb a{color:var(--mut)}
+h1{font-size:24px;line-height:1.35;margin:8px 0 4px}.meta{color:var(--mut);font-size:14px;margin-bottom:16px}
+.one{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:10px;padding:12px 14px;font-weight:600}
+ul{padding-left:0;list-style:none;margin:16px 0}li{padding:8px 0;border-bottom:1px solid var(--line)}
+li a{color:var(--acc);font-variant-numeric:tabular-nums;margin-right:6px;text-decoration:none;font-weight:600}
+.plain{color:var(--mut);font-size:15px;margin-top:2px}
+.tip{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:15px}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:12px 0}
+summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--mut);font-size:15px}
+.opt{display:block;padding:6px 0}.ans{margin-top:8px;font-size:15px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.btns a{flex:1;min-width:140px;text-align:center;padding:12px;border-radius:10px;text-decoration:none;font-weight:600;border:1px solid var(--line);color:var(--text);background:var(--card)}
+.btns a.main{background:var(--acc);border-color:var(--acc);color:#fff}
+.list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
+.list small{color:var(--mut)}
+.support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
+</style></head><body><main>
+<div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/yt_prompt/">📺 提示與選模型</a></div>
+<h1>如何為任何任務選對 Claude 模型</h1>
+<div class="meta">2026/08/19 · 0 分鐘 · 官方字幕實證</div>
+<div class="one">介紹在 Claude Code 中如何選擇 Sonnet、Opus、Fable 模型，以及調整 effort level</div>
+<ul><li><a href="https://www.youtube.com/watch?v=dgNQhaxVals&t=1s" target="_blank" rel="noopener">00:01</a> 影片主題：如何在 Claude Code 中選擇合適的模型</li><li><a href="https://www.youtube.com/watch?v=dgNQhaxVals&t=31s" target="_blank" rel="noopener">00:31</a> 但每個選項都必須連接到資料庫欄位和使用者權限，實際上有其複雜度</li></ul>
+<div class="tip">💡 你可以怎麼用：下次用 Claude Code，小修小改先用 Sonnet；要做規劃或碰到查不出原因的錯誤就換 Opus；想把一整個功能一次交辦出去就試 Fable。結果不滿意時，先把 effort 調高再跑一次，不一定要急著換模型。</div>
+<details><summary>看全部 14 條重點</summary><p class="intro">🧑‍🏫 這支影片教你在 Claude Code 裡怎麼挑模型：Sonnet、Opus、Fable 各自適合做什麼，還有一個叫 effort level 的設定可以調。如果你習慣什麼事都用同一個模型，看完就會知道什麼時候該換模型，什麼時候只要把這個設定調高或調低。</p><ul><li><a href="https://www.youtube.com/watch?v=dgNQhaxVals&t=1s" target="_blank" rel="noopener">00:01</a> 影片主題：如何在 Claude Code 中選擇合適的模型<div class="plain">↳ Claude Code 是 Anthropic 出的寫程式助理，能直接幫你讀、改、跑程式。它背後可以換不同的「模型」，也就是實際負責思考的 AI，影片就是在教怎麼挑。</div></li><li><a href="https://www.youtube.com/watch?v=dgNQhaxVals&t=1s" target="_blank" rel="noopener">00:01</a> Sonnet 是日常使用的標準選擇，速度快，是優秀的通才型模型<div class="plain">↳ Sonnet 是 Claude 的其中一款模型，定位是日常主力：回得快，什麼事都做得不錯。一般任務先用它就夠了，不用一開始就搬出最重的。</div></li><li><a href="https://www.youtube.com/watch?v=dgNQhaxVals&t=1s" target="_blank" rel="noopener">00:01</a> Sonnet 適用例子：在發布前審查程式碼片段（reviewing code snippets）<div class="plain">↳ 例如程式寫好、正式上線前，請它看看一小段程式有沒有問題。範圍小、又希望很快有結果，正好是 Sonnet 擅長的。</div></li><li><a href="https://www.youtube.com/watch?v=dgNQhaxVals&t=1s" target="_blank" rel="noopener">00:01</a> 工作變得比較複雜時，講者會改用 Opus<div class="plain">↳ 當問題牽扯的東西變多、需要想得比較深，講者就會換成 Opus。Opus 是另一款模型，強項是慢下來把事情想清楚。</div></li><li><a href="https://www.youtube.com/watch?v=dgNQhaxVals&t=1s" target="_blank" rel="noopener">00:01</a> Opus 適用例子：排查棘手的錯誤，或在開始寫程式前找出系統設計的缺陷<div class="plain">↳ 例如一個錯誤怎麼查都找不到原因，或想在動手寫之前，先檢查整個系統的架構有沒有漏洞，這類事就交給 Opus。</div></li><li><a href="https://www.youtube.com/watch?v=dgNQhaxVals&t=1s" target="_blank" rel="noopener">00:01</a> 原因是 Opus 很擅長深度推理（deep reasoning），所以講者大部分的規劃都從 Opus 開始<div class="plain">↳ deep reasoning（深度推理）是指一層一層推敲、把前因後果想透的能力。做規劃本來就很需要這種能力，所以講者習慣先用 Opus 排計畫。</div></li><li><a href="https://www.youtube.com/watch?v=dgNQhaxVals&t=1s" target="_blank" rel="noopener">00:01</a> Fable 是設計來處理你最困難的工作<div class="plain">↳ Fable 是這三款裡定位最高的模型，專門用來處理你手上最難、最複雜的工作。</div></li><li><a href="https://www.youtube.com/watch?v=dgNQhaxVals&t=1s" target="_blank" rel="noopener">00:01</a> Fable 和 Opus 的差別：Fable 需要的逐步指引（step-by-step guidance）少很多<div class="plain">↳ step-by-step guidance（逐步指引）就是你一步步交代它先做什麼、再做什麼。用 Fable 時這類交代可以少很多，它比較能自己把事情拆開來做。</div></li><li><a href="https://www.youtube.com/watch?v=dgNQhaxVals&t=1s" target="_blank" rel="noopener">00:01</a> Fable 例子：交給它「幫我的 app 加上使用者設定頁面」這種重要任務，看似簡單<div class="plain">↳ 例如跟它說「幫我的 app 加一個使用者設定頁面」。這句話聽起來很單純，但對 app 來說是一個實實在在的重要功能。</div></li><li><a href="https://www.youtube.com/watch?v=dgNQhaxVals&t=31s" target="_blank" rel="noopener">00:31</a> 但每個選項都必須連接到資料庫欄位和使用者權限，實際上有其複雜度<div class="plain">↳ 因為頁面上每個選項，背後都要接到資料庫裡對應的欄位才能存起來，還要判斷誰有權限改哪些設定，改一個地方就會牽動很多地方。</div></li><li><a href="https://www.youtube.com/watch?v=dgNQhaxVals&t=31s" target="_blank" rel="noopener">00:31</a> Fable 能理解這種複雜度，會擬定計畫、執行，並交付完成的功能<div class="plain">↳ Fable 看得出這些藏在底下的關聯，會自己先排好計畫、動手做完，最後交出一個能直接用的完整功能，不是做到一半的東西。</div></li><li><a href="https://www.youtube.com/watch?v=dgNQhaxVals&t=31s" target="_blank" rel="noopener">00:31</a> 選模型只是流程的一半；若 Claude Code 的回答不如預期，可以試著調整 effort level<div class="plain">↳ 挑對模型只解決了一半。如果 Claude Code 交出來的結果不理想，不一定要換模型，也可以先試著調整 effort level。</div></li><li><a href="https://www.youtube.com/watch?v=dgNQhaxVals&t=31s" target="_blank" rel="noopener">00:31</a> effort level 控制 Claude Code 要做得多徹底，以及要花多少時間處理你的應用程式<div class="plain">↳ effort level（投入程度）是一個設定，決定 Claude Code 做事要多仔細、願意花多少時間處理你的程式。</div></li><li><a href="https://www.youtube.com/watch?v=dgNQhaxVals&t=31s" target="_blank" rel="noopener">00:31</a> 需要快速回應時把 effort 調低；想讓 Claude Code 想久一點、跑測試、檢查自己的成果時就調高<div class="plain">↳ 只想快點拿到答案就調低；希望它多想一下、自己跑測試、回頭檢查有沒有做錯，就調高，只是要等比較久。</div></li></ul></details>
+<details><summary>📘 術語</summary><div class="terms"><b>Sonnet</b>（Sonnet 模型）：日常使用的標準模型，速度快、優秀的通才<br><b>Opus</b>（Opus 模型）：擅長深度推理，適合排查困難錯誤、找系統設計缺陷與規劃<br><b>Fable</b>（Fable 模型）：設計來處理最困難的工作，比 Opus 需要更少的逐步指引<br><b>deep reasoning</b>（深度推理）：Opus 很擅長的能力，因此講者多數規劃從 Opus 開始<br><b>step-by-step guidance</b>（逐步指引）：Fable 比 Opus 需要的這類指引少很多<br><b>effort level</b>（努力程度設定）：控制 Claude Code 要多徹底、花多少時間；調低求快，調高會想更久、跑測試、檢查成果</div></details>
+<details><summary>✏️ 小考一題</summary><p>根據影片，Fable 和 Opus 最主要的差別是什麼？</p><span class="opt">A. Fable 需要的逐步指引少很多</span><span class="opt">B. Fable 不需要調整 effort level</span><span class="opt">C. Fable 的回應速度比 Opus 快很多</span><span class="opt">D. Fable 專門用來審查程式碼片段</span><details><summary>看答案</summary><div class="ans">答案：A。[00:01] 字幕說 The difference between Fable and Opus is that Fable requires much less step-by-step guidance.</div></details></details>
+<div class="btns"><a class="main" href="https://www.youtube.com/watch?v=dgNQhaxVals&amp;t=0s" target="_blank" rel="noopener">📺 看原片</a><a href="/?l=yt_dgNQhaxVals">📚 在課本 App 讀</a></div>
+<details class="support"><summary>💛 覺得有幫助？支持一下</summary><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>課本免費、沒有廣告，支持與否都能照常讀 🐰</div></details>
+<p class="meta" style="margin-top:24px">重點整理自 YouTube 影片字幕，每條附時間碼可跳回原片；🧑‍🏫／↳ 是 Claude 補充的白話，不是影片原話。</p>
+</main></body></html>

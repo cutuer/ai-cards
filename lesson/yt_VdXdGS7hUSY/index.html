@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>與 NVIDIA 一起介紹 GPT-5.5｜繁中重點＋時間戳</title>
+<meta name="description" content="NVIDIA 工程師分享用 Codex 與 GPT 5.5 做軟體的經驗">
+<link rel="canonical" href="https://ai-cards.pages.dev/lesson/yt_VdXdGS7hUSY/">
+<meta property="og:type" content="article"><meta property="og:url" content="https://ai-cards.pages.dev/lesson/yt_VdXdGS7hUSY/">
+<meta property="og:title" content="與 NVIDIA 一起介紹 GPT-5.5｜繁中重點"><meta property="og:description" content="NVIDIA 工程師分享用 Codex 與 GPT 5.5 做軟體的經驗">
+<meta property="og:image" content="https://i.ytimg.com/vi/VdXdGS7hUSY/hqdefault.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>:root{--bg:#fbfaf7;--card:#fff;--text:#22201c;--mut:#6b665d;--line:#e6e1d8;--acc:#c2410c}
+@media (prefers-color-scheme:dark){:root{--bg:#17161a;--card:#211f25;--text:#ece9e3;--mut:#a39d93;--line:#34313a;--acc:#fb923c}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:17px/1.7 -apple-system,"PingFang TC","Noto Sans TC",sans-serif}
+main{max-width:680px;margin:0 auto;padding:20px 16px 48px}
+.crumb{font-size:14px;color:var(--mut)}.crumb a{color:var(--mut)}
+h1{font-size:24px;line-height:1.35;margin:8px 0 4px}.meta{color:var(--mut);font-size:14px;margin-bottom:16px}
+.one{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:10px;padding:12px 14px;font-weight:600}
+ul{padding-left:0;list-style:none;margin:16px 0}li{padding:8px 0;border-bottom:1px solid var(--line)}
+li a{color:var(--acc);font-variant-numeric:tabular-nums;margin-right:6px;text-decoration:none;font-weight:600}
+.plain{color:var(--mut);font-size:15px;margin-top:2px}
+.tip{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:15px}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:12px 0}
+summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--mut);font-size:15px}
+.opt{display:block;padding:6px 0}.ans{margin-top:8px;font-size:15px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.btns a{flex:1;min-width:140px;text-align:center;padding:12px;border-radius:10px;text-decoration:none;font-weight:600;border:1px solid var(--line);color:var(--text);background:var(--card)}
+.btns a.main{background:var(--acc);border-color:var(--acc);color:#fff}
+.list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
+.list small{color:var(--mut)}
+.support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
+</style></head><body><main>
+<div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/oa_cases/">🟢 客戶案例</a></div>
+<h1>與 NVIDIA 一起介紹 GPT-5.5</h1>
+<div class="meta">2026/04/23 · 1 分鐘 · 官方字幕實證</div>
+<div class="one">NVIDIA 工程師分享用 Codex 與 GPT 5.5 做軟體的經驗</div>
+<ul><li><a href="https://www.youtube.com/watch?v=VdXdGS7hUSY&t=3s" target="_blank" rel="noopener">00:03</a> NVIDIA coding agents 團隊的資深軟體工程師 Dennis Hannish 說，GPT 5.5 的超能力是「能把事情做完」。</li><li><a href="https://www.youtube.com/watch?v=VdXdGS7hUSY&t=34s" target="_blank" rel="noopener">00:34</a> 他先用 GPT 5.4 做出內部平台的 MVP，再用 Codex GPT 5.5 把它推到 production 等級、可擴展的 app。</li></ul>
+<div class="tip">💡 你可以怎麼用：如果你有「要是有個小工具就好了」的需求，可以先請 AI 做一個陽春版試用，確定真的好用，再請它補強成穩定的版本。交代任務時也可以多加一句「請順便指出我沒想到的問題」。</div>
+<details><summary>看全部 5 條重點</summary><p class="intro">🧑‍🏫 這支是 OpenAI 發表 GPT-5.5 時的官方影片，由 NVIDIA 一位工程師分享他實際用 Codex 和 GPT 5.5 做軟體的經驗。值得看的是，他講的是真實做出來的東西，還有他對這個模型的信任從哪裡來，不只是規格介紹。</p><ul><li><a href="https://www.youtube.com/watch?v=VdXdGS7hUSY&t=3s" target="_blank" rel="noopener">00:03</a> NVIDIA coding agents 團隊的資深軟體工程師 Dennis Hannish 說，GPT 5.5 的超能力是「能把事情做完」。<div class="plain">↳ Dennis Hannish 在 NVIDIA 做 coding agents，也就是能自己寫程式、自己執行的 AI 助手。他說 GPT 5.5 最大的長處是交代的事會一路做到完成，不會做到一半停下來等你收尾。</div></li><li><a href="https://www.youtube.com/watch?v=VdXdGS7hUSY&t=3s" target="_blank" rel="noopener">00:03</a> 他這週用 Codex desktop app 做出 podcast 錄製軟體，可以存下錄影和錄音，不必再用第三方服務錄 podcast。<div class="plain">↳ Codex 是 OpenAI 的寫程式 AI 工具，desktop app 是裝在電腦上的版本。他這一週就用它做出自己的 podcast 錄製軟體，能存錄影和錄音，不必再靠外面的服務來錄。</div></li><li><a href="https://www.youtube.com/watch?v=VdXdGS7hUSY&t=3s" target="_blank" rel="noopener">00:03</a> 他認為 Codex 和 GPT 5.5 拉高了「什麼值得動手做」的門檻。<div class="plain">↳ 意思是：有 AI 幫忙之後，做一個東西的成本變低。以前覺得太費工、不划算而放著的點子，現在變得值得動手，能做的東西也可以更有野心。</div></li><li><a href="https://www.youtube.com/watch?v=VdXdGS7hUSY&t=34s" target="_blank" rel="noopener">00:34</a> 他先用 GPT 5.4 做出內部平台的 MVP，再用 Codex GPT 5.5 把它推到 production 等級、可擴展的 app。<div class="plain">↳ MVP 是先做出能用的陽春初版，用來驗證想法。production 等級是可以正式上線給大家用的品質，可擴展是指使用者變多也撐得住。他分兩步：先做初版，再用新模型把它做成正式產品。</div></li><li><a href="https://www.youtube.com/watch?v=VdXdGS7hUSY&t=34s" target="_blank" rel="noopener">00:34</a> 他更信任 GPT 5.5 了，因為它會主動指出他交代範圍以外的 bug 和缺漏。<div class="plain">↳ bug 就是程式裡的錯誤。他沒叫 GPT 5.5 檢查的地方，它也會主動說哪裡有錯、哪裡漏了。因為它不只照字面做事，他才更放心把事情交給它。</div></li></ul></details>
+<details><summary>📘 術語</summary><div class="terms"><b>MVP</b>（最小可行產品）：字幕中指他先用 GPT 5.4 做出的內部平台初版，之後再推到 production 等級<br><b>Codex desktop app</b>（Codex 桌面版應用程式）：講者用來做出 podcast 錄製軟體的工具</div></details>
+<details><summary>✏️ 小考一題</summary><p>Dennis Hannish 說他這週用 Codex desktop app 做出了什麼？</p><span class="opt">A. 一套自動剪輯影片的軟體</span><span class="opt">B. 一個第三方 podcast 代管平台</span><span class="opt">C. 一套會議逐字稿轉錄工具</span><span class="opt">D. 一套能存下錄影和錄音的 podcast 錄製軟體</span><details><summary>看答案</summary><div class="ans">答案：D。[00:03] 他說這週用 Codex desktop app 做出 podcast 錄製軟體，會存下錄影和錄音，這樣就不必用第三方服務錄 podcast。</div></details></details>
+<div class="btns"><a class="main" href="https://www.youtube.com/watch?v=VdXdGS7hUSY&amp;t=0s" target="_blank" rel="noopener">📺 看原片</a><a href="/?l=yt_VdXdGS7hUSY">📚 在課本 App 讀</a></div>
+<details class="support"><summary>💛 覺得有幫助？支持一下</summary><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>課本免費、沒有廣告，支持與否都能照常讀 🐰</div></details>
+<p class="meta" style="margin-top:24px">重點整理自 YouTube 影片字幕，每條附時間碼可跳回原片；🧑‍🏫／↳ 是 Claude 補充的白話，不是影片原話。</p>
+</main></body></html>
