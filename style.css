@@ -647,3 +647,13 @@ body {
 .status-badge { display: inline-block; font-size: 13px; padding: 4px 10px; border-radius: 999px; margin: -4px 0 12px; }
 .status-badge.full { background: var(--correct-bg); color: var(--correct-text); border: 1px solid var(--correct-border); }
 .status-badge.old, .status-badge.long { background: var(--tag-bg); color: var(--tag-text); border: 1px solid var(--accent-gold); }
+
+/* 10/11 收款 QR（收起來，點開才出現） */
+.support-box { margin: 14px 0 8px; text-align: center; font-size: 13px; color: var(--text-muted); }
+.support-box summary { cursor: pointer; list-style: none; padding: 6px; }
+.support-box summary::-webkit-details-marker { display: none; }
+.support-qrs { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 8px; }
+.support-qrs figure { margin: 0; }
+.support-qrs img { width: 130px; border-radius: 8px; background: #fff; padding: 4px; }
+.support-qrs figcaption { font-size: 12px; margin-top: 4px; }
+.support-box p { font-size: 11px; margin: 8px 0 0; }
