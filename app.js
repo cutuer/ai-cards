@@ -204,7 +204,8 @@ function renderCard() {
       </span>
     </div>
     
-    <h1 class="card-title">${lesson.title}</h1>
+    <h1 class="card-title">${lesson.title} <button class="coffee-btn" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1>
+    <div class="coffee-qr" id="coffeeQR" hidden><img src="pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
     ${statusBadge(lesson)}
 
     <div class="lesson-box">

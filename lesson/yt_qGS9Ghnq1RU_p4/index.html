@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/oa_api/">🟢 API 開發</a></div>
-<h1>Build Hour：GPT-Realtime-2（第 4/4 段）</h1>
+<h1>Build Hour：GPT-Realtime-2（第 4/4 段） <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2026/05/13 · 43 分鐘 · 官方字幕實證</div>
 <div class="one">Q&amp;A：語音使用情境、長通話 session、升級推理模型、context 管理與 prompt 技巧</div>
 <ul><li><a href="https://www.youtube.com/watch?v=qGS9Ghnq1RU&t=1966s" target="_blank" rel="noopener">32:46</a> 語音適合「快速擷取、快速表達意圖」的情境，用語音驅動比用文字更方便</li><li><a href="https://www.youtube.com/watch?v=qGS9Ghnq1RU&t=2270s" target="_blank" rel="noopener">37:50</a> 研究端過去的做法是先暫停對話、交給文字模型思考後再回來；現在 realtime 2 本身就是會思考的模型，會自己說「給我一分鐘」，想完再回答</li><li><a href="https://www.youtube.com/watch?v=qGS9Ghnq1RU&t=2547s" target="_blank" rel="noopener">42:27</a> 下一場 Build Hour 在 5 月 28 日，主題是新推出的 Agents SDK；會後有問卷蒐集想學的主題</li></ul>

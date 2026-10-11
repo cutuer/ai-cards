@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/oa_api/">🟢 API 開發</a></div>
-<h1>別再為智慧付過多的錢｜DevDay 2026（第 2/2 段）</h1>
+<h1>別再為智慧付過多的錢｜DevDay 2026（第 2/2 段） <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2026/10/07 · 23 分鐘 · 官方字幕實證</div>
 <div class="one">用 prompt caching、programmatic tool calling、reasoning effort、batch/flex 降低 API 成本</div>
 <ul><li><a href="https://www.youtube.com/watch?v=_nmlHbSB8kM&t=698s" target="_blank" rel="noopener">11:38</a> 有些情況不需要把 tool 結果傳回模型。programmatic tool calling 是讓模型執行一支小程式，由它協調 tool calls、處理結果，再把整理好的報告交回模型判斷</li><li><a href="https://www.youtube.com/watch?v=_nmlHbSB8kM&t=1046s" target="_blank" rel="noopener">17:26</a> prompt caching 的第一建議是盡量讓 prompt 開頭保持一致。這樣能重用共用指令的前處理，不在相符段落裡的新資訊則由模型重新處理</li><li><a href="https://www.youtube.com/watch?v=_nmlHbSB8kM&t=1356s" target="_blank" rel="noopener">22:36</a> 建議行動三：一次只測一個改動。找到改善就保留該設定並繼續迭代，隨應用程式和模型演進持續跑 evals</li></ul>

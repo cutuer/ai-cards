@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/bl_donut/">🍩 Blender 入門</a></div>
-<h1>Blender 基礎材質教學（Donut 第 4 部）（第 1/3 段）</h1>
+<h1>Blender 基礎材質教學（Donut 第 4 部）（第 1/3 段） <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2025/11/30 · 33 分鐘 · 字幕實證</div>
 <div class="one">示範建出盤子模型、修正重複頂點，並用 5.0 新工具 Lattice 讓甜甜圈更自然</div>
 <ul><li><a href="https://www.youtube.com/watch?v=5Xlu2zwbJd0&t=0s" target="_blank" rel="noopener">00:00</a> 新增物件可以用上方的 Add 選單，或按 Shift+A。要從清單中挑最接近目標形狀的物件，做盤子就選 circle。</li><li><a href="https://www.youtube.com/watch?v=5Xlu2zwbJd0&t=325s" target="_blank" rel="noopener">05:25</a> 皺褶的成因是中央的面緊貼在邊緣，要把整片收成中心一點，所以很難看。把那個面往中心縮小，皺褶就幾乎看不見，而且會被甜甜圈蓋住。</li><li><a href="https://www.youtube.com/watch?v=5Xlu2zwbJd0&t=643s" target="_blank" rel="noopener">10:43</a> Lattice 以前就有，但設定起來很麻煩。Lattice Deform Selected 會在物件外加一個像立方體的邊界框。</li></ul>

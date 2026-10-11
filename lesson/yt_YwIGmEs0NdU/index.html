@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/blender_yt/">🧊 Claude+Blender</a></div>
-<h1>Claude Code 接管 Blender，做出了這個……</h1>
+<h1>Claude Code 接管 Blender，做出了這個…… <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2026/05/27 · 17 分鐘 · 字幕實證</div>
 <div class="one">用 Claude Code＋官方 Blender MCP 做動畫、geometry nodes、場景生成與動畫 retarget 的實測</div>
 <ul><li><a href="https://www.youtube.com/watch?v=YwIGmEs0NdU&t=0s" target="_blank" rel="noopener">00:00</a> 實驗設定：幫 Claude Code 裝上 Blender skill，接上 3D 生成、圖片生成、computer vision 等 API，開啟 bypass permission mode，要它做出一個 3D 場景</li><li><a href="https://www.youtube.com/watch?v=YwIGmEs0NdU&t=531s" target="_blank" rel="noopener">08:51</a> 作者完全沒碰 geometry node，靠兩個 prompt 就得到這個結果</li><li><a href="https://www.youtube.com/watch?v=YwIGmEs0NdU&t=1036s" target="_blank" rel="noopener">17:16</a> 作者的下一步：成功後請 Claude 做一個 add-on，選兩副骨架就能 retarget 動畫</li></ul>

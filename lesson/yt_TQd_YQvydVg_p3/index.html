@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/yt_agents/">📺 Agents</a></div>
-<h1>在 Microsoft Foundry 中使用 Claude 打造 AI agents（第 3/3 段）</h1>
+<h1>在 Microsoft Foundry 中使用 Claude 打造 AI agents（第 3/3 段） <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2026/05/20 · 34 分鐘 · 官方字幕實證</div>
 <div class="one">把 agent 接上杯子蛋糕店的 MCP server，載入 prompt 並實際完成點餐流程</div>
 <ul><li><a href="https://www.youtube.com/watch?v=TQd_YQvydVg&t=1373s" target="_blank" rel="noopener">22:53</a> 再執行一次先前啟動 agent 的同一個指令；因為已連上 MCP server，這次 agent 會掌握杯子蛋糕店的資訊。示範問 agent：「今天有哪些口味？」</li><li><a href="https://www.youtube.com/watch?v=TQd_YQvydVg&t=1656s" target="_blank" rel="noopener">27:36</a> 接著選口味：講者輸入 4 號選 red velvet。講者說這些流程都來自 MCP server 上的自訂 instructions 和 prompts。</li><li><a href="https://www.youtube.com/watch?v=TQd_YQvydVg&t=2004s" target="_blank" rel="noopener">33:24</a> 有免費的 Azure credits 可以試用；可以看 Foundry docs 文件；Microsoft Learn 上有免費課程，部分程式碼也可能放在那裡。</li></ul>

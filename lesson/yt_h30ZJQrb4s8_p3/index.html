@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/bl_donut/">🍩 Blender 入門</a></div>
-<h1>Blender 基礎貼圖教學（Donut 第 5 部）（第 3/3 段）</h1>
+<h1>Blender 基礎貼圖教學（Donut 第 5 部）（第 3/3 段） <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2025/12/02 · 31 分鐘 · 字幕實證</div>
 <div class="one">替糖霜重做 UV unwrap、套用掃描貼圖，並用 displacement 讓甜甜圈本體更立體</div>
 <ul><li><a href="https://www.youtube.com/watch?v=h30ZJQrb4s8&t=1277s" target="_blank" rel="noopener">21:17</a> 盤子套用貼圖後的效果已經很適合盤子；也可以把 scale 調小一點，讓圓點變大。整個流程非常簡單</li><li><a href="https://www.youtube.com/watch?v=h30ZJQrb4s8&t=1594s" target="_blank" rel="noopener">26:34</a> metallic 用不到（裡面一定沒有金屬）；roughness 保留；subsurface amount 斷開以便自己控制。最後只留 roughness 和 normal</li><li><a href="https://www.youtube.com/watch?v=h30ZJQrb4s8&t=1883s" target="_blank" rel="noopener">31:23</a> 成果：真實的糖霜與糖晶體，加上掃描後投影到 torus 上的真實甜甜圈，總共只用了兩個材質</li></ul>

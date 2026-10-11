@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/yt_prompt/">📺 提示與選模型</a></div>
-<h1>挑選合適的模型（第 2/3 段）</h1>
+<h1>挑選合適的模型（第 2/3 段） <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2026/05/21 · 31 分鐘 · 官方字幕實證</div>
 <div class="one">用 eval 與 transcripts 選模型，並用 thinking、effort、prompt caching 權衡成本、品質與延遲</div>
 <ul><li><a href="https://www.youtube.com/watch?v=P0uMXS6emHA&t=635s" target="_blank" rel="noopener">10:35</a> 重新閱讀 transcripts 很值得花時間。</li><li><a href="https://www.youtube.com/watch?v=P0uMXS6emHA&t=941s" target="_blank" rel="noopener">15:41</a> 從 Sonnet 4.6（4.6 系列模型）起有 adaptive thinking：模型自己決定一個任務需要想多少。它像一個 scratch pad，讓模型先想再行動，屬於 system two 型的思考。</li><li><a href="https://www.youtube.com/watch?v=P0uMXS6emHA&t=1245s" target="_blank" rel="noopener">20:45</a> Claude Code 團隊的主要工程師之一 Tarik 寫過也講過很多這方面的內容，建議去看他如何在 Claude Code 實作這套做法。</li></ul>

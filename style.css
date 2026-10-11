@@ -657,3 +657,9 @@ body {
 .support-qrs img { width: 130px; border-radius: 8px; background: #fff; padding: 4px; }
 .support-qrs figcaption { font-size: 12px; margin-top: 4px; }
 .support-box p { font-size: 11px; margin: 8px 0 0; }
+
+/* 10/11 標題旁小字 Buy me a coffee，點開才出 QR */
+.coffee-btn { font-size: 12px; font-weight: 500; vertical-align: middle; border: 1px solid var(--text-muted); background: transparent; color: var(--text-muted); border-radius: 999px; padding: 2px 10px; cursor: pointer; white-space: nowrap; }
+.coffee-qr { text-align: center; font-size: 12px; color: var(--text-muted); margin: 4px 0 12px; }
+.coffee-qr img { width: 120px; border-radius: 8px; background: #fff; padding: 4px; margin: 4px; }
+.coffee-qr[hidden] { display: none; }

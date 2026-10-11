@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/bl_film/">🎬 Blender 影視</a></div>
-<h1>Motion Sculpting：一種新的動畫範式 — BCON26（第 3/5 段）</h1>
+<h1>Motion Sculpting：一種新的動畫範式 — BCON26（第 3/5 段） <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2026/09/23 · 54 分鐘 · 字幕實證</div>
 <div class="one">示範 Motion Sculpting 工具：用 screen space、IK、鎖定、spline、brush 直接在視窗裡改動畫</div>
 <ul><li><a href="https://www.youtube.com/watch?v=M2J_fQNLDfg&t=1319s" target="_blank" rel="noopener">21:59</a> 概念是「五維動畫」：一般用 X、Y、Z 加時間四個維度，這裡再加上 screen space，用來看動畫的來向與去向。</li><li><a href="https://www.youtube.com/watch?v=M2J_fQNLDfg&t=1650s" target="_blank" rel="noopener">27:30</a> 雙腳繼續播自己的動畫：它們不是被鎖在空間中，而是被鎖在自己的動畫裡。這裡是在 FK chain 上從 root 往下做 IK。</li><li><a href="https://www.youtube.com/watch?v=M2J_fQNLDfg&t=1971s" target="_blank" rel="noopener">32:51</a> 講者覺得畫面有點干擾，準備調整 onion skin 的顯示（字幕在此中斷）。</li></ul>

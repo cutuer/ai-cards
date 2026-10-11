@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/yt_agents/">📺 Agents</a></div>
-<h1>Tool、skill 還是 subagent？拆解一個已經撐爆 prompt 的 agent（第 3/4 段）</h1>
+<h1>Tool、skill 還是 subagent？拆解一個已經撐爆 prompt 的 agent（第 3/4 段） <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2026/05/23 · 45 分鐘 · 官方字幕實證</div>
 <div class="one">長 system prompt 改用 skills、工具先用 Claude Code primitives，MCP 放最後</div>
 <ul><li><a href="https://www.youtube.com/watch?v=mWvtOHlZM-I&t=1354s" target="_blank" rel="noopener">22:34</a> 講者表示有了 skills 之後，不建議再把所有資訊塞進 system prompt。system prompt 只放 Claude 不管做什麼任務都需要記住的資訊</li><li><a href="https://www.youtube.com/watch?v=mWvtOHlZM-I&t=1695s" target="_blank" rel="noopener">28:15</a> 給 Claude 一個 bash tool，讓它寫簡短的 Python script、執行後再根據結果推理，效果比把整個 CSV 上傳到 context window 好很多</li><li><a href="https://www.youtube.com/watch?v=mWvtOHlZM-I&t=2000s" target="_blank" rel="noopener">33:20</a> 有些情況可以改用 code execution（CLIs 或用程式呼叫 APIs），不必用 MCP，agent 也更有彈性</li></ul>

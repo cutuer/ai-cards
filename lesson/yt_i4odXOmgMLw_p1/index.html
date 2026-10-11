@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/yt_cases/">📺 客戶案例</a></div>
-<h1>Ramp 工程師如何在每個環節與 AI agents 協作（第 1/2 段）</h1>
+<h1>Ramp 工程師如何在每個環節與 AI agents 協作（第 1/2 段） <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2026/08/06 · 21 分鐘 · 官方字幕實證</div>
 <div class="one">Ramp 工程師分享用 Fable、dynamic workflow、loop 和 routine 貫穿整個工程流程的做法</div>
 <ul><li><a href="https://www.youtube.com/watch?v=i4odXOmgMLw&t=32s" target="_blank" rel="noopener">00:32</a> 拿到 Fable 後，第一步是找 Ramp 裡能用實驗驗證的用例：一大段由 Fable 寫、自己沒讀過的程式碼，而且要放在非產品的地方，例如 CI 測試套件</li><li><a href="https://www.youtube.com/watch?v=i4odXOmgMLw&t=335s" target="_blank" rel="noopener">05:35</a> 這種陽春設定的靈感來自 vanilla setup 的 Twitter 貼文，他認為這是學會模型最好的方式；也大量用 subagent 和 adversarial review</li><li><a href="https://www.youtube.com/watch?v=i4odXOmgMLw&t=611s" target="_blank" rel="noopener">10:11</a> 原則是在每一層都給模型需要的一切，但不多給。例如接 BigQuery 或 Data Dog 時，給它唯讀的 service key</li></ul>

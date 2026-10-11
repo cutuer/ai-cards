@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/yt_cases/">📺 客戶案例</a></div>
-<h1>給 coding agents 一台自己的電腦：Cursor 如何打造 cloud agents</h1>
+<h1>給 coding agents 一台自己的電腦：Cursor 如何打造 cloud agents <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2026/05/08 · 14 分鐘 · 官方字幕實證</div>
 <div class="one">Cursor 分享如何讓 agents 自主工作，並打造能自我改進的系統</div>
 <ul><li><a href="https://www.youtube.com/watch?v=BbYSGxtsMic&t=14s" target="_blank" rel="noopener">00:14</a> 模型已經非常強。越來越多工作的瓶頸不是模型智力，而是人類有沒有給模型工具、context，以及更有野心的任務</li><li><a href="https://www.youtube.com/watch?v=BbYSGxtsMic&t=439s" target="_blank" rel="noopener">07:19</a> 使用模式一：大量小任務、bug 和 issue 不要再記進筆記或 tracker，直接寫成 prompt 發出去。回來的 demo 省下審大量程式碼的時間</li><li><a href="https://www.youtube.com/watch?v=BbYSGxtsMic&t=837s" target="_blank" rel="noopener">13:57</a> 想讓自己的 agents 自由發揮，可以到 cursor.com/onboard，讓 Claude onboard 到你的 codebase</li></ul>

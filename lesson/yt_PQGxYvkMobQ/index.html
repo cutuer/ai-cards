@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/yt_research/">📺 研究與安全</a></div>
-<h1>使用 Claude 時的資料保留機制說明</h1>
+<h1>使用 Claude 時的資料保留機制說明 <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2026/09/14 · 2 分鐘 · 官方字幕實證</div>
 <div class="one">說明從 Claude Fable 5 起為安全監控保留 30 天資料，以及新方案 Enterprise Frontier Safeguards</div>
 <ul><li><a href="https://www.youtube.com/watch?v=PQGxYvkMobQ&t=0s" target="_blank" rel="noopener">00:00</a> Mythos 等級的模型（如 Claude Fable 5.1）能力大幅提升，也可能被濫用，從詐騙到複雜的網路攻擊都有。最進階的濫用會分散在多個 session 和帳號，只看單次互動很難發現，所以需要把資料保存一段夠長的時間。</li><li><a href="https://www.youtube.com/watch?v=PQGxYvkMobQ&t=62s" target="_blank" rel="noopener">01:02</a> 人工審查只在少數情況下發生，例如自動安全系統把內容標記為可能有害，而且只由一小群核准的審查人員進行。每次存取都會記錄在防竄改的 log 裡。</li><li><a href="https://www.youtube.com/watch?v=PQGxYvkMobQ&t=92s" target="_blank" rel="noopener">01:32</a> 符合資格的組織可以把監控用資料存在自己的雲端基礎架構，並使用自己的加密金鑰、存取政策和稽核紀錄。偵測到異常時，警示會直接送給組織團隊，不需要 Anthropic 人工審查。</li></ul>

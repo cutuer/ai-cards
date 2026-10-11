@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/yt_agents/">📺 Agents</a></div>
-<h1>用 Evals 衡量品味：逐步改進（hill-climbing）一個投影片生成 agent（第 3/3 段）</h1>
+<h1>用 Evals 衡量品味：逐步改進（hill-climbing）一個投影片生成 agent（第 3/3 段） <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2026/05/23 · 39 分鐘 · 官方字幕實證</div>
 <div class="one">加入圖表規則、QA loop、換更強的模型，並說明 judge grader 該怎麼設計</div>
 <ul><li><a href="https://www.youtube.com/watch?v=v9FTCvkV_a0&t=1570s" target="_blank" rel="noopener">26:10</a> 新增規則：投影片至少要有一張產生出來的圖表，而且要以真正的圖片插入；接著更新 system prompt 或 agent 其他可調整的部分，再跑一次看結果</li><li><a href="https://www.youtube.com/watch?v=v9FTCvkV_a0&t=1934s" target="_blank" rel="noopener">32:14</a> 只用基本 prompt，Opus 的結果就明顯比 Sonnet 好、結構更清楚，不過還是有問題要修</li><li><a href="https://www.youtube.com/watch?v=v9FTCvkV_a0&t=2302s" target="_blank" rel="noopener">38:22</a> 開發 AI agent 應用也是同樣道理：找出有效和無效的做法、持續迭代，確保每個改動都有依據，而且真的讓最終產出變好</li></ul>

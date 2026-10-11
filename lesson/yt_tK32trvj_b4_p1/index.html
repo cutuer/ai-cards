@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/oa_api/">🟢 API 開發</a></div>
-<h1>Build Hour：Agents SDK（第 1/4 段）</h1>
+<h1>Build Hour：Agents SDK（第 1/4 段） <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2026/05/28 · 47 分鐘 · 官方字幕實證</div>
 <div class="one">介紹 Agents SDK 新增的 Codex 風格 harness、sandbox 與 API 新功能</div>
 <ul><li><a href="https://www.youtube.com/watch?v=tK32trvj_b4&t=2s" target="_blank" rel="noopener">00:02</a> 主持人是 startup marketing 團隊的 Christine，講者是 OpenAI API 團隊工程師 Steve，他上一場 Build Hour 講的是 responses API</li><li><a href="https://www.youtube.com/watch?v=tK32trvj_b4&t=370s" target="_blank" rel="noopener">06:10</a> 一年到一年半前直接用 LLM API 做 agent 的做法：寫迴圈、發請求、拿到 tool 就執行、更新 context，重複到模型不再呼叫工具為止，還要自己加 web search、file search、MCP</li><li><a href="https://www.youtube.com/watch?v=tK32trvj_b4&t=705s" target="_blank" rel="noopener">11:45</a> hosted shell tool 可以想成 Agents SDK 的輕量版，用的是 ephemeral 容器，可以放幾個檔案進去</li></ul>

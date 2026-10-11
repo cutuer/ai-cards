@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/oa_codex/">🟢 Codex</a></div>
-<h1>Build Hour：API 與 Codex（第 2/5 段）</h1>
+<h1>Build Hour：API 與 Codex（第 2/5 段） <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2026/03/10 · 60 分鐘 · 官方字幕實證</div>
 <div class="one">示範 Codex app 的 worktree、自動化與 agent 可讀性評分，並分享百萬行全由 Codex 寫成的經驗</div>
 <ul><li><a href="https://www.youtube.com/watch?v=rhsSqr0jdFw&t=731s" target="_blank" rel="noopener">12:11</a> worktree 讓你在另一個資料夾工作，不干擾其他分支的變更；用好幾個螢幕、十幾個 tmux 分頁的人，就是用 worktree 做平行工作</li><li><a href="https://www.youtube.com/watch?v=rhsSqr0jdFw&t=1092s" target="_blank" rel="noopener">18:12</a> 人只要對現成的 PR 說 yes 或 no，Symphony 就會幫忙 merge</li><li><a href="https://www.youtube.com/watch?v=rhsSqr0jdFw&t=1432s" target="_blank" rel="noopener">23:52</a> 解法：寫一條 linter，禁止這個函式以任何形式定義在標準（canonical）非同步工具套件以外的地方</li></ul>

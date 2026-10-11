@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/yt_code/">📺 Claude Code</a></div>
-<h1>Claude Code Projects 入門</h1>
+<h1>Claude Code Projects 入門 <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2026/10/09 · 4 分鐘 · 官方字幕實證</div>
 <div class="one">介紹 Claude Code Projects：把大目標拆成多個 thread 平行處理，並附三個使用秘訣</div>
 <ul><li><a href="https://www.youtube.com/watch?v=omihvjf0A2k&t=0s" target="_blank" rel="noopener">00:00</a> 示範把一個大目標整個丟給 Claude。使用者不必自己規劃 sub-agents、管理多個 session 或 work trees，直接提出要求就好。</li><li><a href="https://www.youtube.com/watch?v=omihvjf0A2k&t=127s" target="_blank" rel="noopener">02:07</a> 開 PR 後，thread 會持續關注這個 PR：CI 失敗時推送修正，也會處理 review 意見。</li><li><a href="https://www.youtube.com/watch?v=omihvjf0A2k&t=248s" target="_blank" rel="noopener">04:08</a> 總結：目標大到一個 session 處理不完時，可以試著開 project。把目標交給 Claude 拆成 threads，等它需要你時再查看。</li></ul>

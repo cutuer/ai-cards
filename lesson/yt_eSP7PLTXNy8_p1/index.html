@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/yt_code/">📺 Claude Code</a></div>
-<h1>用 Claude Code 打造主動式 agent 工作流程（第 1/2 段）</h1>
+<h1>用 Claude Code 打造主動式 agent 工作流程（第 1/2 段） <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2026/05/20 · 22 分鐘 · 官方字幕實證</div>
 <div class="one">介紹 Claude Code 的 routines 功能，並以內部自動產生文件的案例示範怎麼設定</div>
 <ul><li><a href="https://www.youtube.com/watch?v=eSP7PLTXNy8&t=22s" target="_blank" rel="noopener">00:22</a> 講者 Maya 是 Anthropic applied AI 團隊成員，一半時間開發自家產品功能，一半時間協助客戶在模型上打造產品與 agent</li><li><a href="https://www.youtube.com/watch?v=eSP7PLTXNy8&t=329s" target="_blank" rel="noopener">05:29</a> 設計重點二：可自訂 trigger 主動運作，可以依時間排程，也可以由事件觸發</li><li><a href="https://www.youtube.com/watch?v=eSP7PLTXNy8&t=638s" target="_blank" rel="noopener">10:38</a> Context：通常要讓 agent 存取一個或多個 repo；在文件案例中，Claude 需要 Claude Code 原始碼（找新變更）和文件 repo（開 PR）</li></ul>

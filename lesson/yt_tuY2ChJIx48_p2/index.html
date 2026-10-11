@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/yt_code/">📺 Claude Code</a></div>
-<h1>超越基礎：Claude Code 進階用法（第 2/4 段）</h1>
+<h1>超越基礎：Claude Code 進階用法（第 2/4 段） <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2026/05/22 · 47 分鐘 · 官方字幕實證</div>
 <div class="one">用 hooks 給 agent 回饋，並談 context window 與 KV cache 對客製化的限制</div>
 <ul><li><a href="https://www.youtube.com/watch?v=tuY2ChJIx48&t=710s" target="_blank" rel="noopener">11:50</a> Claude 預設沒有 LSP、沒有 code completion，只有 edit tool，必須逐字寫出要取代的字串和新內容。講者比喻這連 Vim 都還沒有，像在用 ED</li><li><a href="https://www.youtube.com/watch?v=tuY2ChJIx48&t=1055s" target="_blank" rel="noopener">17:35</a> 讓輸出變好的手段是 in context learning，所以每一項客製化都必須以某種形式進入 context window</li><li><a href="https://www.youtube.com/watch?v=tuY2ChJIx48&t=1402s" target="_blank" rel="noopener">23:22</a> chat bot 通常跑在 serverless 環境、不在 container 裡，沒辦法存取你電腦上的檔案、執行指令或使用 CLI</li></ul>

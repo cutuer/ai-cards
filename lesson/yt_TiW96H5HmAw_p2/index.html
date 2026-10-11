@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/oa_other/">🟢 其他</a></div>
-<h1>為什麼 AI 需要新型態的超級電腦網路 — OpenAI Podcast 第 18 集（第 2/3 段）</h1>
+<h1>為什麼 AI 需要新型態的超級電腦網路 — OpenAI Podcast 第 18 集（第 2/3 段） <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2026/05/06 · 37 分鐘 · 官方字幕實證</div>
 <div class="one">介紹 MRC 如何讓超大規模 GPU 叢集網路避開壅塞與故障，讓模型訓練更快更穩</div>
 <ul><li><a href="https://www.youtube.com/watch?v=TiW96H5HmAw&t=753s" target="_blank" rel="noopener">12:33</a> 系統越大，在相同設備成本下故障間隔越短。規模大到一個程度時，會因為太常故障，使大型同步工作負載完全做不了事，所以必須改變做法。</li><li><a href="https://www.youtube.com/watch?v=TiW96H5HmAw&t=1128s" target="_blank" rel="noopener">18:48</a> 因此「連結故障拖垮整個網路」的問題消失了。流量從一端網卡到另一端網卡的過程中，會自動避開故障，主持人形容這像 self-annealing。</li><li><a href="https://www.youtube.com/watch?v=TiW96H5HmAw&t=1501s" target="_blank" rel="noopener">25:01</a> 主持人提到：他們決定把這項技術開放給所有人使用。</li></ul>

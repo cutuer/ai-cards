@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/yt_code/">📺 Claude Code</a></div>
-<h1>Boris Cherny 與 Jarred Sumner 的現場寫程式實錄（第 2/3 段）</h1>
+<h1>Boris Cherny 與 Jarred Sumner 的現場寫程式實錄（第 2/3 段） <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2026/05/06 · 32 分鐘 · 官方字幕實證</div>
 <div class="one">Jarred 用 Robo Bun 與 Claude Code 自動產出、審查、修正 PR，並談怎麼讓流程完全閉環</div>
 <ul><li><a href="https://www.youtube.com/watch?v=DlTCu_pNDHE&t=643s" target="_blank" rel="noopener">10:43</a> 理想流程：agent 先讀完所有錯誤、把一切準備好，程式碼到人手上時，看完就能有很高的信心按合併</li><li><a href="https://www.youtube.com/watch?v=DlTCu_pNDHE&t=959s" target="_blank" rel="noopener">15:59</a> 從 commit 數量圖表看，commit 量從原本較低大幅上升；Bun 用 Rust 重寫一事，Jarred 說只是讓 Claude 跑著，看結果如何</li><li><a href="https://www.youtube.com/watch?v=DlTCu_pNDHE&t=1253s" target="_blank" rel="noopener">20:53</a> 只要給目標、改善效能的方法和衡量方式，並讓它在 auto mode 下跑，它就會一直做到完成</li></ul>

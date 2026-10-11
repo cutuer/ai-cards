@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/bl_donut/">🍩 Blender 入門</a></div>
-<h1>Blender 基礎貼圖教學（Donut 第 5 部）（第 2/3 段）</h1>
+<h1>Blender 基礎貼圖教學（Donut 第 5 部）（第 2/3 段） <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2025/12/02 · 31 分鐘 · 字幕實證</div>
 <div class="one">手動接 PBR 貼圖、用 Poliigon add-on 一鍵套材質，再用 UV unwrapping 解決貼圖映射</div>
 <ul><li><a href="https://www.youtube.com/watch?v=h30ZJQrb4s8&t=644s" target="_blank" rel="noopener">10:44</a> 把貼圖接到 normal 輸入後已經有 bump 效果，但這只做對一部分：黃色輸出接到了紫色輸入</li><li><a href="https://www.youtube.com/watch?v=h30ZJQrb4s8&t=931s" target="_blank" rel="noopener">15:31</a> Ambient occlusion map 用在有深縫隙的表面（例如碎石步道），代表縫隙裡累積的陰影；這次用不到</li><li><a href="https://www.youtube.com/watch?v=h30ZJQrb4s8&t=1264s" target="_blank" rel="noopener">21:04</a> 按 S 可以縮放 UV；這很常用，因為 mesh 的尺寸常跟掃描物件的實際尺寸差很多</li></ul>

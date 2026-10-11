@@ -28,10 +28,12 @@ summary{cursor:pointer;font-weight:600}.terms{font-size:15px}.intro{color:var(--
 .list a{display:block;padding:10px 0;border-bottom:1px solid var(--line);color:var(--text);text-decoration:none}
 .list small{color:var(--mut)}
 .support{text-align:center;font-size:13px;color:var(--mut);border:0;background:none}
+.coffee{font-size:12px;font-weight:500;vertical-align:middle;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:2px 10px;cursor:pointer;white-space:nowrap}
+.coffee-qr{text-align:center;font-size:12px;color:var(--mut);margin:4px 0 12px}.coffee-qr img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:4px}
 .support img{width:120px;border-radius:8px;background:#fff;padding:4px;margin:6px}
 </style></head><body><main>
 <div class="crumb"><a href="/book/">AI 課本</a> › <a href="/book/yt_agents/">📺 Agents</a></div>
-<h1>不斷擴充的工具組（第 1/2 段）</h1>
+<h1>不斷擴充的工具組（第 1/2 段） <button class="coffee" type="button" onclick="var q=document.getElementById('coffeeQR');q.hidden=!q.hidden">☕ Buy me a coffee</button></h1><div class="coffee-qr" id="coffeeQR" hidden><img src="/pay/bank.jpg" alt="台灣Pay 銀行轉帳 QR" loading="lazy"><img src="/pay/paypal.jpg" alt="PayPal QR" loading="lazy"><div>🏦 台灣Pay 銀行轉帳　💙 PayPal</div></div>
 <div class="meta">2026/05/08 · 21 分鐘 · 官方字幕實證</div>
 <div class="one">去年開發者得自己寫的 scaffolding，現在已經內建在模型和 API 裡了</div>
 <ul><li><a href="https://www.youtube.com/watch?v=KLCuxMDZSDg&t=28s" target="_blank" rel="noopener">00:28</a> 講者 Lucas 是 Anthropic 的 research PM，這場演講是在 Code with Claude 大會上發表的</li><li><a href="https://www.youtube.com/watch?v=KLCuxMDZSDg&t=341s" target="_blank" rel="noopener">05:41</a> 這樣 Claude 事先就知道會拿到什麼，例如想排序結果時，知道一定會有 score，可以省下一次和 harness 之間的 round trip，輸出更有效率也更聰明</li><li><a href="https://www.youtube.com/watch?v=KLCuxMDZSDg&t=634s" target="_blank" rel="noopener">10:34</a> Code execution（現在）：推出 code execution tool，會自動給 Claude 一個託管的 sandbox（本段字幕到這裡截斷）</li></ul>
